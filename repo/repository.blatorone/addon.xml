@@ -13,12 +13,4 @@
             <disclaimer></disclaimer>
             <platform>all</platform>
         </extension>
-        <extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<description lang="en">Addons by blatorone</description>
-		<website>https://blatorone.github.io/blatorone/repo</website>
-		<assets>
-			<icon>icon.png</icon>
-		</assets> 
-	    </extension>
 </addon>
