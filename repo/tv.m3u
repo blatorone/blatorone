@@ -29,6 +29,8 @@ plugin://plugin.video.vavooto/?name=A%26E
 plugin://plugin.video.vavooto/?name=ARD+-+DAS+ERSTE
 #EXTINF:-1 tvg-id="DE: Deluxe Music" group-title="Musik" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1034.png",DELUXE MUSIC
 plugin://plugin.video.vavooto/?name=DELUXE MUSIC
+#EXTINF:-1 tvg-id="DE: KRONE HIT TV" group-title="Musik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Kronehit_Logo2018_Nachtblau_rgb.svg/450px-Kronehit_Logo2018_Nachtblau_rgb.svg.png",KRONE HIT TV
+plugin://plugin.video.vavooto/?name=KRONE+HIT+TV
 #EXTINF:-1 tvg-id="DE: DMAX" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/969.png",DMAX
 plugin://plugin.video.vavooto/?name=DMAX
 #EXTINF:-1 tvg-id="DE: Discovery" group-title="Dokumentation" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/543.png",Discovery
@@ -376,24 +378,3 @@ plugin://plugin.video.vavooto/?name=SKY+SPORT+MIX
 plugin://plugin.video.vavooto/?name=SKY SPORT PREMIER LEAGUE
 #EXTINF:-1 tvg-id="DE: Sky Sport News" group-title="Sport" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/17_sky_logo_skysportnewshd_tvguide.png",Sky Sport News
 plugin://plugin.video.vavooto/?name=SKY+SPORT+NEWS
-
-#EXTINF:-1 tvg-id="DE: KRONE HIT TV" group-title="Musik" tvg-logo="",KRONE HIT TV
-plugin://plugin.video.vavooto/?name=KRONE+HIT+TV
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
