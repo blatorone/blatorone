@@ -377,6 +377,8 @@ plugin://plugin.video.vavooto/?name=SKY SPORT PREMIER LEAGUE
 #EXTINF:-1 tvg-id="DE: Sky Sport News" group-title="Sport" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/17_sky_logo_skysportnewshd_tvguide.png",Sky Sport News
 plugin://plugin.video.vavooto/?name=SKY+SPORT+NEWS
 
+#EXTINF:-1 tvg-id="DE: KRONE HIT TV" group-title="Musik" tvg-logo="",KRONE HIT TV
+plugin://plugin.video.vavooto/?name=KRONE+HIT+TV
 
 
 
