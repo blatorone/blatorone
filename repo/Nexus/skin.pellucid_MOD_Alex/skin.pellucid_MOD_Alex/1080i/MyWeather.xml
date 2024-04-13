@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">100</defaultcontrol>
     <include>fadeInOut</include>
-    <onload>AlarmClock(hidemenu,setfocus(200),10:00,true)</onload>
+    <onload>AlarmClock(hidemenu,setfocus(200),00:10,true)</onload>
 	<onunload>CancelAlarm(hidemenu,true)</onunload>
     <controls>
         <!--background-->
@@ -286,7 +286,7 @@
         <include>Backbutton</include>
         <!--Location switch-->
         <control type="togglebutton" id="300">
-            <visible>Skin.HasSetting(Touch) + !String.isEmpty(Window.Property(Location2))</visible>
+            <visible>Skin.HasSetting(Touch) + !String.isEmpty(Window.Property(Location2)) + !Control.hasfocus(200)</visible>
             <posx>700</posx>
             <posy>85</posy>
             <width>500</width>
@@ -356,7 +356,7 @@
 	                </focusedlayout>
 	                <content>
 						<item>
-							<visible>$EXP[hasWeather]</visible>
+							<visible>$EXP[hasWeather] + !Control.hasfocus(200)</visible>
 	                    	<description>weather</description>
 	                    	<label2></label2>
 	                    	<thumb></thumb>
