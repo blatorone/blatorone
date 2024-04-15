@@ -53,14 +53,23 @@
                     <posy>0</posy>
 					<orientation>vertical</orientation>
 					<itemgap>32</itemgap>
-					<control type="label">
-                        <visible>String.IsEmpty(Videoplayer.TVShowTitle)</visible>
+                    <control type="label">
+                        <visible>String.IsEmpty(Videoplayer.TVShowTitle) + PVR.PlayingTv</visible>
 	                    <width>8-col</width>
 	                    <align>left</align>
 	                    <height>1-row</height>
 	                    <font>itemTitle</font>
 	                    <textcolor>highlight</textcolor>
-	                    <label>$INFO[VideoPlayer.ChannelName]</label>
+	                    <label>[CAPITALIZE][LOWERCASE]$INFO[videoplayer.Title][/LOWERCASE][/CAPITALIZE]</label>
+	                </control>
+                    <control type="label">
+                        <visible>String.IsEmpty(Videoplayer.TVShowTitle) + !PVR.PlayingTv</visible>
+	                    <width>8-col</width>
+	                    <align>left</align>
+	                    <height>1-row</height>
+	                    <font>itemTitle</font>
+	                    <textcolor>highlight</textcolor>
+	                    <label>$INFO[videoplayer.Title]</label>
 	                </control>
                     <control type="label">
                         <visible>!String.IsEmpty(Videoplayer.TVShowTitle)</visible>
