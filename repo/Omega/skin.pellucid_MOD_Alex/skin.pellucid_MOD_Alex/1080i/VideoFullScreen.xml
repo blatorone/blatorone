@@ -2,6 +2,7 @@
 <window>
     <onload>PlayerControl(Randomoff)</onload>
 	<onload>PlayerControl(Repeatoff)</onload>
+    <onload>Dialog.Close(1103)</onload>
     <defaultcontrol></defaultcontrol>
     <controls>
         <control type="image">
