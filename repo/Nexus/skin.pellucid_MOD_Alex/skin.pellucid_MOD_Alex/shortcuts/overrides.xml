@@ -132,4 +132,10 @@
 	<groupoverride group="videosubmenu" condition="true">control.setfocus(9999)</groupoverride>
 	<groupoverride group="musicsubmenu" condition="true">control.setfocus(9999)</groupoverride>
 	<groupoverride group="picturessubmenu" condition="true">control.setfocus(9999)</groupoverride>
+
+	<!-- Favourites -->
+	<override action="ActivateWindow(Favourites)">
+    	<action>ActivateWindow(FavouritesBrowser)</action>
+   </override>
+
 </overrides>
