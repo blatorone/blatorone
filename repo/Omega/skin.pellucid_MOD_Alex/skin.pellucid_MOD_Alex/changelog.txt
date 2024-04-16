@@ -3,6 +3,8 @@
 15.04.2024
 
  - Video OSD Change Player Title
+ - Video Overlay Title change
+ - Home Title change
 
 14.04.2024
 

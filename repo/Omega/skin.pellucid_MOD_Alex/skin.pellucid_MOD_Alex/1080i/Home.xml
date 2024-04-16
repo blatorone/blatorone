@@ -751,6 +751,7 @@
                 		</animation>
 					</control>
 					<control type="label">
+						<visible>!Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.TVShowTitle)</visible>
 						<description>Artist</description>
 						<posx>0</posx>
 						<posy>0</posy>
@@ -759,7 +760,37 @@
 						<height>2-row</height>
 						<align>center</align>
 						<aligny>center</aligny>
-						<label>$INFO[videoplayer.TVShowTitle]$INFO[VideoPlayer.ChannelName]$INFO[videoplayer.title]</label>
+						<label>$INFO[VideoPlayer.TVShowTitle] : $INFO[Player.title]</label>
+						<scroll>true</scroll>
+						<textcolor>textActive</textcolor>
+						<wrapmultiline>false</wrapmultiline>
+					</control>
+					<control type="label">
+						<visible>!Pvr.IsPlayingTv + String.IsEmpty(Videoplayer.TVShowTitle)</visible>
+						<description>Artist</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<font>small</font>
+						<width>auto</width>
+						<height>2-row</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[videoplayer.Title]</label>
+						<scroll>true</scroll>
+						<textcolor>textActive</textcolor>
+						<wrapmultiline>false</wrapmultiline>
+					</control>
+					<control type="label">
+						<visible>Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.Episode)</visible>
+						<description>Artist</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<font>small</font>
+						<width>auto</width>
+						<height>2-row</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>[CAPITALIZE][LOWERCASE]$INFO[videoplayer.Title][/LOWERCASE][/CAPITALIZE] : $INFO[Player.title]</label>
 						<scroll>true</scroll>
 						<textcolor>textActive</textcolor>
 						<wrapmultiline>false</wrapmultiline>

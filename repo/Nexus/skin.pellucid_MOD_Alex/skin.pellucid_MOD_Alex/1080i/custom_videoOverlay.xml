@@ -82,8 +82,8 @@
                 </animation>
             </control>
             <control type="label">
-                <description>Artist</description>
-                <posx>1-col-indent</posx>
+                <visible>!Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.TVShowTitle)</visible>
+	            <posx>1-col-indent</posx>
                 <posy>0</posy>
                 <font>itemSubTitle</font>
                 <width>stretch</width>
@@ -91,10 +91,39 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <height>1-row</height>
-                <label>$INFO[videoplayer.TVShowTitle]$INFO[VideoPlayer.ChannelName]$INFO[videoplayer.title]</label>
                 <scroll>true</scroll>
-                <textcolor>textActive</textcolor>
-            </control>
+	            <textcolor>textActive</textcolor>
+	            <label>$INFO[VideoPlayer.TVShowTitle] : $INFO[Player.title]</label>
+	        </control>
+            <control type="label">
+                <visible>!Pvr.IsPlayingTv + String.IsEmpty(Videoplayer.TVShowTitle)</visible>
+	            <posx>1-col-indent</posx>
+                <posy>0</posy>
+                <font>itemSubTitle</font>
+                <width>stretch</width>
+                <height>54</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <height>1-row</height>
+                <scroll>true</scroll>
+	            <textcolor>textActive</textcolor>
+	            <label>$INFO[videoplayer.Title]</label>
+	        </control>
+            <control type="label">
+                <visible>Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.Episode)</visible>
+	            <posx>1-col-indent</posx>
+                <posy>0</posy>
+                <font>itemSubTitle</font>
+                <width>stretch</width>
+                <height>54</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <height>1-row</height>
+                <scroll>true</scroll>
+	            <textcolor>textActive</textcolor>
+	            <label>[CAPITALIZE][LOWERCASE]$INFO[videoplayer.Title][/LOWERCASE][/CAPITALIZE] : $INFO[Player.title]</label>
+	        </control>
+
         </control>
         <!--debugging-->
         <include>DebugGrid</include>
