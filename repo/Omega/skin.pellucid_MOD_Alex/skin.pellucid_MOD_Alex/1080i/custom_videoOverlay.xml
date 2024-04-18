@@ -110,7 +110,7 @@
 	            <label>$INFO[videoplayer.Title]</label>
 	        </control>
             <control type="label">
-                <visible>Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.Episode)</visible>
+                <visible>Pvr.IsPlayingTv</visible>
 	            <posx>1-col-indent</posx>
                 <posy>0</posy>
                 <font>itemSubTitle</font>

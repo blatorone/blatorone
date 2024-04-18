@@ -781,7 +781,7 @@
 						<wrapmultiline>false</wrapmultiline>
 					</control>
 					<control type="label">
-						<visible>Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.Episode)</visible>
+						<visible>Pvr.IsPlayingTv</visible>
 						<description>Artist</description>
 						<posx>0</posx>
 						<posy>0</posy>

@@ -113,6 +113,8 @@
 						<wrapmultiline>true</wrapmultiline>
 	                    <label>[COLOR textDisabled][B]$INFO[Player.title][/B][/COLOR][CR]$INFO[VideoPlayer.EpisodeName]</label>
 	                </control>
+                    
+
 				</control>
 				<!--player position-->
 				<!--Start Time-->
