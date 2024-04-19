@@ -330,6 +330,8 @@ plugin://plugin.video.vavooto/?name=SKY+BUNDESLIGA
 plugin://plugin.video.vavooto/?name=SKY+BUNDESLIGA+1
 #EXTINF:-1 tvg-id="DE: Sky Bundesliga 2" group-title="Sport" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/120_sky_logo_skybundesligahd3_tvguide.png",Sky Bundesliga 2
 plugin://plugin.video.vavooto/?name=SKY+BUNDESLIGA+2
+#EXTINF:-1 tvg-id="DE: Sky Bundesliga 2" group-title="Sport" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/120_sky_logo_skybundesligahd3_tvguide.png",Sky Bundesliga 2 nur live
+plugin://plugin.video.vavooto/?name=SKY+BUNDESLIGA+2+%5BLIVE+DURING+EVENTS+ONLY%5D
 #EXTINF:-1 tvg-id="DE: Sky Bundesliga 3" group-title="Sport" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/121_sky_logo_skybundesligahd4_tvguide.png",Sky Bundesliga 3
 plugin://plugin.video.vavooto/?name=SKY+BUNDESLIGA+3
 #EXTINF:-1 tvg-id="DE: Sky Bundesliga 4" group-title="Sport" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/122_sky_logo_skybundesligahd5_tvguide.png",Sky Bundesliga 4
@@ -378,3 +380,5 @@ plugin://plugin.video.vavooto/?name=SKY+SPORT+MIX
 plugin://plugin.video.vavooto/?name=SKY SPORT PREMIER LEAGUE
 #EXTINF:-1 tvg-id="DE: Sky Sport News" group-title="Sport" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/17_sky_logo_skysportnewshd_tvguide.png",Sky Sport News
 plugin://plugin.video.vavooto/?name=SKY+SPORT+NEWS
+
+
