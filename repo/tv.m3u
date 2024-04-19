@@ -82,7 +82,7 @@ plugin://plugin.video.vavooto/?name=NATIONAL+GEOGRAPHIC
 #EXTINF:-1 tvg-id="DE: Nicktoons" group-title="Kinder" tvg-logo="http://epggw.a1.net/img/station/lightbg/100x100/1408.png",Nicktoons
 plugin://plugin.video.vavooto/?name=NICKTOONS
 #EXTINF:-1 tvg-id="DE: Nick Jr." group-title="Kinder" tvg-logo="http://epggw.a1.net/img/station/lightbg/100x100/1407.png",Nick Jr.
-plugin://plugin.video.vavooto/?name=NICK+JUNIOR
+plugin://plugin.video.vavooto/?name=NICK+JR
 #EXTINF:-1 tvg-id="DE: Nick/CC+1" group-title="Kinder" tvg-logo="http://epggw.a1.net/img/station/lightbg/100x100/1088.png",Nickelodeon
 plugin://plugin.video.vavooto/?name=NICKELODEON
 #EXTINF:-1 tvg-id="DE: ONE" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1024.png",ONE
