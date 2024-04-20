@@ -1,8 +1,19 @@
-[B]Version: 4.0.9 Release[/B]
+[B]Version: 1.0.14 Release[/B]
+
+21.04.2024
+
+ - PVROSD Backbutton
+ -Battery slide videofullscreen is not active
+
+18.04.2024
+ 
+ - Video Player title in Home and Overlay
 
 15.04.2024
 
  - Video OSD Change Player Title
+ - Video Overlay Title change
+ - Home Title change
 
 14.04.2024
 

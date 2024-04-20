@@ -2,6 +2,8 @@
 <window>
 	<defaultcontrol always="true">11</defaultcontrol>
 	<controls>
+		<!--Backbutton touchscreen-->
+       	<include>Backbutton</include>
 		<control type="label">
 			<posx>col-1-begin</posx>
 			<posy>row-1-begin</posy>
