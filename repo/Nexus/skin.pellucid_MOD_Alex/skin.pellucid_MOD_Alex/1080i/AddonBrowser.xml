@@ -264,6 +264,18 @@
                             <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
+                        <control type="label">
+                            <visible>ListItem.Property(addon.downloading)</visible>
+                            <posx>8-col-indent</posx>
+                            <posy>0</posy>
+                            <width>10-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>itemTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <shadowcolor></shadowcolor>
+                            <label>$INFO[ListItem.Property(Addon.Status)]</label>
+                        </control>
                     </itemlayout>
                     <focusedlayout width="14-col" height="84">
                         <control type="group">
@@ -346,6 +358,19 @@
                             <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
+                        <control type="label">
+                           <visible>ListItem.Property(addon.downloading)</visible>
+                            <posx>8-col-indent</posx>
+                            <posy>0</posy>
+                            <width>9-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>itemTitle</font>
+                            <textcolor>black</textcolor>
+                            <shadowcolor></shadowcolor>
+                            <label>$INFO[ListItem.Property(Addon.Status)]</label>
+                        </control>
+
                     </focusedlayout>
                 </control>                
             </control>
