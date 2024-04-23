@@ -18,7 +18,7 @@
 			<height>2-row</height>
 			<font>pageTitle</font>
 			<textcolor>textActive</textcolor>
-			<label>[COLOR highlight]$LOCALIZE[31179][/COLOR] $INFO[listitem.title]</label>
+			<label>[COLOR $VAR[highlight]]$LOCALIZE[31179][/COLOR] $INFO[listitem.title]</label>
 		</control>
 		<control type="label">
 			<visible>!integer.IsGreater(Container(996).NumItems,0)</visible>
@@ -28,7 +28,7 @@
 			<height>2-row</height>
 			<font>pageTitle</font>
 			<textcolor>textActive</textcolor>
-			<label>[COLOR highlight]$LOCALIZE[31179][/COLOR] $INFO[container(996).content]</label>
+			<label>[COLOR $VAR[highlight]]$LOCALIZE[31179][/COLOR] $INFO[container(996).content]</label>
 		</control>
 		<control type="grouplist" id="996">
             <posx>col-7-begin</posx>
@@ -56,7 +56,7 @@
 	        </control>
 	        <control type="button" id="1000">
 	            <description>Buttons</description>
-	            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+	            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
 	            <focusedcolor>Home</focusedcolor>
 	            <width>12-col</width>
 	        </control>

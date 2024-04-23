@@ -207,60 +207,60 @@
             <control type="button" id="999981">
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999982">
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999983">
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999984">
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999985">
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(0).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999986">
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(0).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999987">
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(0).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999988">
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(0).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999989">
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(0).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                 <onback>8000</onback>
             </control>
         </control>

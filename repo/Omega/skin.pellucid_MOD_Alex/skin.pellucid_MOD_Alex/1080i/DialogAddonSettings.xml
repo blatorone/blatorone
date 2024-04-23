@@ -43,7 +43,7 @@
                 <width>18-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>  
             <control type="label">
@@ -114,7 +114,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                         <include>spinFocusIcon</include>
                     </control>
                     <control type="image">
@@ -218,7 +218,7 @@
                 <textoffsetx>24</textoffsetx>
                 <height>2-row</height>
                 <font>settingsCategoryTitle</font>
-                <textcolor>highlight</textcolor>
+                <textcolor>$VAR[highlight]</textcolor>
             </control>
             <!--ok, cancel etc buttons-->
             <control type="group">

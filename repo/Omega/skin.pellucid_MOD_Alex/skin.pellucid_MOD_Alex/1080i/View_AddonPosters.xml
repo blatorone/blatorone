@@ -69,7 +69,7 @@
 							<height>56</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>masks/newContent.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
 							<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
@@ -95,7 +95,7 @@
 							<height>56</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>masks/newContent.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)</visible>
@@ -155,7 +155,7 @@
 							<height>56</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>masks/newContent.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
 							<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
@@ -181,7 +181,7 @@
 							<height>56</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>masks/newContent.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)</visible>
@@ -240,7 +240,7 @@
 							<height>56</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>masks/newContent.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
 							<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
@@ -250,7 +250,7 @@
 							<height>36</height>
 							<aligny>center</aligny>
 							<font>symbol</font>
-							<textcolor>Home</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 							<label></label>
 						</control>
 					</control>
@@ -266,7 +266,7 @@
 							<height>56</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>masks/newContent.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)</visible>
@@ -276,7 +276,7 @@
 							<height>36</height>
 							<aligny>center</aligny>
 							<font>symbol</font>
-							<textcolor>Home</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 							<label></label>
 						</control>
 					</control>
@@ -326,7 +326,7 @@
 							<height>56</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>masks/newContent.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
 							<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
@@ -336,7 +336,7 @@
 							<height>36</height>
 							<aligny>center</aligny>
 							<font>symbol</font>
-							<textcolor>Home</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 							<label></label>
 						</control>
 					</control>
@@ -352,7 +352,7 @@
 							<height>56</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>masks/newContent.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)</visible>
@@ -362,7 +362,7 @@
 							<height>36</height>
 							<aligny>center</aligny>
 							<font>symbol</font>
-							<textcolor>Home</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 							<label></label>
 						</control>
 					</control>

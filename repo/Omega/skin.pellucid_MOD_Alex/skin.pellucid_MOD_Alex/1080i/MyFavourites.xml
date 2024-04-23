@@ -134,7 +134,7 @@
 			                        <effect type="fade" time="500"/>
 			                        <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
 			                    </animation>
-                                <colordiffuse>highlight</colordiffuse>
+                                <colordiffuse>$VAR[highlight]</colordiffuse>
 			                </control>
                             <control type="image">
 								<animation type="focus">
@@ -178,7 +178,7 @@
 			                        <effect type="fade" time="500"/>
 			                        <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
 			                    </animation>
-                                <colordiffuse>highlight</colordiffuse>
+                                <colordiffuse>$VAR[highlight]</colordiffuse>
 			                </control>
                             <control type="image">
 								<animation type="focus">

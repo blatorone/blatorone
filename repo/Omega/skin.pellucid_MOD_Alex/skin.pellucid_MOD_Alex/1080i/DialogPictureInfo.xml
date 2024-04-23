@@ -30,7 +30,7 @@
                         <posy>0</posy>
                         <width>324</width>
                         <font>itemSubTitle</font>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$VAR[highlight]</textcolor>
                         <label>[B]$INFO[ListItem.label][/B]</label>
                         <shadowcolor></shadowcolor>
                     </control>

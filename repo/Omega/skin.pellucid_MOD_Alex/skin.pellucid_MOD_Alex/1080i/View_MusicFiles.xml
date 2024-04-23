@@ -96,7 +96,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -105,7 +105,7 @@
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
-                        <textcolor>Home</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
@@ -130,7 +130,7 @@
                         <height>100</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>110</posx>
@@ -139,7 +139,7 @@
                         <height>100</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
-                        <textcolor>Home</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>

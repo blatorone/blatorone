@@ -33,7 +33,7 @@
                 <width>584</width>
                 <height>1500</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--logo-->

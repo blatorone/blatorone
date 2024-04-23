@@ -41,7 +41,7 @@
                 <width>16-col</width>
                 <height>71</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" id="2">
@@ -51,7 +51,7 @@
                 <height>2-row</height>
                 <aligny>center</aligny>
                 <font>dialogTitle</font>
-                <textcolor>Home</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
                 <shadowcolor></shadowcolor>
             </control>
             <control type="grouplist" id="5">
@@ -93,7 +93,7 @@
                 <textoffsetx>24</textoffsetx>
                 <height>2-row</height>
                 <font>settingsCategoryTitle</font>
-                <textcolor>highlight</textcolor>
+                <textcolor>$VAR[highlight]</textcolor>
                 <shadowcolor></shadowcolor>
             </control>
             <!--dialog control buttons-->
@@ -137,7 +137,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                         <include>spinFocusIcon</include>
                     </control>
                     <control type="image">
@@ -156,7 +156,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
-                        <textcolor>Home</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor></shadowcolor>
                     </control>

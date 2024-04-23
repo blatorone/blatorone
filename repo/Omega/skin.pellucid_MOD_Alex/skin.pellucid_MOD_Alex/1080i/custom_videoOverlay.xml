@@ -18,7 +18,7 @@
                 <width>1-col-textbox</width>
                 <height>54</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
             </control>
 			<control type="image">
                 <visible>player.hasvideo + Skin.HasSetting(show_battery)</visible>
@@ -27,7 +27,7 @@
                 <width>1195</width>
                 <height>54</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight_Shadow</colordiffuse>
+                <colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
             </control>
             <control type="image">
                 <visible>player.hasvideo + !Skin.HasSetting(show_battery)</visible>
@@ -36,7 +36,7 @@
                 <width>1393</width>
                 <height>54</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight_Shadow</colordiffuse>
+                <colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
             </control>
             <control type="label">
 						<visible>!player.paused + !Skin.HasSetting(lowPowerMode)</visible>

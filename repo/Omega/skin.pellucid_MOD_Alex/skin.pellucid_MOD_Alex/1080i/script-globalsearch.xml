@@ -42,7 +42,7 @@
 	                    <height>2-row</height>
 	                    <aspectratio>stretch</aspectratio>
 	                    <texture border="0">colors/white.png</texture>
-	                    <colordiffuse>highlight</colordiffuse>
+	                    <colordiffuse>$VAR[highlight]</colordiffuse>
 	                </control>
 					<control type="label">
 						<posx>12</posx>
@@ -116,7 +116,7 @@
 	                    <height>2-row</height>
 	                    <aspectratio>stretch</aspectratio>
 	                    <texture border="0">colors/white.png</texture>
-	                    <colordiffuse>highlight</colordiffuse>
+	                    <colordiffuse>$VAR[highlight]</colordiffuse>
 	                </control>
 	                <control type="label">
 	                    <posx>1-col-indent</posx>

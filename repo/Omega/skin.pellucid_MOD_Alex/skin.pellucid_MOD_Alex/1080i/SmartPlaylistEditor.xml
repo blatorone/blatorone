@@ -16,7 +16,7 @@
                     <width>12-col</width>
                     <height>2-row</height>
                     <texture>colors/white.png</texture>
-                    <colordiffuse>highlight</colordiffuse>
+                    <colordiffuse>$VAR[highlight]</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="label">
@@ -247,7 +247,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
+                            <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
                         <control type="label">
@@ -321,7 +321,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
+                            <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
                         <control type="image">

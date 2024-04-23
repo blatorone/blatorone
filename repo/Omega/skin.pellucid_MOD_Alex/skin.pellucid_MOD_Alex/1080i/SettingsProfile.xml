@@ -44,7 +44,7 @@
                 <width>8-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
@@ -84,7 +84,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>itemSubTitle</font>
-                <label>$LOCALIZE[31107]: [COLOR highlight]$INFO[System.ProfileName][/COLOR]</label>
+                <label>$LOCALIZE[31107]: [COLOR $VAR[highlight]]$INFO[System.ProfileName][/COLOR]</label>
                 <textcolor>textActive</textcolor>
                 <shadowcolor></shadowcolor>
             </control>
@@ -155,7 +155,7 @@
                         <width>1-col</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                         <texture fallback="kodilogo.png">$INFO[listitem.icon]</texture>
                         <bordersize>0</bordersize>
                         <texture fallback="colors/white.png" border="0">$INFO[System.ProfileThumb]</texture>

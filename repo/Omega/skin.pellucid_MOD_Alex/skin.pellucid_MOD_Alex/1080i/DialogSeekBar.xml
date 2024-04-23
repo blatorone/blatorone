@@ -87,7 +87,7 @@
                 <width>20-col</width>
                 <height>6</height>
                 <texturebg colordiffuse="77000000">colors/black.png</texturebg>
-                <midtexture colordiffuse="highlight">colors/white.png</midtexture>
+                <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
                 <info>Player.Progress</info>
             </control>
 			<control type="progress">
@@ -97,7 +97,7 @@
 				<width>20-col</width>
 				<height>6</height>
 				<texturebg colordiffuse="77000000">colors/black.png</texturebg>
-				<midtexture colordiffuse="highlight">colors/white.png</midtexture>
+				<midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
 				<info>PVR.EpgEventProgress</info>
 			</control>
             <control type="slider" id="401">

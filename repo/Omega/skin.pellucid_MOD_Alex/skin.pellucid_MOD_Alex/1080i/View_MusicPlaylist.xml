@@ -48,7 +48,7 @@
                         <height>105</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
 					<control type="image">
 						<animation type="conditional" condition="player.paused">
@@ -61,7 +61,7 @@
                         <height>105</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
 					<control type="image">
                         <visible>ListItem.IsPlaying + !player.paused</visible>
@@ -157,7 +157,7 @@
                         <height>105</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
 					<control type="image">
 						<animation type="conditional" condition="player.playing">
@@ -169,7 +169,7 @@
                         <height>105</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="image">
                         <visible>ListItem.IsPlaying + !player.paused</visible>
@@ -192,7 +192,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
-                        <textcolor>Home</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <shadowcolor></shadowcolor>
                         <label></label>
                         <animation type="focus" loop="false" reversible="false">

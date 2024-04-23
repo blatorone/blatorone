@@ -173,7 +173,7 @@
 						<height>2-row</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="0">colors/white.png</texture>
-						<colordiffuse>highlight</colordiffuse>
+						<colordiffuse>$VAR[highlight]</colordiffuse>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -194,7 +194,7 @@
 						<height>2-row</height>
 						<aligny>center</aligny>
 						<font>itemTitle</font>
-						<textcolor>Home</textcolor>
+						<textcolor>$VAR[Home]</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -205,7 +205,7 @@
 						<aligny>center</aligny>
 						<align>right</align>
 						<font>itemTitle</font>
-						<textcolor>Home</textcolor>
+						<textcolor>$VAR[Home]</textcolor>
 						<shadowcolor></shadowcolor>
 						<label>[B]$INFO[ListItem.starttime][/B]</label>
 					</control>
@@ -216,7 +216,7 @@
 						<height>2-row</height>
 						<aligny>center</aligny>
 						<font>itemTitle</font>
-						<textcolor>Home</textcolor>
+						<textcolor>$VAR[Home]</textcolor>
 						<shadowcolor></shadowcolor>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
@@ -228,7 +228,7 @@
 						<aligny>center</aligny>
 						<align>right</align>
 						<font>itemTitle</font>
-						<textcolor>Home</textcolor>
+						<textcolor>$VAR[Home]</textcolor>
 						<shadowcolor></shadowcolor>
 						<label>[B]$INFO[ListItem.nextstarttime][/B]</label>
 					</control>
@@ -239,7 +239,7 @@
 						<height>2-row</height>
 						<aligny>center</aligny>
 						<font>itemTitle</font>
-						<textcolor>Home</textcolor>
+						<textcolor>$VAR[Home]</textcolor>
 						<shadowcolor></shadowcolor>
 						<label>$INFO[ListItem.nextTitle]</label>
 					</control>
@@ -252,7 +252,7 @@
 						<height>100</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="0">colors/white.png</texture>
-						<colordiffuse>highlight</colordiffuse>
+						<colordiffuse>$VAR[highlight]</colordiffuse>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -273,7 +273,7 @@
 						<height>100</height>
 						<aligny>center</aligny>
 						<font>itemTitle</font>
-						<textcolor>Home</textcolor>
+						<textcolor>$VAR[Home]</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -284,7 +284,7 @@
 						<aligny>center</aligny>
 						<align>right</align>
 						<font>itemTitle</font>
-						<textcolor>Home</textcolor>
+						<textcolor>$VAR[Home]</textcolor>
 						<shadowcolor></shadowcolor>
 						<label>[B]$INFO[ListItem.starttime][/B]</label>
 					</control>
@@ -295,7 +295,7 @@
 						<height>100</height>
 						<aligny>center</aligny>
 						<font>itemTitle</font>
-						<textcolor>Home</textcolor>
+						<textcolor>$VAR[Home]</textcolor>
 						<shadowcolor></shadowcolor>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
@@ -307,7 +307,7 @@
 						<aligny>center</aligny>
 						<align>right</align>
 						<font>itemTitle</font>
-						<textcolor>Home</textcolor>
+						<textcolor>$VAR[Home]</textcolor>
 						<shadowcolor></shadowcolor>
 						<label>[B]$INFO[ListItem.nextstarttime][/B]</label>
 					</control>
@@ -318,7 +318,7 @@
 						<height>100</height>
 						<aligny>center</aligny>
 						<font>itemTitle</font>
-						<textcolor>Home</textcolor>
+						<textcolor>$VAR[Home]</textcolor>
 						<shadowcolor></shadowcolor>
 						<label>$INFO[ListItem.nextTitle]</label>
 					</control>

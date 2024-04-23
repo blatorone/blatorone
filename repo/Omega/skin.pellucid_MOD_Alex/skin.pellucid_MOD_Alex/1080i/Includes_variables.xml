@@ -3,34 +3,34 @@
 <includes>
     <!--folder titles-->
     <variable name="listTitle">
-        <value condition="Window.isactive(Videos) + Container.Content(musicvideos)">$LOCALIZE[20389] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
-        <value condition="Window.isactive(Videos) + [Container.Content(movies) | container.content(tvshows)] + String.Contains(Container.folderpath,special://profile/playlists/video)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
+        <value condition="Window.isactive(Videos) + Container.Content(musicvideos)">$LOCALIZE[20389] [LOWERCASE][COLOR $VAR[highlight]]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
+        <value condition="Window.isactive(Videos) + [Container.Content(movies) | container.content(tvshows)] + String.Contains(Container.folderpath,special://profile/playlists/video)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE] [LOWERCASE][COLOR $VAR[highlight]]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
         <value condition="Window.isactive(Videos) + String.Contains(Container.folderpath,plugin)">$INFO[container.foldername] $INFO[ListItem.TVShowTitle,- ,] $INFO[ListItem.season,$LOCALIZE[20373] ,]</value>
-        <value condition="Window.isactive(Videos) + Container.Content(movies)">$LOCALIZE[20342] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
-        <value condition="Window.isactive(Videos) + Container.Content(tvshows)">$LOCALIZE[31216] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
+        <value condition="Window.isactive(Videos) + Container.Content(movies)">$LOCALIZE[20342] [LOWERCASE][COLOR $VAR[highlight]]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
+        <value condition="Window.isactive(Videos) + Container.Content(tvshows)">$LOCALIZE[31216] [LOWERCASE][COLOR $VAR[highlight]]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
         <value condition="Window.isactive(Videos) + [Container.Content(seasons) | Container.Content(episodes)]">$LOCALIZE[20343]</value>
         <value condition="Window.isactive(Videos) + !String.IsEmpty(container.foldername)">$INFO[container.foldername]</value>
         <value condition="Window.isactive(Videos) + String.IsEmpty(container.foldername)">$LOCALIZE[31012]</value>
         <value condition="Window.isactive(Music) + String.Contains(Container.folderpath,special://profile/playlists)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE]</value>
-        <value condition="Window.isactive(Music) + Container.Content(albums) + String.Contains(Container.folderpath,special://profile/playlists/music)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
-		<value condition="Window.isactive(Music) + String.contains(container.folderpath,spotify)">$INFO[container.foldername] [CAPITALIZE][COLOR highlight]$INFO[container.content][/COLOR][/CAPITALIZE]</value>
+        <value condition="Window.isactive(Music) + Container.Content(albums) + String.Contains(Container.folderpath,special://profile/playlists/music)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE] [LOWERCASE][COLOR $VAR[highlight]]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
+		<value condition="Window.isactive(Music) + String.contains(container.folderpath,spotify)">$INFO[container.foldername] [CAPITALIZE][COLOR $VAR[highlight]]$INFO[container.content][/COLOR][/CAPITALIZE]</value>
 		<value condition="Window.isactive(Music) + String.Contains(container.folderpath,addons://)">$LOCALIZE[1038]</value>
         <value condition="Window.isactive(Music) + String.Contains(container.folderpath,plugin://)">$INFO[container.foldername]</value>
-        <value condition="Window.isactive(Music) + Container.Content(albums)">$LOCALIZE[132] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
-        <value condition="Window.isactive(Music) + Container.Content(artists)">$LOCALIZE[133] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
+        <value condition="Window.isactive(Music) + Container.Content(albums)">$LOCALIZE[132] [LOWERCASE][COLOR $VAR[highlight]]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
+        <value condition="Window.isactive(Music) + Container.Content(artists)">$LOCALIZE[133] [LOWERCASE][COLOR $VAR[highlight]]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
         <value condition="Window.isactive(Music) + Container.Content(songs)">$LOCALIZE[182]</value>
-        <value condition="Window.isactive(Music) + !container.content(genres) + String.Contains(container.folderpath,musicdb://genres)">$LOCALIZE[31199] [COLOR highlight]$INFO[container.foldername][/COLOR]</value>
+        <value condition="Window.isactive(Music) + !container.content(genres) + String.Contains(container.folderpath,musicdb://genres)">$LOCALIZE[31199] [COLOR $VAR[highlight]]$INFO[container.foldername][/COLOR]</value>
         <value condition="Window.isactive(Music) + !String.IsEmpty(container.foldername)">$INFO[container.foldername]</value>
         <value condition="Window.isactive(Music) + String.IsEmpty(container.foldername)">$LOCALIZE[14237]</value>
     	<value condition="Window.isactive(Weather)">$LOCALIZE[8]</value>
-		<value condition="Window.isactive(TVchannels) | Window.isactive(TVGuide)">$LOCALIZE[19020] [COLOR highlight]$LOCALIZE[31078][/COLOR]</value>
-		<value condition="Window.isactive(RadioChannels)">$LOCALIZE[19021] [COLOR highlight]$LOCALIZE[31078][/COLOR]</value>
-		<value condition="Window.isactive(TVRecordings)">$LOCALIZE[19020] [COLOR highlight]$LOCALIZE[31165][/COLOR]</value>
-		<value condition="Window.isactive(MyPVRTimers.xml)">$LOCALIZE[31060] [COLOR highlight]$LOCALIZE[31087][/COLOR]</value>
+		<value condition="Window.isactive(TVchannels) | Window.isactive(TVGuide)">$LOCALIZE[19020] [COLOR $VAR[highlight]]$LOCALIZE[31078][/COLOR]</value>
+		<value condition="Window.isactive(RadioChannels)">$LOCALIZE[19021] [COLOR $VAR[highlight]]$LOCALIZE[31078][/COLOR]</value>
+		<value condition="Window.isactive(TVRecordings)">$LOCALIZE[19020] [COLOR $VAR[highlight]]$LOCALIZE[31165][/COLOR]</value>
+		<value condition="Window.isactive(MyPVRTimers.xml)">$LOCALIZE[31060] [COLOR $VAR[highlight]]$LOCALIZE[31087][/COLOR]</value>
 		<value condition="Window.isactive(programs)">$LOCALIZE[10506]</value>
 		<value condition="Window.isactive(musicplaylist) | Window.isactive(videoplaylist)">$LOCALIZE[31123]</value>
 		<value condition="Window.isactive(pictures)">$LOCALIZE[31056]</value>
-		<value condition="Window.isactive(games)">$LOCALIZE[31232] [LOWERCASE][COLOR highlight]$INFO[container.foldername][/COLOR][/LOWERCASE]</value>
+		<value condition="Window.isactive(games)">$LOCALIZE[31232] [LOWERCASE][COLOR $VAR[highlight]]$INFO[container.foldername][/COLOR][/LOWERCASE]</value>
 	</variable>
     <variable name="listSubTitle">
         <value condition="Window.isactive(Videos)">$INFO[Container.NumAllItems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
@@ -184,5 +184,64 @@
     <variable name="ThemeLabelColor">
 		<value >$INFO[Skin.String(ThemeLabelColor)]</value>
 		<value>FF6DB9E5</value>
+	</variable>
+    <variable name="highlight">
+		<value condition="Skin.HasSetting(Bluewood)">ff34495e</value>
+        <value condition="Skin.HasSetting(Darkblue)">ff00008B</value>
+        <value condition="Skin.HasSetting(Default)">ffad1e4e</value>
+        <value condition="Skin.HasSetting(Dribble)">ffe4405f</value>
+        <value condition="Skin.HasSetting(Gold)">ffFFD700</value>
+        <value condition="Skin.HasSetting(Green)">ff006400</value>
+        <value condition="Skin.HasSetting(Interest)">ffbd081c</value>
+        <value condition="Skin.HasSetting(lightblue)">ff87cefa</value>
+        <value condition="Skin.HasSetting(Medium)">ff02b875</value>
+        <value condition="Skin.HasSetting(Orange)">aace5621</value>
+        <value condition="Skin.HasSetting(PellucidV1)">ffee3343</value>
+        <value condition="Skin.HasSetting(Razzmatazz)">ffdb0a5b</value>
+        <value condition="Skin.HasSetting(Tumble)">ff34465d</value>
+        <value condition="Skin.HasSetting(Turquoise)">ff00868B</value>
+        <value condition="Skin.HasSetting(Vine)">ff00b489</value>
+        <value condition="Skin.HasSetting(VK)">ff4c75a3</value>
+        <value condition="!Skin.HasSetting(VK) + !Skin.HasSetting(Vine) + !Skin.HasSetting(Turquoise) + !Skin.HasSetting(Tumble) + !Skin.HasSetting(Razzmatazz) + !Skin.HasSetting(PellucidV1) + !Skin.HasSetting(Orange) + !Skin.HasSetting(Medium) + !Skin.HasSetting(lightblue) + !Skin.HasSetting(Interest) + !Skin.HasSetting(Green) + !Skin.HasSetting(Gold) + !Skin.HasSetting(Dribble) + !Skin.HasSetting(Default) + !Skin.HasSetting(Darkblue) + !Skin.HasSetting(Bluewood)">ffad1e4e</value>
+	</variable>
+
+    <variable name="highlight_Shadow">
+		<value condition="Skin.HasSetting(Bluewood)">7734495e</value>
+        <value condition="Skin.HasSetting(Darkblue)">7700008B</value>
+        <value condition="Skin.HasSetting(Default)">77ad1e4e</value>
+        <value condition="Skin.HasSetting(Dribble)">77e4405f</value>
+        <value condition="Skin.HasSetting(Gold)">77FFD700</value>
+        <value condition="Skin.HasSetting(Green)">77006400</value>
+        <value condition="Skin.HasSetting(Interest)">77bd081c</value>
+        <value condition="Skin.HasSetting(lightblue)">7787cefa</value>
+        <value condition="Skin.HasSetting(Medium)">7702b875</value>
+        <value condition="Skin.HasSetting(Orange)">77aace5621</value>
+        <value condition="Skin.HasSetting(PellucidV1)">77ee3343</value>
+        <value condition="Skin.HasSetting(Razzmatazz)">77db0a5b</value>
+        <value condition="Skin.HasSetting(Tumble)">7734465d</value>
+        <value condition="Skin.HasSetting(Turquoise)">7700868B</value>
+        <value condition="Skin.HasSetting(Vine)">7700b489</value>
+        <value condition="Skin.HasSetting(VK)">774c75a3</value>
+        <value condition="!Skin.HasSetting(VK) + !Skin.HasSetting(Vine) + !Skin.HasSetting(Turquoise) + !Skin.HasSetting(Tumble) + !Skin.HasSetting(Razzmatazz) + !Skin.HasSetting(PellucidV1) + !Skin.HasSetting(Orange) + !Skin.HasSetting(Medium) + !Skin.HasSetting(lightblue) + !Skin.HasSetting(Interest) + !Skin.HasSetting(Green) + !Skin.HasSetting(Gold) + !Skin.HasSetting(Dribble) + !Skin.HasSetting(Default) + !Skin.HasSetting(Darkblue) + !Skin.HasSetting(Bluewood)">77ad1e4e</value>
+	</variable>
+    
+    <variable name="Home">
+		<value condition="Skin.HasSetting(Bluewood)">fff0f0f0</value>
+        <value condition="Skin.HasSetting(Darkblue)">fff0f0f0</value>
+        <value condition="Skin.HasSetting(Default)">fff0f0f0</value>
+        <value condition="Skin.HasSetting(Dribble)">fff0f0f0</value>
+        <value condition="Skin.HasSetting(Gold)">ff111111</value>
+        <value condition="Skin.HasSetting(Green)">fff0f0f0</value>
+        <value condition="Skin.HasSetting(Interest)">fff0f0f0</value>
+        <value condition="Skin.HasSetting(lightblue)">ff111111</value>
+        <value condition="Skin.HasSetting(Medium)">fff0f0f0</value>
+        <value condition="Skin.HasSetting(Orange)">fff0f0f0</value>
+        <value condition="Skin.HasSetting(PellucidV1)">fff0f0f0</value>
+        <value condition="Skin.HasSetting(Razzmatazz)">fff0f0f0</value>
+        <value condition="Skin.HasSetting(Tumble)">fff0f0f0</value>
+        <value condition="Skin.HasSetting(Turquoise)">fff0f0f0</value>
+        <value condition="Skin.HasSetting(Vine)">fff0f0f0</value>
+        <value condition="Skin.HasSetting(VK)">fff0f0f0</value>
+        <value condition="!Skin.HasSetting(VK) + !Skin.HasSetting(Vine) + !Skin.HasSetting(Turquoise) + !Skin.HasSetting(Tumble) + !Skin.HasSetting(Razzmatazz) + !Skin.HasSetting(PellucidV1) + !Skin.HasSetting(Orange) + !Skin.HasSetting(Medium) + !Skin.HasSetting(lightblue) + !Skin.HasSetting(Interest) + !Skin.HasSetting(Green) + !Skin.HasSetting(Gold) + !Skin.HasSetting(Dribble) + !Skin.HasSetting(Default) + !Skin.HasSetting(Darkblue) + !Skin.HasSetting(Bluewood)">fff0f0f0</value>
 	</variable>
 </includes>

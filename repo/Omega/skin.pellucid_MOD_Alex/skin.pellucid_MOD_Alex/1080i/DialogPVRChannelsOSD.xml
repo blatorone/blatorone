@@ -114,7 +114,7 @@
                         <height>105</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
 					<control type="image">
 						<posx>16</posx>

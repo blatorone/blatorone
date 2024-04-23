@@ -23,7 +23,7 @@
                 <width>20-col</width>
                 <height>71</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--title-->
@@ -34,7 +34,7 @@
                 <height>2-row</height>
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[287] - $INFO[Player.Filename]</label>
-                <textcolor>Home</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
             </control>
             <!-- ** Required ** Do not change <id>or<type>-->
             <control type="group">
