@@ -145,7 +145,7 @@
 			                <width>542</width>
 			                <height>12</height>
 			                <texturebg colordiffuse="textboxInactive">colors/offblack.png</texturebg>
-			                <midtexture colordiffuse="highlight">colors/white.png</midtexture>
+			                <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
 			                <info>ListItem.PercentPlayed</info>
 			            </control>
 	                </itemlayout>
@@ -215,7 +215,7 @@
 				                <width>542</width>
 				                <height>12</height>
 				                <texturebg colordiffuse="textboxInactive">colors/offblack.png</texturebg>
-				                <midtexture colordiffuse="highlight">colors/white.png</midtexture>
+				                <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
 				                <info>ListItem.PercentPlayed</info>
 				            </control>
 	                    </control>
@@ -318,7 +318,7 @@
 							<height>56</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>masks/newContent.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
 							<posx>28</posx>
@@ -399,7 +399,7 @@
 								<height>56</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>masks/newContent.png</texture>
-								<colordiffuse>highlight</colordiffuse>
+								<colordiffuse>$VAR[highlight]</colordiffuse>
 							</control>
 							<control type="label">
 								<posx>28</posx>
@@ -408,7 +408,7 @@
 								<height>36</height>
 								<aligny>center</aligny>
 								<font>symbol</font>
-								<textcolor>Home</textcolor>
+								<textcolor>$VAR[Home]</textcolor>
 								<label></label>
 							</control>
 						</control>

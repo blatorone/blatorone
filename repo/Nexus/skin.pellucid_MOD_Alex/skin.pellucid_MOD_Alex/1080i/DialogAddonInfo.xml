@@ -44,7 +44,7 @@
                 <width>18-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--title-->
@@ -194,7 +194,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
+                            <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
                         <control type="image">
@@ -322,9 +322,9 @@
             <posx>382</posx>
             <radiowidth>785</radiowidth>
 		    <radioheight>76</radioheight>
-            <textureradioonfocus colordiffuse="highlight">buttons/radio-button-off.png</textureradioonfocus>
+            <textureradioonfocus colordiffuse="$VAR[highlight]">buttons/radio-button-off.png</textureradioonfocus>
             <textureradioonnofocus colordiffuse="textActive">buttons/radio-button-off.png</textureradioonnofocus>
-            <textureradioofffocus colordiffuse="highlight">buttons/radio-button-on.png</textureradioofffocus>
+            <textureradioofffocus colordiffuse="$VAR[highlight]">buttons/radio-button-on.png</textureradioofffocus>
             <textureradiooffnofocus colordiffuse="textActive">buttons/radio-button-on.png</textureradiooffnofocus>
             <visible>Control.IsEnabled(7)</visible>
         </control>

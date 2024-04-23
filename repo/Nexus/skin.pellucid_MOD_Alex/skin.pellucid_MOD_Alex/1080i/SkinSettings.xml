@@ -41,7 +41,7 @@
                 <width>18-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--title-->
@@ -52,7 +52,7 @@
                 <height>2-row</height>
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[20077]</label>
-                <textcolor>textActive</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
                 <shadowcolor></shadowcolor>
             </control>
             <!--sub menu-->
@@ -111,6 +111,9 @@
                             <label>$LOCALIZE[31044]</label>
                         </item>
                         <item id="4">
+                            <label>$LOCALIZE[31259]</label>
+                        </item>
+                        <item id="5">
                             <label>$LOCALIZE[5]</label>
                         </item>
                     </content>
@@ -286,7 +289,7 @@
                     <selected>Skin.HasSetting(disableRecentAlbums)</selected>
                 </control>
                 <control type="radiobutton" id="21">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings) + !System.Platform.IOS</visible>
+                    <visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings) + !System.Platform.IOS</visible>
                     <description>Enable Battery Level</description>
                     <width>14-col</width>
                     <label>31241</label>
@@ -294,7 +297,7 @@
                     <selected>Skin.HasSetting(show_battery)</selected>
                 </control>
                 <control type="radiobutton" id="22">
-                    <visible>System.Platform.Android + Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                    <visible>System.Platform.Android + Container(8000).Hasfocus(5) + !Skin.HasSetting(settings)</visible>
                     <description>Android System allowed</description>
                     <width>14-col</width>
                     <label>31246</label>
@@ -302,7 +305,7 @@
                     <selected>Skin.HasSetting(Show Android Apps)</selected>
                 </control>
                 <control type="radiobutton" id="23">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings) + System.Platform.Android</visible>
+                    <visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings) + System.Platform.Android</visible>
                     <description>Enable Youtube</description>
                     <width>14-col</width>
                     <label>31255</label>
@@ -310,7 +313,7 @@
                     <selected>Skin.HasSetting(Youtube)</selected>
                 </control>
                 <control type="radiobutton" id="24">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings) + System.Platform.Android</visible>
+                    <visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings) + System.Platform.Android</visible>
                     <description>Enable SmartTube</description>
                     <width>14-col</width>
                     <label>31256</label>
@@ -318,7 +321,7 @@
                     <selected>Skin.HasSetting(SmartTube)</selected>
                 </control>
                 <control type="radiobutton" id="25">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings)</visible>
                     <description>Weather icons</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[8] Icons ($LOCALIZE[31254])</label>
@@ -326,7 +329,7 @@
                     <selected>Skin.HasSetting(weather icons)</selected>
                 </control>
                 <control type="radiobutton" id="26">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings)</visible>
                     <description>Enable Back Button for Touchscreen</description>
                     <width>14-col</width>
                     <label>31242</label>
@@ -334,7 +337,7 @@
                     <selected>Skin.HasSetting(Touch)</selected>
                 </control>
                 <control type="radiobutton" id="27">
-                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <visible>Container(8000).Hasfocus(5)</visible>
                     <description>Disable Settings Button</description>
                     <width>14-col</width>
                     <label>31243</label>
@@ -342,12 +345,381 @@
                     <selected>Skin.HasSetting(settings)</selected>
                 </control>
                 <control type="radiobutton" id="28">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
                     <label>31244</label>
                     <onclick>Skin.Togglesetting(Further_apart)</onclick>
                     <selected>Skin.HasSetting(Further_apart)</selected>
+                </control>
+
+                <control type="radiobutton" id="29">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Lightblue</label>
+                    <onclick>Skin.Togglesetting(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(lightblue)</selected>
+                </control>
+                <control type="radiobutton" id="30">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Bluewood</label>
+                    <onclick>Skin.Togglesetting(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(Bluewood)</selected>
+                </control>
+                <control type="radiobutton" id="31">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Darkblue</label>
+                    <onclick>Skin.Togglesetting(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(Darkblue)</selected>
+                </control>
+                <control type="radiobutton" id="32">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Default</label>
+                    <onclick>Skin.Togglesetting(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(Default)</selected>
+                </control>
+                <control type="radiobutton" id="33">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Dribble</label>
+                    <onclick>Skin.Togglesetting(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(Dribble)</selected>
+                </control>
+                <control type="radiobutton" id="34">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Gold</label>
+                    <onclick>Skin.Togglesetting(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(Gold)</selected>
+                </control>
+                <control type="radiobutton" id="35">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Green</label>
+                    <onclick>Skin.Togglesetting(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(Green)</selected>
+                </control>
+                <control type="radiobutton" id="36">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Interest</label>
+                    <onclick>Skin.Togglesetting(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(Interest)</selected>
+                </control>
+                <control type="radiobutton" id="37">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Medium</label>
+                    <onclick>Skin.Togglesetting(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(Medium)</selected>
+                </control>
+                <control type="radiobutton" id="38">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Orange</label>
+                    <onclick>Skin.Togglesetting(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(Orange)</selected>
+                </control>
+                <control type="radiobutton" id="39">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>PellucidV1</label>
+                    <onclick>Skin.Togglesetting(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(PellucidV1)</selected>
+                </control>
+                <control type="radiobutton" id="40">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Razzmatazz</label>
+                    <onclick>Skin.Togglesetting(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(Razzmatazz)</selected>
+                </control>
+                <control type="radiobutton" id="41">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Tumble</label>
+                    <onclick>Skin.Togglesetting(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(Tumble)</selected>
+                </control>
+                <control type="radiobutton" id="42">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Turquoise</label>
+                    <onclick>Skin.Togglesetting(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(Turquoise)</selected>
+                </control>
+                <control type="radiobutton" id="43">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>Vine</label>
+                    <onclick>Skin.Togglesetting(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <selected>Skin.HasSetting(Vine)</selected>
+                </control>
+                <control type="radiobutton" id="44">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>VK</label>
+                    <onclick>Skin.Togglesetting(VK)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <selected>Skin.HasSetting(VK)</selected>
                 </control>
                 
             </control>

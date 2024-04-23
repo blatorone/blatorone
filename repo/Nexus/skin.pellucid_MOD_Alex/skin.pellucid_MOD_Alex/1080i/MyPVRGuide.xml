@@ -159,7 +159,7 @@
 							<width>216</width>
 							<height>2-row</height>
 							<texture>colors/white.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="image">
 							<posx>0</posx>
@@ -178,7 +178,7 @@
 							<width>198</width>
 							<height>2-row</height>
 							<font>itemTitle</font>
-							<textcolor>Home</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 							<selectedcolor>textActive</selectedcolor>
 							<shadowcolor></shadowcolor>
 							<label>$INFO[ListItem.ChannelName]</label>
@@ -191,7 +191,7 @@
 							<width>216</width>
 							<height>3-row</height>
 							<texture>colors/white.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="image">
 							<posx>0</posx>
@@ -210,7 +210,7 @@
 							<width>198</width>
 							<height>3-row</height>
 							<font>itemTitle</font>
-							<textcolor>Home</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 							<selectedcolor>textActive</selectedcolor>
 							<shadowcolor></shadowcolor>
 							<label>$INFO[ListItem.ChannelName]</label>
@@ -245,7 +245,7 @@
 							<height>12</height>
 							<aspectratio>stretch</aspectratio>
 							<texture border="0" diffuse="masks/circle.png">colors/white.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 							<animation effect="fade" start="30" end="100" time="1000" condition="true" pulse="true">conditional</animation>
 						</control>
 					</itemlayout>
@@ -277,7 +277,7 @@
 							<height>12</height>
 							<aspectratio>stretch</aspectratio>
 							<texture border="0" diffuse="masks/circle.png">colors/white.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 							<animation effect="fade" start="30" end="100" time="1000" condition="true" pulse="true">conditional</animation>
 						</control>
 					</itemlayout>
@@ -286,14 +286,14 @@
 							<width>213</width>
 							<height>2-row</height>
 							<texture border="0">colors/white.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label" id="1">
 							<width>204</width>
 							<height>2-row</height>
 							<font>itemTitle</font>
 							<textoffsetx>12</textoffsetx>
-							<textcolor>Home</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 							<selectedcolor>textActive</selectedcolor>
 							<shadowcolor></shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
@@ -306,7 +306,7 @@
 							<height>12</height>
 							<aspectratio>stretch</aspectratio>
 							<texture border="0" diffuse="masks/circle.png">colors/black.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 							<animation effect="fade" start="30" end="100" time="1000" condition="true" pulse="true">conditional</animation>
 						</control>
 					</focusedlayout>
@@ -315,14 +315,14 @@
 							<width>213</width>
 							<height>3-row</height>
 							<texture border="0">colors/white.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label" id="1">
 							<width>204</width>
 							<height>3-row</height>
 							<font>itemTitle</font>
 							<textoffsetx>12</textoffsetx>
-							<textcolor>Home</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 							<selectedcolor>textActive</selectedcolor>
 							<shadowcolor></shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
@@ -335,7 +335,7 @@
 							<height>12</height>
 							<aspectratio>stretch</aspectratio>
 							<texture border="0" diffuse="masks/circle.png">colors/black.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 							<animation effect="fade" start="30" end="100" time="1000" condition="true" pulse="true">conditional</animation>
 						</control>
 					</focusedlayout>
@@ -391,7 +391,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
+                            <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
                         <control type="image">
@@ -410,7 +410,7 @@
                             <aligny>center</aligny>
                             <align>center</align>
                             <font>symbolLarge</font>
-                            <textcolor>Home</textcolor>
+                            <textcolor>$VAR[Home]</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor></shadowcolor>
                         </control>
@@ -497,7 +497,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
+                            <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
                         <control type="image">
@@ -516,7 +516,7 @@
                             <aligny>center</aligny>
                             <align>center</align>
                             <font>symbolLarge</font>
-                            <textcolor>Home</textcolor>
+                            <textcolor>$VAR[Home]</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor></shadowcolor>
                         </control>

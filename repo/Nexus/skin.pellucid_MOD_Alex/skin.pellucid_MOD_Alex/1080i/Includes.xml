@@ -142,7 +142,7 @@
                         <width>4-col-gutter</width>
                         <height>2-row</height>
                         <align>center</align>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$VAR[highlight]</textcolor>
                         <font>itemTitle</font>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
@@ -264,7 +264,7 @@
                 <height>80</height>
                 <aspectratio>keep</aspectratio>
                 <animation effect="rotate" end="-45" center="auto" time="280" delay="0" loop="true" reversible="false" condition="true">Conditional</animation>
-                <texture colordiffuse="highlight">spinner.png</texture>
+                <texture colordiffuse="$VAR[highlight]">spinner.png</texture>
                 <animation effect="fade" end="100" time="300" delay="200">WindowOpen</animation>
             </control>
             <control type="image">
@@ -275,7 +275,7 @@
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <animation effect="rotate" end="45" center="auto" time="280" delay="0" loop="true" reversible="false" condition="true">Conditional</animation>
-                <texture flipx="true" colordiffuse="highlight_Shadow">spinner.png</texture>
+                <texture flipx="true" colordiffuse="$VAR[highlight_Shadow]">spinner.png</texture>
                 <animation effect="fade" end="100" time="300" delay="200">WindowOpen</animation>
             </control>
         </control>
@@ -569,6 +569,7 @@
         <scroll>true</scroll>
         <textcolor>textActive</textcolor>
         <align>left</align>
+        <label2></label2>
         <visible>Skin.HasSetting(DebugInfo)</visible>
     </include>
     <include name="DebugGrid">

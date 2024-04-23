@@ -204,7 +204,7 @@
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
                         <bordersize>0</bordersize>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -227,7 +227,7 @@
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
                         <bordersize>0</bordersize>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="label">
                         <visible>ListItem.IsParentFolder</visible>
@@ -370,7 +370,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -392,7 +392,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
-                        <textcolor>Home</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <shadowcolor></shadowcolor>
                         <label></label>
                     </control>
@@ -405,7 +405,7 @@
                       <aligny>center</aligny>
                       <align>right</align>
                       <font>symbolLarge</font>
-                      <textcolor>Home</textcolor>
+                      <textcolor>$VAR[Home]</textcolor>
                       <shadowcolor></shadowcolor>
                       <label></label>
                     </control>

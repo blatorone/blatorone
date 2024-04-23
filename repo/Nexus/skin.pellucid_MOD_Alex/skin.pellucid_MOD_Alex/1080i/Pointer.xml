@@ -13,7 +13,7 @@
             <width>45</width>
             <height>45</height>
             <texture>UIControls/PointerNF.png</texture>#
-            <colordiffuse>highlight</colordiffuse>
+            <colordiffuse>$VAR[highlight]</colordiffuse>
         </control>
         <control type="image" id="2">
 			<visible>!Skin.HasSetting(hideMouse)</visible>
@@ -21,7 +21,7 @@
             <width>45</width>
             <height>45</height>
             <texture>UIControls/PointerFO.png</texture>
-            <colordiffuse>highlight</colordiffuse>
+            <colordiffuse>$VAR[highlight]</colordiffuse>
         </control>
         <control type="image" id="3">
 			<visible>!Skin.HasSetting(hideMouse)</visible>

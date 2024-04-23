@@ -5,8 +5,8 @@
         <control type="button" id="506">
             <description>Search</description>
             <visible>System.HasAddon(script.globalsearch)</visible>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>137</label>
             <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true&amp;livetv=true&amp;actors=true&amp;directors=true)</onclick>
@@ -14,8 +14,8 @@
         <control type="button" id="3">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort by</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
             <onclick condition="window.isactive(videos)">sendclick(videos,3)</onclick>
@@ -26,9 +26,9 @@
         <control type="togglebutton" id="4">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort direction</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <alttexturefocus colordiffuse="highlight">colors/white.png</alttexturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <alttexturefocus colordiffuse="$VAR[highlight]">colors/white.png</alttexturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <label>31109</label>
             <altlabel>31110</altlabel>
             <width>12-col</width>
@@ -40,8 +40,8 @@
         <control type="button" id="509">
             <visible>[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml)] + PVR.HasTVChannels</visible>
             <description>PVR Channel Group</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31222</label>
 			<onclick condition="window.isactive(tvchannels)">sendclick(tvchannels,28)</onclick>
@@ -51,15 +51,15 @@
         <control type="button" id="508">
             <visible>[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml)] + PVR.HasTVChannels</visible>
             <description>PVR Timers</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31087</label>
             <onclick>ActivateWindow(TVTimerRules)</onclick>
         </control>
         <control type="button" id="507">
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>653</label>
             <onclick>UpdateLibrary(video)</onclick>
@@ -68,20 +68,20 @@
             <description>Watched Toggle</description>
             <label>31195</label>
             <width>12-col</width>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
-            <textureradioonfocus colordiffuse="Home">buttons/radio-button-on.png</textureradioonfocus>
-            <textureradioofffocus colordiffuse="Home">buttons/radio-button-off.png</textureradioofffocus>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
+            <textureradioonfocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonfocus>
+            <textureradioofffocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradioofffocus>
             <onclick>sendclick(videos,14)</onclick>
         </control>
         <control type="radiobutton" id="11">
             <description>Unlock Shares</description>
             <label>20336</label>
             <width>12-col</width>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
-            <textureradioonfocus colordiffuse="Home">buttons/radio-button-on.png</textureradioonfocus>
-            <textureradioofffocus colordiffuse="Home">buttons/radio-button-off.png</textureradioofffocus>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
+            <textureradioonfocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonfocus>
+            <textureradioofffocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradioofffocus>
             <onclick>right</onclick>
             <onclick>Mastermode</onclick>
             <selected>system.ismaster</selected>
@@ -89,8 +89,8 @@
         </control>
 		<control type="button" id="13">
             <description>Edit video menu</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31172</label>
             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=videosubmenu)</onclick>
@@ -100,8 +100,8 @@
     <include name="musicSideMenu">
         <control type="button" id="553">
             <description>Playlist</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31123</label>
             <onclick>activateWindow(musicplaylist)</onclick>
@@ -109,8 +109,8 @@
 		<control type="button" id="506">
             <description>Search</description>
             <visible>System.HasAddon(script.globalsearch)</visible>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>137</label>
             <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true&amp;songs=true&amp;musicvideos=true)</onclick>
@@ -119,8 +119,8 @@
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort by</description>
             <width>12-col</width>
-            <focusedcolor>Home</focusedcolor>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
             <onclick condition="window.isactive(music)">sendclick(music,3)</onclick>
 			<onclick condition="window.isactive(radiochannels)">sendclick(radiochannels,3)</onclick>
@@ -133,9 +133,9 @@
             <label>31109</label>
             <altlabel>31110</altlabel>
             <width>12-col</width>
-            <focusedcolor>Home</focusedcolor>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <alttexturefocus colordiffuse="highlight">colors/white.png</alttexturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <alttexturefocus colordiffuse="$VAR[highlight]">colors/white.png</alttexturefocus>
             <onclick condition="window.isactive(music)">sendclick(music,4)</onclick>
 			<onclick condition="window.isactive(radiochannels)">sendclick(radiochannels,4)</onclick>
 			<onclick condition="window.isactive(radiorecordings)">sendclick(radiorecordings,4)</onclick>
@@ -144,8 +144,8 @@
         <control type="button" id="509">
 		  	<visible>[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml)] + PVR.HasRadioChannels</visible>
             <description>PVR Channel Group</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31222</label>
             <onclick>sendclick(radiochannels,28)</onclick>
@@ -153,16 +153,16 @@
         <control type="button" id="508">
 		  	<visible>[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml)] + PVR.HasRadioChannels</visible>
             <description>PVR Timers</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31087</label>
             <onclick>ActivateWindow(RadioTimerRules)</onclick>
         </control>
         <control type="button" id="504">
             <width>12-col</width>
-            <focusedcolor>Home</focusedcolor>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
             <label>653</label>
             <onclick>UpdateLibrary(music)</onclick>
         </control>
@@ -170,18 +170,18 @@
             <!--<visible>musicPlaylist</visible>-->
             <description>Shuffle</description>
             <width>12-col</width>
-            <focusedcolor>Home</focusedcolor>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <textureradioonfocus colordiffuse="Home">buttons/radio-button-on.png</textureradioonfocus>
-            <textureradioofffocus colordiffuse="Home">buttons/radio-button-off.png</textureradioofffocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <textureradioonfocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonfocus>
+            <textureradioofffocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradioofffocus>
             <label>191</label>
             <onclick condition="!Playlist.IsRandom">PlayerControl(randomOn)</onclick>
             <onclick condition="Playlist.IsRandom">PlayerControl(randomOff)</onclick>
         </control>
 		<control type="button" id="14">
             <description>Edit music menu</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31173</label>
             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=musicsubmenu)</onclick>
@@ -194,8 +194,8 @@
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort by</description>
             <width>12-col</width>
-            <focusedcolor>Home</focusedcolor>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
             <label>103</label>
             <onclick>sendclick(pictures,3)</onclick>
         </control>
@@ -205,15 +205,15 @@
             <label>31109</label>
             <altlabel>31110</altlabel>
             <width>12-col</width>
-            <focusedcolor>Home</focusedcolor>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <alttexturefocus colordiffuse="highlight">colors/white.png</alttexturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <alttexturefocus colordiffuse="$VAR[highlight]">colors/white.png</alttexturefocus>
             <onclick>sendclick(pictures,4)</onclick>
         </control>
 		<control type="button" id="17">
             <description>Edit pictures menu</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31174</label>
             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=picturessubmenu)</onclick>
@@ -223,8 +223,8 @@
     <include name="addonsSideMenu">	
         <control type="radiobutton" id="7">
             <width>12-col</width>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <textureradiofocus></textureradiofocus>
             <textureradionofocus></textureradionofocus>
             <radiowidth/>
@@ -234,8 +234,8 @@
         </control>
         <control type="radiobutton" id="8">
             <width>12-col</width>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <textureradiofocus></textureradiofocus>
             <textureradionofocus></textureradionofocus>
             <radiowidth/>
@@ -244,8 +244,8 @@
             <onclick>sendclick(addonbrowser,8)</onclick>
         </control>
         <control type="button" id="9">
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>24034</label>
             <onclick>sendclick(addonbrowser,9)</onclick>
@@ -256,8 +256,8 @@
         <control type="button" id="3">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort by</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
             <onclick>sendclick(games,3)</onclick>
@@ -265,9 +265,9 @@
         <control type="togglebutton" id="4">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort direction</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <alttexturefocus colordiffuse="highlight">colors/white.png</alttexturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <alttexturefocus colordiffuse="$VAR[highlight]">colors/white.png</alttexturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <label>31109</label>
             <altlabel>31110</altlabel>
             <width>12-col</width>
@@ -275,8 +275,8 @@
         </control>
 		<control type="button" id="17">
             <description>Edit Games menu</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>Home</focusedcolor>
+            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31233</label>
             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=gamesubmenu)</onclick>

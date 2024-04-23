@@ -53,32 +53,32 @@
                     <posy>0</posy>
 					<orientation>vertical</orientation>
 					<itemgap>32</itemgap>
-					<control type="label">
-                        <visible>String.IsEmpty(Videoplayer.TVShowTitle) + PVR.PlayingTv</visible>
+                    <control type="label">
+                        <visible>Pvr.IsPlayingTv</visible>
 	                    <width>8-col</width>
 	                    <align>left</align>
 	                    <height>1-row</height>
 	                    <font>itemTitle</font>
-	                    <textcolor>highlight</textcolor>
+	                    <textcolor>$VAR[highlight]</textcolor>
 	                    <label>[CAPITALIZE][LOWERCASE]$INFO[videoplayer.Title][/LOWERCASE][/CAPITALIZE]</label>
 	                </control>
                     <control type="label">
-                        <visible>String.IsEmpty(Videoplayer.TVShowTitle) + !PVR.PlayingTv</visible>
+                        <visible>!Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.TVShowTitle)</visible>
 	                    <width>8-col</width>
 	                    <align>left</align>
 	                    <height>1-row</height>
 	                    <font>itemTitle</font>
-	                    <textcolor>highlight</textcolor>
-	                    <label>$INFO[videoplayer.Title]</label>
+	                    <textcolor>$VAR[highlight]</textcolor>
+	                    <label>$INFO[VideoPlayer.TVShowTitle]</label>
 	                </control>
                     <control type="label">
-                        <visible>!String.IsEmpty(Videoplayer.TVShowTitle)</visible>
+                        <visible>!Pvr.IsPlayingTv + String.IsEmpty(Videoplayer.TVShowTitle)</visible>
 	                    <width>8-col</width>
 	                    <align>left</align>
 	                    <height>1-row</height>
 	                    <font>itemTitle</font>
-	                    <textcolor>highlight</textcolor>
-	                    <label>$INFO[videoplayer.TVShowTitle]</label>
+	                    <textcolor>$VAR[highlight]</textcolor>
+	                    <label>$INFO[VideoPlayer.title]</label>
 	                </control>
                     <control type="label">
                         <visible>!Pvr.IsPlayingTv</visible>
@@ -113,8 +113,6 @@
 						<wrapmultiline>true</wrapmultiline>
 	                    <label>[COLOR textDisabled][B]$INFO[Player.title][/B][/COLOR][CR]$INFO[VideoPlayer.EpisodeName]</label>
 	                </control>
-                    
-
 				</control>
 				<!--player position-->
 				<!--Start Time-->
@@ -128,7 +126,7 @@
                         <width>2-col</width>
                         <font>itemSubTitle</font>
                         <scroll>true</scroll>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$VAR[highlight]</textcolor>
                         <label>[B]$LOCALIZE[31146][/B]</label>
                         <shadowcolor></shadowcolor>
                     </control>
@@ -150,7 +148,7 @@
                         <width>2-col</width>
                         <font>itemSubTitle</font>
                         <scroll>true</scroll>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$VAR[highlight]</textcolor>
                         <label>[B]$LOCALIZE[31143][/B]</label>
                         <shadowcolor></shadowcolor>
                     </control>
@@ -172,7 +170,7 @@
                         <width>2-col</width>
                         <font>itemSubTitle</font>
                         <scroll>true</scroll>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$VAR[highlight]</textcolor>
                         <label>[B]$LOCALIZE[31245][/B]</label>
                         <shadowcolor></shadowcolor>
                     </control>
@@ -194,7 +192,7 @@
                         <width>2-col</width>
                         <font>itemSubTitle</font>
                         <scroll>true</scroll>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$VAR[highlight]</textcolor>
                         <label>[B]$LOCALIZE[31160][/B]</label>
                         <shadowcolor></shadowcolor>
                     </control>
@@ -217,7 +215,7 @@
                         <width>7-col</width>
                         <height>6</height>
                         <texturebg colordiffuse="77000000">colors/black.png</texturebg>
-                        <midtexture colordiffuse="highlight">colors/white.png</midtexture>
+                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
                         <info>Player.Progress</info>
                     </control>
                     <control type="label">
@@ -236,7 +234,7 @@
                         <posy>0</posy>
                         <width>2-col</width>
                         <font>itemSubTitle</font>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$VAR[highlight]</textcolor>
                         <label>[B]$LOCALIZE[19031][/B]</label>
                         <shadowcolor></shadowcolor>
                     </control>
@@ -315,7 +313,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -325,7 +323,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
-                        <textcolor>Home</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor></shadowcolor>
                     </control>
@@ -431,7 +429,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="image">
                         <posx>1-col</posx>
@@ -450,7 +448,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
-                        <textcolor>Home</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor></shadowcolor>
                     </control>

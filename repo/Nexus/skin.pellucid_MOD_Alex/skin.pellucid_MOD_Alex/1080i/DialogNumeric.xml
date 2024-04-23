@@ -58,8 +58,8 @@
                     <onup>20</onup>
                     <ondown>14</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="12">
@@ -75,8 +75,8 @@
                     <onup>10</onup>
                     <ondown>15</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="13">
@@ -92,8 +92,8 @@
                     <onup>22</onup>
                     <ondown>16</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="23">
@@ -110,8 +110,8 @@
                     <onup>24</onup>
                     <ondown>21</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <font>buttonTitle</font>
                 </control>
@@ -129,8 +129,8 @@
                     <onup>11</onup>
                     <ondown>17</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="15">
@@ -146,8 +146,8 @@
                     <onup>12</onup>
                     <ondown>18</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="16">
@@ -163,8 +163,8 @@
                     <onup>13</onup>
                     <ondown>19</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="21">
@@ -181,8 +181,8 @@
                     <onup>23</onup>
                     <ondown>24</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <font>buttonTitle</font>
                 </control>
@@ -200,8 +200,8 @@
                     <onup>14</onup>
                     <ondown>20</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="18">
@@ -217,8 +217,8 @@
                     <onup>15</onup>
                     <ondown>10</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="19">
@@ -234,8 +234,8 @@
                     <onup>16</onup>
                     <ondown>22</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="24">
@@ -251,8 +251,8 @@
                     <onup>21</onup>
                     <ondown>23</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <onclick>action(close)</onclick>
                 </control>
@@ -270,8 +270,8 @@
                     <onup>17</onup>
                     <ondown>11</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="10">
@@ -287,8 +287,8 @@
                     <onup>18</onup>
                     <ondown>12</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="22">
@@ -304,8 +304,8 @@
                     <onup>19</onup>
                     <ondown>13</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>Home</focusedcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
             </control>

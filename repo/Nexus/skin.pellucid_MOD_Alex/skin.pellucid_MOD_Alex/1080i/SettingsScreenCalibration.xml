@@ -15,7 +15,7 @@
 			<width>128</width>
 			<height>128</height>
 			<texturefocus>calibration/cal_tl.png</texturefocus>
-            <colordiffuse>highlight</colordiffuse>
+            <colordiffuse>$VAR[highlight]</colordiffuse>
 			<texturenofocus></texturenofocus>
 			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
 				<eventconfig type="up" />
@@ -31,7 +31,7 @@
 			<width>128</width>
 			<height>128</height>
 			<texturefocus>calibration/cal_br.png</texturefocus>
-            <colordiffuse>highlight</colordiffuse>
+            <colordiffuse>$VAR[highlight]</colordiffuse>
 			<texturenofocus></texturenofocus>
 			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
 				<eventconfig type="up" />
@@ -47,7 +47,7 @@
 			<width>500</width>
 			<height>500</height>
 			<texturefocus>calibration/cal_ratio.png</texturefocus>
-            <colordiffuse>highlight</colordiffuse>
+            <colordiffuse>$VAR[highlight]</colordiffuse>
 			<texturenofocus></texturenofocus>
 			<movingspeed acceleration="140" maxvelocity="300" resettimeout="180" delta="1">
 				<eventconfig type="left" />
@@ -62,7 +62,7 @@
 			<height>90</height>
 			<!-- NOTE: The image must have 40px of trasparent on top and bottom the bar -->
 			<texturefocus>calibration/cal_sub.png</texturefocus>
-            <colordiffuse>highlight</colordiffuse>
+            <colordiffuse>$VAR[highlight]</colordiffuse>
 			<texturenofocus></texturenofocus>
 			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
 				<eventconfig type="up" />
@@ -76,7 +76,7 @@
 			<width>100</width>
 			<height>100</height>
 			<texturefocus>calibration/reset.png</texturefocus>
-            <colordiffuse>highlight</colordiffuse>
+            <colordiffuse>$VAR[highlight]</colordiffuse>
 			<texturenofocus></texturenofocus>
 		</control>
 		<!--Backbutton touchscreen-->

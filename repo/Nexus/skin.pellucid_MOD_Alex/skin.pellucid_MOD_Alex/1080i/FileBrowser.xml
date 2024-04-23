@@ -71,7 +71,7 @@
                 <width>16-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" id="411">
@@ -82,7 +82,7 @@
                 <aligny>center</aligny>
                 <font>dialogTitle</font>
                 <label>10126</label>
-                <textcolor>Home</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
                 <shadowcolor></shadowcolor>
             </control>
 			<!--page scrollbar-->
@@ -144,7 +144,7 @@
                         <height>69</height>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture fallback="defaultshortcut.png" border="0">$INFO[Listitem.thumb]</texture>
-						<colordiffuse>highlight</colordiffuse>
+						<colordiffuse>$VAR[highlight]</colordiffuse>
                         <animation type="focus" loop="false" reversible="false">
                             <effect type="fade" time="500"/>
                             <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
@@ -227,7 +227,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                         <include>spinFocusIcon</include>
                     </control>
                     <control type="image">
@@ -246,7 +246,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
-                        <textcolor>Home</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor></shadowcolor>
                     </control>

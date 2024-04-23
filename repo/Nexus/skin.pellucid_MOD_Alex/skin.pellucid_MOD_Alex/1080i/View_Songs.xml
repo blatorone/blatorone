@@ -92,7 +92,7 @@
 					<aspectratio>stretch</aspectratio>
 					<texture>colors/white.png</texture>
 					<bordersize>0</bordersize>
-					<colordiffuse>highlight</colordiffuse>
+					<colordiffuse>$VAR[highlight]</colordiffuse>
 				</control>
 				<control type="image">
 					<visible>ListItem.IsPlaying + !player.paused</visible>
@@ -150,7 +150,7 @@
 					<aspectratio>stretch</aspectratio>
 					<texture>colors/white.png</texture>
 					<bordersize>0</bordersize>
-					<colordiffuse>highlight</colordiffuse>
+					<colordiffuse>$VAR[highlight]</colordiffuse>
 				</control>
 				<control type="image">
 					<visible>!ListItem.IsPlaying</visible>
@@ -224,7 +224,7 @@
 					<aspectratio>stretch</aspectratio>
 					<texture>colors/white.png</texture>
 					<bordersize>0</bordersize>
-					<colordiffuse>highlight</colordiffuse>
+					<colordiffuse>$VAR[highlight]</colordiffuse>
 					<include>spinFocusIcon</include>
 				</control>
 				<control type="image">
@@ -244,7 +244,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>symbolLarge</font>
-					<textcolor>Home</textcolor>
+					<textcolor>$VAR[Home]</textcolor>
 					<shadowcolor/>
 					<label></label>
 				</control>
@@ -272,7 +272,7 @@
 					<aspectratio>stretch</aspectratio>
 					<texture>colors/white.png</texture>
 					<bordersize>0</bordersize>
-					<colordiffuse>highlight</colordiffuse>
+					<colordiffuse>$VAR[highlight]</colordiffuse>
 				</control>
 				<control type="label">
 					<visible>ListItem.IsParentFolder</visible>

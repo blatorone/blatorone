@@ -44,7 +44,7 @@
                         <height>2-row</height>
                         <font>largeTitle</font>
                         <label>$INFO[Window.Property(Day0.Outlook)]</label>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$VAR[highlight]</textcolor>
                         <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
@@ -297,7 +297,7 @@
             <label>396</label>
             <texturenofocus colordiffuse="77overlay">colors/white.png</texturenofocus>
             <alttexturefocus colordiffuse="77overlay">colors/white.png</alttexturefocus>
-            <alttexturenofocus>highlight</alttexturenofocus>
+            <alttexturenofocus>$VAR[highlight]</alttexturenofocus>
             <font>sectionTitle</font>
             <textcolor>textDisabled</textcolor>
             <focusedcolor>textActive</focusedcolor>
@@ -339,7 +339,7 @@
 	                        <height>69</height>
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture diffuse="masks/circle.png">colors/white.png</texture>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
 	                    </control>
 	                    <control type="label">
 	                        <posx>0</posx>
@@ -349,7 +349,7 @@
 	                        <align>center</align>
 	                        <aligny>center</aligny>
 	                        <font>symbolLarge</font>
-	                        <textcolor>Home</textcolor>
+	                        <textcolor>$VAR[Home]</textcolor>
 	                        <label>$INFO[ListItem.label2]</label>
 	                        <shadowcolor></shadowcolor>
 	                    </control>

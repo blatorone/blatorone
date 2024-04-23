@@ -128,7 +128,7 @@
                         <width>384</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">
@@ -140,7 +140,7 @@
                         <aligny>center</aligny>
                         <font>dialogTitle</font>
                         <label>$INFO[ListItem.Label]</label>
-                        <textcolor>Home</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">

@@ -54,7 +54,7 @@
                 <width>18-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
@@ -65,7 +65,7 @@
                 <aligny>center</aligny>
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[5]</label>
-                <textcolor>Home</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
                 <shadowcolor></shadowcolor>
             </control>
             <!--menu-->
@@ -125,7 +125,7 @@
                         <height>1-col</height>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <texture border="0">colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
                         <include>spinFocusIcon</include>
                     </control>
                     <control type="label">
@@ -136,7 +136,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
-                        <textcolor>Home</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label">
