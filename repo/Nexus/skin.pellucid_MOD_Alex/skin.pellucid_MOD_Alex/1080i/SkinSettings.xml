@@ -321,7 +321,7 @@
                     <selected>Skin.HasSetting(SmartTube)</selected>
                 </control>
                 <control type="radiobutton" id="25">
-                    <visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings) + $EXP[hasWeather]</visible>
                     <description>Weather icons</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[8] Icons ($LOCALIZE[31254])</label>
