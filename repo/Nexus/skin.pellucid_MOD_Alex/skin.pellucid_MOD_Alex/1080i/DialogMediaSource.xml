@@ -30,7 +30,7 @@
                 <height>2-row</height>
                 <aligny>center</aligny>
                 <font>dialogTitle</font>
-                <textcolor>textActive</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
                 <label>$LOCALIZE[1026]</label>
             </control>
             <!--dialog controls 1-->
@@ -95,7 +95,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>symbolLarge</font>
-                            <textcolor>textActive</textcolor>
+                            <textcolor>$VAR[Home]</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor></shadowcolor>
                         </control>
@@ -291,7 +291,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>symbolLarge</font>
-                            <textcolor>textActive</textcolor>
+                            <textcolor>$VAR[Home]</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor></shadowcolor>
                         </control>

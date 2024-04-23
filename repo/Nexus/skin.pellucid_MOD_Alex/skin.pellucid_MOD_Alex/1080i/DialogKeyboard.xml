@@ -90,7 +90,7 @@
                         <ondown>302</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                         <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
-                        <focusedcolor>Home</focusedcolor>
+                        <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
                         <font>buttonTitle</font>
@@ -230,7 +230,7 @@
                         <ondown>127</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                         <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
-                        <focusedcolor></focusedcolor>
+                        <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>

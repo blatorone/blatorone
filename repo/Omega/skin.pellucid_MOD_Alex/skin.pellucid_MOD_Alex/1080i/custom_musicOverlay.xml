@@ -45,6 +45,7 @@
                 <width>1-col-gutter</width>
                 <height>1-col-gutter</height>
                 <texture>equaliser.gif</texture>
+                <colordiffuse>$VAR[Home]</colordiffuse>
             </control>
             <control type="label">
                 <visible>!player.paused + Skin.HasSetting(lowPowerMode)</visible>
@@ -55,7 +56,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>symbol</font>
-                <textcolor>textActive</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
                 <shadowcolor></shadowcolor>
                 <label></label>
             </control>
@@ -68,7 +69,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>symbol</font>
-                <textcolor>textActive</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
                 <shadowcolor></shadowcolor>
                 <label></label>
                 <animation type="conditional" condition="true" loop="true">
@@ -88,7 +89,7 @@
                 <height>1-row</height>
                 <label>$INFO[MusicPlayer.TimeRemaining]  [B]$INFO[musicplayer.Artist,, ][/B]$INFO[MusicPlayer.Title]</label>
                 <scroll>true</scroll>
-                <textcolor>textActive</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
             </control>
         </control>
         <!--debugging-->

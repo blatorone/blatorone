@@ -199,7 +199,7 @@
 		                        <align>center</align>
 		                        <aligny>center</aligny>
 		                        <font>symbol</font>
-		                        <textcolor>Home</textcolor>
+		                        <textcolor>$VAR[Home]</textcolor>
 		                        <label>$INFO[ListItem.label2]</label>
 		                        <shadowcolor></shadowcolor>
 		                    </control>
@@ -314,7 +314,7 @@
 		                        <align>center</align>
 		                        <aligny>center</aligny>
 		                        <font>symbol</font>
-		                        <textcolor>Home</textcolor>
+		                        <textcolor>$VAR[Home]</textcolor>
 		                        <label>$INFO[ListItem.label2]</label>
 		                        <shadowcolor></shadowcolor>
 		                    </control>
@@ -371,17 +371,17 @@
 						<top>753</top>
 						<width>54</width>
 						<height>54</height>
-						<texture colordiffuse="Home">$VAR[PlayerControlsRepeatImageVar]</texture>
+						<texture colordiffuse="$VAR[Home]">$VAR[PlayerControlsRepeatImageVar]</texture>
 					</control>
 					<control type="radiobutton" id="8004">
 					<posx>1000</posx>
 					<posy>745</posy>
-					<textureradioonfocus colordiffuse="Home">osd/fullscreen/buttons/random-on.png</textureradioonfocus>
+					<textureradioonfocus colordiffuse="$VAR[Home]">osd/fullscreen/buttons/random-on.png</textureradioonfocus>
 					<textureradioonnofocus>osd/fullscreen/buttons/random-on.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="Home">osd/fullscreen/buttons/random-off.png</textureradioofffocus>
+					<textureradioofffocus colordiffuse="$VAR[Home]">osd/fullscreen/buttons/random-off.png</textureradioofffocus>
 					<textureradiooffnofocus>osd/fullscreen/buttons/random-off.png</textureradiooffnofocus>
-					<textureradioondisabled colordiffuse="Home">osd/fullscreen/buttons/random-on.png</textureradioondisabled>
-					<textureradiooffdisabled colordiffuse="Home">osd/fullscreen/buttons/random-off.png</textureradiooffdisabled>
+					<textureradioondisabled colordiffuse="$VAR[Home]">osd/fullscreen/buttons/random-on.png</textureradioondisabled>
+					<textureradiooffdisabled colordiffuse="$VAR[Home]">osd/fullscreen/buttons/random-off.png</textureradiooffdisabled>
 					<texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
 					<width>1-col</width>
 		            <height>69</height>

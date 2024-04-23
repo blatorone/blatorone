@@ -47,7 +47,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>symbolLarge</font>
-						<textcolor>textActive</textcolor>
+						<textcolor>$VAR[Home]</textcolor>
 						<shadowcolor></shadowcolor>
 						<label></label>
 			</control>
@@ -60,7 +60,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>symbol</font>
-                <textcolor>textActive</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
                 <shadowcolor></shadowcolor>
                 <label></label>
             </control>
@@ -73,7 +73,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>symbol</font>
-                <textcolor>textActive</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
                 <shadowcolor></shadowcolor>
                 <label></label>
                 <animation type="conditional" condition="true" loop="true">
@@ -92,7 +92,7 @@
                 <aligny>center</aligny>
                 <height>1-row</height>
                 <scroll>true</scroll>
-	            <textcolor>textActive</textcolor>
+	            <textcolor>$VAR[Home]</textcolor>
 	            <label>$INFO[VideoPlayer.TVShowTitle] : $INFO[Player.title]</label>
 	        </control>
             <control type="label">
@@ -106,7 +106,7 @@
                 <aligny>center</aligny>
                 <height>1-row</height>
                 <scroll>true</scroll>
-	            <textcolor>textActive</textcolor>
+	            <textcolor>$VAR[Home]</textcolor>
 	            <label>$INFO[videoplayer.Title]</label>
 	        </control>
             <control type="label">
@@ -120,7 +120,7 @@
                 <aligny>center</aligny>
                 <height>1-row</height>
                 <scroll>true</scroll>
-	            <textcolor>textActive</textcolor>
+	            <textcolor>$VAR[Home]</textcolor>
 	            <label>[CAPITALIZE][LOWERCASE]$INFO[videoplayer.Title][/LOWERCASE][/CAPITALIZE] : $INFO[Player.title]</label>
 	        </control>
 
