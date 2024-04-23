@@ -57,7 +57,7 @@
                     <height>2-row</height>
                     <font>dialogTitle</font>
                     <label>$LOCALIZE[31113]</label>
-                    <textcolor>Home</textcolor>
+                    <textcolor>$VAR[Home]</textcolor>
                     <shadowcolor></shadowcolor>
                 </control>
                 <control type="panel" id="50">
@@ -118,7 +118,7 @@
                                 <width>1-col</width>
                                 <height>2-row</height>
                                 <aspectratio>stretch</aspectratio>
-                                <colordiffuse>Home</colordiffuse>
+                                <colordiffuse>$VAR[Home]</colordiffuse>
                                 <texture>$INFO[listitem.icon]</texture>
                             </control>
                             <include>spinFocusIcon</include>
@@ -194,7 +194,7 @@
                     <height>2-row</height>
                     <font>dialogTitle</font>
                     <label>$INFO[container.foldername] $INFO[container.numitems,(,)]</label>
-                    <textcolor>Home</textcolor>
+                    <textcolor>$VAR[Home]</textcolor>
                     <shadowcolor></shadowcolor>
                 </control>
                 <control type="image">
