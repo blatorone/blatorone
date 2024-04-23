@@ -104,7 +104,7 @@
                             <label>5</label>
                         </item>
                         <item id="2">
-                            <label>color</label>
+                            <label>$LOCALIZE[31259]</label>
                         </item>
                     </content>
                 </control>

@@ -57,7 +57,7 @@
 	        <control type="button" id="1000">
 	            <description>Buttons</description>
 	            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
-	            <focusedcolor>Home</focusedcolor>
+	            <focusedcolor>$VAR[Home]</focusedcolor>
 	            <width>12-col</width>
 	        </control>
 		</control>
