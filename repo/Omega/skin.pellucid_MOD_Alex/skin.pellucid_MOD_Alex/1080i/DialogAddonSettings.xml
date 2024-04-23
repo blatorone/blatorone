@@ -54,7 +54,7 @@
                 <aligny>center</aligny>
                 <font>dialogTitle</font>
                 <label>$INFO[ListItem.AddonName] $LOCALIZE[5]</label>
-                <textcolor>Home</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
             </control>
             <!--subnav-->
             <control type="grouplist" id="3">
@@ -133,7 +133,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
-                        <textcolor>Home</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor></shadowcolor>
                     </control>
