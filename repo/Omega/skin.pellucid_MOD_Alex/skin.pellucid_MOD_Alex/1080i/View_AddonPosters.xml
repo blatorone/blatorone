@@ -54,7 +54,7 @@
 						<height>1-row</height>
 						<aligny>center</aligny>
 						<font>thumbTitle</font>
-						<textcolor>textActive</textcolor>
+						<textcolor>textDisabled</textcolor>
 						<label>[B]$INFO[ListItem.label][/B][CR]$INFO[ListItem.year]</label>
 					</control>
 					<control type="group">
@@ -140,7 +140,7 @@
 						<height>1-row</height>
 						<aligny>center</aligny>
 						<font>thumbTitle</font>
-						<textcolor>textActive</textcolor>
+						<textcolor>textDisabled</textcolor>
 						<label>[B]$INFO[ListItem.label][/B][CR]$INFO[ListItem.year]</label>
 					</control>
 					<control type="group">

@@ -574,3 +574,7 @@ msgstr ""
 msgctxt "#31258"
 msgid "Video OSD autoclose time (seconds)"
 msgstr ""
+
+msgctxt "#31259"
+msgid "Change Skin Colors"
+msgstr ""

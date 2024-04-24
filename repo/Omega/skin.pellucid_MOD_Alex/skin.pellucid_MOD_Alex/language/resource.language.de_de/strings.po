@@ -579,4 +579,4 @@ msgstr "Video-OSD automatisch schließen nach (Sekunden)"
 
 msgctxt "#31259"
 msgid "Change Skin Colors"
-msgstr "Benutzeroberfläche Farbe ändern"
+msgstr "Farbe ändern"

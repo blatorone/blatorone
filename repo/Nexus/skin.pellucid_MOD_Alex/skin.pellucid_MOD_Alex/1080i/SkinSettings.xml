@@ -357,7 +357,11 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
-                    <label>Lightblue</label>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Lightblue.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Lightblue.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Lightblue.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Lightblue.png</textureradiooffnofocus>
+                    <label>Lightblue</label> 
                     <onclick>Skin.Togglesetting(lightblue)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -380,6 +384,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Bluewood.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Bluewood.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Bluewood.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Bluewood.png</textureradiooffnofocus>
                     <label>Bluewood</label>
                     <onclick>Skin.Togglesetting(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -403,6 +411,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Darkblue.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Darkblue.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Darkblue.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Darkblue.png</textureradiooffnofocus>
                     <label>Darkblue</label>
                     <onclick>Skin.Togglesetting(Darkblue)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -426,6 +438,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Default.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Default.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Default.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Default.png</textureradiooffnofocus>
                     <label>Default</label>
                     <onclick>Skin.Togglesetting(Default)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -449,6 +465,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Dribble.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Dribble.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Dribble.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Dribble.png</textureradiooffnofocus>
                     <label>Dribble</label>
                     <onclick>Skin.Togglesetting(Dribble)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -472,6 +492,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Gold.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Gold.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Gold.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Gold.png</textureradiooffnofocus>
                     <label>Gold</label>
                     <onclick>Skin.Togglesetting(Gold)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -495,6 +519,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Green.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Green.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Green.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Green.png</textureradiooffnofocus>
                     <label>Green</label>
                     <onclick>Skin.Togglesetting(Green)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -518,6 +546,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Interest.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Interest.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Interest.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Interest.png</textureradiooffnofocus>
                     <label>Interest</label>
                     <onclick>Skin.Togglesetting(Interest)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -541,6 +573,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Medium.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Medium.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Medium.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Medium.png</textureradiooffnofocus>
                     <label>Medium</label>
                     <onclick>Skin.Togglesetting(Medium)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -564,6 +600,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Orange.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Orange.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Orange.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Orange.png</textureradiooffnofocus>
                     <label>Orange</label>
                     <onclick>Skin.Togglesetting(Orange)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -587,6 +627,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/PellucidV1.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/PellucidV1.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/PellucidV1.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/PellucidV1.png</textureradiooffnofocus>
                     <label>PellucidV1</label>
                     <onclick>Skin.Togglesetting(PellucidV1)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -610,6 +654,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Razzmatazz.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Razzmatazz.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Razzmatazz.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Razzmatazz.png</textureradiooffnofocus>
                     <label>Razzmatazz</label>
                     <onclick>Skin.Togglesetting(Razzmatazz)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -633,6 +681,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Tumble.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Tumble.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Tumble.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Tumble.png</textureradiooffnofocus>
                     <label>Tumble</label>
                     <onclick>Skin.Togglesetting(Tumble)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -656,6 +708,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Turquoise.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Turquoise.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Turquoise.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Turquoise.png</textureradiooffnofocus>
                     <label>Turquoise</label>
                     <onclick>Skin.Togglesetting(Turquoise)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -679,6 +735,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Vine.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Vine.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Vine.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/Vine.png</textureradiooffnofocus>
                     <label>Vine</label>
                     <onclick>Skin.Togglesetting(Vine)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -702,6 +762,10 @@
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/VK.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/VK.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/VK.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="overlay">Colors/VK.png</textureradiooffnofocus>
                     <label>VK</label>
                     <onclick>Skin.Togglesetting(VK)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
