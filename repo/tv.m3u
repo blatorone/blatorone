@@ -167,22 +167,15 @@ plugin://plugin.video.vavooto/?name=ZDF+NEO
 plugin://plugin.video.vavooto/?name=SUPER+RTL
 #EXTINF:-1 tvg-id="DE: SR" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1030.png",SWR
 plugin://plugin.video.vavooto/?name=SWR
+
 #EXTINF:-1 tvg-id="DE: Sky Atlantic" group-title="Sky" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/2_sky_logo_skyatlantichd_tvguide.png",Sky Atlantic
 plugin://plugin.video.vavooto/?name=SKY+ATLANTIC
 #EXTINF:-1 tvg-id="DE: Sky Cinema Action" group-title="Filme" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/60_sky_logo_skyactionhd_tvguide.png",Sky Cinema Action
 plugin://plugin.video.vavooto/?name=SKY+CINEMA+ACTION
-#EXTINF:-1 tvg-id="DE: Sky Cinema Best Of" group-title="Filme" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/792_sky_logo_cinema-best-of-hd_tvguide.png",Sky Cinema Best of
-plugin://plugin.video.vavooto/?name=SKY+CINEMA+BEST+OF
 #EXTINF:-1 tvg-id="DE: Sky Cinema Classics" group-title="Filme" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/1043_sky_logo_cinema-classics_hd_tvguide.png",Sky Cinema Classics
 plugin://plugin.video.vavooto/?name=SKY+CINEMA+CLASSICS
-#EXTINF:-1 tvg-id="DE: Sky Cinema Fun" group-title="Filme" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/1040_sky_logo_cinema-fun_hd_tvguide.png",Sky Cinema Fun
-plugin://plugin.video.vavooto/?name=SKY+CINEMA+FUN
 #EXTINF:-1 tvg-id="DE: Sky Cinema Premieren" group-title="Filme" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/788_sky_logo_cinema-premieren-hd_tvguide.png",Sky Cinema Premieren
 plugin://plugin.video.vavooto/?name=SKY+CINEMA+PREMIEREN
-#EXTINF:-1 tvg-id="DE: Sky Cinema Special" group-title="Filme" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/890_sky_logo_cinema_special_hd_tvguide.png",Sky Cinema Special
-plugin://plugin.video.vavooto/?name=SKY+CINEMA+SPECIAL
-#EXTINF:-1 tvg-id="DE: Sky Cinema Thriller" group-title="Filme" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/784_sky_logo_cinema-thriller-hd_tvguide.png",Sky Cinema Thriller
-plugin://plugin.video.vavooto/?name=SKY+CINEMA+THRILLER
 #EXTINF:-1 tvg-id="DE: Sky Crime" group-title="Filme" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/855_sky_logo_crime-hd_tvguide.png",Sky Crime
 plugin://plugin.video.vavooto/?name=SKY+CRIME
 #EXTINF:-1 tvg-id="DE: Sky Documentaries" group-title="Dokumentation" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/876_sky_logo_sky-cinema-documentaries-hd_tvguide.png",Sky Documentaries
