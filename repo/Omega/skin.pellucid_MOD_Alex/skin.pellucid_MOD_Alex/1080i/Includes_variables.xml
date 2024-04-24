@@ -244,4 +244,23 @@
         <value condition="Skin.HasSetting(VK)">fff0f0f0</value>
         <value condition="!Skin.HasSetting(VK) + !Skin.HasSetting(Vine) + !Skin.HasSetting(Turquoise) + !Skin.HasSetting(Tumble) + !Skin.HasSetting(Razzmatazz) + !Skin.HasSetting(PellucidV1) + !Skin.HasSetting(Orange) + !Skin.HasSetting(Medium) + !Skin.HasSetting(lightblue) + !Skin.HasSetting(Interest) + !Skin.HasSetting(Green) + !Skin.HasSetting(Gold) + !Skin.HasSetting(Dribble) + !Skin.HasSetting(Default) + !Skin.HasSetting(Darkblue) + !Skin.HasSetting(Bluewood)">fff0f0f0</value>
 	</variable>
+    <variable name="selected">
+		<value condition="Skin.HasSetting(Bluewood)">red</value>
+        <value condition="Skin.HasSetting(Darkblue)">red</value>
+        <value condition="Skin.HasSetting(Default)">black</value>
+        <value condition="Skin.HasSetting(Dribble)">black</value>
+        <value condition="Skin.HasSetting(Gold)">red</value>
+        <value condition="Skin.HasSetting(Green)">red</value>
+        <value condition="Skin.HasSetting(Interest)">black</value>
+        <value condition="Skin.HasSetting(lightblue)">red</value>
+        <value condition="Skin.HasSetting(Medium)">red</value>
+        <value condition="Skin.HasSetting(Orange)">red</value>
+        <value condition="Skin.HasSetting(PellucidV1)">black</value>
+        <value condition="Skin.HasSetting(Razzmatazz)">black</value>
+        <value condition="Skin.HasSetting(Tumble)">red</value>
+        <value condition="Skin.HasSetting(Turquoise)">red</value>
+        <value condition="Skin.HasSetting(Vine)">red</value>
+        <value condition="Skin.HasSetting(VK)">red</value>
+        <value condition="!Skin.HasSetting(VK) + !Skin.HasSetting(Vine) + !Skin.HasSetting(Turquoise) + !Skin.HasSetting(Tumble) + !Skin.HasSetting(Razzmatazz) + !Skin.HasSetting(PellucidV1) + !Skin.HasSetting(Orange) + !Skin.HasSetting(Medium) + !Skin.HasSetting(lightblue) + !Skin.HasSetting(Interest) + !Skin.HasSetting(Green) + !Skin.HasSetting(Gold) + !Skin.HasSetting(Dribble) + !Skin.HasSetting(Default) + !Skin.HasSetting(Darkblue) + !Skin.HasSetting(Bluewood)">fff0f0f0</value>
+	</variable>
 </includes>

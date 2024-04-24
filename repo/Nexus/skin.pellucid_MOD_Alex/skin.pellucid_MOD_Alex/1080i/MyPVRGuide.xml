@@ -127,7 +127,7 @@
 							<height>2-row</height>
 							<font>itemTitle</font>
 							<textcolor>textActive</textcolor>
-							<selectedcolor>textActive</selectedcolor>
+							<selectedcolor>red</selectedcolor>
 							<shadowcolor></shadowcolor>
 							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
@@ -148,7 +148,7 @@
 							<height>3-row</height>
 							<font>itemTitle</font>
 							<textcolor>textActive</textcolor>
-							<selectedcolor>textActive</selectedcolor>
+							<selectedcolor>red</selectedcolor>
 							<shadowcolor></shadowcolor>
 							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
@@ -179,7 +179,7 @@
 							<height>2-row</height>
 							<font>itemTitle</font>
 							<textcolor>$VAR[Home]</textcolor>
-							<selectedcolor>textActive</selectedcolor>
+							<selectedcolor>red</selectedcolor>
 							<shadowcolor></shadowcolor>
 							<label>$INFO[ListItem.ChannelName]</label>
 							<scroll>true</scroll>
@@ -211,7 +211,7 @@
 							<height>3-row</height>
 							<font>itemTitle</font>
 							<textcolor>$VAR[Home]</textcolor>
-							<selectedcolor>textActive</selectedcolor>
+							<selectedcolor>red</selectedcolor>
 							<shadowcolor></shadowcolor>
 							<label>$INFO[ListItem.ChannelName]</label>
 							<scroll>true</scroll>

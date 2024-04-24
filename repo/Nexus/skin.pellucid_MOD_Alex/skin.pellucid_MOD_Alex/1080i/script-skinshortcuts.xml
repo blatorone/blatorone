@@ -47,7 +47,7 @@
                 <height>2-row</height>
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[31228]</label>
-                <textcolor>textActive</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
                 <shadowcolor></shadowcolor>
             </control>
 			<!--options-->
