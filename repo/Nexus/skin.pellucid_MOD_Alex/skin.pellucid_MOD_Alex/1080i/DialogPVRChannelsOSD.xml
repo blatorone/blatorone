@@ -91,6 +91,7 @@
                         <aligny>center</aligny>
                         <font>playlistSubTitle</font>
                         <textcolor>textActive</textcolor>
+						<selectedcolor>red</selectedcolor>
                         <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.ChannelName]</label>
                     </control>
@@ -102,6 +103,7 @@
                         <aligny>center</aligny>
                         <font>dialogTitle</font>
                         <textcolor>textActive</textcolor>
+						<selectedcolor>red</selectedcolor>
                         <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Title]</label>
                     </control>
@@ -132,6 +134,7 @@
                         <aligny>center</aligny>
                         <font>playlistSubTitle</font>
                         <textcolor>textActive</textcolor>
+						<selectedcolor>$VAR[selected]</selectedcolor>
                         <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.ChannelName]</label>
                     </control>
@@ -143,6 +146,7 @@
                         <aligny>center</aligny>
                         <font>dialogTitle</font>
                         <textcolor>textActive</textcolor>
+						<selectedcolor>$VAR[selected]</selectedcolor>
                         <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Title]</label>
                     </control>
