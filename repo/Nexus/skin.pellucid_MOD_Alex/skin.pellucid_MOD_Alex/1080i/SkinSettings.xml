@@ -442,7 +442,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Default.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Default.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="overlay">Colors/Default.png</textureradiooffnofocus>
-                    <label>Default</label>
+                    <label>$LOCALIZE[15109]</label>
                     <onclick>Skin.Togglesetting(Default)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
