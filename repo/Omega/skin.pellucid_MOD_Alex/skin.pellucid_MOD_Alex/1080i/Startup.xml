@@ -7,10 +7,19 @@
         <posx>15</posx>
         <posy>15</posy>
     </coordinates>
+    <!--Old startup
     <controls>
         <control type="button" id="10">
             <description>Startup Trigger</description>
             <onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
+            <texturenofocus></texturenofocus>
+            <texturefocus></texturefocus>
+    </control>
+    -->
+    <controls>
+        <control type="button" id="10">
+            <description>Startup Trigger</description>
+            <onfocus>activateWindow(1108)</onfocus>
             <texturenofocus></texturenofocus>
             <texturefocus></texturefocus>
         </control>

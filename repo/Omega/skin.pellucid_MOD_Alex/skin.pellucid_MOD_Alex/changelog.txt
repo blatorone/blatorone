@@ -1,4 +1,7 @@
-[B]Version: 1.0.29 Release[/B]
+[B]Version: 1.0.33 Release[/B]
+
+26.04.2024
+ -splashscreen included
 
 24.04.2024
 
