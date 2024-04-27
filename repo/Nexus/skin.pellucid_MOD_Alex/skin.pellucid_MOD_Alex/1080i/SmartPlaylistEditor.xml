@@ -27,7 +27,7 @@
                     <aligny>center</aligny>
                     <font>dialogTitle</font>
                     <label>31203</label>
-                    <textcolor>textActive</textcolor>
+                    <textcolor>$VAR[Home]</textcolor>
                 </control>
                 <!--name playlist-->
                 <control type="group">
@@ -258,7 +258,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>symbolLarge</font>
-                            <textcolor>textActive</textcolor>
+                            <textcolor>$VAR[Home]</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor></shadowcolor>
                         </control>
@@ -340,7 +340,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>symbolLarge</font>
-                            <textcolor>textActive</textcolor>
+                            <textcolor>$VAR[Home]</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor></shadowcolor>
                         </control>

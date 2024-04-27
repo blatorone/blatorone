@@ -47,7 +47,7 @@
 	                <height>73</height>
 	                <font>symbolVeryLarge</font>
 	                <aligny>center</aligny>
-	                <textcolor>eeffffff</textcolor>
+	                <textcolor>$VAR[Home]</textcolor>
 	                <label>$VAR[menuLogo]</label>
 	            </control>
 			</control>
@@ -68,7 +68,7 @@
                         <height>2-row</height>
                         <font>menuTitle2</font>
                         <aligny>center</aligny>
-                        <textcolor>eeffffff</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>
@@ -89,7 +89,7 @@
                         <height>2-row</height>
                         <font>menuTitle2</font>
                         <aligny>center</aligny>
-                        <textcolor>black</textcolor>
+                        <textcolor>$VAR[selected]</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>

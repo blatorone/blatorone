@@ -40,7 +40,7 @@
                 <aligny>center</aligny>
                 <font>dialogTitle</font>
                 <label>21422</label>
-                <textcolor>textActive</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
             </control>
             <control type="image">
                 <posx>0</posx>
@@ -101,7 +101,7 @@
                     <texturenofocus colordiffuse="$VAR[highlight]">colors/white.png</texturenofocus>
                     <label></label>
                     <font>symbolLarge</font>
-                    <textcolor>textActive</textcolor>
+                    <textcolor>$VAR[Home]</textcolor>
                     <focusedcolor>black</focusedcolor>
                     <onup>16</onup>
                     <onleft>17</onleft>
@@ -165,7 +165,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>symbolLarge</font>
-                            <textcolor>textActive</textcolor>
+                            <textcolor>$VAR[Home]</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor></shadowcolor>
                         </control>
