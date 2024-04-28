@@ -361,6 +361,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Lightblue.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Lightblue.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Lightblue.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>Lightblue</label> 
                     <onclick>Skin.Togglesetting(lightblue)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -389,7 +390,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Lightblue.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Lightblue.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Lightblue.png</textureradiooffnofocus>
-                    <label>[COLOR red]Lightblue[/COLOR]</label> 
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Lightblue[/COLOR]</label> 
                     <onclick>Skin.Togglesetting(lightblue)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -418,6 +420,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Bluewood.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Bluewood.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Bluewood.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>Bluewood</label>
                     <onclick>Skin.Togglesetting(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -446,7 +449,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Bluewood.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Bluewood.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Bluewood.png</textureradiooffnofocus>
-                    <label>[COLOR red]Bluewood[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Bluewood[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
                     <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
@@ -475,6 +479,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Darkblue.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Darkblue.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Darkblue.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>Darkblue</label>
                     <onclick>Skin.Togglesetting(Darkblue)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -503,7 +508,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Darkblue.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Darkblue.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Darkblue.png</textureradiooffnofocus>
-                    <label>[COLOR red]Darkblue[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Darkblue[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Darkblue)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
@@ -532,6 +538,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Default.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Default.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Default.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>$LOCALIZE[15109]</label>
                     <onclick>Skin.Togglesetting(Default)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -560,7 +567,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Default.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Default.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Default.png</textureradiooffnofocus>
-                    <label>[COLOR red]$LOCALIZE[15109][/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]$LOCALIZE[15109][/COLOR]</label>
                     <onclick>Skin.Togglesetting(Default)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -589,6 +597,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Dribble.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Dribble.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Dribble.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>Dribble</label>
                     <onclick>Skin.Togglesetting(Dribble)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -617,7 +626,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Dribble.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Dribble.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Dribble.png</textureradiooffnofocus>
-                    <label>[COLOR red]Dribble[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Dribble[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Dribble)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -646,6 +656,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Gold.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Gold.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Gold.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>Gold</label>
                     <onclick>Skin.Togglesetting(Gold)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -674,7 +685,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Gold.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Gold.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Gold.png</textureradiooffnofocus>
-                    <label>[COLOR red]Gold[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Gold[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Gold)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -703,6 +715,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Green.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Green.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Green.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>Green</label>
                     <onclick>Skin.Togglesetting(Green)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -731,7 +744,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Green.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Green.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Green.png</textureradiooffnofocus>
-                    <label>[COLOR red]Green[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Green[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Green)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -760,6 +774,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Interest.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Interest.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Interest.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>Interest</label>
                     <onclick>Skin.Togglesetting(Interest)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -788,7 +803,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Interest.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Interest.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Interest.png</textureradiooffnofocus>
-                    <label>[COLOR red]Interest[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Interest[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Interest)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -817,6 +833,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Medium.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Medium.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Medium.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>Medium</label>
                     <onclick>Skin.Togglesetting(Medium)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -845,7 +862,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Medium.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Medium.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Medium.png</textureradiooffnofocus>
-                    <label>[COLOR red]Medium[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Medium[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Medium)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -874,6 +892,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Orange.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Orange.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Orange.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>Orange</label>
                     <onclick>Skin.Togglesetting(Orange)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -902,7 +921,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Orange.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Orange.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Orange.png</textureradiooffnofocus>
-                    <label>[COLOR red]Orange[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Orange[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Orange)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -931,6 +951,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/PellucidV1.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/PellucidV1.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/PellucidV1.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>PellucidV1</label>
                     <onclick>Skin.Togglesetting(PellucidV1)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -959,7 +980,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/PellucidV1.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/PellucidV1.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/PellucidV1.png</textureradiooffnofocus>
-                    <label>[COLOR red]PellucidV1[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]PellucidV1[/COLOR]</label>
                     <onclick>Skin.Togglesetting(PellucidV1)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -988,6 +1010,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Razzmatazz.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Razzmatazz.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Razzmatazz.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>Razzmatazz</label>
                     <onclick>Skin.Togglesetting(Razzmatazz)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -1016,7 +1039,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Razzmatazz.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Razzmatazz.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Razzmatazz.png</textureradiooffnofocus>
-                    <label>[COLOR red]Razzmatazz[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Razzmatazz[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Razzmatazz)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -1045,6 +1069,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Tumble.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Tumble.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Tumble.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>Tumble</label>
                     <onclick>Skin.Togglesetting(Tumble)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -1073,7 +1098,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Tumble.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Tumble.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Tumble.png</textureradiooffnofocus>
-                    <label>[COLOR red]Tumble[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Tumble[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Tumble)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -1102,6 +1128,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Turquoise.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Turquoise.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Turquoise.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>Turquoise</label>
                     <onclick>Skin.Togglesetting(Turquoise)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -1130,7 +1157,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Turquoise.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Turquoise.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Turquoise.png</textureradiooffnofocus>
-                    <label>[COLOR red]Turquoise[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Turquoise[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Turquoise)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -1159,6 +1187,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Vine.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Vine.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Vine.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>Vine</label>
                     <onclick>Skin.Togglesetting(Vine)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -1187,7 +1216,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Vine.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Vine.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Vine.png</textureradiooffnofocus>
-                    <label>[COLOR red]Vine[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Vine[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Vine)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -1216,6 +1246,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/VK.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/VK.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/VK.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
                     <label>VK</label>
                     <onclick>Skin.Togglesetting(VK)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -1244,7 +1275,8 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/VK.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/VK.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/VK.png</textureradiooffnofocus>
-                    <label>[COLOR red]VK[/COLOR]</label>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]VK[/COLOR]</label>
                     <onclick>Skin.Togglesetting(VK)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
