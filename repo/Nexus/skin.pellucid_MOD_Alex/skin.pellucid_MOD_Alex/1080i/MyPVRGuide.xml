@@ -127,7 +127,7 @@
 							<height>2-row</height>
 							<font>itemTitle</font>
 							<textcolor>textActive</textcolor>
-							<selectedcolor>red</selectedcolor>
+							<selectedcolor>yellow</selectedcolor>
 							<shadowcolor></shadowcolor>
 							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
@@ -148,7 +148,7 @@
 							<height>3-row</height>
 							<font>itemTitle</font>
 							<textcolor>textActive</textcolor>
-							<selectedcolor>red</selectedcolor>
+							<selectedcolor>yellow</selectedcolor>
 							<shadowcolor></shadowcolor>
 							<label>$INFO[ListItem.ChannelName]</label>
 						</control>

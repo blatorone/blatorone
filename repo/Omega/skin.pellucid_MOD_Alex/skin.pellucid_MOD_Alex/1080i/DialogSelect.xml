@@ -234,7 +234,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>black</textcolor>
-                                <selectedcolor>red</selectedcolor>
+                                <selectedcolor>$VAR[selected]</selectedcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
