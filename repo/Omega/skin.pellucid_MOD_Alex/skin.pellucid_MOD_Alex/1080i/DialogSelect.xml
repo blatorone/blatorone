@@ -188,7 +188,7 @@
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
                                 <shadowcolor></shadowcolor>
-                                <selectedcolor>$VAR[highlight]</selectedcolor>
+                                <selectedcolor>yellow</selectedcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -222,7 +222,7 @@
                                 <width>11-col</width>
                                 <height>69</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture>colors/white.png</texture>
+                                <texture>colors/grey.png</texture>
                                 <bordersize>0</bordersize>
                                 <colordiffuse>ffffffff</colordiffuse>
                             </control>
