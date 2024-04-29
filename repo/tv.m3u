@@ -5,10 +5,6 @@ plugin://plugin.video.vavooto/?name=13TH+STREET
 plugin://plugin.video.vavooto/?name=3+SAT
 #EXTINF:-1 tvg-id="DE: ARD alpha" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1007.png",ARD alpha
 plugin://plugin.video.vavooto/?name=ARD+ALPHA
-#EXTINF:-1 tvg-id="AT: ATV" group-title="ORF" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/925.png",ATV
-plugin://plugin.video.vavooto/?name=ATV
-#EXTINF:-1 tvg-id="AT: ATV II" group-title="ORF" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/926.png",ATV2
-plugin://plugin.video.vavooto/?name=ATV+2
 #EXTINF:-1 tvg-id="DE: AXN Black" group-title="Sky" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AXN_Black_logo_%282015%29.svg/240px-AXN_Black_logo_%282015%29.svg.png",AXN Black
 plugin://plugin.video.vavooto/?name=AXN
 #EXTINF:-1 tvg-id="DE: AXN White" group-title="Sky" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/AXN_White_logo_%282015%29.svg/1920px-AXN_White_logo_%282015%29.svg.png",AXN White
@@ -95,8 +91,6 @@ plugin://plugin.video.vavooto/?name=ORF+1
 plugin://plugin.video.vavooto/?name=ORF+2
 #EXTINF:-1 tvg-id="DE: Phoenix" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1019.png",PHOENIX
 plugin://plugin.video.vavooto/?name=PHOENIX
-#EXTINF:-1 tvg-id="Puls 4" group-title="ORF" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1052.png",PULS 4
-plugin://plugin.video.vavooto/?name=PULS+4
 #EXTINF:-1 tvg-id="DE: ProSieben" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/936.png",ProSieben
 plugin://plugin.video.vavooto/?name=PRO+7
 #EXTINF:-1 tvg-id="DE: ProSieben FUN" group-title="Standard" tvg-logo="https://upload.wikimedia.org/wikipedia/de/thumb/5/52/ProSieben_Fun_HD_2012.png/320px-ProSieben_Fun_HD_2012.png",ProSieben Fun
