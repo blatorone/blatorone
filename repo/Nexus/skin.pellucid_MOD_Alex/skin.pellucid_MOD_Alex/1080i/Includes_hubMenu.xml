@@ -68,7 +68,7 @@
                         <height>2-row</height>
                         <font>menuTitle2</font>
                         <aligny>center</aligny>
-                        <textcolor>$VAR[Home]</textcolor>
+                        <textcolor>textActive</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>
@@ -89,7 +89,7 @@
                         <height>2-row</height>
                         <font>menuTitle2</font>
                         <aligny>center</aligny>
-                        <textcolor>$VAR[selected]</textcolor>
+                        <textcolor>black</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>
