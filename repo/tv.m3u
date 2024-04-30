@@ -151,7 +151,7 @@ plugin://plugin.video.vavooto/?name=WARNER+TV+FILM
 plugin://plugin.video.vavooto/?name=WARNER+TV+SERIE
 #EXTINF:-1 tvg-id="DE: WDR Dortmund" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1000.png",WDR
 plugin://plugin.video.vavooto/?name=WDR
-#EXTINF:-1 tvg-id="DE: Welt der Wunder" group-title="Dokumentation" tvg-logo="https://images.waipu.tv/api/channels/WELTDERWUNDER/logosd.png?width=100&height=100",WELT DER WUNDER
+#EXTINF:-1 tvg-id="DE: Welt der Wunder" group-title="Dokumentation" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logo_Welt_der_Wunder_neu.svg/1920px-Logo_Welt_der_Wunder_neu.svg.png",WELT DER WUNDER
 plugin://plugin.video.vavooto/?name=WELT+DER+WUNDER
 #EXTINF:-1 tvg-id="DE: ZDF" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1063.png",ZDF
 plugin://plugin.video.vavooto/?name=ZDF
