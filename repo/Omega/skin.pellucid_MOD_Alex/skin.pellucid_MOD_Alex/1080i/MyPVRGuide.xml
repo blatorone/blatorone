@@ -58,7 +58,7 @@
 					<description>EPG Grid</description>
 					<posx>col-1-begin</posx>
 					<posy>row-4-begin</posy>
-					<width>24-col</width>
+					<include>pvrguidewidth</include>
 					<height>23-row</height>
 					<timeblocks>30</timeblocks>
 					<progresstexture border="0,33,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>

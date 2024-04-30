@@ -53,7 +53,7 @@ plugin://plugin.video.vavooto/?name=HISTORY
 plugin://plugin.video.vavooto/?name=HR
 #EXTINF:-1 tvg-id="Jukebox" group-title="Musik" tvg-logo="http://epggw.a1.net/img/station/darkbg/60x60/1400.png",Jukebox
 plugin://plugin.video.vavooto/?name=JUKEBOX
-#EXTINF:-1 tvg-id="DE: Kabel Eins" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/928.png",Kabel 1
+#EXTINF:-1 tvg-id="DE: Kabel Eins" group-title="Standard" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kabel_eins_Logo_2015.svg/1280px-Kabel_eins_Logo_2015.svg.png",Kabel 1
 plugin://plugin.video.vavooto/?name=KABEL+1
 #EXTINF:-1 tvg-id="DE: Kabel Eins CLASSICS" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1037.png",Kabel 1 Classics
 plugin://plugin.video.vavooto/?name=KABEL+1+CLASSICS

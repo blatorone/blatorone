@@ -581,6 +581,18 @@
 			<onclick>Back</onclick>
 		</control>
     </include>
+    
+    <include name="pvrguidewidth">
+        <include  condition="Skin.HasSetting(Touch)">pvrguidewidth1</include>
+        <include  condition="!Skin.HasSetting(Touch)">pvrguidewidth2</include>
+    </include>
+    <include name="pvrguidewidth1">
+        <width>20-col</width>
+    </include>
+    <include name="pvrguidewidth2">
+        <width>24-col</width>
+    </include>
+    
 
    <!--debugging-->
     <include name="DialogID">
