@@ -61,7 +61,7 @@ plugin://plugin.video.vavooto/?name=KABEL+1+CLASSICS
 plugin://plugin.video.vavooto/?name=KABEL+1+DOKU
 #EXTINF:-1 tvg-id="DE: KiKA" group-title="Kinder" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1010.png",KiKA
 plugin://plugin.video.vavooto/?name=KIKA
-#EXTINF:-1 tvg-id="DE: Kinowelt" group-title="Sky" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1039.png",Kinowelt
+#EXTINF:-1 tvg-id="DE: Kinowelt" group-title="Filme" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1039.png",Kinowelt
 plugin://plugin.video.vavooto/?name=KINOWELT
 #EXTINF:-1 tvg-id="DE: MDR Sachsen" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1011.png",MDR
 plugin://plugin.video.vavooto/?name=MDR
