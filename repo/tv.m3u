@@ -125,7 +125,7 @@ plugin://plugin.video.vavooto/?name=SAT+1+GOLD
 plugin://plugin.video.vavooto/?name=SERVUS+TV
 #EXTINF:-1 tvg-id="DE: Silverline" group-title="Sky" tvg-logo="https://images.waipu.tv/api/channels/SILVERLINE/logosamsungsd.png?width=256&height=256",Silverline
 plugin://plugin.video.vavooto/?name=SILVERLINE
-#EXTINF:-1 tvg-id="DE: SIXX" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/942.png",Sixx
+#EXTINF:-1 tvg-id="DE: SIXX" group-title="Standard" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Sixx.svg/300px-Sixx.svg.png",Sixx
 plugin://plugin.video.vavooto/?name=SIXX
 #EXTINF:-1 tvg-id="DE: Syfy" group-title="Sky" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/Syfy_HD_Logo_2017.png",Syfy
 plugin://plugin.video.vavooto/?name=SYFY
