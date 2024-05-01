@@ -101,14 +101,14 @@
                 <posy>row-1-begin</posy>
                 <control type="grouplist">
 					<posx>0</posx>
-                    <posy>40</posy>
+                    <posy>45</posy>
 					<orientation>vertical</orientation>
-					<itemgap>32</itemgap>
+					<itemgap>35</itemgap>
                     <control type="label">
                         <visible>!Pvr.IsPlayingTv</visible>
 	                    <width>8-col</width>
 	                    <align>left</align>
-	                    <height>3-row</height>
+	                    <height>4-row</height>
 	                    <aligny>center</aligny>
 	                    <font>VideoOSDTitel</font>
 	                    <textcolor>textActive</textcolor>
@@ -119,10 +119,10 @@
                         <visible>Pvr.IsPlayingTv + String.IsEmpty(Videoplayer.Episode)</visible>
 	                    <width>8-col</width>
 	                    <align>left</align>
-	                    <height>3-row</height>
+	                    <height>4-row</height>
 	                    <aligny>center</aligny>
 	                    <font>VideoOSDTitel</font>
-	                    <textcolor>textActive</textcolor>
+	                    <textcolor>textDisabled</textcolor>
 						<wrapmultiline>true</wrapmultiline>
 	                    <label>$INFO[Player.title]</label>
 	                </control>
@@ -130,7 +130,7 @@
                         <visible>Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.Episode)</visible>
 	                    <width>8-col</width>
 	                    <align>left</align>
-	                    <height>3-row</height>
+	                    <height>4-row</height>
 	                    <aligny>center</aligny>
 	                    <font>VideoOSDTitel</font>
 	                    <textcolor>textActive</textcolor>
