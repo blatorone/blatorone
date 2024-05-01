@@ -19,6 +19,9 @@
             <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
             <textcolor>textActive</textcolor>
         </control>
+        
+        
+
         <control type="group">
             <posx>1236</posx>
             <posy>0</posy>
@@ -45,41 +48,62 @@
                 <colordiffuse>cc111111</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
+            <control type="grouplist">
+                <posx>5%</posx>
+                <posy>2%</posy>
+                    <control type="group"> 
+                    <itemgap>32</itemgap>
+                    <orientation>horizontal</orientation>             
+                        <control type="image">
+							<width>66</width>
+							<height>66</height>
+							<aspectratio>keep</aspectratio>
+							<texture fallback="Kodilogo.png" diffuse="masks/discsurface.png" border="0">$INFO[Player.Art(thumb)]</texture>
+							<colordiffuse>textActive</colordiffuse>
+                        </control>
+                        <control type="label">
+                            <visible>Pvr.IsPlayingTv</visible>
+                            <posx>80</posx>
+                            <posy>15</posy>
+	                        <width>8-col</width>
+	                        <align>left</align>
+	                        <height>1-row</height>
+	                        <font>itemTitle</font>
+	                        <textcolor>$VAR[highlight]</textcolor>
+	                        <label>[CAPITALIZE][LOWERCASE]$INFO[videoplayer.Title][/LOWERCASE][/CAPITALIZE]</label>
+	                    </control>
+                        <control type="label">
+                            <visible>!Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.TVShowTitle)</visible>
+	                        <posx>80</posx>
+                            <posy>15</posy>
+                            <width>8-col</width>
+	                        <align>left</align>
+	                        <height>1-row</height>
+	                        <font>itemTitle</font>
+	                        <textcolor>$VAR[highlight]</textcolor>
+	                        <label>$INFO[VideoPlayer.TVShowTitle]</label>
+	                    </control>
+                        <control type="label">
+                            <visible>!Pvr.IsPlayingTv + String.IsEmpty(Videoplayer.TVShowTitle)</visible>
+	                        <posx>80</posx>
+                            <posy>15</posy>
+                            <width>8-col</width>
+	                        <align>left</align>
+	                        <height>1-row</height>
+	                        <font>itemTitle</font>
+	                        <textcolor>$VAR[highlight]</textcolor>
+	                        <label>$INFO[VideoPlayer.title]</label>
+	                    </control>
+                    </control>
+		    </control>
             <control type="group">
                 <posx>36</posx>
                 <posy>row-1-begin</posy>
                 <control type="grouplist">
 					<posx>0</posx>
-                    <posy>0</posy>
+                    <posy>40</posy>
 					<orientation>vertical</orientation>
 					<itemgap>32</itemgap>
-                    <control type="label">
-                        <visible>Pvr.IsPlayingTv</visible>
-	                    <width>8-col</width>
-	                    <align>left</align>
-	                    <height>1-row</height>
-	                    <font>itemTitle</font>
-	                    <textcolor>$VAR[highlight]</textcolor>
-	                    <label>[CAPITALIZE][LOWERCASE]$INFO[videoplayer.Title][/LOWERCASE][/CAPITALIZE]</label>
-	                </control>
-                    <control type="label">
-                        <visible>!Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.TVShowTitle)</visible>
-	                    <width>8-col</width>
-	                    <align>left</align>
-	                    <height>1-row</height>
-	                    <font>itemTitle</font>
-	                    <textcolor>$VAR[highlight]</textcolor>
-	                    <label>$INFO[VideoPlayer.TVShowTitle]</label>
-	                </control>
-                    <control type="label">
-                        <visible>!Pvr.IsPlayingTv + String.IsEmpty(Videoplayer.TVShowTitle)</visible>
-	                    <width>8-col</width>
-	                    <align>left</align>
-	                    <height>1-row</height>
-	                    <font>itemTitle</font>
-	                    <textcolor>$VAR[highlight]</textcolor>
-	                    <label>$INFO[VideoPlayer.title]</label>
-	                </control>
                     <control type="label">
                         <visible>!Pvr.IsPlayingTv</visible>
 	                    <width>8-col</width>
@@ -269,7 +293,7 @@
                 <include>keyboard select osd</include>
                 <control type="scrollbar" id="61">
                     <posx>12r</posx>
-                    <posy>9-row</posy>
+                    <posy>9-row</posy> 
                     <height>7-row</height>
                     <ondown>8001</ondown>
                 </control>
