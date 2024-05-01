@@ -308,9 +308,11 @@
                 </control>
                 <include>keyboard select osd</include>
                 <control type="scrollbar" id="61">
-                    <posx>12r</posx>
+                    <include>scrollbarwidth</include>
+                    <include>scrollbarposxosd</include>
+                    <include>scrollbarcolor</include>
                     <posy>9-row</posy> 
-                    <height>7-row</height>
+                    <height>9-row</height>
                     <ondown>8001</ondown>
                 </control>
             </control>

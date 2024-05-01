@@ -816,6 +816,51 @@
     <include name="pvrguidewidth2">
         <width>24-col</width>
     </include>
+
+    <include name="scrollbarwidth">
+        <include  condition="Skin.HasSetting(Touch)">scrollbarwidth1</include>
+        <include  condition="!Skin.HasSetting(Touch)">scrollbarwidth2</include>
+    </include>
+    <include name="scrollbarwidth1">
+        <width>850</width>
+    </include>
+    <include name="scrollbarwidth2">
+        <width>12</width>
+    </include>
+    <include name="scrollbarposx">
+        <include  condition="Skin.HasSetting(Touch)">scrollbarposx1</include>
+        <include  condition="!Skin.HasSetting(Touch)">scrollbarposx2</include>
+    </include>
+    <include name="scrollbarposx1">
+        <posx>0</posx>
+    </include>
+    <include name="scrollbarposx2">
+        <posx>-36</posx>
+    </include>
+    <include name="scrollbarcolor">
+        <include  condition="Skin.HasSetting(Touch)">scrollbarcolor1</include>
+        <include  condition="!Skin.HasSetting(Touch)">scrollbarcolor2</include>
+    </include>
+    <include name="scrollbarcolor1">
+        <texturesliderbackground colordiffuse="77black">colors/white.png</texturesliderbackground>
+        <texturesliderbarfocus colordiffuse="77overlay">colors/white.png</texturesliderbarfocus>
+    </include>
+    <include name="scrollbarcolor2">
+        <texturesliderbackground colordiffuse="overlay">colors/black.png</texturesliderbackground>
+        <texturesliderbarfocus colordiffuse="$VAR[highlight]">colors/white.png</texturesliderbarfocus>
+    </include>
+
+    <include name="scrollbarposxosd">
+        <include  condition="Skin.HasSetting(Touch)">scrollbarposx1osd</include>
+        <include  condition="!Skin.HasSetting(Touch)">scrollbarposx2osd</include>
+    </include>
+    <include name="scrollbarposx1osd">
+        <posx>0</posx>
+    </include>
+    <include name="scrollbarposx2osd">
+        <posx>12r</posx>
+    </include>
+
     
 
    <!--debugging-->

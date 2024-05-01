@@ -100,15 +100,19 @@
                     <shadowcolor></shadowcolor>
                     <height>232</height>
                     <label>$INFO[ListItem.plot]</label>
-                    <autoscroll>true</autoscroll>
+                    <autoscroll>false</autoscroll>
                     <pagecontrol>61</pagecontrol>
                 </control>
                 <control type="scrollbar" id="61">
-                    <posx>-36</posx>
+                    <include>scrollbarwidth</include>
+                    <include>scrollbarposx</include>
+                    <include>scrollbarcolor</include>
                     <posy>300</posy>
                     <height>6-row</height>
+                    <showonepage>false</showonepage>
                     <ondown>8000</ondown>
                 </control>
+
                 <!--dialog controls-->
                 <control type="list" id="8000">
                     <posx>0</posx>
