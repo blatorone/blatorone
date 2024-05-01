@@ -19,6 +19,7 @@
             <include>Battery</include>
             <!--Backbutton touchscreen-->
             <include>Backbutton</include>
+            <include>keyboard select</include>
             <control type="image">
                 <texture>vignette.png</texture>
                 <colordiffuse>ffffffff</colordiffuse>

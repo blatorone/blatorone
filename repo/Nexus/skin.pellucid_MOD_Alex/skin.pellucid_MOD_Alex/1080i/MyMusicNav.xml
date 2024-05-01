@@ -25,6 +25,7 @@
         <include>Battery</include>
         <!--Backbutton touchscreen-->
         <include>Backbutton</include>
+        <include>keyboard select</include>
         <!--page container group-->
         <control type="group">
             <!--shift page for certain modal dialogs-->

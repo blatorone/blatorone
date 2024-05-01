@@ -567,6 +567,217 @@
 			<colordiffuse></colordiffuse>
         </control>
     </include>
+
+
+    <include name="keyboard select">
+        <control type="group">
+                <posx>87%</posx>
+                <posy>35%</posy>
+                <!--row 1-->
+                <control type="button">
+                    <description>1 button</description>
+                    <label></label>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <onclick>up</onclick>
+                    <onclick>setfocus(9999)</onclick>
+                    <font>symbol</font>
+                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <visible>Skin.HasSetting(crosskey)</visible>
+                </control>
+                <control type="button">
+                    <description>1 button</description>
+                    <label></label>
+                    <posx>-125</posx>
+                    <posy>125</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <onclick>left</onclick>
+                    <onclick>setfocus(9999)</onclick>
+                    <font>symbol</font>
+                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <visible>Skin.HasSetting(crosskey)</visible>
+                </control>
+                
+                <control type="button">
+                    <description>3 button</description>
+                    <label></label>
+                    <posx>0</posx>
+                    <posy>265</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <onclick>down</onclick>
+                    <onclick>setfocus(9999)</onclick>
+                    <font>symbol</font>
+                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <visible>Skin.HasSetting(crosskey)</visible>
+                </control>
+                <control type="button">
+                    <description>4 button</description>
+                    <label></label>
+                    <posx>125</posx>
+                    <posy>125</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <onclick>right</onclick>
+                    <font>symbol</font>
+                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <visible>Skin.HasSetting(crosskey)</visible>
+                </control>
+
+                <control type="button">
+                    <description>4 button</description>
+                    <label>✓</label>
+                    <posx>0</posx>
+                    <posy>125</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <onclick>select</onclick>
+                    <font>symbol</font>
+                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <visible>Skin.HasSetting(crosskey)</visible>
+                </control>
+
+                <control type="button">
+                    <description>Backspace button</description>
+                    <label>31253</label>
+                    <posx>-60</posx>
+                    <posy>400</posy>
+                    <width>3-col</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <textwidth>180</textwidth>
+                    <onclick>back</onclick>
+                    <onclick>setfocus(9999)</onclick>
+                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <font>buttonTitle</font>
+                    <visible>Skin.HasSetting(crosskey)</visible>
+                </control>
+            </control>
+    </include>
+
+
+
+
+    <include name="keyboard select osd">
+        <control type="group">
+                <posx>-100%</posx>
+                <posy>25%</posy>
+                <!--row 1-->
+                <control type="button">
+                    <description>1 button</description>
+                    <label></label>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <onclick>ChannelUp</onclick>
+                    <font>symbol</font>
+                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <visible>Skin.HasSetting(crosskey)</visible>
+                </control>
+                <control type="button">
+                    <description>1 button</description>
+                    <label></label>
+                    <posx>-125</posx>
+                    <posy>125</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <onclick>activatewindow(PVROSDChannels)</onclick>
+                    <font>symbol</font>
+                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <visible>Skin.HasSetting(crosskey)</visible>
+                </control>
+                
+                <control type="button">
+                    <description>3 button</description>
+                    <label></label>
+                    <posx>0</posx>
+                    <posy>265</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <onclick>ChannelDown</onclick>
+                    <font>symbol</font>
+                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <visible>Skin.HasSetting(crosskey)</visible>
+                </control>
+                <control type="button">
+                    <description>4 button</description>
+                    <label></label>
+                    <posx>125</posx>
+                    <posy>125</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <onclick>activatewindow(PVROSDChannels)</onclick>
+                    <font>symbol</font>
+                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <visible>Skin.HasSetting(crosskey)</visible>
+                </control>
+
+                
+
+                <control type="button">
+                    <description>Backspace button</description>
+                    <label>31253</label>
+                    <posx>-60</posx>
+                    <posy>400</posy>
+                    <width>3-col</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <textwidth>180</textwidth>
+                    <onclick>back</onclick>
+                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <font>buttonTitle</font>
+                    <visible>Skin.HasSetting(crosskey)</visible>
+                </control>  
+            </control>
+    </include>
+
+
     
     <!--Backbutton-->
     <include name="Backbutton">

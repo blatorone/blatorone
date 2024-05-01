@@ -14,6 +14,7 @@
             <include>modalDialogContentShift</include>
             <!--Backbutton touchscreen-->
             <include>Backbutton</include>
+            
             <!--Main content listing-->
             <control type="group" id="9999">
                 <!--Battery Level-->
@@ -29,6 +30,7 @@
                     <include>episodes</include>
                     <include>musicvideos</include>
                 </control>
+                <include>keyboard select</include>
             </control>
             <!--page scrollbar-->
             <control type="group" id="8000">

@@ -14,6 +14,7 @@
         <include>Battery</include>
 		<!--Backbutton touchscreen-->
        	<include>Backbutton</include>
+        <include>keyboard select</include>
         <!--page container group-->
         <control type="group">
             <!--window fader-->

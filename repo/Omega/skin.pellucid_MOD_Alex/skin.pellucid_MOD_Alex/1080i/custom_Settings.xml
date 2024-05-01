@@ -192,6 +192,14 @@
                     <onclick>Skin.Togglesetting(Touch)</onclick>
                     <selected>Skin.HasSetting(Touch)</selected>
                 </control>
+                <control type="radiobutton" id="42">
+                    <visible>Container(8000).Hasfocus(1) + Skin.HasSetting(Touch)</visible>
+                    <description>Enable Home Button Further apart</description>
+                    <width>14-col</width>
+                    <label>31260</label>
+                    <onclick>Skin.Togglesetting(crosskey)</onclick>
+                    <selected>Skin.HasSetting(crosskey)</selected>
+                </control>
                 <control type="radiobutton" id="7">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Enable Home Button Further apart</description>

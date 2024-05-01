@@ -580,3 +580,7 @@ msgstr "Video-OSD automatisch schließen nach (Sekunden)"
 msgctxt "#31259"
 msgid "Change Skin Colors"
 msgstr "Farbe ändern"
+
+msgctxt "#31260"
+msgid "Enable Cross Key (Only Touch)"
+msgstr "Steuerkreuz Aktivieren (Nur Touch)"
