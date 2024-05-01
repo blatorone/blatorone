@@ -13,7 +13,7 @@
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
             <!--Backbutton touchscreen-->
-            <include>Backbutton</include>
+            <include>Backbuttoncross</include>
             
             <!--Main content listing-->
             <control type="group" id="9999">

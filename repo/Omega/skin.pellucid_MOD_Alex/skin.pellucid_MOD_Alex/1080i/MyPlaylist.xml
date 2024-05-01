@@ -18,7 +18,7 @@
             <!--Battery Level-->
             <include>Battery</include>
             <!--Backbutton touchscreen-->
-            <include>Backbutton</include>
+            <include>Backbuttoncross</include>
             <include>keyboard select</include>
             <control type="image">
                 <texture>vignette.png</texture>

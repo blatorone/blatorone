@@ -265,7 +265,7 @@
                     <pagecontrol>61</pagecontrol>
                 </control>
                  <!--Backbutton touchscreen-->
-                <include>Backbutton</include>
+                <include>Backbuttoncross</include>
                 <include>keyboard select osd</include>
                 <control type="scrollbar" id="61">
                     <posx>12r</posx>

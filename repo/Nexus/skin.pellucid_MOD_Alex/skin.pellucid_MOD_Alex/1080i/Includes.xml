@@ -792,6 +792,19 @@
 			<onclick>Back</onclick>
 		</control>
     </include>
+
+    <include name="Backbuttoncross">
+        <control type="button" id="80000">
+			<visible>Skin.HasSetting(Touch) + !Skin.HasSetting(crosskey)</visible>
+			<posx>0</posx>
+            <posy>0</posy>
+            <width>2000</width>
+            <height>1500</height>
+			<align>center</align>
+            <colordiffuse>colors/offblack.png</colordiffuse>
+			<onclick>Back</onclick>
+		</control>
+    </include>
     
     <include name="pvrguidewidth">
         <include  condition="Skin.HasSetting(Touch)">pvrguidewidth1</include>
