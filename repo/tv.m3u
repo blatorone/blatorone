@@ -93,7 +93,7 @@ plugin://plugin.video.vavooto/?name=ORF+2
 plugin://plugin.video.vavooto/?name=PHOENIX
 #EXTINF:-1 tvg-id="DE: ProSieben" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/936.png",ProSieben
 plugin://plugin.video.vavooto/?name=PRO+7
-#EXTINF:-1 tvg-id="DE: ProSieben FUN" group-title="Standard" tvg-logo="https://upload.wikimedia.org/wikipedia/de/thumb/5/52/ProSieben_Fun_HD_2012.png/320px-ProSieben_Fun_HD_2012.png",ProSieben Fun
+#EXTINF:-1 tvg-id="DE: ProSieben FUN" group-title="Standard" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F1f0e9026087e023f7464640bcbe4eaed6cce4055.png&out=webp",ProSieben Fun
 plugin://plugin.video.vavooto/?name=PRO+7+FUN
 #EXTINF:-1 tvg-id="DE: ProSieben MAXX" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/955.png",Pro 7 MAXX
 plugin://plugin.video.vavooto/?name=PRO+7+MAXX
