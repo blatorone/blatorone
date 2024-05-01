@@ -59,7 +59,7 @@
 					<posx>col-1-begin</posx>
 					<posy>row-4-begin</posy>
 					<include>pvrguidewidth</include>
-					<height>23-row</height>
+					<height>24-row</height>
 					<timeblocks>30</timeblocks>
 					<progresstexture border="0,33,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>
 					<rulerunit>6</rulerunit>
@@ -153,6 +153,7 @@
 							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
 					</channellayout>
+					<!--
 					<focusedchannellayout height="2-row" width="288" condition='!Skin.HasSetting(touch)'>
 						<control type="image">
 							<posx>1-col</posx>
@@ -185,6 +186,7 @@
 							<scroll>true</scroll>
 						</control>
 					</focusedchannellayout>
+					-->
 					<focusedchannellayout height="3-row" width="288" condition='Skin.HasSetting(touch)'>
 						<control type="image">
 							<posx>2-col</posx>
@@ -202,8 +204,8 @@
 							<texture fallback="Kodilogo.png" diffuse="masks/discsurface.png" border="0">$INFO[Listitem.thumb]</texture>
 							<animation type="focus" loop="false" reversible="false">
 								<effect type="fade" time="500"/>
-								<effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-							</animation>
+								<effect type="rotatey" end="360" center="50" tween="back" easing="out" time="1000"/>
+							</animation> 
 						</control>
 						<control type="label">
 							<posx>2-col-indent</posx>

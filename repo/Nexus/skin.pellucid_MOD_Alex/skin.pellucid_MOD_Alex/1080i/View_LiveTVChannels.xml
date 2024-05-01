@@ -278,8 +278,8 @@
 						<texture fallback="Kodilogo.png" diffuse="masks/discsurface.png" border="0">$INFO[Listitem.thumb]</texture>
 						<animation type="focus" loop="false" reversible="false">
 							<effect type="fade" time="500"/>
-							<effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-						</animation>
+							<effect type="rotatey" end="360" center="50" tween="back" easing="out" time="1000"/>
+						</animation> 
 					</control>
 					<control type="label">
 						<posx>2-col-indent</posx>

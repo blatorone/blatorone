@@ -274,22 +274,38 @@
                         <shadowcolor></shadowcolor>
                     </control>
 				</control>
-                <!--synopsis-->
-                <control type="textbox">
-                    <posx>0</posx>
-                    <posy>9-row</posy>
-                    <font>textbox</font>
-                    <width>612</width>
-                    <align>left</align>
-                    <textcolor>textActive</textcolor>
-                    <height>314</height>
-                    <label fallback="31205">$INFO[videoplayer.plot]</label>
-                    <autoscroll>false</autoscroll>
-                    <shadowcolor></shadowcolor>
-                    <pagecontrol>61</pagecontrol>
-                </control>
                  <!--Backbutton touchscreen-->
                 <include>Backbuttoncross</include>
+                <!--synopsis-->
+                <control type="grouplist">
+                    <posx>0</posx>
+                    <posy>9-row</posy>
+                    <itemgap>15</itemgap>
+                    <orientation>vertical</orientation>
+                    <control type="label">
+						<visible>Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.Episode)</visible>
+                        <posx>3-col-gutter</posx>
+                        <posy>32</posy>
+                        <width>6-col</width>
+                        <font>itemTitle</font>
+                        <scroll>true</scroll>
+                        <textcolor>textActive</textcolor>
+                        <label fallback="13205">[COLOR $VAR[highlight]]$LOCALIZE[20373]:[/COLOR] $INFO[VideoPlayer.Season]          [COLOR $VAR[highlight]]$LOCALIZE[20359]:[/COLOR] $INFO[VideoPlayer.Episode]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+                    <control type="textbox">
+                        
+                        <font>textbox</font>
+                        <width>612</width>
+                        <align>left</align>
+                        <textcolor>textActive</textcolor>
+                        <height>314</height>
+                        <label fallback="31205">$INFO[videoplayer.plot]</label>
+                        <autoscroll>false</autoscroll>
+                        <shadowcolor></shadowcolor>
+                        <pagecontrol>61</pagecontrol>
+                    </control>
+                </control>
                 <include>keyboard select osd</include>
                 <control type="scrollbar" id="61">
                     <posx>12r</posx>
