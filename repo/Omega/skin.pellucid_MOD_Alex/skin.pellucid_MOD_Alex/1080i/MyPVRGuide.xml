@@ -153,7 +153,6 @@
 							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
 					</channellayout>
-					<!--
 					<focusedchannellayout height="2-row" width="288" condition='!Skin.HasSetting(touch)'>
 						<control type="image">
 							<posx>1-col</posx>
@@ -186,7 +185,6 @@
 							<scroll>true</scroll>
 						</control>
 					</focusedchannellayout>
-					-->
 					<focusedchannellayout height="3-row" width="288" condition='Skin.HasSetting(touch)'>
 						<control type="image">
 							<posx>2-col</posx>
