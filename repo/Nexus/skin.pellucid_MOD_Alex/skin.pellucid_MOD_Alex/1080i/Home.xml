@@ -586,10 +586,10 @@
 			<control type="group">
 				<posx>col-1-begin</posx>
 				<posy>row-8-begin</posy>
-				<animation type="conditional" condition="control.hasfocus(9999) + !player.playing" reversible="true">
+				<animation type="conditional" condition="control.hasfocus(9999) + !player.playing + !player.paused" reversible="true">
 					<effect type="slide" start="0,0" end="0,534" time="200" delay="0"/>
 				</animation>
-				<animation type="conditional" condition="control.hasfocus(9999) + player.playing" reversible="true">
+				<animation type="conditional" condition="control.hasfocus(9999) + [player.playing | player.paused]" reversible="true">
 					<effect type="slide" start="0,0" end="0,484" time="200" delay="0"/>
 				</animation>
 				<control type="label">
