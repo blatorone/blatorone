@@ -54,7 +54,7 @@
                             <label>[B]$INFO[ListItem.label][/B]</label>
                             <shadowcolor></shadowcolor>
                         </control>
-                        <control type="label">
+                        <control type="label"> 
                             <posx>0</posx>
                             <posy>30</posy>
                             <width>324</width>
@@ -87,10 +87,37 @@
                             <label2>$INFO[ListItem.duration]</label2>
                             <thumb></thumb>
                         </item>
+                        <item>
+                            <visible>!String.IsEmpty(ListItem.Episode)</visible>
+                            <label>$LOCALIZE[20373]</label>
+                            <label2>$INFO[ListItem.Season]</label2>
+                            <thumb></thumb>
+                        </item>
+                        <item>
+                            <visible>!String.IsEmpty(ListItem.Episode)</visible>
+                            <label>$LOCALIZE[20359]</label>
+                            <label2>$INFO[ListItem.Episode]</label2>
+                            <thumb></thumb>
+                        </item>
                     </content>
                 </control>
                 <!--synopsis-->
                 <control type="textbox">
+                    <visible>!String.IsEmpty(ListItem.Episode)</visible>
+                    <posx>0</posx>
+                    <posy>365</posy>
+                    <font>textbox</font>
+                    <width>12-col</width>
+                    <align>left</align>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor></shadowcolor>
+                    <height>200</height>
+                    <label>$INFO[ListItem.plot]</label>
+                    <autoscroll>false</autoscroll>
+                    <pagecontrol>61</pagecontrol>
+                </control>
+                <control type="textbox">
+                    <visible>String.IsEmpty(ListItem.Episode)</visible>
                     <posx>0</posx>
                     <posy>292</posy>
                     <font>textbox</font>
