@@ -73,6 +73,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
+                        <selectedcolor>yellow</selectedcolor>
                         <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
@@ -144,6 +145,7 @@
                         <textcolor>$VAR[Home]</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
+                        <selectedcolor>yellow</selectedcolor>
                     </control>
                 </focusedlayout>
             </control>

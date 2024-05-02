@@ -48,6 +48,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
+                    <selectedcolor>yellow</selectedcolor>
                     <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
@@ -105,6 +106,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
+                    <selectedcolor>yellow</selectedcolor>
                     <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
@@ -167,6 +169,7 @@
                     <textcolor>$VAR[Home]</textcolor>
                     <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
+                    <selectedcolor>yellow</selectedcolor>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(ListItem.playcount)</visible>
@@ -225,6 +228,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>$VAR[Home]</textcolor>
+                    <selectedcolor>yellow</selectedcolor>
                     <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
