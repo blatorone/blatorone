@@ -208,7 +208,7 @@
                             <aligny>center</aligny>
                             <align>center</align>
                             <font>symbolLarge</font>
-                            <textcolor>textActive</textcolor>
+                            <textcolor>$VAR[Home]</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor></shadowcolor>
                         </control>
