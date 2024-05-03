@@ -587,7 +587,7 @@ msgstr "Steuerkreuz Aktivieren (Nur Touch)"
 
 msgctxt "#31261"
 msgid "Homemenu Look"
-msgstr "Startmeü Stil"
+msgstr "Startmenü Stil"
 
 msgctxt "#31262"
 msgid "Grid"
