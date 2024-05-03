@@ -337,12 +337,20 @@
                     <selected>Skin.HasSetting(Touch)</selected>
                 </control>
                 <control type="radiobutton" id="61">
-                    <visible>Container(8000).Hasfocus(5) + Skin.HasSetting(Touch)</visible>
+                    <visible>Container(8000).Hasfocus(5) + Skin.HasSetting(Touch) + !Skin.HasSetting(settings)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
                     <label>31260</label>
                     <onclick>Skin.Togglesetting(crosskey)</onclick>
                     <selected>Skin.HasSetting(crosskey)</selected>
+                </control>
+                <control type="radiobutton" id="62">
+                    <visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings)</visible>
+                    <description>Change Main Button Menu to Slider</description>
+                    <width>14-col</width>
+                    <label>$LOCALIZE[31261]</label>
+                    <onclick>Skin.Togglesetting(homemenuslide)</onclick>
+                    <selected>Skin.HasSetting(homemenuslide)</selected>
                 </control>
                 <control type="radiobutton" id="27">
                     <visible>Container(8000).Hasfocus(5)</visible>

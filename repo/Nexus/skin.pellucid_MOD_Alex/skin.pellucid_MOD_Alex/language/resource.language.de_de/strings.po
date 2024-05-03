@@ -584,3 +584,7 @@ msgstr "Farbe ändern"
 msgctxt "#31260"
 msgid "Enable Cross Key (Only Touch)"
 msgstr "Steuerkreuz Aktivieren (Nur Touch)"
+
+msgctxt "#31261"
+msgid "Homemenu as Slider"
+msgstr "Startmenü als Slider"

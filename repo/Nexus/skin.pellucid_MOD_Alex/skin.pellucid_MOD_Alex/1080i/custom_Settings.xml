@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1105" type="dialog">
     <defaultcontrol always="true">8000</defaultcontrol>
+    <onunload>ReloadSkin()</onunload>
     <controls>
         <!--background-->
         <include>globalBackground</include>
@@ -194,12 +195,21 @@
                 </control>
                 <control type="radiobutton" id="42">
                     <visible>Container(8000).Hasfocus(1) + Skin.HasSetting(Touch)</visible>
-                    <description>Enable Home Button Further apart</description>
+                    <description>Enable crosskey</description>
                     <width>14-col</width>
                     <label>31260</label>
                     <onclick>Skin.Togglesetting(crosskey)</onclick>
                     <selected>Skin.HasSetting(crosskey)</selected>
                 </control>
+                <control type="radiobutton" id="43">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Change Main Button Menu to Slider</description>
+                    <width>14-col</width>
+                    <label>$LOCALIZE[31261]</label>
+                    <onclick>Skin.Togglesetting(homemenuslide)</onclick>
+                    <selected>Skin.HasSetting(homemenuslide)</selected>
+                </control>
+
                 <control type="radiobutton" id="7">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Enable Home Button Further apart</description>
@@ -210,7 +220,7 @@
                 </control>
                 <control type="radiobutton" id="10">
                     <visible>Container(8000).Hasfocus(2)</visible>
-                    <description>Enable Home Button Further apart</description>
+                    <description>color change</description>
                     <width>14-col</width>
                     <textureradioonfocus colordiffuse="textactive">Colors/Lightblue.png</textureradioonfocus>
                     <textureradioonnofocus colordiffuse="textActive">Colors/Lightblue.png</textureradioonnofocus>

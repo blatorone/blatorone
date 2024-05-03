@@ -372,6 +372,7 @@
 					<posx>0</posx>
 					<posy>8</posy>
 					<width>24-col</width>
+                    <height>1-row</height>
 					<align>center</align>
 					<itemgap>-20</itemgap>
 					<orientation>horizontal</orientation>
@@ -860,6 +861,42 @@
     <include name="scrollbarposx2osd">
         <posx>12r</posx>
     </include>
+
+    <!--homemenu slide or grid-->
+   <include name="homemenuslide">
+        <include  condition="Skin.HasSetting(homemenuslide)">homemenuslide1</include>
+        <include  condition="!Skin.HasSetting(homemenuslide)">homemenuslide2</include>
+    </include>
+    <include name="homemenuslide1">
+        <width>fullscreenWidth</width>
+	    <orientation>horizontal</orientation>
+	    <height>3-row</height>
+	    <posx>0</posx>
+	    <posy>50%</posy>
+        <colordiffuse>ffffff</colordiffuse>
+        </include>
+    <include name="homemenuslide2">
+    	<width>18-col</width>
+	    <orientation>vertical</orientation>
+	    <height>12-row</height>
+	    <posx>col-5-begin</posx>
+	    <posy>row-12-begin</posy>
+        <colordiffuse>77000000</colordiffuse>
+    </include>
+
+    <include name="homemenuslidecolor">
+        <include  condition="Skin.HasSetting(homemenuslide)">homemenuslide1</include>
+        <include  condition="!Skin.HasSetting(homemenuslide)">homemenuslide2</include>
+    </include>
+    <include name="homemenuslide1color">
+        
+        <colordiffuse>ffffff</colordiffuse>
+        </include>
+    <include name="homemenuslide2color">
+    	
+        <colordiffuse>77000000</colordiffuse>
+    </include>
+    
 
     
 
