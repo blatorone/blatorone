@@ -833,8 +833,8 @@
         </control>
 		<!--Settings visible Button-->
 		<control type="group">
-				<posx>25</posx>
-				<posy>25</posy>
+				<posx>790</posx>
+				<posy>244</posy>
 				<visible>Skin.HasSetting(settings)</visible>
 				<control type="panel" id="7000">
 					<posx>38</posx>
