@@ -932,7 +932,7 @@
 		<ondown>8001</ondown>
         </include>
     <include name="homemenukeycontrol2">
-        <onup>9001</onup>
+        <onup>9000</onup>
 		<ondown>8001</ondown>
     </include>
     <include name="homemenukeycontrol3">
