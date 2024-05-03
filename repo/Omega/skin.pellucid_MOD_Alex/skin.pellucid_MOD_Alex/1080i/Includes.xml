@@ -18,7 +18,7 @@
     <include file="View_Artists.xml"/>
     <include file="View_Albums.xml"/>
     <include file="View_Songs.xml"/>
-    <include file="View_MusicFiles.xml"/>
+    <include file="View_MusicFiles.xml"/> 
     <include file="View_MusicPlaylist.xml"/>
     <include file="View_ArtistAlbums.xml"/>
     <include file="View_MusicVideos.xml"/>
@@ -864,8 +864,10 @@
 
     <!--homemenu slide or grid-->
    <include name="homemenuslide">
-        <include  condition="Skin.HasSetting(homemenuslide)">homemenuslide1</include>
-        <include  condition="!Skin.HasSetting(homemenuslide)">homemenuslide2</include>
+        <include  condition="Skin.HasSetting(homemenuslide) + !Skin.HasSetting(homemenugrid) + !Skin.HasSetting(homemenuside)">homemenuslide1</include>
+        <include  condition="Skin.HasSetting(homemenugrid) + !Skin.HasSetting(homemenuslide) + !Skin.HasSetting(homemenuside)">homemenuslide2</include>
+        <include  condition="Skin.HasSetting(homemenuside) + !Skin.HasSetting(homemenuslide) + !Skin.HasSetting(homemenugrid)">homemenuslide3</include>
+        <include  condition="!Skin.HasSetting(homemenuside) + !Skin.HasSetting(homemenuslide) + !Skin.HasSetting(homemenugrid)">homemenuslide2</include>
     </include>
     <include name="homemenuslide1">
         <width>fullscreenWidth</width>
@@ -874,6 +876,8 @@
 	    <posx>0</posx>
 	    <posy>50%</posy>
         <colordiffuse>ffffff</colordiffuse>
+        <onup>9005</onup>
+		<ondown>setfocus(9001,0)</ondown>
         </include>
     <include name="homemenuslide2">
     	<width>18-col</width>
@@ -882,17 +886,37 @@
 	    <posx>col-5-begin</posx>
 	    <posy>row-12-begin</posy>
         <colordiffuse>77000000</colordiffuse>
+        <onup>9005</onup>
+		<ondown>setfocus(9001,0)</ondown>
+    </include>
+    <include name="homemenuslide3">
+    	<width>4-col-textbox</width>
+	    <orientation>horizontal</orientation>
+	    <height>fullscreenHeight</height>
+	    <posx>0</posx>
+	    <posy>0</posy>
+        <colordiffuse>ffffff</colordiffuse>
+        <onup>9000</onup>
+        <ondown>9000</ondown>
+		<onright>setfocus(9001,0)</onright>
+        <onleft>9005</onleft>
     </include>
 
     <include name="homemenuslidecolor">
-        <include  condition="Skin.HasSetting(homemenuslide)">homemenuslide1</include>
-        <include  condition="!Skin.HasSetting(homemenuslide)">homemenuslide2</include>
+        <include  condition="Skin.HasSetting(homemenuslide) + !Skin.HasSetting(homemenugrid) + !Skin.HasSetting(homemenuside)">homemenuslide1</include>
+        <include  condition="Skin.HasSetting(homemenugrid) + !Skin.HasSetting(homemenuslide) + !Skin.HasSetting(homemenuside)">homemenuslide2</include>
+        <include  condition="Skin.HasSetting(homemenuside) + !Skin.HasSetting(homemenuslide) + !Skin.HasSetting(homemenugrid)">homemenuslide3</include>
+        <include  condition="!Skin.HasSetting(homemenuside) + !Skin.HasSetting(homemenuslide) + !Skin.HasSetting(homemenugrid)">homemenuslide2</include>
     </include>
     <include name="homemenuslide1color">
         
         <colordiffuse>ffffff</colordiffuse>
-        </include>
+    </include>
     <include name="homemenuslide2color">
+    	
+        <colordiffuse>77000000</colordiffuse>
+    </include>
+    <include name="homemenuslide3color">
     	
         <colordiffuse>77000000</colordiffuse>
     </include>

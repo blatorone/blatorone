@@ -587,6 +587,18 @@ msgid "Enable Cross Key (Only Touch)"
 msgstr ""
 
 msgctxt "#31261"
-msgid "Homemenu as Slider"
+msgid "Homemenu Look"
+msgstr ""
+
+msgctxt "#31262"
+msgid "Grid"
+msgstr ""
+
+msgctxt "#31263"
+msgid "Slider"
+msgstr ""
+
+msgctxt "#31264"
+msgid "Side"
 msgstr ""
 

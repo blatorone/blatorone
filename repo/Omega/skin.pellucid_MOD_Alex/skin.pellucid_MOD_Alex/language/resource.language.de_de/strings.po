@@ -586,5 +586,17 @@ msgid "Enable Cross Key (Only Touch)"
 msgstr "Steuerkreuz Aktivieren (Nur Touch)"
 
 msgctxt "#31261"
-msgid "Homemenu as Slider"
-msgstr "Startmenü als Slider"
+msgid "Homemenu Look"
+msgstr "Startmeü Stil"
+
+msgctxt "#31262"
+msgid "Grid"
+msgstr "Gitter"
+
+msgctxt "#31263"
+msgid "Slider"
+msgstr ""
+
+msgctxt "#31264"
+msgid "Side"
+msgstr "Seite"

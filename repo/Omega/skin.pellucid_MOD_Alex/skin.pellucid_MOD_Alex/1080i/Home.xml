@@ -282,6 +282,21 @@
 						<colordiffuse>77000000</colordiffuse>
 						<aspectratio>stretch</aspectratio>
 			</control>
+			<control type="image">
+				<animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
+					<effect type="fade" start="100" end="0" time="500" delay="0"/>
+				</animation>
+				<animation condition="string.isEqual(Container(9000).NumItems,1)" effect="slide" end="432,0" time="0">conditional</animation>
+				<animation condition="string.isEqual(Container(9000).NumItems,2)" effect="slide" end="288,0" time="0">conditional</animation>
+				<animation condition="string.isEqual(Container(9000).NumItems,3)" effect="slide" end="144,0" time="0">conditional</animation>
+						<visible>Skin.HasSetting(homemenuside)</visible>
+						<width>4-col-textbox</width>
+						<posy>0</posy>
+						<height>fullscreenHeight</height>
+						<texture>colors/black.png</texture>
+						<colordiffuse>77000000</colordiffuse>
+						<aspectratio>stretch</aspectratio>
+			</control>
 			<control type="panel" id="9000">
 				<animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
 					<effect type="fade" start="100" end="0" time="500" delay="0"/>
@@ -290,8 +305,6 @@
 				<animation condition="string.isEqual(Container(9000).NumItems,2)" effect="slide" end="288,0" time="0">conditional</animation>
 				<animation condition="string.isEqual(Container(9000).NumItems,3)" effect="slide" end="144,0" time="0">conditional</animation>
 				<include>homemenuslide</include>
-				<onup>9005</onup>
-				<ondown>setfocus(9001,0)</ondown>
 				<itemlayout width="4-col" height="3-row">
 					
 					<control type="image">
