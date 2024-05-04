@@ -66,6 +66,32 @@
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <control type="radiobutton" id="9">
+                    <visible>String.Contains(System.Language,English) + [String.Contains(System.Language,English (Australia)) | String.Contains(System.Language,English (US)) | String.Contains(System.Language,English (New Zealand))]</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/eng.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/eng.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/eng.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/eng.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>English</label>
+                    <onclick>InstallAddon(resource.language.en_gb)</onclick>
+                    <onclick>SetGUILanguage(resource.language.en_gb)</onclick>
+                </control>
+                <control type="radiobutton" id="10">
+                    <visible>String.Contains(System.Language,English) + !String.Contains(System.Language,English (Australia)) + !String.Contains(System.Language,English (US)) + !String.Contains(System.Language,English (New Zealand))</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/eng.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/eng.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/eng.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/eng.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]English[/COLOR]</label>
+                    <onclick>InstallAddon(resource.language.en_gb)</onclick>
+                    <onclick>SetGUILanguage(resource.language.en_gb)</onclick>
+                </control>
+                <control type="radiobutton" id="17">
                     <visible>!String.Contains(System.Language,English)</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
@@ -75,19 +101,6 @@
                     <textureradiooffnofocus>lang/eng.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>English</label>
-                    <onclick>InstallAddon(resource.language.en_au)</onclick>
-                    <onclick>SetGUILanguage(resource.language.en_au)</onclick>
-                </control>
-                <control type="radiobutton" id="10">
-                    <visible>String.Contains(System.Language,English)</visible>
-                    <description>Grid Menu</description>
-                    <width>14-col</width>
-                    <textureradioonfocus>lang/eng.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/eng.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/eng.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/eng.png</textureradiooffnofocus>
-                    <texturefocus>colors/grey.png</texturefocus>
-                    <label>[COLOR yellow]English[/COLOR]</label>
                     <onclick>InstallAddon(resource.language.en_gb)</onclick>
                     <onclick>SetGUILanguage(resource.language.en_gb)</onclick>
                 </control>
@@ -195,7 +208,84 @@
                     <onclick>InstallAddon(resource.language.tr_tr)</onclick>
                     <onclick>SetGUILanguage(resource.language.tr_tr)</onclick>
                 </control>
-                
+                <control type="radiobutton" id="11">
+                    <visible>!String.Contains(System.Language,English (Australia))</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/aus.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/aus.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/aus.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/aus.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>English (Australia)</label>
+                    <onclick>InstallAddon(resource.language.en_au)</onclick>
+                    <onclick>SetGUILanguage(resource.language.en_au)</onclick>
+                </control>
+                <control type="radiobutton" id="12">
+                    <visible>String.Contains(System.Language,English (Australia))</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/aus.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/aus.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/aus.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/aus.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]English (Australia)[/COLOR]</label>
+                    <onclick>InstallAddon(resource.language.en_au)</onclick>
+                    <onclick>SetGUILanguage(resource.language.au)</onclick>
+                </control>
+                <control type="radiobutton" id="13">
+                    <visible>!String.Contains(System.Language,English (New Zealand))</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/mao.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/mao.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/mao.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/mao.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>English (New Zeeland)</label>
+                    <onclick>InstallAddon(resource.language.en_nz)</onclick>
+                    <onclick>SetGUILanguage(resource.language.en_nz)</onclick>
+                </control>
+                <control type="radiobutton" id="14">
+                    <visible>String.Contains(System.Language,English (New Zealand))</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/mao.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/mao.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/mao.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/mao.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]English (New Zeeland)[/COLOR]</label>
+                    <onclick>InstallAddon(resource.language.en_nz)</onclick>
+                    <onclick>SetGUILanguage(resource.language.nz)</onclick>
+                </control>
+                <control type="radiobutton" id="15">
+                    <visible>!String.Contains(System.Language,English (US))</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/eng.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/eng.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/eng.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/eng.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>English (US)</label>
+                    <onclick>InstallAddon(resource.language.en_us)</onclick>
+                    <onclick>SetGUILanguage(resource.language.en_us)</onclick>
+                </control>
+                <control type="radiobutton" id="16">
+                    <visible>String.Contains(System.Language,English (US))</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/eng.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/eng.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/eng.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/eng.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]English (US)[/COLOR]</label>
+                    <onclick>InstallAddon(resource.language.en_us)</onclick>
+                    <onclick>SetGUILanguage(resource.language.us)</onclick>
+                </control>
                 
                 
                 
