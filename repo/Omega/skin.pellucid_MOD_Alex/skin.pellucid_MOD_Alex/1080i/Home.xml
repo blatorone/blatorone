@@ -232,7 +232,7 @@
 	                        <description>change Language</description>
 	                        <label2></label2>
 	                        <thumb></thumb>
-	                        <onclick>ActivateWindow(10040,addons://repository.xbmc.org/kodi.resource.language,return)</onclick>
+	                        <onclick>activatewindow(1109)</onclick>
 	                    </item>
 	                </content>
 	            </control>                     

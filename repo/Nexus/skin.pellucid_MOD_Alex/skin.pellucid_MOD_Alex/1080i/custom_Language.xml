@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1109" type="dialog">
+    <defaultcontrol always="true">200</defaultcontrol>
+    <controls>
+        <!--background-->
+        <include>globalBackground</include>
+        <control type="multiimage">
+			<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+			<include>dimensionsFullscreen</include>
+			<imagepath>$VAR[homeBackgroundLocation]</imagepath>
+			<timeperimage>45000</timeperimage>
+			<fadetime>200</fadetime>
+			<pauseatend>10000</pauseatend>
+			<randomize>true</randomize>
+			<loop>yes</loop>
+			<aspectratio>scale</aspectratio>
+			<colordiffuse>99ffffff</colordiffuse>
+		</control>
+        <!--Battery level-->
+        <include>Battery</include>
+         <!--Backbutton touchscreen-->
+        <include>Backbutton</include>
+        <control type="group">
+            <posx>490</posx>
+            <posy>row-5-begin</posy>
+            <!--animations-->
+            <include>modalDialogInOutVertical</include>
+            <control type="image">
+                <posx>-12</posx>
+                <posy>-12</posy>
+                <width>1030</width>
+                <height>720</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>14-col</width>
+                <height>2-row</height>
+                <texture>colors/white.png</texture>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--title-->
+            <control type="label">
+                <posx>24</posx>
+                <posy>0</posy>
+                <width>14-col</width>
+                <height>2-row</height>
+                <font>dialogTitle</font>
+                <label>$LOCALIZE[31261] $LOCALIZE[5]</label>
+                <textcolor>$VAR[Home]</textcolor>
+                <shadowcolor></shadowcolor>
+            </control>
+            
+            <!--options-->
+            
+            <control type="grouplist" id="200">
+                <posx>0</posx>
+                <posy>84</posy>
+                <width>14-col</width>
+                <height>17-row</height>
+                <onleft>8000</onleft>
+                <itemgap>0</itemgap>
+                <orientation>vertical</orientation>
+                <control type="radiobutton" id="1">
+                    <visible>!String.Contains(System.Language,German)</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/deu.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/deu.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/deu.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/deu.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>German</label>
+                    <onclick>InstallAddon(resource.language.de_de)</onclick>
+                    <onclick>SetGUILanguage(resource.language.de_de)</onclick>
+                </control>
+                <control type="radiobutton" id="2">
+                    <visible>String.Contains(System.Language,German)</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/deu.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/deu.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/deu.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/deu.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]German[/COLOR]</label>
+                    <onclick>InstallAddon(resource.language.de_de)</onclick>
+                    <onclick>SetGUILanguage(resource.language.de_de)</onclick>
+                </control>
+                <control type="radiobutton" id="3">
+                    <visible>!String.Contains(System.Language,Polish)</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/pol.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/pol.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/pol.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/pol.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>Polish</label>
+                    <onclick>InstallAddon(resource.language.pl_pl)</onclick>
+                    <onclick>SetGUILanguage(resource.language.pl_pl)</onclick>
+                </control>
+                <control type="radiobutton" id="4">
+                    <visible>String.Contains(System.Language,Polish)</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/pol.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/pol.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/pol.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/pol.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Polish[/COLOR]</label>
+                    <onclick>InstallAddon(resource.language.pl_pl)</onclick>
+                    <onclick>SetGUILanguage(resource.language.pl_pl)</onclick>
+                </control>
+                <control type="radiobutton" id="5">
+                    <visible>!String.Contains(System.Language,Russian)</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/rus.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/rus.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/rus.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/rus.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>Russian</label>
+                    <onclick>InstallAddon(resource.language.ru_ru)</onclick>
+                    <onclick>SetGUILanguage(resource.language.ru_ru)</onclick>
+                </control>
+                <control type="radiobutton" id="6">
+                    <visible>String.Contains(System.Language,Russian)</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/rus.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/rus.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/rus.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/rus.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Russian[/COLOR]</label>
+                    <onclick>InstallAddon(resource.language.ru_ru)</onclick>
+                    <onclick>SetGUILanguage(resource.language.ru_ru)</onclick>
+                </control>
+                <control type="radiobutton" id="7">
+                    <visible>!String.Contains(System.Language,Turkish)</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/tur.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/tur.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/tur.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/tur.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>Turkish</label>
+                    <onclick>InstallAddon(resource.language.tr_tr)</onclick>
+                    <onclick>SetGUILanguage(resource.language.tr_tr)</onclick>
+                </control>
+                <control type="radiobutton" id="8">
+                    <visible>String.Contains(System.Language,Turkish)</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/tur.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/tur.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/tur.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/tur.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]Turkish[/COLOR]</label>
+                    <onclick>InstallAddon(resource.language.tr_tr)</onclick>
+                    <onclick>SetGUILanguage(resource.language.tr_tr)</onclick>
+                </control>
+                
+                
+                
+                
+
+
+            </control>
+        </control>
+        <!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <include>DialogID</include>
+            <label>custom_Settings.xml</label>
+        </control>
+    </controls>
+</window>
