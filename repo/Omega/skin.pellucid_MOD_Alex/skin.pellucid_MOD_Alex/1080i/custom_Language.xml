@@ -65,6 +65,32 @@
                 <onleft>8000</onleft>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
+                <control type="radiobutton" id="9">
+                    <visible>!String.Contains(System.Language,English)</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/eng.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/eng.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/eng.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/eng.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>English</label>
+                    <onclick>InstallAddon(resource.language.en_au)</onclick>
+                    <onclick>SetGUILanguage(resource.language.en_au)</onclick>
+                </control>
+                <control type="radiobutton" id="10">
+                    <visible>String.Contains(System.Language,English)</visible>
+                    <description>Grid Menu</description>
+                    <width>14-col</width>
+                    <textureradioonfocus>lang/eng.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/eng.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/eng.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/eng.png</textureradiooffnofocus>
+                    <texturefocus>colors/grey.png</texturefocus>
+                    <label>[COLOR yellow]English[/COLOR]</label>
+                    <onclick>InstallAddon(resource.language.en_gb)</onclick>
+                    <onclick>SetGUILanguage(resource.language.en_gb)</onclick>
+                </control>
                 <control type="radiobutton" id="1">
                     <visible>!String.Contains(System.Language,German)</visible>
                     <description>Grid Menu</description>
@@ -169,6 +195,7 @@
                     <onclick>InstallAddon(resource.language.tr_tr)</onclick>
                     <onclick>SetGUILanguage(resource.language.tr_tr)</onclick>
                 </control>
+                
                 
                 
                 
