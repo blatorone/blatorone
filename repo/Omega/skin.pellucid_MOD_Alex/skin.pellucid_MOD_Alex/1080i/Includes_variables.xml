@@ -82,16 +82,16 @@
     </variable>
     <!--Star rating for music tracks-->
     <variable name="starRating">
-        <value condition="String.IsEqual(MusicPlayer.UserRating,1)"></value>
-        <value condition="String.IsEqual(MusicPlayer.UserRating,2)"></value>
-        <value condition="String.IsEqual(MusicPlayer.UserRating,3)"></value>
-        <value condition="String.IsEqual(MusicPlayer.UserRating,4)"></value>
-        <value condition="String.IsEqual(MusicPlayer.UserRating,5)"></value>
-        <value condition="String.IsEqual(MusicPlayer.UserRating,6)"></value>
-        <value condition="String.IsEqual(MusicPlayer.UserRating,7)"></value>
-        <value condition="String.IsEqual(MusicPlayer.UserRating,8)"></value>
-        <value condition="String.IsEqual(MusicPlayer.UserRating,9)"></value>
-        <value condition="String.IsEqual(MusicPlayer.UserRating,10)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,1) | Integer.IsEqual(ListItem.RatingandVotes,1)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,2) | Integer.IsEqual(ListItem.RatingandVotes,2)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,3) | Integer.IsEqual(ListItem.RatingandVotes,3)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,4) | Integer.IsEqual(ListItem.RatingandVotes,4)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,5) | Integer.IsEqual(ListItem.RatingandVotes,5)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,6) | Integer.IsEqual(ListItem.RatingandVotes,6)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,7) | Integer.IsEqual(ListItem.RatingandVotes,7)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,8) | Integer.IsEqual(ListItem.RatingandVotes,8)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,9) | Integer.IsEqual(ListItem.RatingandVotes,9)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,10) | Integer.IsEqual(ListItem.RatingandVotes,10)"></value>
         <value></value>
     </variable>
     <!--home background location-->

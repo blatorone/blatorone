@@ -335,7 +335,7 @@
                     <width>12-col</width>
                     <height>486</height>
                     <aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-                    <texture fallback="colors/black.png">$INFO[Listitem.thumb]</texture>
+                    <texture fallback="colors/black.png">$INFO[Listitem.icon]</texture>
                     <bordertexture colordiffuse="11ffffff">colors/white.png</bordertexture>
                     <bordersize>6</bordersize>
                 </control>
@@ -401,6 +401,7 @@
                     <height>4-row</height>
                     <ondown>8000</ondown>
                 </control>
+                
                 <!--dialog controls-->
                 <control type="list" id="8000">
                     <posx>0</posx>
@@ -469,7 +470,7 @@
                             <aligny>center</aligny>
                             <align>center</align>
                             <font>symbolLarge</font>
-                            <textcolor>textActive</textcolor>
+                            <textcolor>$VAR[home]</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor></shadowcolor>
                         </control>
@@ -499,6 +500,12 @@
                             <thumb></thumb>
                             <onclick>SendClick(2003,6)</onclick>
                         </item>
+                        <item id="3">
+                            <label>20410</label>
+                            <label2></label2>
+                            <thumb></thumb>
+                            <onclick>SendClick(2003,11)</onclick>
+                        </item>
                     </content>
                 </control>
             </control>
@@ -522,6 +529,17 @@
                 <description>Trailer</description>
             </control>
         </control>
+        <control type="label">
+							<visible>!String.isEmpty(ListItem.RatingandVotes)</visible>
+							<posx>61%</posx>
+							<posy>50%</posy>
+							<width>225</width>
+							<height>36</height>
+							<aligny>center</aligny>
+							<font>symbol</font>
+							<textcolor>textActive</textcolor>
+							<label>$VAR[starRating]]</label>
+		</control>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

@@ -240,14 +240,14 @@
                             <onclick>sendclick(pvrrecordinginfo,8)</onclick>
                         </item>
                         <item id="3">
-							<visible>!window.isactive(tvrecordings) + !window.isactive(radiorecordings)</visible>
-                            <label>264</label>
-                            <label2></label2>
+							<visible>!window.isactive(tvrecordings)  + ListItem.HasTimer + !window.isactive(radiorecordings)</visible>
+                            <label>19060</label>
+                            <label2></label2>
                             <thumb></thumb>
                             <onclick>SendClick(10702,6)</onclick>
                         </item>
                         <item id="4">
-							<visible>window.isactive(tvchannels) | window.isactive(radiochannels) | window.isactive(tvguide)</visible>
+							<visible>window.isactive(tvchannels)  + !ListItem.HasTimer | window.isactive(radiochannels)  + !ListItem.HasTimer | window.isactive(tvguide) + !ListItem.HasTimer</visible>
                             <label>826</label>
                             <label2></label2>
                             <thumb></thumb>
