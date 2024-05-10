@@ -583,8 +583,8 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <onclick>up</onclick>
                     <onclick>setfocus(9999)</onclick>
+                    <onclick>up</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
@@ -600,8 +600,8 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <onclick>left</onclick>
                     <onclick>setfocus(9999)</onclick>
+                    <onclick>left</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
@@ -618,8 +618,8 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <onclick>down</onclick>
                     <onclick>setfocus(9999)</onclick>
+                    <onclick>down</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
@@ -635,6 +635,7 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
+                    <onclick>setfocus(9999)</onclick>
                     <onclick>right</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
@@ -670,8 +671,8 @@
                     <height>100</height>
                     <align>center</align>
                     <textwidth>180</textwidth>
-                    <onclick>back</onclick>
                     <onclick>setfocus(9999)</onclick>
+                    <onclick>back</onclick>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
