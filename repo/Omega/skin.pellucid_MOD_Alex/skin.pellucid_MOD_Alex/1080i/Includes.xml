@@ -653,6 +653,7 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
+                    <onclick>setfocus(9999)</onclick>
                     <onclick>select</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
