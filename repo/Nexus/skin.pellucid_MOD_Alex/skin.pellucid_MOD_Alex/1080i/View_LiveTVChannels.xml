@@ -3,9 +3,9 @@
 	<include name="liveTVChannels">
 		<control type="group">
 			<control type="panel" id="50">
-				<posx>col-1-begin</posx>
+				<posx>col-3-begin</posx>
 				<posy>row-6-begin</posy>
-				<width>24-col</width>
+				<width>10-col</width>
 				<height>23-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
@@ -13,18 +13,18 @@
 				<onup>8000</onup>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="cubic" easing="out">400</scrolltime>
-				<itemlayout height="2-row" width="24-col" condition='!Skin.HasSetting(touch)'>
+				<itemlayout height="2-row" width="10-col" condition='!Skin.HasSetting(touch)'>
 					<control type="image">
 						<posx>1-col</posx>
 						<posy>0</posy>
-						<width>23-col</width>
+						<width>10-col</width>
 						<height>69</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="0">colors/black.png</texture>
 						<colordiffuse>overlay</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
+						<posx>9-col-gutter</posx>
 						<posy>3</posy>
 						<width>66</width>
 						<height>66</height>
@@ -33,70 +33,59 @@
 						<colordiffuse>overlay</colordiffuse>
 					</control>
 					<control type="label">
+						<posx>-45</posx>
+						<posy>-14</posy>
+						<width>160</width>
+						<height>2-row</height>
+						<aligny>center</aligny>
+						<align>center</align> 
+						<font>buttonTitle2</font>
+						<textcolor>textActive</textcolor>
+						<selectedcolor>yellow</selectedcolor>
+						<shadowcolor></shadowcolor>
+						<label>[B]$INFO[ListItem.channelnumberlabel][/B]</label>
+					</control>
+					<control type="progress">
+				        
+                        <description>Progress Bar</description>
+                        <posx>0</posx>
+                        <posy>50</posy>
+                        <width>66</width>
+                        <height>6</height>
+                        <texturebg colordiffuse="77000000">colors/black.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <info>ListItem.Progress</info>
+                    </control>
+					<control type="label">
 						<posx>1-col-indent</posx>
-						<posy>0</posy>
+						<posy>-14</posy>
 						<width>288</width>
 						<height>2-row</height>
 						<aligny>center</aligny>
-						<font>itemTitle</font>
+						<font>buttonTitle2</font>
 						<textcolor>textActive</textcolor>
 						<selectedcolor>yellow</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
+					
 					<control type="label">
-						<posx>5-col-gutter</posx>
-						<posy>0</posy>
-						<width>160</width>
-						<height>2-row</height>
-						<aligny>center</aligny>
-						<align>right</align>
-						<font>itemTitle</font>
-						<textcolor>textActive</textcolor>
-						<selectedcolor>yellow</selectedcolor>
-						<shadowcolor></shadowcolor>
-						<label>[B]$INFO[ListItem.starttime][/B]</label>
-					</control>
-					<control type="label">
-						<posx>520</posx>
-						<posy>0</posy>
+						<posx>1-col-indent</posx>
+						<posy>10</posy>
 						<width>7-col-gutter</width>
 						<height>2-row</height>
 						<aligny>center</aligny>
-						<font>itemTitle</font>
+						<font>buttonTitle2</font>
 						<textcolor>textActive</textcolor>
 						<selectedcolor>yellow</selectedcolor>
 						<shadowcolor></shadowcolor>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
-					<control type="label">
-						<posx>14-col-gutter</posx>
-						<posy>0</posy>
-						<width>160</width>
-						<height>2-row</height>
-						<aligny>center</aligny>
-						<align>right</align>
-						<font>itemTitle</font>
-						<textcolor>textActive</textcolor>
-						<selectedcolor>yellow</selectedcolor>
-						<shadowcolor></shadowcolor>
-						<label>[B]$INFO[ListItem.nextstarttime][/B]</label>
-					</control>
-					<control type="label">
-						<posx>1168</posx>
-						<posy>0</posy>
-						<width>7-col-gutter</width>
-						<height>2-row</height>
-						<aligny>center</aligny>
-						<font>itemTitle</font>
-						<textcolor>textActive</textcolor>
-						<selectedcolor>yellow</selectedcolor>
-						<shadowcolor></shadowcolor>
-						<label>$INFO[ListItem.nextTitle]</label>
-					</control>
+					
+					
 				</itemlayout>
-				<itemlayout height="3-row" width="20-col" condition='Skin.HasSetting(touch)'>
+				<itemlayout height="3-row" width="10-col" condition='Skin.HasSetting(touch)'>
 					<control type="image">
-						<posx>2-col</posx>
+						<posx>1-col</posx>
 						<posy>0</posy>
 						<width>18-col</width>
 						<height>100</height>
@@ -105,8 +94,8 @@
 						<colordiffuse>overlay</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>3</posy>
+						<posx>620</posx>
+						<posy>0</posy>
 						<width>100</width>
 						<height>100</height>
 						<aspectratio>keep</aspectratio>
@@ -114,65 +103,52 @@
 						<colordiffuse>overlay</colordiffuse>
 					</control>
 					<control type="label">
-						<posx>2-col-indent</posx>
-						<posy>0</posy>
-						<width>288</width>
-						<height>100</height>
+						<posx>-45</posx>
+						<posy>1</posy>
+						<width>160</width>
+						<height>2-row</height>
 						<aligny>center</aligny>
-						<font>itemTitle</font>
+						<align>center</align> 
+						<font>buttonTitle</font>
+						<textcolor>textActive</textcolor>
+						<selectedcolor>yellow</selectedcolor>
+						<shadowcolor></shadowcolor>
+						<label>[B]$INFO[ListItem.channelnumberlabel][/B]</label>
+					</control>
+					<control type="progress">
+				        
+                        <description>Progress Bar</description>
+                        <posx>0</posx>
+                        <posy>75</posy>
+                        <width>66</width>
+                        <height>10</height>
+                        <texturebg colordiffuse="77000000">colors/black.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <info>ListItem.Progress</info>
+                    </control>
+					<control type="label">
+						<posx>1-col-indent</posx>
+						<posy>-14</posy>
+						<width>288</width>
+						<height>2-row</height>
+						<aligny>center</aligny>
+						<font>buttonTitle</font>
 						<textcolor>textActive</textcolor>
 						<selectedcolor>yellow</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
+					
 					<control type="label">
-						<posx>6-col-gutter</posx>
-						<posy>0</posy>
-						<width>160</width>
-						<height>100</height>
+						<posx>1-col-indent</posx>
+						<posy>35</posy>
+						<width>8-col-gutter</width>
+						<height>2-row</height>
 						<aligny>center</aligny>
-						<align>right</align>
-						<font>itemTitle</font>
-						<textcolor>textActive</textcolor>
-						<selectedcolor>yellow</selectedcolor>
-						<shadowcolor></shadowcolor>
-						<label>[B]$INFO[ListItem.starttime][/B]</label>
-					</control>
-					<control type="label">
-						<posx>10-col-gutter</posx>
-						<posy>0</posy>
-						<width>250</width>
-						<height>100</height>
-						<aligny>center</aligny>
-						<font>itemTitle</font>
+						<font>buttonTitle</font>
 						<textcolor>textActive</textcolor>
 						<selectedcolor>yellow</selectedcolor>
 						<shadowcolor></shadowcolor>
 						<label>$INFO[ListItem.Title]</label>
-					</control>
-					<control type="label">
-						<posx>13-col-gutter</posx>
-						<posy>0</posy>
-						<width>160</width>
-						<height>100</height>
-						<aligny>center</aligny>
-						<align>right</align>
-						<font>itemTitle</font>
-						<textcolor>textActive</textcolor>
-						<selectedcolor>yellow</selectedcolor>
-						<shadowcolor></shadowcolor>
-						<label>[B]$INFO[ListItem.nextstarttime][/B]</label>
-					</control>
-					<control type="label">
-						<posx>1168</posx>
-						<posy>0</posy>
-						<width>200</width>
-						<height>100</height>
-						<aligny>center</aligny>
-						<font>itemTitle</font>
-						<textcolor>textActive</textcolor>
-						<selectedcolor>yellow</selectedcolor>
-						<shadowcolor></shadowcolor>
-						<label>$INFO[ListItem.nextTitle]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout height="2-row" width="20-col" condition='!Skin.HasSetting(touch)'>
@@ -186,7 +162,7 @@
 						<colordiffuse>$VAR[highlight]</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
+						<posx>9-col-gutter</posx>
 						<posy>3</posy>
 						<width>66</width>
 						<height>66</height>
@@ -194,74 +170,62 @@
 						<texture fallback="Kodilogo.png" diffuse="masks/discsurface.png" border="0">$INFO[Listitem.thumb]</texture>
 						<animation type="focus" loop="false" reversible="false">
 							<effect type="fade" time="500"/>
-							<effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
+							<effect type="rotatey" end="360" center="655" tween="back" easing="out" time="1000"/>
 						</animation>
 					</control>
 					<control type="label">
-						<posx>1-col-indent</posx>
-						<posy>0</posy>
-						<width>288</width>
-						<height>2-row</height>
-						<aligny>center</aligny>
-						<font>itemTitle</font>
-						<textcolor>$VAR[Home]</textcolor>
-						<selectedcolor>$VAR[selected]</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<posx>5-col-gutter</posx>
-						<posy>0</posy>
+						<posx>-45</posx>
+						<posy>-14</posy>
 						<width>160</width>
 						<height>2-row</height>
 						<aligny>center</aligny>
-						<align>right</align>
-						<font>itemTitle</font>
+						<align>center</align> 
+						<font>buttonTitle2</font>
+						<textcolor>textActive</textcolor>
+						<selectedcolor>$VAR[selected]</selectedcolor>
+						<label>[B]$INFO[ListItem.channelnumberlabel][/B]</label>
+					</control>
+					<control type="progress">
+				        
+                        <description>Progress Bar</description>
+                        <posx>0</posx>
+                        <posy>50</posy>
+                        <width>66</width>
+                        <height>6</height>
+                        <texturebg colordiffuse="77000000">colors/black.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <info>ListItem.Progress</info>
+                    </control>
+		
+					<control type="label">
+						<posx>1-col-indent</posx>
+						<posy>-14</posy>
+						<width>288</width>
+						<height>2-row</height>
+						<aligny>center</aligny>
+						<font>buttonTitle2</font>
 						<textcolor>$VAR[Home]</textcolor>
 						<selectedcolor>$VAR[selected]</selectedcolor>
 						<shadowcolor></shadowcolor>
-						<label>[B]$INFO[ListItem.starttime][/B]</label>
+						<label>$INFO[ListItem.label]</label>
 					</control>
 					<control type="label">
-						<posx>520</posx>
-						<posy>0</posy>
+						<posx>1-col-indent</posx>
+						<posy>10</posy>
 						<width>7-col-gutter</width>
 						<height>2-row</height>
 						<aligny>center</aligny>
-						<font>itemTitle</font>
+						<font>buttonTitle2</font>
 						<textcolor>$VAR[Home]</textcolor>
 						<selectedcolor>$VAR[selected]</selectedcolor>
 						<shadowcolor></shadowcolor>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
-					<control type="label">
-						<posx>14-col-gutter</posx>
-						<posy>0</posy>
-						<width>160</width>
-						<height>2-row</height>
-						<aligny>center</aligny>
-						<align>right</align>
-						<font>itemTitle</font>
-						<textcolor>$VAR[Home]</textcolor>
-						<selectedcolor>$VAR[selected]</selectedcolor>
-						<shadowcolor></shadowcolor>
-						<label>[B]$INFO[ListItem.nextstarttime][/B]</label>
-					</control>
-					<control type="label">
-						<posx>1168</posx>
-						<posy>0</posy>
-						<width>7-col-gutter</width>
-						<height>2-row</height>
-						<aligny>center</aligny>
-						<font>itemTitle</font>
-						<textcolor>$VAR[Home]</textcolor>
-						<selectedcolor>$VAR[selected]</selectedcolor>
-						<shadowcolor></shadowcolor>
-						<label>$INFO[ListItem.nextTitle]</label>
-					</control>
+					
 				</focusedlayout>
-				<focusedlayout height="3-row" width="20-col" condition='Skin.HasSetting(touch)'>
+				<focusedlayout height="3-row" width="10-col" condition='Skin.HasSetting(touch)'>
 					<control type="image">
-						<posx>2-col</posx>
+						<posx>1-col</posx>
 						<posy>0</posy>
 						<width>18-col</width>
 						<height>100</height>
@@ -270,80 +234,231 @@
 						<colordiffuse>$VAR[highlight]</colordiffuse>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>3</posy>
+						<posx>620</posx>
+						<posy>0</posy>
 						<width>100</width>
 						<height>100</height>
 						<aspectratio>keep</aspectratio>
 						<texture fallback="Kodilogo.png" diffuse="masks/discsurface.png" border="0">$INFO[Listitem.thumb]</texture>
 						<animation type="focus" loop="false" reversible="false">
 							<effect type="fade" time="500"/>
-							<effect type="rotatey" end="360" center="50" tween="back" easing="out" time="1000"/>
-						</animation> 
+							<effect type="rotatey" end="360" center="676" tween="back" easing="out" time="1000"/>
+						</animation>
 					</control>
 					<control type="label">
-						<posx>2-col-indent</posx>
-						<posy>0</posy>
-						<width>288</width>
-						<height>100</height>
-						<aligny>center</aligny>
-						<font>itemTitle</font>
-						<textcolor>$VAR[Home]</textcolor>
-						<selectedcolor>$VAR[selected]</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<posx>6-col-gutter</posx>
-						<posy>0</posy>
+						<posx>-45</posx>
+						<posy>1</posy>
 						<width>160</width>
-						<height>100</height>
+						<height>2-row</height>
 						<aligny>center</aligny>
-						<align>right</align>
-						<font>itemTitle</font>
+						<align>center</align> 
+						<font>buttonTitle</font>
+						<textcolor>textActive</textcolor>
+						<selectedcolor>$VAR[selected]</selectedcolor>
+						<label>[B]$INFO[ListItem.channelnumberlabel][/B]</label>
+					</control>
+					<control type="progress">
+				        
+                        <description>Progress Bar</description>
+                        <posx>0</posx>
+                        <posy>75</posy>
+                        <width>66</width>
+                        <height>10</height>
+                        <texturebg colordiffuse="77000000">colors/black.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <info>ListItem.Progress</info>
+                    </control>
+		
+					<control type="label">
+						<posx>1-col-indent</posx>
+						<posy>-14</posy>
+						<width>288</width>
+						<height>2-row</height>
+						<aligny>center</aligny>
+						<font>buttonTitle</font>
 						<textcolor>$VAR[Home]</textcolor>
 						<selectedcolor>$VAR[selected]</selectedcolor>
 						<shadowcolor></shadowcolor>
-						<label>[B]$INFO[ListItem.starttime][/B]</label>
+						<label>$INFO[ListItem.label]</label>
 					</control>
 					<control type="label">
-						<posx>10-col-gutter</posx>
-						<posy>0</posy>
-						<width>200</width>
-						<height>100</height>
+						<posx>1-col-indent</posx>
+						<posy>35</posy>
+						<width>8-col-gutter</width>
+						<height>2-row</height>
 						<aligny>center</aligny>
-						<font>itemTitle</font>
+						<font>buttonTitle</font>
 						<textcolor>$VAR[Home]</textcolor>
 						<selectedcolor>$VAR[selected]</selectedcolor>
 						<shadowcolor></shadowcolor>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
-					<control type="label">
-						<posx>13-col-gutter</posx>
-						<posy>0</posy>
-						<width>160</width>
-						<height>100</height>
-						<aligny>center</aligny>
-						<align>right</align>
-						<font>itemTitle</font>
-						<textcolor>$VAR[Home]</textcolor>
-						<selectedcolor>$VAR[selected]</selectedcolor>
-						<shadowcolor></shadowcolor>
-						<label>[B]$INFO[ListItem.nextstarttime][/B]</label>
-					</control>
-					<control type="label">
-						<posx>1168</posx>
-						<posy>0</posy>
-						<width>200</width>
-						<height>100</height>
-						<aligny>center</aligny>
-						<font>itemTitle</font>
-						<textcolor>$VAR[Home]</textcolor>
-						<selectedcolor>$VAR[selected]</selectedcolor>
-						<shadowcolor></shadowcolor>
-						<label>$INFO[ListItem.nextTitle]</label>
-					</control>
 				</focusedlayout>
+				
 			</control>
+			<control type="group">
+				<posx>965</posx>
+				<posy>row-6-begin</posy>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>10-col</width>
+						<height>23-row</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="0">colors/black.png</texture>
+						<colordiffuse>overlay</colordiffuse>
+					</control>
+					<control type="label">
+						<posx>10</posx>
+						<posy>0</posy>
+						<width>500</width>
+						<height>2-row</height>
+						<aligny>center</aligny>
+						
+						<textcolor>textActive</textcolor>
+						<selectedcolor>yellow</selectedcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<visible>ListItem.Hasepg</visible>
+						<posx>10</posx>
+						<posy>85</posy>
+						<width>895</width>
+						<height>2-row</height>
+						<aligny>center</aligny>
+						<font>Title</font>
+						<textcolor>textActive</textcolor>
+						<selectedcolor>yellow</selectedcolor>
+						<label>$VAR[PVRInfoPanelDateDurationLabel]</label>
+					</control>
+					<control type="image">
+						<posx>8-col-gutter</posx>
+						<posy>20</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>keep</aspectratio>
+						<texture fallback="Kodilogo.png" diffuse="masks/discsurface.png" border="0">$INFO[Listitem.thumb]</texture>
+					</control>
+					<control type="progress">
+                        <description>Progress Bar</description>
+						<visible>ListItem.HasEPG</visible>
+                        <posx>10</posx>
+                        <posy>200</posy>
+                        <width>695</width>
+                        <height>12</height>
+                        <texturebg colordiffuse="77000000">colors/black.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <info>ListItem.Progress</info>
+            		</control>
+					<control type="grouplist">
+						<posx>10</posx>
+						<posy>225</posy>
+						<control type="label">
+							<visible>ListItem.Hasepg</visible>
+							
+							<width>695</width>
+							<height>2-row</height>
+							<aligny>center</aligny>
+							<font>Title</font>
+							<wrapmultiline>true</wrapmultiline>
+							<textcolor>textActive</textcolor>
+							<selectedcolor>yellow</selectedcolor>
+							<label>[I]$INFO[ListItem.Title][/I]</label>
+						</control>
+						<control type="label">
+							<visible>!ListItem.Hasepg</visible>
+							
+							<width>695</width>
+							<height>2-row</height>
+							<aligny>center</aligny>
+							<font>Title</font>
+							<wrapmultiline>true</wrapmultiline>
+							<textcolor>textActive</textcolor>
+							<selectedcolor>yellow</selectedcolor>
+							<label>$LOCALIZE[19055]</label>
+						</control>
+
+						
+						<control type="label">
+							<visible>!String.IsEmpty(ListItem.Episode)</visible>
+                        	<width>10-col</width>
+                        	<font>Title</font>
+                        	<scroll>true</scroll>
+                        	<textcolor>textActive</textcolor>
+                        	<label>[B]$INFO[ListItem.EpisodeName][/B]</label>
+                        	<shadowcolor></shadowcolor>
+                    	</control>
+						<control type="label">
+							<visible>!String.IsEmpty(ListItem.Episode)</visible>
+                        	<width>6-col</width>
+                        	<font>Title</font>
+                        	<scroll>true</scroll>
+                        	<textcolor>textActive</textcolor>
+                        	<label>[COLOR $VAR[highlight]]$LOCALIZE[20373]:[/COLOR] $INFO[ListItem.Season]          [COLOR $VAR[highlight]]$LOCALIZE[20359]:[/COLOR] $INFO[ListItem.Episode]</label>
+                        	<shadowcolor></shadowcolor>
+                    	</control>
+						<control type="label">
+							<visible>ListItem.Hasepg</visible>
+                        	
+                        	<width>6-col</width>
+                        	<font>itemTitle</font>
+                        	<scroll>true</scroll>
+                        	<textcolor>textActive</textcolor>
+                        	<label>[COLOR $VAR[highlight]]$LOCALIZE[515]: [/COLOR][COLOR textDisabled]$INFO[ListItem.Genre][/COLOR]</label>
+                        	<shadowcolor></shadowcolor>
+                    	</control>
+						<control type="label">
+							<visible>ListItem.Hasepg</visible>
+                        	
+                        	<width>6-col</width>
+                        	<font>itemTitle</font>
+                        	<scroll>true</scroll>
+                        	<textcolor>textActive</textcolor>
+                        	<label></label>
+                        	<shadowcolor></shadowcolor>
+                    	</control>
+						
+						<control type="textbox">
+							
+							<width>695</width>
+							<height>250</height>
+							<font>Title</font>
+							<label>$INFO[ListItem.Plot]</label>
+							<autoscroll delay="500" time="3000" repeat="10000">true</autoscroll>
+						</control>
+					</control>
+					<control type="group">
+						<posx>10</posx>
+						<posy>735</posy>
+						<visible>ListItem.Hasepg</visible>
+						<control type="label">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>10-col-gutter</width>
+							<height>2-row</height>
+							<aligny>center</aligny>
+							<font>buttonTitle2</font>
+							<scroll>true</scroll>
+							<textcolor>textActive</textcolor>
+							<selectedcolor>yellow</selectedcolor>
+							<shadowcolor></shadowcolor>
+							<label>[COLOR $VAR[highlight]]$LOCALIZE[19031]:[/COLOR]            [COLOR $VAR[highlight]]$LOCALIZE[19126]:[/COLOR]$INFO[ListItem.nextstarttime]</label>
+						</control>
+						<control type="label">
+							<posx>0</posx>
+							<posy>30</posy>
+							<width>10-col-gutter</width>
+							<height>2-row</height>
+							<aligny>center</aligny>
+							<font>buttonTitle2</font>
+							<scroll>true</scroll>
+							<textcolor>textActive</textcolor>
+							<selectedcolor>yellow</selectedcolor>
+							<shadowcolor></shadowcolor>
+							<label>[COLOR $VAR[highlight]]$LOCALIZE[29908]:[/COLOR]$INFO[ListItem.Nexttitle]</label>
+						</control>
+					</control>
+				</control>
 		</control>
 	</include>
 </includes>

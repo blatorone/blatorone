@@ -263,4 +263,9 @@
         <value condition="Skin.HasSetting(VK)">yellow</value>
         <value condition="!Skin.HasSetting(VK) + !Skin.HasSetting(Vine) + !Skin.HasSetting(Turquoise) + !Skin.HasSetting(Tumble) + !Skin.HasSetting(Razzmatazz) + !Skin.HasSetting(PellucidV1) + !Skin.HasSetting(Orange) + !Skin.HasSetting(Medium) + !Skin.HasSetting(lightblue) + !Skin.HasSetting(Interest) + !Skin.HasSetting(Green) + !Skin.HasSetting(Gold) + !Skin.HasSetting(Dribble) + !Skin.HasSetting(Default) + !Skin.HasSetting(Darkblue) + !Skin.HasSetting(Bluewood)">yellow</value>
 	</variable>
+
+    <variable name="PVRInfoPanelDateDurationLabel">
+		<value condition="!String.IsEmpty(ListItem.StartDate) + !String.IsEmpty(ListItem.StartTime)">[COLOR $VAR[highlight]]$LOCALIZE[552]:[/COLOR]$INFO[ListItem.StartDate] [CR][COLOR $VAR[highlight]]$LOCALIZE[19126]:[/COLOR]$INFO[ListItem.StartTime] [CR][COLOR $VAR[highlight]]$LOCALIZE[180]:[/COLOR]$INFO[ListItem.Duration] </value>
+		<value>[COLOR $VAR[highlight]]$LOCALIZE[552]:[/COLOR]$INFO[ListItem.Date][CR][COLOR $VAR[highlight]]$LOCALIZE[180]:[/COLOR]$INFO[ListItem.Duration]</value>
+	</variable>
 </includes>
