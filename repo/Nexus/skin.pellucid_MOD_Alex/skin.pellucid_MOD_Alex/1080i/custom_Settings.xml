@@ -147,7 +147,7 @@
                     <enable>Skin.HasSetting(OSDAutoClose)</enable>
                 </control>
                 <control type="radiobutton" id="1">
-                    <visible>Container(8000).Hasfocus(1) + !System.Platform.IOS</visible>
+                    <visible>Container(8000).Hasfocus(1) + Integer.IsGreater(System.BatteryLevel,1)</visible>
                     <description>Enable Battery Level</description>
                     <width>14-col</width>
                     <label>31241</label>
