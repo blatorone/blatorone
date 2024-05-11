@@ -289,9 +289,9 @@
                     <selected>Skin.HasSetting(disableRecentAlbums)</selected>
                 </control>
                 <control type="radiobutton" id="21">
-                    <visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings) + !System.Platform.IOS</visible>
+                    <visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings) + Integer.IsGreater(System.BatteryLevel,1)</visible>
                     <description>Enable Battery Level</description>
-                    <width>14-col</width>
+                    <width>14-col</width> 
                     <label>31241</label>
                     <onclick>Skin.Togglesetting(show_battery)</onclick>
                     <selected>Skin.HasSetting(show_battery)</selected>
