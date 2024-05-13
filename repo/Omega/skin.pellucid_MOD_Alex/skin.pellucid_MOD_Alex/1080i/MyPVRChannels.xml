@@ -52,7 +52,7 @@
                     <posy>100</posy>
                     <width>15-col</width>
                     <height>2-row</height>
-                    <ondown>9999</ondown>
+                    <ondown>50</ondown>
                     <onright>8001</onright>
                     <orientation>horizontal</orientation>
                     <itemlayout width="6-col" height="2-row">
@@ -158,7 +158,7 @@
                     <posy>100</posy>
                     <width>7-col</width>
                     <height>2-row</height>
-                    <ondown>9999</ondown>
+                    <ondown>50</ondown>
                     <onleft>8000</onleft>
                     <orientation>horizontal</orientation>
                     <itemlayout width="6-col" height="2-row">

@@ -294,7 +294,7 @@
 							<pagecontrol>80</pagecontrol>
 						</control>
 					</control>
-					<control type="group" id="8000">
+					<control type="group" id="8003">
 						<visible>Control.IsVisible(80)</visible>
 						<control type="scrollbar" id="80">
                     		<include>scrollbarwidth</include>		
@@ -303,6 +303,7 @@
                     		<posy>380</posy>
                     		<height>8-row</height>
                     		<onleft>60</onleft>
+							<onup>8000</onup>
                 		</control>
 					</control>
 					<control type="group" width="10-col">
