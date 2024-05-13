@@ -217,7 +217,8 @@
 							<height>2-row</height>
 							<aligny>center</aligny>
 							<font>sectionTitle</font>
-							<wrapmultiline>true</wrapmultiline>
+							<wrapmultiline>false</wrapmultiline>
+							<scroll>true</scroll>
 							<textcolor>overlay</textcolor>
 							<selectedcolor>yellow</selectedcolor>
 							<label>[I][B]$INFO[ListItem.Title][/B][/I]</label>
@@ -238,7 +239,7 @@
 						
 						<control type="label">
 							<visible>!String.IsEmpty(ListItem.Episode)</visible>
-                        	<width>10-col</width>
+                        	<width>12-col</width>
                         	<font>sectionTitle</font>
                         	<scroll>true</scroll>
                         	<textcolor>textActive</textcolor>
@@ -247,7 +248,7 @@
                     	</control>
 							<control type="label">
 								<visible>!String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
-                        		<width>6-col</width>
+                        		<width>12-col</width>
                         		<font>sectionTitle</font>
                         		<scroll>true</scroll>
                         		<textcolor>textActive</textcolor>
@@ -256,7 +257,7 @@
                     		</control>
 							<control type="label">
 								<visible>!String.IsEmpty(ListItem.Episode) + String.IsEmpty(ListItem.Season)</visible>
-                        		<width>6-col</width>
+                        		<width>12-col</width>
                         		<font>sectionTitle</font>
                         		<scroll>true</scroll>
                         		<textcolor>textActive</textcolor>
@@ -266,7 +267,6 @@
 						
 						<control type="label">
 							<visible>ListItem.Hasepg</visible>
-                        	
                         	<width>8-col</width>
                         	<font>sectionTitle</font>
                         	<scroll>true</scroll>
@@ -287,12 +287,23 @@
 						
 						<control type="textbox">
 							
-							<width>875</width>
+							<width>800</width>
 							<height>200</height>
 							<font>sectionTitle</font>
 							<label>$INFO[ListItem.Plot]</label>
-							<autoscroll delay="500" time="3000" repeat="10000">true</autoscroll>
+							<pagecontrol>80</pagecontrol>
 						</control>
+					</control>
+					<control type="group" id="8000">
+						<visible>Control.IsVisible(80)</visible>
+						<control type="scrollbar" id="80">
+                    		<include>scrollbarwidth</include>		
+                   			<include>scrollbarposxpvrchannels</include>
+                    		<include>scrollbarcolor</include>
+                    		<posy>380</posy>
+                    		<height>8-row</height>
+                    		<onleft>60</onleft>
+                		</control>
 					</control>
 					<control type="group" width="10-col">
 						<posx>10</posx>

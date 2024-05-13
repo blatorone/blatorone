@@ -42,8 +42,9 @@
                     <showonepage>true</showonepage>
                     <height>23-row</height>
                     <width>35</width>
-                    <onleft>9999</onleft>
+                    <onleft>50</onleft>
                     <onup>8000</onup>
+                    <onright>80</onright>
                 </control>
             </control>
             <control type="Panel" id="8000">

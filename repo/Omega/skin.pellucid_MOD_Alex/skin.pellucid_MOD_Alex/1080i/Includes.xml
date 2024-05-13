@@ -864,6 +864,17 @@
         <posx>12r</posx>
     </include>
 
+    <include name="scrollbarposxpvrchannels">
+        <include  condition="Skin.HasSetting(Touch)">scrollbarposx1pvrchannels</include>
+        <include  condition="!Skin.HasSetting(Touch)">scrollbarposx2pvrchannels</include>
+    </include>
+    <include name="scrollbarposx1pvrchannels">
+        <posx>1%</posx>
+    </include>
+    <include name="scrollbarposx2pvrchannels">
+        <posx>90%</posx>
+    </include>
+
     <!--homemenu slide or grid-->
    <include name="homemenuslide">
         <include  condition="Skin.HasSetting(homemenuslide) + !Skin.HasSetting(homemenugrid) + !Skin.HasSetting(homemenuside)">homemenuslide1</include>
