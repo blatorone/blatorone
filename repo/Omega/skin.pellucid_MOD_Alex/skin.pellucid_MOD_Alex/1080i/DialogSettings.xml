@@ -71,7 +71,6 @@
                 <description>Default RadioButton</description>
             </control>
             <control type="spincontrolex" id="9">
-                
                 <description>Default SpinControlex</description>
             </control>
             <control type="edit" id="12">
@@ -89,7 +88,7 @@
                 <textoffsety>30</textoffsety>
                 <texturesliderbar colordiffuse="textDisabled">buttons/slider-back.png</texturesliderbar>
 		        <textureslidernib colordiffuse="textDisabled">buttons/slider-nib.png</textureslidernib>
-		        <textureslidernibfocus colordiffuse="yellow">buttons/slider-nib.png</textureslidernibfocus>
+		        <textureslidernibfocus colordiffuse="$VAR[highlight]">buttons/slider-nib.png</textureslidernibfocus>
                 <description>Default Slider</description>
             </control>
             <control type="label" id="14">
