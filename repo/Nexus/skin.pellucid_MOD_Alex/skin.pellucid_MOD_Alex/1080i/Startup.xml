@@ -3,6 +3,7 @@
     <defaultcontrol always="true">10</defaultcontrol>
     <onload>Skin.Reset(DebugInfo)</onload>
     <onload>Skin.Reset(DebugGrid)</onload>
+    <onload>SetProperty(SkinInitStarted,1,home)</onload>
     <coordinates>
         <posx>15</posx>
         <posy>15</posy>
