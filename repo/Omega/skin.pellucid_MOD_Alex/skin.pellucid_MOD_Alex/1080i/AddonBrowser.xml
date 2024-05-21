@@ -65,7 +65,7 @@
                     <posx>0</posx>
                     <posy>84</posy>
                     <width>8-col</width>
-                    <height>18-row</height>
+                    <height>490</height>
                     <onleft>activateWindow(contextmenu)</onleft>
                     <ondown>50</ondown>
                     <onup>9000</onup>
