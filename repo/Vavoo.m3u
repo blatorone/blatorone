@@ -305,23 +305,23 @@ https://www.vavoo.to/play/454161366/index.m3u8
 https://www.vavoo.to/play/1814040327/index.m3u8
 #EXTINF:-1  tvg-name="DISNEY CHANNEL (BACKUP) (1)" tvg-id="DE: Disney Channel" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/1035.png" group-title="Kinder" :http-user-agent="VAVOO/2.6",DISNEY CHANNEL (BACKUP) (1)
 https://www.vavoo.to/play/3445714867/index.m3u8
-#EXTINF:-1  tvg-name="DISNEY CINEMAGIC (1)" tvg-id="" tvg-logo="" group-title="Kinder" :http-user-agent="VAVOO/2.6",DISNEY CINEMAGIC (1)
+#EXTINF:-1  tvg-name="DISNEY CINEMAGIC (1)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/de/thumb/d/d3/Disney_cinemagic_de.png/375px-Disney_cinemagic_de.png" group-title="Kinder" :http-user-agent="VAVOO/2.6",DISNEY CINEMAGIC (1)
 https://www.vavoo.to/play/1373843607/index.m3u8
-#EXTINF:-1  tvg-name="DISNEY CINEMAGIC (7)" tvg-id="" tvg-logo="" group-title="Kinder" :http-user-agent="VAVOO/2.6",DISNEY CINEMAGIC (7)
+#EXTINF:-1  tvg-name="DISNEY CINEMAGIC (7)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/de/thumb/d/d3/Disney_cinemagic_de.png/375px-Disney_cinemagic_de.png" group-title="Kinder" :http-user-agent="VAVOO/2.6",DISNEY CINEMAGIC (7)
 https://www.vavoo.to/play/251327893/index.m3u8
-#EXTINF:-1  tvg-name="DISNEY JUNIOR (7)" tvg-id="" tvg-logo="" group-title="Kinder" :http-user-agent="VAVOO/2.6",DISNEY JUNIOR (7)
+#EXTINF:-1  tvg-name="DISNEY JUNIOR (7)" tvg-id="" tvg-logo="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/12/2018/05/29143450/DisneyJr_NavLogo_202x72.png" group-title="Kinder" :http-user-agent="VAVOO/2.6",DISNEY JUNIOR (7)
 https://www.vavoo.to/play/3318188636/index.m3u8
-#EXTINF:-1  tvg-name="DISNEY PLUS FILM (7)" tvg-id="" tvg-logo="" group-title="Kinder" :http-user-agent="VAVOO/2.6",DISNEY PLUS FILM (7)
+#EXTINF:-1  tvg-name="DISNEY PLUS FILM (7)" tvg-id="" tvg-logo="https://static-mh.content.disney.io/matterhorn/assets/goc/disney_logo_dark@2x-45d70f7dd57b.png" group-title="Kinder" :http-user-agent="VAVOO/2.6",DISNEY PLUS FILM (7)
 https://www.vavoo.to/play/551076308/index.m3u8
-#EXTINF:-1  tvg-name="DISNEY XD (7)" tvg-id="" tvg-logo="" group-title="Kinder" :http-user-agent="VAVOO/2.6",DISNEY XD (7)
+#EXTINF:-1  tvg-name="DISNEY XD (7)" tvg-id="" tvg-logo="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/13/2018/06/14153524/XD_Nav_Logo.jpg" group-title="Kinder" :http-user-agent="VAVOO/2.6",DISNEY XD (7)
 https://www.vavoo.to/play/466290534/index.m3u8
-#EXTINF:-1  tvg-name="DISNEY+ (6)" tvg-id="" tvg-logo="" group-title="Kinder" :http-user-agent="VAVOO/2.6",DISNEY+ (6)
+#EXTINF:-1  tvg-name="DISNEY+ (6)" tvg-id="" tvg-logo="https://static-mh.content.disney.io/matterhorn/assets/goc/disney_logo_dark@2x-45d70f7dd57b.png" group-title="Kinder" :http-user-agent="VAVOO/2.6",DISNEY+ (6)
 https://www.vavoo.to/play/3302866537/index.m3u8
-#EXTINF:-1  tvg-name="BOOMERANG (1)" tvg-id="" tvg-logo="" group-title="Kinder" :http-user-agent="VAVOO/2.6",BOOMERANG (1)
+#EXTINF:-1  tvg-name="BOOMERANG (1)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/240px-Boomerang_2014_logo.svg.png" group-title="Kinder" :http-user-agent="VAVOO/2.6",BOOMERANG (1)
 https://www.vavoo.to/play/2801027631/index.m3u8
-#EXTINF:-1  tvg-name="BOOMERANG (7)" tvg-id="" tvg-logo="" group-title="Kinder" :http-user-agent="VAVOO/2.6",BOOMERANG (7)
+#EXTINF:-1  tvg-name="BOOMERANG (7)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/240px-Boomerang_2014_logo.svg.png" group-title="Kinder" :http-user-agent="VAVOO/2.6",BOOMERANG (7)
 https://www.vavoo.to/play/4182528005/index.m3u8
-#EXTINF:-1  tvg-name="BOOMERANG (BACKUP) (1)" tvg-id="" tvg-logo="" group-title="Kinder" :http-user-agent="VAVOO/2.6",BOOMERANG (BACKUP) (1)
+#EXTINF:-1  tvg-name="BOOMERANG (BACKUP) (1)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/240px-Boomerang_2014_logo.svg.png" group-title="Kinder" :http-user-agent="VAVOO/2.6",BOOMERANG (BACKUP) (1)
 https://www.vavoo.to/play/3376504549/index.m3u8
 #EXTINF:-1  tvg-name="TOGGO PLUS (1)" tvg-id="DE: TOGGO plus" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F35d704a6beeecc53be277ba5e9342ddca6df5e0a.png" group-title="Kinder" :http-user-agent="VAVOO/2.6",TOGGO PLUS (1)
 https://www.vavoo.to/play/198815122/index.m3u8
@@ -479,7 +479,7 @@ https://www.vavoo.to/play/1928349222/index.m3u8
 #EXTINF:-1  tvg-name="SKY CRIME (6)" tvg-id="DE: Sky Crime" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/855_sky_logo_crime-hd_tvguide.png" group-title="Crime" :http-user-agent="VAVOO/2.6",SKY CRIME (6)
 https://www.vavoo.to/play/2306749976/index.m3u8
 
-#EXTINF:-1  tvg-name="SKY NOSTALGIE (7)" tvg-id="DE: Sky Nostalgie" tvg-logo="" group-title="Sky" :http-user-agent="VAVOO/2.6",SKY NOSTALGIE (7)
+#EXTINF:-1  tvg-name="SKY NOSTALGIE (7)" tvg-id="DE: Sky Nostalgie" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Sky_Nostalgie.svg/120px-Sky_Nostalgie.svg.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SKY NOSTALGIE (7)
 https://www.vavoo.to/play/3892926578/index.m3u8
 
 #EXTINF:-1  tvg-name="SKY NATURE (6)" tvg-id="DE: Sky Nature" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/875_sky_logo_sky-nature-hd_tvguide.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",SKY NATURE (6)
@@ -605,15 +605,15 @@ https://www.vavoo.to/play/1448190538/index.m3u8
 #EXTINF:-1  tvg-name="SKY CLASSICS (1)" tvg-id="DE: Sky Classics" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/1208_sky_logo_cinema-classics_hd_tvguide.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SKY CLASSICS (1)
 https://www.vavoo.to/play/2401209121/index.m3u8
 
-#EXTINF:-1  tvg-name="AXN (7)" tvg-id="" tvg-logo="" group-title="Sky" :http-user-agent="VAVOO/2.6",AXN (7)
+#EXTINF:-1  tvg-name="AXN White (7)" tvg-id="DE: AXN White" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/AXN_White_logo_%282015%29.svg/1920px-AXN_White_logo_%282015%29.svg.png" group-title="Sky" :http-user-agent="VAVOO/2.6",AXN White (7)
 https://www.vavoo.to/play/35449939/index.m3u8
-#EXTINF:-1  tvg-name="AXN HD (1)" tvg-id="" tvg-logo="" group-title="Sky" :http-user-agent="VAVOO/2.6",AXN HD (1)
+#EXTINF:-1  tvg-name="AXN Black HD (1)" tvg-id="DE: AXN Black" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AXN_Black_logo_%282015%29.svg/240px-AXN_Black_logo_%282015%29.svg.png" group-title="Sky" :http-user-agent="VAVOO/2.6",AXN Black HD (1)
 https://www.vavoo.to/play/2971109923/index.m3u8
 #EXTINF:-1  tvg-name="SONY AXN (7)" tvg-id="" tvg-logo="" group-title="Sky" :http-user-agent="VAVOO/2.6",SONY AXN (7)
 https://www.vavoo.to/play/115676515/index.m3u8
-#EXTINF:-1  tvg-name="SONY AXN (AXN BLACK) (6)" tvg-id="" tvg-logo="" group-title="Sky" :http-user-agent="VAVOO/2.6",SONY AXN (AXN BLACK) (6)
+#EXTINF:-1  tvg-name="SONY AXN (AXN BLACK) (6)" tvg-id="DE: AXN Black" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AXN_Black_logo_%282015%29.svg/240px-AXN_Black_logo_%282015%29.svg.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SONY AXN (AXN BLACK) (6)
 https://www.vavoo.to/play/3571959904/index.m3u8
-#EXTINF:-1  tvg-name="SONY AXN (AXN WHITE) (6)" tvg-id="" tvg-logo="" group-title="Sky" :http-user-agent="VAVOO/2.6",SONY AXN (AXN WHITE) (6)
+#EXTINF:-1  tvg-name="SONY AXN (AXN WHITE) (6)" tvg-id="DE: AXN White" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/AXN_White_logo_%282015%29.svg/1920px-AXN_White_logo_%282015%29.svg.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SONY AXN (AXN WHITE) (6)
 https://www.vavoo.to/play/52038469/index.m3u8
 #EXTINF:-1  tvg-name="SONY AXN HD (1)" tvg-id="" tvg-logo="" group-title="Sky" :http-user-agent="VAVOO/2.6",SONY AXN HD (1)
 https://www.vavoo.to/play/2623028209/index.m3u8
@@ -923,17 +923,17 @@ https://www.vavoo.to/play/1626865590/index.m3u8
 https://www.vavoo.to/play/1570231814/index.m3u8
 #EXTINF:-1  tvg-name="MAX KINO COLLECTION (1)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",MAX KINO COLLECTION (1)
 https://www.vavoo.to/play/895867402/index.m3u8
-#EXTINF:-1  tvg-name="RAKUTEN ACTION MOVIES (6)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",RAKUTEN ACTION MOVIES (6)
+#EXTINF:-1  tvg-name="RAKUTEN ACTION MOVIES (6)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Rakuten_TV_logo.svg/330px-Rakuten_TV_logo.svg.png" group-title="Filme" :http-user-agent="VAVOO/2.6",RAKUTEN ACTION MOVIES (6)
 https://www.vavoo.to/play/874209805/index.m3u8
-#EXTINF:-1  tvg-name="RAKUTEN COMEDY MOVIES (6)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",RAKUTEN COMEDY MOVIES (6)
+#EXTINF:-1  tvg-name="RAKUTEN COMEDY MOVIES (6)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Rakuten_TV_logo.svg/330px-Rakuten_TV_logo.svg.png" group-title="Filme" :http-user-agent="VAVOO/2.6",RAKUTEN COMEDY MOVIES (6)
 https://www.vavoo.to/play/3232334815/index.m3u8
-#EXTINF:-1  tvg-name="RAKUTEN COMEDY MOVIES 2 (6)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",RAKUTEN COMEDY MOVIES 2 (6)
+#EXTINF:-1  tvg-name="RAKUTEN COMEDY MOVIES 2 (6)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Rakuten_TV_logo.svg/330px-Rakuten_TV_logo.svg.png" group-title="Filme" :http-user-agent="VAVOO/2.6",RAKUTEN COMEDY MOVIES 2 (6)
 https://www.vavoo.to/play/2793815378/index.m3u8
-#EXTINF:-1  tvg-name="RAKUTEN SPOTLIGHT (6)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",RAKUTEN SPOTLIGHT (6)
+#EXTINF:-1  tvg-name="RAKUTEN SPOTLIGHT (6)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Rakuten_TV_logo.svg/330px-Rakuten_TV_logo.svg.png" group-title="Filme" :http-user-agent="VAVOO/2.6",RAKUTEN SPOTLIGHT (6)
 https://www.vavoo.to/play/3422833190/index.m3u8
-#EXTINF:-1  tvg-name="RAKUTEN TV SHOWS (6)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",RAKUTEN TV SHOWS (6)
+#EXTINF:-1  tvg-name="RAKUTEN TV SHOWS (6)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Rakuten_TV_logo.svg/330px-Rakuten_TV_logo.svg.png" group-title="Filme" :http-user-agent="VAVOO/2.6",RAKUTEN TV SHOWS (6)
 https://www.vavoo.to/play/2676758994/index.m3u8
-#EXTINF:-1  tvg-name="RAKUTEN TV SHOWS 2 (6)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",RAKUTEN TV SHOWS 2 (6)
+#EXTINF:-1  tvg-name="RAKUTEN TV SHOWS 2 (6)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Rakuten_TV_logo.svg/330px-Rakuten_TV_logo.svg.png" group-title="Filme" :http-user-agent="VAVOO/2.6",RAKUTEN TV SHOWS 2 (6)
 https://www.vavoo.to/play/66217568/index.m3u8
 #EXTINF:-1  tvg-name="SKY POPCORN SELECT 1 (7)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Popcorn_Time_logo.png/180px-Popcorn_Time_logo.png" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY POPCORN SELECT 1 (7)
 https://www.vavoo.to/play/524239335/index.m3u8
@@ -953,9 +953,9 @@ https://www.vavoo.to/play/3224250673/index.m3u8
 https://www.vavoo.to/play/87179772/index.m3u8
 #EXTINF:-1  tvg-name="SKY SELECT 1 (7)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sky_Select_-_Logo_2016.svg/768px-Sky_Select_-_Logo_2016.svg.png" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY SELECT 1 (7)
 https://www.vavoo.to/play/1545153989/index.m3u8
-#EXTINF:-1  tvg-name="SKY SELECT 1 BOX (7)" tvg-id="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sky_Select_-_Logo_2016.svg/768px-Sky_Select_-_Logo_2016.svg.png" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY SELECT 1 BOX (7)
+#EXTINF:-1  tvg-name="SKY SELECT 1 BOX (7)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sky_Select_-_Logo_2016.svg/768px-Sky_Select_-_Logo_2016.svg.png" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY SELECT 1 BOX (7)
 https://www.vavoo.to/play/3779294490/index.m3u8
-#EXTINF:-1  tvg-name="SKY SELECT 1 HD (1)" tvg-id="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sky_Select_-_Logo_2016.svg/768px-Sky_Select_-_Logo_2016.svg.png" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY SELECT 1 HD (1)
+#EXTINF:-1  tvg-name="SKY SELECT 1 HD (1)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sky_Select_-_Logo_2016.svg/768px-Sky_Select_-_Logo_2016.svg.png" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY SELECT 1 HD (1)
 https://www.vavoo.to/play/2692055695/index.m3u8
 #EXTINF:-1  tvg-name="SKY SELECT 2 (1)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sky_Select_-_Logo_2016.svg/768px-Sky_Select_-_Logo_2016.svg.png" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY SELECT 2 (1)
 https://www.vavoo.to/play/2196637503/index.m3u8
@@ -1057,9 +1057,9 @@ https://www.vavoo.to/play/591629459/index.m3u8
 
 
 
-#EXTINF:-1  tvg-name="KRONE HIT TV (7)" tvg-id="" tvg-logo="" group-title="Musik" :http-user-agent="VAVOO/2.6",KRONE HIT TV (7)
+#EXTINF:-1  tvg-name="KRONE HIT TV (7)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Kronehit_Logo2018_Nachtblau_rgb.svg/450px-Kronehit_Logo2018_Nachtblau_rgb.svg.png" group-title="Musik" :http-user-agent="VAVOO/2.6",KRONE HIT TV (7)
 https://www.vavoo.to/play/1775873160/index.m3u8
-#EXTINF:-1  tvg-name="DELUXE LOUNGE (6)" tvg-id="" tvg-logo="" group-title="Musik" :http-user-agent="VAVOO/2.6",DELUXE LOUNGE (6)
+#EXTINF:-1  tvg-name="DELUXE LOUNGE (6)" tvg-id="" tvg-logo="https://deluxemusic.de/wp-content/uploads/sites/4/2023/01/DLXM_LOUNGE_LOGO.png" group-title="Musik" :http-user-agent="VAVOO/2.6",DELUXE LOUNGE (6)
 https://www.vavoo.to/play/137166504/index.m3u8
 #EXTINF:-1  tvg-name="DELUXE MUSIC (1)" tvg-id="DE: Deluxe Music" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/1034.png" group-title="Musik" :http-user-agent="VAVOO/2.6",DELUXE MUSIC (1)
 https://www.vavoo.to/play/2753705744/index.m3u8
