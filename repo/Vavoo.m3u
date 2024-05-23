@@ -657,30 +657,10 @@ https://www.vavoo.to/play/1724400827/index.m3u8
 
 
 
-#EXTINF:-1  tvg-name="MAGENTA SPORT 1 (6)" tvg-id="DE: Magenta Sport 1" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 1 (6)
+#EXTINF:-1  tvg-name="MAGENTA SPORT 1 (6)" tvg-id="DE: Magenta Sport 1" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F98154b022b1cd559da555d70d6343b5d8cfb13ce.png" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 1 (6)
 https://www.vavoo.to/play/3942553635/index.m3u8
-#EXTINF:-1  tvg-name="MAGENTA SPORT 1 (7)" tvg-id="DE: Magenta Sport 1" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 1 (7)
+#EXTINF:-1  tvg-name="MAGENTA SPORT 1 (7)" tvg-id="DE: Magenta Sport 1" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F98154b022b1cd559da555d70d6343b5d8cfb13ce.png" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 1 (7)
 https://www.vavoo.to/play/2160821119/index.m3u8
-#EXTINF:-1  tvg-name="MAGENTA SPORT 10 (6)" tvg-id="DE: Magenta Sport 10" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 10 (6)
-https://www.vavoo.to/play/1284228994/index.m3u8
-#EXTINF:-1  tvg-name="MAGENTA SPORT 10 (7)" tvg-id="DE: Magenta Sport 10" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 10 (7)
-https://www.vavoo.to/play/921023536/index.m3u8
-#EXTINF:-1  tvg-name="MAGENTA SPORT 11 (6)" tvg-id="DE: Magenta Sport 11" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 11 (6)
-https://www.vavoo.to/play/1911287346/index.m3u8
-#EXTINF:-1  tvg-name="MAGENTA SPORT 11 (7)" tvg-id="DE: Magenta Sport 11" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 11 (7)
-https://www.vavoo.to/play/193305984/index.m3u8
-#EXTINF:-1  tvg-name="MAGENTA SPORT 12 (6)" tvg-id="DE: Magenta Sport 12" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 12 (6)
-https://www.vavoo.to/play/910922978/index.m3u8
-#EXTINF:-1  tvg-name="MAGENTA SPORT 12 (7)" tvg-id="DE: Magenta Sport 13" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 12 (7)
-https://www.vavoo.to/play/1277552464/index.m3u8
-#EXTINF:-1  tvg-name="MAGENTA SPORT 13 (6)" tvg-id="DE: Magenta Sport 16" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 13 (6)
-https://www.vavoo.to/play/187415890/index.m3u8
-#EXTINF:-1  tvg-name="MAGENTA SPORT 15 (6)" tvg-id="DE: Magenta Sport 15" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 15 (6)
-https://www.vavoo.to/play/2221623538/index.m3u8
-#EXTINF:-1  tvg-name="MAGENTA SPORT 17 (6)" tvg-id="DE: Magenta Sport 17" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 17 (6)
-https://www.vavoo.to/play/4272626578/index.m3u8
-#EXTINF:-1  tvg-name="MAGENTA SPORT 18 (6)" tvg-id="DE: Magenta Sport 18" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 18 (6)
-https://www.vavoo.to/play/2096860227/index.m3u8
 #EXTINF:-1  tvg-name="MAGENTA SPORT 2 (6)" tvg-id="DE: Magenta Sport 2" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 2 (6)
 https://www.vavoo.to/play/2908676851/index.m3u8
 #EXTINF:-1  tvg-name="MAGENTA SPORT 2 (7)" tvg-id="DE: Magenta Sport 2" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 2 (7)
@@ -713,6 +693,26 @@ https://www.vavoo.to/play/2379997454/index.m3u8
 https://www.vavoo.to/play/3666793442/index.m3u8
 #EXTINF:-1  tvg-name="MAGENTA SPORT 9 (7)" tvg-id="DE: Magenta Sport 9" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 9 (7)
 https://www.vavoo.to/play/2965096638/index.m3u8
+#EXTINF:-1  tvg-name="MAGENTA SPORT 10 (6)" tvg-id="DE: Magenta Sport 10" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 10 (6)
+https://www.vavoo.to/play/1284228994/index.m3u8
+#EXTINF:-1  tvg-name="MAGENTA SPORT 10 (7)" tvg-id="DE: Magenta Sport 10" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 10 (7)
+https://www.vavoo.to/play/921023536/index.m3u8
+#EXTINF:-1  tvg-name="MAGENTA SPORT 11 (6)" tvg-id="DE: Magenta Sport 11" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 11 (6)
+https://www.vavoo.to/play/1911287346/index.m3u8
+#EXTINF:-1  tvg-name="MAGENTA SPORT 11 (7)" tvg-id="DE: Magenta Sport 11" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 11 (7)
+https://www.vavoo.to/play/193305984/index.m3u8
+#EXTINF:-1  tvg-name="MAGENTA SPORT 12 (6)" tvg-id="DE: Magenta Sport 12" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 12 (6)
+https://www.vavoo.to/play/910922978/index.m3u8
+#EXTINF:-1  tvg-name="MAGENTA SPORT 12 (7)" tvg-id="DE: Magenta Sport 13" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 12 (7)
+https://www.vavoo.to/play/1277552464/index.m3u8
+#EXTINF:-1  tvg-name="MAGENTA SPORT 15 (6)" tvg-id="DE: Magenta Sport 15" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 15 (6)
+https://www.vavoo.to/play/2221623538/index.m3u8
+#EXTINF:-1  tvg-name="MAGENTA SPORT 13 (6)" tvg-id="DE: Magenta Sport 16" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 13 (6)
+https://www.vavoo.to/play/187415890/index.m3u8
+#EXTINF:-1  tvg-name="MAGENTA SPORT 17 (6)" tvg-id="DE: Magenta Sport 17" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 17 (6)
+https://www.vavoo.to/play/4272626578/index.m3u8
+#EXTINF:-1  tvg-name="MAGENTA SPORT 18 (6)" tvg-id="DE: Magenta Sport 18" tvg-logo="" group-title="Sport" :http-user-agent="VAVOO/2.6",MAGENTA SPORT 18 (6)
+https://www.vavoo.to/play/2096860227/index.m3u8
 
 #EXTINF:-1  tvg-name="SKY SPORT NEWS (1)" tvg-id="DE: Sky Sport News" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/17_sky_logo_skysportnewshd_tvguide.png" group-title="Sport" :http-user-agent="VAVOO/2.6",SKY SPORT NEWS (1)
 https://www.vavoo.to/play/2938520623/index.m3u8
