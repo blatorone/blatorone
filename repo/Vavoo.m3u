@@ -134,13 +134,13 @@ https://www.vavoo.to/play/1185387240/index.m3u8
 #EXTINF:-1  tvg-name="SAT.1 GOLD (1)" tvg-id="DE: SAT.1 GOLD" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/956.png" group-title="Standard" :http-user-agent="VAVOO/2.6",SAT.1 GOLD (1)
 https://www.vavoo.to/play/2648838934/index.m3u8
 
-#EXTINF:-1  tvg-name="KABEL 1 (7)" tvg-id="DE: Kabel Eins" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fe92cc62717350cd0378f1191c21a3512362c65a1.png" group-title="Standard" :http-user-agent="VAVOO/2.6",KABEL 1 (7)
+#EXTINF:-1  tvg-name="KABEL 1 (7)" tvg-id="DE: Kabel Eins" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kabel_eins_Logo_2015.svg/1280px-Kabel_eins_Logo_2015.svg.png" group-title="Standard" :http-user-agent="VAVOO/2.6",KABEL 1 (7)
 https://www.vavoo.to/play/1647690528/index.m3u8
-#EXTINF:-1  tvg-name="KABEL 1 HD (1)" tvg-id="DE: Kabel Eins" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fe92cc62717350cd0378f1191c21a3512362c65a1.png" group-title="Standard" :http-user-agent="VAVOO/2.6",KABEL 1 HD (1)
+#EXTINF:-1  tvg-name="KABEL 1 HD (1)" tvg-id="DE: Kabel Eins" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kabel_eins_Logo_2015.svg/1280px-Kabel_eins_Logo_2015.svg.png" group-title="Standard" :http-user-agent="VAVOO/2.6",KABEL 1 HD (1)
 https://www.vavoo.to/play/3611197449/index.m3u8
-#EXTINF:-1  tvg-name="KABEL EINS HD (1)" tvg-id="DE: Kabel Eins" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fe92cc62717350cd0378f1191c21a3512362c65a1.png" group-title="Standard" :http-user-agent="VAVOO/2.6",KABEL EINS HD (1)
+#EXTINF:-1  tvg-name="KABEL EINS HD (1)" tvg-id="DE: Kabel Eins" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kabel_eins_Logo_2015.svg/1280px-Kabel_eins_Logo_2015.svg.png" group-title="Standard" :http-user-agent="VAVOO/2.6",KABEL EINS HD (1)
 https://www.vavoo.to/play/2590019376/index.m3u8
-#EXTINF:-1  tvg-name="KABEL EINS (6)" tvg-id="DE: Kabel Eins" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fe92cc62717350cd0378f1191c21a3512362c65a1.png" group-title="Standard" :http-user-agent="VAVOO/2.6",KABEL EINS (6)
+#EXTINF:-1  tvg-name="KABEL EINS (6)" tvg-id="DE: Kabel Eins" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kabel_eins_Logo_2015.svg/1280px-Kabel_eins_Logo_2015.svg.png" group-title="Standard" :http-user-agent="VAVOO/2.6",KABEL EINS (6)
 https://www.vavoo.to/play/4139115808/index.m3u8
 #EXTINF:-1  tvg-name="KABEL 1 CLASSICS (7)" tvg-id="DE: Kabel Eins CLASSICS" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/1037.png" group-title="Standard" :http-user-agent="VAVOO/2.6",KABEL 1 CLASSICS (7)
 https://www.vavoo.to/play/2584108947/index.m3u8
@@ -607,7 +607,7 @@ https://www.vavoo.to/play/35449939/index.m3u8
 https://www.vavoo.to/play/52038469/index.m3u8
 #EXTINF:-1  tvg-name="AXN Black HD (1)" tvg-id="DE: AXN Black" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AXN_Black_logo_%282015%29.svg/240px-AXN_Black_logo_%282015%29.svg.png" group-title="Sky" :http-user-agent="VAVOO/2.6",AXN Black HD (1)
 https://www.vavoo.to/play/2971109923/index.m3u8
-#EXTINF:-1  tvg-name="AXN Black HD (2)" tvg-id="DE: AXN Black" tvg-logo="" group-title="Sky" :http-user-agent="VAVOO/2.6",AXN Black HD (2)
+#EXTINF:-1  tvg-name="AXN Black HD (2)" tvg-id="DE: AXN Black" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AXN_Black_logo_%282015%29.svg/240px-AXN_Black_logo_%282015%29.svg.png" group-title="Sky" :http-user-agent="VAVOO/2.6",AXN Black HD (2)
 https://www.vavoo.to/play/2623028209/index.m3u8
 #EXTINF:-1  tvg-name="SONY AXN (AXN BLACK) (6)" tvg-id="DE: AXN Black" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AXN_Black_logo_%282015%29.svg/240px-AXN_Black_logo_%282015%29.svg.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SONY AXN (AXN BLACK) (6)
 https://www.vavoo.to/play/3571959904/index.m3u8
