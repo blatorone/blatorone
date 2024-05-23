@@ -935,17 +935,17 @@ https://www.vavoo.to/play/3422833190/index.m3u8
 https://www.vavoo.to/play/2676758994/index.m3u8
 #EXTINF:-1  tvg-name="RAKUTEN TV SHOWS 2 (6)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",RAKUTEN TV SHOWS 2 (6)
 https://www.vavoo.to/play/66217568/index.m3u8
-#EXTINF:-1  tvg-name="SKY POPCORN SELECT 1 (7)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY POPCORN SELECT 1 (7)
+#EXTINF:-1  tvg-name="SKY POPCORN SELECT 1 (7)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Popcorn_Time_logo.png/180px-Popcorn_Time_logo.png" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY POPCORN SELECT 1 (7)
 https://www.vavoo.to/play/524239335/index.m3u8
-#EXTINF:-1  tvg-name="SKY POPCORN SELECT 2 (7)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY POPCORN SELECT 2 (7)
+#EXTINF:-1  tvg-name="SKY POPCORN SELECT 2 (7)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Popcorn_Time_logo.png/180px-Popcorn_Time_logo.png" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY POPCORN SELECT 2 (7)
 https://www.vavoo.to/play/1486830391/index.m3u8
-#EXTINF:-1  tvg-name="SKY POPCORN SELECT 3 (7)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY POPCORN SELECT 3 (7)
+#EXTINF:-1  tvg-name="SKY POPCORN SELECT 3 (7)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Popcorn_Time_logo.png/180px-Popcorn_Time_logo.png" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY POPCORN SELECT 3 (7)
 https://www.vavoo.to/play/1711215239/index.m3u8
-#EXTINF:-1  tvg-name="SKY POPCORN SELECT 4 (7)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY POPCORN SELECT 4 (7)
+#EXTINF:-1  tvg-name="SKY POPCORN SELECT 4 (7)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Popcorn_Time_logo.png/180px-Popcorn_Time_logo.png" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY POPCORN SELECT 4 (7)
 https://www.vavoo.to/play/3621768855/index.m3u8
-#EXTINF:-1  tvg-name="SKY POPCORN SELECT 5 (7)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY POPCORN SELECT 5 (7)
+#EXTINF:-1  tvg-name="SKY POPCORN SELECT 5 (7)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Popcorn_Time_logo.png/180px-Popcorn_Time_logo.png" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY POPCORN SELECT 5 (7)
 https://www.vavoo.to/play/3938445095/index.m3u8
-#EXTINF:-1  tvg-name="SKY POPCORN SELECT 6 (7)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY POPCORN SELECT 6 (7)
+#EXTINF:-1  tvg-name="SKY POPCORN SELECT 6 (7)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Popcorn_Time_logo.png/180px-Popcorn_Time_logo.png" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY POPCORN SELECT 6 (7)
 https://www.vavoo.to/play/2904530423/index.m3u8
 #EXTINF:-1  tvg-name="SKY SELECT (1)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sky_Select_-_Logo_2016.svg/768px-Sky_Select_-_Logo_2016.svg.png" group-title="Filme" :http-user-agent="VAVOO/2.6",SKY SELECT (1)
 https://www.vavoo.to/play/3224250673/index.m3u8
