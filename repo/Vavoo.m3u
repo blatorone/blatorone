@@ -153,17 +153,17 @@ https://www.vavoo.to/play/3100213148/index.m3u8
 #EXTINF:-1  tvg-name="KABEL EINS DOKU (6)" tvg-id="DE: Kabel Eins Doku" tvg-logo="" group-title="Standard" :http-user-agent="VAVOO/2.6",KABEL EINS DOKU (6)
 https://www.vavoo.to/play/1904766026/index.m3u8
 
-#EXTINF:-1  tvg-name="PRO 7 (7)" tvg-id="DE: ProSieben" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/936.png" group-title="Standard" :http-user-agent="VAVOO/2.6",PRO 7 (7)
+#EXTINF:-1  tvg-name="PRO 7 (7)" tvg-id="DE: ProSieben" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/936.png" group-title="Standard" :http-user-agent="VAVOO/2.6",PRO 7 (7)
 https://www.vavoo.to/play/167169139/index.m3u8
-#EXTINF:-1  tvg-name="PROSIEBEN HD (1)" tvg-id="DE: ProSieben" tvg-logo="" group-title="Standard" :http-user-agent="VAVOO/2.6",PROSIEBEN HD (1)
+#EXTINF:-1  tvg-name="PROSIEBEN HD (1)" tvg-id="DE: ProSieben" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/936.png" group-title="Standard" :http-user-agent="VAVOO/2.6",PROSIEBEN HD (1)
 https://www.vavoo.to/play/3918074082/index.m3u8
-#EXTINF:-1  tvg-name="PRO 7 HD (1)" tvg-id="DE: ProSieben" tvg-logo="" group-title="Standard" :http-user-agent="VAVOO/2.6",PRO 7 HD (1)
+#EXTINF:-1  tvg-name="PRO 7 HD (1)" tvg-id="DE: ProSieben" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/936.png" group-title="Standard" :http-user-agent="VAVOO/2.6",PRO 7 HD (1)
 https://www.vavoo.to/play/3081311548/index.m3u8
-#EXTINF:-1  tvg-name="PRO 7 HD+ (1)" tvg-id="DE: ProSieben" tvg-logo="" group-title="Standard" :http-user-agent="VAVOO/2.6",PRO 7 HD+ (1)
+#EXTINF:-1  tvg-name="PRO 7 HD+ (1)" tvg-id="DE: ProSieben" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/936.png" group-title="Standard" :http-user-agent="VAVOO/2.6",PRO 7 HD+ (1)
 https://www.vavoo.to/play/2631973675/index.m3u8
-#EXTINF:-1  tvg-name="PROSIEBEN (1)" tvg-id="DE: ProSieben" tvg-logo="" group-title="Standard" :http-user-agent="VAVOO/2.6",PROSIEBEN (1)
+#EXTINF:-1  tvg-name="PROSIEBEN (1)" tvg-id="DE: ProSieben" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/936.png" group-title="Standard" :http-user-agent="VAVOO/2.6",PROSIEBEN (1)
 https://www.vavoo.to/play/520767486/index.m3u8
-#EXTINF:-1  tvg-name="PROSIEBEN (6)" tvg-id="DE: ProSieben" tvg-logo="" group-title="Standard" :http-user-agent="VAVOO/2.6",PROSIEBEN (6)
+#EXTINF:-1  tvg-name="PROSIEBEN (6)" tvg-id="DE: ProSieben" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/936.png" group-title="Standard" :http-user-agent="VAVOO/2.6",PROSIEBEN (6)
 https://www.vavoo.to/play/2230118530/index.m3u8
 
 #EXTINF:-1  tvg-name="PRO 7 FUN (7)" tvg-id="DE: ProSieben FUN" tvg-logo="" group-title="Standard" :http-user-agent="VAVOO/2.6",PRO 7 FUN (7)
@@ -516,11 +516,11 @@ https://www.vavoo.to/play/2891502629/index.m3u8
 #EXTINF:-1  tvg-name="UNIVERSAL TV HD+ (1)" tvg-id="DE: Universal TV" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/172_sky_logo_universalchannelhd_b.png" group-title="Sky" :http-user-agent="VAVOO/2.6",UNIVERSAL TV HD+ (1)
 https://www.vavoo.to/play/4170244650/index.m3u8
 
-#EXTINF:-1  tvg-name="WARNER TV SERIE (6)" tvg-id="DE: Warner TV Serie" tvg-logo="" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER TV SERIE (6)
+#EXTINF:-1  tvg-name="WARNER TV SERIE (6)" tvg-id="DE: Warner TV Serie" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/6_sky_logo_tntseriehd.png" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER TV SERIE (6)
 https://www.vavoo.to/play/343883555/index.m3u8
-#EXTINF:-1  tvg-name="WARNER TV SERIE (7)" tvg-id="DE: Warner TV Serie" tvg-logo="" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER TV SERIE (7)
+#EXTINF:-1  tvg-name="WARNER TV SERIE (7)" tvg-id="DE: Warner TV Serie" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/6_sky_logo_tntseriehd.png" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER TV SERIE (7)
 https://www.vavoo.to/play/2118788223/index.m3u8
-#EXTINF:-1  tvg-name="WARNER SERIE RAW (1)" tvg-id="DE: Warner TV Serie" tvg-logo="" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER SERIE RAW (1)
+#EXTINF:-1  tvg-name="WARNER SERIE RAW (1)" tvg-id="DE: Warner TV Serie" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/6_sky_logo_tntseriehd.png" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER SERIE RAW (1)
 https://www.vavoo.to/play/3256517696/index.m3u8
 
 #EXTINF:-1  tvg-name="WARNER COMEDY (7)" tvg-id="DE: Warner TV Comedy" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/522_sky_logo_tntcomedy-hd_b.png" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER COMEDY (7)
@@ -536,7 +536,7 @@ https://www.vavoo.to/play/1536284368/index.m3u8
 https://www.vavoo.to/play/3249732310/index.m3u8
 #EXTINF:-1  tvg-name="WARNER TV FILM (6)" tvg-id="DE: Warner TV Film" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/762_sky_logo_tntfilm.png" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER TV FILM (6)
 https://www.vavoo.to/play/353167520/index.m3u8
-#EXTINF:-1  tvg-name="WARNER TV FILM (7)" tvg-id="DE: Warner TV Film" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/762_sky_logo_tntfilm.png" group-title="SKY" :http-user-agent="VAVOO/2.6",WARNER TV FILM (7)
+#EXTINF:-1  tvg-name="WARNER TV FILM (7)" tvg-id="DE: Warner TV Film" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/762_sky_logo_tntfilm.png" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER TV FILM (7)
 https://www.vavoo.to/play/4264249190/index.m3u8
 
 #EXTINF:-1  tvg-name="HISTORY (1)" tvg-id="DE: History" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/86_sky_logo_historyhd_b.jpg" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",HISTORY (1)
