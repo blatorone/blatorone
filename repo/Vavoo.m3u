@@ -389,9 +389,9 @@ https://www.vavoo.to/play/894569074/index.m3u8
 https://www.vavoo.to/play/3693072604/index.m3u8
 #EXTINF:-1  tvg-name="SKY CINEMA DOCUMENTARIES (7)" tvg-id="DE: Sky Cinema Dokumentaries" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/876_sky_logo_sky-cinema-documentaries-hd_tvguide.png" group-title="Crime" :http-user-agent="VAVOO/2.6",SKY CINEMA DOCUMENTARIES (7)
 https://www.vavoo.to/play/1005347751/index.m3u8
-#EXTINF:-1  tvg-name="SKY DOCUMENTARIES (6)" tvg-id="DE: Sky Dokumentaries" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/876_sky_logo_sky-cinema-documentaries-hd_tvguide.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",SKY DOCUMENTARIES (6)
+#EXTINF:-1  tvg-name="SKY DOCUMENTARIES (6)" tvg-id="DE: Sky Documentaries" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/876_sky_logo_sky-cinema-documentaries-hd_tvguide.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",SKY DOCUMENTARIES (6)
 https://www.vavoo.to/play/2856631384/index.m3u8
-#EXTINF:-1  tvg-name="SKY DOCUMENTARIES HD (1)" tvg-id="DE: Sky Dokumentaries" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/876_sky_logo_sky-cinema-documentaries-hd_tvguide.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",SKY DOCUMENTARIES HD (1)
+#EXTINF:-1  tvg-name="SKY DOCUMENTARIES HD (1)" tvg-id="DE: Sky Documentaries" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/876_sky_logo_sky-cinema-documentaries-hd_tvguide.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",SKY DOCUMENTARIES HD (1)
 https://www.vavoo.to/play/179207810/index.m3u8
 #EXTINF:-1  tvg-name="SPIEGEL GESCHICHTE (1)" tvg-id="DE: SPIEGEL TV Geschichte" tvg-logo="https://epggw.a1.net/img/station/lightbg/100x100/486.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",SPIEGEL GESCHICHTE (1)
 https://www.vavoo.to/play/2515791950/index.m3u8
@@ -489,22 +489,22 @@ https://www.vavoo.to/play/2603286977/index.m3u8
 #EXTINF:-1  tvg-name="SKY NATURE HD (1)" tvg-id="DE: Sky Nature" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/875_sky_logo_sky-nature-hd_tvguide.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",SKY NATURE HD (1)
 https://www.vavoo.to/play/2082168194/index.m3u8
 
-#EXTINF:-1  tvg-name="SYFY (6)" tvg-id="DE: SYFY" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/Syfy_HD_Logo_2017.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SYFY (6)
+#EXTINF:-1  tvg-name="SYFY (6)" tvg-id="DE: SYFY" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fea9846917902c635cd3c5b239bd2f0c5d23c0c98.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SYFY (6)
 https://www.vavoo.to/play/2476042290/index.m3u8
-#EXTINF:-1  tvg-name="SYFY (7)" tvg-id="DE: SYFY" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/115_sky_logo_syfyhd_b.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SYFY (7)
+#EXTINF:-1  tvg-name="SYFY (7)" tvg-id="DE: SYFY" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fea9846917902c635cd3c5b239bd2f0c5d23c0c98.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SYFY (7)
 https://www.vavoo.to/play/3827803407/index.m3u8
-#EXTINF:-1  tvg-name="SYFY HD (1)" tvg-id="DE: SYFY" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/115_sky_logo_syfyhd_b.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SYFY HD (1)
+#EXTINF:-1  tvg-name="SYFY HD (1)" tvg-id="DE: SYFY" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fea9846917902c635cd3c5b239bd2f0c5d23c0c98.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SYFY HD (1)
 https://www.vavoo.to/play/3565687987/index.m3u8
-#EXTINF:-1  tvg-name="SYFY HD+ (1)" tvg-id="DE: SYFY" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/115_sky_logo_syfyhd_b.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SYFY HD+ (1)
+#EXTINF:-1  tvg-name="SYFY HD+ (1)" tvg-id="DE: SYFY" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fea9846917902c635cd3c5b239bd2f0c5d23c0c98.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SYFY HD+ (1)
 https://www.vavoo.to/play/3783525531/index.m3u8
 
-#EXTINF:-1  tvg-name="13TH STREET (6)" tvg-id="DE: 13th Street" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/116_sky_logo_13thstreethd_b.png" group-title="Sky" :http-user-agent="VAVOO/2.6",13TH STREET (6)
+#EXTINF:-1  tvg-name="13TH STREET (6)" tvg-id="DE: 13th Street" tvg-logo="https://epggw.a1.net/img/station/lightbg/100x100/442.png" group-title="Sky" :http-user-agent="VAVOO/2.6",13TH STREET (6)
 https://www.vavoo.to/play/1398886436/index.m3u8
-#EXTINF:-1  tvg-name="13TH STREET (7)" tvg-id="DE: 13th Street" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/116_sky_logo_13thstreethd_b.png" group-title="Sky" :http-user-agent="VAVOO/2.6",13TH STREET (7)
+#EXTINF:-1  tvg-name="13TH STREET (7)" tvg-id="DE: 13th Street" tvg-logo="https://epggw.a1.net/img/station/lightbg/100x100/442.png" group-title="Sky" :http-user-agent="VAVOO/2.6",13TH STREET (7)
 https://www.vavoo.to/play/2771156879/index.m3u8
-#EXTINF:-1  tvg-name="13TH STREET HD (1)" tvg-id="DE: 13th Street" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/116_sky_logo_13thstreethd_b.png" group-title="Sky" :http-user-agent="VAVOO/2.6",13TH STREET HD (1)
+#EXTINF:-1  tvg-name="13TH STREET HD (1)" tvg-id="DE: 13th Street" tvg-logo="https://epggw.a1.net/img/station/lightbg/100x100/442.png" group-title="Sky" :http-user-agent="VAVOO/2.6",13TH STREET HD (1)
 https://www.vavoo.to/play/3607332302/index.m3u8
-#EXTINF:-1  tvg-name="13TH STREET HD+ (1)" tvg-id="DE: 13th Street" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/116_sky_logo_13thstreethd_b.png" group-title="Sky" :http-user-agent="VAVOO/2.6",13TH STREET HD+ (1)
+#EXTINF:-1  tvg-name="13TH STREET HD+ (1)" tvg-id="DE: 13th Street" tvg-logo="https://epggw.a1.net/img/station/lightbg/100x100/442.png" group-title="Sky" :http-user-agent="VAVOO/2.6",13TH STREET HD+ (1)
 https://www.vavoo.to/play/3476259467/index.m3u8
 
 #EXTINF:-1  tvg-name="UNIVERSAL CHANNEL (7)" tvg-id="DE: Universal TV" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/172_sky_logo_universalchannelhd_b.png" group-title="Sky" :http-user-agent="VAVOO/2.6",UNIVERSAL CHANNEL (7)
@@ -532,11 +532,11 @@ https://www.vavoo.to/play/259091947/index.m3u8
 #EXTINF:-1  tvg-name="SKY COMEDY (1)" tvg-id="DE: Sky Comedy" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/522_sky_logo_tntcomedy-hd_b.png" group-title="Sky" :http-user-agent="VAVOO/2.6",SKY COMEDY (1)
 https://www.vavoo.to/play/1536284368/index.m3u8
 
-#EXTINF:-1  tvg-name="WARNER FILM RAW (1)" tvg-id="DE: Warner TV Film" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/762_sky_logo_tntfilm.png" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER FILM RAW (1)
+#EXTINF:-1  tvg-name="WARNER FILM RAW (1)" tvg-id="DE: Warner TV Film" tvg-logo="https://epggw.a1.net/img/station/lightbg/100x100/914.png" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER FILM RAW (1)
 https://www.vavoo.to/play/3249732310/index.m3u8
-#EXTINF:-1  tvg-name="WARNER TV FILM (6)" tvg-id="DE: Warner TV Film" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/762_sky_logo_tntfilm.png" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER TV FILM (6)
+#EXTINF:-1  tvg-name="WARNER TV FILM (6)" tvg-id="DE: Warner TV Film" tvg-logo="https://epggw.a1.net/img/station/lightbg/100x100/914.png" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER TV FILM (6)
 https://www.vavoo.to/play/353167520/index.m3u8
-#EXTINF:-1  tvg-name="WARNER TV FILM (7)" tvg-id="DE: Warner TV Film" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/762_sky_logo_tntfilm.png" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER TV FILM (7)
+#EXTINF:-1  tvg-name="WARNER TV FILM (7)" tvg-id="DE: Warner TV Film" tvg-logo="https://epggw.a1.net/img/station/lightbg/100x100/914.png" group-title="Sky" :http-user-agent="VAVOO/2.6",WARNER TV FILM (7)
 https://www.vavoo.to/play/4264249190/index.m3u8
 
 #EXTINF:-1  tvg-name="HISTORY (1)" tvg-id="DE: History" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/86_sky_logo_historyhd_b.jpg" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",HISTORY (1)
@@ -548,22 +548,22 @@ https://www.vavoo.to/play/3384268715/index.m3u8
 #EXTINF:-1  tvg-name="HISTORY HD (1)" tvg-id="DE: History" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/86_sky_logo_historyhd_b.jpg" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",HISTORY HD (1)
 https://www.vavoo.to/play/1073031033/index.m3u8
 
-#EXTINF:-1  tvg-name="DISCOVERY (1)" tvg-id="DE: Discovery" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/83_sky_logo_discoverychannelhd_b.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",DISCOVERY (1)
+#EXTINF:-1  tvg-name="DISCOVERY (1)" tvg-id="DE: Discovery" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/543.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",DISCOVERY (1)
 https://www.vavoo.to/play/501620185/index.m3u8
-#EXTINF:-1  tvg-name="DISCOVERY CHANNEL (7)" tvg-id="DE: Discovery" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/83_sky_logo_discoverychannelhd_b.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",DISCOVERY CHANNEL (7)
+#EXTINF:-1  tvg-name="DISCOVERY CHANNEL (7)" tvg-id="DE: Discovery" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/543.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",DISCOVERY CHANNEL (7)
 https://www.vavoo.to/play/4172680295/index.m3u8
-#EXTINF:-1  tvg-name="DISCOVERY CHANNEL HD (1)" tvg-id="DE: Discovery" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/83_sky_logo_discoverychannelhd_b.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",DISCOVERY CHANNEL HD (1)
+#EXTINF:-1  tvg-name="DISCOVERY CHANNEL HD (1)" tvg-id="DE: Discovery" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/543.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",DISCOVERY CHANNEL HD (1)
 https://www.vavoo.to/play/3467744755/index.m3u8
-#EXTINF:-1  tvg-name="DISCOVERY HD+ (1)" tvg-id="DE: Discovery" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/83_sky_logo_discoverychannelhd_b.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",DISCOVERY HD+ (1)
+#EXTINF:-1  tvg-name="DISCOVERY HD+ (1)" tvg-id="DE: Discovery" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/543.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",DISCOVERY HD+ (1)
 https://www.vavoo.to/play/3185477072/index.m3u8
-#EXTINF:-1  tvg-name="DISCOVERY WORLD (6)" tvg-id="DE: Discovery" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/83_sky_logo_discoverychannelhd_b.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",DISCOVERY WORLD (6)
+#EXTINF:-1  tvg-name="DISCOVERY WORLD (6)" tvg-id="DE: Discovery" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/543.png" group-title="Dokumentation" :http-user-agent="VAVOO/2.6",DISCOVERY WORLD (6)
 https://www.vavoo.to/play/2381158967/index.m3u8
 
-#EXTINF:-1  tvg-name="CRIME & INVESTIGATION (7)" tvg-id="DE: Crime+Investigation" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/451_sky_logo_crime-investigation_tvguide.png" group-title="Sky" :http-user-agent="VAVOO/2.6",CRIME & INVESTIGATION (7)
+#EXTINF:-1  tvg-name="CRIME & INVESTIGATION (7)" tvg-id="DE: Crime+Investigation" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/945.png" group-title="Sky" :http-user-agent="VAVOO/2.6",CRIME & INVESTIGATION (7)
 https://www.vavoo.to/play/2956538037/index.m3u8
-#EXTINF:-1  tvg-name="CRIME + INVESTIGATION HD+ (1)" tvg-id="DE: Crime+Investigation" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/451_sky_logo_crime-investigation_tvguide.png" group-title="Sky" :http-user-agent="VAVOO/2.6",CRIME + INVESTIGATION HD+ (1)
+#EXTINF:-1  tvg-name="CRIME + INVESTIGATION HD+ (1)" tvg-id="DE: Crime+Investigation" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/945.png" group-title="Sky" :http-user-agent="VAVOO/2.6",CRIME + INVESTIGATION HD+ (1)
 https://www.vavoo.to/play/3827842440/index.m3u8
-#EXTINF:-1  tvg-name="CRIME+ INVESTIGATION (6)" tvg-id="DE: Crime+Investigation" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/451_sky_logo_crime-investigation_tvguide.png" group-title="Sky" :http-user-agent="VAVOO/2.6",CRIME+ INVESTIGATION (6)
+#EXTINF:-1  tvg-name="CRIME+ INVESTIGATION (6)" tvg-id="DE: Crime+Investigation" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/945.png" group-title="Sky" :http-user-agent="VAVOO/2.6",CRIME+ INVESTIGATION (6)
 https://www.vavoo.to/play/400652054/index.m3u8
 
 
@@ -865,26 +865,26 @@ https://www.vavoo.to/play/1656129866/index.m3u8
 #EXTINF:-1  tvg-name="SKY SPORT 10 (MATCH TIME) (7)" tvg-id="DE: Sky Sport 10" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/999_sky_logo_sky-sport-pl-hd_tvguide.png" group-title="Sport" :http-user-agent="VAVOO/2.6",SKY SPORT 10 (MATCH TIME) (7)
 https://www.vavoo.to/play/3255736581/index.m3u8
 
-#EXTINF:-1  tvg-name="DAZN 1 (6)" tvg-id="DE: DAZN 1" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/659_sky_logo_dazn1-hd_tvguide.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 1 (6)
+#EXTINF:-1  tvg-name="DAZN 1 (6)" tvg-id="DE: DAZN 1" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F7c93cbccfa99c23171441af6ba8f35cd22d9cf28.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 1 (6)
 https://www.vavoo.to/play/1713987123/index.m3u8
-#EXTINF:-1  tvg-name="DAZN 1 (7)" tvg-id="DE: DAZN 1" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/659_sky_logo_dazn1-hd_tvguide.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 1 (7)
+#EXTINF:-1  tvg-name="DAZN 1 (7)" tvg-id="DE: DAZN 1" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F7c93cbccfa99c23171441af6ba8f35cd22d9cf28.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 1 (7)
 https://www.vavoo.to/play/1219725590/index.m3u8
-#EXTINF:-1  tvg-name="DAZN 1 (MATCH TIME) HD (1)" tvg-id="DE: DAZN 1" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/659_sky_logo_dazn1-hd_tvguide.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 1 (MATCH TIME) HD (1)
+#EXTINF:-1  tvg-name="DAZN 1 (MATCH TIME) HD (1)" tvg-id="DE: DAZN 1" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F7c93cbccfa99c23171441af6ba8f35cd22d9cf28.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 1 (MATCH TIME) HD (1)
 https://www.vavoo.to/play/1648323101/index.m3u8
-#EXTINF:-1  tvg-name="DAZN 1 FHD (1)" tvg-id="DE: DAZN 1" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/659_sky_logo_dazn1-hd_tvguide.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 1 FHD (1)
+#EXTINF:-1  tvg-name="DAZN 1 FHD (1)" tvg-id="DE: DAZN 1" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F7c93cbccfa99c23171441af6ba8f35cd22d9cf28.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 1 FHD (1)
 https://www.vavoo.to/play/2156450335/index.m3u8
-#EXTINF:-1  tvg-name="DAZN 1 HD (1)" tvg-id="DE: DAZN 1" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/659_sky_logo_dazn1-hd_tvguide.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 1 HD (1)
+#EXTINF:-1  tvg-name="DAZN 1 HD (1)" tvg-id="DE: DAZN 1" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F7c93cbccfa99c23171441af6ba8f35cd22d9cf28.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 1 HD (1)
 https://www.vavoo.to/play/790505545/index.m3u8
 
-#EXTINF:-1  tvg-name="DAZN 2 (6)" tvg-id="DE: DAZN 2" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/900_sky_logo_dazn2-hd_tvguide.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 2 (6)
+#EXTINF:-1  tvg-name="DAZN 2 (6)" tvg-id="DE: DAZN 2" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F141a3d65b2f92f7e2a52c93d30a0a29f2184466d.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 2 (6)
 https://www.vavoo.to/play/562636003/index.m3u8
-#EXTINF:-1  tvg-name="DAZN 2 (7)" tvg-id="DE: DAZN 2" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/900_sky_logo_dazn2-hd_tvguide.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 2 (7)
+#EXTINF:-1  tvg-name="DAZN 2 (7)" tvg-id="DE: DAZN 2" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F141a3d65b2f92f7e2a52c93d30a0a29f2184466d.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 2 (7)
 https://www.vavoo.to/play/252965830/index.m3u8
-#EXTINF:-1  tvg-name="DAZN 2 (MATCH TIME) HD (1)" tvg-id="DE: DAZN 2" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/900_sky_logo_dazn2-hd_tvguide.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 2 (MATCH TIME) HD (1)
+#EXTINF:-1  tvg-name="DAZN 2 (MATCH TIME) HD (1)" tvg-id="DE: DAZN 2" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F141a3d65b2f92f7e2a52c93d30a0a29f2184466d.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 2 (MATCH TIME) HD (1)
 https://www.vavoo.to/play/421652734/index.m3u8
-#EXTINF:-1  tvg-name="DAZN 2 FHD (1)" tvg-id="DE: DAZN 2" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/900_sky_logo_dazn2-hd_tvguide.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 2 FHD (1)
+#EXTINF:-1  tvg-name="DAZN 2 FHD (1)" tvg-id="DE: DAZN 2" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F141a3d65b2f92f7e2a52c93d30a0a29f2184466d.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 2 FHD (1)
 https://www.vavoo.to/play/3104173786/index.m3u8
-#EXTINF:-1  tvg-name="DAZN 2 HD (1)" tvg-id="DE: DAZN 2" tvg-logo="https://www.sky.de/static/img/senderlogos_dark/900_sky_logo_dazn2-hd_tvguide.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 2 HD (1)
+#EXTINF:-1  tvg-name="DAZN 2 HD (1)" tvg-id="DE: DAZN 2" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F141a3d65b2f92f7e2a52c93d30a0a29f2184466d.png" group-title="Sport" :http-user-agent="VAVOO/2.6",DAZN 2 HD (1)
 https://www.vavoo.to/play/2710646698/index.m3u8
 
 #EXTINF:-1  tvg-name="SPORT1 (7)" tvg-id="DE: SPORT1" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/890.png" group-title="Sport" :http-user-agent="VAVOO/2.6",SPORT1 (7)
@@ -911,9 +911,9 @@ https://www.vavoo.to/play/2697311237/index.m3u8
 https://www.vavoo.to/play/3081767198/index.m3u8
 #EXTINF:-1  tvg-name="KINOWELT TV (7)" tvg-id="DE: Kinowelt" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/1039.png" group-title="Filme" :http-user-agent="VAVOO/2.6",KINOWELT TV (7)
 https://www.vavoo.to/play/1107109557/index.m3u8
-#EXTINF:-1  tvg-name="AMAZON PRIME VIDEO 1 (6)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",AMAZON PRIME VIDEO 1 (6)
+#EXTINF:-1  tvg-name="AMAZON PRIME VIDEO 1 (6)" tvg-id="" tvg-logo="https://seeklogo.com/images/A/amazon-prime-video-logo-1B919AB668-seeklogo.com.png" group-title="Filme" :http-user-agent="VAVOO/2.6",AMAZON PRIME VIDEO 1 (6)
 https://www.vavoo.to/play/1068833184/index.m3u8
-#EXTINF:-1  tvg-name="AMAZON PRIME VIDEO 2 (6)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",AMAZON PRIME VIDEO 2 (6)
+#EXTINF:-1  tvg-name="AMAZON PRIME VIDEO 2 (6)" tvg-id="" tvg-logo="https://seeklogo.com/images/A/amazon-prime-video-logo-1B919AB668-seeklogo.com.png" group-title="Filme" :http-user-agent="VAVOO/2.6",AMAZON PRIME VIDEO 2 (6)
 https://www.vavoo.to/play/2014667632/index.m3u8
 #EXTINF:-1  tvg-name="MAX KINO (1)" tvg-id="" tvg-logo="" group-title="Filme" :http-user-agent="VAVOO/2.6",MAX KINO (1)
 https://www.vavoo.to/play/2468388496/index.m3u8
