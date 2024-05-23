@@ -249,7 +249,7 @@ https://www.vavoo.to/play/565001448/index.m3u8
 https://www.vavoo.to/play/1921824923/index.m3u8
 #EXTINF:-1  tvg-name="E! (6)" tvg-id="" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/547.png" group-title="Standard" :http-user-agent="VAVOO/2.6",E! (6)
 https://www.vavoo.to/play/3347450604/index.m3u8
-#EXTINF:-1  tvg-name="E! ENTERTAINMENT (7)" tvg-id="https://epggw.a1.net/img/station/darkbg/100x100/547.png" tvg-logo="" group-title="Standard" :http-user-agent="VAVOO/2.6",E! ENTERTAINMENT (7)
+#EXTINF:-1  tvg-name="E! ENTERTAINMENT (7)" tvg-id="" tvg-logo="https://epggw.a1.net/img/station/darkbg/100x100/547.png" group-title="Standard" :http-user-agent="VAVOO/2.6",E! ENTERTAINMENT (7)
 https://www.vavoo.to/play/1977968675/index.m3u8
 
 
