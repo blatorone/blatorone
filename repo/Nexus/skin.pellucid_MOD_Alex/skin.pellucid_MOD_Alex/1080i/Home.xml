@@ -650,7 +650,7 @@
 					<label>$INFO[System.Date(DDD)]  [B]$INFO[System.Date(dd)][/B]  $INFO[System.Date(MMM)]</label>
 				</control>
 				<control type="multiimage">
-            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + Skin.HasSetting(weather icons animated)</visible>
+            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons)</visible>
 					<posx>1000</posx>
             		<posy>-200</posy>
             		<width>200</width>
