@@ -268,4 +268,16 @@
 		<value condition="!String.IsEmpty(ListItem.StartDate) + !String.IsEmpty(ListItem.StartTime)">[COLOR $VAR[highlight]]$LOCALIZE[552]:[/COLOR]$INFO[ListItem.StartDate] [CR][COLOR $VAR[highlight]]$LOCALIZE[19126]:[/COLOR]$INFO[ListItem.StartTime] [CR][COLOR $VAR[highlight]]$LOCALIZE[180]:[/COLOR]$INFO[ListItem.Duration] </value>
 		<value>[COLOR $VAR[highlight]]$LOCALIZE[552]:[/COLOR]$INFO[ListItem.Date][CR][COLOR $VAR[highlight]]$LOCALIZE[180]:[/COLOR]$INFO[ListItem.Duration]</value>
 	</variable>
+
+    <variable name="WeatherIconsPathVar">
+		<value condition="!String.IsEmpty(Skin.String(weathericons.path))">$INFO[Skin.String(weathericons.path)]</value>
+		<value>resource://resource.images.weathericons.default/</value>
+	</variable> 
+	<variable name="WeatherIconsExtVar">
+		<value condition="String.Contains(Skin.String(weathericons.path),animated)" />
+		<value condition="!String.IsEmpty(Skin.String(weathericons.ext))">$INFO[Skin.String(weathericons.ext)]</value>
+		<value>.png</value>
+	</variable>
+
 </includes>
+

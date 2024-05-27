@@ -649,7 +649,20 @@
 					<shadowcolor>44000000</shadowcolor>
 					<label>$INFO[System.Date(DDD)]  [B]$INFO[System.Date(dd)][/B]  $INFO[System.Date(MMM)]</label>
 				</control>
-				<include>weather</include>
+				<control type="multiimage">
+            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + Skin.HasSetting(weather icons animated)</visible>
+					<posx>1000</posx>
+            		<posy>-200</posy>
+            		<width>200</width>
+            		<height>200</height>
+					<imagepath>$VAR[WeatherIconsPathVar]$INFO[Weather.FanartCode]$VAR[WeatherIconsExtVar]</imagepath>
+					<timeperimage>70</timeperimage>
+					<fadetime>1</fadetime>
+					<pauseatend></pauseatend>
+					<randomize>false</randomize>
+					<loop>yes</loop>
+					<aspectratio>scale</aspectratio>
+        		</control>
 			</control>
 			<!--now playing music-->
 			<control type="group">

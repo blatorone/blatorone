@@ -555,8 +555,9 @@
                 <animation type="conditional" condition="System.Platform.Android + Skin.HasSetting(Further_apart) + Skin.HasSetting(Youtube) + Skin.HasSetting(SmartTube)" reversible="true">
 		    		<effect type="slide" start="0" end="-260" time="0" delay="0"/>
         		</animation>
-    </include>
+    </include>#
 
+    <!-- not in use old
     <include name= "weather">
         <control type="multiimage">
             <visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + Skin.HasSetting(weather icons animated)</visible>
@@ -564,7 +565,7 @@
             <posy>-200</posy>
             <width>200</width>
             <height>200</height>
-			<imagepath>special://skin/media/weathericonsanimated/$INFO[weather.FanartCode]</imagepath>
+			<imagepath>resource://resource.images.weathericons.hd.animated/resources/$INFO[weather.FanartCode]</imagepath>
 			<timeperimage>100</timeperimage>
 			<fadetime></fadetime>
 			<pauseatend></pauseatend>
@@ -582,6 +583,7 @@
 			<colordiffuse></colordiffuse>
         </control>
     </include>
+    -->
 
 
     <include name="keyboard select">

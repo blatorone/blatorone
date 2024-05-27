@@ -328,14 +328,14 @@
                     <onclick>Skin.Togglesetting(weather icons)</onclick>
                     <selected>Skin.HasSetting(weather icons)</selected>
                 </control>
-                <control type="radiobutton" id="63">
-                    <visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings) + $EXP[hasWeather]+ Skin.HasSetting(weather icons)</visible>
-                    <description>Weather icons animated</description>
-                    <width>14-col</width>
-                    <label>$LOCALIZE[8] Icons $LOCALIZE[31265]</label>
-                    <onclick>Skin.Togglesetting(weather icons animated)</onclick>
-                    <selected>Skin.HasSetting(weather icons animated)</selected>
-                </control>
+				<control type="button" id="63">
+					<visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings) + $EXP[hasWeather] + Skin.HasSetting(weather icons)</visible>
+					<width>14-col</width>
+                    <label>- $LOCALIZE[31265]</label>
+					<label2>[COLOR $VAR[ThemeLabelColor]]$INFO[Skin.String(weathericons.name)][/COLOR]</label2>
+					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
+					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
+				</control>
                 <control type="radiobutton" id="26">
                     <visible>Container(8000).Hasfocus(5) + !Skin.HasSetting(settings)</visible>
                     <description>Enable Back Button for Touchscreen</description>

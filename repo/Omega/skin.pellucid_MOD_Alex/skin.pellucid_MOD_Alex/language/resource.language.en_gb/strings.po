@@ -603,5 +603,5 @@ msgid "Side"
 msgstr ""
 
 msgctxt "#31265"
-msgid "Animated"
+msgid "Set Weather icons"
 msgstr ""
