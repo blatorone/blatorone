@@ -602,3 +602,6 @@ msgctxt "#31264"
 msgid "Side"
 msgstr ""
 
+msgctxt "#31265"
+msgid "Animated"
+msgstr ""

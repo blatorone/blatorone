@@ -89,7 +89,7 @@
                     </control>
                 </control>
                 <control type="image">
-                                <visible>$EXP[hasWeather] + !player.hasvideo</visible>
+                                <visible>$EXP[hasWeather] + !player.hasvideo + !Skin.HasSetting(weather icons animated)</visible>
                                 <posx>1110</posx>
                                 <posy>-300</posy>
                                 <width>700</width>
@@ -104,12 +104,48 @@
 		   	 	                <animation type="conditional" condition="player.hasvideo" reversible="true">
 		    		                <effect type="slide" start="0,0" end="-300" time="200" delay="0"/>
         		                </animation>
-                                <visible>$EXP[hasWeather] + player.hasvideo</visible>
+                                <visible>$EXP[hasWeather] + player.hasvideo + !Skin.HasSetting(weather icons animated)</visible>
                                 <posx>1110</posx>
                                 <posy>-300</posy>
                                 <width>700</width>
                                 <height>700</height>
                                 <texture>Weathericons/$INFO[weather.fanartCode].png</texture>
+			                    <colordiffuse>overlay</colordiffuse>
+                </control>
+                <control type="multiimage">
+                                <visible>$EXP[hasWeather] + !player.hasvideo + Skin.HasSetting(weather icons animated)</visible>
+                                <posx>1110</posx>
+                                <posy>-300</posy>
+                                <width>700</width>
+                                <height>700</height>
+                                <imagepath>special://skin/media/weathericonsanimated/$INFO[Weather.fanartCode]</imagepath>
+                                <timeperimage>100</timeperimage>
+			                    <fadetime></fadetime>
+			                    <pauseatend></pauseatend>
+			                    <randomize>false</randomize>
+			                    <loop>yes</loop>
+			                    <aspectratio>scale</aspectratio>
+			                    <colordiffuse>textActive</colordiffuse>
+                </control>
+                <control type="multiimage">
+                                 <animation type="conditional" condition="!player.hasvideo" reversible="true">
+		    		                <effect type="slide" start="0,0" end="300" time="200" delay="0"/>
+		    	                </animation>
+		   	 	                <animation type="conditional" condition="player.hasvideo" reversible="true">
+		    		                <effect type="slide" start="0,0" end="-300" time="200" delay="0"/>
+        		                </animation>
+                                <visible>$EXP[hasWeather] + player.hasvideo + Skin.HasSetting(weather icons animated)</visible>
+                                <posx>1110</posx>
+                                <posy>-300</posy>
+                                <width>700</width>
+                                <height>700</height>
+                                <imagepath>special://skin/media/weathericonsanimated/$INFO[Weather.fanartCode]</imagepath>
+                                <timeperimage>100</timeperimage>
+			                    <fadetime></fadetime>
+			                    <pauseatend></pauseatend>
+			                    <randomize>false</randomize>
+			                    <loop>yes</loop>
+			                    <aspectratio>scale</aspectratio>
 			                    <colordiffuse>overlay</colordiffuse>
                 </control>
             </control>
@@ -224,7 +260,7 @@
                     </content>
                 </control>
                 <control type="image">
-                                <visible>$EXP[hasWeather]</visible>
+                                <visible>$EXP[hasWeather] + !Skin.HasSetting(weather icons animated)</visible>
                                 <posx>-50</posx>
                                 <posy>425</posy>
                                 <width>400</width>
@@ -233,7 +269,7 @@
 			                    <colordiffuse>overlay</colordiffuse>
                 </control>
                 <control type="image">
-                                <visible>$EXP[hasWeather]</visible>
+                                <visible>$EXP[hasWeather] + !Skin.HasSetting(weather icons animated)</visible>
                                 <posx>350</posx>
                                 <posy>425</posy>
                                 <width>400</width>
@@ -242,7 +278,7 @@
 			                    <colordiffuse>overlay</colordiffuse>
                 </control>
                 <control type="image">
-                                <visible>$EXP[hasWeather]</visible>
+                                <visible>$EXP[hasWeather] + !Skin.HasSetting(weather icons animated)</visible>
                                 <posx>800</posx>
                                 <posy>425</posy>
                                 <width>400</width>
@@ -251,12 +287,73 @@
 			                    <colordiffuse>overlay</colordiffuse>
                 </control>
                 <control type="image">
-                                <visible>$EXP[hasWeather]</visible>
+                                <visible>$EXP[hasWeather] + !Skin.HasSetting(weather icons animated)</visible>
                                 <posx>1225</posx>
                                 <posy>425</posy>
                                 <width>400</width>
                                 <height>400</height>
                                 <texture>Weathericons/$INFO[Window.Property(Day4.fanartCode)].png</texture>
+			                    <colordiffuse>overlay</colordiffuse>
+                </control>
+                <control type="multiimage">
+                                <visible>$EXP[hasWeather] + Skin.HasSetting(weather icons animated)</visible>
+                                <posx>-50</posx>
+                                <posy>425</posy>
+                                <width>400</width>
+                                <height>400</height>
+                                <!--<texture>Weathericons/$INFO[Window.Property(Day1.fanartCode)].png</texture>-->
+                                <imagepath>special://skin/media/weathericonsanimated/$INFO[Window.Property(Day1.fanartCode)]</imagepath>
+                                <timeperimage>100</timeperimage>
+			                    <fadetime></fadetime>
+			                    <pauseatend></pauseatend>
+			                    <randomize>false</randomize>
+			                    <loop>yes</loop>
+			                    <aspectratio>scale</aspectratio>
+			                    <colordiffuse>overlay</colordiffuse>
+                </control>
+                <control type="multiimage">
+                                <visible>$EXP[hasWeather] + Skin.HasSetting(weather icons animated)</visible>
+                                <posx>350</posx>
+                                <posy>425</posy>
+                                <width>400</width>
+                                <height>400</height>
+                                <imagepath>special://skin/media/weathericonsanimated/$INFO[Window.Property(Day2.fanartCode)]</imagepath>
+                                <timeperimage>100</timeperimage>
+			                    <fadetime></fadetime>
+			                    <pauseatend></pauseatend>
+			                    <randomize>false</randomize>
+			                    <loop>yes</loop>
+			                    <aspectratio>scale</aspectratio>
+			                    <colordiffuse>overlay</colordiffuse>
+                </control>
+                <control type="multiimage">
+                                <visible>$EXP[hasWeather] + Skin.HasSetting(weather icons animated)</visible>
+                                <posx>800</posx>
+                                <posy>425</posy>
+                                <width>400</width>
+                                <height>400</height>
+                                <imagepath>special://skin/media/weathericonsanimated/$INFO[Window.Property(Day3.fanartCode)]</imagepath>
+                                <timeperimage>100</timeperimage>
+			                    <fadetime></fadetime>
+			                    <pauseatend></pauseatend>
+			                    <randomize>false</randomize>
+			                    <loop>yes</loop>
+			                    <aspectratio>scale</aspectratio>
+			                    <colordiffuse>overlay</colordiffuse>
+                </control>
+                <control type="multiimage">
+                                <visible>$EXP[hasWeather] + Skin.HasSetting(weather icons animated)</visible>
+                                <posx>1225</posx>
+                                <posy>425</posy>
+                                <width>400</width>
+                                <height>400</height>
+                                <imagepath>special://skin/media/weathericonsanimated/$INFO[Window.Property(Day4.fanartCode)]</imagepath>
+                                <timeperimage>100</timeperimage>
+			                    <fadetime></fadetime>
+			                    <pauseatend></pauseatend>
+			                    <randomize>false</randomize>
+			                    <loop>yes</loop>
+			                    <aspectratio>scale</aspectratio>
 			                    <colordiffuse>overlay</colordiffuse>
                 </control>
                 <!--panel ends-->

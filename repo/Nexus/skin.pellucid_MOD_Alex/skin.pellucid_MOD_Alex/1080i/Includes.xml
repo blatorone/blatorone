@@ -558,8 +558,22 @@
     </include>
 
     <include name= "weather">
+        <control type="multiimage">
+            <visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + Skin.HasSetting(weather icons animated)</visible>
+			<posx>1000</posx>
+            <posy>-200</posy>
+            <width>200</width>
+            <height>200</height>
+			<imagepath>special://skin/media/weathericonsanimated/$INFO[weather.FanartCode]</imagepath>
+			<timeperimage>100</timeperimage>
+			<fadetime></fadetime>
+			<pauseatend></pauseatend>
+			<randomize>false</randomize>
+			<loop>yes</loop>
+			<aspectratio>scale</aspectratio>
+        </control>
         <control type="image">
-            <visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons)</visible>
+            <visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + !Skin.HasSetting(weather icons animated)</visible>
             <posx>1000</posx>
             <posy>-200</posy>
             <width>200</width>
