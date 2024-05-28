@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="1109" type="dialog">
+<window id="1109" type="window">
     <defaultcontrol always="true">200</defaultcontrol>
     <controls>
         <!--background-->
@@ -70,9 +70,9 @@
                     <description>Grid Menu</description>
                     <width>14-col</width>
                     <textureradioonfocus>lang/eng.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/eng.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/eng.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/eng.png</textureradiooffnofocus>
+                    <textureradioonnofocus>lang/United-Kingdom.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/United-Kingdom.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/United-Kingdom.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>English</label>
                     <onclick>InstallAddon(resource.language.en_gb)</onclick>
@@ -82,10 +82,10 @@
                     <visible>String.Contains(System.Language,English) + !String.Contains(System.Language,English (Australia)) + !String.Contains(System.Language,English (US)) + !String.Contains(System.Language,English (New Zealand))</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/eng.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/eng.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/eng.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/eng.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/United-Kingdom.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/United-Kingdom.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/United-Kingdom.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/United-Kingdom.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>[COLOR yellow]English[/COLOR]</label>
                     <onclick>InstallAddon(resource.language.en_gb)</onclick>
@@ -95,10 +95,10 @@
                     <visible>!String.Contains(System.Language,English)</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/eng.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/eng.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/eng.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/eng.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/United-Kingdom.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/United-Kingdom.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/United-Kingdom.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/United-Kingdom.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>English</label>
                     <onclick>InstallAddon(resource.language.en_gb)</onclick>
@@ -108,10 +108,10 @@
                     <visible>!String.Contains(System.Language,German)</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/deu.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/deu.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/deu.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/deu.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/Germany.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/Germany.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/Germany.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/Germany.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>German</label>
                     <onclick>InstallAddon(resource.language.de_de)</onclick>
@@ -121,10 +121,10 @@
                     <visible>String.Contains(System.Language,German)</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/deu.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/deu.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/deu.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/deu.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/Germany.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/Germany.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/Germany.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/Germany.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>[COLOR yellow]German[/COLOR]</label>
                     <onclick>InstallAddon(resource.language.de_de)</onclick>
@@ -134,10 +134,10 @@
                     <visible>!String.Contains(System.Language,Polish)</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/pol.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/pol.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/pol.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/pol.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/Poland.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/Poland.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/Poland.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/Poland.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>Polish</label>
                     <onclick>InstallAddon(resource.language.pl_pl)</onclick>
@@ -147,10 +147,10 @@
                     <visible>String.Contains(System.Language,Polish)</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/pol.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/pol.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/pol.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/pol.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/Poland.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/Poland.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/Poland.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/Poland.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>[COLOR yellow]Polish[/COLOR]</label>
                     <onclick>InstallAddon(resource.language.pl_pl)</onclick>
@@ -160,10 +160,10 @@
                     <visible>!String.Contains(System.Language,Russian)</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/rus.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/rus.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/rus.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/rus.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/Russia.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/Russia.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/Russia.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/Russia.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>Russian</label>
                     <onclick>InstallAddon(resource.language.ru_ru)</onclick>
@@ -173,10 +173,10 @@
                     <visible>String.Contains(System.Language,Russian)</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/rus.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/rus.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/rus.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/rus.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/Russia.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/Russia.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/Russia.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/Russia.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>[COLOR yellow]Russian[/COLOR]</label>
                     <onclick>InstallAddon(resource.language.ru_ru)</onclick>
@@ -186,10 +186,10 @@
                     <visible>!String.Contains(System.Language,Turkish)</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/tur.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/tur.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/tur.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/tur.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/Turkey.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/Turkey.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/Turkey.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/Turkey.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>Turkish</label>
                     <onclick>InstallAddon(resource.language.tr_tr)</onclick>
@@ -199,10 +199,10 @@
                     <visible>String.Contains(System.Language,Turkish)</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/tur.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/tur.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/tur.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/tur.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/Turkey.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/Turkey.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/Turkey.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/Turkey.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>[COLOR yellow]Turkish[/COLOR]</label>
                     <onclick>InstallAddon(resource.language.tr_tr)</onclick>
@@ -212,10 +212,10 @@
                     <visible>!String.Contains(System.Language,English (Australia))</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/aus.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/aus.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/aus.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/aus.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/Australia.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/Australia.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/Australia.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/Australia.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>English (Australia)</label>
                     <onclick>InstallAddon(resource.language.en_au)</onclick>
@@ -225,10 +225,10 @@
                     <visible>String.Contains(System.Language,English (Australia))</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/aus.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/aus.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/aus.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/aus.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/Australia.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/Australia.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/Australia.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/Australia.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>[COLOR yellow]English (Australia)[/COLOR]</label>
                     <onclick>InstallAddon(resource.language.en_au)</onclick>
@@ -238,10 +238,10 @@
                     <visible>!String.Contains(System.Language,English (New Zealand))</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/mao.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/mao.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/mao.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/mao.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/New-Zealand.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/New-Zealand.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/New-Zealand.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/New-Zealand.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>English (New Zeeland)</label>
                     <onclick>InstallAddon(resource.language.en_nz)</onclick>
@@ -251,10 +251,10 @@
                     <visible>String.Contains(System.Language,English (New Zealand))</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/mao.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/mao.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/mao.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/mao.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/New-Zealand.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/New-Zealand.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/New-Zealand.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/New-Zealand.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>[COLOR yellow]English (New Zeeland)[/COLOR]</label>
                     <onclick>InstallAddon(resource.language.en_nz)</onclick>
@@ -264,10 +264,10 @@
                     <visible>!String.Contains(System.Language,English (US))</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/eng.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/eng.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/eng.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/eng.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/United-States.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/United-States.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/United-States.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/United-States.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>English (US)</label>
                     <onclick>InstallAddon(resource.language.en_us)</onclick>
@@ -277,10 +277,10 @@
                     <visible>String.Contains(System.Language,English (US))</visible>
                     <description>Grid Menu</description>
                     <width>14-col</width>
-                    <textureradioonfocus>lang/eng.png</textureradioonfocus>
-                    <textureradioonnofocus>lang/eng.png</textureradioonnofocus>
-                    <textureradioofffocus>lang/eng.png</textureradioofffocus>
-                    <textureradiooffnofocus>lang/eng.png</textureradiooffnofocus>
+                    <textureradioonfocus>lang/United-States.png</textureradioonfocus>
+                    <textureradioonnofocus>lang/United-States.png</textureradioonnofocus>
+                    <textureradioofffocus>lang/United-States.png</textureradioofffocus>
+                    <textureradiooffnofocus>lang/United-States.png</textureradiooffnofocus>
                     <texturefocus>colors/grey.png</texturefocus>
                     <label>[COLOR yellow]English (US)[/COLOR]</label>
                     <onclick>InstallAddon(resource.language.en_us)</onclick>

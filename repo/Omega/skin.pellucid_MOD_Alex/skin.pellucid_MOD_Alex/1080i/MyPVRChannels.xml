@@ -12,9 +12,6 @@
         <include>globalBackground</include>
         <!--Battery Level-->
         <include>Battery</include>
-		<!--Backbutton touchscreen-->
-       	<include>Backbuttoncross</include>
-        <include>keyboard select</include>
         <!--page container group-->
         <control type="group">
             <!--window fader-->
@@ -29,6 +26,7 @@
                 <include>contentOpen</include>
                 <include>liveTVChannels</include>
             </control>
+            
             <!--page scrollbar-->
             <control type="group" id="9400">
                 <visible>Control.IsVisible(60) + !control.isvisible(10)</visible>
@@ -46,6 +44,7 @@
                     <onup>8000</onup>
                     <onright>80</onright>
                 </control>
+                
             </control>
             <control type="Panel" id="8000">
                     <posx>585</posx>
@@ -305,6 +304,9 @@
 			     <visible>false</visible>
             </control>
         </control>
+        <!--Backbutton touchscreen-->
+        <include>Backbuttoncross</include>
+        <include>keyboard select</include>
         <!--mini window-->
         <include>miniVideoPlayer</include>
         <!--hub menu-->
