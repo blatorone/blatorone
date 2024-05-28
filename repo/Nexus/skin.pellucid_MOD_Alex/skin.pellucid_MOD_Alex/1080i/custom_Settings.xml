@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="1105" type="dialog">
+<window id="1105" type="window">
     <defaultcontrol always="true">8000</defaultcontrol>
-    <onunload>replacewindow(SkinSettings.xml)</onunload>
-    <onunload>activatewindow(Home)</onunload>
+    <!--<onunload>replacewindow(SkinSettings.xml)</onunload>
+    <onunload>activatewindow(Home)</onunload>-->
     <controls>
         <!--background-->
         <include>globalBackground</include>
@@ -190,10 +190,10 @@
 					<visible>Container(8000).Hasfocus(1) + $EXP[hasWeather] + Skin.HasSetting(weather icons)</visible>
 					<width>14-col</width>
                     <label>- $LOCALIZE[31265]</label>
-					<label2>[COLOR $VAR[ThemeLabelColor]]$INFO[Skin.String(weathericons.name)][/COLOR]</label2>
+					<label2>$INFO[Skin.String(weathericons.name)]</label2>
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
-				</control>
+                </control>
                 <control type="radiobutton" id="6">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Enable Back Button for Touchscreen</description>
