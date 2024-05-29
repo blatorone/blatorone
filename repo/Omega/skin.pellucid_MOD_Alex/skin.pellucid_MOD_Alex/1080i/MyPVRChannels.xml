@@ -12,6 +12,8 @@
         <include>globalBackground</include>
         <!--Battery Level-->
         <include>Battery</include>
+        <!--Backbutton touchscreen-->
+        <include>Backbuttoncross</include>
         <!--page container group-->
         <control type="group">
             <!--window fader-->
@@ -304,8 +306,7 @@
 			     <visible>false</visible>
             </control>
         </control>
-        <!--Backbutton touchscreen-->
-        <include>Backbuttoncross</include>
+        <!--Keyboard Crosskey-->
         <include>keyboard select</include>
         <!--mini window-->
         <include>miniVideoPlayer</include>
