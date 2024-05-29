@@ -228,12 +228,19 @@
 	                    	<thumb></thumb>
 	                    	<onclick>ActivateWindow(Weather,return)</onclick>
 	                	</item>
+						<item>
+	                        <description>change Color</description>
+	                        <label2></label2>
+	                        <thumb></thumb>
+	                        <onclick>activatewindow(1110)</onclick>
+	                    </item>
 	                    <item>
 	                        <description>change Language</description>
 	                        <label2></label2>
 	                        <thumb></thumb>
 	                        <onclick>activatewindow(1109)</onclick>
 	                    </item>
+						
 	                </content>
 	            </control>                     
 			</control>
