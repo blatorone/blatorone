@@ -483,7 +483,7 @@
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
                     <label2>$INFO[Skin.String(all)]</label2>
-                    <onclick>Skin.SetImage(all)</onclick>
+                    <onclick>Skin.SetPath(all)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="55">
