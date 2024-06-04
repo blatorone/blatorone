@@ -97,63 +97,82 @@
     <!--home background location-->
     <variable name="homeBackgroundLocation">
         <value condition="!String.IsEmpty(Skin.String(homeBackground))">$INFO[Skin.String(homeBackground)]</value>
+        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
         <value>special://skin/extras/homeBackgrounds</value>
     </variable>
      <!--settings background location-->
     <variable name="settingsBackgroundLocation">
         <value condition="!String.IsEmpty(Skin.String(settingsBackground))">$INFO[Skin.String(settingsBackground)]</value>
-        <value>special://skin/extras/settingsBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
+        <value>special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--SettingsCategory background location-->
     <variable name="SettingsCategoryBackgroundLocation">
         <value condition="!String.IsEmpty(Skin.String(SettingsCategoryBackground))">$INFO[Skin.String(SettingsCategoryBackground)]</value>
-        <value>special://skin/extras/SettingsCategoryBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
+        <value>special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--DialogAddonSettings background location-->
     <variable name="DialogAddonSettingsBackgroundLocation">
         <value condition="!String.IsEmpty(Skin.String(DialogAddonSettingsBackground))">$INFO[Skin.String(DialogAddonSettingsBackground)]</value>
-        <value>special://skin/extras/DialogAddonSettingsBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
+        <value>special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--FileBrowser background location-->
     <variable name="FileBrowserBackgroundLocation">
         <value condition="!String.IsEmpty(Skin.String(FileBrowserBackground))">$INFO[Skin.String(FileBrowserBackground)]</value>
-        <value>special://skin/extras/FileBrowserBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
+        <value>special://skin/extras/homeBackgrounds</value>
     </variable>
         <!--FileManager background location-->
     <variable name="FileManagerBackgroundLocation">
         <value condition="!String.IsEmpty(Skin.String(FileManagerBackground))">$INFO[Skin.String(FileManagerBackground)]</value>
-        <value>special://skin/extras/FileManagerBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
+        <value>special://skin/extras/homeBackgrounds</value>
     </variable>
      <!--SkinSettings background location-->
     <variable name="SkinSettingsBackgroundLocation">
         <value condition="!String.IsEmpty(Skin.String(SkinSettingsBackground))">$INFO[Skin.String(SkinSettingsBackground)]</value>
-        <value>special://skin/extras/SkinSettingsBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
+        <value>special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--Settingssysteminfo background location-->
     <variable name="SettingsSystemInfoBackgroundLocation">
         <value condition="!String.IsEmpty(Skin.String(SettingsSystemInfoBackground))">$INFO[Skin.String(SettingsSystemInfoBackground)]</value>
-        <value>special://skin/extras/SettingsSystemInfoBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
+        <value>special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--DialogAddonInfo background location-->
     <variable name="DialogAddonInfoBackgroundLocation">
         <value condition="!String.IsEmpty(Skin.String(DialogAddonInfoBackground))">$INFO[Skin.String(DialogAddonInfoBackground)]</value>
-        <value>special://skin/extras/DialogAddonInfoBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
+        <value>special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--AddonBrowser background location-->
     <variable name="AddonBrowserBackgroundLocation">
         <value condition="!String.IsEmpty(Skin.String(AddonBrowserBackground))">$INFO[Skin.String(AddonBrowserBackground)]</value>
-        <value>special://skin/extras/AddonBrowserBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
+        <value>special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--MyPrograms background location-->
     <variable name="MyProgramsBackgroundLocation">
         <value condition="!String.IsEmpty(Skin.String(MyProgramsBackground))">$INFO[Skin.String(MyProgramsBackground)]</value>
-        <value>special://skin/extras/MyProgramsBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
+        <value>special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--Music background location-->
     <variable name="musicBackgroundLocation">
         <value condition="!String.IsEmpty(Skin.String(musicsBackground))">$INFO[Skin.String(musicBackground)]</value>
-        <value>special://skin/extras/musicBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
+        <value>special://skin/extras/homeBackgrounds</value>
     </variable>
+    <!--Music fullscreenbackground location-->
+    <variable name="musicfullscreenBackgroundLocation">
+        <value condition="!String.IsEmpty(Skin.String(musicfullscreenBackground))">$INFO[Skin.String(musicfullscreenBackground)]</value>
+        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
+        <value>special://skin/extras/musicfullbackgrounds</value>
+    </variable>
+    
     <!--menu logos-->
     <variable name="menuLogo">
         <value condition="Window.IsActive(games)"></value>

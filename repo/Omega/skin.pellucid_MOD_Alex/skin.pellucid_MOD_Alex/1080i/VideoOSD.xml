@@ -306,7 +306,14 @@
                         <pagecontrol>61</pagecontrol>
                     </control>
                 </control>
-                <include>keyboard select osd</include>
+                <include content="keyboard select osd">
+                    <param name="focus"></param>
+                    <param name="up">ChannelUp</param>
+                    <param name="down">ChannelDown</param>
+                    <param name="left">activatewindow(PVROSDChannels)</param>
+                    <param name="right">activatewindow(PVROSDChannels)</param>
+                    <param name="select">select</param>
+                </include>
                 <control type="scrollbar" id="61">
                     <include>scrollbarwidth</include>
                     <include>scrollbarposxosd</include>

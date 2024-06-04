@@ -20,6 +20,12 @@
 			<label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
 			<textcolor>textActive</textcolor>
 		</control>
+		<!--debugging-->
+    	<include>DebugGrid</include>
+    		<control type="label">
+        		<include>DialogID</include>
+        			<label>DialogPVRChannelsOSD.xml</label>
+    		</control>
 		<control type="group">
 			<posx>1342</posx>
 			<posy>0</posy>
@@ -152,12 +158,16 @@
                     </control>
 				</focusedlayout>
 			</control>
+			<include content="keyboard select osd">
+                    <param name="focus">11</param>
+                    <param name="up">up</param>
+                    <param name="down">down</param>
+                    <param name="left"></param>
+                    <param name="right"></param>
+                    <param name="select">select</param>
+    		</include>
 		</control>
 	</controls>
-	<!--debugging-->
-    <include>DebugGrid</include>
-    <control type="label">
-        <include>DialogID</include>
-        <label>DialogPVRChannelsOSD.xml</label>
-    </control>
+	
+	
 </window>

@@ -9,7 +9,7 @@
                 <width>100%</width>
                 <height>100%</height>
                 <centertop>50%</centertop>
-                <texture>splash.jpg</texture>
+                <texture>SplashBackgrounds/splash.jpg</texture>
                 <animation effect="fade" start="0" end="100" time="20">Visible</animation>
 	            <animation effect="fade" start="0" end="100" time="20">WindowClose</animation>
             </control>

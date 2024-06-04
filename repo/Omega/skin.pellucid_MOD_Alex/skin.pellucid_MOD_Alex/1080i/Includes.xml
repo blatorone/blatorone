@@ -588,7 +588,7 @@
 
     <include name="keyboard select">
         <control type="group">
-                <posx>87%</posx>
+                <posx>$PARAM[posx]</posx>
                 <posy>35%</posy>
                 <!--row 1-->
                 <control type="button">
@@ -599,8 +599,8 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <onclick>setfocus(9999)</onclick>
-                    <onclick>up</onclick>
+                    <onclick>setfocus($PARAM[focus])</onclick>
+                    <onclick>$PARAM[up]</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
@@ -616,8 +616,8 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <onclick>setfocus(9999)</onclick>
-                    <onclick>left</onclick>
+                    <onclick>setfocus($PARAM[focus])</onclick>
+                    <onclick>$PARAM[left]</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
@@ -634,8 +634,8 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <onclick>setfocus(9999)</onclick>
-                    <onclick>down</onclick>
+                    <onclick>setfocus($PARAM[focus])</onclick>
+                    <onclick>$PARAM[down]</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
@@ -651,8 +651,8 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <onclick>setfocus(9999)</onclick>
-                    <onclick>right</onclick>
+                    <onclick>setfocus($PARAM[focus])</onclick>
+                    <onclick>$PARAM[right]</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
@@ -669,8 +669,9 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <onclick>setfocus(9999)</onclick>
-                    <onclick>select</onclick>
+                    <onclick>setfocus($PARAM[focus])</onclick>
+                    <onclick>$PARAM[back]</onclick>
+                    <onclick>Reloadskin</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
@@ -688,8 +689,7 @@
                     <height>100</height>
                     <align>center</align>
                     <textwidth>180</textwidth>
-                    <onclick>setfocus(9999)</onclick>
-                    <onclick>back</onclick>
+                    <onclick>$PARAM[back]</onclick>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
@@ -716,7 +716,8 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <onclick>ChannelUp</onclick>
+                    <onclick>setfocus($PARAM[focus])</onclick>
+                    <onclick>$PARAM[up]</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
@@ -732,7 +733,8 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <onclick>activatewindow(PVROSDChannels)</onclick>
+                    <onclick>setfocus($PARAM[focus])</onclick>
+                    <onclick>$PARAM[left]</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
@@ -749,7 +751,8 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <onclick>ChannelDown</onclick>
+                    <onclick>setfocus($PARAM[focus])</onclick>
+                    <onclick>$PARAM[down]</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
@@ -765,7 +768,8 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <onclick>activatewindow(PVROSDChannels)</onclick>
+                    <onclick>setfocus($PARAM[focus])</onclick>
+                    <onclick>$PARAM[right]</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
@@ -774,7 +778,23 @@
                     <visible>Skin.HasSetting(crosskey)</visible>
                 </control>
 
-                
+                <control type="button">
+                    <description>4 button</description>
+                    <label>✓</label>
+                    <posx>0</posx>
+                    <posy>125</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <onclick>setfocus($PARAM[focus])</onclick>
+                    <onclick>$PARAM[select]</onclick>
+                    <font>symbol</font>
+                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <visible>Skin.HasSetting(crosskey) + !window.isactive(12901)</visible>
+                </control>
 
                 <control type="button">
                     <description>Backspace button</description>

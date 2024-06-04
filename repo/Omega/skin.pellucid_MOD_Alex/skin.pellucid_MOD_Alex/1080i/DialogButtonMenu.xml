@@ -79,6 +79,7 @@
                         <onclick>Hibernate()</onclick>
                     </item>
                     <item id="5">
+                        <visible>System.CanReboot</visible>
                         <label>13013</label>
                         <thumb></thumb>
                         <onclick>Reboot()</onclick>
