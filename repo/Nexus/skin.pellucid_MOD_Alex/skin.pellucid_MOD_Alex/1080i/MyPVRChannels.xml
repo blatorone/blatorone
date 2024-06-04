@@ -307,7 +307,16 @@
             </control>
         </control>
         <!--Keyboard Crosskey-->
-        <include>keyboard select</include>
+        <include content="keyboard select">
+            <param name="posx">87%</param>
+            <param name="focus">9999</param>
+            <param name="up">up</param>
+            <param name="down">down</param>
+            <param name="left">left</param>
+            <param name="right">right</param>
+            <param name="select">select</param>
+            <param name="back">back</param>
+        </include>
         <!--mini window-->
         <include>miniVideoPlayer</include>
         <!--hub menu-->

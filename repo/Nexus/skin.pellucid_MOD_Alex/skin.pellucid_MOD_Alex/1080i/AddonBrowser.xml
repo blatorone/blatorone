@@ -8,7 +8,7 @@
         <control type="multiimage">
 			<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
 			<include>dimensionsFullscreen</include>
-			<imagepath>$VAR[homeBackgroundLocation]</imagepath>
+			<imagepath>$VAR[AddonBrowserBackgroundLocation]</imagepath>
 			<timeperimage>45000</timeperimage>
 			<fadetime>200</fadetime>
 			<pauseatend>10000</pauseatend>

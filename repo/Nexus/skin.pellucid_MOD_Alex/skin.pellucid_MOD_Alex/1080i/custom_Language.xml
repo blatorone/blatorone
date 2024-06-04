@@ -50,7 +50,7 @@
                 <width>14-col</width>
                 <height>2-row</height>
                 <font>dialogTitle</font>
-                <label>$LOCALIZE[31261] $LOCALIZE[5]</label>
+                <label>$LOCALIZE[309]</label>
                 <textcolor>$VAR[Home]</textcolor>
                 <shadowcolor></shadowcolor>
             </control>

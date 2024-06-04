@@ -25,7 +25,16 @@
         <include>Battery</include>
         <!--Backbutton touchscreen-->
         <include>Backbuttoncross</include>
-        <include>keyboard select</include>
+        <include content="keyboard select">
+            <param name="posx">87%</param>
+            <param name="focus">9999</param>
+            <param name="up">up</param>
+            <param name="down">down</param>
+            <param name="left">left</param>
+            <param name="right">right</param>
+            <param name="select">select</param>
+            <param name="back">back</param>
+        </include>
         <!--page container group-->
         <control type="group">
             <!--shift page for certain modal dialogs-->

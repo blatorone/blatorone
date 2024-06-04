@@ -167,7 +167,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>DialogID</include>
-            <label>custom_Settings.xml</label>
+            <label>Homemenulook.xml</label>
         </control>
     </controls>
 </window>

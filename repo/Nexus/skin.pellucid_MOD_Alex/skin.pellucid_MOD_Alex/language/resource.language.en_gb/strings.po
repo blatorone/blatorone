@@ -605,3 +605,83 @@ msgstr ""
 msgctxt "#31265"
 msgid "Set Weather icons"
 msgstr ""
+
+msgctxt "#31266"
+msgid "Single image background"
+msgstr ""
+
+msgctxt "#31267"
+msgid "Multi-image background"
+msgstr ""
+
+msgctxt "#31268"
+msgid "Reset to default"
+msgstr ""
+
+msgctxt "#31269"
+msgid "Set Home Image/Path"
+msgstr ""
+
+msgctxt "#31270"
+msgid "Set Settings Image/Path"
+msgstr ""
+
+msgctxt "#31271"
+msgid "Set SettingsCategory Image/Path"
+msgstr ""
+
+msgctxt "#31272"
+msgid "Set Addonsettings Image/Path"
+msgstr ""
+
+msgctxt "#31273"
+msgid "Set FileBrowser Image/Path"
+msgstr ""
+
+msgctxt "#31274"
+msgid "Set FileManager Image/Path"
+msgstr ""
+
+msgctxt "#31275"
+msgid "Set Skinsettings  Image/Path"
+msgstr ""
+
+msgctxt "#31276"
+msgid "Reset SettingsSystemINfo backgrounds to default"
+msgstr ""
+
+msgctxt "#31277"
+msgid "Set AddonInfo Image/Path"
+msgstr ""
+
+msgctxt "#31278"
+msgid "Set AddonBrowser Image/Path"
+msgstr ""
+
+msgctxt "#31279"
+msgid "Set Programms Image/Path"
+msgstr ""
+
+msgctxt "#31280"
+msgid "Set Music Image/Path"
+msgstr ""
+
+msgctxt "#31281"
+msgid "Set Music Fullscreen Image/Path"
+msgstr ""
+
+msgctxt "#31282"
+msgid "Set Same for all Image/Path"
+msgstr ""
+
+msgctxt "#31283"
+msgid "Change Backgrounds"
+msgstr ""
+
+msgctxt "#31284"
+msgid "Backup / Restore"
+msgstr ""
+
+msgctxt "#31285"
+msgid "Restore"
+msgstr ""

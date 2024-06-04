@@ -16,7 +16,7 @@
 				<control type="multiimage">
 					<visible>!Visualisation.Enabled</visible>
 					<include>dimensionsFullscreen</include>
-					<imagepath>$VAR[musicBackgroundLocation]</imagepath>
+					<imagepath>$VAR[musicfullscreenBackgroundLocation]</imagepath>
 					<aspectratio>scale</aspectratio>
 					<colordiffuse>99ffffff</colordiffuse>
 				</control>

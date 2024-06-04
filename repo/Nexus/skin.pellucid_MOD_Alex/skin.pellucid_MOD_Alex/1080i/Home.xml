@@ -577,9 +577,14 @@
 							<onclick>action(FullScreen)</onclick>
 						</item>
 						<item>
-							<visible>!Skin.HasSetting(settings)</visible>
+							<visible>!Skin.HasSetting(settings) + System.CanPowerDown</visible>
 							<label></label>
 							<onclick>ActivateWindow(shutdownmenu)</onclick>
+						</item>
+						<item>
+							<visible>!Skin.HasSetting(settings) + !System.CanPowerDown</visible>
+							<label></label>
+							<onclick>Quit</onclick>
 						</item>
 						<item>
 							<visible>Skin.HasSetting(settings)</visible>
