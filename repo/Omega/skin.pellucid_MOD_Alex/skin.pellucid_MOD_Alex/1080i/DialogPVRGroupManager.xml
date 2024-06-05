@@ -93,7 +93,7 @@
                             <width>4-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                         </control>
                         <control type="label">
                             <posx>24</posx>
@@ -173,7 +173,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                             <width>502</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
                         </control>
@@ -258,7 +258,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                             <width>502</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
                         </control>
@@ -328,7 +328,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                         <width>5-col-textbox</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>colors/white.png</texture>
+                        <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                     </control>
                     <control type="label">
                         <posx>0</posx>

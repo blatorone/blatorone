@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1112" type="window">
+    <defaultcontrol always="true">200</defaultcontrol>
+    <controls>
+        <!--background-->
+        <include>globalBackground</include>
+        <control type="multiimage">
+			<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+			<include>dimensionsFullscreen</include>
+			<imagepath>$VAR[homeBackgroundLocation]</imagepath>
+			<timeperimage>45000</timeperimage>
+			<fadetime>200</fadetime>
+			<pauseatend>10000</pauseatend>
+			<randomize>true</randomize>
+			<loop>yes</loop>
+			<aspectratio>scale</aspectratio>
+			<colordiffuse>99ffffff</colordiffuse>
+		</control>
+        <!--mini window-->
+		<include>miniVideoPlayer</include>
+
+        <!--Battery level-->
+        <include>Battery</include>
+         <!--Backbutton touchscreen-->
+        <include>Backbutton</include>
+        <control type="group">
+            <posx>col-9-begin</posx>
+            <posy>row-6-begin</posy>
+            <!--animations-->
+            <include>modalDialogInOutVertical</include>
+            <!--Initial menu-->
+                <control type="image">
+                    <posx>-12</posx>
+                    <posy>-12</posy>
+                    <width>600</width>
+                    <height>600</height>
+                    <texture>colors/black.png</texture>
+                    <colordiffuse>overlay</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>8-col</width>
+                    <height>2-row</height>
+                    <texture>colors/white.png</texture>
+                    <colordiffuse>$VAR[highlight]</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <!--title-->
+                <control type="label">
+                    <posx>24</posx>
+                    <posy>0</posy>
+                    <width>8-col-gutter</width>
+                    <height>2-row</height>
+                    <font>dialogTitle</font>
+                    <label>$LOCALIZE[31259]</label>
+                    <textcolor>$VAR[Home]</textcolor>
+                    <shadowcolor></shadowcolor>
+                </control>
+            <!--options-->
+
+            <control type="grouplist" id="200">
+                <posx>0</posx>
+                <posy>84</posy>
+                <width>8-col</width>
+                <height>490</height>
+                <itemgap>20</itemgap>
+                <orientation>vertical</orientation>
+                
+                
+                <control type="radiobutton" id="1">
+                    <description>Enable Home Button Further apart</description>
+                    <width>465</width>
+                    <radioposx>448</radioposx>
+                    <label>Highlight</label>
+                    <textureradioonfocus colordiffuse="$INFO[Skin.String(highlight_color)]">Colors/white.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="$INFO[Skin.String(highlight_color)]">Colors/white.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="$INFO[Skin.String(highlight_color)]">Colors/white.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="$INFO[Skin.String(highlight_color)]">Colors/white.png</textureradiooffnofocus>
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=highlight_color)</onclick>
+                    
+                </control>
+
+                <control type="radiobutton" id="2">
+                    <description>Enable Home Button Further apart</description>
+                    <width>465</width>
+                    <radioposx>448</radioposx>
+                    <label>Highlight_Shadow</label>
+                    <textureradioonfocus colordiffuse="$INFO[Skin.String(highlight_Shadow_color)]">Colors/white.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="$INFO[Skin.String(highlight_Shadow_color)]">Colors/white.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="$INFO[Skin.String(highlight_Shadow_color)]">Colors/white.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="$INFO[Skin.String(highlight_Shadow_color)]">Colors/white.png</textureradiooffnofocus>
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=highlight_Shadow_color)</onclick>             
+                </control>
+
+                 <control type="radiobutton" id="3">
+                    <description>Enable Home Button Further apart</description>
+                    <width>465</width>
+                    <radioposx>448</radioposx>
+                    <label>Home</label>
+                    <textureradioonfocus colordiffuse="$INFO[Skin.String(Home_color)]">Colors/white.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="$INFO[Skin.String(Home_color)]">Colors/white.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="$INFO[Skin.String(Home_color)]">Colors/white.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="$INFO[Skin.String(Home_color)]">Colors/white.png</textureradiooffnofocus>
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=Home_color)</onclick>             
+                </control>
+                
+                 <control type="radiobutton" id="4">
+                    <description>Enable Home Button Further apart</description>
+                    <width>465</width>
+                    <radioposx>448</radioposx>
+                    <label>Selected</label>
+                    <textureradioonfocus colordiffuse="$INFO[Skin.String(Selected_color)]">Colors/white.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="$INFO[Skin.String(Selected_color)]">Colors/white.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="$INFO[Skin.String(Selected_color)]">Colors/white.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="$INFO[Skin.String(Selected_color)]">Colors/white.png</textureradiooffnofocus>
+                    <onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=Selected_color)</onclick>            
+                </control>
+
+                
+                 <control type="radiobutton" id="6">
+                    <description>Enable Home Button Further apart</description>
+                    <width>465</width>
+                    <radioposx>448</radioposx>
+                    <label>Selected Box</label>
+                    <textureradioonfocus colordiffuse="$INFO[Skin.String(Selected_box_color)]">Colors/white.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="$INFO[Skin.String(Selected_box_color)]">Colors/white.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="$INFO[Skin.String(Selected_box_color)]">Colors/white.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="$INFO[Skin.String(Selected_box_color)]">Colors/white.png</textureradiooffnofocus>
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=Selected_box_color)</onclick>             
+                </control>
+
+
+            </control>
+        </control>
+        <!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <include>DialogID</include>
+            <label>custom_color.xml</label>
+        </control>
+    </controls>
+</window>

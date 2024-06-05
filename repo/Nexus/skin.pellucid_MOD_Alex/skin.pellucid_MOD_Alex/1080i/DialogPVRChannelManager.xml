@@ -119,7 +119,7 @@
                             <width>9-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
                         </control>
@@ -166,7 +166,7 @@
                         <width>564</width>
                         <font>buttonTitle</font>
                         <align>left</align>
-                        <texturefocus>colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
                         <texturenofocus></texturenofocus>
                         <textoffsetx>24</textoffsetx>
                         <focusedcolor>black</focusedcolor>
@@ -280,7 +280,7 @@
                             <width>5-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                         </control>
                         <control type="label">
                             <posx>0</posx>

@@ -95,7 +95,7 @@
                         <width>5-col-textbox</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>colors/white.png</texture>
+                        <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -162,7 +162,7 @@
                         <height>230</height>
                         <aspectratio>scale</aspectratio>
                         <texture fallback="colors/black.png" border="0">$INFO[Listitem.icon]</texture>
-                        <bordertexture colordiffuse="07FFFFFF">colors/white.png</bordertexture>
+                        <bordertexture colordiffuse="$VAR[selected_box]">Colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>
@@ -183,7 +183,7 @@
                         <height>230</height>
                         <aspectratio>scale</aspectratio>
                         <texture fallback="colors/black.png" border="0">$INFO[Listitem.icon]</texture>
-                        <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                        <bordertexture colordiffuse="$VAR[selected_box]">Colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                          <include>focusThumb</include>

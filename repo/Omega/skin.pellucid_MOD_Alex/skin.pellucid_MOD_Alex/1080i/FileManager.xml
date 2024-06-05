@@ -129,7 +129,7 @@
                         <control type="image">
                             <width>9-col-textbox</width>
                             <height>2-row</height>
-                            <texture>colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                             <animation effect="fade" start="100" end="20" condition="!Control.HasFocus(20)">Conditional</animation>
                         </control>
                         <control type="label">
@@ -201,7 +201,7 @@
                         <control type="image">
                             <width>9-col</width>
                             <height>2-row</height>
-                            <texture>colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                             <animation effect="fade" start="100" end="20" condition="Control.HasFocus(20)">Conditional</animation>
                         </control>
                         <control type="label">

@@ -79,7 +79,7 @@
                         <posy>0</posy>
                         <width>col-5-begin</width>
                         <height>2-row</height>
-                        <texture>colors/white.png</texture>
+                        <texture colordiffuse="$INFO[Skin.String(highlight_Shadow_color)]">Colors/white.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">

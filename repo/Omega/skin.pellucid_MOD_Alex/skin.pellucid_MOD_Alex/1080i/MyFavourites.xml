@@ -152,7 +152,7 @@
 			                    <width>23-col</width>
 			                    <height>2-row</height>
 			                    <aspectratio>stretch</aspectratio>
-			                    <texture border="0">colors/white.png</texture>
+			                    <texture border="0" colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
 			                </control>
 			                <control type="label">
 			                    <posx>1-col-indent</posx>
@@ -196,7 +196,7 @@
 			                    <width>18-col</width>
 			                    <height>100</height>
 			                    <aspectratio>stretch</aspectratio>
-			                    <texture border="0">colors/white.png</texture>
+			                    <texture border="0" colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
 			                </control>
 			                <control type="label">
 			                    <posx>110</posx>

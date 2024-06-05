@@ -97,8 +97,8 @@
                     <align>center</align>
                     <aligny>center</aligny>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus>colors/white.png</texturefocus>
-                    <texturenofocus colordiffuse="$VAR[highlight]">colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
+                    <texturenofocus>colors/white.png</texturenofocus>
                     <label></label>
                     <font>symbolLarge</font>
                     <textcolor>$VAR[Home]</textcolor>
@@ -155,7 +155,7 @@
                             <width>2-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                         </control>
                         <control type="label">
                             <posx>0</posx>

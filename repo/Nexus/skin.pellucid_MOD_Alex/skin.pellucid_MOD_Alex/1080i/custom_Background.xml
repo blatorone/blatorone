@@ -39,7 +39,7 @@
                 <posy>0</posy>
                 <width>14-col</width>
                 <height>2-row</height>
-                <texture>colors/white.png</texture>
+                <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>

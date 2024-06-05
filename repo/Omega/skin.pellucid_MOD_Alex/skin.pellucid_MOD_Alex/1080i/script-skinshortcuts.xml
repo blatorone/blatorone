@@ -128,7 +128,7 @@
                         <posy>0</posy>
                         <width>14-col</width>
                         <height>2-row</height>
-                        <texture>colors/white.png</texture>
+                        <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                         <colordiffuse>textActive</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                         <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(211)">Conditional</animation>

@@ -111,8 +111,8 @@
                 <ondown>4</ondown>
                 <font>itemSubTitle</font>
                 <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
-                <texturefocus colordiffuse="white">colors/white.png</texturefocus>
-                <label>$LOCALIZE[33084]: [COLOR $VAR[highlight]]$INFO[System.ProfileAutoLogin][/COLOR]</label>
+                <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
+                <label>$LOCALIZE[33084]: [COLOR $VAR[selected]]$INFO[System.ProfileAutoLogin][/COLOR]</label>
                 <enable>!System.HasLoginScreen</enable>
             </control>
             <control type="panel" id="2">
@@ -160,7 +160,7 @@
                         <width>7-col</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>colors/white.png</texture>
+                        <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                         <bordersize>0</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>
                     </control>

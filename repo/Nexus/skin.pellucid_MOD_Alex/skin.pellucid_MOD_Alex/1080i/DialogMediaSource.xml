@@ -156,7 +156,7 @@
                             <width>11-col-gutter</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>ffFFFFFF</colordiffuse>
                         </control>
@@ -281,7 +281,7 @@
                             <width>3-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                         </control>
                         <control type="label">
                             <posx>0</posx>

@@ -55,7 +55,7 @@
         <font>buttonTitle</font>
         <textcolor>textActive</textcolor>
         <focusedcolor>black</focusedcolor>
-        <texturefocus>colors/white.png</texturefocus>
+        <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
         <texturenofocus></texturenofocus>
         <textoffsetx>24</textoffsetx>
         <disabledcolor>textDisabled</disabledcolor>
@@ -71,9 +71,9 @@
         <aligny>center</aligny>
         <textoffsetx>24</textoffsetx>
         <label></label>
-        <texturefocus>colors/white.png</texturefocus>
+        <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
         <texturenofocus></texturenofocus>
-        <alttexturefocus>colors/white.png</alttexturefocus>
+        <alttexturefocus colordiffuse="$VAR[selected]">Colors/white.png</alttexturefocus>
         <alttexturenofocus></alttexturenofocus>
         <font>buttonTitle</font>
         <textcolor>textActive</textcolor>
@@ -99,13 +99,13 @@
         <disabledcolor>textDisabled</disabledcolor>
         <radioposx>0</radioposx>
         <radioposy>0</radioposy>
-        <texturefocus>colors/white.png</texturefocus>
+        <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
         <texturenofocus></texturenofocus>
         <pulseonselect>false</pulseonselect>
         <colordiffuse>FFFFFFFF</colordiffuse>
-        <textureradioonfocus colordiffuse="$VAR[highlight]">buttons/radio-button-on.png</textureradioonfocus>
+        <textureradioonfocus colordiffuse="black">buttons/radio-button-on.png</textureradioonfocus>
         <textureradioonnofocus colordiffuse="textActive">buttons/radio-button-on.png</textureradioonnofocus>
-        <textureradioofffocus colordiffuse="$VAR[highlight]">buttons/radio-button-off.png</textureradioofffocus>
+        <textureradioofffocus colordiffuse="black">buttons/radio-button-off.png</textureradioofffocus>
         <textureradiooffnofocus colordiffuse="textActive">buttons/radio-button-off.png</textureradiooffnofocus>
         <radiowidth>120</radiowidth>
 		<radioheight>76</radioheight>
@@ -125,7 +125,7 @@
         <disabledcolor>textDisabled</disabledcolor>
         <spinwidth>30</spinwidth>
         <spinheight>30</spinheight>
-        <texturefocus>colors/white.png</texturefocus>
+        <texturefocus colordiffuse="$VAR[selected_box]">colors/white.png</texturefocus>
         <texturenofocus></texturenofocus>
         <textureup>UIControls/arrow-up-nf.png</textureup>
         <texturedown>UIControls/arrow-down-nf.png</texturedown>
@@ -170,7 +170,7 @@
         <focusedcolor>black</focusedcolor>
         <disabledcolor>textDisabled</disabledcolor>
         <texturenofocus></texturenofocus>
-        <texturefocus>colors/white.png</texturefocus>
+        <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
         <sliderwidth>0</sliderwidth>
         <sliderheight>0</sliderheight>
         <texturesliderbar></texturesliderbar>

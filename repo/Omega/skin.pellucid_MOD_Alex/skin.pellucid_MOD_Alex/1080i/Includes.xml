@@ -1013,6 +1013,19 @@
     </include>
     
 
+    <include name="DefContextButtonColorbox">
+        <textoffsetx>80</textoffsetx>
+        <radioposx>1245</radioposx>
+        <width>1310</width>
+        <height>70</height>
+        <align>left</align>
+        <textcolor>white</textcolor>
+        <textureradiofocus colordiffuse="$PARAM[colorcode]">color/white.png</textureradiofocus>
+        <textureradionofocus colordiffuse="$PARAM[colorcode]">color/white.png</textureradionofocus>
+        <focusedcolor>black</focusedcolor>
+        
+    </include>
+
    <!--debugging-->
     <include name="DialogID">
         <animation type="conditional" condition="!player.playing" reversible="true">
