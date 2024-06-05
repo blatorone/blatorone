@@ -115,7 +115,7 @@
                     <textureradioonnofocus colordiffuse="$INFO[Skin.String(Selected_color)]">Colors/white.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="$INFO[Skin.String(Selected_color)]">Colors/white.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="$INFO[Skin.String(Selected_color)]">Colors/white.png</textureradiooffnofocus>
-                    <onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=Selected_color)</onclick>            
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=Selected_color)</onclick>            
                 </control>
 
                 

@@ -1058,7 +1058,6 @@
                     <textureradioofffocus></textureradioofffocus>
                     <textureradiooffnofocus></textureradiooffnofocus>
                     <onclick>Skin.Setting(custom)</onclick>
-                    <onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
                     <onclick condition="Skin.HasSetting(Default)">Skin.Reset(Default)</onclick>
