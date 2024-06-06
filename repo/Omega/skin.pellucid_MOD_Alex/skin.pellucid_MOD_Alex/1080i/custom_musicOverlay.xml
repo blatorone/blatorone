@@ -26,7 +26,7 @@
                 <posy>0</posy> 
                 <width>1655</width>
                 <height>54</height>
-                <texture>colors/white.png</texture>
+                <texture>Colors/listselect_fo.png</texture>
                 <colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
             </control>
             <control type="image">
@@ -35,7 +35,7 @@
                 <posy>0</posy>
                 <width>fullscreenWidth</width>
                 <height>54</height>
-                <texture>colors/white.png</texture>
+                <texture>Colors/listselect_fo.png</texture>
                 <colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
             </control>
             <control type="image">

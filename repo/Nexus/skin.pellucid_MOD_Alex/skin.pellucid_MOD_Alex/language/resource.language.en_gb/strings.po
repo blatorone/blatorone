@@ -685,3 +685,33 @@ msgstr ""
 msgctxt "#31285"
 msgid "Restore"
 msgstr ""
+
+msgctxt "#31286"
+msgid "Highlight"
+msgstr ""
+
+msgctxt "#31287"
+msgid "Highlight Transparent"
+msgstr ""
+
+msgctxt "#31288"
+msgid "Label Color"
+msgstr ""
+
+msgctxt "#31289"
+msgid "Selected"
+msgstr ""
+
+msgctxt "#31290"
+msgid "Menu Button"
+msgstr ""
+
+msgctxt "#31291"
+msgid "Manual Input"
+msgstr ""
+
+msgctxt "#31292"
+msgid "Do You want to reset Colors ?"
+msgstr ""
+
+

@@ -36,7 +36,7 @@
                 <control type="scrollbar" id="60">
                     <posx>50%</posx>
                     <posy>row-6-begin</posy>
-                    <texturesliderbar colordiffuse="$VAR[highlight_Shadow]">colors/white.png</texturesliderbar>
+                    <texturesliderbar colordiffuse="$VAR[highlight_Shadow]">Colors/listselect_fo.png</texturesliderbar>
                     <texturesliderbackground colordiffuse="overlay">colors/black.png</texturesliderbackground>
                     <texturesliderbarfocus colordiffuse="$VAR[highlight]">colors/white.png</texturesliderbarfocus>
                     <showonepage>true</showonepage>

@@ -45,7 +45,7 @@
 	                <width>9-col</width>
 	                <height>2-row</height>
 	                <itemgap>0</itemgap>
-	                <onleft>setfocus(8002,1)</onleft>
+	                <onleft>setfocus(8002,2)</onleft>
 					<onright>setfocus(8002,0)</onright>
 	                <onup>setfocus(9001,0)</onup>
 	                <orientation>horizontal</orientation>
@@ -344,7 +344,7 @@
 						<posy>0</posy>
 						<width>4-col-textbox</width>
 						<height>105</height>
-						<texture>colors/white.png</texture>
+						<texture>Colors/listselect_fo.png</texture>
 						<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
 					</control>
 					<control type="textbox">
@@ -418,7 +418,7 @@
 							<width>1-col</width>
 							<height>1-col</height>
 							<aspectratio>stretch</aspectratio>
-							<texture diffuse="masks/circle.png">colors/white.png</texture>
+							<texture diffuse="masks/circle.png">Colors/listselect_fo.png</texture>
 							<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
 						</control>
 						<control type="label">
@@ -542,7 +542,7 @@
 							<width>1-col</width>
 							<height>1-col</height>
 							<aspectratio>stretch</aspectratio>
-							<texture diffuse="masks/circle.png">colors/white.png</texture>
+							<texture diffuse="masks/circle.png">Colors/listselect_fo.png</texture>
 							<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
 						</control>
 						<control type="label">

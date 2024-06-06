@@ -690,22 +690,27 @@ msgid "Highlight"
 msgstr "Highlight"
 
 msgctxt "#31287"
-msgid "Highlight Shadow"
-msgstr "Highlight Shadow"
+msgid "Highlight Transparent"
+msgstr "Highlight Durchsichtig"
 
 msgctxt "#31288"
-msgid "Home"
-msgstr "Home"
+msgid "Label Color"
+msgstr "Schrift"
 
 msgctxt "#31289"
 msgid "Selected"
-msgstr "Selected"
+msgstr "Aktive Auswahl"
 
 msgctxt "#31290"
-msgid "Selected Box"
-msgstr "Selected Box"
+msgid "Menu Button"
+msgstr "Menü Knöpfe"
 
 msgctxt "#31291"
 msgid "Manual Input"
 msgstr "Manuelle Eingabe"
+
+msgctxt "#31292"
+msgid "Do You want to reset Colors ?"
+msgstr "Möchten Sie die Farben wirklich Zurücksetzen ?"
+
 

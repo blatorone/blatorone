@@ -73,7 +73,7 @@
         <label></label>
         <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
         <texturenofocus></texturenofocus>
-        <alttexturefocus colordiffuse="$VAR[selected]">Colors/white.png</alttexturefocus>
+        <alttexturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</alttexturefocus>
         <alttexturenofocus></alttexturenofocus>
         <font>buttonTitle</font>
         <textcolor>textActive</textcolor>

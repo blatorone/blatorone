@@ -842,7 +842,9 @@
             <width>2000</width>
             <height>1500</height>
 			<align>center</align>
-            <colordiffuse>colors/offblack.png</colordiffuse>
+            <focusedcolor></focusedcolor>
+            <texturefocus></texturefocus>
+            <colordiffuse></colordiffuse>
 			<onclick>Back</onclick>
 		</control>
     </include>
@@ -1013,20 +1015,6 @@
 		<onright>9000</onright>
         <onleft>9000</onleft>
     </include>
-    
-
-    <include name="DefContextButtonColorbox">
-        <textoffsetx>80</textoffsetx>
-        <radioposx>1245</radioposx>
-        <width>1310</width>
-        <height>70</height>
-        <align>left</align>
-        <textcolor>white</textcolor>
-        <textureradiofocus colordiffuse="$PARAM[colorcode]">color/white.png</textureradiofocus>
-        <textureradionofocus colordiffuse="$PARAM[colorcode]">color/white.png</textureradionofocus>
-        <focusedcolor>black</focusedcolor>
-        
-    </include>
 
    <!--debugging-->
     <include name="DialogID">
@@ -1071,8 +1059,4 @@
             <visible>Skin.HasSetting(DebugGrid)</visible>
         </control>
     </include>
-
-
-    
-
 </includes>

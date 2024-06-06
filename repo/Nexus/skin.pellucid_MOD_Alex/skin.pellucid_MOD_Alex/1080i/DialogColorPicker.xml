@@ -4,6 +4,25 @@
 	<include>DialogOpenCloseAnimation</include>
 	<onunload>ClearProperty(Reset.Color,1112)</onunload>
 	<controls>
+		<!--background-->
+        <include>globalBackground</include>
+        <control type="multiimage">
+			<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+			<include>dimensionsFullscreen</include>
+			<imagepath>$VAR[homeBackgroundLocation]</imagepath>
+			<timeperimage>45000</timeperimage>
+			<fadetime>200</fadetime>
+			<pauseatend>10000</pauseatend>
+			<randomize>true</randomize>
+			<loop>yes</loop>
+			<aspectratio>scale</aspectratio>
+			<colordiffuse>99ffffff</colordiffuse>
+		</control>
+
+        <!--Battery level-->
+        <include>Battery</include>
+         <!--Backbutton touchscreen-->
+        <include>Backbutton</include>
 		<control type="image">
 			<include>FullscreenDimensions</include>
 			<texture colordiffuse="overlay">colors/black.png</texture>
@@ -50,7 +69,7 @@
 						<height>80</height>
 						<texture>colors/white.png</texture>
 						<bordersize>1</bordersize>
-						<bordertexture border="1" infill="false" colordiffuse="black">border_frame.png</bordertexture>
+						<bordertexture border="1" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
 						<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
 					</control>
 				<control type="image">
@@ -58,7 +77,7 @@
 						<height>80</height>
 						<texture>colors/white.png</texture>
 						<bordersize>1</bordersize>
-						<bordertexture border="1" infill="false" colordiffuse="black">border_frame.png</bordertexture>
+						<bordertexture border="1" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
 						<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
 					</control>
 			</itemlayout>
@@ -70,7 +89,7 @@
 						<height>80</height>
 						<texture>colors/white.png</texture>
 						<bordersize>1</bordersize>
-						<bordertexture border="1" infill="false" colordiffuse="black">border_frame.png</bordertexture>
+						<bordertexture border="1" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
 						<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
 					</control>
 				</control>
@@ -90,43 +109,131 @@
 			<width>304</width>
 			<height>188</height>
 			<bordersize>1</bordersize>
-			<texture colordiffuse="black" border="1" infill="false">border_frame.png</texture>
+			<texture colordiffuse="black" border="1" infill="false">Colors/border_frame.png</texture>
 		</control>
-		<control type="grouplist" id="9001">
-			<left>1615</left>
-			<top>894</top>
-			<width>400</width>
-			<height>180</height>
-			<onup>6</onup>
-			<ondown>Control.SetFocus(6,9,absolute)</ondown>
-			<onleft>6</onleft>
-			<onright>6</onright>
-			<control type="button" id="7">
-				<width>300</width>
-				<height>60</height>
-				<align>right</align>
-				<label />
-			</control>
-			<control type="button" id="99">
-				<width>300</width>
-				<height>60</height>
-				<align>right</align>
-				<label>$LOCALIZE[13007]</label>
-				<onclick>Skin.Reset($INFO[Window(1112).Property(Reset.Color)])</onclick>
-				<onclick>SendClick(7)</onclick>
-				<visible>!String.IsEmpty(Window(1112).Property(Reset.Color))</visible>
-			</control>
-			<control type="button" id="98">
-				<width>300</width>
-				<height>60</height>
-				<align>right</align>
-				<label>$LOCALIZE[31291]</label>
-				<onclick>Dialog.Close(dialogcolorpicker)</onclick>
-				<onclick>Skin.SetString($INFO[Window(1112).Property(Reset.Color)])</onclick>
-				<visible>!String.IsEmpty(Window(1112).Property(Reset.Color))</visible>
-			</control>
-		</control>
+		
+		<control type="panel" id="9001">
+                <left>30%</left>
+				<top>925</top>
+                <width>975</width>
+                <height>12-row</height>
+                <itemgap>0</itemgap>
+                <onleft>6</onleft>
+				<onright>6</onright>
+				<onup>6</onup>
+				<ondown>6</ondown>
+                <itemlayout width="325" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>Colors/listselect_fo.png</texture>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
+                    </control>
+                    <control type="image">
+                        <posx>1-col</posx>
+                        <posy>0</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture colordiffuse="black">Colors/listselect_fo.png</texture>
+                        
+                    </control>
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>symbolLarge</font>
+                        <textcolor>$VAR[Home]</textcolor>
+                        <label>$INFO[ListItem.label2]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>0</posy>
+                        <width>224</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemSubTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="325" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>Colors/listselect_fo.png</texture>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
+                    </control>
+                    <control type="image">
+                        <posx>1-col</posx>
+                        <posy>0</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                        <colordiffuse>eeffffff</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>symbolLarge</font>
+                        <textcolor>$VAR[Home]</textcolor>
+                        <label>$INFO[ListItem.label2]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>0</posy>
+                        <width>224</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemSubTitle</font>
+                        <textcolor>black</textcolor>
+                        <label>$INFO[ListItem.label]</label>
+                    </control>
+                </focusedlayout>
+                <content>
+					<item>
+                        <description>Manual Input</description>
+                        <label>$LOCALIZE[31291]</label>
+                        <label2></label2>
+						<onclick>Dialog.Close(dialogcolorpicker)</onclick>
+						<onclick>Skin.SetString($INFO[Window(1112).Property(Reset.Color)])</onclick>
+						<visible>!String.IsEmpty(Window(1112).Property(Reset.Color))</visible> 
+                    </item>
+					<item>
+                        <description>Reset Colors</description>
+                        <label>$LOCALIZE[13007]</label>
+                        <label2></label2>
+						<onclick>Skin.Reset($INFO[Window(1112).Property(Reset.Color)])</onclick>
+						<onclick>SendClick(7)</onclick>
+						<visible>!String.IsEmpty(Window(1112).Property(Reset.Color))</visible>
+                    </item>
+                    <item>
+						<description>Cancel</description>
+                        <label>222</label>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>action(close)</onclick>
+                    </item>
+                </content>
+            </control>
 		<control type="label" id="3010">
+			<visible>!control.hasfocus(9001)</visible>
 			<top>1000</top>
 			<left>325</left>
 			<width>1000</width>
@@ -136,5 +243,11 @@
 			<shadowcolor>shadow</shadowcolor>
 			<animation effect="slide" end="0,-60" condition="String.IsEmpty(Window(1140).Property(Reset.Color))">Conditional</animation>
 		</control>
+		<!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <include>DialogID</include>
+            <label>DialogColorPicker.xml</label>
+        </control>
 	</controls>
 </window>
