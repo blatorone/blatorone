@@ -1117,7 +1117,6 @@
                         <texture colordiffuse="$VAR[highlight]">Colors/white.png</texture>
                         <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
                         <bordersize>3</bordersize>
-                        <colordiffuse>ffFFFFFF</colordiffuse>
                 </control>
                 
                 <control type="image">
@@ -1129,7 +1128,6 @@
                     <colordiffuse>ffFFFFFF</colordiffuse>
                     <texture colordiffuse="$VAR[highlight_Shadow]">Colors/white.png</texture>
                     <aspectratio>scale</aspectratio>
-                    
                 </control>
                 <control type="image">
                     <width>60</width>
@@ -1139,7 +1137,6 @@
                     <colordiffuse>ffFFFFFF</colordiffuse>
                     <texture colordiffuse="$VAR[Home]">Colors/white.png</texture>
                     <aspectratio>scale</aspectratio>
-                    
                 </control>
                 <control type="image">
                     <width>60</width>
@@ -1149,7 +1146,6 @@
                     <colordiffuse>ffFFFFFF</colordiffuse>
                     <texture colordiffuse="$VAR[selected]">Colors/white.png</texture>
                     <aspectratio>scale</aspectratio>
-                    
                 </control>
                 <control type="image">
                     <width>60</width>
@@ -1159,7 +1155,6 @@
                     <colordiffuse>ffFFFFFF</colordiffuse>
                     <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
                     <aspectratio>scale</aspectratio>
-                    
                 </control>
             </control>
             <control type="grouplist">
@@ -1175,8 +1170,7 @@
                     <posy>20</posy>
                     <width>60</width>
                     <height>60</height>
-                    <texture colordiffuse="$VAR[highlight]">Colors/white.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
+                    <texture colordiffuse="Skin.String(highlight_color)">Colors/white.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
@@ -1184,8 +1178,7 @@
                     <posy>0</posy>
                     <width>60</width>
                     <height>60</height>
-                    <texture colordiffuse="$VAR[highlight_Shadow]">Colors/white.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
+                    <texture colordiffuse="Skin.String(highlight_Shadow_color)">Colors/white.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
@@ -1193,8 +1186,7 @@
                     <posy>0</posy>
                     <width>60</width>
                     <height>60</height>
-                    <texture colordiffuse="$VAR[Home]">Colors/white.png</texture>
-                    <colordiffuse>white</colordiffuse>
+                    <texture colordiffuse="Skin.String(Home_color)">Colors/white.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
@@ -1202,8 +1194,7 @@
                     <posy>0</posy>
                     <width>60</width>
                     <height>60</height>
-                    <texture colordiffuse="$VAR[selected]">Colors/white.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
+                    <texture colordiffuse="Skin.String(Selected_color)">Colors/white.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
@@ -1211,11 +1202,11 @@
                     <posy>0</posy>
                     <width>60</width>
                     <height>60</height>
-                    <texture colordiffuse="$VAR[selected_box">Colors/white.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
+                    <texture colordiffuse="Skin.String(Selected_box_color)">Colors/white.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
             </control>
+            
         </control>
         <!--debugging-->
         <include>DebugGrid</include>

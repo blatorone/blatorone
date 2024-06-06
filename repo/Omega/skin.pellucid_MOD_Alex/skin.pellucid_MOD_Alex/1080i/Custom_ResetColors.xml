@@ -154,11 +154,11 @@
                         <description>Reset Colors</description>
                         <label>107</label>
                         <label2></label2>
-                        <onclick>Skin.Reset(highlight_color)</onclick>
-						<onclick>Skin.Reset(highlight_Shadow_color)</onclick>
-                        <onclick>Skin.Reset(Home_color)</onclick>
-                        <onclick>Skin.Reset(Selected_color)</onclick>
-                        <onclick>Skin.Reset(Selected_box_color)</onclick>
+                        <onclick>Skin.SetString(highlight_color,ffad1e4e)</onclick>
+						<onclick>Skin.SetString(highlight_Shadow_color,ffad1e4e)</onclick>
+                        <onclick>Skin.SetString(Home_color,fff0f0f0)</onclick>
+                        <onclick>Skin.SetString(Selected_color,yellow)</onclick>
+                        <onclick>Skin.SetString(Selected_box_color,white)</onclick>
 						<onclick>action(close)</onclick>
                     </item>
                     <item>

@@ -131,10 +131,10 @@
 					<onclick>SetProperty(Reset.Color,Selected_box_color)</onclick>
 					<onclick>Skin.SetColor(Selected_box_color, 31290, 7fffffff, special://skin/extras/colors.xml)</onclick>
 					<texturefocus colordiffuse="$VAR[selected_box]">Colors/listselect_fo.png</texturefocus>
-                    <textureradioonfocus colordiffuse="$VAR[selected_box">Colors/white.png</textureradioonfocus>
-                    <textureradioonnofocus colordiffuse="$VAR[selected_box">Colors/white.png</textureradioonnofocus>
-                    <textureradioofffocus colordiffuse="$VAR[selected_box">Colors/white.png</textureradioofffocus>
-                    <textureradiooffnofocus colordiffuse="$VAR[selected_box">Colors/white.png</textureradiooffnofocus>
+                    <textureradioonfocus colordiffuse="$VAR[selected_box]">Colors/white.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="$VAR[selected_box]">Colors/white.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="$VAR[selected_box]">Colors/white.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="$VAR[selected_box]">Colors/white.png</textureradiooffnofocus>
                     <radiowidth>60</radiowidth>
 		            <radioheight>60</radioheight>
                 </control>

@@ -222,6 +222,7 @@
         <value condition="Skin.HasSetting(custom) + !String.IsEmpty(Skin.String(highlight_color))">$INFO[Skin.String(highlight_color)]</value>
         <value condition="String.IsEmpty(Skin.String(highlight_color))">ffad1e4e</value>
     </variable>
+
     <variable name="highlight_Shadow">
 		<value condition="Skin.HasSetting(Bluewood)">ff34495e</value>
         <value condition="Skin.HasSetting(Darkblue)">ff00008B</value>
