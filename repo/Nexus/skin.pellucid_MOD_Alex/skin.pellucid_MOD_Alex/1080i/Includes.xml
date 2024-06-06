@@ -827,7 +827,9 @@
             <width>2000</width>
             <height>1500</height>
 			<align>center</align>
-            <colordiffuse>colors/offblack.png</colordiffuse>
+            <focusedcolor></focusedcolor>
+            <texturefocus></texturefocus>
+            <colordiffuse></colordiffuse>
 			<onclick>Back</onclick>
 		</control>
     </include>
@@ -1069,4 +1071,8 @@
             <visible>Skin.HasSetting(DebugGrid)</visible>
         </control>
     </include>
+
+
+    
+
 </includes>

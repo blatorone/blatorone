@@ -318,7 +318,8 @@
             <posy>0</posy>
             <width>fullscreenWidth</width>
             <height>fullscreenHeight</height>
-            <texture>colors/black.png</texture>
+            <texture></texture>
+            <texturefocus></texturefocus>
 			<colordiffuse>77000000</colordiffuse>
         </control>
         <!--Backbutton touchscreen-->

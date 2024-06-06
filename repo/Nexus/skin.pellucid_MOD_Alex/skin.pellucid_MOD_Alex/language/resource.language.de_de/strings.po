@@ -684,3 +684,28 @@ msgstr "Sicherung / Wiederherstellung"
 msgctxt "#31285"
 msgid "Restore"
 msgstr "Wiederherstellung"
+
+msgctxt "#31286"
+msgid "Highlight"
+msgstr "Highlight"
+
+msgctxt "#31287"
+msgid "Highlight Shadow"
+msgstr "Highlight Shadow"
+
+msgctxt "#31288"
+msgid "Home"
+msgstr "Home"
+
+msgctxt "#31289"
+msgid "Selected"
+msgstr "Selected"
+
+msgctxt "#31290"
+msgid "Selected Box"
+msgstr "Selected Box"
+
+msgctxt "#31291"
+msgid "Manual Input"
+msgstr "Manuelle Eingabe"
+

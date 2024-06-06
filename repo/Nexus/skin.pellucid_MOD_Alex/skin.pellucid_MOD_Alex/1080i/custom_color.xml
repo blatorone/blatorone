@@ -1078,6 +1078,8 @@
                     <onclick>activatewindow(1112),return</onclick>
                     <visible>Skin.HasSetting(custom)</visible>
                 </control>
+
+                
             </control>
 
             <control type="image">
@@ -1113,7 +1115,7 @@
                         <height>60</height>
                         <aspectratio>scale</aspectratio>
                         <texture colordiffuse="$INFO[Skin.String(highlight_color)]">Colors/white.png</texture>
-                        <bordertexture>Colors/black.png</bordertexture>
+                        <bordertexture border="3" infill="false" colordiffuse="black">border_frame.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                 </control>
@@ -1122,7 +1124,7 @@
                     
                     <width>60</width>
                     <height>60</height>
-                    <bordertexture>Colors/black.png</bordertexture>
+                    <bordertexture border="3" infill="false" colordiffuse="black">border_frame.png</bordertexture>
                     <bordersize>3</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                     <texture colordiffuse="$INFO[Skin.String(highlight_Shadow_color)]">Colors/white.png</texture>
@@ -1132,7 +1134,7 @@
                 <control type="image">
                     <width>60</width>
                     <height>60</height>
-                    <bordertexture>Colors/black.png</bordertexture>
+                    <bordertexture border="3" infill="false" colordiffuse="black">border_frame.png</bordertexture>
                     <bordersize>3</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                     <texture colordiffuse="$INFO[Skin.String(Home_color)]">Colors/white.png</texture>
@@ -1142,7 +1144,7 @@
                 <control type="image">
                     <width>60</width>
                     <height>60</height>
-                    <bordertexture>Colors/black.png</bordertexture>
+                    <bordertexture border="3" infill="false" colordiffuse="black">border_frame.png</bordertexture>
                     <bordersize>3</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                     <texture colordiffuse="$INFO[Skin.String(Selected_color)]">Colors/white.png</texture>
@@ -1152,7 +1154,7 @@
                 <control type="image">
                     <width>60</width>
                     <height>60</height>
-                    <bordertexture>Colors/black.png</bordertexture>
+                    <bordertexture border="3" infill="false" colordiffuse="black">border_frame.png</bordertexture>
                     <bordersize>3</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                     <texture colordiffuse="$INFO[Skin.String(Selected_box_color)]">Colors/white.png</texture>
