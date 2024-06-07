@@ -1161,47 +1161,47 @@
                 <visible>control.hasfocus(42)</visible>
                 <posx>49%</posx>
                 <posy>10</posy>
-                <width>340</width>
-                <height>100</height>
+                <width>6-col-gutter</width>
+                <height>400</height>
                 <itemgap>10</itemgap>
                 <orientation>horizontal</orientation>
                     <control type="image">
-                    <posx>20</posx>
-                    <posy>20</posy>
                     <width>60</width>
                     <height>60</height>
+                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
+                    <bordersize>3</bordersize>
                     <texture colordiffuse="Skin.String(highlight_color)">Colors/white.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
                     <width>60</width>
                     <height>60</height>
+                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
+                    <bordersize>3</bordersize>
                     <texture colordiffuse="Skin.String(highlight_Shadow_color)">Colors/white.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
                     <width>60</width>
                     <height>60</height>
+                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
+                    <bordersize>3</bordersize>
                     <texture colordiffuse="Skin.String(Home_color)">Colors/white.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
                     <width>60</width>
                     <height>60</height>
+                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
+                    <bordersize>3</bordersize>
                     <texture colordiffuse="Skin.String(Selected_color)">Colors/white.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
                     <width>60</width>
                     <height>60</height>
+                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
+                    <bordersize>3</bordersize>
                     <texture colordiffuse="Skin.String(Selected_box_color)">Colors/white.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
