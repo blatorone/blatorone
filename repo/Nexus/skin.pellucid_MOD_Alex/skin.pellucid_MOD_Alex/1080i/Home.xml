@@ -411,7 +411,7 @@
 							<width>4-col-textbox</width>
 							<height>105</height>
 							<texture>colors/white.png</texture>
-							<colordiffuse>highlight_Shadow</colordiffuse>
+							<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
 						</control>
 						<control type="label">
 							<posx>0</posx>
