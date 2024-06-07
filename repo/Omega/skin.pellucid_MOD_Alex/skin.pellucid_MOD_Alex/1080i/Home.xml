@@ -399,7 +399,7 @@
 							<font>symbolVeryLarge</font>
 							<align>center</align>
 							<aligny>center</aligny>
-							<textcolor>$VAR[Home]</textcolor>
+							<textcolor>textActive</textcolor>
 							<shadowcolor></shadowcolor>
 							<label></label>
 						</control>
