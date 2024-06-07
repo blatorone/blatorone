@@ -135,6 +135,8 @@
                 <description>Default Slider</description>
                 <texturenofocus></texturenofocus>
             </control>
+            <control type="colorbutton" id="15">
+		    </control>
             <!--subcat menu buttons-->
             <control type="togglebutton" id="10">
                 <description>Default Category Button</description>

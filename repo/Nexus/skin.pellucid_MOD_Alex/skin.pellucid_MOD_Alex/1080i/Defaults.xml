@@ -210,4 +210,20 @@
         <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
+    <default type="colorbutton">
+		<textcolor>textActive</textcolor>
+		<focusedcolor>black</focusedcolor>
+		<disabledcolor>overlay</disabledcolor>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
+		<width>1381</width>
+		<height>81</height>
+		<colorwidth>100</colorwidth>
+		<colorheight>40</colorheight>
+		<texturecolormask>colors/white.png</texturecolormask>
+		<texturecolordisabledmask colordiffuse="40FFFFFF">colors/white.png</texturecolordisabledmask>
+		<font>buttonTitle</font>
+		<textoffsetx>30</textoffsetx>
+		<texturefocus colordiffuse="$VAR[selected_box]" border="3">Colors/listselect_fo.png</texturefocus>
+	</default>
 </includes>
