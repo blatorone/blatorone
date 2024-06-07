@@ -74,7 +74,7 @@
                     <textureradioofffocus></textureradioofffocus>
                     <textureradiooffnofocus></textureradiooffnofocus>
                     <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
-                    <label>[COLOR yellow]$LOCALIZE[31262][/COLOR]</label>
+                    <label>[COLOR $VAR[selected]]$LOCALIZE[31262][/COLOR]</label>
                     <onclick>Skin.ToggleSetting(homemenugrid)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuside)">Skin.Reset(homemenuside)</onclick>
@@ -104,7 +104,7 @@
                     <textureradioofffocus></textureradioofffocus>
                     <textureradiooffnofocus></textureradiooffnofocus>
                     <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
-                    <label>[COLOR yellow]$LOCALIZE[31263][/COLOR]</label>
+                    <label>[COLOR $VAR[selected]]$LOCALIZE[31263][/COLOR]</label>
                     <onclick>Skin.ToggleSetting(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuside)">Skin.Reset(homemenuside)</onclick>
                     <onclick condition="Skin.HasSetting(homemenugrid)">Skin.Reset(homemenugrid)</onclick>
@@ -134,7 +134,7 @@
                     <textureradioofffocus></textureradioofffocus>
                     <textureradiooffnofocus></textureradiooffnofocus>
                     <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
-                    <label>[COLOR yellow]$LOCALIZE[31264][/COLOR]</label>
+                    <label>[COLOR $VAR[selected]]$LOCALIZE[31264][/COLOR]</label>
                     <onclick>Skin.ToggleSetting(homemenuside)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenugrid)">Skin.Reset(homemenugrid)</onclick>
