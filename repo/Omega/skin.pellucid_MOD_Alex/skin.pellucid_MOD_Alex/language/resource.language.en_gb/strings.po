@@ -714,4 +714,6 @@ msgctxt "#31292"
 msgid "Do You want to reset Colors ?"
 msgstr ""
 
-
+msgctxt "#31293"
+msgid "Disable startup intro"
+msgstr ""

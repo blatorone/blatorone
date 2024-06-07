@@ -365,6 +365,14 @@
                     <onclick>Skin.Togglesetting(Further_apart)</onclick>
                     <selected>Skin.HasSetting(Further_apart)</selected>
                 </control>
+                <control type="radiobutton" id="31">
+                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                    <description>Intro enable</description>
+                    <width>14-col</width>
+                    <label>31293</label>
+                    <onclick>Skin.Togglesetting(StartupIntro)</onclick>
+                    <selected>Skin.HasSetting(StartupIntro)</selected>
+                </control>
 
                 <control type="button" id="30">
                     <width>1360</width>

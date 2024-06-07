@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="window" id="1108">
-    <defaultcontrol></defaultcontrol>
-    <animation effect="fade" start="100" end="0" time="500">WindowClose</animation>
-    <onload>AlarmClock(hidemenu,setfocus(200),00:03,true)</onload>
+    <onload condition="!Skin.HasSetting(StartupIntro)">SetProperty(Playing.StartupIntro,True,Home)</onload>
+	<onload condition="!Skin.HasSetting(StartupIntro)">SetFocus(10)</onload>
+	<onload condition="Skin.HasSetting(StartupIntro)">ReplaceWindow($INFO[System.StartupWindow])</onload>
+		 
     <controls>
-        <control type="group">
-            <control type="image">
-                <width>100%</width>
-                <height>100%</height>
-                <centertop>50%</centertop>
-                <texture>SplashBackgrounds/splash.jpg</texture>
-                <animation effect="fade" start="0" end="100" time="20">Visible</animation>
-	            <animation effect="fade" start="0" end="100" time="20">WindowClose</animation>
-            </control>
-        </control>
-        <control type="button" id="200">
-            <include>Startupclose</include>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>500</width>
-            <height>500</height>
-            <texturefocus>77FFFFFF</texturefocus>
-			<onfocus>activateWindow(Home)</onfocus>
-        </control>
+        <control type="button" id="10">
+			<include>HiddenObject</include>
+			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
+			<onfocus>PlayMedia($ESCINFO[Skin.String(StartupIntro)])</onfocus>
+		</control>
+
+        
     </controls>
 </window>

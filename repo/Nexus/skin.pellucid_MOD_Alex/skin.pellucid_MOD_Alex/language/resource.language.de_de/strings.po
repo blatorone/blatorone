@@ -713,4 +713,6 @@ msgctxt "#31292"
 msgid "Do You want to reset Colors ?"
 msgstr "Möchten Sie die Farben wirklich Zurücksetzen ?"
 
-
+msgctxt "#31293"
+msgid "Disable startup intro"
+msgstr "Deaktiviere Start-Intro"
