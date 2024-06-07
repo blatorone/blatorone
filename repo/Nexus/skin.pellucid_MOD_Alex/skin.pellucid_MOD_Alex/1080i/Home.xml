@@ -410,7 +410,7 @@
 							<posy>0</posy>
 							<width>4-col-textbox</width>
 							<height>105</height>
-							<texture>colors/white.png</texture>
+							<texture>colors/listselect_fo.png</texture>
 							<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
 						</control>
 						<control type="label">
