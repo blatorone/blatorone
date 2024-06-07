@@ -349,11 +349,12 @@
                     <onclick>Skin.Togglesetting(crosskey)</onclick>
                     <selected>Skin.HasSetting(crosskey)</selected>
                 </control>
-                <control type="togglebutton" id="27">
+                <control type="button" id="27">
                     <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
                     <description>Change Main Button Menu look</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31261]</label>
+                    <label2>$VAR[homestyle]</label2>
                     <onclick>activatewindow(1106)</onclick>
                 </control>
                 <control type="radiobutton" id="28">
