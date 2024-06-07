@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<onload condition="!Skin.HasSetting(StartupIntro)">Skin.SetString(StartupIntro,special://skin/extras/intro.mov)</onload>
 	<onload>ReplaceWindow(1108)</onload>
 </window>
