@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8000</defaultcontrol>
-    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu|gamesubmenu)</onunload>
+    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu|gamesubmenu|extrashortcutmain)</onunload>
     <controls>
         <!--background-->
         <include>globalBackground</include>
@@ -246,6 +246,13 @@
                     <label>31233</label>
                     <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=gamesubmenu)</onclick>
                 </control>
+                <control type="button" id="40">
+                    <visible>Container(8000).Hasfocus(2)</visible>
+                    <description>Edit home menu</description>
+                    <width>14-col</width>
+                    <label>31295</label>
+                    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=extrashortcutmain)</onclick>
+                </control>
                 <control type="radiobutton" id="15">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Extended Fanart</description>
@@ -374,6 +381,16 @@
                     <onclick condition="Skin.HasSetting(StartupIntro)">Skin.SetString(StartupIntro,special://skin/extras/intro.mov)</onclick>
                     <onclick condition="!Skin.HasSetting(StartupIntro)">Skin.Reset(StartupIntro)</onclick>
                     <selected>Skin.HasSetting(StartupIntro)</selected>
+                </control>
+
+                <control type="radiobutton" id="33">
+                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                    <description>Intro enable</description>
+                    <width>14-col</width>
+                    <label>31294</label>
+                    <onclick>Skin.Togglesetting(widget)</onclick>
+                    
+                    <selected>Skin.HasSetting(widget)</selected>
                 </control>
 
                 <control type="button" id="30">

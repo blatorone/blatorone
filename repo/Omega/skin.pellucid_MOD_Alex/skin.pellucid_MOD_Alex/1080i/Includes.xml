@@ -29,7 +29,7 @@
     <include file="Includes_mediaShowcase.xml"/>
     <constant name="DepthOSD">0.40</constant>
 	<constant name="DepthOSD+">0.44</constant>
-    
+    <include file="MyVideoNav"/>
 
     <!--view type conditions-->
     <expression name="isVideoList">!String.Contains(container.folderpath,special://profile/playlists/video) + !String.Contains(container.folderpath,videodb://) + !String.Contains(container.folderpath,plugin://) | container.content(files) | String.IsEmpty(container.content) | container.content(addons) | container.content(videos) | container.content(episodes)</expression>
@@ -555,7 +555,7 @@
                 <animation type="conditional" condition="System.Platform.Android + Skin.HasSetting(Further_apart) + Skin.HasSetting(Youtube) + Skin.HasSetting(SmartTube)" reversible="true">
 		    		<effect type="slide" start="0" end="-260" time="0" delay="0"/>
         		</animation>
-    </include>#
+    </include>
 
     <!-- not in use old
     <include name= "weather">
@@ -951,8 +951,13 @@
         <colordiffuse>ffffff</colordiffuse>
         <onup>9000</onup>
         <ondown>9000</ondown>
-		<onright>setfocus(9001,0)</onright>
-        <onleft>9005</onleft>
+        <onright condition="Skin.HasSetting(widget) + string.isempty(Control.GetLabel(7001))">9001</onright>
+        <onright condition="Skin.HasSetting(widget)">7001</onright>
+        <onright condition="!Skin.HasSetting(widget)">setfocus(9001,0)</onright>
+        <onleft condition="Skin.HasSetting(widget) + System.Platform.Android">7001</onleft>
+        <onleft condition="Skin.HasSetting(widget) + !System.Platform.Android">7001</onleft>
+        <onleft condition="!Skin.HasSetting(widget) + System.Platform.Android">9005</onleft>
+        <onleft condition="!Skin.HasSetting(widget) + !System.Platform.Android">setfocus(9001,0)</onleft>
     </include>
 
     <include name="homemenuslidecolor">
@@ -989,7 +994,11 @@
 		<ondown>8001</ondown>
     </include>
     <include name="homemenukeycontrol3">
-        <onup>9005</onup>
+        <onup condition="Skin.HasSetting(widget) + !string.isempty(Control.GetLabel(7001))">7001</onup>
+        <onup condition="Skin.HasSetting(widget) + string.isempty(Control.GetLabel(7001)) + !System.Platform.Android">9000</onup>
+        <onup condition="Skin.HasSetting(widget) + string.isempty(Control.GetLabel(7001)) + System.Platform.Android">9005</onup>
+        <onup condition="!Skin.HasSetting(widget) + System.Platform.Android">9005</onup>
+        <onup condition="!Skin.HasSetting(widget) + !System.Platform.Android">9000</onup>
         <ondown>8001</ondown>
 		<onright>9000</onright>
         <onleft>9000</onleft>

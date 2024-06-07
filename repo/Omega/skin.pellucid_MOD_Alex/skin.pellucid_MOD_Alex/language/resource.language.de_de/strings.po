@@ -716,3 +716,15 @@ msgstr "Möchten Sie die Farben wirklich Zurücksetzen ?"
 msgctxt "#31293"
 msgid "Disable startup intro"
 msgstr "Deaktiviere Start-Intro"
+
+msgctxt "#31294"
+msgid "Extra Button on Homescreen"
+msgstr "Zusatz Button auf Grundbild"
+
+msgctxt "#31295"
+msgid "Extra Button on Homescreen edit"
+msgstr "Zusatz Button auf Grundbild bearbeiten"
+
+msgctxt "#31296"
+msgid "Video Files"
+msgstr "Video Dateien"
