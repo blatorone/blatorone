@@ -50,16 +50,35 @@
 	                <textcolor>$VAR[Home]</textcolor>
 	                <label>$VAR[menuLogo]</label>
 	            </control>
+               
                 
 			</control>
-            <control type="list" id="9001">
-                <posx>0</posx>
+            <control type="togglebutton" id="500">
                 <posy>row-5-begin</posy>
+                <texturefocus colordiffuse="$INFO[Skin.String(highlight_Shadow_color)]">Colors/white.png</texturefocus>
+                <texturenofocus>textActive</texturenofocus>
+                <alttexturefocus colordiffuse="$INFO[Skin.String(highlight_Shadow_color)]">Colors/white.png</alttexturefocus>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>4-col</width>
+                <label>View Mode</label>
+                <onclick condition="Container.Content(movies) | Container.Content(tvshows)">activateWindow(1114)</onclick>
+                <ondown>setfocus(9001,0)</ondown>
+                <onup>setfocus(9001,20)</onup>
+                <onright>9999</onright>
+                <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
+                
+            </control>
+            <control type="list" id="9001">
+                <posx>-23</posx>
+                <posy>row-7-begin</posy>
                 <width>col-5-begin</width>
                 <height>832</height>
                 <orientation>vertical</orientation>
                 <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
                 <onright>9999</onright>
+                <ondown>500</ondown>
+                <onup>500</onup>
                 <itemlayout width="col-5-begin" height="2-row">
                     <control type="label">
                         <posx>col-1-begin</posx>
@@ -83,6 +102,7 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">
+                        <visible>!control.hasfocus(500) + !window.isactive(contextmenu)</visible>
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
                         <width>4-col-gutter</width>
@@ -90,6 +110,18 @@
                         <font>menuTitle2</font>
                         <aligny>center</aligny>
                         <textcolor>black</textcolor>
+                        <shadowcolor></shadowcolor>
+                        <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
+                    </control>
+                    <control type="label">
+                        <visible>control.hasfocus(500) | window.isactive(contextmenu)</visible>
+                        <posx>col-1-begin</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>2-row</height>
+                        <font>menuTitle2</font>
+                        <aligny>center</aligny>
+                        <textcolor>white</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>

@@ -11,6 +11,7 @@
     <include file="View_Episodes.xml"/>
     <include file="View_Movies.xml"/>
     <include file="View_AddonPosters.xml"/>
+    <include file="View_505_Panel.xml"/>
     <include file="View_TVShows.xml"/>
     <include file="View_MusicGenres.xml"/>
     <include file="View_VideoFiles.xml"/>

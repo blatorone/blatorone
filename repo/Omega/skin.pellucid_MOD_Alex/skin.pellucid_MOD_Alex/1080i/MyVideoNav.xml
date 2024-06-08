@@ -5,7 +5,7 @@
     <onload>Skin.SetString(recentitems,video)</onload>
 	<onload condition="String.Contains(container.folderpath,plugin://)">Container.SetViewMode(50)</onload>
     <include>fadeInOut</include>
-	<views>50,51,52,53,54,55,58,59</views>
+	<views>50,51,52,53,54,55,58,59,505</views>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
@@ -29,6 +29,8 @@
                     <include>seasons</include>
                     <include>episodes</include>
                     <include>musicvideos</include>
+                    <include>viewPanelTextbox-ContainerCommons</include>
+                    <include>View_505_Panel</include>
                 </control>
                 <include content="keyboard select">
                     <param name="posx">87%</param>
