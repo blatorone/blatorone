@@ -580,3 +580,171 @@ msgstr ""
 msgctxt "#31259"
 msgid "Change Skin Colors"
 msgstr ""
+
+msgctxt "#31260"
+msgid "Enable Cross Key (Only Touch)"
+msgstr ""
+
+msgctxt "#31261"
+msgid "Homemenu Look"
+msgstr ""
+
+msgctxt "#31262"
+msgid "Grid"
+msgstr ""
+
+msgctxt "#31263"
+msgid "Slider"
+msgstr ""
+
+msgctxt "#31264"
+msgid "Side"
+msgstr ""
+
+msgctxt "#31265"
+msgid "Set Weather icons"
+msgstr ""
+
+msgctxt "#31266"
+msgid "Single image background"
+msgstr ""
+
+msgctxt "#31267"
+msgid "Multi-image background"
+msgstr ""
+
+msgctxt "#31268"
+msgid "Reset to default"
+msgstr ""
+
+msgctxt "#31269"
+msgid "Set Home Image/Path"
+msgstr ""
+
+msgctxt "#31270"
+msgid "Set Settings Image/Path"
+msgstr ""
+
+msgctxt "#31271"
+msgid "Set SettingsCategory Image/Path"
+msgstr ""
+
+msgctxt "#31272"
+msgid "Set Addonsettings Image/Path"
+msgstr ""
+
+msgctxt "#31273"
+msgid "Set FileBrowser Image/Path"
+msgstr ""
+
+msgctxt "#31274"
+msgid "Set FileManager Image/Path"
+msgstr ""
+
+msgctxt "#31275"
+msgid "Set Skinsettings  Image/Path"
+msgstr ""
+
+msgctxt "#31276"
+msgid "Set SettingsSystemInfo backgrounds Image/Path"
+msgstr ""
+
+msgctxt "#31277"
+msgid "Set AddonInfo Image/Path"
+msgstr ""
+
+msgctxt "#31278"
+msgid "Set AddonBrowser Image/Path"
+msgstr ""
+
+msgctxt "#31279"
+msgid "Set Programms Image/Path"
+msgstr ""
+
+msgctxt "#31280"
+msgid "Set Music Image/Path"
+msgstr ""
+
+msgctxt "#31281"
+msgid "Set Music Fullscreen Image/Path"
+msgstr ""
+
+msgctxt "#31282"
+msgid "Set Same for all Image/Path"
+msgstr ""
+
+msgctxt "#31283"
+msgid "Change Backgrounds"
+msgstr ""
+
+msgctxt "#31284"
+msgid "Backup / Restore"
+msgstr ""
+
+msgctxt "#31285"
+msgid "Restore"
+msgstr ""
+
+msgctxt "#31286"
+msgid "Highlight"
+msgstr ""
+
+msgctxt "#31287"
+msgid "Highlight Transparent"
+msgstr ""
+
+msgctxt "#31288"
+msgid "Label Color"
+msgstr ""
+
+msgctxt "#31289"
+msgid "Selected"
+msgstr ""
+
+msgctxt "#31290"
+msgid "Menu Button"
+msgstr ""
+
+msgctxt "#31291"
+msgid "Manual Input"
+msgstr ""
+
+msgctxt "#31292"
+msgid "Do You want to reset Colors ?"
+msgstr ""
+
+msgctxt "#31293"
+msgid "Disable startup intro"
+msgstr ""
+
+msgctxt "#31294"
+msgid "Extra Button on Homescreen"
+msgstr ""
+
+msgctxt "#31295"
+msgid "Extra Button on Homescreen edit"
+msgstr ""
+
+msgctxt "#31296"
+msgid "Video Files"
+msgstr ""
+
+msgctxt "#31297"
+msgid "Short Settings Menu"
+msgstr ""
+
+msgctxt "#31298"
+msgid "Advanced Settings"
+msgstr ""
+
+msgctxt "#31299"
+msgid "Gerneral Settings"
+msgstr ""
+
+msgctxt "#31300"
+msgid "App Settings"
+msgstr ""
+
+msgctxt "#31301"
+msgid "Homescreen Settings"
+msgstr ""

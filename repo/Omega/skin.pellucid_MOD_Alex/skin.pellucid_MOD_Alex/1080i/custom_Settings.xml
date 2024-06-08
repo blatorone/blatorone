@@ -129,9 +129,21 @@
                 <onleft>8000</onleft>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
+                    <control type="label" id="1000">
+                        <visible>Container(8000).Hasfocus(1)</visible>
+						<posx>12</posx>
+						<posy>0</posy>
+						<width>14-col</width>
+						<height>2-col</height>
+						<font>dialogTitle</font>
+						<aligny>center</aligny>
+						<align>center</align>
+						<label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[5][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+					</control>
+                
                 <control type="radiobutton" id="8">
                     <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Enable Home Button Further apart</description>
+                    <description>OSD Auto close</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31257]</label>
                     <onclick>Skin.ToggleSetting(OSDAutoClose)</onclick>
@@ -146,6 +158,27 @@
                     <onclick>Skin.SetNumeric(OSDAutoCloseTime)</onclick>
                     <enable>Skin.HasSetting(OSDAutoClose)</enable>
                 </control>
+                <control type="radiobutton" id="31">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Intro enable</description>
+                    <width>14-col</width>
+                    <label>31293</label>
+                    <onclick>Skin.Togglesetting(StartupIntro)</onclick>
+                    <onclick condition="Skin.HasSetting(StartupIntro)">Skin.SetString(StartupIntro,special://skin/extras/intro.mov)</onclick>
+                    <onclick condition="!Skin.HasSetting(StartupIntro)">Skin.Reset(StartupIntro)</onclick>
+                    <selected>Skin.HasSetting(StartupIntro)</selected>
+                </control>
+                <control type="label" id="1001">
+                        <visible>Container(8000).Hasfocus(1) + Integer.IsGreater(System.BatteryLevel,1)</visible>
+						<posx>12</posx>
+						<posy>0</posy>
+						<width>14-col</width>
+						<height>2-col</height>
+						<font>dialogTitle</font>
+						<aligny>center</aligny>
+						<align>center</align>
+						<label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31299][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+				</control>
                 <control type="radiobutton" id="1">
                     <visible>Container(8000).Hasfocus(1) + Integer.IsGreater(System.BatteryLevel,1)</visible>
                     <description>Enable Battery Level</description>
@@ -154,6 +187,33 @@
                     <onclick>Skin.Togglesetting(show_battery)</onclick>
                     <selected>Skin.HasSetting(show_battery)</selected>
                 </control>
+                <control type="radiobutton" id="6">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Enable Back Button for Touchscreen</description>
+                    <width>14-col</width>
+                    <label>31242</label>
+                    <onclick>Skin.Togglesetting(Touch)</onclick>
+                    <selected>Skin.HasSetting(Touch)</selected>
+                </control>
+                <control type="radiobutton" id="42">
+                    <visible>Container(8000).Hasfocus(1) + Skin.HasSetting(Touch)</visible>
+                    <description>Enable crosskey</description>
+                    <width>14-col</width>
+                    <label>- $LOCALIZE[31260]</label>
+                    <onclick>Skin.Togglesetting(crosskey)</onclick>
+                    <selected>Skin.HasSetting(crosskey)</selected>
+                </control>
+                <control type="label" id="1002">
+                        <visible>Container(8000).Hasfocus(1) + $EXP[hasWeather] | System.Platform.Android</visible>
+						<posx>12</posx>
+						<posy>0</posy>
+						<width>14-col</width>
+						<height>2-col</height>
+						<font>dialogTitle</font>
+						<aligny>center</aligny>
+						<align>center</align>
+						<label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31300][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+				</control>
                 <control type="radiobutton" id="2">
                     <visible>System.Platform.Android + Container(8000).Hasfocus(1)</visible>
                     <description>Android System allowed</description>
@@ -194,22 +254,19 @@
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
                 </control>
-                <control type="radiobutton" id="6">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Enable Back Button for Touchscreen</description>
-                    <width>14-col</width>
-                    <label>31242</label>
-                    <onclick>Skin.Togglesetting(Touch)</onclick>
-                    <selected>Skin.HasSetting(Touch)</selected>
-                </control>
-                <control type="radiobutton" id="42">
-                    <visible>Container(8000).Hasfocus(1) + Skin.HasSetting(Touch)</visible>
-                    <description>Enable crosskey</description>
-                    <width>14-col</width>
-                    <label>31260</label>
-                    <onclick>Skin.Togglesetting(crosskey)</onclick>
-                    <selected>Skin.HasSetting(crosskey)</selected>
-                </control>
+                
+                <control type="label" id="1003">
+                        <visible>Container(8000).Hasfocus(1)</visible>
+						<posx>12</posx>
+						<posy>0</posy>
+						<width>14-col</width>
+						<height>2-col</height>
+						<font>dialogTitle</font>
+						<aligny>center</aligny>
+						<align>center</align>
+						<label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31301][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+				</control>
+                
                 <control type="button" id="43">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Change Main Button Menu to Slider</description>
@@ -227,13 +284,29 @@
                     <onclick>Skin.Togglesetting(Further_apart)</onclick>
                     <selected>Skin.HasSetting(Further_apart)</selected>
                 </control>
+
+                <control type="togglebutton" id="113">
+                    <visible>Container(8000).Hasfocus(1) + !Skin.HasSetting(settings)</visible>
+                    <description>Big Settings button</description>
+                    <width>14-col</width>
+                    <label>31298</label>
+                    <onclick>Skin.Togglesetting(go_to_big_settings)</onclick>
+                    <onclick>ActivateWindow(Settings)</onclick>
+                    <selected>Skin.HasSetting(go_to_big_settings)</selected>
+                </control>
+
+
+
                 <control type="label" id="64">
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Set home background image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31269][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31269][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                     
                 </control>
                 <control type="button" id="65">
                     <visible>Container(8000).Hasfocus(2)</visible>
@@ -266,9 +339,12 @@
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Set settingsBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31270][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31270][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="69">
                     <visible>Container(8000).Hasfocus(2)</visible>
@@ -301,9 +377,12 @@
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Set settingscategorysettings background image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31271][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31271][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="73">
                     <visible>Container(8000).Hasfocus(2)</visible>
@@ -336,9 +415,12 @@
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Set DialogAddonSettingsBackground background image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31272][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31272][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="77">
                     <visible>Container(8000).Hasfocus(2)</visible>
@@ -371,9 +453,12 @@
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Set FileBrowserBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31273][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31273][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="81">
                     <visible>Container(8000).Hasfocus(2)</visible>
@@ -406,9 +491,12 @@
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Set FileManagerBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31274][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31274][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="85">
                     <visible>Container(8000).Hasfocus(2)</visible>
@@ -441,9 +529,12 @@
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Set SkinSettingsBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31275][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31275][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                     
                 </control>
                 <control type="button" id="89">
                     <visible>Container(8000).Hasfocus(2)</visible>
@@ -469,16 +560,19 @@
                     <width>14-col</width>
                     <label>31268</label>
                     <onclick>Skin.Reset(SkinSettingsBackground)</onclick>
-                    <textwidth>8-col</textwidth>
+                    
                 </control>
 
                 <control type="label" id="92">
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Set SettingsSystemInfoBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31276][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31276][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="93">
                     <visible>Container(8000).Hasfocus(2)</visible>
@@ -511,9 +605,12 @@
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Set DialogAddonInfoBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31277][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31277][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="97">
                     <visible>Container(8000).Hasfocus(2)</visible>
@@ -546,9 +643,12 @@
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Set AddonBrowserBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31278][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31278][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="101">
                     <visible>Container(8000).Hasfocus(2)</visible>
@@ -645,9 +745,12 @@
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Set musicfullscreenBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31281][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31281][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                     
                 </control>
                 <control type="button" id="105">
                     <visible>Container(8000).Hasfocus(2)</visible>
@@ -681,9 +784,12 @@
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>reset all</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31282][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31282][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="109">
                     <visible>Container(8000).Hasfocus(2)</visible>
@@ -708,9 +814,12 @@
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>reset all</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[10041][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[10041][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="112">
                     <visible>Container(8000).Hasfocus(2)</visible>

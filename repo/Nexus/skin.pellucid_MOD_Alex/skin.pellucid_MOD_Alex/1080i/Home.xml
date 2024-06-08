@@ -18,7 +18,7 @@
             	<posy>0</posy>
             	<width>2000</width>
             	<height>1500</height>
-				<colordiffuse>FFhighlight</colordiffuse>
+				<colordiffuse>00FFFFFF</colordiffuse>
 				<onleft>setfocus(9000,0)</onleft>
 				<onright>setfocus(9000,0)</onright>
 				<onup>setfocus(9000,0)</onup>
@@ -662,9 +662,15 @@
 							<description>Settings Disabled</description>
 							<label></label>
 							<onclick>ActivateWindow(1105)</onclick>
-						</item>	
+						</item>
 						<item>
-							<visible>!Skin.HasSetting(settings)</visible>
+							<visible>!Skin.HasSetting(settings) + Skin.HasSetting(set_short_settings)</visible>
+							<description>Settings Disabled</description>
+							<label></label>
+							<onclick>ActivateWindow(1105)</onclick>
+						</item>
+						<item>
+							<visible>!Skin.HasSetting(settings) + !Skin.HasSetting(set_short_settings)</visible>
 							<label></label>
 							<onclick>ActivateWindow(Settings)</onclick>
 						</item>		

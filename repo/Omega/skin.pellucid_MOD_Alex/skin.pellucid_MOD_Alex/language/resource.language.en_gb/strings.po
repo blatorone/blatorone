@@ -647,7 +647,7 @@ msgid "Set Skinsettings  Image/Path"
 msgstr ""
 
 msgctxt "#31276"
-msgid "Reset SettingsSystemINfo backgrounds to default"
+msgid "Set SettingsSystemInfo backgrounds Image/Path"
 msgstr ""
 
 msgctxt "#31277"
@@ -716,4 +716,36 @@ msgstr ""
 
 msgctxt "#31293"
 msgid "Disable startup intro"
+msgstr ""
+
+msgctxt "#31294"
+msgid "Extra Button on Homescreen"
+msgstr ""
+
+msgctxt "#31295"
+msgid "Extra Button on Homescreen edit"
+msgstr ""
+
+msgctxt "#31296"
+msgid "Video Files"
+msgstr ""
+
+msgctxt "#31297"
+msgid "Short Settings Menu"
+msgstr ""
+
+msgctxt "#31298"
+msgid "Advanced Settings"
+msgstr ""
+
+msgctxt "#31299"
+msgid "Gerneral Settings"
+msgstr ""
+
+msgctxt "#31300"
+msgid "App Settings"
+msgstr ""
+
+msgctxt "#31301"
+msgid "Homescreen Settings"
 msgstr ""
