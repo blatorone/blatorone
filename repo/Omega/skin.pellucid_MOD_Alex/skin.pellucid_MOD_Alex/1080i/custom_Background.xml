@@ -39,7 +39,7 @@
                 <posy>0</posy>
                 <width>14-col</width>
                 <height>2-row</height>
-                <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                <texture>colors/white.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -68,9 +68,12 @@
                 <control type="label" id="1">
                     <description>Set home background image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31269][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31269][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                     
                 </control>
                 <control type="button" id="2">
                     <description>Set home background image directory</description>
@@ -99,9 +102,12 @@
                 <control type="label" id="5">
                     <description>Set settingsBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31270][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31270][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="6">
                     <description>Set settingsBackground image directory</description>
@@ -130,9 +136,12 @@
                 <control type="label" id="9">
                     <description>Set settingscategorysettings background image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31271][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31271][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="10">
                     <description>Set SettingsCategoryBackground image directory</description>
@@ -161,9 +170,12 @@
                 <control type="label" id="13">
                     <description>Set DialogAddonSettingsBackground background image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31272][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31272][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="14">
                     <description>Set DialogAddonSettingsBackground image directory</description>
@@ -192,9 +204,12 @@
                 <control type="label" id="17">
                     <description>Set FileBrowserBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31273][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31273][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="18">
                     <description>Set FileBrowserBackground image directory</description>
@@ -223,9 +238,12 @@
                 <control type="label" id="21">
                     <description>Set FileManagerBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31274][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31274][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="22">
                     <description>Set FileManagerBackground image directory</description>
@@ -254,9 +272,12 @@
                 <control type="label" id="25">
                     <description>Set SkinSettingsBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31275][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31275][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                     
                 </control>
                 <control type="button" id="26">
                     <description>Set home background image directory</description>
@@ -279,15 +300,18 @@
                     <width>14-col</width>
                     <label>31268</label>
                     <onclick>Skin.Reset(SkinSettingsBackground)</onclick>
-                    <textwidth>8-col</textwidth>
+                    
                 </control>
 
                 <control type="label" id="29">
                     <description>Set SettingsSystemInfoBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31276][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31276][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="30">
                     <description>Set SettingsSystemInfoBackground image directory</description>
@@ -316,9 +340,12 @@
                 <control type="label" id="33">
                     <description>Set DialogAddonInfoBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31277][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31277][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="34">
                     <description>Set DialogAddonInfoBackground image directory</description>
@@ -347,9 +374,12 @@
                 <control type="label" id="37">
                     <description>Set AddonBrowserBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31278][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31278][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
                 <control type="button" id="38">
                     <description>Set AddonBrowserBackground image directory</description>
@@ -439,14 +469,17 @@
                 </control>
                 -->
 
-                <control type="label" id="49">
+                <control type="label" id="41">
                     <description>Set musicfullscreenBackground image directory</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31281][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31281][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                     
                 </control>
-                <control type="button" id="50">
+                <control type="button" id="42">
                     <description>Set musicfullscreenBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
@@ -454,7 +487,7 @@
                     <onclick>Skin.SetPath(musicfullscreenBackground)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
-                <control type="button" id="51">
+                <control type="button" id="43">
                     <description>Set musicfullscreenBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
@@ -462,7 +495,7 @@
                     <onclick>Skin.SetImage(musicfullscreenBackground)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
-                <control type="button" id="52">
+                <control type="button" id="44">
                     <description>Reset musicfullscreenBackground image directory</description>
                     <width>14-col</width>
                     <label>31268</label>
@@ -471,14 +504,17 @@
                 </control>
 
 
-                <control type="label" id="53">
+                <control type="label" id="45">
                     <description>reset all</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[31282][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31282][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
-                <control type="button" id="54">
+                <control type="button" id="46">
                     <description>Set Background for all image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
@@ -486,7 +522,7 @@
                     <onclick>Skin.SetPath(all)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
-                <control type="button" id="55">
+                <control type="button" id="47">
                     <description>Set Background for all image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
@@ -495,14 +531,17 @@
                     <textwidth>8-col</textwidth> 
                 </control>
 
-                <control type="label" id="100">
+                <control type="label" id="48">
                     <description>reset all</description>
                     <width>14-col</width>
-                    <label>[COLOR $VAR[highlight]]$LOCALIZE[10041][/COLOR]</label>
-                    <font>buttonTitle</font>
-                    <textwidth>8-col</textwidth> 
+                    <height>2-col</height>
+                    <aligny>center</aligny>
+					<align>center</align>
+                    <label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[10041][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+                    <font>dialogTitle</font>
+                    
                 </control>
-                <control type="button" id="101">
+                <control type="button" id="49">
                     <description>Reset home background image directory</description>
                     <width>14-col</width>
                     <label>10041</label>
