@@ -590,6 +590,16 @@
         <control type="group">
                 <posx>$PARAM[posx]</posx>
                 <posy>35%</posy>
+                <control type="button">
+                    <posx>-127</posx>
+                    <posy>-2</posy>
+                    <width>5-col</width>
+                    <height>7-col</height>
+                    <focusedcolor>00FFFFFF</focusedcolor>
+                    <texturefocus colordiffuse="00FFFFFF">Colors/white.png</texturefocus>
+                    <texturenofocus>00FFFFFF</texturenofocus>
+                    <aspectratio>stretch</aspectratio>
+                </control>
                 <!--row 1-->
                 <control type="button">
                     <description>1 button</description>
@@ -670,7 +680,7 @@
                     <height>100</height>
                     <align>center</align>
                     <onclick>setfocus($PARAM[focus])</onclick>
-                    <onclick>$PARAM[back]</onclick>
+                    <onclick>$PARAM[select]</onclick>
                     <onclick>Reloadskin</onclick>
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>

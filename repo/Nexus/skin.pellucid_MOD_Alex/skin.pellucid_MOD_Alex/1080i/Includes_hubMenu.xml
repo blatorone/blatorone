@@ -11,7 +11,7 @@
                 <effect type="fade" start="0" end="1000" time="200"/>
             </animation>
             <animation type="Conditional" condition="!controlgroup(9000).hasfocus">
-                <effect type="fade" start="100" end="0" time="100"/>
+                <effect type="fade" start="1000" end="0" time="100"/>
             </animation>
             
         </control>
@@ -55,7 +55,7 @@
             <control type="list" id="9001">
                 <posx>0</posx>
                 <posy>row-5-begin</posy>
-                <width>col-20-begin</width>
+                <width>col-5-begin</width>
                 <height>832</height>
                 <orientation>vertical</orientation>
                 <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
