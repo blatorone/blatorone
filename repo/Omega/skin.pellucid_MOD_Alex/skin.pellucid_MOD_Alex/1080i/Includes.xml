@@ -591,6 +591,7 @@
         <control type="group">
                 <posx>$PARAM[posx]</posx>
                 <posy>35%</posy>
+                <!--invisible button for background-->
                 <control type="button">
                     <posx>-127</posx>
                     <posy>-2</posy>
@@ -600,6 +601,7 @@
                     <texturefocus colordiffuse="00FFFFFF">Colors/white.png</texturefocus>
                     <texturenofocus>00FFFFFF</texturenofocus>
                     <aspectratio>stretch</aspectratio>
+                    <visible>Skin.HasSetting(crosskey)</visible>
                 </control>
                 <!--row 1-->
                 <control type="button">
