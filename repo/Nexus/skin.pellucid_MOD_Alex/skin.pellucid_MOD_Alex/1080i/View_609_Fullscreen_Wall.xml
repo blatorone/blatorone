@@ -8,7 +8,7 @@
 			
 			<include>Battery</include>
             <control type="panel" id="609">
-                
+                <viewtype label="$LOCALIZE[31315]">$LOCALIZE[31315]</viewtype>
                 <posx>0</posx>
 				<posy>75</posy>
 				<width>fullscreenWidth</width>

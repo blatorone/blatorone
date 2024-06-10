@@ -101,7 +101,7 @@
 						<control type="image">
 							<width>col-5-begin</width>
                         	<height>2-row</height>
-							<texture colordiffuse="$VAR[highlight]" border="4">Colors/white.png</texture>
+							<texture colordiffuse="$VAR[selected]" border="4">Colors/white.png</texture>
 							<animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
 						</control>
 						<control type="label">
@@ -219,7 +219,7 @@
 						</item>
 						-->
 						<item>
-							<label>versuch</label>
+							<label>31305</label>
 							<onclick>Container.SetViewMode(54)</onclick>
 							<visible>!Window.IsActive(videos) + !Window.IsActive(musicplaylist)</visible>
 							<visible>[Container.Content(addons) | Container.Content(albums) | Container.Content(songs) | Container.Content(artists) | Container.Content(genres) | Container.Content(years) | Window.IsActive(pictures) | Container.Content(files)] + !Skin.HasSetting(Disable.ShowCaseView)</visible>

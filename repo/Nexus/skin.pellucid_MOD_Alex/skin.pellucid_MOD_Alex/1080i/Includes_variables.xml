@@ -407,6 +407,10 @@
 		<value condition="!Skin.HasSetting(Disable.OverlayWatched) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 
+    <variable name="MusicListLabel4Var">
+		<value condition="Container.Content(albums)">$INFO[ListItem.Year]</value>
+		<value>$INFO[ListItem.Duration]</value>
+	</variable>
     
 </includes>
 

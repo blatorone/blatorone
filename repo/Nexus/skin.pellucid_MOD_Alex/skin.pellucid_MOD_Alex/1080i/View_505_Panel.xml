@@ -5,7 +5,7 @@
 			<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
 			
 			<control type="list" id="505">
-				<viewtype label="anders">wrap</viewtype>
+				<viewtype label="$LOCALIZE[31303]">$LOCALIZE[31303]</viewtype>
 				<left>72.5</left>
 				<top>335</top>
 				<width>1830</width>
