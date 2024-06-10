@@ -258,21 +258,7 @@
 					</control>
 				</focusedlayout>
 			</control>
-			<control type="scrollbar" id="50560">
-				<left>72</left>
-				<top>1066</top>
-				<width>1776</width>
-				<height>14</height>
-				<onup>505</onup>
-				<ondown condition="Control.IsVisible(616) + Integer.IsGreaterOrEqual(Container(505).NumPages,5)">616</ondown>
-				<ondown condition="!Integer.IsGreaterOrEqual(Container(505).NumPages,5) | Integer.IsGreaterOrEqual(Container(505).NumPages,5) + !Control.IsVisible(616)">4400</ondown>
-				<texturesliderbar colordiffuse="$VAR[highlight_Shadow]">Colors/listselect_fo.png</texturesliderbar>
-                    <texturesliderbackground colordiffuse="overlay">colors/black.png</texturesliderbackground>
-                    <texturesliderbarfocus colordiffuse="$VAR[highlight]">colors/white.png</texturesliderbarfocus>
-				<showonepage>false</showonepage>
-				<orientation>horizontal</orientation>
-				
-			</control>
+			
 		</control>
 	</include>
 	

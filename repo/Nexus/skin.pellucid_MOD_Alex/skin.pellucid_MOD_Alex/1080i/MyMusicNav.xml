@@ -69,6 +69,33 @@
                     <include>View_603_Music_JukeBox</include>
                     <include>View_609_Fullscreen_Wall</include>
                 </control>
+                <control type="button" id="3000">
+                <posx>0</posx>
+                <posy>500</posy>
+                <textwidth>352</textwidth>
+                <font>symbolLarge</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>1-col</width>
+                <label></label>
+                <label2></label2>
+                <textcolor>black</textcolor>
+                <focusedcolor>black</focusedcolor>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <onclick>setfocus(9000)</onclick>
+                <visible>skin.hassetting(Touch)</visible>
+            </control>
+            <include content="keyboard select">
+                    <param name="posx">87%</param>
+                    <param name="focus">9999</param>
+                    <param name="up">up</param>
+                    <param name="down">down</param>
+                    <param name="left">left</param>
+                    <param name="right">right</param>
+                    <param name="select">select</param>
+                    <param name="back">back</param>
+                </include>
             </control>
             <!--page scrollbar-->
             <control type="group" id="8000">

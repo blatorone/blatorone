@@ -166,7 +166,24 @@
                 <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
                 <onclick>setfocus(9999)</onclick>
-                <visible>skin.hassetting(Touch) + [control.hasfocus(500) | control.hasfocus(9001)]</visible>
+                <visible>skin.hassetting(Touch) + !window.isactive(1132) + [control.hasfocus(500) | control.hasfocus(9001)]</visible>
+            </control>
+            <control type="button" id="3000">
+                <posx>385</posx>
+                <posy>500</posy>
+                <textwidth>250</textwidth>
+                <font>symbolLarge</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>1-col</width>
+                <label></label>
+                <label2></label2>
+                <textcolor>black</textcolor>
+                <focusedcolor>black</focusedcolor>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <onclick>setfocus(9999)</onclick>
+                <visible>skin.hassetting(Touch) + !window.isactive(MyMusicNav)</visible>
             </control>
            <include content="keyboard select">
                         <param name="posx">30%</param>

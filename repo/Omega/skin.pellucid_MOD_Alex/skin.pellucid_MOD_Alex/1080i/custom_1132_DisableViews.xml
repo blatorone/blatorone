@@ -40,19 +40,36 @@
             </control>
 		</control>
 		<control type="button" id="8999">
-			<left>365</left>
-			<top>-11</top>
+			<left>0</left>
+			<top>0</top>
 			<width>64</width>
 			<height>48</height>
 			<label></label>
 			<font>symbolLarge</font>
-			<textcolor>grey</textcolor>
+			<textcolor>black</textcolor>
 			<focusedcolor>$VAR[highlight]</focusedcolor>
 			<onclick>Dialog.Close(1132)</onclick>
 			<texturefocus />
 			<texturenofocus />
-			<visible>system.getbool(input.enablemouse)</visible>
+			
 		</control>
+		<control type="button" id="3000">
+                <posx>385</posx>
+                <posy>500</posy>
+                <textwidth>250</textwidth>
+                <font>symbolLarge</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>1-col</width>
+                <label></label>
+                <label2></label2>
+                <textcolor>black</textcolor>
+                <focusedcolor>black</focusedcolor>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <onclick>Dialog.Close(1132)</onclick>
+                <visible>skin.hassetting(Touch) + window.isactive(1132)</visible>
+            </control>
 		<control type="group">
 			<include>WindowSettingsFadeAnimation</include>
 			<control type="label">
@@ -281,5 +298,6 @@
 				<onclick>ReloadSkin()</onclick>
 			</control>
 		</control>
+		
 	</controls>
 </window>
