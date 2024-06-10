@@ -55,20 +55,36 @@
 			</control>
             <control type="togglebutton" id="500">
                 <posy>row-5-begin</posy>
-                <texturefocus colordiffuse="$INFO[Skin.String(highlight_Shadow_color)]">Colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
                 <texturenofocus>textActive</texturenofocus>
-                <alttexturefocus colordiffuse="$INFO[Skin.String(highlight_Shadow_color)]">Colors/white.png</alttexturefocus>
+                <alttexturefocus colordiffuse="$VAR[highlight]">Colors/white.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
                 <width>4-col</width>
                 <label>View Mode</label>
-                <onclick condition="Container.Content(movies) | Container.Content(tvshows)">activateWindow(1114)</onclick>
+                <onclick>activateWindow(1130)</onclick>
                 <ondown>setfocus(9001,0)</ondown>
                 <onup>setfocus(9001,20)</onup>
                 <onright>9999</onright>
                 <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
-                
+                <visible>!Container.Content(addons)</visible>
             </control>
+            <control type="button" id="2">
+                <posy>row-5-begin</posy>
+                <textwidth>352</textwidth>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>4-col</width>
+                <ondown>setfocus(9001,0)</ondown>
+                <onup>setfocus(9001,20)</onup>
+                <onright>9999</onright>
+                <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
+                <visible>[Container.Content(addons) | Container.Content(albums) | Container.Content(songs) | Container.Content(artists) | Container.Content(genres) | Container.Content(years) | Window.IsActive(pictures) | Container.Content(files)] + !Skin.HasSetting(Disable.ShowCaseView)</visible>
+            </control>
+            
+
+            
             <control type="list" id="9001">
                 <posx>-23</posx>
                 <posy>row-7-begin</posy>
@@ -77,8 +93,10 @@
                 <orientation>vertical</orientation>
                 <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
                 <onright>9999</onright>
-                <ondown>500</ondown>
-                <onup>500</onup>
+                <ondown condition="control.Isvisible(500)">500</ondown>
+                <ondown condition="!control.Isvisible(500)">2</ondown>
+                <onup condition="control.Isvisible(500)">500</onup>
+                <onup condition="!control.Isvisible(500)">2</onup>
                 <itemlayout width="col-5-begin" height="2-row">
                     <control type="label">
                         <posx>col-1-begin</posx>
@@ -132,6 +150,38 @@
                     <include condition="String.Contains(container.folderpath,videodb://musicvideos/titles) | window.isactive(music) | window.isactive(radiochannels) | window.isactive(radioguide) | window.isactive(radiorecordings) | window.isactive(radiotimers) | window.isactive(musicplaylist)">skinshortcuts-group-musicsubmenu</include>
                     <include condition="[window.isactive(videos) + !String.Contains(container.folderpath,videodb://musicvideos/titles)] | window.isactive(tvchannels) | window.isactive(tvrecordings) | window.isactive(tvguide) | window.isactive(tvtimers) | window.isactive(videoplaylist)">skinshortcuts-group-videosubmenu</include>
                 </content>
+            </control>
+            <control type="button" id="3000">
+                <posx>1080</posx>
+                <posy>500</posy>
+                <textwidth>352</textwidth>
+                <font>symbolLarge</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>1-col</width>
+                <label></label>
+                <label2></label2>
+                <textcolor>black</textcolor>
+                <focusedcolor>black</focusedcolor>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <visible>skin.hassetting(Touch) + [!control.hasfocus(500) + !control.hasfocus(9001)]</visible>
+            </control>
+            <control type="button" id="3000">
+                <posx>380</posx>
+                <posy>500</posy>
+                <textwidth>250</textwidth>
+                <font>symbolLarge</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>1-col</width>
+                <label></label>
+                <label2></label2>
+                <textcolor>black</textcolor>
+                <focusedcolor>black</focusedcolor>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <visible>skin.hassetting(Touch) + [control.hasfocus(500) | control.hasfocus(9001)]</visible>
             </control>
            <include content="keyboard select">
                         <param name="posx">30%</param>

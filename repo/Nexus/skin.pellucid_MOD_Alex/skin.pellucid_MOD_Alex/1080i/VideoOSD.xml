@@ -10,6 +10,7 @@
             <font>pageTitle</font>
             <label>$INFO[System.Time]</label>
             <textcolor>textActive</textcolor>
+            <visible>!String.IsEqual(VideoPlayer.title,intro.mov)</visible>
         </control>
         <control type="label">
             <posx>col-1-begin</posx>
@@ -18,11 +19,13 @@
             <font>pageSubTitle</font>
             <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
             <textcolor>textActive</textcolor>
+            <visible>!String.IsEqual(VideoPlayer.title,intro.mov)</visible>
         </control>
         
         
 
         <control type="group">
+            <visible>!String.IsEqual(VideoPlayer.title,intro.mov)</visible>
             <posx>1236</posx>
             <posy>0</posy>
             <animation type="Windowopen">

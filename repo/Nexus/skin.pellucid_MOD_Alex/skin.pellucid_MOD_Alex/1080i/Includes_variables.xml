@@ -23,8 +23,8 @@
         <value condition="Window.isactive(Music) + !String.IsEmpty(container.foldername)">$INFO[container.foldername]</value>
         <value condition="Window.isactive(Music) + String.IsEmpty(container.foldername)">$LOCALIZE[14237]</value>
     	<value condition="Window.isactive(Weather)">$LOCALIZE[8]</value>
-		<value condition="Window.isactive(TVchannels) | Window.isactive(TVGuide)">$LOCALIZE[19020] [COLOR $VAR[highlight]]$LOCALIZE[31078][/COLOR]</value>
-		<value condition="Window.isactive(RadioChannels)">$LOCALIZE[19021] [COLOR $VAR[highlight]]$LOCALIZE[31078][/COLOR]</value>
+		<value condition="Window.isactive(TVchannels) | Window.isactive(TVGuide)">$LOCALIZE[19020] [COLOR $VAR[highlight]]$LOCALIZE[31307][/COLOR]</value>
+		<value condition="Window.isactive(RadioChannels)">$LOCALIZE[19021] [COLOR $VAR[highlight]]$LOCALIZE[31307][/COLOR]</value>
 		<value condition="Window.isactive(TVRecordings)">$LOCALIZE[19020] [COLOR $VAR[highlight]]$LOCALIZE[31165][/COLOR]</value>
 		<value condition="Window.isactive(MyPVRTimers.xml)">$LOCALIZE[31060] [COLOR $VAR[highlight]]$LOCALIZE[31087][/COLOR]</value>
 		<value condition="Window.isactive(programs)">$LOCALIZE[10506]</value>
@@ -330,5 +330,83 @@
 		<value condition="!String.IsEmpty(Skin.String(weathericons.ext))">$INFO[Skin.String(weathericons.ext)]</value>
 		<value>.png</value>
 	</variable>
+
+
+
+
+
+
+
+
+
+    <variable name="DisableHDIndicatorsLabelVar">
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),List) + Skin.HasSetting(noindicatorlist)">$LOCALIZE[16041]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FanartList) + Skin.HasSetting(noindicatorfanartlist)">$LOCALIZE[16041]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Gallery) + Skin.HasSetting(noindicatorgallery)">$LOCALIZE[16041]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigList) + Skin.HasSetting(noindicatorbiglist)">$LOCALIZE[16041]</value>
+		<value>$LOCALIZE[351]</value>
+	</variable>
+
+
+    <variable name="ArtworkLogoVar">
+		<value condition="Container.Content(seasons) | Container.Content(episodes)">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(albumartist.clearlogo))">$INFO[ListItem.Art(albumartist.clearlogo)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(artist.clearlogo))">$INFO[ListItem.Art(artist.clearlogo)]</value>
+		<value>$INFO[ListItem.Art(clearlogo)]</value>
+	</variable>
+
+    <!-- TopBar VARs -->
+	<variable name="NoTopBarLabelVar">
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),List) + !String.IsEmpty(Skin.String(50.NoTopBar))">$INFO[Skin.String(50.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),InfoWall) + !String.IsEmpty(Skin.String(51.NoTopBar))">$INFO[Skin.String(51.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + !String.IsEmpty(Skin.String(52.NoTopBar))">$INFO[Skin.String(52.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + !String.IsEmpty(Skin.String(53.NoTopBar))">$INFO[Skin.String(53.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCaseSquare) + !String.IsEmpty(Skin.String(54.NoTopBar))">$INFO[Skin.String(54.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),TriPanel) + !String.IsEmpty(Skin.String(55.NoTopBar))">$INFO[Skin.String(55.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Posters) + !String.IsEmpty(Skin.String(56.NoTopBar))">$INFO[Skin.String(56.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Shift) + !String.IsEmpty(Skin.String(57.NoTopBar))">$INFO[Skin.String(57.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Logo) + !String.IsEmpty(Skin.String(59.NoTopBar))">$INFO[Skin.String(59.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BannerWall) + !String.IsEmpty(Skin.String(58.NoTopBar))">$INFO[Skin.String(58.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Icons) + !String.IsEmpty(Skin.String(500.NoTopBar))">$INFO[Skin.String(500.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),LowList) + !String.IsEmpty(Skin.String(501.NoTopBar))">$INFO[Skin.String(501.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Episode) + !String.IsEmpty(Skin.String(502.NoTopBar))">$INFO[Skin.String(502.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Wall) + !String.IsEmpty(Skin.String(503.NoTopBar))">$INFO[Skin.String(503.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Gallery) + !String.IsEmpty(Skin.String(504.NoTopBar))">$INFO[Skin.String(504.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Panel) + !String.IsEmpty(Skin.String(505.NoTopBar))">$INFO[Skin.String(505.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigList) + !String.IsEmpty(Skin.String(507.NoTopBar))">$INFO[Skin.String(507.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),SongList) + !String.IsEmpty(Skin.String(508.NoTopBar))">$INFO[Skin.String(508.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + !String.IsEmpty(Skin.String(591.NoTopBar))">$INFO[Skin.String(591.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigInfo) + !String.IsEmpty(Skin.String(592.NoTopBar))">$INFO[Skin.String(592.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FanartList) + !String.IsEmpty(Skin.String(602.NoTopBar))">$INFO[Skin.String(602.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + !String.IsEmpty(Skin.String(609.NoTopBar))">$INFO[Skin.String(609.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),RightList) + !String.IsEmpty(Skin.String(506.NoTopBar))">$INFO[Skin.String(506.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + !String.IsEmpty(Skin.String(509.NoTopBar))">$INFO[Skin.String(509.NoTopBar)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MusicJukebox) + !String.IsEmpty(Skin.String(603.NoTopBar))">$INFO[Skin.String(603.NoTopBar)]</value>
+		<value>$LOCALIZE[16041]</value>
+    </variable>
+
+
+    <variable name="PosterThumbVar">
+		<value condition="Window.Next(home)" />
+		<value condition="Container.Content(genres) + !String.IsEmpty(Skin.String(moviegenreicons.path))">$INFO[Skin.String(moviegenreicons.path)]$INFO[ListItem.Label]$INFO[Skin.String(moviegenreicons.ext)]</value>
+		<value condition="Container.Content(genres) + !Skin.HasSetting(coloredflags)">$INFO[ListItem.Label,special://skin/extras/moviegenres/default/,.jpg]</value>
+		<value condition="Container.Content(genres) + Skin.HasSetting(coloredflags)">$INFO[ListItem.Label,special://skin/extras/moviegenres/colored/,.jpg]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
+		<value condition="!String.IsEmpty(Container.ListItem.Art(season.poster))">$INFO[Container.ListItem.Art(season.poster)]</value>
+		<value condition="!String.IsEmpty(Container.ListItem.Art(poster))">$INFO[Container.ListItem.Art(poster)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value condition="!String.IsEmpty(Container.ListItem.Art(tvshow.poster))">$INFO[Container.ListItem.Art(tvshow.poster)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
+
+    <variable name="OverlayVar">
+		<value condition="ListItem.IsResumable + !Skin.HasSetting(Disable.Resumable)">overlays/resumable.png</value>
+		<value condition="!Skin.HasSetting(Disable.OverlayUnwatched) + String.IsEqual(ListItem.Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
+		<value condition="!Skin.HasSetting(Disable.OverlayWatched) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
+	</variable>
+
+    
 </includes>
 

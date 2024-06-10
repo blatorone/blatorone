@@ -70,4 +70,19 @@
             <effect type="zoom" end="140" time="200" center="auto" tween="linear" easing="out"/>
         </animation>
     </include>
+
+
+
+
+
+<!--aeonnoxsilvio-->
+    <include name="ViewAnimation">
+		<animation effect="fade" time="360">Visible</animation>
+		<animation effect="fade" time="0">Hidden</animation>
+	</include>
+
+    <include name="WindowSettingsFadeAnimation">
+		<animation effect="fade" time="250" delay="100">WindowOpen</animation>
+		<animation effect="fade" time="50">WindowClose</animation>
+	</include>
 </includes>

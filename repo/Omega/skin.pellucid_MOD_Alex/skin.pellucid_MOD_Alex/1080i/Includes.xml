@@ -3,6 +3,7 @@
     <include file="Defaults.xml"/>
     <include file="Includes_grid.xml"/>
     <include file="Includes_variables.xml"/>
+    <include file="Includes_ViewSettings.xml"/>
     <include file="Includes_animations.xml"/>
     <include file="Includes_hubMenu.xml"/>
     <include file="Includes_hubOptionsItems.xml"/>
@@ -11,7 +12,30 @@
     <include file="View_Episodes.xml"/>
     <include file="View_Movies.xml"/>
     <include file="View_AddonPosters.xml"/>
+    <include file="View_50_List.xml"/>
+    <include file="View_51_InfoWall.xml"/>
+    <include file="View_52_Landscape.xml"/>
+    <include file="View_53_ShowCase.xml"/>
+    <include file="View_54_ShowCase.xml"/>
+    <include file="View_55_TriPanel.xml"/>
+    <include file="View_56_Posters.xml.xml"/>
+    <include file="View_57_Shift.xml"/>
+    <include file="View_58_BannerWall.xml"/>
+    <include file="View_59_Logo.xml"/>
+    <include file="View_500_Icons.xml"/>
+    <include file="View_501_LowList.xml"/>
+    <include file="View_502_Episode.xml"/>
+    <include file="View_503_Wall.xml"/>
+    <include file="View_504_Gallery.xml"/>
     <include file="View_505_Panel.xml"/>
+    <include file="View_506_RightList.xml"/>
+    <include file="View_507_BigList.xml"/>
+    <include file="View_508_SongList.xml"/>
+    <include file="View_509_MyFlix.xml"/>
+    <include file="View_591_BigFan.xml"/>
+    <include file="View_602_FanartList.xml"/>
+    <include file="View_603_Music_JukeBox.xml"/>
+    <include file="View_609_Fullscreen_Wall.xml"/>
     <include file="View_TVShows.xml"/>
     <include file="View_MusicGenres.xml"/>
     <include file="View_VideoFiles.xml"/>
@@ -31,6 +55,8 @@
     <constant name="DepthOSD">0.40</constant>
 	<constant name="DepthOSD+">0.44</constant>
     <include file="MyVideoNav"/>
+
+    
 
     <!--view type conditions-->
     <expression name="isVideoList">!String.Contains(container.folderpath,special://profile/playlists/video) + !String.Contains(container.folderpath,videodb://) + !String.Contains(container.folderpath,plugin://) | container.content(files) | String.IsEmpty(container.content) | container.content(addons) | container.content(videos) | container.content(episodes)</expression>
@@ -1038,6 +1064,36 @@
         <onleft>9000</onleft>
     </include>
 
+
+
+
+
+
+
+
+
+    <include name="ButtonCommonValues">
+		<width>375</width>
+		<height>60</height>
+		<textoffsetx>15</textoffsetx>
+		<textcolor>textActive</textcolor>
+		<focusedcolor>black</focusedcolor>
+		<texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+		<textwidth>300</textwidth>
+		<aligny>center</aligny>
+		<font>buttonTitle</font>
+		<radioposx>300</radioposx>
+	</include>
+
+
+
+
+
+
+
+
+
+
    <!--debugging-->
     <include name="DialogID">
         <animation type="conditional" condition="!player.playing" reversible="true">
@@ -1081,4 +1137,13 @@
             <visible>Skin.HasSetting(DebugGrid)</visible>
         </control>
     </include>
+
+
+
+
+
+
+
+    <!--aeonocsilvio-->
+    
 </includes>
