@@ -4,16 +4,10 @@
         <!--fanart-->
         <control type="group">
             <visible>String.Contains(Container.folderpath,plugin) + !$EXP[isVideoList]</visible>
-            <control type="image">
-                <include>dimensionsFullscreen</include>
-                <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
-                <fadetime>500</fadetime>
-                <colordiffuse>FF555555</colordiffuse>
-            </control>
+            
         </control>
         <control type="panel" id="50" width='18-col' height='100' condition='Skin.HasSetting(Touch)'>
-            
+            <viewtype label="$LOCALIZE[535]">$LOCALIZE[535]</viewtype>
             <posx>col-1-begin</posx>
             <posy>row-5-begin</posy>
             <onleft>9000</onleft>
@@ -28,7 +22,7 @@
                     <width>66</width>
                     <height>66</height>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture fallback="kodilogo.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                    <texture fallback="kodilogo.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
 					<colordiffuse>overlay</colordiffuse>
                 </control>
                 <control type="image">
@@ -86,7 +80,7 @@
                     <width>100</width>
                     <height>100</height>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture fallback="kodilogo.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                    <texture fallback="kodilogo.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
 					<colordiffuse>overlay</colordiffuse>
                 </control>
                 <control type="image">
@@ -144,7 +138,7 @@
                     <width>66</width>
                     <height>66</height>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture fallback="kodilogo.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                    <texture fallback="kodilogo.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
                     <animation type="focus" loop="false" reversible="false">
                         <effect type="fade" time="500"/>
                         <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
@@ -205,7 +199,7 @@
                     <width>100</width>
                     <height>100</height>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture fallback="kodilogo.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                    <texture fallback="kodilogo.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
                     <animation type="focus" loop="false" reversible="false">
                         <effect type="fade" time="500"/>
                         <effect type="rotatey" end="360" center="50" tween="back" easing="out" time="1000"/>

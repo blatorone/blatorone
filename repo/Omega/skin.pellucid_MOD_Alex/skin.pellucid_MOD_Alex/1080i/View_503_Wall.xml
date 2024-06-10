@@ -14,7 +14,7 @@
 	        </control>
 			<include>Battery</include>
             <control type="panel" id="503">
-                
+                <viewtype label="$LOCALIZE[31304]">$LOCALIZE[31304]</viewtype>
                 <posx>90</posx>
 				<posy>row-5-begin</posy>
 				<width>1800</width>

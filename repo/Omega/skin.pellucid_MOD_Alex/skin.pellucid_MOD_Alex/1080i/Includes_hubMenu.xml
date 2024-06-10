@@ -67,7 +67,7 @@
                 <onup>setfocus(9001,20)</onup>
                 <onright>9999</onright>
                 <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
-                <visible>!Container.Content(addons)</visible>
+                <visible>Container.Content(videos) | container.Content(movies) | container.Content(TvShows) | container.content(seasons)</visible>
             </control>
             <control type="button" id="2">
                 <posy>row-5-begin</posy>
@@ -116,7 +116,7 @@
                         <posy>0</posy>
                         <width>col-5-begin</width>
                         <height>2-row</height>
-                        <texture colordiffuse="$INFO[Skin.String(highlight_Shadow_color)]">Colors/white.png</texture>
+                        <texture colordiffuse="$VAR[highlight]">Colors/white.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">
