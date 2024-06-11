@@ -92,4 +92,11 @@
 		<animation effect="fade" time="250" delay="100">WindowOpen</animation>
 		<animation effect="fade" time="50">WindowClose</animation>
 	</include>
+
+    <include name="ShowCaseModDiscAnimation">
+		<animation type="Conditional" condition="Control.IsVisible(4444)" reversible="false">
+			<effect type="slide" start="1200,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" />
+			<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
+		</animation>
+	</include>
 </includes>

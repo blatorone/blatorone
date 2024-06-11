@@ -8,10 +8,7 @@
     <include file="Includes_hubMenu.xml"/>
     <include file="Includes_hubOptionsItems.xml"/>
     <include file="View_LiveTVChannels.xml"/>
-    <include file="View_Seasons.xml"/>
-    <include file="View_Episodes.xml"/>
-    <include file="View_Movies.xml"/>
-    <include file="View_AddonPosters.xml"/>
+
     <include file="View_50_List.xml"/>
     <include file="View_51_InfoWall.xml"/>
     <include file="View_52_Landscape.xml"/>
@@ -1085,6 +1082,15 @@
 		<radioposx>300</radioposx>
 	</include>
 
+    <include name="ShowCaseInfoPanelButtonsValues">
+		<height>85</height>
+		<width>501</width>
+		<textoffsetx>15</textoffsetx>
+		<aligny>top</aligny>
+		<font>buttonTitle</font>
+		<textcolor>textActive</textcolor>
+		<focusedcolor>$VAR[Home]</focusedcolor>
+	</include>
 
 
 

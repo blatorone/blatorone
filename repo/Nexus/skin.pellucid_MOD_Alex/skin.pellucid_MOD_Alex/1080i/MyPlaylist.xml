@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">59</defaultcontrol>
+    <defaultcontrol always="true">9500</defaultcontrol>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <include>fadeInOut</include>
-	<views>50,51,52,53,54,55,58,59</views>
+	<views>50,51,52,53,54,55,56,57,59,500,501,502,503,504,505,506,507,508,509,591,602,603</views>
     <controls>
         <include>globalBackground</include>
         <!--fanart-->
@@ -44,15 +44,28 @@
                 <include>contentOpen</include>
                 <onright>setfocus(7000)</onright>
                 <!--source content-->
-                <control type="group" id="9500">
-                    <include>videofiles</include>
-                    <include>movies</include>
-					<include>addonposters</include>
-                    <include>tvshows</include>
-                    <include>seasons</include>
-                    <include>episodes</include>
-                    <include>musicvideos</include>
-                </control>
+                
+                    <control type="group" id="9500">
+                    <include>View_502_Episode</include>
+                    
+                    </control>
+                    <control type="button" id="3000">
+                <posx>0</posx>
+                <posy>500</posy>
+                <textwidth>352</textwidth>
+                <font>symbolLarge</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>1-col</width>
+                <label></label>
+                <label2></label2>
+                <textcolor>black</textcolor>
+                <focusedcolor>black</focusedcolor>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <onclick>setfocus(9000)</onclick>
+                <visible>skin.hassetting(Touch)</visible>
+            </control>
             </control>
             <!--page scrollbar-->
             <control type="group" id="8000">

@@ -411,6 +411,14 @@
 		<value condition="Container.Content(albums)">$INFO[ListItem.Year]</value>
 		<value>$INFO[ListItem.Duration]</value>
 	</variable>
+
+    <variable name="CaseBackPathVar">
+		<value condition="!Skin.HasSetting(useclearcases)">thumbs/boxes/default/back/</value>
+		<value condition="Skin.HasSetting(useclearcases)">thumbs/boxes/clearcases/back/</value>
+	</variable>
     
 </includes>
+
+
+
 

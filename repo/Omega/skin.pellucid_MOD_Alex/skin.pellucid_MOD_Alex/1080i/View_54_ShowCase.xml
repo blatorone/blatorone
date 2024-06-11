@@ -1,51 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	
 	<include name="View_54_ShowCase">
-		<control type="label" id="4443">
-			<label>$LOCALIZE[31966]</label>
-			<include>HiddenObject</include>
-			<visible>![Container.OnNext | Container.OnPrevious]</visible>
-			<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
-			<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-			<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
-			<visible>Control.IsVisible(54) + Skin.HasSetting(Enable.ShowCaseSquare.ArtistCDArt) + Container.Content(artists) + [!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.1.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.2.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.3.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.4.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.5.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.6.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.7.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.8.Art(discart)))]</visible>
-		</control>
-		<control type="label" id="4444">
-			<label>$LOCALIZE[31966]</label>
-			<include>HiddenObject</include>
-			<visible>![Container.OnNext | Container.OnPrevious]</visible>
-			<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
-			<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-			<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
-			<visible>Control.IsVisible(54) + Skin.HasSetting(Enable.ShowCaseSquare.CDArt) + Container.Content(albums) + [!String.IsEmpty(ListItem(0).Art(album.discart)) | !String.IsEmpty(ListItem(0).Art(discart))]</visible>
-		</control>
-		<control type="label" id="4445">
-			<label>$LOCALIZE[31966]</label>
-			<include>HiddenObject</include>
-			<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
-			<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-			<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
-			<visible>Control.IsVisible(54) + Skin.HasSetting(Enable.ShowCaseSquare.CDArt) + Container.Content(albums) + [!String.IsEmpty(ListItem(0).Art(album.discart)) | !String.IsEmpty(ListItem(0).Art(discart))]</visible>
-		</control>
-		<control type="label" id="4446">
-			<label>$LOCALIZE[31966]</label>
-			<include>HiddenObject</include>
-			<visible>![Container.OnNext | Container.OnPrevious]</visible>
-			<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
-			<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-			<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
-			<visible>Control.IsVisible(54) + Skin.HasSetting(Enable.ShowCaseSquare.CDArt) + Container.Content(songs)</visible>
-		</control>
-		<control type="label" id="4447">
-			<label>$LOCALIZE[31966]</label>
-			<include>HiddenObject</include>
-			<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
-			<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-			<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
-			<visible>Control.IsVisible(54) + Skin.HasSetting(Enable.ShowCaseSquare.CDArt) + Container.Content(songs) + [!String.IsEmpty(ListItem(0).Art(album.discart)) | !String.IsEmpty(ListItem(0).Art(discart))]</visible>
-		</control>
-		<control type="group">
+			<control type="group">
 			<visible>Control.IsVisible(54) + !Window.IsActive(addoninformation)</visible>
+			<control type="image">
+						<visible>string.isequal(Container.Viewmode,$LOCALIZE[31305])</visible>
+			    		<include>ViewAnimation</include>
+	            		<include>dimensionsFullscreen</include>
+	            		<texture fallback="backgroundimage.jpg">$INFO[listitem.thumb]</texture>
+	            		<colordiffuse>FF555555</colordiffuse>
+	            		<aspectratio>scale</aspectratio>
+						<fadetime>250</fadetime>
+	        		</control>
 			<camera x="960" y="810" />
 			<include>ViewAnimation</include>
 			<top>-30</top>
@@ -649,25 +616,25 @@
 					<top>162</top>
 					<visible>Container.Content(albums)</visible>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[515]:[/COLOR][CR]$INFO[ListItem.Genre]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[515]:[/COLOR][CR]$INFO[ListItem.Genre]</label>
 						<width>486</width>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>!String.IsEmpty(ListItem.Genre)</visible>
 					</control>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[515]:[/COLOR][CR]$LOCALIZE[31103]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[515]:[/COLOR][CR]$LOCALIZE[31103]</label>
 						<width>486</width>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>String.IsEmpty(ListItem.Genre)</visible>
 					</control>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[21899]:[/COLOR][CR]$INFO[ListItem.Property(Album_Label)]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[21899]:[/COLOR][CR]$INFO[ListItem.Property(Album_Label)]</label>
 						<width>486</width>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>!String.IsEmpty(ListItem.Property(Album_Label))</visible>
 					</control>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[21899]:[/COLOR][CR]$LOCALIZE[31103]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[21899]:[/COLOR][CR]$LOCALIZE[31103]</label>
 						<width>486</width>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>String.IsEmpty(ListItem.Property(Album_Label))</visible>
@@ -678,22 +645,22 @@
 					<top>162</top>
 					<visible>Container.Content(albums)</visible>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[175]:[/COLOR][CR]$INFO[ListItem.Property(Album_Mood)]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[175]:[/COLOR][CR]$INFO[ListItem.Property(Album_Mood)]</label>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>!String.IsEmpty(ListItem.Property(Album_Mood))</visible>
 					</control>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[175]:[/COLOR][CR]$LOCALIZE[31103]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[175]:[/COLOR][CR]$LOCALIZE[31103]</label>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>String.IsEmpty(ListItem.Property(Album_Mood))</visible>
 					</control>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[176]:[/COLOR][CR]$INFO[ListItem.Property(Album_Style)]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[176]:[/COLOR][CR]$INFO[ListItem.Property(Album_Style)]</label>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>!String.IsEmpty(ListItem.Property(Album_Style))</visible>
 					</control>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[176]:[/COLOR][CR]$LOCALIZE[31103]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[176]:[/COLOR][CR]$LOCALIZE[31103]</label>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>String.IsEmpty(ListItem.Property(Album_Style))</visible>
 					</control>
@@ -715,7 +682,7 @@
 					<pagecontrol>95462</pagecontrol>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
 					<include>ShowCaseInfoPanelButtonsValues</include>
-					<textcolor>$VAR[ThemeLabelColor]</textcolor>
+					<textcolor>$VAR[Home]</textcolor>
 					<visible>Container.Content(albums)</visible>
 				</control>
 				<control type="textbox">
@@ -728,7 +695,7 @@
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
 					<pagecontrol>95462</pagecontrol>
 					<include>ShowCaseInfoPanelButtonsValues</include>
-					<textcolor>$VAR[ThemeLabelColor]</textcolor>
+					<textcolor>$VAR[Home]</textcolor>
 					<visible>Container.Content(artists)</visible>
 				</control>
 				<control type="scrollbar" id="95462">
@@ -743,7 +710,7 @@
 					<ondown>50</ondown>
 					<texturesliderbackground colordiffuse="1AFFFFFF">colors/white50.png</texturesliderbackground>
 					<texturesliderbar colordiffuse="1AFFFFFF">colors/white.png</texturesliderbar>
-					<texturesliderbarfocus colordiffuse="$VAR[ThemeLabelColor]">colors/white.png</texturesliderbarfocus>
+					<texturesliderbarfocus colordiffuse="$VAR[Home]">colors/white.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 				</control>
 				<control type="image">
@@ -766,37 +733,37 @@
 					<height>360</height>
 					<visible>Container.Content(artists)</visible>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[21893]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Born)]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[21893]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Born)]</label>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>!String.IsEmpty(ListItem.Property(Artist_Born))</visible>
 					</control>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[21894]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Formed)]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[21894]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Formed)]</label>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>!String.IsEmpty(ListItem.Property(Artist_Formed))</visible>
 					</control>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[21897]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Died)]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[21897]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Died)]</label>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>!String.IsEmpty(ListItem.Property(Artist_Died))</visible>
 					</control>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[21896]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Disbanded)]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[21896]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Disbanded)]</label>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>!String.IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
 					</control>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[21898]:[/COLOR][CR]$INFO[ListItem.Property(Artist_YearsActive)]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[21898]:[/COLOR][CR]$INFO[ListItem.Property(Artist_YearsActive)]</label>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>!String.IsEmpty(ListItem.Property(Artist_YearsActive))</visible>
 					</control>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[175]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Mood)]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[175]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Mood)]</label>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>!String.IsEmpty(ListItem.Property(Artist_Mood))</visible>
 					</control>
 					<control type="button">
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[176]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Style)]</label>
+						<label>[COLOR $VAR[Home]]$LOCALIZE[176]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Style)]</label>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>!String.IsEmpty(ListItem.Property(Artist_Style))</visible>
 					</control>
@@ -929,5 +896,14 @@
 			</animation>
 			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.8.Art(discart)))</visible>
 		</control>
+		<control type="image">
+						<visible>string.isequal(Container.Viewmode,$LOCALIZE[31966])</visible>
+			    		<include>ViewAnimation</include>
+	            		<include>dimensionsFullscreen</include>
+	            		<texture fallback="backgroundimage.jpg">$INFO[listitem.icon]</texture>
+	            		<colordiffuse>FF555555</colordiffuse>
+	            		<aspectratio>scale</aspectratio>
+						<fadetime>250</fadetime>
+	        		</control>
 	</include>
 </includes>

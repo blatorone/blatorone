@@ -67,7 +67,7 @@
                 <onup>setfocus(9001,20)</onup>
                 <onright>9999</onright>
                 <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
-                <visible>Container.Content(videos) | container.Content(movies) | container.Content(TvShows) | container.content(seasons)</visible>
+                <visible>Container.Content(videos) | container.Content(movies) | container.Content(tvshows) | container.content(seasons) | Container.Content(episodes)</visible>
             </control>
             <control type="button" id="2">
                 <posy>row-5-begin</posy>
@@ -80,7 +80,7 @@
                 <onup>setfocus(9001,20)</onup>
                 <onright>9999</onright>
                 <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
-                <visible>[Container.Content(addons) | Container.Content(albums) | Container.Content(songs) | Container.Content(artists) | Container.Content(genres) | Container.Content(years) | Window.IsActive(pictures) | Container.Content(files)] + !Skin.HasSetting(Disable.ShowCaseView)</visible>
+                <visible>[Container.Content(addons) | Container.Content(albums) | Container.Content(songs) | Container.Content(artists) | Container.Content(genres) | Container.Content(years) | Window.IsActive(pictures) | Container.Content(files)] + !Skin.HasSetting(Disable.ShowCaseView) | window.IsActive(AddonBrowser)</visible>
             </control>
             
 

@@ -3,9 +3,17 @@
     <include name="View_50_List">
         <!--fanart-->
         <control type="group">
-            <visible>String.Contains(Container.folderpath,plugin) + !$EXP[isVideoList]</visible>
+            <control type="image">
+						<visible>string.isequal(Container.Viewmode,$LOCALIZE[535])</visible>
+			    		<include>ViewAnimation</include>
+	            		<include>dimensionsFullscreen</include>
+	            		<texture>backgroundimage.jpg</texture>
+	            		<colordiffuse>FF555555</colordiffuse>
+	            		<aspectratio>scale</aspectratio>
+						<fadetime>250</fadetime>
+	        		</control>
             
-        </control>
+        
         <control type="panel" id="50" width='18-col' height='100' condition='Skin.HasSetting(Touch)'>
             <viewtype label="$LOCALIZE[535]">$LOCALIZE[535]</viewtype>
             <posx>col-1-begin</posx>
@@ -253,6 +261,7 @@
                     <label></label>
                 </control>
             </focusedlayout>
+        </control>
         </control>
     </include>
 </includes>

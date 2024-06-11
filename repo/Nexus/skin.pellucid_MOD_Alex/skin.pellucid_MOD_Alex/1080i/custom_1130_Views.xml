@@ -101,7 +101,7 @@
 						<control type="image">
 							<width>col-5-begin</width>
                         	<height>2-row</height>
-							<texture colordiffuse="$VAR[selected]" border="4">Colors/white.png</texture>
+							<texture colordiffuse="$VAR[highlight]" border="4">Colors/white.png</texture>
 							<animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
 						</control>
 						<control type="label">
@@ -194,12 +194,7 @@
 							<visible>Window.IsActive(videos)</visible>
 							<visible>Container.Content(episodes) + !Skin.HasSetting(Disable.EpisodeView)</visible>
 						</item>
-						<item>
-							<label>$LOCALIZE[31305]</label>
-							<onclick>Container.SetViewMode(53)</onclick>
-							<visible>Window.IsActive(videos)</visible>
-							<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons) | Container.Content(genres) | Container.Content(sets)] + !Skin.HasSetting(Disable.ShowCaseView)</visible>
-						</item>
+						
 						<item>
 							<label>$LOCALIZE[31079]</label>
 							<onclick>Container.SetViewMode(57)</onclick>
@@ -218,6 +213,12 @@
 							<visible>[Container.Content(genres) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(sets) | Container.Content(seasons) | Container.Content(musicvideos)] + !Skin.HasSetting(Disable.PostersView)</visible>
 						</item>
 						-->
+						<item>
+							<label>$LOCALIZE[31305]</label>
+							<onclick>Container.SetViewMode(53)</onclick>
+							<visible>Window.IsActive(videos)</visible>
+							<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons) | Container.Content(genres) | Container.Content(sets)] + !Skin.HasSetting(Disable.ShowCaseView)</visible>
+						</item>
 						<item>
 							<label>31305</label>
 							<onclick>Container.SetViewMode(54)</onclick>
@@ -354,7 +355,7 @@
                 <textcolor>black</textcolor>
                 <focusedcolor>black</focusedcolor>
                 <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[selected]">Colors/white.png</texturenofocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
                 <onclick>Dialog.Close(1130)</onclick>
                 <visible>skin.hassetting(Touch) + [control.hasfocus(500) | control.hasfocus(9001)]</visible>
             </control>

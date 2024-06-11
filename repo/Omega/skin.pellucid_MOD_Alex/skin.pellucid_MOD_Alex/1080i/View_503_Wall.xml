@@ -3,16 +3,17 @@
 	<!-- Wall -->
 	<include name="View_503_Wall">
 		<control type="group">
-			<visible>Control.IsVisible(503) + !Window.IsActive(addoninformation)</visible>
-			<include>ViewAnimation</include>
-			<control type="image">
-	            <include>dimensionsFullscreen</include>
-	            <texture fallback="backgroundimage.jpg">$INFO[listitem.art(fanart)]</texture>
-	            <colordiffuse>FF555555</colordiffuse>
-	            <aspectratio>scale</aspectratio>
-				<fadetime>250</fadetime>
-	        </control>
+			
 			<include>Battery</include>
+			<control type="image">
+						<visible>string.isequal(Container.Viewmode,$LOCALIZE[31304])</visible>
+			    		<include>ViewAnimation</include>
+	            		<include>dimensionsFullscreen</include>
+	            		<texture fallback="backgroundimage.jpg">$INFO[listitem.art(fanart)]</texture>
+	            		<colordiffuse>FF555555</colordiffuse>
+	            		<aspectratio>scale</aspectratio>
+						<fadetime>250</fadetime>
+	        		</control>
             <control type="panel" id="503">
                 <viewtype label="$LOCALIZE[31304]">$LOCALIZE[31304]</viewtype>
                 <posx>90</posx>
