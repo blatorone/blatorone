@@ -262,7 +262,7 @@
 	<include name="pageHeader">
         
 		<control type="group">
-        <visible>Control.IsVisible(50)</visible>
+        <visible>Control.IsVisible(50) + !window.isactive(1130)</visible>
 			<posx>col-1-begin</posx>
             <posy>row-2-begin</posy>
 			<!--title-->
@@ -310,7 +310,7 @@
     <include name="pageHeadervideonav">
         
 		<control type="group">
-        <visible>!Control.IsVisible(50)</visible>
+        <visible>!Control.IsVisible(50) + !window.isactive(1130)</visible>
 			<posx>col-1-begin</posx>
             <posy>960</posy>
 			<!--title-->
@@ -1142,7 +1142,21 @@
 		<focusedcolor>$VAR[Home]</focusedcolor>
 	</include>
 
-
+    <include name="MediaMenuTop">
+		<top>80</top>
+		<width>400</width>
+		<height>1080</height>
+		<onleft>9050</onleft>
+		<onright>ClearProperty(MediaMenu,Home)</onright>
+		<onright>50</onright>
+		<onup>9050</onup>
+		<ondown>9957</ondown>
+		<onback>ClearProperty(MediaMenu,Home)</onback>
+		<onback>50</onback>
+		<include condition="Skin.HasSetting(KioskMode.Enabled)">KioskModeButton</include>
+		<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(1128) | Window.IsVisible(1130) | Window.IsVisible(1131) | Window.IsVisible(1132)" reversible="true">Conditional</animation>
+		
+	</include>
 
 
 

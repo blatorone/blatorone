@@ -76,7 +76,7 @@
 			
                 </control>
                 <control type="group">
-					<visible>!Control.IsVisible(50)</visible>
+					<visible>!Control.IsVisible(50) + !window.isactive(1130)</visible>
 					<include>ViewAnimation</include>
 					
 					<!-- SETS -->
@@ -127,17 +127,15 @@
 								<label>$LOCALIZE[180]: $INFO[ListItem.Duration]       $LOCALIZE[31160]: $INFO[ListItem.EndTimeResume]</label>
 							</control>
 							<control type="label">
-									<top>38</top>
-									<width>856</width>
-									<height>22</height>
-									<align>center</align>
-									<font>menuTitle2</font>
-									<shadowcolor>shadow</shadowcolor>
-									<label>$INFO[ListItem.Genre]</label>
-									<textoffsetx>30</textoffsetx>
-									<visible>Control.IsVisible(52) + [Container.Content(movies) + !Skin.HasSetting(Disable.Landscape.MovieGenre)] | Control.IsVisible(53) + [Container.Content(movies) + !Skin.HasSetting(Disable.Showcase.MovieGenre)] | Control.IsVisible(53) + [Container.Content(tvshows) + Skin.HasSetting(Enable.Showcase.TVShowGenre)] | Control.IsVisible(52) + [Container.Content(tvshows) + Skin.HasSetting(Enable.Landscape.TVShowGenre)] | Control.IsVisible(503) + [Container.Content(movies) + !Skin.HasSetting(Disable.Wall.MovieGenre)] | Control.IsVisible(503) + [Container.Content(tvshows) + Skin.HasSetting(Enable.Wall.TVShowGenre)]</visible>
-							</control>
-							
+								<width>1020</width>
+								<height>46</height>
+								<posy>80</posy>
+								<align>center</align>
+								<font>menuTitle2</font>
+								<scroll>true</scroll>
+								<textcolor>$VAR[Home]</textcolor>
+								<label>$INFO[ListItem.Genre]</label>
+							</control>							
 							
 						</control>
 					</control>
@@ -154,10 +152,10 @@
                 <label2></label2>
                 <textcolor>black</textcolor>
                 <focusedcolor>black</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[highlight]">colors/listselect_fo.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">colors/listselect_fo.png</texturenofocus>
                 <onclick>setfocus(9000)</onclick>
-                <visible>skin.hassetting(Touch) + [!control.hasfocus(500) + !control.hasfocus(9001)]</visible>
+                <visible>skin.hassetting(Touch) + [!control.hasfocus(500) + !control.hasfocus(9001)]  + !window.isactive(1130)</visible>
             </control>
             
                 <include content="keyboard select">
@@ -205,6 +203,8 @@
             
 			
         </control>
+		
+		<include>MediaMenuTop</include>
 		<include>pageHeadervideonav</include>
 		<include>pageHeader</include>
         <!--mini window-->

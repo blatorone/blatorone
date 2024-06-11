@@ -16,7 +16,7 @@
             
         </control>
 		<control type="button" id="3000">
-                <posx>385</posx>
+                <posx>384</posx>
                 <posy>500</posy>
                 <textwidth>250</textwidth>
                 <font>symbolLarge</font>
@@ -27,8 +27,8 @@
                 <label2></label2>
                 <textcolor>black</textcolor>
                 <focusedcolor>black</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturenofocus>
                 <onclick>Dialog.Close(1130)</onclick>
                 <visible>skin.hassetting(Touch) + window.isactive(1130)</visible>
         </control>
@@ -49,7 +49,7 @@
                 <posy>-200</posy>
                 <width>584</width>
                 <height>1500</height>
-                <texture>colors/white.png</texture>
+                <texture>colors/listselect_fo.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -86,8 +86,8 @@
 					<height>900</height>
 					<onleft>Dialog.Close(1130)</onleft>
 					<onright>Dialog.Close(1130)</onright>
-					<ondown>9012</ondown>
-					<onup>9012</onup>
+					<ondown>9000</ondown>
+					<onup>9000</onup>
 					<itemlayout width="400" height="60">
 						<control type="label">
 							<width>col-5-begin</width>
@@ -323,27 +323,19 @@
 							<onclick>Container.SetViewMode(505)</onclick>
 							<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] + !Skin.HasSetting(Disable.PanelView)</visible>
 						</item>
+						<item>
+							<label>$LOCALIZE[5]</label>
+							<posx>20</posx>
+							<onclick>ActivateWindow(1132)</onclick>
+							<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
+						</item>
+					
 					</content>
 				</control>
-				<control type="button" id="9012">
-					<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-					<top>1024</top>
-					<width>400</width>
-					<align>center</align>
-					<textoffsetx>30</textoffsetx>
-					<font>buttontitle</font>
-					<label>5</label>
-					<focusedcolor>black</focusedcolor>
-					<texturefocus />
-					<onleft>9000</onleft>
-					<onright>9000</onright>
-					<onup>setfocus(9000,20)</onup>
-					<ondown>SetFocus(9000,0,absolute)</ondown>
-					<onclick>ActivateWindow(1132)</onclick>
-				</control>
+				
 			</control>
 			<control type="button" id="3000">
-                <posx>385</posx>
+                <posx>384</posx>
                 <posy>500</posy>
                 <textwidth>250</textwidth>
                 <font>symbolLarge</font>
@@ -359,6 +351,7 @@
                 <onclick>Dialog.Close(1130)</onclick>
                 <visible>skin.hassetting(Touch) + [control.hasfocus(500) | control.hasfocus(9001)]</visible>
             </control>
+			
 		</control>
 		
 	</controls>

@@ -65,10 +65,10 @@
                 <label2></label2>
                 <textcolor>black</textcolor>
                 <focusedcolor>black</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturenofocus>
                 <onclick>setfocus(9000)</onclick>
-                <visible>skin.hassetting(Touch)</visible>
+                <visible>skin.hassetting(Touch)  + !window.isactive(1130)</visible>
             </control>
             </control>
             <!--page scrollbar-->

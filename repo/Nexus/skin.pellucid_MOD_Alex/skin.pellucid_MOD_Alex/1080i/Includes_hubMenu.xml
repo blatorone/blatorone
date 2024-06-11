@@ -28,16 +28,18 @@
             </animation>
             
             <control type="image">
+                <visible>!window.isactive(1130)</visible>
                 <posx>-200</posx>
                 <posy>-200</posy>
                 <width>584</width>
                 <height>1500</height>
-                <texture>colors/white.png</texture>
+                <texture>colors/listselect_fo.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--logo-->
 			<control type="group">
+                <visible>!window.isactive(1130)</visible>
 				<posx>col-1-begin</posx>
                 <posy>row-2-begin</posy>
 	            <control type="label">
@@ -53,50 +55,77 @@
                
                 
 			</control>
-            <control type="togglebutton" id="500">
-                <posy>row-5-begin</posy>
+            
+            <control type="grouplist" id="500">
+            <posy>row-5-begin</posy>
+            <ondown>setfocus(9001,0)</ondown>
+                <onup>setfocus(9001,20)</onup>
+                <onright>9999</onright>
+                <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
+            <control type="button" id="501">
                 <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
                 <texturenofocus>textActive</texturenofocus>
                 <alttexturefocus colordiffuse="$VAR[highlight]">Colors/white.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
-                <width>4-col</width>
-                <label>View Mode</label>
+                <width>383</width>
+				<textwidth>383</textwidth>
+                <label>$INFO[Container.Viewmode,$LOCALIZE[31306] ]</label>
                 <onclick>activateWindow(1130)</onclick>
-                <ondown>setfocus(9001,0)</ondown>
-                <onup>setfocus(9001,20)</onup>
-                <onright>9999</onright>
-                <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
-                <visible>Container.Content(videos) | container.Content(movies) | container.Content(tvshows) | container.content(seasons) | Container.Content(episodes)</visible>
+                <visible>Container.Content(videos) + !window.isactive(1130) | container.Content(movies) + !window.isactive(1130) | container.Content(tvshows) + !window.isactive(1130) | container.content(seasons) + !window.isactive(1130) | Container.Content(episodes) + !window.isactive(1130)</visible>
             </control>
+            
             <control type="button" id="2">
-                <posy>row-5-begin</posy>
-                <textwidth>352</textwidth>
+                <textwidth>383</textwidth>
                 <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
-                <width>4-col</width>
-                <ondown>setfocus(9001,0)</ondown>
-                <onup>setfocus(9001,20)</onup>
-                <onright>9999</onright>
-                <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
-                <visible>[Container.Content(addons) | Container.Content(albums) | Container.Content(songs) | Container.Content(artists) | Container.Content(genres) | Container.Content(years) | Window.IsActive(pictures) | Container.Content(files)] + !Skin.HasSetting(Disable.ShowCaseView) | window.IsActive(AddonBrowser)</visible>
+                <width>383</width>
+                <visible>[Container.Content(addons)  + !window.isactive(1130) | Container.Content(albums)  + !window.isactive(1130) | Container.Content(songs)  + !window.isactive(1130) | Container.Content(artists)  + !window.isactive(1130) | Container.Content(genres)  + !window.isactive(1130) | Container.Content(years)  + !window.isactive(1130) | Window.IsActive(pictures)  + !window.isactive(1130) | Container.Content(files)] + !Skin.HasSetting(Disable.ShowCaseView)  + !window.isactive(1130) | window.IsActive(AddonBrowser) + !window.isactive(1130)</visible>
+            </control>
+             
+             <control type="button" id="3">
+			    <description>Sort by button</description>
+			    <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <texturenofocus>textActive</texturenofocus>
+                <alttexturefocus colordiffuse="$VAR[highlight]">Colors/white.png</alttexturefocus>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>383</width>
+				<textwidth>383</textwidth>
+			    <label>103</label>
+		    </control>
+		    <control type="togglebutton" id="4">
+			    <description>Sort asc</description>
+			    <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <texturenofocus>textActive</texturenofocus>
+                <alttexturefocus colordiffuse="$VAR[highlight]">Colors/white.png</alttexturefocus>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>383</width>
+				<textwidth>383</textwidth>
+			    <label>31110</label>
+			    <altlabel>31050</altlabel>
+			    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+		    </control>
             </control>
             
-
+            
             
             <control type="list" id="9001">
+             <visible>!window.isactive(1130)</visible>
+
                 <posx>-23</posx>
-                <posy>row-7-begin</posy>
-                <width>col-5-begin</width>
+                <posy>row-12-begin</posy>
+                <width>406</width>
                 <height>832</height>
                 <orientation>vertical</orientation>
                 <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
                 <onright>9999</onright>
-                <ondown condition="control.Isvisible(500)">500</ondown>
-                <ondown condition="!control.Isvisible(500)">2</ondown>
-                <onup condition="control.Isvisible(500)">500</onup>
-                <onup condition="!control.Isvisible(500)">2</onup>
+                <ondown condition="control.Isvisible(501)">501</ondown>
+                <ondown condition="!control.Isvisible(501)">2</ondown>
+                <onup condition="control.Isvisible(501)">4</onup>
+                <onup condition="!control.Isvisible(501)">4</onup>
                 <itemlayout width="col-5-begin" height="2-row">
                     <control type="label">
                         <posx>col-1-begin</posx>
@@ -112,15 +141,16 @@
                 </itemlayout>
                 <focusedlayout width="col-5-begin" height="2-row">
 					<control type="image">
+                        <visible>!window.isactive(contextmenu) + !control.hasfocus(501) + !control.hasfocus(2) + !control.hasfocus(3) + !control.hasfocus(4)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>col-5-begin</width>
+                        <width>406</width>
                         <height>2-row</height>
-                        <texture colordiffuse="$VAR[highlight]">Colors/white.png</texture>
+                        <texture condition="!control.hasfocus(501) | control.hasfocus(2) | !control.hasfocus(3) | !control.hasfocus(4)" colordiffuse="$VAR[highlight]">Colors/white.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">
-                        <visible>!control.hasfocus(500) + !window.isactive(contextmenu)</visible>
+                        <visible>!window.isactive(contextmenu) + !control.hasfocus(501) + !control.hasfocus(2) + !control.hasfocus(3) + !control.hasfocus(4)</visible>
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
                         <width>4-col-gutter</width>
@@ -132,7 +162,7 @@
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>
                     <control type="label">
-                        <visible>control.hasfocus(500) | window.isactive(contextmenu)</visible>
+                        <visible>control.hasfocus(501) | window.isactive(contextmenu) | control.hasfocus(2) | control.hasfocus(3) | control.hasfocus(4)</visible>
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
                         <width>4-col-gutter</width>
@@ -152,7 +182,7 @@
                 </content>
             </control>
             <control type="button" id="3000">
-                <posx>385</posx>
+                <posx>384</posx>
                 <posy>500</posy>
                 <textwidth>250</textwidth>
                 <font>symbolLarge</font>
@@ -163,28 +193,12 @@
                 <label2></label2>
                 <textcolor>black</textcolor>
                 <focusedcolor>black</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturenofocus>
                 <onclick>setfocus(9999)</onclick>
-                <visible>skin.hassetting(Touch) + !window.isactive(1132) + [control.hasfocus(500) | control.hasfocus(9001)]</visible>
+                <visible>skin.hassetting(Touch) + !window.isactive(1132) + [control.hasfocus(500) | control.hasfocus(9001)] | skin.hassetting(Touch) + !window.isactive(MyMusicNav)</visible>
             </control>
-            <control type="button" id="3000">
-                <posx>385</posx>
-                <posy>500</posy>
-                <textwidth>250</textwidth>
-                <font>symbolLarge</font>
-                <align>center</align>
-                <aligny>center</aligny>
-                <width>1-col</width>
-                <label></label>
-                <label2></label2>
-                <textcolor>black</textcolor>
-                <focusedcolor>black</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
-                <onclick>setfocus(9999)</onclick>
-                <visible>skin.hassetting(Touch) + !window.isactive(MyMusicNav)</visible>
-            </control>
+            
            <include content="keyboard select">
                         <param name="posx">30%</param>
                         <param name="focus">9001</param>
