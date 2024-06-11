@@ -11,7 +11,7 @@
             <control type="image">
                 <include>dimensionsFullscreen</include>
                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Container.Art(artist.fanart)]</texture>
+                <texture background="true" fallback="backgroundimage.png" border="0">$INFO[Container.Art(artist.fanart)]</texture>
 				<fadetime>500</fadetime>
                 <colordiffuse>55ffffff</colordiffuse>
             </control>
@@ -80,11 +80,29 @@
 				<control type="group">
 					<left>410</left>
 					<top>1010</top>
+                    <control type="image">
+                    			<posx>-450</posx>
+                    			<posy>-3</posy>
+                    			<width>fullscreenwidth</width>
+                    			<height>136</height>
+                    			<texture>colors/listselect_fo.png</texture>
+                    			<colordiffuse>$VAR[highlight]</colordiffuse>
+                    			<aspectratio>stretch</aspectratio>
+                			</control>
+							<control type="image">
+                    			<posx>-450</posx>
+                    			<posy>-3</posy>
+                    			<width>fullscreenwidth</width>
+                    			<height>136</height>
+                    			<texture>colors/listselect_fo.png</texture>
+                    			<colordiffuse>$VAR[highlight]</colordiffuse>
+                    			<aspectratio>stretch</aspectratio>
+                			</control>
 					<control type="label">
 						<width>1100</width>
 						<height>48</height>
 						<align>center</align>
-						<font>regular</font>
+						<font>menuTitle2</font>
 						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<textoffsetx>30</textoffsetx>
@@ -94,7 +112,7 @@
 						<width>1100</width>
 						<height>30</height>
 						<align>center</align>
-						<font>regular</font>
+						<font>menuTitle2</font>
 						<label>$VAR[FloorLabel2Var]</label>
 						<textoffsetx>30</textoffsetx>
 					</control>
@@ -111,7 +129,7 @@
 							<height>90</height>
 							<align>center</align>
 							<label>$INFO[ListItem.Year]</label>
-							<font>regular</font>
+							<font>menuTitle2</font>
 							<wrapmultiline>true</wrapmultiline>
 						</control>
 					</control>
@@ -156,16 +174,7 @@
 					<align>right</align>
 					<orientation>horizontal</orientation>
 					<visible>Container.Content(albums) | Container.Content(songs)</visible>
-					<control type="image">
-						<width>198</width>
-						<include>MediaFlagValues</include>
-						<texture>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[ListItem.FileExtension,,.png]</texture>
-					</control>
-					<control type="image">
-						<width>198</width>
-						<include>MediaFlagValues</include>
-						<texture fallback="flags/rating/empty.png">$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
-					</control>
+					
 					<control type="label">
 						<width>198</width>
 						<height>90</height>

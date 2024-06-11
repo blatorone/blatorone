@@ -19,10 +19,7 @@
 		<height>525</height>
 		<onleft>53</onleft>
 		<onright>53</onright>
-		<onup condition="!ListItem.IsParentFolder">4401</onup>
-		<onup condition="ListItem.IsCollection">62</onup>
-		<ondown condition="Control.IsVisible(95360)">95360</ondown>
-		<ondown condition="!Control.IsVisible(95360)">4400</ondown>
+		<onup>9000</onup>
 		<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
 		<viewtype label="31305">bigwrap</viewtype>
 		<pagecontrol>95360</pagecontrol>
@@ -110,15 +107,7 @@
 		
 		<control type="group">
 			<visible>Control.IsVisible(53) + !Container.Content(genres)</visible>
-			<control type="image">
-						<visible>string.isequal(Container.Viewmode,$LOCALIZE[31305])</visible>
-			    		<include>ViewAnimation</include>
-	            		<include>dimensionsFullscreen</include>
-	            		<texture fallback="backgroundimage.jpg">$INFO[listitem.thumb]</texture>
-	            		<colordiffuse>FF555555</colordiffuse>
-	            		<aspectratio>scale</aspectratio>
-						<fadetime>250</fadetime>
-	        		</control>
+			
 			<control type="label" id="4444">
 				<description>ShowCase Open Case Movies</description>
 				<label>$LOCALIZE[31966]</label>

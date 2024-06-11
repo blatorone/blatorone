@@ -3,15 +3,7 @@
     <include name="View_502_Episode">
         <!--fanart-->
         <control type="group">
-            <control type="image">
-						<visible>string.isequal(Container.Viewmode,$LOCALIZE[535])</visible>
-			    		<include>ViewAnimation</include>
-	            		<include>dimensionsFullscreen</include>
-	            		<texture>backgroundimage.jpg</texture>
-	            		<colordiffuse>FF555555</colordiffuse>
-	            		<aspectratio>scale</aspectratio>
-						<fadetime>250</fadetime>
-	        		</control>
+            
             
         
         <control type="panel" id="502" width='18-col' height='100' condition='Skin.HasSetting(Touch)'>

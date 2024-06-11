@@ -7,14 +7,18 @@
     <controls>
         <include>globalBackground</include>
         <!--fanart-->
+        
         <control type="group">
+            <!--fanart-->
             <control type="image">
-                <include>dimensionsFullscreen</include>
-                <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture background="true" border="0">$INFO[Listitem.art(fanart)]</texture>
-                <fadetime>500</fadetime>
-                <colordiffuse>22ffffff</colordiffuse>
-            </control>
+						
+			    		<include>ViewAnimation</include>
+	            		<include>dimensionsFullscreen</include>
+	            		<texture fallback="backgroundimage.jpg">$INFO[listitem.thumb]</texture>
+	            		<colordiffuse>FF555555</colordiffuse>
+	            		<aspectratio>scale</aspectratio>
+						<fadetime>250</fadetime>
+	        </control>
             <!--Battery Level-->
             <include>Battery</include>
             <!--Backbutton touchscreen-->

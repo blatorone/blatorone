@@ -3,15 +3,7 @@
 	<include name="View_505_Panel">
 		<control type="group">
 			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(files) | Container.Content(episodes)</visible>
-			<control type="image">
-						<visible>string.isequal(Container.Viewmode,$LOCALIZE[31303])</visible>
-			    		<include>ViewAnimation</include>
-	            		<include>dimensionsFullscreen</include>
-	            		<texture fallback="backgroundimage.jpg">$INFO[listitem.art(fanart)]</texture>
-	            		<colordiffuse>FF555555</colordiffuse>
-	            		<aspectratio>scale</aspectratio>
-						<fadetime>250</fadetime>
-	        		</control>
+			
 			<control type="list" id="505">
 				<viewtype label="$LOCALIZE[31303]">$LOCALIZE[31303]</viewtype>
 				<left>72.5</left>
@@ -19,10 +11,10 @@
 				<width>1830</width>
 				<height>840</height>
 				<onup>SetProperty(MediaMenu,True,Home)</onup>
-				<onup>SetFocus(9050)</onup>
+				<onup>9000</onup>
 				<ondown condition="Control.IsVisible(50560)">50560</ondown>
 				<ondown condition="!Control.IsVisible(50560)">4400</ondown>
-				<onleft>9000</onleft>
+				<onleft>505</onleft>
 				<onright>505</onright>
 				<preloaditems>2</preloaditems>
 				<pagecontrol>50560</pagecontrol>

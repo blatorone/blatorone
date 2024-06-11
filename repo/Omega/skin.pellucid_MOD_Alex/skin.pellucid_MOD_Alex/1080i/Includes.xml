@@ -260,7 +260,9 @@
     </include>
 	<!--page header-->
 	<include name="pageHeader">
+        
 		<control type="group">
+        <visible>Control.IsVisible(50)</visible>
 			<posx>col-1-begin</posx>
             <posy>row-2-begin</posy>
 			<!--title-->
@@ -302,6 +304,54 @@
 	            <font>menuTitle2</font>
 	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
 	            <textcolor>textActive</textcolor>
+	        </control>
+		</control>
+	</include>
+    <include name="pageHeadervideonav">
+        
+		<control type="group">
+        <visible>!Control.IsVisible(50)</visible>
+			<posx>col-1-begin</posx>
+            <posy>960</posy>
+			<!--title-->
+			<control type="label">
+	            <posx>-80</posx>
+	            <posy>0</posy>
+	            <width>18-col</width>
+	            <font>sectionTitle</font>
+	            <label>$VAR[listTitle]</label>
+	            <textcolor>$VAR[Home]</textcolor>
+	        </control>
+	        <!--subtitle-->
+	        <control type="label">
+	            <posx>-80</posx>
+	            <posy>26</posy>
+	            <width>12-col</width>
+				<height>2-row</height>
+	            <font>menuTitle2</font>
+	            <label>$VAR[listSubTitle]</label>
+	            <textcolor>$VAR[Home]</textcolor>
+	        </control>
+			<!--time-->
+			<control type="label">
+	            <posx>1808</posx>
+	            <posy>0</posy>
+	            <width>12-col</width>
+	            <align>right</align>
+	            <font>sectionTitle</font>
+	            <label>[B]$INFO[System.Time][/B]</label>
+	            <textcolor>$VAR[Home]</textcolor>
+	        </control>
+			<!--date-->
+	        <control type="label">
+	            <posx>1808</posx>
+	            <posy>26</posy>
+	            <width>12-col</width>
+				<height>2-row</height>
+				<align>right</align>
+	            <font>menuTitle2</font>
+	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
+	            <textcolor>$VAR[Home]</textcolor>
 	        </control>
 		</control>
 	</include>

@@ -896,14 +896,6 @@
 			</animation>
 			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.8.Art(discart)))</visible>
 		</control>
-		<control type="image">
-						<visible>string.isequal(Container.Viewmode,$LOCALIZE[31966])</visible>
-			    		<include>ViewAnimation</include>
-	            		<include>dimensionsFullscreen</include>
-	            		<texture fallback="backgroundimage.jpg">$INFO[listitem.icon]</texture>
-	            		<colordiffuse>FF555555</colordiffuse>
-	            		<aspectratio>scale</aspectratio>
-						<fadetime>250</fadetime>
-	        		</control>
+		
 	</include>
 </includes>
