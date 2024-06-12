@@ -152,11 +152,12 @@
                 <control type="button" id="3000">
                 <posx>0</posx>
                 <posy>500</posy>
-                <textwidth>352</textwidth>
+                <textwidth>30</textwidth>
                 <font>symbolLarge</font>
                 <align>center</align>
                 <aligny>center</aligny>
-                <width>1-col</width>
+                <width>30</width>
+                <textoffsetx>2</textoffsetx>
                 <label></label>
                 <label2></label2>
                 <textcolor>$VAR[selected]</textcolor>
@@ -166,6 +167,25 @@
                 <onclick>setfocus(9000)</onclick>
                 <visible>skin.hassetting(Touch)  + !window.isactive(1130)</visible>
             </control>
+            <control type="button" id="3002">
+			<animation effect="fade" start="0" end="100" time="2145" condition="skin.hassetting(Touch) + [controlgroup(500).hasfocus | controlgroup(9000).hasfocus]" reversible="true">Conditional</animation>
+                <posx>384</posx>
+                <posy>500</posy>
+                <textwidth>30</textwidth>
+                <font>symbolLarge</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>30</width>
+                <label></label>
+                <label2></label2>
+                <textcolor>$VAR[selected]</textcolor>
+                <focusedcolor>$VAR[selected]</focusedcolor>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <textoffsetx>2</textoffsetx>
+				<onclick>Dialog.Close(1132)</onclick>
+				<visible>skin.hassetting(Touch) + [controlgroup(500).hasfocus | controlgroup(9000).hasfocus]</visible>
+        </control>
             <include content="keyboard select">
                     <param name="posx">87%</param>
                     <param name="focus">9999</param>

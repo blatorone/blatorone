@@ -301,12 +301,7 @@
 							<onclick>ActivateWindow(1132)</onclick>
 							<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
 						</item>
-						<item>
-							<label2></label2>
-							<posx>20</posx>
-							<onclick>Dialog.Close(1130)</onclick>
-							<visible>skin.hassetting(Touch) + [controlgroup(9000).hasfocus | window.isactive(1130)] + !window.isactive(1132) + !window.isactive(MyMusicNav)</visible>
-						</item>
+						
 					
 					</content>
 				</control>
