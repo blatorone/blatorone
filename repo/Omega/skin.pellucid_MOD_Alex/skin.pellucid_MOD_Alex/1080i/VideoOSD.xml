@@ -316,6 +316,7 @@
                     <param name="left">activatewindow(PVROSDChannels)</param>
                     <param name="right">activatewindow(PVROSDChannels)</param>
                     <param name="select">select</param>
+                    <param name="visible">skin.hassetting(Touch)</param>
                 </include>
                 <control type="scrollbar" id="61">
                     <include>scrollbarwidth</include>

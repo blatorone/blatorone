@@ -662,6 +662,7 @@
 
     <include name="keyboard select">
         <control type="group">
+                <visible>$PARAM[visible]</visible>
                 <posx>$PARAM[posx]</posx>
                 <posy>35%</posy>
                 <!--invisible button for background-->
@@ -791,6 +792,7 @@
 
     <include name="keyboard select osd">
         <control type="group">
+                <visible>$PARAM[visible]</visible>
                 <posx>-100%</posx>
                 <posy>25%</posy>
                 <!--row 1-->
@@ -944,6 +946,17 @@
     </include>
     <include name="pvrguidewidth2">
         <width>24-col</width>
+    </include>
+
+    <include name="view_503_posx">
+        <include  condition="Skin.HasSetting(Touch)">view_503_posx1</include>
+        <include  condition="!Skin.HasSetting(Touch)">view_503_posx2</include>
+    </include>
+    <include name="view_503_posx1">
+        <width>1008</width>
+    </include>
+    <include name="view_503_posx2">
+        <width>fullscreenWidth</width>
     </include>
 
     <include name="scrollbarwidth">

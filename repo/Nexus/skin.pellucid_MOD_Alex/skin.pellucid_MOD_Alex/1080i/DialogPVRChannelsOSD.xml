@@ -165,6 +165,7 @@
                     <param name="left"></param>
                     <param name="right"></param>
                     <param name="select">select</param>
+					<param name="visible">skin.hassetting(Touch)</param>
     		</include>
 		</control>
 	</controls>

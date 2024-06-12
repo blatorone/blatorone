@@ -29,8 +29,7 @@
 
         <!--page container group-->
         <control type="group">
-            <!--shift page for certain modal dialogs-->
-            <include>modalDialogContentShift</include>
+            
             <!--Backbutton touchscreen-->
             <include>Backbuttoncross</include>
             
@@ -76,7 +75,7 @@
 			
                 </control>
                 <control type="group">
-					<visible>!Control.IsVisible(50) + !window.isactive(1130)</visible>
+					<visible>!Control.IsVisible(50) + !window.isactive(1130) + !controlgroup(500).hasfocus</visible>
 					<include>ViewAnimation</include>
 					
 					<!-- SETS -->
@@ -144,21 +143,25 @@
                 <control type="button" id="3000">
                 <posx>0</posx>
                 <posy>500</posy>
-                <textwidth>352</textwidth>
+                <textwidth>30</textwidth>
                 <font>symbolLarge</font>
                 <align>center</align>
                 <aligny>center</aligny>
-                <width>1-col</width>
+                <width>30</width>
                 <label></label>
                 <label2></label2>
                 <textcolor>$VAR[selected]</textcolor>
-                <focusedcolor>$VAR[selected]</focusedcolor>
+                <focusedcolor>green</focusedcolor>
                 <texturefocus colordiffuse="$VAR[highlight]">colors/listselect_fo.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[highlight]">colors/listselect_fo.png</texturenofocus>
-                <onclick>setfocus(9000)</onclick>
-                <visible>skin.hassetting(Touch) + [!control.hasfocus(500) + !control.hasfocus(9001)]  + !window.isactive(1130)</visible>
+                <textoffsetx>2</textoffsetx>
+				<onclick>setfocus(9000)</onclick>
+                <visible>skin.hassetting(Touch) + !controlgroup(500).hasfocus + !controlgroup(9000).hasfocus + !window.isactive(1130) + !window.isactive(MyMusicNav)</visible>
             </control>
-            
+           
+			
+			
+			
                 <include content="keyboard select">
                     <param name="posx">87%</param>
                     <param name="focus">9999</param>
@@ -168,7 +171,34 @@
                     <param name="right">right</param>
                     <param name="select">select</param>
                     <param name="back">back</param>
+					<param name="visible">skin.hassetting(Touch) + !controlgroup(500).hasfocus + !controlgroup(9001).hasfocus + !window.isactive(1130) + !window.isactive(1132) + !window.isactive(MyMusicNav)</param>
+
                 </include>
+				<include content="keyboard select">
+                    <param name="posx">87%</param>
+                    <param name="focus">9000</param>
+                    <param name="up">up</param>
+                    <param name="down">down</param>
+                    <param name="left">left</param>
+                    <param name="right">right</param>
+                    <param name="select">select</param>
+                    <param name="back">back</param>
+					<param name="visible">skin.hassetting(Touch) + [controlgroup(500).hasfocus | controlgroup(9001).hasfocus | window.isactive(1130)] + !window.isactive(1132) + !window.isactive(MyMusicNav)</param>
+
+                </include>
+				<include content="keyboard select">
+                    <param name="posx">87%</param>
+                    <param name="focus">9012</param>
+                    <param name="up">up</param>
+                    <param name="down">down</param>
+                    <param name="left">left</param>
+                    <param name="right">right</param>
+                    <param name="select">select</param>
+                    <param name="back">back</param>
+					<param name="visible">skin.hassetting(Touch) + window.isactive(1132)</param>
+
+                </include>
+				
             </control>
             <!--page scrollbar-->
             <control type="group" id="8000">
@@ -221,5 +251,7 @@
             <include>WindowID</include>
             <label>MyVideoNav.xml path: $INFO[container.folderpath] folder: $INFO[container.foldername] content: $INFO[container.content]</label>
         </control>
+		
     </controls>
+	
 </window>

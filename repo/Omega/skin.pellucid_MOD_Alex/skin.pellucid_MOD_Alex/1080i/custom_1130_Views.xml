@@ -2,75 +2,20 @@
 <window id="1130" type="dialog">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
-		<control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <colordiffuse>d5FFFFFF</colordiffuse>
-            <aspectratio>stretch</aspectratio>
-			<animation type="Conditional" condition="controlgroup(9000).hasfocus">
-                <effect type="fade" start="0" end="1000" time="200"/>
-            </animation>
-            <animation type="Conditional" condition="!controlgroup(9000).hasfocus">
-                <effect type="fade" start="1000" end="0" time="100"/>
-            </animation>
-            
-        </control>
-		<control type="button" id="3000">
-                <posx>384</posx>
-                <posy>500</posy>
-                <textwidth>250</textwidth>
-                <font>symbolLarge</font>
-                <align>center</align>
-                <aligny>center</aligny>
-                <width>1-col</width>
-                <label></label>
-                <label2></label2>
-                <textcolor>$VAR[selected]</textcolor>
-                <focusedcolor>$VAR[selected]</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturenofocus>
-                <onclick>Dialog.Close(1130)</onclick>
-                <visible>skin.hassetting(Touch) + window.isactive(1130)</visible>
-        </control>
-        <control type="group" id="9000">
-            <animation type="windowopen">
-                <effect type="slide" start="-1084" end="0" tween="sine" delay="500" time="400"/>
-            </animation>
-			<animation type="windowclose">
-                <effect type="fade" start="100" end="0" time="0"/>
-            </animation>
-            
-            <animation type="Conditional" condition="!controlgroup(9000).hasfocus">
-                <effect type="slide" start="0" end="-1084" tween="sine" time="400"/>
-            </animation>
-        </control>
+
             <control type="image">
-                <posx>-200</posx>
-                <posy>-200</posy>
-                <width>584</width>
+                <posx></posx>
+                <posy></posy>
+                <width>384</width>
                 <height>1500</height>
-                <texture>colors/listselect_fo.png</texture>
+                <texture>colors/white.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(1132)" reversible="false">Conditional</animation>
-			<control type="button" id="8999">
-				<left>365</left>
-				<top>-11</top>
-				<width>64</width>
-				<height>48</height>
-				<label>close</label>
-				<font>buttonTitle</font>
-				<textcolor>$VAR[selected]</textcolor>
-				<focusedcolor>$VAR[highlight]</focusedcolor>
-				<onclick>Dialog.Close(1130)</onclick>
-				<texturefocus />
-				<texturenofocus />
-				
-			</control>
 			<control type="group">
-				<include>WindowSettingsFadeAnimation</include>
+				
 				<control type="label">
 					<top>80</top>
 					<width>400</width>
@@ -96,6 +41,15 @@
 							<textoffsetx>15</textoffsetx>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
+						<control type="label">
+							<width>col-5-begin</width>
+                        	<height>2-row</height>
+							<textoffsetx>15</textoffsetx>
+							<label>$INFO[ListItem.Label2]</label>
+							<font>symbolLarge</font>
+							<textcolor>$VAR[selected]</textcolor>
+							`<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
+						</control>
 					</itemlayout>
 					<focusedlayout width="400" height="60">
 						<control type="image">
@@ -112,6 +66,16 @@
 							<textcolor>$VAR[selected]</textcolor>
 							`<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
 						</control>
+						<control type="label">
+							<width>col-5-begin</width>
+                        	<height>2-row</height>
+							<textoffsetx>15</textoffsetx>
+							<label>$INFO[ListItem.Label2]</label>
+							<font>symbolLarge</font>
+							<textcolor>$VAR[selected]</textcolor>
+							`<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
+						</control>
+						
 					</focusedlayout>
 					<content>
 					<!--
@@ -188,12 +152,7 @@
 							<visible>!Skin.HasSetting(Disable.LogoView)</visible>
 							<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(artists)]</visible>
 						</item>
-						<item>
-							<label>[CAPITALIZE]$LOCALIZE[36906][/CAPITALIZE]</label>
-							<onclick>Container.SetViewMode(502)</onclick>
-							<visible>Window.IsActive(videos)</visible>
-							<visible>Container.Content(episodes) + !Skin.HasSetting(Disable.EpisodeView)</visible>
-						</item>
+						
 						
 						<item>
 							<label>$LOCALIZE[31079]</label>
@@ -213,6 +172,12 @@
 							<visible>[Container.Content(genres) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(sets) | Container.Content(seasons) | Container.Content(musicvideos)] + !Skin.HasSetting(Disable.PostersView)</visible>
 						</item>
 						-->
+						<item>
+							<label>[CAPITALIZE]$LOCALIZE[36906][/CAPITALIZE]</label>
+							<onclick>Container.SetViewMode(502)</onclick>
+							<visible>Window.IsActive(videos)</visible>
+							<visible>Container.Content(episodes) + !Skin.HasSetting(Disable.EpisodeView)</visible>
+						</item>
 						<item>
 							<label>$LOCALIZE[31305]</label>
 							<onclick>Container.SetViewMode(53)</onclick>
@@ -250,13 +215,9 @@
 							<visible>Window.IsActive(programs)</visible>
 							<visible>String.Contains(Container.FolderPath,plugin.program.advanced.launcher) + !Skin.HasSetting(Disable.TriPanelView)</visible>
 						</item>
-						<item>
-							<label>$LOCALIZE[536]</label>
-							<onclick>Container.SetViewMode(500)</onclick>
-							<visible>!Skin.HasSetting(Disable.IconsView)</visible>
-							<visible>![Window.IsActive(FavouritesBrowser) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvguide) | Window.IsActive(tvtimers) | Window.IsActive(tvsearch) | Window.IsActive(musicplaylist) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radioguide) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch) | [Window.IsActive(pictures) + Container.Content(addons)]]</visible>
-						</item>
+						
 						-->
+						
 						<item>
 							<label>$LOCALIZE[31304]</label>
 							<onclick>Container.SetViewMode(503)</onclick>
@@ -329,28 +290,46 @@
 							<onclick>ActivateWindow(1132)</onclick>
 							<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
 						</item>
+						<item>
+							<label2></label2>
+							<posx>20</posx>
+							<onclick>Dialog.Close(1130)</onclick>
+							<visible>skin.hassetting(Touch) + [controlgroup(9000).hasfocus | window.isactive(1130)] + !window.isactive(1132) + !window.isactive(MyMusicNav)</visible>
+						</item>
 					
 					</content>
 				</control>
-				
-			</control>
-			<control type="button" id="3000">
+				<control type="button" id="3001">
                 <posx>384</posx>
                 <posy>500</posy>
-                <textwidth>250</textwidth>
+                <textwidth>30</textwidth>
                 <font>symbolLarge</font>
                 <align>center</align>
                 <aligny>center</aligny>
-                <width>1-col</width>
+                <width>30</width>
                 <label></label>
                 <label2></label2>
                 <textcolor>$VAR[selected]</textcolor>
                 <focusedcolor>$VAR[selected]</focusedcolor>
                 <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
-                <onclick>Dialog.Close(1130)</onclick>
-                <visible>skin.hassetting(Touch) + [control.hasfocus(500) | control.hasfocus(9001)]</visible>
+                <textoffsetx>2</textoffsetx>
+				<onclick>Dialog.Close(1130)</onclick>
+				<visible>skin.hassetting(Touch) + [controlgroup(9000).hasfocus | window.isactive(1130)] + !window.isactive(1132) + !window.isactive(MyMusicNav)</visible>
             </control>
+				<include content="keyboard select">
+                    <param name="posx">87%</param>
+                    <param name="focus">9000</param>
+                    <param name="up">up</param>
+                    <param name="down">down</param>
+                    <param name="left">left</param>
+                    <param name="right">right</param>
+                    <param name="select">select</param>
+                    <param name="back">back</param>
+					<param name="visible">skin.hassetting(Touch) + [controlgroup(500).hasfocus | controlgroup(9001).hasfocus | window.isactive(1130)] + !window.isactive(1132) + !window.isactive(MyMusicNav)</param>
+
+                </include>
+			</control>
 			
 		</control>
 		

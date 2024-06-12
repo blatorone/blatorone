@@ -53,23 +53,7 @@
 			<texturenofocus />
 			
 		</control>
-		<control type="button" id="3000">
-                <posx>384</posx>
-                <posy>500</posy>
-                <textwidth>250</textwidth>
-                <font>symbolLarge</font>
-                <align>center</align>
-                <aligny>center</aligny>
-                <width>1-col</width>
-                <label></label>
-                <label2></label2>
-                <textcolor>$VAR[selected]</textcolor>
-                <focusedcolor>$VAR[selected]</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
-                <onclick>Dialog.Close(1132)</onclick>
-                <visible>skin.hassetting(Touch) + window.isactive(1132)</visible>
-            </control>
+		
 		<control type="group">
 			<include>WindowSettingsFadeAnimation</include>
 			<control type="label">
@@ -360,6 +344,35 @@
 			</control>
 			</control>
 		</control>
-		
+		<control type="button" id="3002">
+                <posx>384</posx>
+                <posy>500</posy>
+                <textwidth>30</textwidth>
+                <font>symbolLarge</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>30</width>
+                <label></label>
+                <label2></label2>
+                <textcolor>$VAR[selected]</textcolor>
+                <focusedcolor>$VAR[selected]</focusedcolor>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <textoffsetx>2</textoffsetx>
+				<onclick>Dialog.Close(1132)</onclick>
+				<visible>skin.hassetting(Touch) + window.isactive(1132)</visible>
+        </control>
+		<include content="keyboard select">
+                    <param name="posx">87%</param>
+                    <param name="focus">9012</param>
+                    <param name="up">up</param>
+                    <param name="down">down</param>
+                    <param name="left">left</param>
+                    <param name="right">right</param>
+                    <param name="select">select</param>
+                    <param name="back">back</param>
+					<param name="visible">skin.hassetting(Touch) + window.isactive(1132)</param>
+
+        </include>
 	</controls>
 </window>
