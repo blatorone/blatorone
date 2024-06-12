@@ -158,15 +158,22 @@
                     </control>
 				</focusedlayout>
 			</control>
-			<include content="keyboard select osd">
+			<include content="keyboard select">
+					<param name="posx">-100%</param>
                     <param name="focus">11</param>
                     <param name="up">up</param>
                     <param name="down">down</param>
                     <param name="left"></param>
                     <param name="right"></param>
                     <param name="select">select</param>
+					<param name="back">back</param>
 					<param name="visible">skin.hassetting(Touch)</param>
-    		</include>
+					<param name="upview">true</param>
+					<param name="downview">true</param>
+					<param name="leftview">false</param>
+					<param name="rightview">false</param>
+					<param name="selectview">true</param>
+			</include>
 		</control>
 	</controls>
 	

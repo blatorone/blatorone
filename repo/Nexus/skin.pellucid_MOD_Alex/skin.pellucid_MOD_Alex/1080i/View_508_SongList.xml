@@ -2,6 +2,13 @@
 <includes>
 	<!-- Video Episode -->
 	<include name="View_508_SongList">
+		<control type="multiimage">
+					<visible>!Visualisation.Enabled + Control.IsVisible(508)</visible>
+					<include>dimensionsFullscreen</include>
+					<imagepath>$VAR[musicfullscreenBackgroundLocation]</imagepath>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>99ffffff</colordiffuse>
+				</control>
 		<control type="group">
 			<visible>Control.IsVisible(508) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
@@ -26,13 +33,30 @@
 					<animation effect="slide" end="0,0" time="160" condition="Container(508).Row(3)">Conditional</animation>
 					<animation effect="slide" end="0,0" time="160" condition="Container(508).Row(4)">Conditional</animation>
 					<animation effect="slide" end="0,0" time="160" condition="Container(508).Row(5)">Conditional</animation>
-					<itemlayout height="100" width="1300" condition="Container.Content(songs)">
+					<itemlayout height="2-row" width="1300" condition="Container.Content(songs)">
+						<control type="image">
+							<top>15</top>
+							<left>195</left>
+							<width>1000</width>
+							<height>70</height>
+							<texture border="0">colors/black.png</texture>
+                    		<colordiffuse>overlay</colordiffuse>
+						</control>
+						<control type="image">
+							<left>200</left>
+							<top>20</top>
+							<width>60</width>
+							<height>60</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<fadetime>IconCrossfadeTime</fadetime>
+						</control>
 						<control type="label">
 							<top>15</top>
 							<left>275</left>
 							<width>1000</width>
 							<height>70</height>
-							<font>buttonTitle</font>
+							<font>menuTitle2</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>shadow</shadowcolor>
 							<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title]</label>
@@ -40,13 +64,14 @@
 					</itemlayout>
 					<focusedlayout height="275" width="1300" condition="Container.Content(songs)">
 						<control type="image">
+							<posy>14</posy>
 							<width>1300</width>
 							<height>275</height>
-							<texture colordiffuse="$VAR[selecte_box]">listselect_fo.png</texture>
+							<texture colordiffuse="$VAR[highlight]">listselect_fo.png</texture>
 						</control>
 						<control type="image">
 							<left>15</left>
-							<top>15</top>
+							<top>29</top>
 							<width>245</width>
 							<height>245</height>
 							<aspectratio>scale</aspectratio>
@@ -57,7 +82,8 @@
 							<left>275</left>
 							<width>1000</width>
 							<height>70</height>
-							<font>font30</font>
+							<font>menuTitle2</font>
+							<textcolor>$VAR[Home]</textcolor>
 							<label>[B]$INFO[ListItem.TrackNumber].  $INFO[ListItem.Title] $INFO[ListItem.label][/B]</label>
 							<shadowcolor>shadow</shadowcolor>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(508)">Conditional</animation>
@@ -67,8 +93,8 @@
 							<top>55</top>
 							<width>990</width>
 							<height>70</height>
-							<font>font16_title</font>
-							<textcolor>$VAR[ThemeLabelColor]</textcolor>
+							<font>menuTitle2</font>
+							<textcolor>$VAR[Home]</textcolor>
 							<shadowcolor>shadow</shadowcolor>
 							<label>$INFO[ListItem.Artist]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(508)">Conditional</animation>
@@ -78,7 +104,8 @@
 							<top>105</top>
 							<width>990</width>
 							<height>70</height>
-							<font>font16</font>
+							<font>menuTitle2</font>
+							<textcolor>$VAR[Home]</textcolor>
 							<shadowcolor>shadow</shadowcolor>
 							<label>$INFO[ListItem.Album] $INFO[ListItem.Year,[,]]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(508)">Conditional</animation>
@@ -88,19 +115,22 @@
 							<top>135</top>
 							<width>990</width>
 							<height>110</height>
-							<font>font16</font>
+							<font>menuTitle2</font>
+							<textcolor>$VAR[Home]</textcolor>
 							<shadowcolor>shadow</shadowcolor>
 							<label fallback="• • • •">$VAR[MusicListLabel4Var]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(508)">Conditional</animation>
 						</control>
-						<control type="image">
-							<left>175</left>
+						<control type="label">
+							<left>265</left>
 							<top>220</top>
 							<width>400</width>
 							<height>45</height>
+							<font>symbolLarge</font>
+							<textcolor>$VAR[Home]</textcolor>
 							<colordiffuse>grey</colordiffuse>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$VAR[Home]" fallback="flags/rating/empty.png">$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
+							<label>$VAR[starRating]</label>
 						</control>
 						<control type="image">
 							<left>1125</left>

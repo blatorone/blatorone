@@ -309,14 +309,37 @@
                         <pagecontrol>61</pagecontrol>
                     </control>
                 </control>
-                <include content="keyboard select osd">
-                    <param name="focus"></param>
+                <include content="keyboard select">
+                    <param name="posx">-100%</param>
+                    <param name="focus">8001</param>
                     <param name="up">ChannelUp</param>
                     <param name="down">ChannelDown</param>
                     <param name="left">activatewindow(PVROSDChannels)</param>
-                    <param name="right">activatewindow(PVROSDChannels)</param>
+                    <param name="right">right</param>
                     <param name="select">select</param>
-                    <param name="visible">skin.hassetting(Touch)</param>
+                    <param name="back">back</param>
+                    <param name="visible">Pvr.IsPlayingTv + skin.hassetting(Touch)</param>
+                    <param name="upview">true</param>
+					<param name="downview">true</param>
+					<param name="leftview">true</param>
+					<param name="rightview">true</param>
+					<param name="selectview">true</param>
+                </include>
+                <include content="keyboard select">
+                    <param name="posx">-100%</param>
+                    <param name="focus">8001</param>
+                    <param name="up">PlayerControl(next)</param>
+                    <param name="down">PlayerControl(previous)</param>
+                    <param name="left">left</param>
+                    <param name="right">right</param>
+                    <param name="select">select</param>
+                    <param name="back">back</param>
+                    <param name="visible">!Pvr.IsPlayingTv + skin.hassetting(Touch)</param>
+                    <param name="upview">true</param>
+					<param name="downview">true</param>
+					<param name="leftview">true</param>
+					<param name="rightview">true</param>
+					<param name="selectview">true</param>
                 </include>
                 <control type="scrollbar" id="61">
                     <include>scrollbarwidth</include>
@@ -387,7 +410,15 @@
                         <description>Previous</description>
                         <label2></label2>
                         <thumb></thumb>
+                        <onclick>ChannelUp</onclick>
+                        <visible>Pvr.IsPlayingTv</visible>
+                    </item>
+                    <item>
+                        <description>Previous</description>
+                        <label2></label2>
+                        <thumb></thumb>
                         <onclick>PlayerControl(previous)</onclick>
+                        <visible>!Pvr.IsPlayingTv</visible>
                     </item>
                     <item>
                         <description>Rewind</description>
@@ -427,6 +458,14 @@
                         <label2></label2>
                         <thumb></thumb>
                         <onclick>PlayerControl(next)</onclick>
+                        <visible>!Pvr.IsPlayingTv</visible>
+                    </item>
+                    <item>
+                        <description>Next Chapter</description>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>ChannelDown</onclick>
+                        <visible>Pvr.IsPlayingTv</visible>
                     </item>
                     <item>
                         <visible>PVR.CanRecordPlayingChannel</visible>

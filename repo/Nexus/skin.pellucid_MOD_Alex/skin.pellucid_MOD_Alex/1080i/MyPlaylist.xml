@@ -24,6 +24,8 @@
             <!--Backbutton touchscreen-->
             <include>Backbuttoncross</include>
             <include content="keyboard select">
+                <param name="posx">85%</param>
+                <param name="back">back</param>
                 <param name="focus">9999</param>
                 <param name="up">up</param>
                 <param name="down">down</param>
@@ -31,6 +33,11 @@
                 <param name="right">right</param>
                 <param name="select">select</param>
                 <param name="visible">skin.hassetting(Touch)</param>
+                <param name="upview">true</param>
+				<param name="downview">true</param>
+				<param name="leftview">true</param>
+				<param name="rightview">true</param>
+				<param name="selectview">true</param>
             </include>
             <control type="image">
                 <texture>vignette.png</texture>

@@ -25,21 +25,10 @@
         <include>Battery</include>
         <!--Backbutton touchscreen-->
         <include>Backbuttoncross</include>
-        <include content="keyboard select">
-            <param name="posx">87%</param>
-            <param name="focus">9999</param>
-            <param name="up">up</param>
-            <param name="down">down</param>
-            <param name="left">left</param>
-            <param name="right">right</param>
-            <param name="select">select</param>
-            <param name="back">back</param>
-            <param name="visible">skin.hassetting(Touch)</param>
-        </include>
+        
         <!--page container group-->
         <control type="group">
-            <!--shift page for certain modal dialogs-->
-            <include>modalDialogContentShift</include>
+            
             <!--Main content listing-->
             <control type="group" id="9999">
                 <include>contentOpen</include>
@@ -186,7 +175,44 @@
                     <param name="right">right</param>
                     <param name="select">select</param>
                     <param name="back">back</param>
-                    <param name="visible">skin.hassetting(Touch)</param>
+					<param name="visible">skin.hassetting(Touch) + !controlgroup(500).hasfocus</param>
+                    <param name="upview">true</param>
+					<param name="downview">true</param>
+					<param name="leftview">true</param>
+					<param name="rightview">true</param>
+					<param name="selectview">true</param>
+                </include>
+				<include content="keyboard select">
+                    <param name="posx">87%</param>
+                    <param name="focus">9000</param>
+                    <param name="up">up</param>
+                    <param name="down">down</param>
+                    <param name="left">left</param>
+                    <param name="right">right</param>
+                    <param name="select">select</param>
+                    <param name="back">back</param>
+					<param name="visible">skin.hassetting(Touch) + [controlgroup(500).hasfocus | controlgroup(9001).hasfocus | window.isactive(1130)] + !window.isactive(1132)</param>
+                    <param name="upview">true</param>
+					<param name="downview">true</param>
+					<param name="leftview">true</param>
+					<param name="rightview">true</param>
+					<param name="selectview">true</param>
+                </include>
+				<include content="keyboard select">
+                    <param name="posx">87%</param>
+                    <param name="focus">9012</param>
+                    <param name="up">up</param>
+                    <param name="down">down</param>
+                    <param name="left">left</param>
+                    <param name="right">right</param>
+                    <param name="select">select</param>
+                    <param name="back">back</param>
+					<param name="visible">skin.hassetting(Touch) + window.isactive(1132)</param>
+                    <param name="upview">true</param>
+					<param name="downview">true</param>
+					<param name="leftview">true</param>
+					<param name="rightview">true</param>
+					<param name="selectview">true</param>
                 </include>
             </control>
             <!--page scrollbar-->

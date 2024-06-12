@@ -172,7 +172,11 @@
                     <param name="select">select</param>
                     <param name="back">back</param>
 					<param name="visible">skin.hassetting(Touch) + !controlgroup(500).hasfocus + !controlgroup(9001).hasfocus + !window.isactive(1130) + !window.isactive(1132) + !window.isactive(MyMusicNav)</param>
-
+                    <param name="upview">true</param>
+					<param name="downview">true</param>
+					<param name="leftview">true</param>
+					<param name="rightview">true</param>
+					<param name="selectview">true</param>
                 </include>
 				<include content="keyboard select">
                     <param name="posx">87%</param>
@@ -184,7 +188,11 @@
                     <param name="select">select</param>
                     <param name="back">back</param>
 					<param name="visible">skin.hassetting(Touch) + [controlgroup(500).hasfocus | controlgroup(9001).hasfocus | window.isactive(1130)] + !window.isactive(1132) + !window.isactive(MyMusicNav)</param>
-
+                    <param name="upview">true</param>
+					<param name="downview">true</param>
+					<param name="leftview">true</param>
+					<param name="rightview">true</param>
+					<param name="selectview">true</param>
                 </include>
 				<include content="keyboard select">
                     <param name="posx">87%</param>
@@ -196,7 +204,11 @@
                     <param name="select">select</param>
                     <param name="back">back</param>
 					<param name="visible">skin.hassetting(Touch) + window.isactive(1132)</param>
-
+                    <param name="upview">true</param>
+					<param name="downview">true</param>
+					<param name="leftview">true</param>
+					<param name="rightview">true</param>
+					<param name="selectview">true</param>
                 </include>
 				
             </control>

@@ -107,5 +107,10 @@
                         <param name="select">select</param>
                         <param name="visible">skin.hassetting(Touch)</param>
                         <param name="back">back</param>
+                        <param name="upview">true</param>
+					    <param name="downview">true</param>
+					    <param name="leftview">true</param>
+					    <param name="rightview">true</param>
+					    <param name="selectview">true</param>
             </include>
         </control>

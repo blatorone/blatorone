@@ -42,35 +42,39 @@
 			</control>
             
             <control type="grouplist" id="500">
+            <posx>68</posx>
             <posy>row-5-begin</posy>
+            <width>290</width>
             <ondown>setfocus(9001,0)</ondown>
                 <onup>setfocus(9001,20)</onup>
                 <onright>9999</onright>
                 <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
-                <control type="button" id="501">
+                
+            <control type="button" id="501">
                 <focusedcolor>$VAR[selected]</focusedcolor>
                 <textcolor>$VAR[Home]</textcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
-                <alttexturefocus colordiffuse="$VAR[highlight]">Colors/white.png</alttexturefocus>
+                <texturefocus colordiffuse="00FFFFFF">Colors/white.png</texturefocus>
+                <alttexturefocus colordiffuse="00FFFFFF">Colors/white.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
-                <width>383</width>
-				<textwidth>383</textwidth>
+                <width>295</width>
+				<textwidth>320</textwidth>
+                <font>menuTitle2</font>
                 <label>$INFO[Container.Viewmode,$LOCALIZE[31306] ]</label>
                 <onclick>activateWindow(1130)</onclick>
                 <visible>Container.Content(videos) + !window.isactive(1130) | container.Content(movies) + !window.isactive(1130) | container.Content(tvshows) + !window.isactive(1130) | container.content(seasons) + !window.isactive(1130) | Container.Content(episodes) + !window.isactive(1130)</visible>
             </control>
-            
             <control type="button" id="2">
                 <focusedcolor>$VAR[selected]</focusedcolor>
                 <textcolor>$VAR[Home]</textcolor>
-                <textwidth>383</textwidth>
-                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <textwidth>295</textwidth>
+                <texturefocus colordiffuse="00FFFFFF">Colors/white.png</texturefocus>
                 <texturenofocus>$VAR[selected]</texturenofocus>
-                <alttexturefocus colordiffuse="$VAR[highlight]">Colors/white.png</alttexturefocus>
+                <alttexturefocus colordiffuse="00FFFFFF">Colors/white.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
-                <width>383</width>
+                <width>295</width>
+                <font>menuTitle2</font>
                 <visible>[Container.Content(addons)  + !window.isactive(1130) | Container.Content(albums)  + !window.isactive(1130) | Container.Content(songs)  + !window.isactive(1130) | Container.Content(artists)  + !window.isactive(1130) | Container.Content(genres)  + !window.isactive(1130) | Container.Content(years)  + !window.isactive(1130) | Window.IsActive(pictures)  + !window.isactive(1130) | Container.Content(files)] + !Skin.HasSetting(Disable.ShowCaseView)  + !window.isactive(1130) | window.IsActive(AddonBrowser) + !window.isactive(1130)</visible>
             </control>
              
@@ -78,26 +82,28 @@
                 <focusedcolor>$VAR[selected]</focusedcolor>
                 <textcolor>$VAR[Home]</textcolor>
 			    <description>Sort by button</description>
-			    <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+			    <texturefocus colordiffuse="00FFFFFF">Colors/white.png</texturefocus>
                 <texturenofocus>$VAR[selected]</texturenofocus>
-                <alttexturefocus colordiffuse="$VAR[highlight]">Colors/white.png</alttexturefocus>
+                <alttexturefocus colordiffuse="00FFFFFF">Colors/white.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
-                <width>383</width>
-				<textwidth>383</textwidth>
+                <width>295</width>
+				<textwidth>295</textwidth>
+                <font>menuTitle2</font>
 			    <label>103</label>
 		    </control>
 		    <control type="togglebutton" id="4">
                 <focusedcolor>$VAR[selected]</focusedcolor>
                 <textcolor>$VAR[Home]</textcolor>
 			    <description>Sort asc</description>
-			    <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+			    <texturefocus colordiffuse="00FFFFFF">Colors/white.png</texturefocus>
                 <texturenofocus>textActive</texturenofocus>
-                <alttexturefocus colordiffuse="$VAR[highlight]">Colors/white.png</alttexturefocus>
+                <alttexturefocus colordiffuse="00FFFFFF">Colors/white.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
-                <width>383</width>
-				<textwidth>383</textwidth>
+                <width>295</width>
+				<textwidth>295</textwidth>
+                <font>menuTitle2</font>
 			    <label>31110</label>
 			    <altlabel>31109</altlabel>
 			    <usealttexture>Container.SortDirection(Ascending)</usealttexture>

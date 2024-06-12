@@ -12,6 +12,17 @@
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
+		
+	            <control type="label">
+	                <posx>70</posx>
+	                <posy>10</posy>
+	                <width>73</width>
+	                <height>73</height>
+	                <font>symbolVeryLarge</font>
+	                <aligny>center</aligny>
+	                <textcolor>$VAR[Home]</textcolor>
+	                <label>$VAR[menuLogo]</label>
+	            </control>
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(1132)" reversible="false">Conditional</animation>
 			<control type="group">
@@ -327,7 +338,11 @@
                     <param name="select">select</param>
                     <param name="back">back</param>
 					<param name="visible">skin.hassetting(Touch) + [controlgroup(500).hasfocus | controlgroup(9001).hasfocus | window.isactive(1130)] + !window.isactive(1132) + !window.isactive(MyMusicNav)</param>
-
+					<param name="upview">true</param>
+					<param name="downview">true</param>
+					<param name="leftview">true</param>
+					<param name="rightview">true</param>
+					<param name="selectview">true</param>
                 </include>
 			</control>
 			

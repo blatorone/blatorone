@@ -693,7 +693,7 @@
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
-                    <visible>Skin.HasSetting(crosskey)</visible>
+                    <visible>Skin.HasSetting(crosskey) + $PARAM[upview]</visible>
                 </control>
                 <control type="button">
                     <description>1 button</description>
@@ -710,7 +710,7 @@
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
-                    <visible>Skin.HasSetting(crosskey)</visible>
+                    <visible>Skin.HasSetting(crosskey) + $PARAM[leftview]</visible>
                 </control>
                 
                 <control type="button">
@@ -728,7 +728,7 @@
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
-                    <visible>Skin.HasSetting(crosskey)</visible>
+                    <visible>Skin.HasSetting(crosskey) + $PARAM[downview]</visible>
                 </control>
                 <control type="button">
                     <description>4 button</description>
@@ -745,7 +745,7 @@
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
-                    <visible>Skin.HasSetting(crosskey)</visible>
+                    <visible>Skin.HasSetting(crosskey) + $PARAM[rightview]</visible>
                 </control>
 
                 <control type="button">
@@ -758,13 +758,13 @@
                     <align>center</align>
                     <onclick>setfocus($PARAM[focus])</onclick>
                     <onclick>$PARAM[select]</onclick>
-                    <onclick>Reloadskin</onclick>
+                    
                     <font>symbol</font>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
-                    <visible>Skin.HasSetting(crosskey)</visible>
+                    <visible>Skin.HasSetting(crosskey) + $PARAM[selectview]</visible>
                 </control>
 
                 <control type="button">
