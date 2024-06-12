@@ -152,14 +152,15 @@
                 <control type="button" id="3000">
                 <posx>0</posx>
                 <posy>500</posy>
-                <textwidth>30</textwidth>
+                <textwidth>60</textwidth>
                 <font>symbolLarge</font>
                 <align>center</align>
                 <aligny>center</aligny>
-                <width>30</width>
+                <width>60</width>
                 <textoffsetx>2</textoffsetx>
                 <label></label>
                 <label2></label2>
+                <textoffsetx>2</textoffsetx>
                 <textcolor>$VAR[selected]</textcolor>
                 <focusedcolor>$VAR[selected]</focusedcolor>
                 <texturefocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturefocus>
@@ -171,11 +172,11 @@
 			<animation effect="fade" start="0" end="100" time="2145" condition="skin.hassetting(Touch) + [controlgroup(500).hasfocus | controlgroup(9000).hasfocus]" reversible="true">Conditional</animation>
                 <posx>384</posx>
                 <posy>500</posy>
-                <textwidth>30</textwidth>
+                <textwidth>60</textwidth>
                 <font>symbolLarge</font>
                 <align>center</align>
                 <aligny>center</aligny>
-                <width>30</width>
+                <width>60</width>
                 <label></label>
                 <label2></label2>
                 <textcolor>$VAR[selected]</textcolor>
@@ -195,44 +196,13 @@
                     <param name="right">right</param>
                     <param name="select">select</param>
                     <param name="back">back</param>
-					<param name="visible">skin.hassetting(Touch) + !controlgroup(500).hasfocus</param>
+					<param name="visible">skin.hassetting(Touch) + !controlgroup(500).hasfocus + !control.hasfocus(9001)</param>
                     <param name="upview">true</param>
 					<param name="downview">true</param>
 					<param name="leftview">true</param>
 					<param name="rightview">true</param>
 					<param name="selectview">true</param>
-                </include>
-				<include content="keyboard select">
-                    <param name="posx">87%</param>
-                    <param name="focus">9000</param>
-                    <param name="up">up</param>
-                    <param name="down">down</param>
-                    <param name="left">left</param>
-                    <param name="right">right</param>
-                    <param name="select">select</param>
-                    <param name="back">back</param>
-					<param name="visible">skin.hassetting(Touch) + [controlgroup(500).hasfocus | controlgroup(9001).hasfocus | window.isactive(1130)] + !window.isactive(1132)</param>
-                    <param name="upview">true</param>
-					<param name="downview">true</param>
-					<param name="leftview">true</param>
-					<param name="rightview">true</param>
-					<param name="selectview">true</param>
-                </include>
-				<include content="keyboard select">
-                    <param name="posx">87%</param>
-                    <param name="focus">9012</param>
-                    <param name="up">up</param>
-                    <param name="down">down</param>
-                    <param name="left">left</param>
-                    <param name="right">right</param>
-                    <param name="select">select</param>
-                    <param name="back">back</param>
-					<param name="visible">skin.hassetting(Touch) + window.isactive(1132)</param>
-                    <param name="upview">true</param>
-					<param name="downview">true</param>
-					<param name="leftview">true</param>
-					<param name="rightview">true</param>
-					<param name="selectview">true</param>
+                    <param name="color">keyboardInactive</param>
                 </include>
             </control>
             <!--page scrollbar-->

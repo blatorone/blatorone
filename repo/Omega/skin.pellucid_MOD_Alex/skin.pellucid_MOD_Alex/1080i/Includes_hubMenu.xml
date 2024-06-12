@@ -40,7 +40,7 @@
                
                 
 			</control>
-            
+        
             <control type="grouplist" id="500">
             <posx>68</posx>
             <posy>row-5-begin</posy>
@@ -181,9 +181,43 @@
                     <include condition="[window.isactive(videos) + !String.Contains(container.folderpath,videodb://musicvideos/titles)] | window.isactive(tvchannels) | window.isactive(tvrecordings) | window.isactive(tvguide) | window.isactive(tvtimers) | window.isactive(videoplaylist)">skinshortcuts-group-videosubmenu</include>
                 </content>
             </control>
-            
-            
-           
+      
+            <!--
+           <include content="keyboard select">
+                    <param name="posx">87%</param>
+                    <param name="focus">9000</param>
+                    <param name="up">up</param>
+                    <param name="down">down</param>
+                    <param name="left">left</param>
+                    <param name="right">right</param>
+                    <param name="select">select</param>
+                    <param name="back">back</param>
+					<param name="visible">skin.hassetting(Touch) + [controlgroup(500).hasfocus | control.hasfocus(9001)]</param>
+                    <param name="upview">true</param>
+					<param name="downview">true</param>
+					<param name="leftview">true</param>
+					<param name="rightview">true</param>
+					<param name="selectview">true</param>
+                    <param name="color">keyboardInactive</param>
+                </include>
+                <include content="keyboard select">
+                    <param name="posx">87%</param>
+                    <param name="focus">9000</param>
+                    <param name="up">up</param>
+                    <param name="down">down</param>
+                    <param name="left">left</param>
+                    <param name="right">right</param>
+                    <param name="select">select</param>
+                    <param name="back">back</param>
+					<param name="visible">skin.hassetting(Touch) + [controlgroup(500).hasfocus | control.hasfocus(9001)]</param>
+                    <param name="upview">true</param>
+					<param name="downview">true</param>
+					<param name="leftview">true</param>
+					<param name="rightview">true</param>
+					<param name="selectview">true</param>
+                    <param name="color">keyboardInactive</param>
+                </include>
+                -->
         </control>
          
     </include>

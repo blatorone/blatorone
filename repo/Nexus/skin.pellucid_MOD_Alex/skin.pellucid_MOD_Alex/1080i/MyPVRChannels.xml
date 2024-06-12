@@ -322,6 +322,7 @@
 			<param name="leftview">true</param>
 			<param name="rightview">true</param>
 			<param name="selectview">true</param>
+            <param name="color">keyboardInactive</param>
         </include>
         <!--mini window-->
         <include>miniVideoPlayer</include>

@@ -308,11 +308,11 @@
 				<control type="button" id="3001">
                 <posx>384</posx>
                 <posy>500</posy>
-                <textwidth>30</textwidth>
+                <textwidth>60</textwidth>
                 <font>symbolLarge</font>
                 <align>center</align>
                 <aligny>center</aligny>
-                <width>30</width>
+                <width>60</width>
                 <label></label>
                 <label2></label2>
                 <textcolor>$VAR[selected]</textcolor>
@@ -338,6 +338,8 @@
 					<param name="leftview">true</param>
 					<param name="rightview">true</param>
 					<param name="selectview">true</param>
+					<param name="color">keyboardInactive</param>
+
                 </include>
 			</control>
 			

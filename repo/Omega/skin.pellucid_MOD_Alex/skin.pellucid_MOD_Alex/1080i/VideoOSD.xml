@@ -324,6 +324,7 @@
 					<param name="leftview">true</param>
 					<param name="rightview">true</param>
 					<param name="selectview">true</param>
+                    <param name="color">keyboardInactive</param>
                 </include>
                 <include content="keyboard select">
                     <param name="posx">-100%</param>
@@ -340,6 +341,7 @@
 					<param name="leftview">true</param>
 					<param name="rightview">true</param>
 					<param name="selectview">true</param>
+                    <param name="color">keyboardInactive</param>
                 </include>
                 <control type="scrollbar" id="61">
                     <include>scrollbarwidth</include>
