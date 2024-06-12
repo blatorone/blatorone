@@ -14,7 +14,7 @@
                 <posx>0</posx>
 				<posy>0</posy>
 				<width>fullscreenWidth</width>
-				<height>1090</height>
+				<height>fullscreenHeight</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
                 <ondown>54</ondown>
@@ -31,6 +31,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.icon]</texture>
 						<bordersize>6</bordersize>
+						
 						<colordiffuse>99ffffff</colordiffuse>
 					</control>
 					
@@ -137,6 +138,7 @@
 							<aspectratio>stretch</aspectratio>
 							<texture fallback="defaultposter.png">$INFO[listitem.icon]</texture>
 							<bordersize>6</bordersize>
+							<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
 						</control>
 						
 						<control type="group">

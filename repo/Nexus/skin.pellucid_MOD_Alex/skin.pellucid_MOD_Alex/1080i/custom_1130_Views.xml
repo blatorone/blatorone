@@ -25,8 +25,8 @@
                 <width>1-col</width>
                 <label></label>
                 <label2></label2>
-                <textcolor>black</textcolor>
-                <focusedcolor>black</focusedcolor>
+                <textcolor>$VAR[selected]</textcolor>
+                <focusedcolor>$VAR[selected]</focusedcolor>
                 <texturefocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturenofocus>
                 <onclick>Dialog.Close(1130)</onclick>
@@ -62,7 +62,7 @@
 				<height>48</height>
 				<label>close</label>
 				<font>buttonTitle</font>
-				<textcolor>black</textcolor>
+				<textcolor>$VAR[selected]</textcolor>
 				<focusedcolor>$VAR[highlight]</focusedcolor>
 				<onclick>Dialog.Close(1130)</onclick>
 				<texturefocus />
@@ -78,7 +78,7 @@
 					<textoffsetx>15</textoffsetx>
 					<font>buttonTitle</font>
 					<label>$LOCALIZE[31320]</label>
-					<textcolor>black</textcolor>
+					<textcolor>$VAR[selected]</textcolor>
 				</control>
 				<control type="list" id="9000">
 					<top>128</top>
@@ -92,7 +92,7 @@
 						<control type="label">
 							<width>col-5-begin</width>
                         	<height>2-row</height>
-							<textcolor>textActive</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 							<textoffsetx>15</textoffsetx>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -109,7 +109,7 @@
                         	<height>2-row</height>
 							<textoffsetx>15</textoffsetx>
 							<label>$INFO[ListItem.Label]</label>
-							<textcolor>black</textcolor>
+							<textcolor>$VAR[selected]</textcolor>
 							`<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
 						</control>
 					</focusedlayout>
@@ -344,8 +344,8 @@
                 <width>1-col</width>
                 <label></label>
                 <label2></label2>
-                <textcolor>black</textcolor>
-                <focusedcolor>black</focusedcolor>
+                <textcolor>$VAR[selected]</textcolor>
+                <focusedcolor>$VAR[selected]</focusedcolor>
                 <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
                 <onclick>Dialog.Close(1130)</onclick>

@@ -62,9 +62,10 @@
                 <onup>setfocus(9001,20)</onup>
                 <onright>9999</onright>
                 <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
-            <control type="button" id="501">
+                <control type="button" id="501">
+                <focusedcolor>$VAR[selected]</focusedcolor>
+                <textcolor>$VAR[Home]</textcolor>
                 <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
-                <texturenofocus>textActive</texturenofocus>
                 <alttexturefocus colordiffuse="$VAR[highlight]">Colors/white.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
@@ -76,8 +77,12 @@
             </control>
             
             <control type="button" id="2">
+                <focusedcolor>$VAR[selected]</focusedcolor>
+                <textcolor>$VAR[Home]</textcolor>
                 <textwidth>383</textwidth>
                 <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <texturenofocus>$VAR[selected]</texturenofocus>
+                <alttexturefocus colordiffuse="$VAR[highlight]">Colors/white.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
                 <width>383</width>
@@ -85,9 +90,11 @@
             </control>
              
              <control type="button" id="3">
+                <focusedcolor>$VAR[selected]</focusedcolor>
+                <textcolor>$VAR[Home]</textcolor>
 			    <description>Sort by button</description>
 			    <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
-                <texturenofocus>textActive</texturenofocus>
+                <texturenofocus>$VAR[selected]</texturenofocus>
                 <alttexturefocus colordiffuse="$VAR[highlight]">Colors/white.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
@@ -96,6 +103,8 @@
 			    <label>103</label>
 		    </control>
 		    <control type="togglebutton" id="4">
+                <focusedcolor>$VAR[selected]</focusedcolor>
+                <textcolor>$VAR[Home]</textcolor>
 			    <description>Sort asc</description>
 			    <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
                 <texturenofocus>textActive</texturenofocus>
@@ -105,7 +114,7 @@
                 <width>383</width>
 				<textwidth>383</textwidth>
 			    <label>31110</label>
-			    <altlabel>31050</altlabel>
+			    <altlabel>31109</altlabel>
 			    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
 		    </control>
             </control>
@@ -134,7 +143,7 @@
                         <height>2-row</height>
                         <font>menuTitle2</font>
                         <aligny>center</aligny>
-                        <textcolor>textActive</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>
@@ -157,7 +166,7 @@
                         <height>2-row</height>
                         <font>menuTitle2</font>
                         <aligny>center</aligny>
-                        <textcolor>black</textcolor>
+                        <textcolor>$VAR[selected]</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>
@@ -169,7 +178,7 @@
                         <height>2-row</height>
                         <font>menuTitle2</font>
                         <aligny>center</aligny>
-                        <textcolor>white</textcolor>
+                        <textcolor>$VAR[Home]</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>
@@ -191,8 +200,8 @@
                 <width>1-col</width>
                 <label></label>
                 <label2></label2>
-                <textcolor>black</textcolor>
-                <focusedcolor>black</focusedcolor>
+                <textcolor>$VAR[selected]</textcolor>
+                <focusedcolor>$VAR[selected]</focusedcolor>
                 <texturefocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturenofocus>
                 <onclick>setfocus(9999)</onclick>

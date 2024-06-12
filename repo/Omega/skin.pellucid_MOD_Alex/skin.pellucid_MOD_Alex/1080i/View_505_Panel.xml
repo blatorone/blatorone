@@ -8,8 +8,8 @@
 				<viewtype label="$LOCALIZE[31303]">$LOCALIZE[31303]</viewtype>
 				<left>72.5</left>
 				<top>335</top>
-				<width>1830</width>
-				<height>840</height>
+				<width>fullscreenWidth</width>
+				<height>fullscreenHeight</height>
 				<onup>SetProperty(MediaMenu,True,Home)</onup>
 				<onup>9000</onup>
 				<ondown condition="Control.IsVisible(50560)">50560</ondown>
