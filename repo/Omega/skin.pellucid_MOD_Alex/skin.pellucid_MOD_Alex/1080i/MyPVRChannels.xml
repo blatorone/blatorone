@@ -316,6 +316,7 @@
             <param name="right">right</param>
             <param name="select">select</param>
             <param name="back">back</param>
+            <param name="visible">skin.hassetting(Touch)</param>
         </include>
         <!--mini window-->
         <include>miniVideoPlayer</include>

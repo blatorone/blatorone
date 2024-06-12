@@ -34,6 +34,7 @@
             <param name="right">right</param>
             <param name="select">select</param>
             <param name="back">back</param>
+            <param name="visible">skin.hassetting(Touch)</param>
         </include>
         <!--page container group-->
         <control type="group">
@@ -185,6 +186,7 @@
                     <param name="right">right</param>
                     <param name="select">select</param>
                     <param name="back">back</param>
+                    <param name="visible">skin.hassetting(Touch)</param>
                 </include>
             </control>
             <!--page scrollbar-->

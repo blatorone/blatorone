@@ -105,7 +105,7 @@
                         <param name="left">left</param>
                         <param name="right">right</param>
                         <param name="select">select</param>
-                        
+                        <param name="visible">skin.hassetting(Touch)</param>
                         <param name="back">back</param>
             </include>
         </control>
