@@ -41,14 +41,14 @@
                 <!--source content-->
                 <control type="group" id="9500">
                     <include>View_50_List</include>
-                    <!--
+                    
                     <include>View_51_InfoWall</include>
                     <include>View_52_Landscape</include>
                     
-                    -->
+                    
                     <include>View_53_ShowCase</include>
                     <include>View_54_ShowCase</include>
-                    <!--
+                    
                     <include>View_55_TriPanel</include>
                     <include>View_56_Posters</include>
                     <include>View_57_Shift</include>
@@ -57,11 +57,12 @@
                     <include>View_500_Icons</include>
                     <include>View_501_LowList</include>
                     <include>View_502_Episode</include>
-                    -->
+                    
                     <include>View_503_Wall</include>
                     <include>View_505_Panel</include>
-                    <!--
                     <include>View_504_Gallery</include>
+                    
+                    
                     <include>View_505_Panel</include>
                     <include>View_506_RightList</include>
                     <include>View_507_BigList</include>
@@ -70,12 +71,12 @@
                     <include>View_591_BigFan</include>
                     <include>View_602_FanartList</include>
                     <include>View_603_Music_JukeBox</include>
-                    -->
+                    
                     <include>View_609_Fullscreen_Wall</include>
 			
                 </control>
                 <control type="group">
-					<visible>!Control.IsVisible(50) + !window.isactive(1130) + !controlgroup(500).hasfocus</visible>
+					<visible>!Control.IsVisible(50) + !window.isactive(1130) + !controlgroup(500).hasfocus + !Control.IsVisible(504)</visible>
 					<include>ViewAnimation</include>
 					
 					<!-- SETS -->

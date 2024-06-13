@@ -73,7 +73,7 @@
 				<onright>Dialog.Close(1132)</onright>
 				<ondown>9012</ondown>
 				<onup>9012</onup>
-				<!--
+				
 				<control type="radiobutton" id="1615">
 					<description>Disable SongList</description>
 					<width>383</width>
@@ -81,11 +81,15 @@
 					<radiowidth>110</radiowidth>
 					<include>ButtonCommonValues</include>
 					<label>$LOCALIZE[31309]</label>
+					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
+        			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
+        			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
+        			<textureradiooffnofocus colordiffuse="Home">buttons/radio-button-off.png</textureradiooffnofocus>
 					<onclick>SetProperty(DisableView,True,1132)</onclick>
 					<onclick>Skin.ToggleSetting(Disable.SongListView)</onclick>
 					<selected>!Skin.HasSetting(Disable.SongListView)</selected>
 				</control>
-				
+				<!--
 				<control type="radiobutton" id="1611">
 					<description>Disable RightList</description>
 					<width>383</width>
@@ -175,6 +179,7 @@
 					<onclick>Skin.ToggleSetting(Disable.MyFlixView)</onclick>
 					<selected>!Skin.HasSetting(Disable.MyFlixView)</selected>
 				</control>
+				
 				<control type="radiobutton" id="1616">
 					<description>Disable TriPanel</description>
 					<width>383</width>
@@ -281,13 +286,18 @@
 					<onclick>Skin.ToggleSetting(Disable.BannerWallView)</onclick>
 					<selected>!Skin.HasSetting(Disable.BannerWallView)</selected>
 				</control>
+				-->
 				<control type="radiobutton" id="1628">
 					<description>Disable Landscape</description>
 					<width>383</width>
 					<textwidth>383</textwidth>
 					<radiowidth>110</radiowidth>
 					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31076]</label>
+					<label>$LOCALIZE[31325]</label>
+					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
+        			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
+        			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
+        			<textureradiooffnofocus colordiffuse="Home">buttons/radio-button-off.png</textureradiooffnofocus>
 					<onclick>SetProperty(DisableView,True,1132)</onclick>
 					<onclick>Skin.ToggleSetting(Disable.LandscapeView)</onclick>
 					<selected>!Skin.HasSetting(Disable.LandscapeView)</selected>
@@ -299,22 +309,31 @@
 					<radiowidth>110</radiowidth>
 					<include>ButtonCommonValues</include>
 					<label>$LOCALIZE[31318]</label>
+					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
+        			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
+        			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
+        			<textureradiooffnofocus colordiffuse="Home">buttons/radio-button-off.png</textureradiooffnofocus>
 					<onclick>SetProperty(DisableView,True,1132)</onclick>
 					<onclick>Skin.ToggleSetting(Disable.BigFanView)</onclick>
 					<selected>!Skin.HasSetting(Disable.BigFanView)</selected>
 				</control>
+				
+				
 				<control type="radiobutton" id="1632">
 					<description>Disable Gallery</description>
 					<width>383</width>
 					<textwidth>383</textwidth>
 					<radiowidth>110</radiowidth>
 					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31251]</label>
+					<label>$LOCALIZE[31321]</label>
+					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
+        			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
+        			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
+        			<textureradiooffnofocus colordiffuse="Home">buttons/radio-button-off.png</textureradiooffnofocus>
 					<onclick>SetProperty(DisableView,True,1132)</onclick>
 					<onclick>Skin.ToggleSetting(Disable.GalleryView)</onclick>
 					<selected>!Skin.HasSetting(Disable.GalleryView)</selected>
 				</control>
-				-->
 				<control type="radiobutton" id="1633">
 					<description>Disable Panel</description>
 					<width>383</width>

@@ -245,7 +245,7 @@
 						<onup>PageUp(70)</onup>
 						<ondown>PageUp(70)</ondown>
 						<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-						<onleft>SetFocus(9050)</onleft>
+						<onleft>SetFocus(9000)</onleft>
 						<onright>506</onright>
 						<texturesliderbackground colordiffuse="1AFFFFFF">colors/white50.png</texturesliderbackground>
 						<texturesliderbar colordiffuse="1AFFFFFF">colors/white.png</texturesliderbar>
@@ -412,7 +412,7 @@
 						<onup>PageUp(70)</onup>
 						<ondown>PageUp(70)</ondown>
 						<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-						<onleft>SetFocus(9050)</onleft>
+						<onleft>SetFocus(9000)</onleft>
 						<onright>506</onright>
 						<texturesliderbackground colordiffuse="1AFFFFFF">colors/white50.png</texturesliderbackground>
 						<texturesliderbar colordiffuse="1AFFFFFF">colors/white.png</texturesliderbar>
@@ -428,7 +428,7 @@
 				<height>990</height>
 				<onleft condition="Control.IsVisible(50663)">50663</onleft>
 				<onleft condition="!Control.IsVisible(50663)">SetProperty(MediaMenu,True,Home)</onleft>
-				<onleft condition="!Control.IsVisible(50663)">SetFocus(9050)</onleft>
+				<onleft condition="!Control.IsVisible(50663)">SetFocus(9000)</onleft>
 				<onright condition="Control.IsVisible(50660)">50660</onright>
 				<onright condition="!Control.IsVisible(50660)">4400</onright>
 				<onup>506</onup>
@@ -514,7 +514,7 @@
 		<width>1200</width>
 		<height>910</height>
 		<onleft condition="!Control.IsVisible(50664)">SetProperty(MediaMenu,True,Home)</onleft>
-		<onleft condition="!Control.IsVisible(50664)">SetFocus(9050)</onleft>
+		<onleft condition="!Control.IsVisible(50664)">SetFocus(9000)</onleft>
 		<onleft condition="Control.IsVisible(50664)">50664</onleft>
 		<onright condition="Control.IsVisible(50660)">50660</onright>
 		<onright condition="!Control.IsVisible(50660)">4400</onright>
@@ -522,7 +522,7 @@
 		<ondown>506</ondown>
 		<pagecontrol>50660</pagecontrol>
 		<viewtype label="$LOCALIZE[31310]">list</viewtype>
-		<visible>!System.AddonIsEnabled(script.skinvariables) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] | System.AddonIsEnabled(script.skinvariables) + $EXP[Exp_View_506]</visible>
+		<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 		<scrolltime tween="quadratic" easing="out">200</scrolltime>
 		<itemlayout height="82" width="806" condition="[!Skin.HasSetting(rightlistalternate) + Container.Content(movies)]">
 			<include content="RightListItemLayout">

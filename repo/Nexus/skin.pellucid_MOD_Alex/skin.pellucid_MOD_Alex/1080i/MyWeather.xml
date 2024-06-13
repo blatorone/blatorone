@@ -335,9 +335,10 @@
             <aligny>center</aligny>
             <textoffsetx>24</textoffsetx>
             <label>396</label>
-            <texturenofocus colordiffuse="77overlay">colors/white.png</texturenofocus>
-            <alttexturefocus colordiffuse="77overlay">colors/white.png</alttexturefocus>
-            <alttexturenofocus>$VAR[highlight]</alttexturenofocus>
+            <texturefocus colordiffuse="00FFFFFF">Colors/white.png</texturefocus>
+            <texturenofocus colordiffuse="00FFFFFF">colors/white.png</texturenofocus>
+            <alttexturefocus colordiffuse="00FFFFFF">colors/white.png</alttexturefocus>
+            <alttexturenofocus colordiffuse="00FFFFFF">colors/white.png</alttexturenofocus>
             <font>sectionTitle</font>
             <textcolor>textDisabled</textcolor>
             <focusedcolor>textActive</focusedcolor>

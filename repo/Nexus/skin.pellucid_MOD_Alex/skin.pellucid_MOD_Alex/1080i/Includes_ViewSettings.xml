@@ -986,7 +986,7 @@
 		</control>
 		<control type="radiobutton" id="1515">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31076]</label>
+			<label>$LOCALIZE[31325]</label>
 			<onclick>Skin.ToggleSetting(Enable.MyFlix.MovieLandscape)</onclick>
 			<selected>Skin.HasSetting(Enable.MyFlix.MovieLandscape)</selected>
 			<visible>Container.Content(movies)</visible>
@@ -1015,7 +1015,7 @@
 		</control>
 		<control type="radiobutton" id="1519">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31076]</label>
+			<label>$LOCALIZE[31325]</label>
 			<onclick>Skin.ToggleSetting(Enable.MyFlix.TVLandscape)</onclick>
 			<selected>Skin.HasSetting(Enable.MyFlix.TVLandscape)</selected>
 			<visible>Container.Content(tvshows)</visible>

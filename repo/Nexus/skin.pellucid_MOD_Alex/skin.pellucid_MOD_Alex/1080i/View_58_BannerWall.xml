@@ -28,7 +28,7 @@
 				<include condition="Skin.HasSetting(BannerPlex) + Skin.HasSetting(Disable.BannerWallInfo)">BannerWallLow</include>
 				<onleft condition="Control.IsVisible(95860)">95860</onleft>
 				<onleft condition="!Control.IsVisible(95860)">SetProperty(MediaMenu,True,Home)</onleft>
-				<onleft condition="!Control.IsVisible(95860)">SetFocus(9050)</onleft>
+				<onleft condition="!Control.IsVisible(95860)">SetFocus(9000)</onleft>
 				<onright>95861</onright>
 				<onup>58</onup>
 				<ondown>58</ondown>
@@ -36,7 +36,7 @@
 				<preloaditems>2</preloaditems>
 				<viewtype label="31088">wide</viewtype>
 				<scrolltime tween="quadratic" easing="out">300</scrolltime>
-				<visible>!System.AddonIsEnabled(script.skinvariables) + [Container.Content(tvshows) | Container.Content(movies)] | System.AddonIsEnabled(script.skinvariables) + $EXP[Exp_View_58]</visible>
+				<visible>Container.Content(tvshows) | Container.Content(movies)</visible>
 				<itemlayout height="110" width="560">
 					<control type="image">
 						<width>560</width>
@@ -143,7 +143,7 @@
 				<ondown>95860</ondown>
 				<onright>50</onright>
 				<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-				<onleft>SetFocus(9050)</onleft>
+				<onleft>SetFocus(9000)</onleft>
 				<showonepage>false</showonepage>
 				<texturesliderbackground colordiffuse="1AFFFFFF">colors/white50.png</texturesliderbackground>
 				<texturesliderbar colordiffuse="1AFFFFFF">colors/white.png</texturesliderbar>
@@ -205,7 +205,7 @@
 					<height>302</height>
 					<onleft>50</onleft>
 					<onright>SetProperty(MediaMenu,True,Home)</onright>
-					<onright>SetFocus(9050)</onright>
+					<onright>SetFocus(9000)</onright>
 					<ondown>95861</ondown>
 					<onup>95861</onup>
 					<showonepage>false</showonepage>

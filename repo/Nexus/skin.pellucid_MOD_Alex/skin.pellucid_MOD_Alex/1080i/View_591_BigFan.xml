@@ -4,7 +4,7 @@
 		<width>1920</width>
 		<height>1080</height>
 		<onup>SetProperty(MediaMenu,True,Home)</onup>
-		<onup>SetFocus(9050)</onup>
+		<onup>SetFocus(9000)</onup>
 		<onleft>591</onleft>
 		<onright>591</onright>
 		<ondown condition="Control.IsVisible(615)">616</ondown>
@@ -13,7 +13,7 @@
 		<viewtype label="$LOCALIZE[31249]">list</viewtype>
 		<preloaditems>2</preloaditems>
 		<scrolltime tween="quadratic">200</scrolltime>
-		<visible>!System.AddonIsEnabled(script.skinvariables) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] | System.AddonIsEnabled(script.skinvariables) + $EXP[Exp_View_591]</visible>
+		<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 		<itemlayout width="1080" height="1920" />
 		<focusedlayout width="1080" height="1920">
 			<control type="group">
@@ -44,7 +44,7 @@
 			<include>BigFanList</include>
 			<control type="multiimage">
 				<left>40</left>
-				<top>595</top>
+				<top>570</top>
 				<width>252</width>
 				<height>372</height>
 				<imagepath background="true">$VAR[FocusedPosterThumbVar]</imagepath>
@@ -52,11 +52,11 @@
 				<animation effect="fade" delay="240" time="240" reversible="false">Hidden</animation>
 			</control>
 			<control type="image">
-				<top>575</top>
+				<top>550</top>
 				<left>20</left>
 				<width>292</width>
 				<height>412</height>
-				<texture>colors/black10.png</texture>
+				<texture>white</texture>
 				<fadetime>200</fadetime>
 				<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -80,7 +80,7 @@
 					<width>1400</width>
 					<height>42</height>
 					<aligny>top</aligny>
-					<font>font16_title</font>
+					<font>regular</font>
 					<textcolor>grey</textcolor>
 					<scroll>true</scroll>
 					<label>[B]$INFO[ListItem.Label][/B]</label>
@@ -92,7 +92,7 @@
 					<top>960</top>
 					<width>1105</width>
 					<height>30</height>
-					<font>font13_bold</font>
+					<font>regular</font>
 					<textcolor>grey</textcolor>
 					<label>$VAR[FloorSubLabelVar]</label>
 					<textoffsetx>30</textoffsetx>
@@ -103,7 +103,7 @@
 					<top>960</top>
 					<width>1105</width>
 					<height>30</height>
-					<font>font13_bold</font>
+					<font>regular</font>
 					<textcolor>grey</textcolor>
 					<label>$INFO[Container(4500).ListItem(0).Year]$INFO[Container(4500).ListItem(-1).Year, - ]$INFO[Container(4500).NumItems, • , $LOCALIZE[342]]$INFO[ListItem.RatingAndVotes, • ]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime), • , $LOCALIZE[12391]]</label>
 					<textoffsetx>30</textoffsetx>
@@ -115,7 +115,7 @@
 					<width>1305</width>
 					<height>30</height>
 					<label>$INFO[ListItem.Genre]</label>
-					<font>font13_bold</font>
+					<font>regular</font>
 					<textcolor>grey</textcolor>
 					<textoffsetx>30</textoffsetx>
 					<scroll>true</scroll>
@@ -126,7 +126,7 @@
 					<width>1305</width>
 					<height>30</height>
 					<label>$VAR[MovieSetGenreVar]</label>
-					<font>font13_bold</font>
+					<font>regular</font>
 					<textcolor>grey</textcolor>
 					<textoffsetx>30</textoffsetx>
 					<scroll>true</scroll>
@@ -137,9 +137,9 @@
 					<left>330</left>
 					<width>1220</width>
 					<height>30</height>
-					<font>font13_bold</font>
-					<textcolor>grey2</textcolor>
-					<label>$LOCALIZE[31010]: $INFO[Container(9143).ListItem.Property(Next_Aired),, • ]$INFO[Container(9143).ListItem.Property(Next_Aired.Season),S]$INFO[Container(9143).ListItem.Property(Next_Aired.Episode),E, - ]$INFO[Container(9143).ListItem.Property(Next_Aired.Name)]</label>
+					<font>regular</font>
+					<textcolor>grey</textcolor>
+					<label>$LOCALIZE[31323]: $INFO[Container(9143).ListItem.Property(Next_Aired),, • ]$INFO[Container(9143).ListItem.Property(Next_Aired.Season),S]$INFO[Container(9143).ListItem.Property(Next_Aired.Episode),E, - ]$INFO[Container(9143).ListItem.Property(Next_Aired.Name)]</label>
 					<visible>!String.IsEmpty(Container(9143).ListItem.Property(Next_Aired))</visible>
 				</control>
 				<control type="label">
@@ -148,8 +148,8 @@
 					<width>1220</width>
 					<height>30</height>
 					<label>$INFO[Container(9143).ListItem.Property(Status)]</label>
-					<font>font13_bold</font>
-					<textcolor>grey2</textcolor>
+					<font>regular</font>
+					<textcolor>grey</textcolor>
 					<visible>!Container.Content(movies) + String.IsEmpty(Container(9143).ListItem.Property(Next_Aired))</visible>
 				</control>
 				<control type="group">
@@ -160,7 +160,7 @@
 						<top>960</top>
 						<width>1105</width>
 						<height>30</height>
-						<font>font13_bold</font>
+						<font>regular</font>
 						<textcolor>grey</textcolor>
 						<label>$INFO[Container(4500).ListItem(0).Year]$INFO[Container(4500).ListItem(-1).Year, - ]$INFO[Container(4500).NumItems, • , $LOCALIZE[342]]$INFO[ListItem.RatingAndVotes, • ]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime), • , $LOCALIZE[12391]]</label>
 						<textoffsetx>30</textoffsetx>
@@ -171,7 +171,7 @@
 						<top>1000</top>
 						<width>1105</width>
 						<height>30</height>
-						<font>font13_bold</font>
+						<font>regular</font>
 						<textcolor>grey</textcolor>
 						<label>$VAR[MovieSetGenreVar]</label>
 						<textoffsetx>30</textoffsetx>
@@ -184,13 +184,13 @@
 				<left>330</left>
 				<width>1550</width>
 				<height>155</height>
-				<font>font14_textbox</font>
-				<textcolor>$VAR[ThemeLabelColor]</textcolor>
+				<font>textbox</font>
+				<textcolor>$VAR[Home]</textcolor>
 				<aligny>top</aligny>
 				<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 				<include>DefaultButtonsValues</include>
 				<label>$INFO[ListItem.Tagline,, - ][COLOR grey]$VAR[VideoPlotVar][/COLOR]</label>
-				<visible>Skin.HasSetting(EnableBigFanPlot)</visible>
+				<visible>!Skin.HasSetting(EnableBigFanPlot)</visible>
 			</control>
 		</control>
 	</include>

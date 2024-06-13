@@ -6,13 +6,14 @@
 			<visible>Control.IsVisible(504)</visible>
 			<control type="label">
 				<left>398</left>
-				<top>600</top>
+				<top>815</top>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<width>1125</width>
-				<font>font16_title</font>
+				<font>mediumTitle</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>shadow</shadowcolor>
 				<visible>!Window.IsActive(pictures)</visible>
+
 			</control>
 			<control type="label">
 				<left>397.5</left>
@@ -20,20 +21,12 @@
 				<align>center</align>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<width>1125</width>
-				<font>font16_title</font>
+				<font>thumbTitle</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>shadow</shadowcolor>
 				<visible>Window.IsActive(pictures)</visible>
 			</control>
-			<control type="image">
-				<left>1459</left>
-				<top>826</top>
-				<width>68</width>
-				<height>30</height>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="white">$VAR[UnFocusHDIndicator]</texture>
-				<visible>Container.Content(movies) + Skin.HasSetting(noindicatorgallery)</visible>
-			</control>
+			
 			<control type="label">
 				<left>398</left>
 				<top>860</top>
@@ -89,7 +82,7 @@
 			<visible>Control.IsVisible(504)</visible>
 			<include>ViewAnimation</include>
 			<control type="fixedlist" id="504">
-				<viewtype label="$LOCALIZE[31251]">info</viewtype>
+				<viewtype label="$LOCALIZE[31321]">info</viewtype>
 				<left>-772</left>
 				<top>150</top>
 				<width>2850</width>
@@ -97,14 +90,14 @@
 				<onleft>504</onleft>
 				<onright>504</onright>
 				<onup>SetProperty(MediaMenu,True,Home)</onup>
-				<onup>SetFocus(9050)</onup>
+				<onup>SetFocus(9000)</onup>
 				<ondown condition="Control.IsVisible(50461)">50461</ondown>
 				<ondown condition="Control.IsVisible(615) + !Control.IsVisible(50461)">616</ondown>
 				<ondown condition="!Control.IsVisible(615) + !Control.IsVisible(50461)">4400</ondown>
 				<preloaditems>2</preloaditems>
 				<focusposition>1</focusposition>
 				<orientation>horizontal</orientation>
-				<visible>!System.AddonIsEnabled(script.skinvariables) + [Container.Content(movies) | Container.Content(tvshows) | Window.IsActive(pictures) | Container.Content(artists) | Container.Content(sets)] | System.AddonIsEnabled(script.skinvariables) + $EXP[Exp_View_504]</visible>
+				<visible>Container.Content(videos) | Container.Content(movies) | Container.Content(tvshows) | Window.IsActive(pictures) | Container.Content(artists) | Container.Content(sets)</visible>
 				<itemlayout width="1125" height="663">
 					<control type="group">
 						<left>45</left>
@@ -112,13 +105,13 @@
 						<control type="image">
 							<width>1125</width>
 							<height>633</height>
-							<texture>colors/black75.png</texture>
+							<texture>colors/black.png</texture>
 						</control>
 						<control type="image">
 							<visible>!Window.IsActive(pictures)</visible>
 							<width>1125</width>
 							<height>633</height>
-							<texture fallback="special://skin/extras/backgrounds/fallback_movies.jpg" background="true">$INFO[ListItem.Art(fanart)]</texture>
+							<texture fallback="backgroundimage.jpg" background="true">$INFO[ListItem.Art(fanart)]</texture>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
 							<colordiffuse>BAffffff</colordiffuse>
 						</control>
@@ -139,23 +132,23 @@
 						<control type="image">
 							<width>1125</width>
 							<height>633</height>
-							<texture>colors/black75.png</texture>
+							<texture>colors/black.png</texture>
 						</control>
 						<control type="image">
 							<visible>ListItem.IsFolder</visible>
 							<width>1125</width>
 							<height>633</height>
-							<texture>colors/black75.png</texture>
-							<bordertexture colordiffuse="$VAR[ThemeLabelColor]" border="8">thumbs/thumbnail_focused.png</bordertexture>
+							<texture>colors/black.png</texture>
+							<bordertexture colordiffuse="$VAR[Home]" border="8">thumbs/thumbnail_focused.png</bordertexture>
 							<bordersize>8</bordersize>
 						</control>
 						<control type="image">
 							<visible>!Window.IsActive(pictures)</visible>
 							<width>1125</width>
 							<height>633</height>
-							<texture fallback="special://skin/extras/backgrounds/fallback_movies.jpg" background="true">$INFO[ListItem.Art(fanart)]</texture>
+							<texture fallback="backgroundimage.jpg" background="true">$INFO[ListItem.Art(fanart)]</texture>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<bordertexture colordiffuse="$VAR[ThemeLabelColor]" border="8">thumbs/thumbnail_focused.png</bordertexture>
+							<bordertexture colordiffuse="textActive" border="8">thumbs/thumbnail_focused.png</bordertexture>
 							<bordersize>8</bordersize>
 						</control>
 						<control type="image">
@@ -181,7 +174,7 @@
 							<height>633</height>
 							<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
-							<bordertexture colordiffuse="$VAR[ThemeLabelColor]" border="8">thumbs/thumbnail_focused.png</bordertexture>
+							<bordertexture colordiffuse="textActive" border="8">thumbs/thumbnail_focused.png</bordertexture>
 							<bordersize>8</bordersize>
 						</control>
 					</control>
@@ -193,7 +186,7 @@
 				<width>1070</width>
 				<height>200</height>
 				<label>$VAR[VideoPlotVar]</label>
-				<font>font14_textbox</font>
+				<font>textbox</font>
 				<autoscroll time="2500" delay="3500" repeat="5000">true</autoscroll>
 				<textcolor>white</textcolor>
 				<shadowcolor>shadow</shadowcolor>
@@ -209,9 +202,9 @@
 				<ondown>50461</ondown>
 				<onleft>504</onleft>
 				<onright>504</onright>
-				<texturesliderbackground colordiffuse="1AFFFFFF">colors/white50.png</texturesliderbackground>
+				<texturesliderbackground colordiffuse="1AFFFFFF">colors/white.png</texturesliderbackground>
 				<texturesliderbar colordiffuse="1AFFFFFF">colors/white.png</texturesliderbar>
-				<texturesliderbarfocus colordiffuse="$VAR[ThemeLabelColor]">colors/white.png</texturesliderbarfocus>
+				<texturesliderbarfocus colordiffuse="textActive">colors/white.png</texturesliderbarfocus>
 				<showonepage>false</showonepage>
 				<visible>ListItem.IsCollection</visible>
 			</control>

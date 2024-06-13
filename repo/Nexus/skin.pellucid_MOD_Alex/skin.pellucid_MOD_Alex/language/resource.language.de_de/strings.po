@@ -830,13 +830,31 @@ msgctxt "#31320"
 msgid "Choose view"
 msgstr "Ansicht auswählen"
 
+msgctxt "#31321"
+msgid "Gallery"
+msgstr "Galerie"
+
+msgctxt "#31322"
+msgid "Display runtime in hours and minutes"
+msgstr "Zeige Spieldauer in Stunden und Minuten"
+
+msgctxt "#31323"
+msgid "Next episode"
+msgstr "Nächste Episode"
+
+msgctxt "#31324"
+msgid "Ends at"
+msgstr "Endet um"
+
+msgctxt "#31325"
+msgid "Landscape"
+msgstr "Querformat"
+
 msgctxt "#31250"
 msgid "BigInfo"
 msgstr "BigInfo"
 
-msgctxt "#31251"
-msgid "Gallery"
-msgstr "Galerie"
+
 
 msgctxt "#31252"
 msgid "TopBar"
@@ -866,7 +884,10 @@ msgctxt "#31088"
 msgid "BannerWall"
 msgstr "BannerWand"
 
-msgctxt "#31076"
-msgid "Landscape"
-msgstr "Querformat"
 
+
+
+
+msgctxt "#31078"
+msgid "Gallery"
+msgstr "Galerie"

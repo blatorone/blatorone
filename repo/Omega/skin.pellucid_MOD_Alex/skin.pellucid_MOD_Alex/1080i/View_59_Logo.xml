@@ -62,7 +62,7 @@
 		<onright>59</onright>
 		<onup condition="!ListItem.IsParentFolder">4401</onup>
 		<onup condition="ListItem.IsParentFolder">SetProperty(MediaMenu,True,Home)</onup>
-		<onup condition="ListItem.IsParentFolder">SetFocus(9050)</onup>
+		<onup condition="ListItem.IsParentFolder">SetFocus(9000)</onup>
 		<ondown condition="Control.IsVisible(95960)">95960</ondown>
 		<ondown condition="!Control.IsVisible(95960)">4400</ondown>
 		<pagecontrol>95960</pagecontrol>
@@ -70,7 +70,7 @@
 		<focusposition>2</focusposition>
 		<viewtype label="$LOCALIZE[31606]">list</viewtype>
 		<scrolltime tween="quadratic" easing="out">300</scrolltime>
-		<visible>!System.AddonIsEnabled(script.skinvariables) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(sets)] | [Window.IsActive(music) +  Container.Content(artists)] | !Window.IsActive(music) + System.AddonIsEnabled(script.skinvariables) + $EXP[Exp_View_59]</visible>
+		<visible>Container.Content(tvshows) | Container.Content(movies) | Container.Content(sets)] | [Window.IsActive(music) +  Container.Content(artists) | !Window.IsActive(music)</visible>
 		<orientation>horizontal</orientation>
 		<itemlayout width="495" height="450">
 			<control type="group">

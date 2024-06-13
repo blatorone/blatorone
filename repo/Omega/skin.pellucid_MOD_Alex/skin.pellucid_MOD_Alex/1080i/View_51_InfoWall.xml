@@ -79,7 +79,7 @@
 					<height>342</height>
 					<onleft>50</onleft>
 					<onright condition="!Control.IsVisible(615)">SetProperty(MediaMenu,True,Home)</onright>
-					<onright condition="!Control.IsVisible(615)">SetFocus(9050)</onright>
+					<onright condition="!Control.IsVisible(615)">SetFocus(9000)</onright>
 					<onright condition="Control.IsVisible(615)">615</onright>
 					<ondown>95161</ondown>
 					<onup>95161</onup>
@@ -95,7 +95,7 @@
 				<width>1000</width>
 				<height>900</height>
 				<onleft condition="!Control.IsVisible(95160)">SetProperty(MediaMenu,True,Home)</onleft>
-				<onleft condition="!Control.IsVisible(95160)">SetFocus(9050)</onleft>
+				<onleft condition="!Control.IsVisible(95160)">SetFocus(9000)</onleft>
 				<onleft condition="Control.IsVisible(95160)">95160</onleft>
 				<onright condition="Control.IsVisible(95161)">95161</onright>
 				<onright condition="Control.IsVisible(615) + !Control.IsVisible(95161)">615</onright>
@@ -105,7 +105,7 @@
 				<preloaditems>2</preloaditems>
 				<viewtype label="$LOCALIZE[31316]">icon</viewtype>
 				<scrolltime tween="quadratic" easing="out">300</scrolltime>
-				<visible>!System.AddonIsEnabled(script.skinvariables) + [Container.Content(tvshows) | Container.Content(movies)] | System.AddonIsEnabled(script.skinvariables) + $EXP[Exp_View_51]</visible>
+				<visible>Container.Content(tvshows) | Container.Content(movies)</visible>
 				<itemlayout height="300" width="200" condition="![Skin.HasSetting(Enable.InfoWall.TVBanners) + Container.Content(tvshows)] + ![Skin.HasSetting(Enable.InfoWall.MovieBanners) + Container.Content(movies)] + !Skin.HasSetting(Enable.AlternateInfowall)">
 					<control type="image">
 						<width>200</width>
@@ -406,7 +406,7 @@
 				<height>900</height>
 				<onright>50</onright>
 				<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-				<onleft>SetFocus(9050)</onleft>
+				<onleft>SetFocus(9000)</onleft>
 				<texturesliderbackground>colors/black10.png</texturesliderbackground>
 				<texturesliderbar>colors/white25.png</texturesliderbar>
 				<texturesliderbarfocus colordiffuse="$VAR[ThemeLabelColor]">colors/white.png</texturesliderbarfocus>
@@ -434,7 +434,7 @@
 				<width>900</width>
 				<height>900</height>
 				<onleft condition="!Control.IsVisible(95160)">SetProperty(MediaMenu,True,Home)</onleft>
-				<onleft condition="!Control.IsVisible(95160)">SetFocus(9050)</onleft>
+				<onleft condition="!Control.IsVisible(95160)">SetFocus(9000)</onleft>
 				<onleft condition="Control.IsVisible(95160)">95160</onleft>
 				<onright condition="Control.IsVisible(95161)">95161</onright>
 				<onright condition="Control.IsVisible(615) + !Control.IsVisible(95161)">615</onright>
@@ -587,7 +587,7 @@
 				<height>900</height>
 				<onright>50</onright>
 				<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-				<onleft>SetFocus(9050)</onleft>
+				<onleft>SetFocus(9000)</onleft>
 				<ondown>95160</ondown>
 				<onup>95160</onup>
 				<showonepage>false</showonepage>
@@ -666,7 +666,7 @@
 					<height>342</height>
 					<onleft>50</onleft>
 					<onright condition="!Control.IsVisible(615)">SetProperty(MediaMenu,True,Home)</onright>
-					<onright condition="!Control.IsVisible(615)">SetFocus(9050)</onright>
+					<onright condition="!Control.IsVisible(615)">SetFocus(9000)</onright>
 					<onright condition="Control.IsVisible(615)">615</onright>
 					<ondown>95161</ondown>
 					<onup>95161</onup>
@@ -698,7 +698,7 @@
 				<height>900</height>
 				<onleft condition="Control.IsVisible(95160)">95160</onleft>
 				<onleft condition="!Control.IsVisible(95160)">SetProperty(MediaMenu,True,Home)</onleft>
-				<onleft condition="!Control.IsVisible(95160)">SetFocus(9050)</onleft>
+				<onleft condition="!Control.IsVisible(95160)">SetFocus(9000)</onleft>
 				<onright>95161</onright>
 				<onup>51</onup>
 				<ondown>51</ondown>
@@ -761,7 +761,7 @@
 				<height>900</height>
 				<onright>50</onright>
 				<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-				<onleft>SetFocus(9050)</onleft>
+				<onleft>SetFocus(9000)</onleft>
 				<showonepage>false</showonepage>
 				<texturesliderbackground colordiffuse="1AFFFFFF">colors/white50.png</texturesliderbackground>
 				<texturesliderbar colordiffuse="1AFFFFFF">colors/white.png</texturesliderbar>
@@ -838,7 +838,7 @@
 					<height>342</height>
 					<onleft>50</onleft>
 					<onright>SetProperty(MediaMenu,True,Home)</onright>
-					<onright>SetFocus(9050)</onright>
+					<onright>SetFocus(9000)</onright>
 					<ondown>95161</ondown>
 					<onup>95161</onup>
 					<showonepage>false</showonepage>

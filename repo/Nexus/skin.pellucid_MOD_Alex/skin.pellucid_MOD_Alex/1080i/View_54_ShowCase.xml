@@ -704,7 +704,7 @@
 					<width>14</width>
 					<height>180</height>
 					<onup>SetProperty(MediaMenu,True,Home)</onup>
-					<onup>SetFocus(9050)</onup>
+					<onup>SetFocus(9000)</onup>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<ondown>50</ondown>
@@ -792,7 +792,7 @@
 					<width>14</width>
 					<height>360</height>
 					<onup>SetProperty(MediaMenu,True,Home)</onup>
-					<onup>SetFocus(9050)</onup>
+					<onup>SetFocus(9000)</onup>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<ondown>50</ondown>

@@ -15,18 +15,19 @@
 		<height>960</height>
 		<onleft>52</onleft>
 		<onright>52</onright>
+		<onup>9000</onup>
 		<onup condition="!ListItem.IsParentFolder">4401</onup>
 		<onup condition="String.IsEmpty(ListItem.Title)">SetProperty(MediaMenu,True,Home)</onup>
-		<onup condition="String.IsEmpty(ListItem.Title)">SetFocus(9050)</onup>
+		<onup condition="String.IsEmpty(ListItem.Title)">SetFocus(9000)</onup>
 		<ondown condition="Control.IsVisible(95260)">95260</ondown>
 		<ondown condition="!Control.IsVisible(95260)">4400</ondown>
 		<pagecontrol>95260</pagecontrol>
 		<focusposition>1</focusposition>
 		<orientation>horizontal</orientation>
 		<preloaditems>2</preloaditems>
-		<viewtype label="31076">bigwrap</viewtype>
+		<viewtype label="31325">bigwrap</viewtype>
 		<scrolltime tween="sine" easing="inout">500</scrolltime>
-		<visible>!System.AddonIsEnabled(script.skinvariables) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(sets)] | Window.IsActive(music) + Container.Content(artists) | !Window.IsActive(music) + System.AddonIsEnabled(script.skinvariables) + $EXP[Exp_View_52]</visible>
+		<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(sets) | Window.IsActive(music) + Container.Content(artists) | !Window.IsActive(music)</visible>
 		<itemlayout height="642" width="680" condition="![Skin.HasSetting(Enable.LandscapeNoFlow) + !Control.IsVisible(6010)]" />
 		<focusedlayout height="636" width="680" condition="![Skin.HasSetting(Enable.LandscapeNoFlow) + !Control.IsVisible(6010)]" />
 		<itemlayout height="642" width="710" condition="Skin.HasSetting(Enable.LandscapeNoFlow)">

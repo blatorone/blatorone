@@ -64,7 +64,7 @@
 						<onup>60360</onup>
 						<ondown>60360</ondown>
 						<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-						<onleft>SetFocus(9050)</onleft>
+						<onleft>SetFocus(9000)</onleft>
 						<onright>603</onright>
 						<showonepage>false</showonepage>
 						<texturesliderbackground colordiffuse="1AFFFFFF">colors/white50.png</texturesliderbackground>
@@ -190,7 +190,7 @@
 						<ondown>61</ondown>
 						<onleft>60350</onleft>
 						<onright condition="!Control.IsVisible(615)">SetProperty(MediaMenu,True,Home)</onright>
-						<onright condition="!Control.IsVisible(615)">SetFocus(9050)</onright>
+						<onright condition="!Control.IsVisible(615)">SetFocus(9000)</onright>
 						<onright condition="Control.IsVisible(615)">615</onright>
 						<showonepage>false</showonepage>
 						<texturesliderbackground colordiffuse="1AFFFFFF">colors/white50.png</texturesliderbackground>

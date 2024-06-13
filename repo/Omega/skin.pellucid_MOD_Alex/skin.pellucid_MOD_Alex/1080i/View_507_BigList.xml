@@ -19,14 +19,14 @@
 				<width>1808</width>
 				<height>952</height>
 				<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-				<onleft>SetFocus(9050)</onleft>
+				<onleft>SetFocus(9000)</onleft>
 				<onright condition="Control.IsVisible(50760)">50760</onright>
 				<onright condition="!Control.IsVisible(50760)">4400</onright>
 				<onup>507</onup>
 				<ondown>507</ondown>
 				<preloaditems>2</preloaditems>
 				<pagecontrol>50760</pagecontrol>
-				<visible>!System.AddonIsEnabled(script.skinvariables) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] | Window.IsActive(music) + [Container.Content(artists) | Container.Content(albums)] | !Window.IsActive(music) + System.AddonIsEnabled(script.skinvariables) + $EXP[Exp_View_507]</visible>
+				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] | Window.IsActive(music) + [Container.Content(artists) | Container.Content(albums) | !Window.IsActive(music)</visible>
 				<scrolltime tween="quadratic" easing="out">200</scrolltime>
 				<itemlayout width="1808" height="238">
 					<include>view_BigList-LandscapeCommons</include>

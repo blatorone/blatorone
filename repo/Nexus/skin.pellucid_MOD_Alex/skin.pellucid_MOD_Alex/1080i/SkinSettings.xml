@@ -389,7 +389,16 @@
                     <onclick>Skin.Togglesetting(crosskey)</onclick>
                     <selected>Skin.HasSetting(crosskey)</selected>
                 </control>
-
+                <!--
+                <control type="radiobutton" id="34">
+					<visible>Container(8000).Hasfocus(4)</visible>
+                    <description></description>
+                    <width>14-col</width>		
+                    <onclick>Skin.ToggleSetting(Enable.HourMinuteDuration)</onclick>
+					<selected>Skin.HasSetting(Enable.HourMinuteDuration)</selected>
+					<label>$LOCALIZE[31322]</label>
+                </control>
+                -->
                 <!--homescreen-->
                 <control type="label" id="1003">
                         <visible>Container(8000).Hasfocus(4)</visible>

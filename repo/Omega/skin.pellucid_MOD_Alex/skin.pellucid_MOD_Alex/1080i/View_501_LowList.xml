@@ -703,7 +703,7 @@
 				<include condition="!Skin.HasSetting(nohighlist)">LowListHeightHigh</include>
 				<include condition="Skin.HasSetting(nohighlist)">LowListHeightLow</include>
 				<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-				<onleft>SetFocus(9050)</onleft>
+				<onleft>SetFocus(9000)</onleft>
 				<onright condition="Control.IsVisible(50160)">50160</onright>
 				<onright condition="!Control.IsVisible(50160) + Control.IsVisible(50161)">50161</onright>
 				<onright condition="!Control.IsVisible(50160) + !Control.IsVisible(50161)">4400</onright>
@@ -711,7 +711,7 @@
 				<ondown>501</ondown>
 				<pagecontrol>50160</pagecontrol>
 				<viewtype label="$LOCALIZE[31312]">list</viewtype>
-				<visible>!System.AddonIsEnabled(script.skinvariables) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | String.Contains(Container.FolderPath,plugin.program.advanced.launcher)] | System.AddonIsEnabled(script.skinvariables) + $EXP[Exp_View_501]</visible>
+				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | String.Contains(Container.FolderPath,plugin.program.advanced.launcher)</visible>
 				<scrolltime tween="quadratic" easing="out">200</scrolltime>
 				<animation effect="slide" end="0,-203.375" time="120" condition="!Skin.HasSetting(nohighlist)">Conditional</animation>
 				<itemlayout height="68" width="806" condition="Container.Content(movies)">
@@ -1223,7 +1223,7 @@
 				<width>976</width>
 				<height>427</height>
 				<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-				<onleft>SetFocus(9050)</onleft>
+				<onleft>SetFocus(9000)</onleft>
 				<onright>50160</onright>
 				<onup>501</onup>
 				<ondown>501</ondown>
@@ -1569,7 +1569,7 @@
 					<ondown>PageUp(70)</ondown>
 					<onleft>50</onleft>
 					<onright>SetProperty(MediaMenu,True,Home)</onright>
-					<onright>SetFocus(9050)</onright>
+					<onright>SetFocus(9000)</onright>
 					<texturesliderbackground colordiffuse="1AFFFFFF">colors/white50.png</texturesliderbackground>
 					<texturesliderbar colordiffuse="1AFFFFFF">colors/white.png</texturesliderbar>
 					<texturesliderbarfocus colordiffuse="$VAR[ThemeLabelColor]">colors/white.png</texturesliderbarfocus>
@@ -1583,7 +1583,7 @@
 				<include condition="!Skin.HasSetting(nohighlistgame)">LowListHeightHigh</include>
 				<include condition="Skin.HasSetting(nohighlistgame)">LowListHeightLow</include>
 				<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-				<onleft>SetFocus(9050)</onleft>
+				<onleft>SetFocus(9000)</onleft>
 				<onright condition="Control.IsVisible(50160)">50160</onright>
 				<onright condition="!Control.IsVisible(50160)">50162</onright>
 				<onup>501</onup>

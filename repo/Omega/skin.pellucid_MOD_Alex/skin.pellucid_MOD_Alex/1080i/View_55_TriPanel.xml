@@ -177,7 +177,7 @@
 					<width>806</width>
 					<height>840</height>
 					<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-					<onleft>SetFocus(9050)</onleft>
+					<onleft>SetFocus(9000)</onleft>
 					<onright condition="Control.IsVisible(95560)">95560</onright>
 					<onright condition="!Control.IsVisible(95560) + Control.IsVisible(95561)">95561</onright>
 					<onright condition="!Control.IsVisible(95560) + !Control.IsVisible(95561)">4400</onright>
@@ -186,7 +186,7 @@
 					<viewtype label="31307">list</viewtype>
 					<pagecontrol>95560</pagecontrol>
 					<preloaditems>2</preloaditems>
-					<visible>!System.AddonIsEnabled(script.skinvariables) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(sets)] | System.AddonIsEnabled(script.skinvariables) + $EXP[Exp_View_55]</visible>
+					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(sets)</visible>
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>
 					<itemlayout height="70" width="806" condition="Container.Content(movies)">
 						<control type="label">
@@ -753,7 +753,7 @@
 					<width>806</width>
 					<height>575</height>
 					<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-					<onleft>SetFocus(9050)</onleft>
+					<onleft>SetFocus(9000)</onleft>
 					<onright>95560</onright>
 					<onup>55</onup>
 					<ondown>55</ondown>
@@ -956,7 +956,7 @@
 					<ondown>PageUp(70)</ondown>
 					<onleft>50</onleft>
 					<onright>SetProperty(MediaMenu,True,Home)</onright>
-					<onright>SetFocus(9050)</onright>
+					<onright>SetFocus(9000)</onright>
 					<texturesliderbackground colordiffuse="1AFFFFFF">colors/white50.png</texturesliderbackground>
 					<texturesliderbar colordiffuse="1AFFFFFF">colors/white.png</texturesliderbar>
 					<texturesliderbarfocus colordiffuse="$VAR[ThemeLabelColor]">colors/white.png</texturesliderbarfocus>
@@ -1008,7 +1008,7 @@
 					<width>806</width>
 					<height>840</height>
 					<onleft>SetProperty(MediaMenu,True,Home)</onleft>
-					<onleft>SetFocus(9050)</onleft>
+					<onleft>SetFocus(9000)</onleft>
 					<onright>95560</onright>
 					<onup>55</onup>
 					<ondown>55</ondown>

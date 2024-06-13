@@ -8,7 +8,7 @@
     <include file="Includes_hubMenu.xml"/>
     <include file="Includes_hubOptionsItems.xml"/>
     <include file="View_LiveTVChannels.xml"/>
-
+    <include file="Variables.xml" />
     <include file="View_50_List.xml"/>
     <include file="View_51_InfoWall.xml"/>
     <include file="View_52_Landscape.xml"/>
@@ -310,7 +310,7 @@
     <include name="pageHeadervideonav">
         
 		<control type="group">
-        <visible>!Control.IsVisible(50) + !window.isactive(1130)</visible>
+        <visible>!Control.IsVisible(50) + !window.isactive(1130) + !Control.IsVisible(504)</visible>
 			<posx>col-1-begin</posx>
             <posy>960</posy>
 			<!--title-->
@@ -1160,16 +1160,27 @@
 		<top>80</top>
 		<width>400</width>
 		<height>1080</height>
-		<onleft>9050</onleft>
+		<onleft>9000</onleft>
 		<onright>ClearProperty(MediaMenu,Home)</onright>
 		<onright>50</onright>
-		<onup>9050</onup>
+		<onup>9000</onup>
 		<ondown>9957</ondown>
 		<onback>ClearProperty(MediaMenu,Home)</onback>
 		<onback>50</onback>
 		<include condition="Skin.HasSetting(KioskMode.Enabled)">KioskModeButton</include>
 		<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(1128) | Window.IsVisible(1130) | Window.IsVisible(1131) | Window.IsVisible(1132)" reversible="true">Conditional</animation>
 		
+	</include>
+
+    <include name="DefaultButtonsValues">
+		<height>90</height>
+		<width>501</width>
+		<textoffsetx>15</textoffsetx>
+		<aligny>top</aligny>
+		<font>buttonTitle</font>
+		<textcolor>white</textcolor>
+		<shadowcolor>shadow</shadowcolor>
+		<focusedcolor>white</focusedcolor>
 	</include>
 
 

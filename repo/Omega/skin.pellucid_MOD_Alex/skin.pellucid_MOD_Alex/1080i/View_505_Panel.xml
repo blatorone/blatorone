@@ -19,7 +19,7 @@
 				<preloaditems>2</preloaditems>
 				<pagecontrol>50560</pagecontrol>
 				<orientation>horizontal</orientation>
-				<visible>!System.AddonIsEnabled(script.skinvariables) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] | System.AddonIsEnabled(script.skinvariables)</visible>
+				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)</visible>
 				<itemlayout width="252" height="438">
 					<control type="image">
 						<posx>0</posx>
