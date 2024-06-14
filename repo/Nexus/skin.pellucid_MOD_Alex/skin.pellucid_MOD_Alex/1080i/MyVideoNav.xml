@@ -99,6 +99,7 @@
                     			<aspectratio>stretch</aspectratio>
                 			</control>
 							<control type="image">
+								<visible>!Control.IsVisible(51)</visible>
                     			<posx>-450</posx>
                     			<posy>-3</posy>
                     			<width>fullscreenwidth</width>
@@ -108,6 +109,7 @@
                     			<aspectratio>stretch</aspectratio>
                 			</control>
 							<control type="label">
+								<visible>!Control.IsVisible(51)</visible>
 								<width>1020</width>
 								<height>46</height>
 								<align>center</align>
@@ -125,9 +127,10 @@
 								<font>menuTitle2</font>
 								<scroll>true</scroll>
 								<textcolor>$VAR[Home]</textcolor>
-								<label>$LOCALIZE[180]: $INFO[ListItem.Duration]       $LOCALIZE[31160]: $INFO[ListItem.EndTimeResume]</label>
+								<label>$LOCALIZE[180]: $VAR[MinsToHourDurationVar]       $LOCALIZE[31160]: $INFO[ListItem.EndTimeResume]</label>
 							</control>
 							<control type="label">
+								<visible>!Control.IsVisible(51)</visible>
 								<width>1020</width>
 								<height>46</height>
 								<posy>80</posy>
@@ -136,7 +139,18 @@
 								<scroll>true</scroll>
 								<textcolor>$VAR[Home]</textcolor>
 								<label>$INFO[ListItem.Genre]</label>
-							</control>							
+							</control>
+							<control type="button">
+						<visible>Skin.hassetting(Touch) + !Skin.HasSetting(crosskey)</visible>
+                    			<posx>-450</posx>
+                    			<posy>-3</posy>
+                    			<width>fullscreenwidth</width>
+                    			<height>136</height>
+                    			<focusedcolor></focusedcolor>
+            					<texturefocus></texturefocus>
+            					<colordiffuse></colordiffuse>
+								<onclick>Back</onclick>
+                		</control>							
 							
 						</control>
 					</control>
@@ -205,7 +219,7 @@
             <!--page scrollbar-->
             <control type="group" id="8000">
 				<control type="group">
-                	<visible>Control.IsVisible(60)</visible>
+                	<visible>Control.IsVisible(60) + !Control.IsVisible(51)</visible>
 	                <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
 	                <control type="scrollbar" id="60">
 	                    <posx>54r</posx>
@@ -219,10 +233,37 @@
 	                </control>
 				</control>
 				<control type="group">
-	                <visible>Control.IsVisible(61)</visible>
+	                <visible>Control.IsVisible(61) + !Control.IsVisible(51)</visible>
 	                <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
 	                <control type="scrollbar" id="61">
 	                    <posx>54r</posx>
+	                    <posy>row-8-begin</posy>
+	                    <height>17-row</height>
+	                    <onleft>9999</onleft>
+	                    <onback>9999</onback>
+                        <onright>7000</onright>
+                        <onup>7000</onup>
+	                </control>
+	            </control>
+				<control type="group">
+                	<visible>Control.IsVisible(60) + Control.IsVisible(51)</visible>
+	                <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
+	                <control type="scrollbar" id="60">
+	                    <posx>920</posx>
+	                    <posy>row-8-begin</posy>
+	                    <height>17-row</height>
+	                    <onleft>9999</onleft>
+	                    <onback>9999</onback>
+                        <onright>7000</onright>
+                        <onup>7000</onup>
+                        
+	                </control>
+				</control>
+				<control type="group">
+	                <visible>Control.IsVisible(61) + Control.IsVisible(51)</visible>
+	                <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
+	                <control type="scrollbar" id="61">
+	                    <posx>920</posx>
 	                    <posy>row-8-begin</posy>
 	                    <height>17-row</height>
 	                    <onleft>9999</onleft>

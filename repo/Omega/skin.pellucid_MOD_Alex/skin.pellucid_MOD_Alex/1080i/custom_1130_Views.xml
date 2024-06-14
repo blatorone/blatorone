@@ -255,12 +255,11 @@
 							<visible>Window.IsActive(music)</visible>
 							<visible>[Container.Content(artists) | Container.Content(albums)] | [Window.IsActive(music) + Container.Content(files)] + !Skin.HasSetting(Disable.FullscreenWallView)</visible>
 						</item>
-						<!--
 						<item>
 							<label>$LOCALIZE[31316]</label>
 							<onclick>Container.SetViewMode(51)</onclick>
 							<visible>Window.IsActive(videos)</visible>
-							<visible>[Container.Content(tvshows) | Container.Content(movies)] + !Skin.HasSetting(Disable.InfoWallView)</visible>
+							<visible>[Container.Content(tvshows)| Container.Content(videos) | Container.Content(movies)] + !Skin.HasSetting(Disable.InfoWallView)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[31316]</label>
@@ -269,6 +268,8 @@
 							<visible>[Container.Content(albums) | Container.Content(artists) | Container.Content(addons)]</visible>
 							<visible>!Skin.HasSetting(Disable.InfoWallView)</visible>
 						</item>
+						<!--
+						
 						<item>
 							<label>$LOCALIZE[31088]</label>
 							<onclick>Container.SetViewMode(58)</onclick>
