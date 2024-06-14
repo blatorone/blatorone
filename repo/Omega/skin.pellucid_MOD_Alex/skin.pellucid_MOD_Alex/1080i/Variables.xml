@@ -254,8 +254,8 @@
 		<value condition="!String.IsEmpty(Skin.String(MovieGenreIconPath))">$INFO[Skin.String(MovieGenreIconPath)]</value>
 	</variable>
 	<variable name="OverlayVar">
-		<value condition="ListItem.IsResumable + !Skin.HasSetting(Disable.Resumable)">overlays/resumable.png</value>
-		<value condition="!Skin.HasSetting(Disable.OverlayUnwatched) + String.IsEqual(ListItem.Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
+		<value condition="ListItem.IsResumable + !Skin.HasSetting(Disable.overlays)">overlays/resumable.png</value>
+		<!--<value condition="!Skin.HasSetting(Disable.OverlayUnwatched) + String.IsEqual(ListItem.Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>-->
 		<value condition="!Skin.HasSetting(Disable.OverlayWatched) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 	<variable name="ListItemOverlay">
@@ -1648,7 +1648,7 @@
 		<value condition="Control.HasFocus(900) + String.IsEqual(Container(10051).ListItem.Property(call),tv)">$LOCALIZE[1024]</value>
 		<value condition="Control.HasFocus(900)">$LOCALIZE[208]</value>
 		<value condition="Control.HasFocus(901)">$LOCALIZE[206]</value>
-		<value condition="Control.HasFocus(902)">$LOCALIZE[31457]</value>
+		<value condition="Control.HasFocus(902)">$LOCALIZE[31326]</value>
 		<value condition="Control.HasFocus(903)">$LOCALIZE[5]</value>
 		<value condition="Control.HasFocus(3000) | Control.HasFocus(64)">$LOCALIZE[31271]</value>
 		<value condition="Control.HasFocus(90002) | Container(90000).HasNext + !Container(90000).HasPrevious">$LOCALIZE[31453]</value>

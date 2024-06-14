@@ -54,7 +54,7 @@
 						<label>[B]$INFO[ListItem.label][/B][CR]$INFO[ListItem.year]</label>
 					</control>
 					<control type="group">
-						<visible>!String.isEmpty(ListItem.RatingandVotes)</visible>
+						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>6</posx>
 						<posy>6</posy>
@@ -81,7 +81,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
+						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>166</posx>
 						<posy>6</posy>
@@ -95,7 +95,7 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
+							<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 							<posx>28</posx>
 							<posy>-4</posy>
 							<width>36</width>
@@ -107,7 +107,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)</visible>
+						<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>166</posx>
 						<posy>6</posy>
@@ -121,7 +121,7 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)</visible>
+							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
 							<posx>28</posx>
 							<posy>-4</posy>
 							<width>36</width>
@@ -177,7 +177,7 @@
 							<label>[B]$INFO[ListItem.label][/B][CR]$INFO[ListItem.year]</label>
 						</control>
 						<control type="group">
-						<visible>!String.isEmpty(ListItem.RatingandVotes)</visible>
+						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>6</posx>
 						<posy>6</posy>
@@ -204,7 +204,7 @@
 						</control>
 					</control>
 						<control type="group">
-						<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
+						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>166</posx>
 						<posy>6</posy>
@@ -218,7 +218,7 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
+							<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 							<posx>28</posx>
 							<posy>-4</posy>
 							<width>36</width>
@@ -230,7 +230,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)</visible>
+						<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>166</posx>
 						<posy>6</posy>
@@ -244,7 +244,7 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)</visible>
+							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
 							<posx>28</posx>
 							<posy>-4</posy>
 							<width>36</width>

@@ -285,7 +285,7 @@
 							<label>[B]$INFO[ListItem.title][/B][CR]$INFO[ListItem.year]</label>
 						</control>
 						<control type="group">
-							<visible>String.IsEmpty(ListItem.PlayCount)</visible>
+							<visible>String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 							<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 							<posx>166</posx>
 							<posy>6</posy>
@@ -355,7 +355,7 @@
 								<label>[B]$INFO[ListItem.title][/B][CR]$INFO[ListItem.year]</label>
 							</control>
 							<control type="group">
-								<visible>String.IsEmpty(ListItem.PlayCount)</visible>
+								<visible>String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 								<posx>166</posx>
 								<posy>6</posy>
 								<control type="image">

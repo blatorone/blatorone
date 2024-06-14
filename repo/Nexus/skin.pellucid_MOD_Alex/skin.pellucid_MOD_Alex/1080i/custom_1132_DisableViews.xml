@@ -84,7 +84,7 @@
 					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
         			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
         			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
-        			<textureradiooffnofocus colordiffuse="Home">buttons/radio-button-off.png</textureradiooffnofocus>
+        			<textureradiooffnofocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradiooffnofocus>
 					<onclick>SetProperty(DisableView,True,1132)</onclick>
 					<onclick>Skin.ToggleSetting(Disable.SongListView)</onclick>
 					<selected>!Skin.HasSetting(Disable.SongListView)</selected>
@@ -213,7 +213,7 @@
 					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
         			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
         			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
-        			<textureradiooffnofocus colordiffuse="Home">buttons/radio-button-off.png</textureradiooffnofocus>
+        			<textureradiooffnofocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradiooffnofocus>
 					<onclick>SetProperty(DisableView,True,1132)</onclick>
 					<onclick>Skin.ToggleSetting(Disable.EpisodeView)</onclick>
 					<selected>!Skin.HasSetting(Disable.EpisodeView)</selected>
@@ -228,7 +228,7 @@
 					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
         			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
         			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
-        			<textureradiooffnofocus colordiffuse="Home">buttons/radio-button-off.png</textureradiooffnofocus>
+        			<textureradiooffnofocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradiooffnofocus>
 					<onclick>SetProperty(DisableView,True,1132)</onclick>
 					<onclick>Skin.ToggleSetting(Disable.ShowCaseView)</onclick>
 					<selected>!Skin.HasSetting(Disable.ShowCaseView)</selected>
@@ -243,7 +243,7 @@
 					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
         			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
         			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
-        			<textureradiooffnofocus colordiffuse="Home">buttons/radio-button-off.png</textureradiooffnofocus>
+        			<textureradiooffnofocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradiooffnofocus>
 					<onclick>SetProperty(DisableView,True,1132)</onclick>
 					<onclick>Skin.ToggleSetting(Disable.WallView)</onclick>
 					<selected>!Skin.HasSetting(Disable.WallView)</selected>
@@ -258,7 +258,7 @@
 					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
         			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
         			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
-        			<textureradiooffnofocus colordiffuse="Home">buttons/radio-button-off.png</textureradiooffnofocus>
+        			<textureradiooffnofocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradiooffnofocus>
 					<onclick>SetProperty(DisableView,True,1132)</onclick>
 					<onclick>Skin.ToggleSetting(Disable.FullscreenWallView)</onclick>
 					<selected>!Skin.HasSetting(Disable.FullscreenWallView)</selected>
@@ -297,7 +297,7 @@
 					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
         			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
         			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
-        			<textureradiooffnofocus colordiffuse="Home">buttons/radio-button-off.png</textureradiooffnofocus>
+        			<textureradiooffnofocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradiooffnofocus>
 					<onclick>SetProperty(DisableView,True,1132)</onclick>
 					<onclick>Skin.ToggleSetting(Disable.LandscapeView)</onclick>
 					<selected>!Skin.HasSetting(Disable.LandscapeView)</selected>
@@ -312,7 +312,7 @@
 					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
         			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
         			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
-        			<textureradiooffnofocus colordiffuse="Home">buttons/radio-button-off.png</textureradiooffnofocus>
+        			<textureradiooffnofocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradiooffnofocus>
 					<onclick>SetProperty(DisableView,True,1132)</onclick>
 					<onclick>Skin.ToggleSetting(Disable.BigFanView)</onclick>
 					<selected>!Skin.HasSetting(Disable.BigFanView)</selected>
@@ -329,7 +329,7 @@
 					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
         			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
         			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
-        			<textureradiooffnofocus colordiffuse="Home">buttons/radio-button-off.png</textureradiooffnofocus>
+        			<textureradiooffnofocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradiooffnofocus>
 					<onclick>SetProperty(DisableView,True,1132)</onclick>
 					<onclick>Skin.ToggleSetting(Disable.GalleryView)</onclick>
 					<selected>!Skin.HasSetting(Disable.GalleryView)</selected>
@@ -344,10 +344,25 @@
 					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
         			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
         			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
-        			<textureradiooffnofocus colordiffuse="Home">buttons/radio-button-off.png</textureradiooffnofocus>
+        			<textureradiooffnofocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradiooffnofocus>
 					<onclick>SetProperty(DisableView,True,1132)</onclick>
 					<onclick>Skin.ToggleSetting(Disable.PanelView)</onclick>
 					<selected>!Skin.HasSetting(Disable.PanelView)</selected>
+				</control>
+				
+				<control type="radiobutton" id="1634">
+					<description>Disable overlay</description>
+					<width>383</width>
+					<textwidth>383</textwidth>
+					<radiowidth>110</radiowidth>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[31326]</label>
+					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
+        			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
+        			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
+        			<textureradiooffnofocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradiooffnofocus>
+					<onclick>Skin.toggleSetting(Disable.overlays)</onclick>
+					<selected>Skin.HasSetting(Disable.overlays)</selected>
 				</control>
 				<control type="togglebutton" id="9013">
 				<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>

@@ -847,6 +847,23 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 			</item>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
+			<property name="mainmenuid">14</property>
+			<label>&lt;Kein&gt;</label>
+			<label2>Benutzerdefinierter Eintrag</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">kein</property>
+			<property name="defaultID" />
+			<onclick condition="true">control.setfocus(9999)</onclick>
+			<onclick>activatewindow(1131)</onclick>
+			<property name="path">activatewindow(1131)</property>
+			<property name="list">activatewindow(1131)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9001).ListItem.Property(submenuVisibility),videosubmenu)</visible>
+			<property name="group">videosubmenu</property>
+			<property name="isSubmenu">True</property>
+			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">15</property>
@@ -2266,6 +2283,23 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 			</item>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
+			<property name="mainmenuid">14</property>
+			<label>&lt;Kein&gt;</label>
+			<label2>Benutzerdefinierter Eintrag</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">kein</property>
+			<property name="defaultID" />
+			<onclick condition="true">control.setfocus(9999)</onclick>
+			<onclick>activatewindow(1131)</onclick>
+			<property name="path">activatewindow(1131)</property>
+			<property name="list">activatewindow(1131)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">videosubmenu</property>
+			<property name="isSubmenu">True</property>
+			</item>
 		</include>
 	<include name="skinshortcuts-group-alt-videosubmenu">
 		<item id="1">
@@ -2437,6 +2471,23 @@
 			<onclick>ActivateWindow(Videos,sources://video/)</onclick>
 			<property name="path">ActivateWindow(Videos,sources://video/)</property>
 			<property name="list">sources://video/</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
+			<property name="group">videosubmenu</property>
+			<property name="isSubmenu">True</property>
+			</item>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
+			<property name="mainmenuid">14</property>
+			<label>&lt;Kein&gt;</label>
+			<label2>Benutzerdefinierter Eintrag</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">kein</property>
+			<property name="defaultID" />
+			<onclick condition="true">control.setfocus(9999)</onclick>
+			<onclick>activatewindow(1131)</onclick>
+			<property name="path">activatewindow(1131)</property>
+			<property name="list">activatewindow(1131)</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>

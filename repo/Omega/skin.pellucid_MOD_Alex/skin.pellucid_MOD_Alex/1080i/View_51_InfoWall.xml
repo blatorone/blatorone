@@ -20,7 +20,7 @@
 			
             <control type="panel" id="51">
 			
-                <viewtype label="$LOCALIZE[31315]">$LOCALIZE[31315]</viewtype>
+                <viewtype label="$LOCALIZE[31316]">$LOCALIZE[31316]</viewtype>
 				
                 <posx>100</posx>
 				<posy>0</posy>
@@ -48,7 +48,7 @@
 					</control>
 					
 					<control type="group">
-						<visible>!String.isEmpty(ListItem.RatingandVotes)</visible>
+						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>6</posx>
 						<posy>6</posy>
@@ -75,7 +75,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
+						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>166</posx>
 						<posy>6</posy>
@@ -89,7 +89,7 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
+							<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 							<posx>9</posx>
 							<posy>-4</posy>
 							<width>36</width>
@@ -101,7 +101,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)</visible>
+						<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)  + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>166</posx>
 						<posy>6</posy>
@@ -115,7 +115,7 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)</visible>
+							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)  + !Skin.HasSetting(Disable.overlays)</visible>
 							<posx>9</posx>
 							<posy>-4</posy>
 							<width>36</width>
@@ -152,7 +152,7 @@
 						</control>
 					
 					<control type="group">
-						<visible>!String.isEmpty(ListItem.RatingandVotes)</visible>
+						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>6</posx>
 						<posy>6</posy>
@@ -179,7 +179,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
+						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>166</posx>
 						<posy>6</posy>
@@ -193,7 +193,7 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>!String.IsEmpty(ListItem.PlayCount)</visible>
+							<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 							<posx>9</posx>
 							<posy>-4</posy>
 							<width>36</width>
@@ -205,7 +205,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)</visible>
+						<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)  + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>166</posx>
 						<posy>6</posy>
@@ -219,7 +219,7 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)</visible>
+							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)  + !Skin.HasSetting(Disable.overlays)</visible>
 							<posx>9</posx>
 							<posy>-4</posy>
 							<width>36</width>
@@ -282,7 +282,7 @@
 								<font>menuTitle</font>
 								<textcolor>textDisabled</textcolor>
 								<shadowcolor>shadow</shadowcolor>
-								<label>$INFO[ListItem.year]   $INFO[ListItem.duration(mins)] $LOCALIZE[12391]</label>
+								<label>$INFO[ListItem.year] • $VAR[Durationtiminmin]</label>
 						</control>
 						<control type="textbox">
 						

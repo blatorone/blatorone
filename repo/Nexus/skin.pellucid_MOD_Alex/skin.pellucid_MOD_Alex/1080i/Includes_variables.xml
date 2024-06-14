@@ -331,7 +331,10 @@
 		<value>.png</value>
 	</variable>
 
-    
+    <variable name="Durationtiminmin">
+        <value condition="integer.isless(Listitem.duration,1)"></value>
+        <value>$INFO[ListItem.duration(mins)] $LOCALIZE[12391]</value>
+    </variable>
 
 
 
@@ -405,9 +408,9 @@
 	</variable>
 
     <variable name="OverlayVar">
-		<value condition="ListItem.IsResumable + !Skin.HasSetting(Disable.Resumable)">overlays/resumable.png</value>
-		<value condition="!Skin.HasSetting(Disable.OverlayUnwatched) + String.IsEqual(ListItem.Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
-		<value condition="!Skin.HasSetting(Disable.OverlayWatched) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
+		<value condition="ListItem.IsResumable + !Skin.HasSetting(Disable.overlays)">overlays/resumable.png</value>
+		<!--<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem.Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>-->
+		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 
     <variable name="MusicListLabel4Var">

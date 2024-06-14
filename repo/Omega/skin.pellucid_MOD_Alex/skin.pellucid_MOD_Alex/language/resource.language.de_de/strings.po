@@ -850,10 +850,45 @@ msgctxt "#31325"
 msgid "Landscape"
 msgstr "Querformat"
 
+msgctxt "#31326"
+msgid "Disable Overlays Info"
+msgstr "Deaktiviere Overlays"
+
+msgctxt "#31326"
+msgid "YouTube"
+msgstr "YouTube"
+
+msgctxt "#31327"
+msgid "Years old"
+msgstr "Jahre alt"
+
+msgctxt "#31328"
+msgid "Budget"
+msgstr "Budget"
+
+msgctxt "#31329"
+msgid "Revenue"
+msgstr "Einkommen"
+
+msgctxt "#31330"
+msgid "Recently Added"
+msgstr "Kürzlich hinzugefügt"
+
+msgctxt "#31331"
+msgid "Revenue"
+msgstr "Einkommen"
+
+msgctxt "#31332"
+msgid "Budget"
+msgstr "Budget"
+
+msgctxt "#31333"
+msgid "This script is not available in the default Kodi repositiory. The Pellucid repo is needed to use the click to install feature, without it this script must be installed manually."
+msgstr "Skript ist im Kodi Repository nicht verfügbar. Zur Benutzung des Pellucid Repositorys müssen Sie die Installationsoption benutzen. Ohne diese Option muss das Skript manuell installiert werden."
+
 msgctxt "#31250"
 msgid "BigInfo"
 msgstr "BigInfo"
-
 
 
 msgctxt "#31252"
