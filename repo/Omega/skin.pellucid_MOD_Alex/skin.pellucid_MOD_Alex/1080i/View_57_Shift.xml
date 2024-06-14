@@ -202,7 +202,7 @@
 			<include>ViewAnimation</include>
 			<visible>Control.IsVisible(57) + !Window.IsActive(addoninformation)</visible>
 			<control type="label" id="4443">
-				<label>$LOCALIZE[31966]</label>
+				<label>$LOCALIZE[31336]</label>
 				<include>HiddenObject</include>
 				<visible>Skin.HasSetting(Enable.Shift.ArtistCDArt) + Container.Content(artists) + [!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.1.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.2.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.3.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.4.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.5.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.6.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.7.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.8.Art(discart)))]</visible>
 				<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>

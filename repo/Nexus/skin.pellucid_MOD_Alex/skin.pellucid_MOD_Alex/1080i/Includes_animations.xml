@@ -99,4 +99,13 @@
 			<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 		</animation>
 	</include>
+
+    <include name="MyFlixDelayAnimation">
+		<visible>![Container.OnNext | Container.OnPrevious]</visible>
+		<animation effect="fade" end="100" time="120" delay="1000" condition="String.IsEqual(Skin.String(MyFlix.Delay),1)">Visible</animation>
+		<animation effect="fade" end="100" time="120" delay="2000" condition="String.IsEqual(Skin.String(MyFlix.Delay),2)">Visible</animation>
+		<animation effect="fade" end="100" time="120" delay="3000" condition="String.IsEqual(Skin.String(MyFlix.Delay),3)">Visible</animation>
+		<animation effect="fade" end="100" time="120" delay="4000" condition="String.IsEqual(Skin.String(MyFlix.Delay),4)">Visible</animation>
+		<animation effect="fade" end="100" time="120" delay="5000" condition="String.IsEqual(Skin.String(MyFlix.Delay),5)">Visible</animation>
+	</include>
 </includes>

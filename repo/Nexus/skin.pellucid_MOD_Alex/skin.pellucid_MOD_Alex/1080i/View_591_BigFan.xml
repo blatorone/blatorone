@@ -72,7 +72,7 @@
 				<visible></visible>
 			</control>
 			<control type="group">
-				<animation effect="slide" end="0,-140" condition="Skin.HasSetting(EnableBigFanPlot)">Conditional</animation>
+				
 				<top>-65</top>
 				<control type="label">
 					<left>300</left>
@@ -185,7 +185,7 @@
 				<width>1550</width>
 				<height>155</height>
 				<font>textbox</font>
-				<textcolor>yellow</textcolor>
+				<textcolor>grey</textcolor>
 				<aligny>top</aligny>
 				<autoscroll time="3000" delay="4000" repeat="5000">!Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 				<include>DefaultButtonsValues</include>

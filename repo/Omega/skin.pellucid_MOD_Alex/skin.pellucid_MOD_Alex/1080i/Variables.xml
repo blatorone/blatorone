@@ -52,8 +52,8 @@
 		<value>$LOCALIZE[106]</value>
 	</variable>
 	<variable name="FanartTimePerImageLabelVar">
-		<value condition="!String.IsEmpty(Skin.String(FanartTimePerImage))">$INFO[Skin.String(FanartTimePerImage)] $LOCALIZE[31090]</value>
-		<value>$LOCALIZE[12317] $LOCALIZE[31090]</value>
+		<value condition="!String.IsEmpty(Skin.String(FanartTimePerImage))">$INFO[Skin.String(FanartTimePerImage)] $LOCALIZE[31338]</value>
+		<value>$LOCALIZE[12317] $LOCALIZE[31338]</value>
 	</variable>
 	<variable name="CustomSelectLabelVar">
 		<value condition="String.IsEqual(Window(Home).Property(CustomSelect),gameosdsettings)">$LOCALIZE[35221]</value>
@@ -673,7 +673,7 @@
 		<value condition="String.IsEqual(Skin.String(MyFlix.Delay),5)">Skin.SetString(MyFlix.Delay,1)</value>
 	</variable>
 	<variable name="InfoPanelDelayLocalizeVar">
-		<value condition="!String.IsEmpty(Skin.String(InfoPanel.Delay))">$INFO[Skin.String(InfoPanel.Delay),, $LOCALIZE[31090]]</value>
+		<value condition="!String.IsEmpty(Skin.String(InfoPanel.Delay))">$INFO[Skin.String(InfoPanel.Delay),, $LOCALIZE[31338]]</value>
 		<value>$LOCALIZE[351]</value>
 	</variable>
 	<variable name="InfoPopupDelayOnClickVar">
@@ -684,11 +684,11 @@
 		<value condition="String.IsEqual(Skin.String(InfoPopup.Delay),5)">Skin.SetString(InfoPopup.Delay,2)</value>
 	</variable>
 	<variable name="ShowcaseDelayLocalizeVar">
-		<value condition="!String.IsEmpty(Skin.String(Showcase.Delay))">$INFO[Skin.String(Showcase.Delay),, $LOCALIZE[31090]]</value>
+		<value condition="!String.IsEmpty(Skin.String(Showcase.Delay))">$INFO[Skin.String(Showcase.Delay),, $LOCALIZE[31338]]</value>
 		<value>$LOCALIZE[351]</value>
 	</variable>
 	<variable name="MyFlixDelayLocalizeVar">
-		<value condition="!String.IsEmpty(Skin.String(MyFlix.Delay))">$INFO[Skin.String(MyFlix.Delay),, $LOCALIZE[31090]]</value>
+		<value condition="!String.IsEmpty(Skin.String(MyFlix.Delay))">$INFO[Skin.String(MyFlix.Delay),, $LOCALIZE[31338]]</value>
 		<value>$LOCALIZE[351]</value>
 	</variable>
 	<variable name="InfoPanelLabel1Var">
@@ -831,11 +831,11 @@
 		<value condition="String.IsEqual(Skin.String(Seekbar.RightLabel),2)">$LOCALIZE[31228]</value>
 	</variable>
 	<variable name="AutoHideVideoOSDLabelVar">
-		<value condition="!String.IsEmpty(Skin.String(AutoCloseVideoOSD))">$INFO[Skin.String(AutoCloseVideoOSD)] $LOCALIZE[31090]</value>
+		<value condition="!String.IsEmpty(Skin.String(AutoCloseVideoOSD))">$INFO[Skin.String(AutoCloseVideoOSD)] $LOCALIZE[31338]</value>
 		<value>$LOCALIZE[13113]</value>
 	</variable>
 	<variable name="AutoHideMusicOSDLabelVar">
-		<value condition="!String.IsEmpty(Skin.String(AutoCloseMusicOSD))">$INFO[Skin.String(AutoCloseMusicOSD)] $LOCALIZE[31090]</value>
+		<value condition="!String.IsEmpty(Skin.String(AutoCloseMusicOSD))">$INFO[Skin.String(AutoCloseMusicOSD)] $LOCALIZE[31338]</value>
 		<value>$LOCALIZE[13113]</value>
 	</variable>
 	<variable name="VideoPlayerForwardRewindVar">
@@ -1665,7 +1665,7 @@
 	<variable name="MinsToHourDurationVar">
 		<value condition="Integer.IsEqual(ListItem.Duration(mins),60) | Integer.IsEqual(ListItem.Duration(mins),120) | Integer.IsEqual(ListItem.Duration(mins),180) | Integer.IsEqual(ListItem.Duration(mins),240) | Integer.IsEqual(ListItem.Duration(mins),300) | Integer.IsEqual(ListItem.Duration(mins),360) | Integer.IsEqual(ListItem.Duration(mins),420) | Integer.IsEqual(ListItem.Duration(mins),480) | Integer.IsEqual(ListItem.Duration(mins),540) | Integer.IsEqual(ListItem.Duration(mins),600)">$INFO[ListItem.Duration(hours),,h]</value>
 		<value condition="Integer.IsLess(ListItem.Duration(mins),60)">$INFO[ListItem.Duration(m),,m]</value>
-		<value condition="Integer.IsLess(ListItem.Duration(mins),1)">$INFO[ListItem.Duration(ss),,$LOCALIZE[31090]]</value>
+		<value condition="Integer.IsLess(ListItem.Duration(mins),1)">$INFO[ListItem.Duration(ss),,$LOCALIZE[31338]]</value>
 		<value>$INFO[ListItem.Duration(h),,h] $INFO[.ListItem.Duration(m),,m]</value>
 	</variable>
 	<!-- SelectDialog -->
@@ -1987,7 +1987,7 @@
 		<value condition="[String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season)] + !String.IsEqual(Container(9143).ListItem.Property(Duration),0) + String.IsEmpty(ListItem.Duration)">$INFO[Container(9143).ListItem.Property(Duration),,m]</value>
 		<value condition="Integer.IsEqual(ListItem.Duration(mins),60) | Integer.IsEqual(ListItem.Duration(mins),120) | Integer.IsEqual(ListItem.Duration(mins),180) | Integer.IsEqual(ListItem.Duration(mins),240) | Integer.IsEqual(ListItem.Duration(mins),300) | Integer.IsEqual(ListItem.Duration(mins),360) | Integer.IsEqual(ListItem.Duration(mins),420) | Integer.IsEqual(ListItem.Duration(mins),480) | Integer.IsEqual(ListItem.Duration(mins),540) | Integer.IsEqual(ListItem.Duration(mins),600)">$INFO[ListItem.Duration(hours),,h]</value>
 		<value condition="Integer.IsLess(ListItem.Duration(mins),60)">$INFO[ListItem.Duration(m),,m]</value>
-		<value condition="Integer.IsLess(ListItem.Duration(mins),1)">$INFO[ListItem.Duration(ss),,$LOCALIZE[31090]]</value>
+		<value condition="Integer.IsLess(ListItem.Duration(mins),1)">$INFO[ListItem.Duration(ss),,$LOCALIZE[31338]]</value>
 		<value>$INFO[ListItem.Duration(h),,h]$INFO[ListItem.Duration(m),,m]</value>
 	</variable>
 	<variable name="CinemaVisionButtonLabelVar">

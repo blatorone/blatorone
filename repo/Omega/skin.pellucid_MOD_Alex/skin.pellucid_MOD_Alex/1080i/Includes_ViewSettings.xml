@@ -4,21 +4,21 @@
 		<!-- List -->
 		<control type="radiobutton" id="1510">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31608]</label>
+			<label>$LOCALIZE[31335]</label>
 			<onclick>Skin.ToggleSetting(List.MovieCases)</onclick>
 			<selected>Skin.HasSetting(List.MovieCases)</selected>
 			<visible>Container.Content(movies)</visible>
 		</control>
 		<control type="radiobutton" id="1511">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31608]</label>
+			<label>$LOCALIZE[31335]</label>
 			<onclick>Skin.ToggleSetting(List.TVShowCases)</onclick>
 			<selected>Skin.HasSetting(List.TVShowCases)</selected>
 			<visible>Container.Content(tvshows)</visible>
 		</control>
 		<control type="radiobutton" id="1512">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(SlimList.Info)</onclick>
 			<selected>Skin.HasSetting(SlimList.Info)</selected>
 			<visible>Skin.HasSetting(Enable.SlimList) + ![Container.Content(movies) | Container.Content(genres) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos) | Container.Content() | Container.Content(files) | Container.Content(addons)]</visible>
@@ -100,14 +100,14 @@
 		</control>
 		<control type="radiobutton" id="1515">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Disable.Landscape.MovieInfo)</onclick>
 			<selected>!Skin.HasSetting(Disable.Landscape.MovieInfo)</selected>
 			<visible>Container.Content(movies) + !Skin.HasSetting(Enable.Landscape.Logo)</visible>
 		</control>
 		<control type="radiobutton" id="1516">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Disable.Landscape.SetInfo)</onclick>
 			<selected>!Skin.HasSetting(Disable.Landscape.SetInfo)</selected>
 			<visible>Container.Content(sets) + !Skin.HasSetting(Enable.Landscape.SetLogo)</visible>
@@ -121,7 +121,7 @@
 		</control>
 		<control type="radiobutton" id="1518">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Disable.Landscape.TVInfo)</onclick>
 			<selected>!Skin.HasSetting(Disable.Landscape.TVInfo)</selected>
 			<visible>Container.Content(tvshows) + !Skin.HasSetting(Enable.Landscape.Logo)</visible>
@@ -135,7 +135,7 @@
 		</control>
 		<control type="radiobutton" id="1520">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Disable.Landscape.EpisodeInfo)</onclick>
 			<selected>!Skin.HasSetting(Disable.Landscape.EpisodeInfo)</selected>
 			<visible>Container.Content(episodes)</visible>
@@ -158,7 +158,7 @@
 		</control>
 		<control type="radiobutton" id="1530">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<selected>Skin.HasSetting(ShowCaseGenreLabels)</selected>
 			<onclick>Skin.ToggleSetting(ShowCaseGenreLabels)</onclick>
 			<visible>Container.Content(genres)</visible>
@@ -207,14 +207,14 @@
 		</control>
 		<control type="radiobutton" id="1513">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Disable.ShowCase.MovieInfo)</onclick>
 			<selected>!Skin.HasSetting(Disable.ShowCase.MovieInfo)</selected>
 			<visible>Container.Content(movies) + !Skin.HasSetting(Enable.ShowCase.Logo)</visible>
 		</control>
 		<control type="radiobutton" id="1527">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Disable.ShowCase.SetInfo)</onclick>
 			<selected>!Skin.HasSetting(Disable.ShowCase.SetInfo)</selected>
 			<visible>Container.Content(sets) + !Skin.HasSetting(Enable.ShowCase.SetLogo)</visible>
@@ -228,7 +228,7 @@
 		</control>
 		<control type="radiobutton" id="1515">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Disable.ShowCase.TVInfo)</onclick>
 			<selected>!Skin.HasSetting(Disable.ShowCase.TVInfo)</selected>
 			<visible>Container.Content(tvshows) + !Skin.HasSetting(Enable.ShowCase.Logo)</visible>
@@ -249,21 +249,21 @@
 		</control>
 		<control type="radiobutton" id="1518">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Disable.ShowCase.FloorInfo.seasons)</onclick>
 			<selected>!Skin.HasSetting(Disable.ShowCase.FloorInfo.seasons)</selected>
 			<visible>!Skin.HasSetting(Enable.ShowCase.SeasonBanner) + Container.Content(seasons)</visible>
 		</control>
 		<control type="radiobutton" id="1519">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31608]</label>
+			<label>$LOCALIZE[31335]</label>
 			<onclick>Skin.ToggleSetting(Enable.ShowCase.Covers)</onclick>
 			<selected>Skin.HasSetting(Enable.ShowCase.Covers)</selected>
 			<visible>[Container.Content(movies) | Container.Content(sets)]</visible>
 		</control>
 		<control type="radiobutton" id="1520">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31608]</label>
+			<label>$LOCALIZE[31335]</label>
 			<onclick>Skin.ToggleSetting(Enable.ShowCase.TVCovers)</onclick>
 			<selected>Skin.HasSetting(Enable.ShowCase.TVCovers)</selected>
 			<visible>[Container.Content(tvshows) | Container.Content(seasons)]</visible>
@@ -277,7 +277,7 @@
 		</control>
 		<control type="radiobutton" id="1522">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31966]</label>
+			<label>$LOCALIZE[31336]</label>
 			<onclick condition="String.IsEmpty(Skin.String(Showcase.Delay))">Skin.SetString(Showcase.Delay,2)</onclick>
 			<onclick>Skin.ToggleSetting(showcasemod)</onclick>
 			<selected>Skin.HasSetting(showcasemod)</selected>
@@ -300,7 +300,7 @@
 		</control>
 		<control type="button" id="1525">
 			<include>ButtonCommonValues</include>
-			<label>   - $LOCALIZE[31973]</label>
+			<label>   - $LOCALIZE[31337]</label>
 			<label2>[COLOR $VAR[Home]]$VAR[ShowcaseDelayLocalizeVar][/COLOR]</label2>
 			<onclick>$VAR[ShowcaseModDelayOnClickVar]</onclick>
 			<visible>[Container.Content(movies) | Container.Content(sets)] + [Skin.HasSetting(showcasemod) | Skin.HasSetting(boxsetmod)]</visible>
@@ -317,21 +317,21 @@
 		</control>
 		<control type="radiobutton" id="1511">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31608]</label>
+			<label>$LOCALIZE[31335]</label>
 			<onclick>Skin.ToggleSetting(Enable.ShowCaseSquare.MusicCDAlbums)</onclick>
 			<selected>Skin.HasSetting(Enable.ShowCaseSquare.MusicCDAlbums)</selected>
 			<visible>Container.Content(albums) | Container.Content(songs)</visible>
 		</control>
 		<control type="radiobutton" id="1512">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31608]</label>
+			<label>$LOCALIZE[31335]</label>
 			<onclick>Skin.ToggleSetting(Enable.ShowCaseSquare.MusicCDArtists)</onclick>
 			<selected>Skin.HasSetting(Enable.ShowCaseSquare.MusicCDArtists)</selected>
 			<visible>Container.Content(artists)</visible>
 		</control>
 		<control type="radiobutton" id="1513">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31966]</label>
+			<label>$LOCALIZE[31336]</label>
 			<onclick condition="String.IsEmpty(Skin.String(Showcase.Delay))">Skin.SetString(Showcase.Delay,2)</onclick>
 			<onclick>Skin.ToggleSetting(Enable.ShowCaseSquare.CDArt)</onclick>
 			<selected>Skin.HasSetting(Enable.ShowCaseSquare.CDArt)</selected>
@@ -339,7 +339,7 @@
 		</control>
 		<control type="radiobutton" id="1514">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31966]</label>
+			<label>$LOCALIZE[31336]</label>
 			<onclick condition="String.IsEmpty(Skin.String(Showcase.Delay))">Skin.SetString(Showcase.Delay,2)</onclick>
 			<onclick>Skin.ToggleSetting(Enable.ShowCaseSquare.ArtistCDArt)</onclick>
 			<selected>Skin.HasSetting(Enable.ShowCaseSquare.ArtistCDArt)</selected>
@@ -347,7 +347,7 @@
 		</control>
 		<control type="button" id="1515">
 			<include>ButtonCommonValues</include>
-			<label>   - $LOCALIZE[31973]</label>
+			<label>   - $LOCALIZE[31337]</label>
 			<label2>[COLOR $VAR[Home]]$VAR[ShowcaseDelayLocalizeVar][/COLOR]</label2>
 			<onclick>$VAR[ShowcaseModDelayOnClickVar]</onclick>
 			<visible>Container.Content(artists) + Skin.HasSetting(Enable.ShowCaseSquare.ArtistCDArt) | [Container.Content(albums) | Container.Content(songs)] + Skin.HasSetting(Enable.ShowCaseSquare.CDArt)</visible>
@@ -386,7 +386,7 @@
 		</control>
 		<control type="radiobutton" id="1511">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31608]</label>
+			<label>$LOCALIZE[31335]</label>
 			<onclick>Skin.ToggleSetting(Enable.Shift.Covers)</onclick>
 			<selected>Skin.HasSetting(Enable.Shift.Covers)</selected>
 			<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
@@ -400,21 +400,21 @@
 		</control>
 		<control type="radiobutton" id="1513">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Enable.Shift.GenreLabels)</onclick>
 			<selected>Skin.HasSetting(Enable.Shift.GenreLabels)</selected>)
 			<visible>Window.IsActive(music) + Container.Content(genres)</visible>
 		</control>
 		<control type="radiobutton" id="1514">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31966]</label>
+			<label>$LOCALIZE[31336]</label>
 			<onclick>Skin.ToggleSetting(Enable.Shift.ArtistCDArt)</onclick>
 			<selected>Skin.HasSetting(Enable.Shift.ArtistCDArt)</selected>)
 			<visible>System.AddonIsEnabled(script.skin.info.service) + Container.Content(artists)</visible>
 		</control>
 		<control type="button" id="1515">
 			<include>ButtonCommonValues</include>
-			<label>   - $LOCALIZE[31973]</label>
+			<label>   - $LOCALIZE[31337]</label>
 			<label2>[COLOR $VAR[Home]]$VAR[ShowcaseDelayLocalizeVar][/COLOR]</label2>
 			<onclick>$VAR[ShowcaseModDelayOnClickVar]</onclick>
 			<visible>Control.IsVisible(1514) + Skin.HasSetting(Enable.Shift.ArtistCDArt)</visible>
@@ -431,7 +431,7 @@
 		<!-- BannerWall -->
 		<control type="radiobutton" id="1510">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick condition="Skin.HasSetting(Disable.BannerWallInfo) + Skin.HasSetting(BannerPlex)">Skin.Reset(BannerPlex)</onclick>
 			<onclick>Skin.ToggleSetting(Disable.BannerWallInfo)</onclick>
 			<include>ReloadWindowOnClick</include>
@@ -471,14 +471,14 @@
 		</control>
 		<control type="radiobutton" id="1511">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(noextendedinfomovies)</onclick>
 			<selected>!Skin.HasSetting(noextendedinfomovies)</selected>
 			<visible>Container.Content(movies)</visible>
 		</control>
 		<control type="radiobutton" id="1512">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(noextendedinfotvshows)</onclick>
 			<selected>!Skin.HasSetting(noextendedinfotvshows)</selected>
 			<visible>Container.Content(tvshows)</visible>
@@ -566,7 +566,7 @@
 		</control>
 		<control type="radiobutton" id="1513">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31608]</label>
+			<label>$LOCALIZE[31335]</label>
 			<onclick>Skin.ToggleSetting(togglelowlistcovers)</onclick>
 			<selected>Skin.HasSetting(togglelowlistcovers)</selected>
 			<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
@@ -607,7 +607,7 @@
 		<control type="radiobutton" id="1510">
 			<description>Enable Wall Floor Info</description>
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Enable.Wall.FloorInfo.programs)</onclick>
 			<selected>Skin.HasSetting(Enable.Wall.FloorInfo.programs)</selected>
 			<visible>[Container.Content(programs) | Container.Content(addons)]</visible>
@@ -631,7 +631,7 @@
 		<control type="radiobutton" id="1511">
 			<description>Enable Wall Cases</description>
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31608]</label>
+			<label>$LOCALIZE[31335]</label>
 			<onclick>Skin.ToggleSetting(Enable.Wall.Cases)</onclick>
 			<selected>Skin.HasSetting(Enable.Wall.Cases)</selected>
 			<visible>[Container.Content(movies) + !Skin.HasSetting(Enable.Wall.MovieBanners) | Container.Content(tvshows) + !Skin.HasSetting(Enable.Wall.TVBanners)] | Container.Content(seasons)</visible>
@@ -639,7 +639,7 @@
 		<control type="radiobutton" id="1512">
 			<description>Enable Wall Cases</description>
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31608]</label>
+			<label>$LOCALIZE[31335]</label>
 			<onclick>Skin.ToggleSetting(Enable.Wall.SetCases)</onclick>
 			<selected>Skin.HasSetting(Enable.Wall.SetCases)</selected>
 			<visible>Container.Content(sets)</visible>
@@ -674,14 +674,14 @@
 		</control>
 		<control type="radiobutton" id="1517">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Disable.Wall.MovieInfo)</onclick>
 			<selected>!Skin.HasSetting(Disable.Wall.MovieInfo)</selected>
 			<visible>Container.Content(movies) + !Skin.HasSetting(Enable.Wall.Logo)</visible>
 		</control>
 		<control type="radiobutton" id="1518">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Disable.Wall.SetInfo)</onclick>
 			<selected>!Skin.HasSetting(Disable.Wall.SetInfo)</selected>
 			<visible>Container.Content(sets) + !Skin.HasSetting(Enable.Wall.SetLogo)</visible>
@@ -689,7 +689,7 @@
 		<control type="radiobutton" id="1519">
 			<description>Enable Wall Floor Info</description>
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Disable.Wall.TVInfo)</onclick>
 			<selected>!Skin.HasSetting(Disable.Wall.TVInfo)</selected>
 			<visible>Container.Content(tvshows) + !Skin.HasSetting(Enable.Wall.Logo)</visible>
@@ -704,7 +704,7 @@
 		<control type="radiobutton" id="1521">
 			<description>Enable Wall Floor Info</description>
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Enable.Wall.FloorInfo.seasons)</onclick>
 			<selected>Skin.HasSetting(Enable.Wall.FloorInfo.seasons)</selected>
 			<visible>Container.Content(seasons) + !Skin.HasSetting(Enable.Wall.SeasonBanner)</visible>
@@ -712,7 +712,7 @@
 		<control type="radiobutton" id="1522">
 			<description>Enable Wall Floor</description>
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Enable.Wall.AlbumLabels)</onclick>
 			<selected>Skin.HasSetting(Enable.Wall.AlbumLabels)</selected>
 			<visible>Container.Content(albums)</visible>
@@ -733,7 +733,7 @@
 		</control>
 		<control type="radiobutton" id="1527">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Enable.Wall.GenreLabels)</onclick>
 			<selected>Skin.HasSetting(Enable.Wall.GenreLabels)</selected>)
 			<visible>Window.IsActive(music) + Container.Content(genres)</visible>
@@ -914,21 +914,21 @@
 		</control>
 		<control type="radiobutton" id="1528">
 			<include>ButtonCommonValues</include>
-			<label>   - $LOCALIZE[31608]</label>
+			<label>   - $LOCALIZE[31335]</label>
 			<onclick>Skin.ToggleSetting(rightlistcovers)</onclick>
 			<selected>Skin.HasSetting(rightlistcovers)</selected>
 			<visible>[Container.Content(movies) + !Skin.HasSetting(Enable.Rightlist.HidePoster.movies)] | [Container.Content(episodes) + !Skin.HasSetting(Enable.Rightlist.HidePoster.episodes)] | [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 		</control>
 		<control type="radiobutton" id="1529">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(inforightlist)</onclick>
 			<selected>Skin.HasSetting(inforightlist)</selected>
 			<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
 		</control>
 		<control type="radiobutton" id="1530">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Enable.RightListMusicInfo)</onclick>
 			<selected>Skin.HasSetting(Enable.RightListMusicInfo)</selected>
 			<visible>Window.IsActive(music)</visible>
@@ -971,6 +971,7 @@
 			<selected>Skin.HasSetting(Enable.MyFlix.TVLogo)</selected>
 			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 		</control>
+		<!--
 		<control type="button" id="1513">
 			<include>ButtonCommonValues</include>
 			<label>$LOCALIZE[31348]</label>
@@ -978,9 +979,10 @@
 			<onclick>SetProperty(CustomSelect,myflixdimmer,Home)</onclick>
 			<onclick>ActivateWindow(1129)</onclick>
 		</control>
+		-->
 		<control type="radiobutton" id="1514">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31604]</label>
+			<label>$LOCALIZE[31334]</label>
 			<onclick>Skin.ToggleSetting(Disable.MyFlixInfo)</onclick>
 			<selected>!Skin.HasSetting(Disable.MyFlixInfo)</selected>
 		</control>
@@ -993,14 +995,14 @@
 		</control>
 		<control type="radiobutton" id="1516">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31608]</label>
+			<label>$LOCALIZE[31335]</label>
 			<onclick>Skin.ToggleSetting(Enable.MyFlix.Cases)</onclick>
 			<selected>Skin.HasSetting(Enable.MyFlix.Cases)</selected>
 			<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(Enable.MyFlix.MovieLandscape)</visible>
 		</control>
 		<control type="radiobutton" id="1517">
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31966]</label>
+			<label>$LOCALIZE[31336]</label>
 			<onclick>Skin.ToggleSetting(Enable.MyFlix.OpenCase)</onclick>
 			<onclick condition="String.IsEmpty(Skin.String(MyFlix.Delay))">Skin.SetString(MyFlix.Delay,2)</onclick>
 			<selected>Skin.HasSetting(Enable.MyFlix.OpenCase)</selected>
@@ -1008,7 +1010,7 @@
 		</control>
 		<control type="button" id="1518">
 			<include>ButtonCommonValues</include>
-			<label>   - $LOCALIZE[31973]</label>
+			<label>   - $LOCALIZE[31337]</label>
 			<label2>[COLOR $VAR[Home]]$VAR[MyFlixDelayLocalizeVar][/COLOR]</label2>
 			<onclick>$VAR[MyFlixModDelayOnClickVar]</onclick>
 			<visible>[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(Enable.MyFlix.MovieLandscape) + Skin.HasSetting(Enable.MyFlix.OpenCase)</visible>

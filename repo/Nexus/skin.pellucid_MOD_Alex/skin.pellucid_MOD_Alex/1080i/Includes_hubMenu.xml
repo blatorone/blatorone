@@ -64,6 +64,20 @@
                 <onclick>activateWindow(1130)</onclick>
                 <visible>Container.Content(videos) + !window.isactive(1130) | container.Content(movies) + !window.isactive(1130) | container.Content(tvshows) + !window.isactive(1130) | container.content(seasons) + !window.isactive(1130) | Container.Content(episodes) + !window.isactive(1130) | window.isactive(10060)</visible>
             </control>
+             <control type="button" id="5">
+                <focusedcolor>$VAR[selected]</focusedcolor>
+                <textcolor>$VAR[Home]</textcolor>
+                <texturefocus colordiffuse="00FFFFFF">Colors/white.png</texturefocus>
+                <alttexturefocus colordiffuse="00FFFFFF">Colors/white.png</alttexturefocus>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>295</width>
+				<textwidth>320</textwidth>
+                <font>menuTitle2</font>
+                <label>$INFO[Container.Viewmode,$LOCALIZE[5] ]</label>
+                <onclick>activateWindow(1131)</onclick>
+                <visible>Container.Content(videos) + !window.isactive(1130) | container.Content(movies) + !window.isactive(1130) | container.Content(tvshows) + !window.isactive(1130) | container.content(seasons) + !window.isactive(1130) | Container.Content(episodes) + !window.isactive(1130) | window.isactive(10060)</visible>
+            </control>
            
             <control type="button" id="2">
                 <focusedcolor>$VAR[selected]</focusedcolor>
@@ -117,7 +131,7 @@
              <visible>!window.isactive(1130)</visible>
 
                 <posx>-23</posx>
-                <posy>row-12-begin</posy>
+                <posy>row-14-begin</posy>
                 <width>406</width>
                 <height>832</height>
                 <orientation>vertical</orientation>
@@ -151,7 +165,7 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">
-                        <visible>!window.isactive(contextmenu) + !control.hasfocus(501) + !control.hasfocus(2) + !control.hasfocus(3) + !control.hasfocus(4)</visible>
+                        <visible>!window.isactive(contextmenu) + [!control.hasfocus(501) | !control.hasfocus(5)] + !control.hasfocus(2) + !control.hasfocus(3) + !control.hasfocus(4)</visible>
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
                         <width>4-col-gutter</width>
@@ -163,7 +177,7 @@
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>
                     <control type="label">
-                        <visible>control.hasfocus(501) | window.isactive(contextmenu) | control.hasfocus(2) | control.hasfocus(3) | control.hasfocus(4)</visible>
+                        <visible>control.hasfocus(501) | window.isactive(contextmenu) | control.hasfocus(5) | control.hasfocus(2) | control.hasfocus(3) | control.hasfocus(4)</visible>
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
                         <width>4-col-gutter</width>

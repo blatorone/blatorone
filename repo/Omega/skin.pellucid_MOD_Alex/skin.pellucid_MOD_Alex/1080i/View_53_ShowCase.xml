@@ -110,7 +110,7 @@
 			
 			<control type="label" id="4444">
 				<description>ShowCase Open Case Movies</description>
-				<label>$LOCALIZE[31966]</label>
+				<label>$LOCALIZE[31336]</label>
 				<include>HiddenObject</include>
 				<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
 				<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
@@ -128,7 +128,7 @@
 			</control>
 			<control type="label" id="4446">
 				<description>ShowCase Open Case Sets</description>
-				<label>$LOCALIZE[31966]</label>
+				<label>$LOCALIZE[31336]</label>
 				<include>HiddenObject</include>
 				<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
 				<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>

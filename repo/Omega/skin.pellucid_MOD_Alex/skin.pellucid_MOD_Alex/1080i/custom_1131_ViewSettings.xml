@@ -17,26 +17,26 @@
             
         </control>
         <control type="group" id="9000">
-            <animation type="windowopen">
-                <effect type="slide" start="-1084" end="0" tween="sine" delay="500" time="400"/>
-            </animation>
-			<animation type="windowclose">
-                <effect type="fade" start="100" end="0" time="0"/>
-            </animation>
-            
-            <animation type="Conditional" condition="!controlgroup(9000).hasfocus">
-                <effect type="slide" start="0" end="-1084" tween="sine" time="400"/>
-            </animation>
-            
             <control type="image">
-                <posx>-200</posx>
-                <posy>-200</posy>
-                <width>584</width>
+                <posx></posx>
+                <posy></posy>
+                <width>384</width>
                 <height>1500</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
+		
+	            <control type="label">
+	                <posx>70</posx>
+	                <posy>10</posy>
+	                <width>73</width>
+	                <height>73</height>
+	                <font>symbolVeryLarge</font>
+	                <aligny>center</aligny>
+	                <textcolor>$VAR[Home]</textcolor>
+	                <label>$VAR[menuLogo]</label>
+	            </control>
 		</control>
 		<control type="button" id="8999">
 			<left>365</left>
@@ -53,7 +53,7 @@
 			<visible>system.getbool(input.enablemouse)</visible>
 		</control>
 		<control type="group">
-			<include>WindowSettingsFadeAnimation</include>
+			
 			<control type="label">
 				<top>80</top>
 				<width>400</width>
@@ -61,7 +61,7 @@
 				<textoffsetx>15</textoffsetx>
 				<font>buttonTitle</font>
 				<label>$INFO[Container.Viewmode] $LOCALIZE[5]</label>
-				<textcolor>$VAR[highlight]</textcolor>
+				<textcolor>$VAR[selected]</textcolor>
 			</control>
 			<control type="grouplist" id="9011">
 				<top>128</top>
@@ -73,7 +73,7 @@
 				<ondown>9011</ondown>
 				<!-- Top Settings -->
 				<!-- Button IDs (1500-1509) -->
-				<!-- TopBar -->
+				<!-- TopBar 
 				<control type="button" id="1500">
 					<include>ButtonCommonValues</include>
 					<label>$LOCALIZE[31252]</label>
@@ -81,6 +81,7 @@
 					<onclick>$VAR[NoTopBarOnClickVar]</onclick>
 					<visible>!Skin.HasSetting(Disable.TopBar)</visible>
 				</control>
+				-->
 				<!-- Watched Status Indicators -->
 				<control type="button" id="1501">
 					<include>ButtonCommonValues</include>
@@ -92,30 +93,30 @@
 				</control>
 				<!-- View Settings -->
 				<!-- Button IDs (1510-1549) -->
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),List)">ListViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),InfoWall)">InfoWallViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape)">LandscapeViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase)">ShowCaseViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCaseSquare)">ShowCaseSquareViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),TriPanel)">TriPanelViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),Posters)">PostersViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),Shift)">ShiftViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),BannerWall)">BannerWallViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),Logo)">LogoViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),Icons)">IconsViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),LowList)">LowListViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),Episode)">EpisodeViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),Wall)">WallViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),Gallery)">GalleryViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),Panel)">PanelViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),RightList)">RightListViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),BigList)">BigListViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),SongList)">SongListViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix)">MyFlixViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan)">BigFanViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),FanartList)">FanartListViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),MusicJukeBox)">MusicJukeBoxViewSettings</include>
-				<include condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall)">FullscreenWallViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,List)">ListViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,InfoWall)">InfoWallViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31325])">LandscapeViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,ShowCase)">ShowCaseViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,ShowCaseSquare)">ShowCaseSquareViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,TriPanel)">TriPanelViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,Posters)">PostersViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,Shift)">ShiftViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,BannerWall)">BannerWallViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,Logo)">LogoViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,Icons)">IconsViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,LowList)">LowListViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,Episode)">EpisodeViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,Wall)">WallViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,Gallery)">GalleryViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,Panel)">PanelViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,RightList)">RightListViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,BigList)">BigListViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,SongList)">SongListViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,MyFlix)">MyFlixViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,BigFan)">BigFanViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,FanartList)">FanartListViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,MusicJukeBox)">MusicJukeBoxViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,FullscreenWall)">FullscreenWallViewSettings</include>
 				<!-- Bottom Settings -->
 				<!-- Button IDs (1550-1559) -->
 				<!-- InfoPopup Delay -->
@@ -132,7 +133,45 @@
 					<onclick condition="String.IsEqual(Window(Home).Property(actualViewtype),BigList)">Skin.ToggleSetting(noindicatorbiglist)</onclick>
 					
 				</control>
+
 			</control>
 		</control>
+		<control type="button" id="3002">
+                <posx>384</posx>
+                <posy>500</posy>
+                <textwidth>60</textwidth>
+                <font>symbolLarge</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>60</width>
+                <label></label>
+                <label2></label2>
+                <textcolor>$VAR[selected]</textcolor>
+                <focusedcolor>$VAR[selected]</focusedcolor>
+                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <textoffsetx>2</textoffsetx>
+				<onclick>Dialog.Close(1131)</onclick>
+				<visible>skin.hassetting(Touch) + window.isactive(1131)</visible>
+        </control>
+		<include content="keyboard select">
+                    <param name="posx">87%</param>
+                    <param name="focus">9011</param>
+                    <param name="up">up</param>
+                    <param name="down">down</param>
+                    <param name="left">left</param>
+                    <param name="right">right</param>
+                    <param name="select">select</param>
+                    <param name="back">back</param>
+					<param name="visible">skin.hassetting(Touch) + window.isactive(1131)</param>
+                    <param name="upview">true</param>
+					<param name="downview">true</param>
+					<param name="leftview">true</param>
+					<param name="rightview">true</param>
+					<param name="selectview">true</param>
+                    <param name="color">keyboardInactive</param>
+                </include>
 	</controls>
+	
+		
 </window>

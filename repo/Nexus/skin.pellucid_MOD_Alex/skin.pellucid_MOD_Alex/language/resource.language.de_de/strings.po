@@ -886,6 +886,26 @@ msgctxt "#31333"
 msgid "This script is not available in the default Kodi repositiory. The Pellucid repo is needed to use the click to install feature, without it this script must be installed manually."
 msgstr "Skript ist im Kodi Repository nicht verfügbar. Zur Benutzung des Pellucid Repositorys müssen Sie die Installationsoption benutzen. Ohne diese Option muss das Skript manuell installiert werden."
 
+msgctxt "#31334"
+msgid "Information"
+msgstr "Information"
+
+msgctxt "#31335"
+msgid "Cases"
+msgstr "Hüllen"
+
+msgctxt "#31336"
+msgid "OpenCase mod"
+msgstr "OpenCase Mod"
+
+msgctxt "#31337"
+msgid "Mod delay"
+msgstr "Mod Verzögerung"
+
+msgctxt "#31338"
+msgid "Seconds"
+msgstr "Sekunden"
+
 msgctxt "#31250"
 msgid "BigInfo"
 msgstr "BigInfo"

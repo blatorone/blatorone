@@ -6,7 +6,7 @@
 			<include>ViewAnimation</include>
 			<control type="label" id="4447">
 				<description>MyFlix Open Case Movies</description>
-				<label>$LOCALIZE[31966]</label>
+				<label>$LOCALIZE[31336]</label>
 				<include>HiddenObject</include>
 				<include condition="!String.IsEmpty(Skin.String(MyFlix.Delay))">MyFlixDelayAnimation</include>
 				<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
@@ -15,7 +15,7 @@
 			</control>
 			<control type="label" id="4448">
 				<description>MyFlix Open Case Sets</description>
-				<label>$LOCALIZE[31966]</label>
+				<label>$LOCALIZE[31336]</label>
 				<include>HiddenObject</include>
 				<include condition="!String.IsEmpty(Skin.String(MyFlix.Delay))">MyFlixDelayAnimation</include>
 				<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
@@ -299,7 +299,7 @@
 						<left>15</left>
 						<top>150</top>
 						<width>800</width>
-						<height>400</height>
+						<height>325</height>
 						<font>textbox</font>
 						<textcolor>grey</textcolor>
 						<shadowcolor>shadow</shadowcolor>
@@ -319,7 +319,7 @@
 				<onup>SetFocus(9000)</onup>
 				<ondown condition="Control.IsVisible(50960)">50960</ondown>
 				<ondown condition="!Control.IsVisible(50960)">4400</ondown>
-				<viewtype label="$LOCALIZE[31314]">bigwrap</viewtype>
+				<viewtype label="$LOCALIZE[31314]">$LOCALIZE[31314]</viewtype>
 				<pagecontrol>50960</pagecontrol>
 				<orientation>horizontal</orientation>
 				<preloaditems>2</preloaditems>
