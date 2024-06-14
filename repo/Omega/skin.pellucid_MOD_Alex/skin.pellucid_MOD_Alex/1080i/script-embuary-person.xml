@@ -24,6 +24,7 @@
 				<fadetime>IconCrossfadeTime</fadetime>
 				<texture background="true">$VAR[EmbuaryInfoPosterVar]</texture>
 			</control>
+			<include>Backbuttoncross</include>
 		</control>
 		<!-- Details Side -->
 		<control type="group">
