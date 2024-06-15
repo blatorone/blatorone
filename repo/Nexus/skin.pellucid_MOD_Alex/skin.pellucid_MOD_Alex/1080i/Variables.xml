@@ -1648,18 +1648,18 @@
 		<value condition="Control.HasFocus(900) + String.IsEqual(Container(10051).ListItem.Property(call),tv)">$LOCALIZE[1024]</value>
 		<value condition="Control.HasFocus(900)">$LOCALIZE[208]</value>
 		<value condition="Control.HasFocus(901)">$LOCALIZE[206]</value>
-		<value condition="Control.HasFocus(902)">$LOCALIZE[31326]</value>
+		<value condition="Control.HasFocus(902)">$LOCALIZE[31339]</value> 
 		<value condition="Control.HasFocus(903)">$LOCALIZE[5]</value>
-		<value condition="Control.HasFocus(3000) | Control.HasFocus(64)">$LOCALIZE[31271]</value>
-		<value condition="Control.HasFocus(90002) | Container(90000).HasNext + !Container(90000).HasPrevious">$LOCALIZE[31453]</value>
+		<value condition="Control.HasFocus(3000) | Control.HasFocus(64)">$LOCALIZE[31340]</value>
+		<value condition="Control.HasFocus(90002) | Container(90000).HasNext + !Container(90000).HasPrevious">$LOCALIZE[31341]</value>
 	</variable>
 	<variable name="EmbuaryInfoDetailsLabelVar">
-		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10052)">$INFO[Container(10051).ListItem.Label,$LOCALIZE[31521] ]</value>
-		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10053)">$INFO[Container(10051).ListItem.Label,$LOCALIZE[31545] ]</value>
-		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10054) | Control.HasFocus(10055)">$LOCALIZE[31547]</value>
+		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10052)">$INFO[Container(10051).ListItem.Label,$LOCALIZE[31342] ]</value>
+		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10053)">$INFO[Container(10051).ListItem.Label,$LOCALIZE[31343] ]</value>
+		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10054) | Control.HasFocus(10055)">$LOCALIZE[31344]</value>
 		<value condition="Control.HasFocus(10052)">$LOCALIZE[206]</value>
 		<value condition="Control.HasFocus(10053)">$ADDON[script.embuary.info 32009]</value>
-		<value condition="Control.HasFocus(10054)">$LOCALIZE[31457]</value>
+		<value condition="Control.HasFocus(10054)">$LOCALIZE[31345]</value>
 		<value condition="Control.HasFocus(10056)">$ADDON[script.embuary.info 32018]</value>
 	</variable>
 	<variable name="MinsToHourDurationVar">

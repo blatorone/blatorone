@@ -61,7 +61,7 @@
 							<height>65</height>
 							<width>1180</width>
 							<font>menuTitle</font>
-							<textcolor>grey</textcolor>
+							<textcolor>$VAR[highlight]</textcolor>
 							<scroll>true</scroll>
 							<label>$INFO[Container(10051).ListItem.Label]</label>
 						</control>
@@ -69,9 +69,9 @@
 							<width>1180</width>
 							<height>30</height>
 							<font>font16</font>
-							<textcolor>$VAR[highlight]</textcolor>
-							<label>$INFO[Container(10051).ListItem.Property(known_for_department),$LOCALIZE[31546] ]</label>
-						</control>
+							<textcolor>grey</textcolor>
+							<label>[COLOR $VAR[highlight]]$LOCALIZE[31346]:[/COLOR] $INFO[Container(10051).ListItem.Property(known_for_department) ]</label>
+						</control>31346
 					</control>
 					<control type="image">
 						<left>852</left>
@@ -131,7 +131,7 @@
 							<control type="image">
 								<width>1198</width>
 								<height>73</height>
-								<texture colordiffuse="$VAR[selected_box]" border="4">Colors/white.png</texture>
+								<texture colordiffuse="overlay" border="4">listselect_fo.png</texture>
 								<visible>Control.HasFocus(3000)</visible>
 								<include>VisibleFadeAnimation</include>
 							</control>
@@ -140,7 +140,7 @@
 								<height>73</height>
 								<font>menuTitle</font>
 								<textcolor>$VAR[Home]</textcolor>
-								<label>$INFO[ListItem.Label2,, ]$INFO[ListItem.Label]</label>
+								<label>[COLOR $VAR[highlight]]$INFO[ListItem.Label2,, ][/COLOR]$INFO[ListItem.Label]</label>
 								<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(3000)">Conditional</animation>
 								<textoffsetx>20</textoffsetx>
 							</control>

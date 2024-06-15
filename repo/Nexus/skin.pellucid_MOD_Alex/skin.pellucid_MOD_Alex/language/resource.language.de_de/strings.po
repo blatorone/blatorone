@@ -906,6 +906,38 @@ msgctxt "#31338"
 msgid "Seconds"
 msgstr "Sekunden"
 
+msgctxt "#31339"
+msgid "These are RECOMMENDED scripts that add additional features. They are not needed for basic skin functionality. Some RECOMMENDED scripts may be unsuitable for low performance devices."
+msgstr "Dies sind EMPFOHLENE Skripte, die zusätzliche Funktionen hinzufügen. Sie sind für die Grundfunktionen des Skins nicht erforderlich. Einige EMPFOHLENE Skripte können für Geräte mit geringer Leistung ungeeignet sein."
+
+msgctxt "#31340"
+msgid "Click for more"
+msgstr "Klick für mehr"
+
+msgctxt "#31341"
+msgid "Down for more"
+msgstr "„Nach unten“ für mehr"
+
+msgctxt "#31342"
+msgid "More featuring"
+msgstr ""
+
+msgctxt "#31343"
+msgid "Crew"
+msgstr ""
+
+msgctxt "#31344"
+msgid "Image gallery"
+msgstr "Bildergalerie"
+
+msgctxt "#31345"
+msgid "YouTube"
+msgstr "YouTube"
+
+msgctxt "#31346"
+msgid "Known for"
+msgstr "Bekannt für"
+
 msgctxt "#31250"
 msgid "BigInfo"
 msgstr "BigInfo"

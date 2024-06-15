@@ -54,7 +54,7 @@
 							<height>65</height>
 							<width>1180</width>
 							<font>menuTitle</font>
-							<textcolor>grey</textcolor>
+							<textcolor>$VAR[highlight]</textcolor>
 							<scroll>true</scroll>
 							<label>$INFO[Container(10051).ListItem.Label]</label>
 						</control>
@@ -64,7 +64,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>menuTitle</font>
-							<textcolor>$VAR[highlight]</textcolor>
+							<textcolor>grey</textcolor>
 							<scroll>true</scroll>
 							<scrollout>false</scrollout>
 							<pauseatend>4500</pauseatend>
@@ -79,7 +79,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>menuTitle</font>
-							<textcolor>$VAR[highlight]</textcolor>
+							<textcolor>grey</textcolor>
 							<scroll>true</scroll>
 							<scrollout>false</scrollout>
 							<pauseatend>4500</pauseatend>
@@ -91,7 +91,7 @@
 							<width>1180</width>
 							<height>30</height>
 							<font>menuTitle</font>
-							<textcolor>$VAR[highlight]</textcolor>
+							<textcolor>grey</textcolor>
 							<label>$INFO[Container(10051).ListItem.Tagline]</label>
 							<visible>String.IsEmpty(Container(10051).ListItem.Property(awards)) + [String.IsEmpty(Container(10051).ListItem.OriginalTitle) | String.IsEqual(Container(10051).ListItem.OriginalTitle,Container(10051).ListItem.Title)]</visible>
 						</control>
@@ -312,7 +312,7 @@
 							<control type="label">
 								<width>1198</width>
 								<height>70</height>
-								<font>regular</font>
+								<font>menuTitle</font>
 								<textcolor>$VAR[highlight]</textcolor>
 								<label>$INFO[ListItem.Label2,, ]$INFO[ListItem.Label,[COLOR grey], [/COLOR]]</label>
 								<textoffsetx>20</textoffsetx>
@@ -329,8 +329,9 @@
 							<control type="label">
 								<width>1198</width>
 								<height>70</height>
-								<font>regular</font>
-								<label>$INFO[ListItem.Label2,, ]$INFO[ListItem.Label]</label>
+								<font>menuTitle</font>
+								<textcolor>$VAR[Home]</textcolor>
+								<label>[COLOR $VAR[highlight]]$INFO[ListItem.Label2,, ][/COLOR]$INFO[ListItem.Label]</label>
 								<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(3000)">Conditional</animation>
 								<textoffsetx>20</textoffsetx>
 							</control>
@@ -448,6 +449,21 @@
 					<ondown>90000</ondown>
 					<align>right</align>
 					<orientation>horizontal</orientation>
+					<control type="button" id="904">
+						<description>plot</description>
+						<font>symbolLarge</font>
+						<width>1-col</width>
+						<height>1-col</height>
+						<texturenofocus />
+						<textoffsetx>17</textoffsetx>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<label2></label2>
+						<onclick>SetProperty(TextViewerHeader,$ESCINFO[Container(10051).ListItem.Label,[B],[/B]],Home)</onclick>
+						<onclick>SetProperty(TextViewerSubHeader,$ESCINFO[Container(10051).ListItem.Tagline],Home)</onclick>
+						<onclick>SetProperty(TextViewerContent,$ESCINFO[Container(10051).ListItem.Plot],Home)</onclick>
+						<onclick>ActivateWindow(1112)</onclick>
+						
+					</control>
 					<control type="togglebutton" id="900">
 						<description>Play/browse to Show</description>
 						<font>IconMediumMD</font>
@@ -463,33 +479,40 @@
 					</control>
 					<control type="button" id="901">
 						<description>Cast</description>
-						<font>IconMediumMD</font>
-						<width>65</width>
+						<font>symbolLarge</font>
+						<width>1-col</width>
+						<height>1-col</height>
 						<texturenofocus />
+						<textoffsetx>17</textoffsetx>
 						<include>ButtonInfoDialogsCommonValues</include>
-						<label></label>
+						<label2></label2>
 						<onclick>SetFocus(10052)</onclick>
 						<visible>Integer.IsGreater(Container(10052).NumItems,0)</visible>
 					</control>
 					<control type="button" id="902">
 						<description>Search Trailer</description>
-						<font>IconMediumMD</font>
-						<width>65</width>
+						<font>symbolLarge</font>
+						<width>1-col</width>
+						<height>1-col</height>
+						<textoffsetx>17</textoffsetx>
 						<texturenofocus />
 						<include>ButtonInfoDialogsCommonValues</include>
-						<label></label>
+						<label2></label2>
 						<onclick>RunScript(script.embuary.helper,action=goto,path='"plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[Container(10051).ListItem.Title]&amp;search_type=videos"',target=videos)</onclick>
 						<visible>System.AddonIsEnabled(plugin.video.youtube) + System.AddonIsEnabled(script.embuary.helper)</visible>
 					</control>
 					<control type="button" id="903">
 						<description>Extras</description>
-						<font>IconMediumMD</font>
-						<width>65</width>
+						<font>symbolLarge</font>
+						<width>1-col</width>
+						<height>1-col</height>
 						<texturenofocus />
+						<textoffsetx>17</textoffsetx>
 						<include>ButtonInfoDialogsCommonValues</include>
-						<label></label>
+						<label2></label2>
 						<onclick>Addon.OpenSettings(script.embuary.info)</onclick>
 					</control>
+					
 				</control>
 				<control type="image">
 					<left>3</left>
