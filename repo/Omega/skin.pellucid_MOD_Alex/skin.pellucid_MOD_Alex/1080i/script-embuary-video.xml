@@ -1027,7 +1027,7 @@
 					
 
 				</control>
-				<include>Backbutton</include>
+				
 				<control type="group">
                 <visible>Skin.HasSetting(Touch)</visible>
                 <posx>87%</posx>
@@ -1037,7 +1037,7 @@
                     <posx>-127</posx>
                     <posy>-2</posy>
                     <width>5-col</width>
-                    <height>7-col</height>
+                    <height>5-col</height>
                     <focusedcolor>00FFFFFF</focusedcolor>
                     <texturefocus colordiffuse="00FFFFFF">Colors/white.png</texturefocus>
                     <texturenofocus>FFFFFF</texturenofocus>

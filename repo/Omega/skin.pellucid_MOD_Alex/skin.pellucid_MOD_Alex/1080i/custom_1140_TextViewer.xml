@@ -9,12 +9,19 @@
 	<controls>
 	<include>Backbuttoncross</include>
 		<control type="button" id="64">
-			<oninfo>Dialog.Close(1112)</oninfo>
-			<onclick>Dialog.Close(1112)</onclick>
-			<onleft>Dialog.Close(1112)</onleft>
-			<onright>Dialog.Close(1112)</onright>
+			<oninfo>Dialog.Close(1140)</oninfo>
+			<onclick>Dialog.Close(1140)</onclick>
+			<onleft>Dialog.Close(1140)</onleft>
+			<onright>Dialog.Close(1140)</onright>
 			<onup>PageUp(61)</onup>
 			<ondown>PageDown(61)</ondown>
+			<textcolor>00FFFFFF</textcolor>
+        		<focusedcolor>00FFFFFF</focusedcolor>
+        		<texturefocus>00FFFFFF</texturefocus>
+        		<texturenofocus>00FFFFFF</texturenofocus>
+        		<textoffsetx>24</textoffsetx>
+        		<disabledcolor>00FFFFFF</disabledcolor>
+        		<invalidcolor>00FFFFFF</invalidcolor>
 			<include>HiddenObject</include>
 		</control>
 		<include content="DimBackground">
@@ -35,7 +42,7 @@
 				<height>935</height>
 				<texture>colors/black.png</texture>
 				<bordersize>1</bordersize>
-				<bordertexture border="1" infill="false" colordiffuse="$VAR[ThemeBorderColor]">colors/border_frame.png</bordertexture>
+				<bordertexture border="1" infill="false" colordiffuse="$VAR[highlight]">colors/border_frame.png</bordertexture>
 				<visible>String.IsEmpty(Window(Home).Property(AddonNews))</visible>
 			</control>
 			<control type="label">

@@ -916,9 +916,13 @@
             <width>100%</width>
             <height>100%</height>
 			<align>center</align>
-            <focusedcolor></focusedcolor>
-            <texturefocus></texturefocus>
-            <colordiffuse></colordiffuse>
+            <textcolor>00FFFFFF</textcolor>
+        		<focusedcolor>00FFFFFF</focusedcolor>
+        		<texturefocus>00FFFFFF</texturefocus>
+        		<texturenofocus>00FFFFFF</texturenofocus>
+        		<textoffsetx>24</textoffsetx>
+        		<disabledcolor>00FFFFFF</disabledcolor>
+        		<invalidcolor>00FFFFFF</invalidcolor>
 			<onclick>Back</onclick>
 		</control>
     </include>
@@ -931,9 +935,13 @@
             <width>100%</width>
             <height>100%</height>
 			<align>center</align>
-            <focusedcolor></focusedcolor>
-            <texturefocus></texturefocus>
-            <colordiffuse></colordiffuse>
+            <textcolor>00FFFFFF</textcolor>
+        		<focusedcolor>00FFFFFF</focusedcolor>
+        		<texturefocus>00FFFFFF</texturefocus>
+        		<texturenofocus>00FFFFFF</texturenofocus>
+        		<textoffsetx>24</textoffsetx>
+        		<disabledcolor>00FFFFFF</disabledcolor>
+        		<invalidcolor>00FFFFFF</invalidcolor>
 			<onclick>Back</onclick>
 		</control>
     </include>
