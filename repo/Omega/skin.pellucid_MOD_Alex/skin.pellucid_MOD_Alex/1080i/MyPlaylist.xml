@@ -25,6 +25,7 @@
             <include>Backbuttoncross</include>
             <include content="keyboard select">
                 <param name="posx">85%</param>
+                <param name="posy">35%</param>
                 <param name="back">back</param>
                 <param name="focus">9999</param>
                 <param name="up">up</param>

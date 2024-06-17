@@ -249,6 +249,7 @@
 				<control type="group">
 					<posx>970</posx>
                 	<posy>0</posy>
+					<!--
 					<control type="image">
                     	<posx>-20</posx>
                 	<posy>0</posy>
@@ -260,6 +261,7 @@
 						<bordertexture border="5" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
                         <bordersize>5</bordersize>
                 	</control>
+					-->
 					<control type="grouplist">
 			
 							<posy>40</posy>
@@ -283,6 +285,7 @@
 								<textcolor>textDisabled</textcolor>
 								<shadowcolor>shadow</shadowcolor>
 								<label>$INFO[ListItem.year] • $VAR[Durationtiminmin]</label>
+								<visible>integer.IsGreater(ListItem.duration,120)</visible>
 						</control>
 						<control type="textbox">
 						

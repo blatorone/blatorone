@@ -99,6 +99,7 @@
             </control>
            <include content="keyboard select">
                         <param name="posx">30%</param>
+                        <param name="posy">35%</param>
                         <param name="focus">9001</param>
                         <param name="up">up</param>
                         <param name="down">down</param>

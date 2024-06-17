@@ -96,8 +96,8 @@
 				<include condition="String.IsEqual(Container.Viewmode,List)">ListViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,InfoWall)">InfoWallViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31325])">LandscapeViewSettings</include>
-				<include condition="String.IsEqual(Container.Viewmode,ShowCase)">ShowCaseViewSettings</include>
-				<include condition="String.IsEqual(Container.Viewmode,ShowCaseSquare)">ShowCaseSquareViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31305])">ShowCaseViewSettings</include>
+				<include condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31305])">ShowCaseSquareViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,TriPanel)">TriPanelViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,Posters)">PostersViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,Shift)">ShiftViewSettings</include>
@@ -156,6 +156,7 @@
         </control>
 		<include content="keyboard select">
                     <param name="posx">87%</param>
+					<param name="posy">35%</param>
                     <param name="focus">9011</param>
                     <param name="up">up</param>
                     <param name="down">down</param>

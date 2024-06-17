@@ -311,6 +311,7 @@
                 </control>
                 <include content="keyboard select">
                     <param name="posx">-100%</param>
+                    <param name="posy">35%</param>
                     <param name="focus">8001</param>
                     <param name="up">ChannelUp</param>
                     <param name="down">ChannelDown</param>
@@ -328,6 +329,7 @@
                 </include>
                 <include content="keyboard select">
                     <param name="posx">-100%</param>
+                    <param name="posy">35%</param>
                     <param name="focus">8001</param>
                     <param name="up">PlayerControl(next)</param>
                     <param name="down">PlayerControl(previous)</param>

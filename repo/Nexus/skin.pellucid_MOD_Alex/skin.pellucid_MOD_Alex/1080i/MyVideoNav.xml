@@ -76,7 +76,7 @@
 			
                 </control>
                 <control type="group">
-					<visible>!Control.IsVisible(50) + !window.isactive(1130) + !controlgroup(500).hasfocus + !Control.IsVisible(504)</visible>
+					<visible>!Control.IsVisible(50) + !window.isactive(1130) + !controlgroup(500).hasfocus + !Control.IsVisible(504) + !Control.IsVisible(502)</visible>
 					<include>ViewAnimation</include>
 					
 					<!-- SETS -->
@@ -197,6 +197,7 @@
 			
                 <include content="keyboard select">
                     <param name="posx">87%</param>
+					<param name="posy">35%</param>
                     <param name="focus">9999</param>
                     <param name="up">up</param>
                     <param name="down">down</param>

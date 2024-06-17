@@ -21,7 +21,7 @@
 		<onright>53</onright>
 		<onup>9000</onup>
 		<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
-		<viewtype label="31305">bigwrap</viewtype>
+		<viewtype label="$LOCALIZE[31305]">$LOCALIZE[31305]</viewtype>
 		<pagecontrol>95360</pagecontrol>
 		<scrolltime tween="quadratic">300</scrolltime>
 		<focusposition>3</focusposition>

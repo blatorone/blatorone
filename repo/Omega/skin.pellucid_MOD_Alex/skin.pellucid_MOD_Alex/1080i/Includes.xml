@@ -262,7 +262,7 @@
 	<include name="pageHeader">
         
 		<control type="group">
-        <visible>Control.IsVisible(50) + !window.isactive(1130)</visible>
+        <visible>[Control.IsVisible(50) | Control.IsVisible(502)] + !window.isactive(1130)</visible>
 			<posx>col-1-begin</posx>
             <posy>row-2-begin</posy>
 			<!--title-->
@@ -310,7 +310,7 @@
     <include name="pageHeadervideonav">
         
 		<control type="group">
-        <visible>!Control.IsVisible(50) + !window.isactive(1130) + !Control.IsVisible(504)</visible>
+        <visible>!Control.IsVisible(50) + !window.isactive(1130) + !Control.IsVisible(504) + !Control.IsVisible(502)</visible>
 			<posx>col-1-begin</posx>
             <posy>960</posy>
 			<!--title-->
@@ -664,7 +664,7 @@
         <control type="group">
                 <visible>$PARAM[visible]</visible>
                 <posx>$PARAM[posx]</posx>
-                <posy>35%</posy>
+                <posy>$PARAM[posy]</posy>
                 <!--invisible button for background-->
                 <control type="button">
                     <posx>-127</posx>
@@ -913,8 +913,8 @@
 			<visible>Skin.HasSetting(Touch)</visible>
 			<posx>0</posx>
             <posy>0</posy>
-            <width>2000</width>
-            <height>1500</height>
+            <width>100%</width>
+            <height>100%</height>
 			<align>center</align>
             <focusedcolor></focusedcolor>
             <texturefocus></texturefocus>
@@ -928,8 +928,8 @@
 			<visible>Skin.HasSetting(Touch) + !Skin.HasSetting(crosskey)</visible>
 			<posx>0</posx>
             <posy>0</posy>
-            <width>2000</width>
-            <height>1500</height>
+            <width>100%</width>
+            <height>100%</height>
 			<align>center</align>
             <focusedcolor></focusedcolor>
             <texturefocus></texturefocus>

@@ -21,6 +21,7 @@
 			<texture>$INFO[Container(1).ListItem.Icon]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
 		</control>
+		<include>Backbutton</include>
 		<control type="scrollbar" id="2">
 			<bottom>0</bottom>
 			<height>5</height>
@@ -32,5 +33,10 @@
 			<texturesliderbarfocus colordiffuse="$VAR[highlight]">colors/white.png</texturesliderbarfocus>
 			<animation effect="fade" time="300" start="100" end="0" condition="System.IdleTime(2)">Conditional</animation>
 		</control>
+		<include>DebugGrid</include>
+        <control type="label">
+            <include>DialogID</include>
+            <label>embuary-image.xml</label>
+        </control>
 	</controls>
 </window>
