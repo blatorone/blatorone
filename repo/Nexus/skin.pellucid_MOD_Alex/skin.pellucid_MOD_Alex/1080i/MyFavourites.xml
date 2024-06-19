@@ -3,24 +3,27 @@
     <defaultcontrol always="true">9999</defaultcontrol>
     <include>fadeInOut</include>
     <onload>Skin.SetString(recentitems,music)</onload>
-	<views>50</views>
+	<views>503,50,51,52,53,54,502,504,505,508,509,591,602,603,609</views>
     <controls>
-        <include>globalBackground</include>
-		<control type="group">
-            <visible>$EXP[isMusicSong]</visible>
-            <control type="image">
-                <include>dimensionsFullscreen</include>
-                <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture background="true" fallback="backgroundimage.png" border="0">$INFO[Container.Art(artist.fanart)]</texture>
-				<fadetime>500</fadetime>
-                <colordiffuse>55ffffff</colordiffuse>
-            </control>
-            <control type="image">
-                <texture>vignette.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-        </control>
+        <control type="image">
+						<visible>!Control.IsVisible(50) + !Control.IsVisible(609)</visible>
+			    		<include>ViewAnimation</include>
+	            		<include>dimensionsFullscreen</include>
+	            		<texture fallback="backgroundimage.jpg">$INFO[listitem.thumb]</texture>
+	            		<colordiffuse>FF555555</colordiffuse>
+	            		<aspectratio>scale</aspectratio>
+						<fadetime>250</fadetime>
+	        </control>
+			<control type="image">
+						<visible>Control.IsVisible(50) |  Control.IsVisible(609)</visible>
+			    		<include>ViewAnimation</include>
+	            		<include>dimensionsFullscreen</include>
+	            		<texture>backgroundimage.jpg</texture>
+	            		<colordiffuse>FF555555</colordiffuse>
+	            		<aspectratio>scale</aspectratio>
+						<fadetime>250</fadetime>
+	        </control>
+      
         <!--Battery Level-->
         <include>Battery</include>
         <!--Backbutton touchscreen-->
@@ -34,98 +37,27 @@
                 <include>contentOpen</include>
                 <!--source content-->
                 <control type="group" id="9500">
-                    <include>View_50_List</include>
                     
-                </control>
-
-                <control type="group">
-			<visible>Control.IsVisible(54) | Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(503) | Control.IsVisible(57)</visible>
-			<visible>!Window.IsActive(addoninformation)</visible>
-			<include>ViewAnimation</include>
-			<top>-30</top>
-			<control type="group">
-				<visible>Control.IsVisible(54) | Control.IsVisible(52) | [Control.IsVisible(503) + Skin.HasSetting(Enable.Wall.AlbumLabels)]</visible>
-				<control type="group">
-					<left>410</left>
-					<top>1010</top>
-                    <control type="image">
-                    			<posx>-450</posx>
-                    			<posy>-3</posy>
-                    			<width>fullscreenwidth</width>
-                    			<height>136</height>
-                    			<texture>colors/listselect_fo.png</texture>
-                    			<colordiffuse>$VAR[highlight]</colordiffuse>
-                    			<aspectratio>stretch</aspectratio>
-                			</control>
-							<control type="image">
-                    			<posx>-450</posx>
-                    			<posy>-3</posy>
-                    			<width>fullscreenwidth</width>
-                    			<height>136</height>
-                    			<texture>colors/listselect_fo.png</texture>
-                    			<colordiffuse>$VAR[highlight]</colordiffuse>
-                    			<aspectratio>stretch</aspectratio>
-                			</control>
-					<control type="label">
-						<width>1100</width>
-						<height>48</height>
-						<align>center</align>
-						<font>menuTitle2</font>
-						<scroll>true</scroll>
-						<label>$INFO[ListItem.Label]</label>
-						<textoffsetx>30</textoffsetx>
-					</control>
-				</control>
-				<control type="group">
-					<top>1010</top>
-					<width>100%</width>
-					<visible>[Container.Content(albums) | Container.Content(songs)]</visible>
-					<control type="group">
-						<left>120</left>
-						<control type="label">
-							<left>-10</left>
-							<width>155</width>
-							<height>90</height>
-							<align>center</align>
-							<label>$INFO[ListItem.Year]</label>
-							<font>menuTitle2</font>
-							<wrapmultiline>true</wrapmultiline>
-						</control>
-					</control>
-					<control type="image">
-						<left>1600</left>
-						<colordiffuse>white</colordiffuse>
-						<width>200</width>
-						<fadetime>50</fadetime>
-						<include>MediaFlagValues</include>
-						<texture fallback="flags/rating/empty.png">$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
-					</control>
-				</control>
-			</control>
-			<control type="group">
-				<visible>Control.IsVisible(500) | Control.IsVisible(57) + ![Container.Content(genres) + !Skin.HasSetting(Enable.Shift.GenreLabels)]</visible>
-				<animation effect="slide" start="0" end="40" condition="Control.IsVisible(57)">Conditional</animation>
-				<include>ViewAnimation</include>
-				<control type="grouplist">
-					<top>1000</top>
-					<width>1840</width>
-					<height>90</height>
-					<align>right</align>
-					<orientation>horizontal</orientation>
-					<visible>Container.Content(albums) | Container.Content(songs)</visible>
-					
-					<control type="label">
-						<width>198</width>
-						<height>90</height>
-						<align>center</align>
-						<label fallback="• • • •">$INFO[ListItem.Year]</label>
-						<font>regular</font>
-						<wrapmultiline>true</wrapmultiline>
-					</control>
-				</control>
-			</control>
-		</control>
-
+                    <include>View_50_List</include>
+                    <include>View_51_InfoWall</include>
+                    <include>View_52_Landscape</include>
+                    <include>View_53_ShowCase</include>
+                    <include>View_54_ShowCase</include>
+                    <include>View_58_BannerWall</include>
+                    <include>View_502_Episode</include>
+                    <include>View_503_Wall</include>
+                    <include>View_505_Panel</include>
+                    <include>View_504_Gallery</include>
+                    <include>View_505_Panel</include>
+                    <include>View_508_SongList</include>
+                    <include>View_509_MyFlix</include>
+                    <include>View_591_BigFan</include>
+                    <include>View_602_FanartList</include>
+                    <include>View_603_Music_JukeBox</include>
+                    <include>View_609_Fullscreen_Wall</include>
+                <include>videolabel</include>
+                
+                 
 
                 <control type="button" id="3000">
                 <posx>0</posx>
@@ -203,13 +135,26 @@
 				<include>pageHeader</include>    
             </control>
         </control>
+        <control type="label">
+			        
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>200</width>
+                    <height>6-row</height>
+                    <aligny>center</aligny>
+                    <align>right</align>
+                    <font>regular</font>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor></shadowcolor>
+                    <label>test</label>
+                </control>
         <!--mini window-->
         <include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
         <!--loading indicator-->
         <include>loadingIndicator</include>
-
+        
         
                     
         <!--debugging-->

@@ -45,15 +45,16 @@
 								<top>4</top>
 								<height>124</height>
 								<font>menuTitle2</font>
-								<textcolor>shadow</textcolor>
+								<textcolor>ff8a795d</textcolor>
 								<label>$VAR[MyFlixTitleLabelVar]</label>
 							</control>
 							<control type="label">
 								<height>124</height>
 								<font>menuTitle2</font>
-								<shadowcolor>shadow</shadowcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
+								<textcolor>$VAR[highlight]</textcolor>
 								<label>$VAR[MyFlixTitleLabelVar]</label>
-							</control>
+							</control>ff8a795d
 						</control>
 					</control>
 				</control>
@@ -80,7 +81,7 @@
 							<height>45</height>
 							<label>[B]$INFO[ListItem.Top250,#][/B]</label>
 							<font>regular</font>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<textcolor>grey</textcolor>
 						</control>
 					</control>
@@ -90,7 +91,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>[COLOR $VAR[highlight]]$LOCALIZE[20339]: [/COLOR]$INFO[ListItem.Director]</label>
 							<visible>!String.IsEmpty(ListItem.Director)</visible>
@@ -99,7 +100,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>[COLOR $VAR[highlight]]$LOCALIZE[515]: [/COLOR]$INFO[ListItem.Genre]</label>
 							<visible>!String.IsEmpty(ListItem.Genre)</visible>
@@ -108,7 +109,7 @@
 							<width>1000</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.RatingAndVotes,, • ]$INFO[ListItem.Duration(mins),,m]$INFO[ListItem.Endtime, • $LOCALIZE[19127]: ,]</label>
 							<visible>!Skin.HasSetting(Enable.HourMinuteDuration)</visible>
@@ -117,7 +118,7 @@
 							<width>1000</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.RatingAndVotes,, • ]$VAR[ItemDurationVar]$INFO[ListItem.Endtime, • $LOCALIZE[31324]: ,]</label>
 							<visible>Skin.HasSetting(Enable.HourMinuteDuration)</visible>
@@ -130,7 +131,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>[COLOR $VAR[highlight]]$LOCALIZE[20339]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Director)]</label>
 							<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Director))</visible>
@@ -139,7 +140,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>[COLOR $VAR[highlight]]$LOCALIZE[20339]: [/COLOR]$INFO[Container(4500).ListItemNoWrap(0).Director]$INFO[Container(4500).ListItemNoWrap(1).Director, / ]$INFO[Container(4500).ListItemNoWrap(2).Director, / ]$INFO[Container(4500).ListItemNoWrap(3).Director, / ]</label>
 							<visible>String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Director)) + !String.IsEmpty(Container(4500).ListItem(0).Director)</visible>
@@ -148,7 +149,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>[COLOR $VAR[highlight]]$LOCALIZE[515]: [/COLOR]$VAR[MovieSetGenreVar]</label>
 							<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Genre)) | !String.IsEmpty(Container(4500).ListItem(0).Genre)</visible>
@@ -157,7 +158,7 @@
 							<width>1000</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>$INFO[Container(4500).ListItem(0).Year]$INFO[Container(4500).ListItem(-1).Year, - ]$INFO[Container(4500).NumItems, • , $LOCALIZE[342]]$INFO[ListItem.RatingAndVotes, • ]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime), • , $LOCALIZE[12391]]</label>
 						</control>
@@ -168,7 +169,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<font>regular</font>
 							<include>DefaultButtonsValues</include>
 							<label>$INFO[ListItem.Label]</label>
@@ -178,7 +179,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>[COLOR $VAR[Home]]$LOCALIZE[126]: [/COLOR]$INFO[Container(9143).ListItem.Property(Status)]</label>
 						</control>
@@ -186,7 +187,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>$VAR[TMDbHelperNextAiredLabelVar]</label>
 							<visible>!Skin.HasSetting(Disable.NextAired)</visible>
@@ -195,7 +196,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>[COLOR $VAR[Home]]$LOCALIZE[515]: [/COLOR]$INFO[ListItem.Genre]</label>
 							<visible>!String.IsEmpty(ListItem.Genre)</visible>
@@ -207,7 +208,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<font>regular</font>
 							<include>DefaultButtonsValues</include>
 							<label>$INFO[ListItem.Label]</label>
@@ -217,7 +218,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>[COLOR $VAR[Home]]$LOCALIZE[563]: [/COLOR]$INFO[ListItem.RatingAndVotes]</label>
 							<visible>!String.IsEmpty(ListItem.RatingAndVotes)</visible>
@@ -226,7 +227,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>[COLOR $VAR[Home]]$LOCALIZE[31452]: [/COLOR]$INFO[ListItem.Premiered]</label>
 							<visible>!String.IsEmpty(ListItem.Premiered)</visible>
@@ -235,7 +236,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>[COLOR $VAR[Home]]$LOCALIZE[515]: [/COLOR]$INFO[ListItem.Genre]</label>
 							<visible>!String.IsEmpty(ListItem.Genre)</visible>
@@ -247,7 +248,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<label>[COLOR $VAR[Home]]$LOCALIZE[20359]: [/COLOR]$VAR[FloorLabelVar]</label>
 							<include>DefaultButtonsValues</include>
 						</control>
@@ -255,15 +256,14 @@
 							<height>45</height>
 							<width>650</width>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
-							<label>[COLOR $VAR[Home]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration(mins),, $LOCALIZE[12391]]</label>
 							<visible>!String.IsEmpty(ListItem.Duration) + !Skin.HasSetting(Enable.HourMinuteDuration)</visible>
 						</control>
 						<control type="label">
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>[COLOR $VAR[Home]]$LOCALIZE[126]: [/COLOR]$INFO[Container(9143).ListItem.Property(Status)]</label>
 							<visible>!String.IsEmpty(Container(9143).ListItem.Property(Status))</visible>
@@ -272,7 +272,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>[COLOR $VAR[Home]]$LOCALIZE[31010]: [/COLOR]$INFO[Container(9143).ListItem.Property(Next_Aired.Season),S]$INFO[Container(9143).ListItem.Property(Next_Aired.Episode),E]$INFO[Container(9143).ListItem.Property(Next_Aired.Name)]$INFO[Container(9143).ListItem.Property(Next_Aired), (,)]</label>
 							<visible>!String.IsEmpty(Container(9143).ListItem.Property(Next_Aired)) + !Skin.HasSetting(Disable.NextAired)</visible>
@@ -281,7 +281,7 @@
 							<width>800</width>
 							<height>45</height>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>[COLOR $VAR[Home]]$LOCALIZE[31011]: [/COLOR]$INFO[Container(9143).ListItem.Property(Last_Aired.Season),S]$INFO[Container(9143).ListItem.Property(Last_Aired.Episode),E,  -]$INFO[Container(9143).ListItem.Property(Last_Aired.Name)]$INFO[Container(9143).ListItem.Property(Last_Aired), (,)]</label>
 							<visible>!String.IsEmpty(Container(9143).ListItem.Property(Last_Aired)) + String.IsEmpty(Container(9143).ListItem.Property(Next_Aired))</visible>
@@ -290,7 +290,7 @@
 							<height>45</height>
 							<width>650</width>
 							<textcolor>grey</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
 							<label>$INFO[ListItem.Premiered,, • ]$INFO[ListItem.RatingAndVotes,, • ]$VAR[ItemDurationVar]</label>
 						</control>
@@ -302,7 +302,7 @@
 						<height>325</height>
 						<font>textbox</font>
 						<textcolor>grey</textcolor>
-						<shadowcolor>shadow</shadowcolor>
+						<shadowcolor>ff8a795d</shadowcolor>
 						<label>$INFO[ListItem.Tagline,,[CR]]$VAR[VideoPlotVar]</label>
 						<autoscroll delay="3000" time="3000" repeat="4000">true</autoscroll>
 					</control>
@@ -417,7 +417,7 @@
 						<height>40</height>
 						<texture>$VAR[OverlayVar]</texture>
 						<aspectratio align="center" aligny="top">keep</aspectratio>
-						<visible>[!String.IsEmpty(Skin.String(509.Movies.DisableOverlay)) + Container.Content(movies)] | [!String.IsEmpty(Skin.String(509.Sets.DisableOverlay)) + Container.Content(sets)] | [!String.IsEmpty(Skin.String(509.TV.DisableOverlay)) + Container.Content(tvshows)]</visible>
+						<visible>[!Skin.HasSetting(Disable.overlays) + Container.Content(movies)] | [!Skin.HasSetting(Disable.overlays) + Container.Content(sets)] | [!String.IsEmpty(Skin.String(509.TV.DisableOverlay)) + Container.Content(tvshows)]</visible>
 					</control>
 					<control type="image">
 						<left>-10</left>
@@ -438,7 +438,7 @@
 						<height>40</height>
 						<texture>$VAR[OverlayVar]</texture>
 						<aspectratio align="center" aligny="top">keep</aspectratio>
-						<visible>[!String.IsEmpty(Skin.String(509.Movies.DisableOverlay)) + Container.Content(movies)] | [!String.IsEmpty(Skin.String(509.Sets.DisableOverlay)) + Container.Content(sets)] | [!String.IsEmpty(Skin.String(509.TV.DisableOverlay)) + Container.Content(tvshows)]</visible>
+						<visible>[!Skin.HasSetting(Disable.overlays) + Container.Content(movies)] | [!Skin.HasSetting(Disable.overlays) + Container.Content(sets)] | [!Skin.HasSetting(Disable.overlays) + Container.Content(tvshows)]</visible>
 					</control>
 				</focusedlayout>
 				<itemlayout height="270" width="480" condition="Container.Content(episodes)">
@@ -450,7 +450,7 @@
 						<height>40</height>
 						<texture>$VAR[OverlayVar]</texture>
 						<aspectratio align="center" aligny="top">keep</aspectratio>
-						<visible>!String.IsEmpty(Skin.String(509.Episodes.DisableOverlay)) + Container.Content(episodes)</visible>
+						<visible>!Skin.HasSetting(Disable.overlays) + Container.Content(episodes)</visible>
 					</control>
 					<control type="image">
 						<top>197</top>
@@ -470,7 +470,7 @@
 						<height>40</height>
 						<texture>$VAR[OverlayVar]</texture>
 						<aspectratio align="center" aligny="top">keep</aspectratio>
-						<visible>!String.IsEmpty(Skin.String(509.Episodes.DisableOverlay)) + Container.Content(episodes)</visible>
+						<visible>!Skin.HasSetting(Disable.overlays) + Container.Content(episodes)</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -531,7 +531,7 @@
 			<height>40</height>
 			<texture>$VAR[OverlayVar]</texture>
 			<aspectratio align="center" aligny="top">keep</aspectratio>
-			<visible>[!String.IsEmpty(Skin.String(509.Movies.DisableOverlay)) + Container.Content(movies)] | [!String.IsEmpty(Skin.String(509.Sets.DisableOverlay)) + Container.Content(sets)] | !String.IsEmpty(Skin.String(509.TV.DisableOverlay)) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
+			<visible>[!Skin.HasSetting(Disable.overlays) + Container.Content(movies)] | [!String.IsEmpty(Skin.String(509.Sets.DisableOverlay)) + Container.Content(sets)] | !String.IsEmpty(Skin.String(509.TV.DisableOverlay)) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 		</control>
 	</include>
 	<include name="FlixLandscape">

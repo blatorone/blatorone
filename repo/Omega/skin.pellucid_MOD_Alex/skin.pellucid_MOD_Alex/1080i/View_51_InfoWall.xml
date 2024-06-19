@@ -28,8 +28,8 @@
 				<height>950</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
-                <ondown>54</ondown>
-                <onup>54</onup>
+                <ondown>51</ondown>
+                <onup>51</onup>
 				<onback>Container.Refresh</onback>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="cubic" easing="out">600</scrolltime>
@@ -262,28 +262,42 @@
                         <bordersize>5</bordersize>
                 	</control>
 					-->
-					<control type="grouplist">
-			
-							<posy>40</posy>
+					<control type="group">
+						<control type="label">
+								<left>4</left>
+								<top>4</top>
+								<width>900</width>
+								<height>2-row</height>			
+								<font>menuTitle3</font>
+								<textcolor>grey</textcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
+								<wrapmultiline>true</wrapmultiline>
+								<label>$INFO[ListItem.title]</label>
+						</control>
 						<control type="label">
 								<width>900</width>
 								<height>2-row</height>			
 								<font>menuTitle3</font>
 								<textcolor>$VAR[highlight]</textcolor>
-								<shadowcolor>shadow</shadowcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
 								<wrapmultiline>true</wrapmultiline>
 								<label>$INFO[ListItem.title]</label>
 						</control>
+					</control>
+					<control type="grouplist">
+			
+							<posy>65</posy>
+						
 						<control type="label">			
 								<font>menuTitle</font>
 								<textcolor>textDisabled</textcolor>
-								<shadowcolor>shadow</shadowcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
 								<label>$INFO[ListItem.genre]</label>
 						</control>
 						<control type="label">			
 								<font>menuTitle</font>
 								<textcolor>textDisabled</textcolor>
-								<shadowcolor>shadow</shadowcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
 								<label>$INFO[ListItem.year] • $VAR[Durationtiminmin]</label>
 								<visible>integer.IsGreater(ListItem.duration,120)</visible>
 						</control>
@@ -293,7 +307,7 @@
 							<height>750</height>
 							<font>textbox</font>
 							<textcolor>textActive</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<label>$INFO[ListItem.Tagline][CR][CR]$VAR[VideoPlotVar]</label>
 							<autoscroll delay="3000" time="3000" repeat="4000">true</autoscroll>
 						</control>

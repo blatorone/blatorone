@@ -118,7 +118,7 @@
                                 <width>1-col</width>
                                 <height>2-row</height>
                                 <aspectratio>stretch</aspectratio>
-                                <colordiffuse>$VAR[Home]</colordiffuse>
+                                <colordiffuse></colordiffuse>
                                 <texture>$INFO[listitem.icon]</texture>
                             </control>
                             <include>spinFocusIcon</include>

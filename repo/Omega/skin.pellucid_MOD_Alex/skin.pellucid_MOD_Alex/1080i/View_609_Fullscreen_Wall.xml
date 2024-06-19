@@ -17,8 +17,8 @@
 				<height>fullscreenHeight</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
-                <ondown>54</ondown>
-                <onup>54</onup>
+                <ondown>609</ondown>
+                <onup>609</onup>
 				<onback>Container.Refresh</onback>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="cubic" easing="out">600</scrolltime>

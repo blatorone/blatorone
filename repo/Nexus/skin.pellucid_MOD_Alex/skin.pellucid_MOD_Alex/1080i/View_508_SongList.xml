@@ -58,7 +58,7 @@
 							<height>70</height>
 							<font>menuTitle2</font>
 							<textcolor>white</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title]</label>
 						</control>
 					</itemlayout>
@@ -85,7 +85,7 @@
 							<font>menuTitle2</font>
 							<textcolor>$VAR[Home]</textcolor>
 							<label>[B]$INFO[ListItem.TrackNumber].  $INFO[ListItem.Title] $INFO[ListItem.label][/B]</label>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(508)">Conditional</animation>
 						</control>
 						<control type="label">
@@ -95,7 +95,7 @@
 							<height>70</height>
 							<font>menuTitle2</font>
 							<textcolor>$VAR[Home]</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<label>$INFO[ListItem.Artist]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(508)">Conditional</animation>
 						</control>
@@ -106,7 +106,7 @@
 							<height>70</height>
 							<font>menuTitle2</font>
 							<textcolor>$VAR[Home]</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<label>$INFO[ListItem.Album] $INFO[ListItem.Year,[,]]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(508)">Conditional</animation>
 						</control>
@@ -117,7 +117,7 @@
 							<height>110</height>
 							<font>menuTitle2</font>
 							<textcolor>$VAR[Home]</textcolor>
-							<shadowcolor>shadow</shadowcolor>
+							<shadowcolor>ff8a795d</shadowcolor>
 							<label fallback="• • • •">$VAR[MusicListLabel4Var]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(508)">Conditional</animation>
 						</control>

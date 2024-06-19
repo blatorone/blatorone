@@ -12,6 +12,7 @@
 			<include>contents53list</include>
 		</control>
 	</include>
+	
 	<include name="contents53list">
 		<left>-69</left>
 		<top>540</top>
@@ -102,7 +103,9 @@
 				</control>
 			</control>
 		</focusedlayout>
+		
 	</include>
+	
 	<include name="View_53_ShowCase">
 		
 		<control type="group">
@@ -546,6 +549,7 @@
 			</control>
 		</control>
 	</include>
+	
 	<include name="MovieShowcaseThumb">
 		<left>-4</left>
 		<top>-10</top>
@@ -587,7 +591,7 @@
 		<width>80</width>
 		<height>80</height>
 		<bordersize>20</bordersize>
-		<visible>[!String.IsEmpty(Skin.String(53.Movies.DisableOverlay)) + Container.Content(movies)] | [!String.IsEmpty(Skin.String(53.TV.DisableOverlay)) + Container.Content(tvshows)] | [!String.IsEmpty(Skin.String(53.Sets.DisableOverlay)) + Container.Content(sets)] | [!String.IsEmpty(Skin.String(53.Seasons.DisableOverlay)) + Container.Content(seasons)] | [!String.IsEmpty(Skin.String(53.MusicVideos.DisableOverlay)) + Container.Content(musicvideos)]</visible>
+		<visible>[!Skin.HasSetting(Disable.overlays) + Container.Content(movies)] | [!String.IsEmpty(Skin.String(53.TV.DisableOverlay)) + Container.Content(tvshows)] | [!String.IsEmpty(Skin.String(53.Sets.DisableOverlay)) + Container.Content(sets)] | [!String.IsEmpty(Skin.String(53.Seasons.DisableOverlay)) + Container.Content(seasons)] | [!String.IsEmpty(Skin.String(53.MusicVideos.DisableOverlay)) + Container.Content(musicvideos)]</visible>
 	</include>
 	<include name="ShowCaseItemContent">
 		<param name="ListItem.Position" />
@@ -628,6 +632,7 @@
 			</control>
 		</definition>
 	</include>
+	
 	<include name="MovieShowCaseItem-7">
 		<include content="ShowCaseItemContent">
 			<param name="ListItem.Position">-7</param>
@@ -758,10 +763,15 @@
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
 					</control>
 				</control>
+				
 			</control>
+			
 		</control>
+		
 		<include>BoxsetMod</include>
+		
 	</include>
+	
 	<include name="MovieShowCaseItem1">
 		<include content="ShowCaseItemContent">
 			<param name="ListItem.Position">1</param>
@@ -1108,57 +1118,57 @@
 	</variable>
 	<variable name="IconOverlay-1Var">
 		<value condition="ListItem(-1).IsResumable + !Skin.HasSetting(Disable.overlays)">overlays/resumable.png</value>
-		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
+		<!--<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>-->
 		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(-1).Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 	<variable name="IconOverlay0Var">
 		<value condition="ListItem.IsResumable + !Skin.HasSetting(Disable.overlays)">overlays/resumable.png</value>
-		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem.Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
+		<!--<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>-->
 		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 	<variable name="IconOverlay1Var">
 		<value condition="ListItem(1).IsResumable + !Skin.HasSetting(Disable.overlays)">overlays/resumable.png</value>
-		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(1).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
+		<!--<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>-->
 		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(1).Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 	<variable name="IconOverlay2Var">
 		<value condition="ListItem(2).IsResumable + !Skin.HasSetting(Disable.overlays)">overlays/resumable.png</value>
-		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(2).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
+		<!--<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>-->
 		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(2).Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 	<variable name="IconOverlay3Var">
 		<value condition="ListItem(3).IsResumable + !Skin.HasSetting(Disable.overlays)">overlays/resumable.png</value>
-		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(3).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
+		<!--<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>-->
 		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(3).Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 	<variable name="IconOverlay4Var">
 		<value condition="ListItem(4).IsResumable + !Skin.HasSetting(Disable.overlays)">overlays/resumable.png</value>
-		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(4).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
+		<!--<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>-->
 		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(4).Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 	<variable name="IconOverlay5Var">
 		<value condition="ListItem(5).IsResumable + !Skin.HasSetting(Disable.overlays)">overlays/resumable.png</value>
-		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(5).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
+		<!--<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>-->
 		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(5).Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 	<variable name="IconOverlay6Var">
 		<value condition="ListItem(6).IsResumable + !Skin.HasSetting(Disable.overlays)">overlays/resumable.png</value>
-		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(6).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
+		<!--<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>-->
 		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(6).Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 	<variable name="IconOverlay7Var">
 		<value condition="ListItem(7).IsResumable + !Skin.HasSetting(Disable.overlays)">overlays/resumable.png</value>
-		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(7).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
+		<!--<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>-->
 		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(7).Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 	<variable name="IconOverlay8Var">
 		<value condition="ListItem(8).IsResumable + !Skin.HasSetting(Disable.overlays)">overlays/resumable.png</value>
-		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(8).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
+		<!--<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>-->
 		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(8).Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 	<variable name="IconOverlay9Var">
 		<value condition="ListItem(9).IsResumable + !Skin.HasSetting(Disable.overlays)">overlays/resumable.png</value>
-		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(9).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>
+		<!--<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png)">overlays/OverlayUnwatched.png</value>-->
 		<value condition="!Skin.HasSetting(Disable.overlays) + String.IsEqual(ListItem(9).Overlay,OverlayWatched.png)">overlays/OverlayWatched.png</value>
 	</variable>
 	<include name="UnwatchedIconCircle">
@@ -1166,7 +1176,7 @@
 			<width>36</width>
 			<height>36</height>
 			<aspectratio>keep</aspectratio>
-			<texture>circle.png</texture>
+			<texture>masks/circle.png</texture>
 		</control>
 	</include>
 	<include name="UnwatchedIconVars">
@@ -1181,7 +1191,7 @@
 	</include>
 	<include name="UnwatchedIcon">
 		<control type="group">
-			<visible>[Container.Content(tvshows) | Container.Content(seasons)] + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
+			<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(videos) | Container.Content(movies)] + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
 			<include>UnwatchedIconCircle</include>
 			<control type="label">
 				<include>UnwatchedIconVars</include>

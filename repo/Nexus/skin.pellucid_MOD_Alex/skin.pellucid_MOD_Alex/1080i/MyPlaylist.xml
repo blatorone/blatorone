@@ -3,7 +3,7 @@
     <defaultcontrol always="true">9500</defaultcontrol>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <include>fadeInOut</include>
-	<views>50,51,52,53,54,55,56,57,59,500,501,502,503,504,505,506,507,508,509,591,602,603</views>
+	<views>503,50,51,52,53,54,502,504,505,508,509,591,602,603,609</views>
     <controls>
         <include>globalBackground</include>
         <!--fanart-->
@@ -59,41 +59,27 @@
                 <!--source content-->
                 
                     <control type="group" id="9500">
+                     <include>View_50_List</include>
                     <include>View_50_List</include>
-                    
                     <include>View_51_InfoWall</include>
                     <include>View_52_Landscape</include>
-                    
-                    
                     <include>View_53_ShowCase</include>
                     <include>View_54_ShowCase</include>
-                    
-                    <include>View_55_TriPanel</include>
-                    <include>View_56_Posters</include>
-                    <include>View_57_Shift</include>
                     <include>View_58_BannerWall</include>
-                    <include>View_59_Logo</include>
-                    <include>View_500_Icons</include>
-                    <include>View_501_LowList</include>
                     <include>View_502_Episode</include>
-                    
                     <include>View_503_Wall</include>
                     <include>View_505_Panel</include>
                     <include>View_504_Gallery</include>
-                    
-                    
                     <include>View_505_Panel</include>
-                    <include>View_506_RightList</include>
-                    <include>View_507_BigList</include>
                     <include>View_508_SongList</include>
                     <include>View_509_MyFlix</include>
                     <include>View_591_BigFan</include>
                     <include>View_602_FanartList</include>
                     <include>View_603_Music_JukeBox</include>
-                    
                     <include>View_609_Fullscreen_Wall</include>
                     
                     </control>
+                    <include>videolabel</include>
                     <control type="button" id="3000">
                 <posx>0</posx>
                 <posy>500</posy>

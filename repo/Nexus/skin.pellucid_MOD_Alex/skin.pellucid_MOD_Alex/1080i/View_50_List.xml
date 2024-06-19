@@ -12,8 +12,8 @@
             <posy>row-5-begin</posy>
             <onleft>9000</onleft>
             <onright>61</onright>
-            <ondown>55</ondown>
-            <onup>55</onup>
+            <ondown>50</ondown>
+            <onup>50</onup>
             <pagecontrol>61</pagecontrol>
             <itemlayout width="24-col" height="2-row" condition='!Skin.HasSetting(touch)'>
                 <control type="image">

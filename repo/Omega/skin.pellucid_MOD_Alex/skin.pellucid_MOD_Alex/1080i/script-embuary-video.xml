@@ -617,7 +617,7 @@
 								<height>43</height>
 								<align>center</align>
 								<font>menuTitle</font>
-								<shadowcolor>shadow</shadowcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
 								<textcolor>white</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
@@ -628,7 +628,7 @@
 								<height>43</height>
 								<align>center</align>
 								<font>menuTitle</font>
-								<shadowcolor>shadow</shadowcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
 								<textcolor>white</textcolor>
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
@@ -659,7 +659,7 @@
 									<height>43</height>
 									<align>center</align>
 									<font>menuTitle</font>
-									<shadowcolor>shadow</shadowcolor>
+									<shadowcolor>ff8a795d</shadowcolor>
 									<textcolor>$VAR[highlight]</textcolor>
 									<label>$INFO[ListItem.Label]</label>
 								</control>
@@ -670,7 +670,7 @@
 									<height>43</height>
 									<align>center</align>
 									<font>menuTitle</font>
-									<shadowcolor>shadow</shadowcolor>
+									<shadowcolor>ff8a795d</shadowcolor>
 									<textcolor>$VAR[highlight]</textcolor>
 									<label>$INFO[ListItem.Label2]</label>
 								</control>
@@ -710,7 +710,7 @@
 								<height>43</height>
 								<align>center</align>
 								<font>menuTitle</font>
-								<shadowcolor>shadow</shadowcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
 								<textcolor>white</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
@@ -721,7 +721,7 @@
 								<height>43</height>
 								<align>center</align>
 								<font>menuTitle</font>
-								<shadowcolor>shadow</shadowcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
 								<textcolor>white</textcolor>
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
@@ -752,7 +752,7 @@
 									<height>43</height>
 									<align>center</align>
 									<font>menuTitle</font>
-									<shadowcolor>shadow</shadowcolor>
+									<shadowcolor>ff8a795d</shadowcolor>
 									<textcolor>$VAR[highlight]</textcolor>
 									<label>$INFO[ListItem.Label]</label>
 								</control>
@@ -763,7 +763,7 @@
 									<height>43</height>
 									<align>center</align>
 									<font>menuTitle</font>
-									<shadowcolor>shadow</shadowcolor>
+									<shadowcolor>ff8a795d</shadowcolor>
 									<textcolor>$VAR[highlight]</textcolor>
 									<label>$INFO[ListItem.Label2]</label>
 								</control>
@@ -797,7 +797,7 @@
 								<height>43</height>
 								<align>center</align>
 								<font>menuTitle</font>
-								<shadowcolor>shadow</shadowcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
 								<textcolor>white</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
@@ -816,7 +816,7 @@
 								<width>274</width>
 								<height>43</height>
 								<font>menuTitle</font>
-								<shadowcolor>shadow</shadowcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
 								<textcolor>white</textcolor>
 								<label>$INFO[ListItem.Year]</label>
 							</control>
@@ -857,7 +857,7 @@
 									<width>274</width>
 									<height>43</height>
 									<font>menuTitle</font>
-									<shadowcolor>shadow</shadowcolor>
+									<shadowcolor>ff8a795d</shadowcolor>
 									<textcolor>$VAR[highlight]</textcolor>
 									<label>$INFO[ListItem.Year]</label>
 								</control>
@@ -868,7 +868,7 @@
 									<height>43</height>
 									<align>center</align>
 									<font>menuTitle</font>
-									<shadowcolor>shadow</shadowcolor>
+									<shadowcolor>ff8a795d</shadowcolor>
 									<textcolor>$VAR[highlight]</textcolor>
 									<label>$INFO[ListItem.Label]</label>
 								</control>
@@ -910,7 +910,7 @@
 								<height>43</height>
 								<align>center</align>
 								<font>menuTitle</font>
-								<shadowcolor>shadow</shadowcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
 								<textcolor>white</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
@@ -921,7 +921,7 @@
 								<height>43</height>
 								<align>center</align>
 								<font>menuTitle</font>
-								<shadowcolor>shadow</shadowcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
 								<textcolor>white</textcolor>
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
@@ -946,7 +946,7 @@
 									<height>43</height>
 									<align>center</align>
 									<font>menuTitle</font>
-									<shadowcolor>shadow</shadowcolor>
+									<shadowcolor>ff8a795d</shadowcolor>
 									<textcolor>$VAR[highlight]</textcolor>
 									<label>$INFO[ListItem.Label]</label>
 								</control>
@@ -957,7 +957,7 @@
 									<height>43</height>
 									<align>center</align>
 									<font>menuTitle</font>
-									<shadowcolor>shadow</shadowcolor>
+									<shadowcolor>ff8a795d</shadowcolor>
 									<textcolor>white</textcolor>
 									<label>$INFO[ListItem.Label2]</label>
 								</control>
@@ -991,7 +991,7 @@
 								<height>43</height>
 								<align>center</align>
 								<font>menuTitle</font>
-								<shadowcolor>shadow</shadowcolor>
+								<shadowcolor>ff8a795d</shadowcolor>
 								<textcolor>white</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
@@ -1016,7 +1016,7 @@
 									<height>43</height>
 									<align>center</align>
 									<font>menuTitle</font>
-									<shadowcolor>shadow</shadowcolor>
+									<shadowcolor>ff8a795d</shadowcolor>
 									<textcolor>$VAR[highlight]</textcolor>
 									<label>$INFO[ListItem.Label]</label>
 								</control>

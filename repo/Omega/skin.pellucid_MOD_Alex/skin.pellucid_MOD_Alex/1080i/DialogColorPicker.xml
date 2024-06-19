@@ -240,7 +240,7 @@
 			<height>60</height>
 			<font>regular</font>
 			<label>[UPPERCASE]$INFO[ListItem.Label][CR]$INFO[ListItem.Label2,#][/UPPERCASE]</label>
-			<shadowcolor>shadow</shadowcolor>
+			<shadowcolor>ff8a795d</shadowcolor>
 			<animation effect="slide" end="0,-60" condition="String.IsEmpty(Window(1140).Property(Reset.Color))">Conditional</animation>
 		</control>
 		<!--debugging-->

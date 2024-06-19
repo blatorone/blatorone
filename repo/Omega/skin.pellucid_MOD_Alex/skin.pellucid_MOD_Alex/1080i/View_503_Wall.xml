@@ -14,8 +14,8 @@
 				<height>fullscreenHeight</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
-                <ondown>54</ondown>
-                <onup>54</onup>
+                <ondown>503</ondown>
+                <onup>503</onup>
 				<onback>Container.Refresh</onback>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="cubic" easing="out">600</scrolltime>
@@ -94,7 +94,7 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
+							<visible>!Skin.HasSetting(Disable.overlays)</visible>
 							<posx>28</posx>
 							<posy>-4</posy>
 							<width>36</width>
@@ -120,7 +120,7 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+							<visible>!Skin.HasSetting(Disable.overlays)</visible>
 							<posx>28</posx>
 							<posy>-4</posy>
 							<width>36</width>
@@ -218,7 +218,6 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 							<posx>28</posx>
 							<posy>-4</posy>
 							<width>36</width>
@@ -244,7 +243,6 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
 							<posx>28</posx>
 							<posy>-4</posy>
 							<width>36</width>
@@ -330,7 +328,6 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 							<posx>28</posx>
 							<posy>-4</posy>
 							<width>36</width>
@@ -356,7 +353,6 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">
-							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
 							<posx>28</posx>
 							<posy>-4</posy>
 							<width>36</width>

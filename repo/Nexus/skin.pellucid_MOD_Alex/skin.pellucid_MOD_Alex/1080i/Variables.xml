@@ -432,13 +432,7 @@
 		<value condition="Container.Content(episodes) + String.IsEqual(ListItem.Overlay,OverlayUnwatched.png) + String.IsEqual(ListItem.Icon,OverlaySpoiler.png) + !String.IsEmpty(Container.Art(tvshow.fanart))">$INFO[Container.Art(tvshow.fanart)]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
-	<variable name="VideoPlotVar">
-		<value condition="ListItem.IsCollection + System.AddonIsEnabled(script.skin.info.service) + System.AddonIsEnabled(script.skin.info.service) + !Skin.HasSetting(ViewSetPlotToggle) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Plot))">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Plot)]</value>
-		<value condition="Container.Content(seasons)">$INFO[Container.ShowPlot]</value>
-		<value condition="!String.IsEmpty(ListItem.PlotOutline) + Skin.HasSetting(ViewInfoPlotToggle)">$INFO[ListItem.PlotOutline]</value>
-		<value condition="System.GetBool(videolibrary.showunwatchedplots)">$INFO[ListItem.Plot]</value>
-		<value>$INFO[ListItem.Plot]</value>
-	</variable>
+	
 	<variable name="OtherPlotVar">
 		<value condition="Container.Content(albums) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
 		<value condition="Container.Content(albums)">$LOCALIZE[414]</value>
@@ -1838,7 +1832,7 @@
 		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + Container.Content(movies) + !String.IsEmpty(Skin.String(609.Movies.DisableOverlay))">$INFO[Skin.String(609.Movies.DisableOverlay)]</value>
 		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + Container.Content(tvshows) + !String.IsEmpty(Skin.String(609.TV.DisableOverlay))">$INFO[Skin.String(609.TV.DisableOverlay)]</value>
 		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + Container.Content(sets) + !String.IsEmpty(Skin.String(609.Sets.DisableOverlay))">$INFO[Skin.String(609.Sets.DisableOverlay)]</value>
-		<!-- MyFlix -->
+		<!-- MyFlix --> 
 		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + Container.Content(movies) + !String.IsEmpty(Skin.String(509.Movies.DisableOverlay))">$INFO[Skin.String(509.Movies.DisableOverlay)]</value>
 		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + Container.Content(sets) + !String.IsEmpty(Skin.String(509.Sets.DisableOverlay))">$INFO[Skin.String(509.Sets.DisableOverlay)]</value>
 		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + [Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(Skin.String(509.TV.DisableOverlay))">$INFO[Skin.String(509.TV.DisableOverlay)]</value>

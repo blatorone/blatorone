@@ -262,11 +262,12 @@
 	<include name="pageHeader">
         
 		<control type="group">
-        <visible>[Control.IsVisible(50) | Control.IsVisible(502)] + !window.isactive(1130)</visible>
+        <visible>[Control.IsVisible(50) | Control.IsVisible(502) | !Control.IsVisible(502)] + !window.isactive(1130)</visible>
 			<posx>col-1-begin</posx>
             <posy>row-2-begin</posy>
 			<!--title-->
 			<control type="label">
+                <visible>!Control.IsVisible(509)</visible>
 	            <posx>0</posx>
 	            <posy>0</posy>
 	            <width>18-col</width>
@@ -276,6 +277,7 @@
 	        </control>
 	        <!--subtitle-->
 	        <control type="label">
+                <visible>!Control.IsVisible(509)</visible>
 	            <posx>0</posx>
 	            <posy>26</posy>
 	            <width>12-col</width>
@@ -355,6 +357,91 @@
 	        </control>
 		</control>
 	</include>
+
+    <include name="videolabel">
+            <control type="group">
+					<visible>!Control.IsVisible(50) + !window.isactive(1130) + !controlgroup(9000).hasfocus + !Control.IsVisible(504) + !Control.IsVisible(502) + !Control.IsVisible(509)</visible>
+					<include>ViewAnimation</include>
+					
+					<!-- SETS -->
+					<control type="group">
+						<animation effect="fade" time="140" delay="100">Visible</animation>
+						<animation effect="fade" time="140" delay="600">WindowOpen</animation>
+						<left>450</left>
+						<top>960</top>
+						<control type="group">
+							
+							<animation effect="slide" end="0,-12">Conditional</animation>
+							<animation effect="slide" end="0,22">Conditional</animation>
+							<control type="image">
+                    			<posx>-450</posx>
+                    			<posy>-3</posy>
+                    			<width>fullscreenwidth</width>
+                    			<height>136</height>
+                    			<texture>colors/listselect_fo.png</texture>
+                    			<colordiffuse>$VAR[highlight]</colordiffuse>
+                    			<aspectratio>stretch</aspectratio>
+                			</control>
+							<control type="image">
+								<visible>!Control.IsVisible(51)</visible>
+                    			<posx>-450</posx>
+                    			<posy>-3</posy>
+                    			<width>fullscreenwidth</width>
+                    			<height>136</height>
+                    			<texture>colors/listselect_fo.png</texture>
+                    			<colordiffuse>$VAR[highlight]</colordiffuse>
+                    			<aspectratio>stretch</aspectratio>
+                			</control>
+							<control type="label">
+								<visible>!Control.IsVisible(51)</visible>
+								<width>1020</width>
+								<height>46</height>
+								<align>center</align>
+								<font>sectionTitle</font>
+								<scroll>true</scroll>
+								<textcolor>$VAR[Home]</textcolor>
+								<label>[B]$INFO[ListItem.label][/B]</label>
+							</control>
+							<control type="label">
+								<visible>!String.IsEmpty(ListItem.Duration)</visible>
+								<width>1020</width>
+								<height>46</height>
+								<posy>45</posy>
+								<align>center</align>
+								<font>menuTitle2</font>
+								<scroll>true</scroll>
+								<textcolor>$VAR[Home]</textcolor>
+								<label>$LOCALIZE[180]: $VAR[MinsToHourDurationVar]       $LOCALIZE[31160]: $INFO[ListItem.EndTimeResume]</label>
+							</control>
+							<control type="label">
+								<visible>!Control.IsVisible(51)</visible>
+								<width>1020</width>
+								<height>46</height>
+								<posy>80</posy>
+								<align>center</align>
+								<font>menuTitle2</font>
+								<scroll>true</scroll>
+								<textcolor>$VAR[Home]</textcolor>
+								<label>$INFO[ListItem.Genre]</label>
+							</control>
+							<control type="button">
+						<visible>Skin.hassetting(Touch) + !Skin.HasSetting(crosskey)</visible>
+                    			<posx>-450</posx>
+                    			<posy>-3</posy>
+                    			<width>fullscreenwidth</width>
+                    			<height>136</height>
+                    			<focusedcolor></focusedcolor>
+            					<texturefocus></texturefocus>
+            					<colordiffuse></colordiffuse>
+								<onclick>Back</onclick>
+                		</control>							
+							
+						</control>
+					</control>
+				</control>
+    </include>
+
+
     <!--busy indicator-->
     <include name="loadingIndicator">
         <control type="group">
@@ -1206,7 +1293,7 @@
 		<aligny>top</aligny>
 		<font>buttonTitle</font>
 		<textcolor>white</textcolor>
-		<shadowcolor>shadow</shadowcolor>
+		<shadowcolor>ff8a795d</shadowcolor>
 		<focusedcolor>white</focusedcolor>
 	</include>
 

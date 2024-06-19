@@ -5,13 +5,24 @@
 			<include>ViewAnimation</include>
 			<visible>Control.IsVisible(504)</visible>
 			<control type="label">
+				<left>402</left>
+				<top>819</top>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<width>1125</width>
+				<font>mediumTitle</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>ff8a795d</shadowcolor>
+				<visible>!Window.IsActive(pictures)</visible>
+
+			</control>
+			<control type="label">
 				<left>398</left>
 				<top>815</top>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<width>1125</width>
 				<font>mediumTitle</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>shadow</shadowcolor>
+				<textcolor>$VAR[highlight]</textcolor>
+				<shadowcolor>ff8a795d</shadowcolor>
 				<visible>!Window.IsActive(pictures)</visible>
 
 			</control>
@@ -23,7 +34,7 @@
 				<width>1125</width>
 				<font>thumbTitle</font>
 				<textcolor>white</textcolor>
-				<shadowcolor>shadow</shadowcolor>
+				<shadowcolor>ff8a795d</shadowcolor>
 				<visible>Window.IsActive(pictures)</visible>
 			</control>
 			
@@ -33,7 +44,7 @@
 				<width>1125</width>
 				<height>30</height>
 				<textcolor>white</textcolor>
-				<shadowcolor>shadow</shadowcolor>
+				<shadowcolor>ff8a795d</shadowcolor>
 				<label>$VAR[FloorSubLabelVar]</label>
 				<visible>!Container.Content(artists)</visible>
 				<visible>!ListItem.IsCollection</visible>
@@ -44,7 +55,7 @@
 				<width>1125</width>
 				<height>30</height>
 				<textcolor>white</textcolor>
-				<shadowcolor>shadow</shadowcolor>
+				<shadowcolor>ff8a795d</shadowcolor>
 				<label>$INFO[ListItem.Genre]</label>
 			</control>
 			<control type="label">
@@ -53,7 +64,7 @@
 				<width>1220</width>
 				<height>100</height>
 				<textcolor>white</textcolor>
-				<shadowcolor>shadow</shadowcolor>
+				<shadowcolor>ff8a795d</shadowcolor>
 				<label>$LOCALIZE[19031]: $INFO[Container(9143).ListItem.Property(Next_Aired),, • ]$INFO[Container(9143).ListItem.Property(Next_Aired.Season),S]$INFO[Container(9143).ListItem.Property(Next_Aired.Episode),E, - ]$INFO[Container(9143).ListItem.Property(Next_Aired.Name)]</label>
 				<visible>[!String.IsEmpty(Container(9143).ListItem.Property(Next_Aired)) + !Control.HasFocus(61)] + !Skin.HasSetting(Disable.NextAired)</visible>
 			</control>
@@ -63,7 +74,7 @@
 				<width>1220</width>
 				<height>100</height>
 				<textcolor>white</textcolor>
-				<shadowcolor>shadow</shadowcolor>
+				<shadowcolor>ff8a795d</shadowcolor>
 				<label>$INFO[Container(9143).ListItem.Property(Status)]</label>
 				<visible>[String.IsEmpty(Container(9143).ListItem.Property(Next_Aired)) + !String.IsEmpty(Container(9143).ListItem.Property(Status)) + !Control.HasFocus(61)] + !Skin.HasSetting(Disable.NextAired) + !Container.Content(movies)</visible>
 			</control>
@@ -73,7 +84,7 @@
 				<width>1125</width>
 				<height>30</height>
 				<textcolor>white</textcolor>
-				<shadowcolor>shadow</shadowcolor>
+				<shadowcolor>ff8a795d</shadowcolor>
 				<label>$INFO[ListItem.Property(Artist_Genre)]</label>
 				<visible>Container.Content(artists)</visible>
 			</control>
@@ -189,7 +200,7 @@
 				<font>textbox</font>
 				<autoscroll time="2500" delay="3500" repeat="5000">true</autoscroll>
 				<textcolor>white</textcolor>
-				<shadowcolor>shadow</shadowcolor>
+				<shadowcolor>ff8a795d</shadowcolor>
 				<pagecontrol>50461</pagecontrol>
 				<visible>ListItem.IsCollection</visible>
 			</control>
