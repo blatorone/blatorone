@@ -262,7 +262,7 @@
 	<include name="pageHeader">
         
 		<control type="group">
-        <visible>[Control.IsVisible(50) | Control.IsVisible(502) | !Control.IsVisible(502)] + !window.isactive(1130)</visible>
+        <visible>[Control.IsVisible(50) | Control.IsVisible(502) | Control.IsVisible(591) | Control.IsVisible(509) | Control.IsVisible(504)] + !window.isactive(1130)</visible>
 			<posx>col-1-begin</posx>
             <posy>row-2-begin</posy>
 			<!--title-->
@@ -312,7 +312,7 @@
     <include name="pageHeadervideonav">
         
 		<control type="group">
-        <visible>!Control.IsVisible(50) + !window.isactive(1130) + !Control.IsVisible(504) + !Control.IsVisible(502)</visible>
+        <visible>Control.IsVisible(503) | Control.IsVisible(609) | Control.IsVisible(51) | Control.IsVisible(52) | Control.IsVisible(505)</visible>
 			<posx>col-1-begin</posx>
             <posy>960</posy>
 			<!--title-->

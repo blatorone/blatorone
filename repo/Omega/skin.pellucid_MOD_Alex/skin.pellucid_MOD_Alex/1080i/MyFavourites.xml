@@ -55,9 +55,9 @@
                     <include>View_602_FanartList</include>
                     <include>View_603_Music_JukeBox</include>
                     <include>View_609_Fullscreen_Wall</include>
-                <include>videolabel</include>
+                    <include>videolabel</include>
                 
-                 
+                 </control>
 
                 <control type="button" id="3000">
                 <posx>0</posx>
