@@ -266,6 +266,11 @@ plugin://plugin.video.BauBauVavoo/?action=channels&group=Germany&name=SONY+CHANN
 plugin://plugin.video.BauBauVavoo/?action=channels&group=Germany&name=SPIEGEL+GESCHICHTE
 #EXTINF:-1 tvg-id="DE: Spiegel TV Wissen" group-title="Dokumentation" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1246.png",Spiegel TV Wissen
 plugin://plugin.video.BauBauVavoo/?action=channels&group=Germany&name=SPIEGEL+WISSEN
+
+#EXTINF:-1 tvg-id="DE: ESPORTS1" group-title="Sport" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1014.png",ESports 1
+plugin://plugin.video.BauBauVavoo/?action=channels&group=Germany&name=ESPORTS+1
+#EXTINF:-1 tvg-id="DE: ESPORTS1" group-title="Sport" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1014.png",Sport 1
+plugin://plugin.video.BauBauVavoo/?action=channels&group=Germany&name=ESPORTS+1+%5BLIVE+DURING+EVENTS+ONLY%5D
 #EXTINF:-1 tvg-id="DE: SPORT1" group-title="Sport" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1014.png",Sport 1
 plugin://plugin.video.BauBauVavoo/?action=channels&group=Germany&name=SPORT1
 #EXTINF:-1 tvg-id="DE: SPORTDIGITAL FUSSBALL" group-title="Sport" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1045.png",Sport digital
