@@ -329,7 +329,7 @@ plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBA
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+2
 #EXTINF:-1 tvg-id="DE: Magenta Fußball 3" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F90c5d7bed96a72b8a1b1a6a1ca8cad2a228820de.png&out=webp",Magenta Fußball 3
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+3
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 4" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F01b90821d515b6f4a4a6609828032688d14980fa.png&out=webp",Magenta Fußball 4
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 4" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F5ae13706ac56f102d8ee35cfd37b63cbbe1ca063.png&out=webp",Magenta Fußball 4
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+4
 #EXTINF:-1 tvg-id="DE: Magenta Fußball 5" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F5ae13706ac56f102d8ee35cfd37b63cbbe1ca063.png&out=webp",Magenta Fußball 5
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+5
