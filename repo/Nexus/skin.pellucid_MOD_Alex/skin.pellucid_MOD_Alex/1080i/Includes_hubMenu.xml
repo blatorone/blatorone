@@ -62,7 +62,7 @@
                 <font>menuTitle2</font>
                 <label>$INFO[Container.Viewmode,$LOCALIZE[31306] ]</label>
                 <onclick>activateWindow(1130)</onclick>
-                <visible>Container.Content(videos) + !window.isactive(1130) | container.Content(movies) + !window.isactive(1130) | container.Content(tvshows) + !window.isactive(1130) | container.content(seasons) + !window.isactive(1130) | Container.Content(episodes) + !window.isactive(1130) | window.isactive(10060)</visible>
+                <visible>Container.Content(videos) + !window.isactive(1130) | container.Content(movies) + !window.isactive(1130) | container.Content(tvshows) + !window.isactive(1130) | container.content(seasons) + !window.isactive(1130) | Container.Content(episodes) + !window.isactive(1130) | window.isactive(10060) | Container.Content() + !window.isactive(1130)</visible>
             </control>
              <control type="button" id="5">
                 <focusedcolor>$VAR[selected]</focusedcolor>
