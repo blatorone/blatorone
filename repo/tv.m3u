@@ -7,8 +7,12 @@ plugin://plugin.video.vavooto/?action=channels&group=Germany&name=3+SAT
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=ARD+ALPHA
 #EXTINF:-1 tvg-id="DE: AXN Black" group-title="Sky" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AXN_Black_logo_%282015%29.svg/240px-AXN_Black_logo_%282015%29.svg.png",AXN Black
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=AXN
+#EXTINF:-1 tvg-id="DE: AXN Black" group-title="Sky" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AXN_Black_logo_%282015%29.svg/240px-AXN_Black_logo_%282015%29.svg.png",AXN Black
+plugin://plugin.video.vavooto/?action=channels&group=Germany&name=AXN+BLACK
 #EXTINF:-1 tvg-id="DE: AXN White" group-title="Sky" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/AXN_White_logo_%282015%29.svg/1920px-AXN_White_logo_%282015%29.svg.png",AXN White
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=SONY+AXN
+#EXTINF:-1 tvg-id="DE: AXN White" group-title="Sky" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/AXN_White_logo_%282015%29.svg/1920px-AXN_White_logo_%282015%29.svg.png",AXN White
+plugin://plugin.video.vavooto/?action=channels&group=Germany&name=AXN+WHITE
 #EXTINF:-1 tvg-id="DE: ANIXE Serie" group-title="Sky" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1008.png",Anixe Serie
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=ANIXE+SERIE
 #EXTINF:-1 tvg-id="DE: ARTE" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1009.png",Arte
@@ -266,10 +270,16 @@ plugin://plugin.video.vavooto/?action=channels&group=Germany&name=SONY+CHANNEL
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=SPIEGEL+GESCHICHTE
 #EXTINF:-1 tvg-id="DE: Spiegel TV Wissen" group-title="Dokumentation" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1246.png",Spiegel TV Wissen
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=SPIEGEL+WISSEN
+
+#EXTINF:-1 tvg-id="DE: ESPORTS1" group-title="Sport" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1014.png",ESports 1
+plugin://plugin.video.vavooto/?action=channels&group=Germany&name=ESPORTS+1
+#EXTINF:-1 tvg-id="DE: SPORT1" group-title="Sport" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1014.png",Sport 1
+plugin://plugin.video.vavooto/?action=channels&group=Germany&name=ESPORTS+1+%5BLIVE+DURING+EVENTS+ONLY%5D
 #EXTINF:-1 tvg-id="DE: SPORT1" group-title="Sport" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1014.png",Sport 1
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=SPORT1
 #EXTINF:-1 tvg-id="DE: SPORTDIGITAL FUSSBALL" group-title="Sport" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1045.png",Sport digital
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=SPORTDIGITALL+FUSSBALL
+
 
 #EXTINF:-1 tvg-id="DE: DAZN 1" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F7c93cbccfa99c23171441af6ba8f35cd22d9cf28.png&out=webp",DAZN 1
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=DAZN+1
