@@ -23,8 +23,8 @@
         <value condition="Window.isactive(Music) + !String.IsEmpty(container.foldername)">$INFO[container.foldername]</value>
         <value condition="Window.isactive(Music) + String.IsEmpty(container.foldername)">$LOCALIZE[14237]</value>
     	<value condition="Window.isactive(Weather)">$LOCALIZE[8]</value>
-		<value condition="Window.isactive(TVchannels) | Window.isactive(TVGuide)">$LOCALIZE[19020] [COLOR $VAR[highlight]]$LOCALIZE[31307][/COLOR]</value>
-		<value condition="Window.isactive(RadioChannels)">$LOCALIZE[19021] [COLOR $VAR[highlight]]$LOCALIZE[31307][/COLOR]</value>
+		<value condition="Window.isactive(TVchannels) | Window.isactive(TVGuide)">$LOCALIZE[19020] [COLOR $VAR[highlight]]$LOCALIZE[31078][/COLOR]</value>
+		<value condition="Window.isactive(RadioChannels)">$LOCALIZE[19021] [COLOR $VAR[highlight]]$LOCALIZE[31078][/COLOR]</value>
 		<value condition="Window.isactive(TVRecordings)">$LOCALIZE[19020] [COLOR $VAR[highlight]]$LOCALIZE[31165][/COLOR]</value>
 		<value condition="Window.isactive(MyPVRTimers.xml)">$LOCALIZE[31060] [COLOR $VAR[highlight]]$LOCALIZE[31087][/COLOR]</value>
 		<value condition="Window.isactive(programs)">$LOCALIZE[10506]</value>
