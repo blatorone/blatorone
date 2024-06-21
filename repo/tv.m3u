@@ -313,41 +313,41 @@ plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+SPORT+
 #EXTINF:-1 tvg-id="DE: Magenta Sport 18" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fe22b515f131270766c92da7eff2b3290933e6c04.png&out=webp",Magenta Sport 18
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+SPORT+18
 
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 1" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F98154b022b1cd559da555d70d6343b5d8cfb13ce.png&out=webp",Magenta Sport 1
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 1" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F98154b022b1cd559da555d70d6343b5d8cfb13ce.png&out=webp",Magenta Fußball 1
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+1
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 2" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F379fa8f587a3c004919330145893257962381e58.png&out=webp",Magenta Sport 2
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 2" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F379fa8f587a3c004919330145893257962381e58.png&out=webp",Magenta Fußball 2
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+2
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 3" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F18dcf61dc1f328e6383f3d01817a18aa22948d5c.png&out=webp",Magenta Sport 3
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 3" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F18dcf61dc1f328e6383f3d01817a18aa22948d5c.png&out=webp",Magenta Fußball 3
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+3
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 4" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F01b90821d515b6f4a4a6609828032688d14980fa.png&out=webp",Magenta Sport 4
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 4" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F01b90821d515b6f4a4a6609828032688d14980fa.png&out=webp",Magenta Fußball 4
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+4
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 5" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F3aebb06486ea85ba805e71c19685e834c4c7c473.png&out=webp",Magenta Sport 5
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 5" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F3aebb06486ea85ba805e71c19685e834c4c7c473.png&out=webp",Magenta Fußball 5
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+5
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 6" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fc8d20e1b13a5d61c2113dd254e74529e7616db94.png&out=webp",Magenta Sport 6
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 6" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fc8d20e1b13a5d61c2113dd254e74529e7616db94.png&out=webp",Magenta Fußball 6
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+6
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 7" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F0da93c45d664432b070d2babc8f735eae2c9a333.png&out=webp",Magenta Sport 7
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 7" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F0da93c45d664432b070d2babc8f735eae2c9a333.png&out=webp",Magenta Fußball 7
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+7
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 8" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F0490136b6aec492e6052152eae65fc38f2bec25a.png&out=webp",Magenta Sport 8
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 8" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F0490136b6aec492e6052152eae65fc38f2bec25a.png&out=webp",Magenta Fußball 8
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+8
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 9" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F080c8f791925e531ea2fbcae7f72423c0f88245a.png&out=webp",Magenta Sport 9
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 9" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F080c8f791925e531ea2fbcae7f72423c0f88245a.png&out=webp",Magenta Fußball 9
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+9
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 10" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F2b05377ff812334314c79b11b52d35f41b7715d9.png&out=webp",Magenta Sport 10
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 10" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F2b05377ff812334314c79b11b52d35f41b7715d9.png&out=webp",Magenta Fußball 10
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+10
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 11" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fba33b056349080653c20bf96dbae50c57075c45b.png&out=webp",Magenta Sport 11
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 11" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fba33b056349080653c20bf96dbae50c57075c45b.png&out=webp",Magenta Fußball 11
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+11
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 12" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fe62482bc0be3a94a34d5f38541b744f9b5995f99.png&out=webp",Magenta Sport 12
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 12" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fe62482bc0be3a94a34d5f38541b744f9b5995f99.png&out=webp",Magenta Fußball 12
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+12
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 13" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F2dba72f05a107e48163784976bc9ea05414af69c.png&out=webp",Magenta Sport 13
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 13" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F2dba72f05a107e48163784976bc9ea05414af69c.png&out=webp",Magenta Fußball 13
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+13
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 14" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F960f16d6ffb3c1691cfa757fe51c91ac5a48ade6.png&out=webp",Magenta Sport 14
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 14" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F960f16d6ffb3c1691cfa757fe51c91ac5a48ade6.png&out=webp",Magenta Fußball 14
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+14
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 15" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F75a55a072b6c0258604e61b919f77bd4a4342db6.png&out=webp",Magenta Sport 15
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 15" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2F75a55a072b6c0258604e61b919f77bd4a4342db6.png&out=webp",Magenta Fußball 15
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+15
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 16" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fb7db62e4c6d7cf393b120eb59fbfc8e4214084ea.png&out=webp",Magenta Sport 16
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 16" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fb7db62e4c6d7cf393b120eb59fbfc8e4214084ea.png&out=webp",Magenta Fußball 16
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+16
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 17" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Ff0a4b1f6b7ff11498ef0031cb318ed517998234b.png&out=webp",Magenta Sport 17
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 17" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Ff0a4b1f6b7ff11498ef0031cb318ed517998234b.png&out=webp",Magenta Fußball 17
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+17
-#EXTINF:-1 tvg-id="DE: Magenta Fußball 18" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fe22b515f131270766c92da7eff2b3290933e6c04.png&out=webp",Magenta Sport 18
+#EXTINF:-1 tvg-id="DE: Magenta Fußball 18" group-title="Sport" tvg-logo="https://ngiss.t-online.de/iss?client=ngtv&ar=keep&x=150&y=60&src=http%3A%2F%2Fngiss.t-online.de%2Fcm1s%2Fmedia%2Fe22b515f131270766c92da7eff2b3290933e6c04.png&out=webp",Magenta Fußball 18
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=MAGENTA+FUSSBALL+18
 
 
