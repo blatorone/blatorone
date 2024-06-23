@@ -254,7 +254,7 @@
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(ListItem.playcount) + !Skin.HasSetting(Disable.overlays)</visible>
-                    <posx>14-col-gutter</posx>
+                    <posx>11-col-gutter</posx>
                     <posy>-60</posy>
                     <width>5-col</width>
                     <height>6-row</height>
@@ -267,7 +267,7 @@
                 </control>
                 <control type="label">
 			        <visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)  + !Skin.HasSetting(Disable.overlays)</visible>
-                    <posx>14-col-gutter</posx>
+                    <posx>11-col-gutter</posx>
                     <posy>-60</posy>
                     <width>5-col</width>
                     <height>6-row</height>
