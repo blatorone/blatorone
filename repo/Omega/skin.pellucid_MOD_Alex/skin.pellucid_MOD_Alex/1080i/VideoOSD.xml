@@ -283,7 +283,7 @@
                 <control type="grouplist">
                     <posx>0</posx>
                     <posy>9-row</posy>
-                    <itemgap>15</itemgap>
+                    <itemgap>30</itemgap>
                     <orientation>vertical</orientation>
                     <control type="label">
 						<visible>Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.Episode)</visible>

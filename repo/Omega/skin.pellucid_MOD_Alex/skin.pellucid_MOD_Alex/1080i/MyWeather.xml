@@ -130,7 +130,7 @@
             <!--remaining forecast begins-->
             <control type="group">
                 <control type="panel" id="9000">
-                    <posx>0</posx>
+                    <posx>50</posx>
                     <posy>15-row</posy>
                     <width>24-col</width>
                     <height>24-row</height>
@@ -239,7 +239,7 @@
                 
                 <control type="multiimage">
                                 <visible>$EXP[hasWeather]</visible>
-                                <posx>-50</posx>
+                                <posx>-20</posx>
                                 <posy>425</posy>
                                 <width>400</width>
                                 <height>400</height>
@@ -255,7 +255,7 @@
                 </control>
                 <control type="multiimage">
                                 <visible>$EXP[hasWeather]</visible>
-                                <posx>350</posx>
+                                <posx>410</posx>
                                 <posy>425</posy>
                                 <width>400</width>
                                 <height>400</height>
@@ -270,7 +270,7 @@
                 </control>
                 <control type="multiimage">
                                 <visible>$EXP[hasWeather]</visible>
-                                <posx>800</posx>
+                                <posx>845</posx>
                                 <posy>425</posy>
                                 <width>400</width>
                                 <height>400</height>
@@ -285,7 +285,7 @@
                 </control>
                 <control type="multiimage">
                                 <visible>$EXP[hasWeather]</visible>
-                                <posx>1225</posx>
+                                <posx>1270</posx>
                                 <posy>425</posy>
                                 <width>400</width>
                                 <height>400</height>

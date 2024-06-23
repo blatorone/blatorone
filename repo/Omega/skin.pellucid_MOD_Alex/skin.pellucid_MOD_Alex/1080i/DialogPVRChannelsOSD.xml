@@ -68,6 +68,15 @@
 				<font>itemSubTitle</font>
 				<label>$INFO[Container(11).NumItems,,  $LOCALIZE[19019]]</label>
 			</control>
+			<!--Channel logo-->
+			<control type="image">
+						<posx>350</posx>
+						<posy>20</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio scalediffuse="false">keep</aspectratio>
+						<texture fallback="colors/offblack.png" border="0">$INFO[Player.Art(thumb)]</texture>
+					</control>
 			<!--Channel list-->
 			<control type="fixedlist" id="11">
 				<focusposition>2</focusposition>
@@ -113,6 +122,16 @@
                         <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Title]</label>
                     </control>
+					<control type="progress"> 
+                        <description>Progress Bar</description>
+                        <posx>16</posx>
+                        <posy>90</posy>
+                        <width>66</width>
+                        <height>15</height>
+                        <texturebg colordiffuse="overlay">colors/white.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <info>ListItem.Progress</info>
+                    </control>
 				</itemlayout>
 				<focusedlayout height="3-row">
 					<control type="image">
@@ -155,6 +174,16 @@
 						<selectedcolor>$VAR[selected]</selectedcolor>
                         <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Title]</label>
+                    </control>
+					<control type="progress"> 
+                        <description>Progress Bar</description>
+                        <posx>16</posx>
+                        <posy>88</posy>
+                        <width>66</width>
+                        <height>15</height>
+                        <texturebg colordiffuse="$VAR[HOME]">colors/white.png</texturebg>
+                        <midtexture colordiffuse="$VAR[selected]">colors/white.png</midtexture>
+                        <info>ListItem.Progress</info>
                     </control>
 				</focusedlayout>
 			</control>
