@@ -293,7 +293,7 @@
 						<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
 					</control>
 					<control type="label">
-							<visible>!String.isEmpty(ListItem.RatingandVotes)</visible>
+							<visible>!String.isEmpty(ListItem.RatingandVotes) + control.isvisible(602)</visible>
 							<posx>1280</posx>
 							<posy>150</posy>
 							<width>225</width>
