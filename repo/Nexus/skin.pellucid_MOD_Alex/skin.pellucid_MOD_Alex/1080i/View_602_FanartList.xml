@@ -70,7 +70,7 @@
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(ListItem.playcount) + !Skin.HasSetting(Disable.overlays)</visible>
-                    <posx>1025</posx>
+                    <posx>1070</posx>
                     <posy>0</posy>
                     <width>1-col</width>
                     <height>2-row</height>
@@ -83,7 +83,7 @@
                 </control>
                 <control type="label">
 			        <visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)  + !Skin.HasSetting(Disable.overlays)</visible>
-                    <posx>1025</posx>
+                    <posx>1070</posx>
                     <posy>0</posy>
                     <width>1-col</width>
                     <height>2-row</height>
@@ -172,7 +172,7 @@
                 <control type="image">
                     <posx>1-col</posx>
                     <posy>0</posy>
-                    <width>1040</width>
+                    <width>15-col</width>
                     <height>2-row</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="0">colors/white.png</texture>
@@ -192,7 +192,7 @@
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(ListItem.playcount) + !Skin.HasSetting(Disable.overlays)</visible>
-                    <posx>1025</posx>
+                    <posx>1070</posx>
                     <posy>0</posy>
                     <width>1-col</width>
                     <height>2-row</height>
@@ -205,7 +205,7 @@
                 </control>
                 <control type="label">
 			        <visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0)  + !Skin.HasSetting(Disable.overlays)</visible>
-                    <posx>1025</posx>
+                    <posx>1070</posx>
                     <posy>0</posy>
                     <width>1-col</width>
                     <height>2-row</height>
