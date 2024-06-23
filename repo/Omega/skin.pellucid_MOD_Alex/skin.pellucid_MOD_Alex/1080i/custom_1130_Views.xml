@@ -89,14 +89,6 @@
 						
 					</focusedlayout>
 					<content>
-					<!--
-						<item>
-							<label>$LOCALIZE[31308]</label>
-							<onclick>Container.SetViewMode(603)</onclick>
-							<visible>Window.IsActive(music)</visible>
-							<visible>[Container.Content(artists) | Container.Content(albums)] + !Skin.HasSetting(Disable.JukeBox)</visible>
-						</item>
-						-->
 						<item>
 							<label>$LOCALIZE[535]</label>
 							<onclick>Container.SetViewMode(50)</onclick>
@@ -108,7 +100,7 @@
 							<visible>Window.IsActive(music)</visible>
 							<visible>Container.Content(songs) + !Skin.HasSetting(Disable.SongListView)</visible>
 						</item>
-						<!--
+						
 						
 						<item>
 							<label>$LOCALIZE[31311]</label>
@@ -116,7 +108,7 @@
 							<visible>Window.IsActive(videos)</visible>
 							<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(Disable.FanartListView)</visible>
 						</item>
-						-->
+						
 						<item>
 							<label>[CAPITALIZE]$LOCALIZE[36906][/CAPITALIZE]</label>
 							<onclick>Container.SetViewMode(502)</onclick>

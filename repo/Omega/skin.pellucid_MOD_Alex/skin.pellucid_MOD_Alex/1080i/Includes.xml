@@ -262,7 +262,7 @@
 	<include name="pageHeader">
         
 		<control type="group">
-        <visible>[Control.IsVisible(50) | Control.IsVisible(502) | Control.IsVisible(591) | Control.IsVisible(509) | Control.IsVisible(504)] + !window.isactive(1130)</visible>
+        <visible>[Control.IsVisible(50) | Control.IsVisible(502) | Control.IsVisible(591) | Control.IsVisible(509) | Control.IsVisible(504) | Control.IsVisible(602)] + !window.isactive(1130)</visible>
 			<posx>col-1-begin</posx>
             <posy>row-2-begin</posy>
 			<!--title-->
@@ -312,7 +312,7 @@
     <include name="pageHeadervideonav">
         
 		<control type="group">
-        <visible>Control.IsVisible(503) | Control.IsVisible(609) | Control.IsVisible(51) | Control.IsVisible(52) | Control.IsVisible(505)</visible>
+        <visible>[Control.IsVisible(503) | Control.IsVisible(609) | Control.IsVisible(51) | Control.IsVisible(52) | Control.IsVisible(505)] + !control.IsVisible(602) + !control.IsVisible(50) + !control.IsVisible(53) + !control.IsVisible(54) + !control.IsVisible(502) + !control.IsVisible(508) + !control.IsVisible(509)</visible>
 			<posx>col-1-begin</posx>
             <posy>960</posy>
 			<!--title-->
@@ -360,7 +360,7 @@
 
     <include name="videolabel">
             <control type="group">
-					<visible>!Control.IsVisible(50) + !window.isactive(1130) + !controlgroup(9000).hasfocus + !Control.IsVisible(504) + !Control.IsVisible(502) + !Control.IsVisible(509)</visible>
+					<visible>!Control.IsVisible(50) + !window.isactive(1130) + !controlgroup(9000).hasfocus + !Control.IsVisible(504) + !Control.IsVisible(502) + !Control.IsVisible(509) + !Control.IsVisible(602)</visible>
 					<include>ViewAnimation</include>
 					
 					<!-- SETS -->
@@ -1127,6 +1127,39 @@
     </include>
     <include name="scrollbarposx2pvrchannels">
         <posx>90%</posx>
+    </include>
+
+    <include name="scrollbarwidthfanartlist">
+        <include  condition="Skin.HasSetting(Touch)">scrollbarwidthfanartlist1</include>
+        <include  condition="!Skin.HasSetting(Touch)">scrollbarwidthfanartlist2</include>
+    </include>
+    <include name="scrollbarwidthfanartlist1">
+        <width>620</width>
+    </include>
+    <include name="scrollbarwidthfanartlist2">
+        <width>12</width>
+    </include>
+    <include name="scrollbarposxfanartlist">
+        <include  condition="Skin.HasSetting(Touch)">scrollbarposxfanartlist1</include>
+        <include  condition="!Skin.HasSetting(Touch)">scrollbarposxfanartlist2</include>
+    </include>
+    <include name="scrollbarposxfanartlist1">
+        <posx>1250</posx>
+    </include>
+    <include name="scrollbarposxfanartlist2">
+        <posx>1880</posx>
+    </include>
+    <include name="scrollbarcolorfanartlist">
+        <include  condition="Skin.HasSetting(Touch)">scrollbarcolorfanartlist1</include>
+        <include  condition="!Skin.HasSetting(Touch)">scrollbarcolorfanartlist2</include>
+    </include>
+    <include name="scrollbarcolorfanartlist1">
+        <texturesliderbackground colordiffuse="77black">colors/white.png</texturesliderbackground>
+        <texturesliderbarfocus colordiffuse="77overlay">colors/white.png</texturesliderbarfocus>
+    </include>
+    <include name="scrollbarcolorfanartlist2">
+        <texturesliderbackground colordiffuse="overlay">colors/black.png</texturesliderbackground>
+        <texturesliderbarfocus colordiffuse="$VAR[highlight]">colors/white.png</texturesliderbarfocus>
     </include>
 
     <!--homemenu slide or grid-->

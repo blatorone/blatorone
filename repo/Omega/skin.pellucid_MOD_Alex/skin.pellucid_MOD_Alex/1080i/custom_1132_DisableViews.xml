@@ -89,18 +89,8 @@
 					<onclick>Skin.ToggleSetting(Disable.SongListView)</onclick>
 					<selected>!Skin.HasSetting(Disable.SongListView)</selected>
 				</control>
-				<!--
-				<control type="radiobutton" id="1611">
-					<description>Disable RightList</description>
-					<width>383</width>
-					<textwidth>383</textwidth>
-					<radiowidth>110</radiowidth>
-					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31310]</label>
-					<onclick>SetProperty(DisableView,True,1132)</onclick>
-					<onclick>Skin.ToggleSetting(Disable.RightListView)</onclick>
-					<selected>!Skin.HasSetting(Disable.RightListView)</selected>
-				</control>
+				
+				
 				<control type="radiobutton" id="1612">
 					<description>Disable FanartList</description>
 					<width>383</width>
@@ -112,62 +102,12 @@
 					<onclick>Skin.ToggleSetting(Disable.FanartListView)</onclick>
 					<selected>!Skin.HasSetting(Disable.FanartListView)</selected>
 				</control>
-				<control type="radiobutton" id="1613">
-					<description>Disable LowList</description>
-					<width>383</width>
-					<textwidth>383</textwidth>
-					<radiowidth>110</radiowidth>
-					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31312]</label>
-					<onclick>SetProperty(DisableView,True,1132)</onclick>
-					<onclick>Skin.ToggleSetting(Disable.LowListView)</onclick>
-					<selected>!Skin.HasSetting(Disable.LowListView)</selected>
-				</control>
-				<control type="radiobutton" id="1614">
-					<description>Disable BigList</description>
-					<width>383</width>
-					<textwidth>383</textwidth>
-					<radiowidth>110</radiowidth>
-					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31313]</label>
-					<onclick>SetProperty(DisableView,True,1132)</onclick>
-					<onclick>Skin.ToggleSetting(Disable.BigListView)</onclick>
-					<selected>!Skin.HasSetting(Disable.BigListView)</selected>
-				</control>
-				<control type="radiobutton" id="1624">
-					<description>Disable Logo</description>
-					<width>383</width>
-					<textwidth>383</textwidth>
-					<radiowidth>110</radiowidth>
-					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31606]</label>
-					<onclick>SetProperty(DisableView,True,1132)</onclick>
-					<onclick>Skin.ToggleSetting(Disable.LogoView)</onclick>
-					<selected>!Skin.HasSetting(Disable.LogoView)</selected>
-				</control>
 				
-				<control type="radiobutton" id="1626">
-					<description>Disable Shift</description>
-					<width>383</width>
-					<textwidth>383</textwidth>
-					<radiowidth>110</radiowidth>
-					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31079]</label>
-					<onclick>SetProperty(DisableView,True,1132)</onclick>
-					<onclick>Skin.ToggleSetting(Disable.ShiftView)</onclick>
-					<selected>!Skin.HasSetting(Disable.ShiftView)</selected>
-				</control>
-				<control type="radiobutton" id="1625">
-					<description>Disable Posters</description>
-					<width>383</width>
-					<textwidth>383</textwidth>
-					<radiowidth>110</radiowidth>
-					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31243]</label>
-					<onclick>SetProperty(DisableView,True,1132)</onclick>
-					<onclick>Skin.ToggleSetting(Disable.PostersView)</onclick>
-					<selected>!Skin.HasSetting(Disable.PostersView)</selected>
-				</control>
+				
+				
+				
+				
+				
 				<control type="radiobutton" id="1635">
 					<description>Disable Myflix</description>
 					<width>383</width>
@@ -180,29 +120,9 @@
 					<selected>!Skin.HasSetting(Disable.MyFlixView)</selected>
 				</control>
 				
-				<control type="radiobutton" id="1616">
-					<description>Disable TriPanel</description>
-					<width>383</width>
-					<textwidth>383</textwidth>
-					<radiowidth>110</radiowidth>
-					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31307]</label>
-					<onclick>SetProperty(DisableView,True,1132)</onclick>
-					<onclick>Skin.ToggleSetting(Disable.TriPanelView)</onclick>
-					<selected>!Skin.HasSetting(Disable.TriPanelView)</selected>
-				</control>
-				<control type="radiobutton" id="1617">
-					<description>Disable Icons</description>
-					<width>383</width>
-					<textwidth>383</textwidth>
-					<radiowidth>110</radiowidth>
-					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[536]</label>
-					<onclick>SetProperty(DisableView,True,1132)</onclick>
-					<onclick>Skin.ToggleSetting(Disable.IconsView)</onclick>
-					<selected>!Skin.HasSetting(Disable.IconsView)</selected>
-				</control>
-				-->
+				
+				
+				
 				<control type="radiobutton" id="1636">
 					<description>Disable Episode</description>
 					<width>383</width>
@@ -263,7 +183,7 @@
 					<onclick>Skin.ToggleSetting(Disable.FullscreenWallView)</onclick>
 					<selected>!Skin.HasSetting(Disable.FullscreenWallView)</selected>
 				</control>
-				<!--
+				
 				<control type="radiobutton" id="1621">
 					<description>Disable InfoWall</description>
 					<width>383</width>
@@ -275,6 +195,7 @@
 					<onclick>Skin.ToggleSetting(Disable.InfoWallView)</onclick>
 					<selected>!Skin.HasSetting(Disable.InfoWallView)</selected>
 				</control>
+				<!--
 				<control type="radiobutton" id="1622">
 					<description>Disable BannerWall</description>
 					<width>383</width>

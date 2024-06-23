@@ -750,8 +750,8 @@ msgid "Homescreen Settings"
 msgstr "Startbildschirm Einstellungen"
 
 msgctxt "#31302"
-msgid "Posters"
-msgstr "Poster"
+msgid "BannerWall"
+msgstr "BannerWand"
 
 msgctxt "#31303"
 msgid "Panel"
@@ -769,42 +769,18 @@ msgctxt "#31306"
 msgid "View:"
 msgstr "Ansicht:"
 
-msgctxt "#31307"
-msgid "TriPanel"
-msgstr "Tri-Panel"
-
-msgctxt "#31308"
-msgid "JukeBox"
-msgstr ""
-
 msgctxt "#31309"
 msgid "SongList"
 msgstr "Liedliste"
 
 
-
-msgctxt "#31310"
-msgid "RightList"
-msgstr "Rechte Liste"
-
 msgctxt "#31311"
 msgid "FanartList"
 msgstr "Fanartliste"
 
-msgctxt "#31312"
-msgid "LowList"
-msgstr "ListeUnten"
-
-msgctxt "#31313"
-msgid "BigList"
-msgstr "GroßeListe"
-
-
-
 msgctxt "#31314"
 msgid "MyFlix"
 msgstr "MyFlix"
-
 
 msgctxt "#31315"
 msgid "Fullscreen Wall"
@@ -813,10 +789,6 @@ msgstr "Vollbildwand"
 msgctxt "#31316"
 msgid "InfoWall"
 msgstr "InfoWand"
-
-msgctxt "#31317"
-msgid "BannerPlex"
-msgstr "BannerPlex"
 
 msgctxt "#31318"
 msgid "BigFan"
@@ -938,43 +910,4 @@ msgctxt "#31346"
 msgid "Known for"
 msgstr "Bekannt für"
 
-msgctxt "#31250"
-msgid "BigInfo"
-msgstr "BigInfo"
 
-
-msgctxt "#31252"
-msgid "TopBar"
-msgstr "TopBar"
-
-msgctxt "#31253"
-msgid "Banners"
-msgstr "Banner"
-
-msgctxt "#31254"
-msgid "Smaller posters"
-msgstr "Kleinere Poster"
-
-msgctxt "#31255"
-msgid "Mediaflags"
-msgstr "Mediaflags"
-
-msgctxt "#31606"
-msgid "Logo"
-msgstr "Logo"
-
-msgctxt "#31079"
-msgid "Shift"
-msgstr "Shift"
-
-msgctxt "#31088"
-msgid "BannerWall"
-msgstr "BannerWand"
-
-
-
-
-
-msgctxt "#31078"
-msgid "Gallery"
-msgstr "Galerie"

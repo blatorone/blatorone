@@ -9,7 +9,7 @@
     <controls>
         
 			<control type="image">
-						<visible>!Control.IsVisible(50) + !Control.IsVisible(609)</visible>
+						<visible>!Control.IsVisible(50) + !Control.IsVisible(609) + !control.isvisible(602)</visible>
 			    		<include>ViewAnimation</include>
 	            		<include>dimensionsFullscreen</include>
 	            		<texture fallback="backgroundimage.jpg">$INFO[listitem.thumb]</texture>
@@ -18,7 +18,7 @@
 						<fadetime>250</fadetime>
 	        </control>
 			<control type="image">
-						<visible>Control.IsVisible(50) |  Control.IsVisible(609)</visible>
+						<visible>Control.IsVisible(50) |  Control.IsVisible(609) | control.isvisible(602)</visible>
 			    		<include>ViewAnimation</include>
 	            		<include>dimensionsFullscreen</include>
 	            		<texture>backgroundimage.jpg</texture>
@@ -138,7 +138,7 @@
 	                </control>
 				</control>
 				<control type="group">
-	                <visible>Control.IsVisible(61) + !Control.IsVisible(51)</visible>
+	                <visible>Control.IsVisible(61) + !Control.IsVisible(51) + !Control.IsVisible(602)</visible>
 	                <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
 	                <control type="scrollbar" id="61">
 	                    <posx>54r</posx>
@@ -151,7 +151,7 @@
 	                </control>
 	            </control>
 				<control type="group">
-                	<visible>Control.IsVisible(60) + Control.IsVisible(51)</visible>
+                	<visible>Control.IsVisible(60) + Control.IsVisible(51) + !Control.IsVisible(602)</visible>
 	                <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
 	                <control type="scrollbar" id="60">
 	                    <posx>920</posx>
@@ -163,6 +163,7 @@
                         <onup>7000</onup>
                         
 	                </control>
+                    
 				</control>
 				<control type="group">
 	                <visible>Control.IsVisible(61) + Control.IsVisible(51)</visible>
@@ -177,6 +178,34 @@
                         <onup>7000</onup>
 	                </control>
 	            </control>
+                <control type="group">
+                	<visible>Control.IsVisible(60) + Control.IsVisible(602)</visible>
+	                <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
+	                <control type="scrollbar" id="60">
+	                    <posx>0</posx>
+	                    <posy>row-8-begin</posy>
+	                    <height>17-row</height>
+	                    <onleft>9000</onleft>
+	                    <onback>9999</onback>
+                        <onright>9999</onright>
+                        <onup>7000</onup>
+                        
+	                </control>
+				</control>
+                <control type="group">
+	                <visible>Control.IsVisible(61) + Control.IsVisible(602)</visible>
+	                <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
+	                <control type="scrollbar" id="61">
+	                    <posx>1200</posx>
+	                    <posy>row-8-begin</posy>
+	                    <height>17-row</height>
+	                    <onleft>9999</onleft>
+	                    <onback>9999</onback>
+                        <onright>61</onright>
+                        <onup>7000</onup>
+	                </control>
+	            </control>
+
             </control>        
             <!--page header-->
             
