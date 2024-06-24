@@ -23,6 +23,73 @@
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
             <!--Main content listing-->
+
+            <control type="fixedlist" id="11">
+                        <animation type="conditional" condition="player.playing" reversible="true">
+		                    <effect type="slide" start="0" end="100" time="200" delay="0"/>
+		                </animation>
+		                <animation type="conditional" condition="player.playing" reversible="true">
+		                    <effect type="slide" start="0,0" end="0,180" time="200" delay="0"/>
+                        </animation>
+						<top>0</top>
+						<left>210</left>
+						<right>210</right>
+						<onleft>noop</onleft>
+						<onright>noop</onright>
+						<include>pvrchannelsonupondown3</include>
+						<orientation>horizontal</orientation>
+						<scrolltime>200</scrolltime>
+						<visible></visible>
+						<itemlayout height="50" width="300">
+							<control type="image">
+								<left>1</left>
+								<top>0</top>
+								<width>298</width>
+								<height>49</height>
+								<texture colordiffuse="overlay">colors/white.png</texture>
+							</control>
+							<control type="label">
+								<left>5</left>
+								<width>298</width>
+								<height>48</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>itemTitle</font>
+								<label>$INFO[ListItem.Label]</label>
+								<textcolor>lightgrey</textcolor>
+							</control>
+						</itemlayout>
+						<focusedlayout height="50" width="300">
+							<control type="image">
+								<left>1</left>
+								<top>0</top>
+								<width>298</width>
+								<height>50</height>
+								<texture colordiffuse="$VAR[selected]">colors/white.png</texture>
+								<animation effect="fade" end="30" condition="true">Conditional</animation>
+								<visible>!Control.HasFocus(11)</visible>
+							</control>
+							<control type="image">
+								<left>1</left>
+								<top>0</top>
+								<width>298</width>
+								<height>50</height>
+								<texture colordiffuse="$VAR[highlight]">colors/white.png</texture>
+								<animation effect="fade" end="30" condition="true">Conditional</animation>
+								<visible>Control.HasFocus(11)</visible>
+							</control>
+							<control type="label">
+								<left>5</left>
+								<width>288</width>
+								<height>48</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<scroll>true</scroll>
+								<font>itemTitle</font>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+						</focusedlayout>
+					</control>
             <control type="group" id="9999">
                 <!--initial animation-->
                 <include>contentOpen</include>
@@ -53,8 +120,9 @@
                     <posy>100</posy>
                     <width>15-col</width>
                     <height>2-row</height>
-                    <ondown>50</ondown>
-                    <onright>8001</onright>
+                    <include>pvrchannelsonupondown20</include>
+                    
+                    
                     <orientation>horizontal</orientation>
                     <itemlayout width="6-col" height="2-row">
                         <control type="image">
@@ -148,106 +216,7 @@
                         </item>
                     </content>
             </control>
-            <control type="Panel" id="8001">
-                    <animation type="conditional" condition="player.playing" reversible="true">
-		                <effect type="slide" start="0" end="100" time="200" delay="0"/>
-		            </animation>
-		            <animation type="conditional" condition="player.playing" reversible="true">
-		                <effect type="slide" start="0,0" end="0,205" time="200" delay="0"/>
-                    </animation>
-                    <posx>1445</posx>
-                    <posy>100</posy>
-                    <width>7-col</width>
-                    <height>2-row</height>
-                    <ondown>50</ondown>
-                    <onleft>8000</onleft>
-                    <orientation>horizontal</orientation>
-                    <itemlayout width="6-col" height="2-row">
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>400</width>
-                            <height>2-row</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture>colors/black.png</texture>
-                            <colordiffuse>overlay</colordiffuse>
-                        </control>
-                        <control type="label">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>1-col</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <align>center</align>
-                            <font>symbolLarge</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor></shadowcolor>
-                        </control>
-                        <control type="label">
-                            <posx>1-col-indent</posx>
-                            <posy>0</posy>
-                            <width>300</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>buttonTitle</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.label]</label>
-                            <shadowcolor></shadowcolor>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout width="5-col" height="2-row">
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>1-col-textbox</width>
-                            <height>2-row</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
-                            <colordiffuse>$VAR[highlight]</colordiffuse>
-                            <include>spinFocusIcon</include>
-                        </control>
-                        <control type="image">
-                            <posx>1-col</posx>
-                            <posy>0</posy>
-                            <width>325</width>
-                            <height>2-row</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
-                        </control>
-                        <control type="label">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>1-col</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <align>center</align>
-                            <font>symbolLarge</font>
-                            <textcolor>$VAR[Home]</textcolor>
-                            <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor></shadowcolor>
-                        </control>
-                        <control type="label">
-                            <posx>1-col-indent</posx>
-                            <posy>0</posy>
-                            <width>400</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>buttonTitle</font>
-                            <textcolor>black</textcolor>
-                            <label>$INFO[ListItem.label]</label>
-                            <shadowcolor></shadowcolor>
-                        </control>
-                    </focusedlayout>
-                    <content>
-                        <item id="1">
-                            <label>31222</label>
-                            <label2></label2>
-                            <thumb></thumb>
-                            <onclick>sendclick(tvchannels,28)</onclick>
-                        </item>
-                    </content>
-            </control>  
+              
         <!--page header-->
 		<control type="group">
 			<posx>col-1-begin</posx>
@@ -280,16 +249,7 @@
 	            <label>$LOCALIZE[253]: $INFO[Container.NumItems]</label>
 	            <textcolor>textActive</textcolor>
 	        </control>
-            <!--time-->
-			<control type="label">
-	            <posx>13-col</posx>
-	            <posy>-80</posy>
-	            <width>12-col</width>
-	            <align>right</align>
-	            <font>sectionTitle</font>
-	            <label>[B]$INFO[System.Time][/B]</label>
-	            <textcolor>textActive</textcolor>
-	        </control>
+           
 			<!--date-->
 	        <control type="label">
 	            <posx>14-col</posx>

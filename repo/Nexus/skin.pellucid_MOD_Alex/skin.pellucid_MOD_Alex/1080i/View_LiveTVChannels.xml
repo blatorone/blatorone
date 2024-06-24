@@ -9,8 +9,7 @@
 				<height>23-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
-				<ondown>50</ondown>
-				<onup>8000</onup>
+				<include>pvrchannelsonupondown</include>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="cubic" easing="out">400</scrolltime>
 				<itemlayout height="4-row" width="935">

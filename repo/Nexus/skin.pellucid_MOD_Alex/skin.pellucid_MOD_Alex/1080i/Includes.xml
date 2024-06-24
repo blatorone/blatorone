@@ -1162,6 +1162,43 @@
         <texturesliderbarfocus colordiffuse="$VAR[highlight]">colors/white.png</texturesliderbarfocus>
     </include>
 
+    <include name="pvrchannelsonupondown">
+        <include  condition="!player.hasvideo + !VideoPlayer.IsFullscreen">pvrchannelsonupondown1</include>
+        <include  condition="player.hasvideo + !VideoPlayer.IsFullscreen">pvrchannelsonupondown2</include>
+    </include>
+    <include name="pvrchannelsonupondown1">
+        <ondown>50</ondown>
+        <onup>8000</onup>
+    </include>
+    <include name="pvrchannelsonupondown2">
+        <ondown>50</ondown>
+        <onup>11</onup>
+    </include>
+    <include name="pvrchannelsonupondown20">
+        <include  condition="!player.hasvideo + !VideoPlayer.IsFullscreen">pvrchannelsonupondown21</include>
+        <include  condition="player.hasvideo + !VideoPlayer.IsFullscreen">pvrchannelsonupondown22</include>
+    </include>
+    <include name="pvrchannelsonupondown21">
+        <ondown>50</ondown>
+        <onup>11</onup>
+    </include>
+    <include name="pvrchannelsonupondown22">
+        <ondown>11</ondown>
+        <onup>50</onup>
+    </include>
+    <include name="pvrchannelsonupondown3">
+        <include  condition="!player.hasvideo + !VideoPlayer.IsFullscreen">pvrchannelsonupondown31</include>
+        <include  condition="player.hasvideo + !VideoPlayer.IsFullscreen">pvrchannelsonupondown32</include>
+    </include>
+    <include name="pvrchannelsonupondown31">
+        <ondown>8000</ondown>
+        <onup>50</onup>
+    </include>
+    <include name="pvrchannelsonupondown32">
+        <ondown>50</ondown>
+        <onup>8000</onup>
+    </include>
+
     <!--homemenu slide or grid-->
    <include name="homemenuslide">
         <include  condition="Skin.HasSetting(homemenuslide) + !Skin.HasSetting(homemenugrid) + !Skin.HasSetting(homemenuside)">homemenuslide1</include>

@@ -199,9 +199,9 @@
 	                    <posx>1200</posx>
 	                    <posy>row-8-begin</posy>
 	                    <height>17-row</height>
-	                    <onleft>9999</onleft>
+	                    <onleft>602</onleft>
 	                    <onback>9999</onback>
-                        <onright>61</onright>
+                        <onright>8003</onright>
                         <onup>7000</onup>
 	                </control>
 	            </control>
