@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">9999</defaultcontrol>
     <include>fadeInOut</include>
-	<views>503,50,51,52,53,54,502,504,505,508,509,591,602,609</views></views>
+	<views>50,503,609</views>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
@@ -17,7 +17,9 @@
             <control type="group" id="9999">
                 <include>contentOpen</include>
                 <onleft>9000</onleft>
-                <include>games</include>
+                <include>View_50_List</include>
+                <include>View_503_Wall</include>
+                <include>View_609_Fullscreen_Wall</include>
             </control>
             <!--page scrollbar-->
             <control type="group" id="8000">
@@ -33,7 +35,10 @@
             </control>
 			<!--page header-->
             <control type="group">
-				<include>pageHeader</include>    
+                <include>videolabel</include>
+				<include>pageHeader</include>  
+                <include>pageHeadervideonav</include>
+                
             </control>
         </control>
         <!--hub menu-->
