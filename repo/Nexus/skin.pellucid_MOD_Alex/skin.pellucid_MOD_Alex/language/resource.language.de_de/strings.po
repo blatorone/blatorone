@@ -749,10 +749,6 @@ msgctxt "#31301"
 msgid "Homescreen Settings"
 msgstr "Startbildschirm Einstellungen"
 
-msgctxt "#31302"
-msgid "BannerWall"
-msgstr "BannerWand"
-
 msgctxt "#31303"
 msgid "Panel"
 msgstr "Panel"

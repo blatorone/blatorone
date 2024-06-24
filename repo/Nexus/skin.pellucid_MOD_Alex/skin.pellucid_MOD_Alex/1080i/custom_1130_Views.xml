@@ -152,15 +152,7 @@
 							<visible>Window.IsActive(videos)</visible>
 							<visible>!Skin.HasSetting(Disable.InfoWallView)</visible>
 						</item>
-						<!--
-						
-						<item>
-							<label>$LOCALIZE[31088]</label>
-							<onclick>Container.SetViewMode(58)</onclick>
-							<visible>Window.IsActive(videos)</visible>
-							<visible>[Container.Content(movies) | Container.Content(tvshows)] + !Skin.HasSetting(Disable.BannerWallView)</visible>
-						</item>
-						-->
+					
 						<item>
 							<label>$LOCALIZE[31325]</label>
 							<onclick>Container.SetViewMode(52)</onclick>

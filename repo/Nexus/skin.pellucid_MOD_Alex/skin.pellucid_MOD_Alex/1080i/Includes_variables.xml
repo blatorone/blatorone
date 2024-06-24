@@ -361,35 +361,7 @@
 		<value>$INFO[ListItem.Art(clearlogo)]</value>
 	</variable>
 
-    <!-- TopBar VARs -->
-	<variable name="NoTopBarLabelVar">
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),List) + !String.IsEmpty(Skin.String(50.NoTopBar))">$INFO[Skin.String(50.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),InfoWall) + !String.IsEmpty(Skin.String(51.NoTopBar))">$INFO[Skin.String(51.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + !String.IsEmpty(Skin.String(52.NoTopBar))">$INFO[Skin.String(52.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + !String.IsEmpty(Skin.String(53.NoTopBar))">$INFO[Skin.String(53.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCaseSquare) + !String.IsEmpty(Skin.String(54.NoTopBar))">$INFO[Skin.String(54.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),TriPanel) + !String.IsEmpty(Skin.String(55.NoTopBar))">$INFO[Skin.String(55.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Posters) + !String.IsEmpty(Skin.String(56.NoTopBar))">$INFO[Skin.String(56.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Shift) + !String.IsEmpty(Skin.String(57.NoTopBar))">$INFO[Skin.String(57.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Logo) + !String.IsEmpty(Skin.String(59.NoTopBar))">$INFO[Skin.String(59.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BannerWall) + !String.IsEmpty(Skin.String(58.NoTopBar))">$INFO[Skin.String(58.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Icons) + !String.IsEmpty(Skin.String(500.NoTopBar))">$INFO[Skin.String(500.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),LowList) + !String.IsEmpty(Skin.String(501.NoTopBar))">$INFO[Skin.String(501.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Episode) + !String.IsEmpty(Skin.String(502.NoTopBar))">$INFO[Skin.String(502.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Wall) + !String.IsEmpty(Skin.String(503.NoTopBar))">$INFO[Skin.String(503.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Gallery) + !String.IsEmpty(Skin.String(504.NoTopBar))">$INFO[Skin.String(504.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Panel) + !String.IsEmpty(Skin.String(505.NoTopBar))">$INFO[Skin.String(505.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigList) + !String.IsEmpty(Skin.String(507.NoTopBar))">$INFO[Skin.String(507.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),SongList) + !String.IsEmpty(Skin.String(508.NoTopBar))">$INFO[Skin.String(508.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + !String.IsEmpty(Skin.String(591.NoTopBar))">$INFO[Skin.String(591.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigInfo) + !String.IsEmpty(Skin.String(592.NoTopBar))">$INFO[Skin.String(592.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FanartList) + !String.IsEmpty(Skin.String(602.NoTopBar))">$INFO[Skin.String(602.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + !String.IsEmpty(Skin.String(609.NoTopBar))">$INFO[Skin.String(609.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),RightList) + !String.IsEmpty(Skin.String(506.NoTopBar))">$INFO[Skin.String(506.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + !String.IsEmpty(Skin.String(509.NoTopBar))">$INFO[Skin.String(509.NoTopBar)]</value>
-		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MusicJukebox) + !String.IsEmpty(Skin.String(603.NoTopBar))">$INFO[Skin.String(603.NoTopBar)]</value>
-		<value>$LOCALIZE[16041]</value>
-    </variable>
+  
 
 
     <variable name="PosterThumbVar">

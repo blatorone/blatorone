@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">9999</defaultcontrol>
     <include>fadeInOut</include>
-	<views>503,50,51,52,53,54,502,504,505,508,509,591,602,603,609</views></views>
+	<views>503,50,51,52,53,54,502,504,505,508,509,591,602,609</views></views>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->

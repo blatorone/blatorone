@@ -1145,10 +1145,11 @@
 			<thumb />
 			<property name="labelID">31296</property>
 			<property name="defaultID">31296</property>
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.xstream/?site=einfach&amp;function=showEntries&amp;title=Aktuelle+Filme+im+Kino&amp;trumb=&amp;trumb=C%3A%2FUsers%2FAlexa%2FAppData%2FRoaming%2FKodi%2Faddons%2Fplugin.video.xstream%2Fresources%2Fart%2Fsites%2Feinfach.png&amp;sUrl=https%3A%2F%2Feinfach.to%2Fkinofilme%2F",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.xstream/?site=einfach&amp;function=showEntries&amp;title=Aktuelle+Filme+im+Kino&amp;trumb=&amp;trumb=C%3A%2FUsers%2FAlexa%2FAppData%2FRoaming%2FKodi%2Faddons%2Fplugin.video.xstream%2Fresources%2Fart%2Fsites%2Feinfach.png&amp;sUrl=https%3A%2F%2Feinfach.to%2Fkinofilme%2F",return)</property>
-			<property name="list">plugin://plugin.video.xstream/?site=einfach&amp;function=showEntries&amp;title=Aktuelle+Filme+im+Kino&amp;trumb=&amp;trumb=C%3A%2FUsers%2FAlexa%2FAppData%2FRoaming%2FKodi%2Faddons%2Fplugin.video.xstream%2Fresources%2Fart%2Fsites%2Feinfach.png&amp;sUrl=https%3A%2F%2Feinfach.to%2Fkinofilme%2F</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9001).ListItem.Property(submenuVisibility),extrashortcutmain)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9001).ListItem.Property(submenuVisibility),extrashortcutmain)</visible>
+			<onclick>ActivateWindow(TVChannels)</onclick>
+			<property name="path">ActivateWindow(TVChannels)</property>
+			<property name="list">TVChannels</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">extrashortcutmain</property>
 			<property name="isSubmenu">True</property>
 			</item>
@@ -3059,9 +3060,10 @@
 			<thumb />
 			<property name="labelID">31296</property>
 			<property name="defaultID">31296</property>
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.xstream/?site=einfach&amp;function=showEntries&amp;title=Aktuelle+Filme+im+Kino&amp;trumb=&amp;trumb=C%3A%2FUsers%2FAlexa%2FAppData%2FRoaming%2FKodi%2Faddons%2Fplugin.video.xstream%2Fresources%2Fart%2Fsites%2Feinfach.png&amp;sUrl=https%3A%2F%2Feinfach.to%2Fkinofilme%2F",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.xstream/?site=einfach&amp;function=showEntries&amp;title=Aktuelle+Filme+im+Kino&amp;trumb=&amp;trumb=C%3A%2FUsers%2FAlexa%2FAppData%2FRoaming%2FKodi%2Faddons%2Fplugin.video.xstream%2Fresources%2Fart%2Fsites%2Feinfach.png&amp;sUrl=https%3A%2F%2Feinfach.to%2Fkinofilme%2F",return)</property>
-			<property name="list">plugin://plugin.video.xstream/?site=einfach&amp;function=showEntries&amp;title=Aktuelle+Filme+im+Kino&amp;trumb=&amp;trumb=C%3A%2FUsers%2FAlexa%2FAppData%2FRoaming%2FKodi%2Faddons%2Fplugin.video.xstream%2Fresources%2Fart%2Fsites%2Feinfach.png&amp;sUrl=https%3A%2F%2Feinfach.to%2Fkinofilme%2F</property>
+			<visible>System.HasPVRAddon</visible>
+			<onclick>ActivateWindow(TVChannels)</onclick>
+			<property name="path">ActivateWindow(TVChannels)</property>
+			<property name="list">TVChannels</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">extrashortcutmain</property>
 			<property name="isSubmenu">True</property>
@@ -3077,10 +3079,11 @@
 			<thumb />
 			<property name="labelID">31296</property>
 			<property name="defaultID">31296</property>
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.xstream/?site=einfach&amp;function=showEntries&amp;title=Aktuelle+Filme+im+Kino&amp;trumb=&amp;trumb=C%3A%2FUsers%2FAlexa%2FAppData%2FRoaming%2FKodi%2Faddons%2Fplugin.video.xstream%2Fresources%2Fart%2Fsites%2Feinfach.png&amp;sUrl=https%3A%2F%2Feinfach.to%2Fkinofilme%2F",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.xstream/?site=einfach&amp;function=showEntries&amp;title=Aktuelle+Filme+im+Kino&amp;trumb=&amp;trumb=C%3A%2FUsers%2FAlexa%2FAppData%2FRoaming%2FKodi%2Faddons%2Fplugin.video.xstream%2Fresources%2Fart%2Fsites%2Feinfach.png&amp;sUrl=https%3A%2F%2Feinfach.to%2Fkinofilme%2F",return)</property>
-			<property name="list">plugin://plugin.video.xstream/?site=einfach&amp;function=showEntries&amp;title=Aktuelle+Filme+im+Kino&amp;trumb=&amp;trumb=C%3A%2FUsers%2FAlexa%2FAppData%2FRoaming%2FKodi%2Faddons%2Fplugin.video.xstream%2Fresources%2Fart%2Fsites%2Feinfach.png&amp;sUrl=https%3A%2F%2Feinfach.to%2Fkinofilme%2F</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),extrashortcutmain)</visible>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),extrashortcutmain)</visible>
+			<onclick>ActivateWindow(TVChannels)</onclick>
+			<property name="path">ActivateWindow(TVChannels)</property>
+			<property name="list">TVChannels</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">extrashortcutmain</property>
 			<property name="isSubmenu">True</property>
 			</item>

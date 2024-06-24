@@ -98,24 +98,14 @@
 				<include condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31325])">LandscapeViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31305])">ShowCaseViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31305])">ShowCaseSquareViewSettings</include>
-				<include condition="String.IsEqual(Container.Viewmode,TriPanel)">TriPanelViewSettings</include>
-				<include condition="String.IsEqual(Container.Viewmode,Posters)">PostersViewSettings</include>
-				<include condition="String.IsEqual(Container.Viewmode,Shift)">ShiftViewSettings</include>
-				<include condition="String.IsEqual(Container.Viewmode,BannerWall)">BannerWallViewSettings</include>
-				<include condition="String.IsEqual(Container.Viewmode,Logo)">LogoViewSettings</include>
-				<include condition="String.IsEqual(Container.Viewmode,Icons)">IconsViewSettings</include>
-				<include condition="String.IsEqual(Container.Viewmode,LowList)">LowListViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,Episode)">EpisodeViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,Wall)">WallViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,Gallery)">GalleryViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,Panel)">PanelViewSettings</include>
-				<include condition="String.IsEqual(Container.Viewmode,RightList)">RightListViewSettings</include>
-				<include condition="String.IsEqual(Container.Viewmode,BigList)">BigListViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,SongList)">SongListViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,MyFlix)">MyFlixViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,BigFan)">BigFanViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,FanartList)">FanartListViewSettings</include>
-				<include condition="String.IsEqual(Container.Viewmode,MusicJukeBox)">MusicJukeBoxViewSettings</include>
 				<include condition="String.IsEqual(Container.Viewmode,FullscreenWall)">FullscreenWallViewSettings</include>
 				<!-- Bottom Settings -->
 				<!-- Button IDs (1550-1559) -->
