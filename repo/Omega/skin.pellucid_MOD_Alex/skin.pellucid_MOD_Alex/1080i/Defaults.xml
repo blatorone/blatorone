@@ -184,6 +184,7 @@
         <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
         <righttexture></righttexture>
         <overlaytexture></overlaytexture>
+        <reveal>true</reveal>
     </default>
     <default type="scrollbar">
         <width>12</width>
