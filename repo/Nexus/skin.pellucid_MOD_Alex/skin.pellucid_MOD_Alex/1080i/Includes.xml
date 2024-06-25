@@ -1248,7 +1248,7 @@
     </include>
     <include name="homemenuslide2color">
     	
-        <colordiffuse>77000000</colordiffuse>
+        <colordiffuse>80000000</colordiffuse>
     </include>
     <include name="homemenuslide3color">
     	

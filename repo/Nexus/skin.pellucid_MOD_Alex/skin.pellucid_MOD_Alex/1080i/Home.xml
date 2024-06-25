@@ -285,7 +285,7 @@
 						<width>fullscreenWidth</width>
 						<posy>50%</posy>
 						<height>105</height>
-						<texture>colors/black.png</texture>
+						<texture>masks/discsurface.png</texture>
 						<colordiffuse>77000000</colordiffuse>
 						<aspectratio>stretch</aspectratio>
 			</control>
@@ -300,7 +300,7 @@
 						<width>4-col-textbox</width>
 						<posy>0</posy>
 						<height>fullscreenHeight</height>
-						<texture>colors/black.png</texture>
+						<texture>masks/discsurface.png</texture>
 						<colordiffuse>77000000</colordiffuse>
 						<aspectratio>stretch</aspectratio>
 			</control>
@@ -319,7 +319,7 @@
 						<posy>0</posy>
 						<width>4-col-textbox</width>
 						<height>105</height>
-						<texture>colors/black.png</texture>
+						<texture>masks/discsurface.png</texture>
 						<include>homemenuslidecolor</include>
 						<aspectratio>stretch</aspectratio>
 					</control>
@@ -343,7 +343,7 @@
 						<posy>0</posy>
 						<width>4-col-textbox</width>
 						<height>105</height>
-						<texture>Colors/listselect_fo.png</texture>
+						<texture>discsurface30%.png</texture>
 						<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
 					</control>
 					<control type="textbox">
@@ -387,7 +387,7 @@
 							<posy>0</posy>
 							<width>4-col-textbox</width>
 							<height>105</height>
-							<texture>colors/black.png</texture>
+							<texture>masks/discsurface.png</texture>
 							<colordiffuse>77000000</colordiffuse>
 							<aspectratio>stretch</aspectratio>
 						</control>
@@ -410,7 +410,7 @@
 							<posy>0</posy>
 							<width>4-col-textbox</width>
 							<height>105</height>
-							<texture>colors/listselect_fo.png</texture>
+							<texture>discsurface30%.png</texture>
 							<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
 						</control>
 						<control type="label">
@@ -484,7 +484,7 @@
 							<width>1-col</width>
 							<height>1-col</height>
 							<aspectratio>stretch</aspectratio>
-							<texture diffuse="masks/circle.png">Colors/listselect_fo.png</texture>
+							<texture diffuse="masks/circle.png">discsurface30%.png</texture>
 							<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
 						</control>
 						<control type="label">
@@ -608,7 +608,7 @@
 							<width>1-col</width>
 							<height>1-col</height>
 							<aspectratio>stretch</aspectratio>
-							<texture diffuse="masks/circle.png">Colors/listselect_fo.png</texture>
+							<texture diffuse="masks/circle.png">discsurface30%.png</texture>
 							<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
 						</control>
 						<control type="label">

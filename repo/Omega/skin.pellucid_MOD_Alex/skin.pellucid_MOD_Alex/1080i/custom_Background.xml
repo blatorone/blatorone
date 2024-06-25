@@ -39,7 +39,7 @@
                 <posy>0</posy>
                 <width>14-col</width>
                 <height>2-row</height>
-                <texture>colors/white.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -567,7 +567,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>DialogID</include>
-            <label>Homemenulook.xml</label>
+            <label>Custom_Background.xml</label>
         </control>
     </controls>
 </window>

@@ -26,7 +26,7 @@
                 <posy>0</posy>
                 <width>500</width>
                 <height>2-row</height>
-                <texture>colors/white.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
