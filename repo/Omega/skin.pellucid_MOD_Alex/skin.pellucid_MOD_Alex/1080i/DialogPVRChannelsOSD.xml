@@ -182,7 +182,7 @@
                         <width>66</width>
                         <height>15</height>
                         <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
+                        <midtexture colordiffuse="yellow">masks/discsurface.png</midtexture>
                         <info>ListItem.Progress</info>
                     </control>
 				</focusedlayout>
