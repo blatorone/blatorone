@@ -204,7 +204,7 @@
                     <selected>Skin.HasSetting(crosskey)</selected>
                 </control>
                 <control type="label" id="1002">
-                        <visible>Container(8000).Hasfocus(1) + $EXP[hasWeather] | System.Platform.Android</visible>
+                        <visible>Container(8000).Hasfocus(1) + $EXP[hasWeather] | Container(8000).Hasfocus(1) + System.Platform.Android</visible>
 						<posx>12</posx>
 						<posy>0</posy>
 						<width>14-col</width>

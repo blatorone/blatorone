@@ -69,19 +69,11 @@
                     			<posy>-3</posy>
                     			<width>fullscreenwidth</width>
                     			<height>136</height>
-                    			<texture>masks/discsurface.png</texture>
+                    			<texture>discsurface30%.png</texture>
                     			<colordiffuse>$VAR[highlight]</colordiffuse>
                     			<aspectratio>stretch</aspectratio>
                 			</control>
-							<control type="image">
-                    			<posx>-450</posx>
-                    			<posy>-3</posy>
-                    			<width>fullscreenwidth</width>
-                    			<height>136</height>
-                    			<texture>masks/discsurface.png</texture>
-                    			<colordiffuse>$VAR[highlight]</colordiffuse>
-                    			<aspectratio>stretch</aspectratio>
-                			</control>
+							
 					<control type="label">
 						<width>1100</width>
 						<height>48</height>
@@ -90,6 +82,7 @@
 						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<textoffsetx>30</textoffsetx>
+                        <textcolor>$VAR[Home]</textcolor>
 					</control>
 				</control>
 				<control type="group">
@@ -104,6 +97,7 @@
 							<height>90</height>
 							<align>center</align>
 							<label>$INFO[ListItem.Year]</label>
+                            <textcolor>$VAR[Home]</textcolor>
 							<font>menuTitle2</font>
 							<wrapmultiline>true</wrapmultiline>
 						</control>
@@ -136,6 +130,7 @@
 						<align>center</align>
 						<label fallback="• • • •">$INFO[ListItem.Year]</label>
 						<font>regular</font>
+                        <textcolor>$VAR[Home]</textcolor>
 						<wrapmultiline>true</wrapmultiline>
 					</control>
 				</control>

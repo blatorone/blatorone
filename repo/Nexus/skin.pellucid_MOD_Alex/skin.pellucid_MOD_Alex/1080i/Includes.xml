@@ -252,7 +252,7 @@
 	<include name="pageHeader">
         
 		<control type="group">
-        <visible>[Control.IsVisible(50) | Control.IsVisible(502) | Control.IsVisible(591) | Control.IsVisible(509) | Control.IsVisible(504) | Control.IsVisible(602)] + !window.isactive(1130)</visible>
+        <visible>Control.IsVisible(50) + !window.isactive(1130) | Control.IsVisible(502) + !window.isactive(1130) | Control.IsVisible(509) + !window.isactive(1130) | Control.IsVisible(504) + !window.isactive(1130) | Control.IsVisible(602) + !window.isactive(1130)</visible>
 			<posx>col-1-begin</posx>
             <posy>row-2-begin</posy>
 			<!--title-->
@@ -302,7 +302,7 @@
     <include name="pageHeadervideonav">
         
 		<control type="group">
-        <visible>[Control.IsVisible(503) | Control.IsVisible(609) | Control.IsVisible(51) | Control.IsVisible(52) | Control.IsVisible(505)] + !control.IsVisible(602) + !control.IsVisible(50) + !control.IsVisible(53) + !control.IsVisible(54) + !control.IsVisible(502) + !control.IsVisible(508) + !control.IsVisible(509)</visible>
+			<visible>!Control.IsVisible(50) + !window.isactive(1130) + !controlgroup(9000).hasfocus + !Control.IsVisible(504) + !Control.IsVisible(502) + !Control.IsVisible(509) + !Control.IsVisible(602)</visible>
 			<posx>col-1-begin</posx>
             <posy>960</posy>
 			<!--title-->
@@ -368,20 +368,11 @@
                     			<posy>-3</posy>
                     			<width>fullscreenwidth</width>
                     			<height>136</height>
-                    			<texture>masks/discsurface.png</texture>
+                    			<texture>discsurface30%.png</texture>
                     			<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
                     			<aspectratio>stretch</aspectratio>
                 			</control>
-							<control type="image">
-								<visible>!Control.IsVisible(51)</visible>
-                    			<posx>-450</posx>
-                    			<posy>-3</posy>
-                    			<width>fullscreenwidth</width>
-                    			<height>136</height>
-                    			<texture>masks/discsurface.png</texture>
-                    			<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
-                    			<aspectratio>stretch</aspectratio>
-                			</control>
+							
 							<control type="label">
 								<visible>!Control.IsVisible(51)</visible>
 								<width>1020</width>
