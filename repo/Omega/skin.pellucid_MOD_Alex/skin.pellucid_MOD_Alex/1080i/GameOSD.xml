@@ -55,7 +55,7 @@
 			                <width>1-col</width>
 			                <height>2-row</height>
 			                <aspectratio>stretch</aspectratio>
-			                <texture>background-shelfbackdrop.png</texture>
+			                <texture>masks/discsurface.png</texture>
 			                <colordiffuse>$VAR[highlight]</colordiffuse>
 			            </control>
 			            <control type="image">
@@ -64,7 +64,7 @@
 			                <width>6-col</width>
 			                <height>2-row</height>
 			                <aspectratio>stretch</aspectratio>
-			                <texture>background-shelfbackdrop.png</texture>
+			                <texture>masks/discsurface.png</texture>
 			                <colordiffuse>eeffffff</colordiffuse>
 			            </control>
 			            <control type="label">

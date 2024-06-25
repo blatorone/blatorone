@@ -122,8 +122,8 @@
                         <onright>500</onright>
                         <onup>312</onup>
                         <ondown>302</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -141,8 +141,8 @@
                         <onright>100</onright>
                         <onup>312</onup>
                         <ondown>302</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -159,8 +159,8 @@
                         <onright>101</onright>
                         <onup>312</onup>
                         <ondown>120</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -175,8 +175,8 @@
                         <onright>102</onright>
                         <onup>312</onup>
                         <ondown>121</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -191,8 +191,8 @@
                         <onright>103</onright>
                         <onup>312</onup>
                         <ondown>122</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -207,8 +207,8 @@
                         <onright>104</onright>
                         <onup>312</onup>
                         <ondown>123</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -223,8 +223,8 @@
                         <onright>105</onright>
                         <onup>312</onup>
                         <ondown>124</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -239,8 +239,8 @@
                         <onright>106</onright>
                         <onup>312</onup>
                         <ondown>125</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -255,8 +255,8 @@
                         <onright>107</onright>
                         <onup>312</onup>
                         <ondown>126</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -271,8 +271,8 @@
                         <onright>108</onright>
                         <onup>312</onup>
                         <ondown>127</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -287,8 +287,8 @@
                         <onright>109</onright>
                         <onup>312</onup>
                         <ondown>128</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -303,8 +303,8 @@
                         <onright>110</onright>
                         <onup>312</onup>
                         <ondown>129</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -319,8 +319,8 @@
                         <onright>111</onright>
                         <onup>312</onup>
                         <ondown>130</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -335,8 +335,8 @@
                         <onright>300</onright>
                         <onup>312</onup>
                         <ondown>131</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -357,8 +357,8 @@
                         <onright>120</onright>
                         <onup>300</onup>
                         <ondown>303</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textureradioonfocus></textureradioonfocus>
                         <textureradioonnofocus></textureradioonnofocus>
                         <textureradioofffocus></textureradioofffocus>
@@ -382,8 +382,8 @@
                         <onright>121</onright>
                         <onup>100</onup>
                         <ondown>140</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -399,8 +399,8 @@
                         <onright>122</onright>
                         <onup>101</onup>
                         <ondown>141</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -416,8 +416,8 @@
                         <onright>123</onright>
                         <onup>102</onup>
                         <ondown>142</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -433,8 +433,8 @@
                         <onright>124</onright>
                         <onup>103</onup>
                         <ondown>143</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -450,8 +450,8 @@
                         <onright>125</onright>
                         <onup>104</onup>
                         <ondown>144</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -467,8 +467,8 @@
                         <onright>126</onright>
                         <onup>105</onup>
                         <ondown>145</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -484,8 +484,8 @@
                         <onright>127</onright>
                         <onup>106</onup>
                         <ondown>146</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -501,8 +501,8 @@
                         <onright>128</onright>
                         <onup>107</onup>
                         <ondown>147</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -518,8 +518,8 @@
                         <onright>129</onright>
                         <onup>108</onup>
                         <ondown>148</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -535,8 +535,8 @@
                         <onright>130</onright>
                         <onup>109</onup>
                         <ondown>149</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -552,8 +552,8 @@
                         <onright>131</onright>
                         <onup>110</onup>
                         <ondown>150</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -569,8 +569,8 @@
                         <onright>302</onright>
                         <onup>111</onup>
                         <ondown>151</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -592,8 +592,8 @@
                         <onright>140</onright>
                         <onup>302</onup>
                         <ondown>304</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textureradioonfocus></textureradioonfocus>
                         <textureradioonnofocus></textureradioonnofocus>
                         <textureradioofffocus></textureradioofffocus>
@@ -618,8 +618,8 @@
                         <onright>141</onright>
                         <onup>120</onup>
                         <ondown>160</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -635,8 +635,8 @@
                         <onright>142</onright>
                         <onup>121</onup>
                         <ondown>161</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -652,8 +652,8 @@
                         <onright>143</onright>
                         <onup>122</onup>
                         <ondown>162</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -669,8 +669,8 @@
                         <onright>144</onright>
                         <onup>123</onup>
                         <ondown>163</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -686,8 +686,8 @@
                         <onright>145</onright>
                         <onup>124</onup>
                         <ondown>164</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -703,8 +703,8 @@
                         <onright>146</onright>
                         <onup>125</onup>
                         <ondown>165</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -720,8 +720,8 @@
                         <onright>147</onright>
                         <onup>126</onup>
                         <ondown>166</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -737,8 +737,8 @@
                         <onright>148</onright>
                         <onup>127</onup>
                         <ondown>167</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -754,8 +754,8 @@
                         <onright>149</onright>
                         <onup>128</onup>
                         <ondown>168</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -771,8 +771,8 @@
                         <onright>150</onright>
                         <onup>129</onup>
                         <ondown>169</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -788,8 +788,8 @@
                         <onright>151</onright>
                         <onup>130</onup>
                         <ondown>170</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -805,8 +805,8 @@
                         <onright>303</onright>
                         <onup>131</onup>
                         <ondown>171</ondown>
-                       <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                       <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -828,8 +828,8 @@
                         <onright>307</onright>
                         <onup>303</onup>
                         <ondown>309</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textureradioonfocus></textureradioonfocus>
                         <textureradioonnofocus></textureradioonnofocus>
                         <textureradioofffocus></textureradioofffocus>
@@ -851,8 +851,8 @@
                         <posy>0</posy>
                         <width>2-col</width>
                         <height>1-col</height>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <label>31093</label>
                         <textoffsetx>0</textoffsetx>
                         <onleft>304</onleft>
@@ -874,8 +874,8 @@
                         <onright>161</onright>
                         <onup>140</onup>
                         <ondown>32</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -891,8 +891,8 @@
                         <onright>162</onright>
                         <onup>141</onup>
                         <ondown>32</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -908,8 +908,8 @@
                         <onright>163</onright>
                         <onup>142</onup>
                         <ondown>32</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -925,8 +925,8 @@
                         <onright>164</onright>
                         <onup>143</onup>
                         <ondown>32</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -942,8 +942,8 @@
                         <onright>165</onright>
                         <onup>144</onup>
                         <ondown>32</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -959,8 +959,8 @@
                         <onright>166</onright>
                         <onup>145</onup>
                         <ondown>32</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -976,8 +976,8 @@
                         <onright>167</onright>
                         <onup>146</onup>
                         <ondown>305</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -993,8 +993,8 @@
                         <onright>168</onright>
                         <onup>147</onup>
                         <ondown>306</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1010,8 +1010,8 @@
                         <onright>169</onright>
                         <onup>148</onup>
                         <ondown>8</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1027,8 +1027,8 @@
                         <onright>170</onright>
                         <onup>149</onup>
                         <ondown>8</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1044,8 +1044,8 @@
                         <onright>171</onright>
                         <onup>150</onup>
                         <ondown>8</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1061,8 +1061,8 @@
                         <onright>304</onright>
                         <onup>151</onup>
                         <ondown>8</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1084,8 +1084,8 @@
                         <onright>32</onright>
                         <onup>304</onup>
                         <ondown>300</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1099,8 +1099,8 @@
                         <width>462</width>
                         <height>1-col</height>
                         <label>20182</label>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1123,8 +1123,8 @@
                         <onright>309</onright>
                         <onup>171</onup>
                         <ondown>312</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1139,8 +1139,8 @@
                         <width>1-col</width>
                         <height>1-col</height>
                         <label>&lt;</label>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1158,8 +1158,8 @@
                         <width>1-col</width>
                         <height>1-col</height>
                         <label>&gt;</label>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1188,8 +1188,8 @@
                         <onright>500</onright>
                         <onup>312</onup>
                         <ondown>302</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1207,8 +1207,8 @@
                         <onright>100</onright>
                         <onup>312</onup>
                         <ondown>302</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1225,8 +1225,8 @@
                         <onright>101</onright>
                         <onup>312</onup>
                         <ondown>120</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1241,8 +1241,8 @@
                         <onright>102</onright>
                         <onup>312</onup>
                         <ondown>121</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1257,8 +1257,8 @@
                         <onright>103</onright>
                         <onup>312</onup>
                         <ondown>122</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1273,8 +1273,8 @@
                         <onright>104</onright>
                         <onup>312</onup>
                         <ondown>123</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1289,8 +1289,8 @@
                         <onright>105</onright>
                         <onup>312</onup>
                         <ondown>124</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1305,8 +1305,8 @@
                         <onright>106</onright>
                         <onup>312</onup>
                         <ondown>125</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1321,8 +1321,8 @@
                         <onright>107</onright>
                         <onup>312</onup>
                         <ondown>126</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1337,8 +1337,8 @@
                         <onright>108</onright>
                         <onup>312</onup>
                         <ondown>127</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>#
@@ -1353,8 +1353,8 @@
                         <onright>109</onright>
                         <onup>312</onup>
                         <ondown>128</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1369,8 +1369,8 @@
                         <onright>110</onright>
                         <onup>312</onup>
                         <ondown>129</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1385,8 +1385,8 @@
                         <onright>111</onright>
                         <onup>312</onup>
                         <ondown>130</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1401,8 +1401,8 @@
                         <onright>300</onright>
                         <onup>312</onup>
                         <ondown>131</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -1423,8 +1423,8 @@
                         <onright>120</onright>
                         <onup>300</onup>
                         <ondown>303</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textureradioonfocus></textureradioonfocus>
                         <textureradioonnofocus></textureradioonnofocus>
                         <textureradioofffocus></textureradioofffocus>
@@ -1448,8 +1448,8 @@
                         <onright>121</onright>
                         <onup>100</onup>
                         <ondown>140</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1465,8 +1465,8 @@
                         <onright>122</onright>
                         <onup>101</onup>
                         <ondown>141</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1482,8 +1482,8 @@
                         <onright>123</onright>
                         <onup>102</onup>
                         <ondown>142</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1499,8 +1499,8 @@
                         <onright>124</onright>
                         <onup>103</onup>
                         <ondown>143</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1516,8 +1516,8 @@
                         <onright>125</onright>
                         <onup>104</onup>
                         <ondown>144</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1533,8 +1533,8 @@
                         <onright>126</onright>
                         <onup>105</onup>
                         <ondown>145</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1550,8 +1550,8 @@
                         <onright>127</onright>
                         <onup>106</onup>
                         <ondown>146</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1567,8 +1567,8 @@
                         <onright>128</onright>
                         <onup>107</onup>
                         <ondown>147</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1584,8 +1584,8 @@
                         <onright>129</onright>
                         <onup>108</onup>
                         <ondown>148</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1601,8 +1601,8 @@
                         <onright>130</onright>
                         <onup>109</onup>
                         <ondown>149</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1618,8 +1618,8 @@
                         <onright>131</onright>
                         <onup>110</onup>
                         <ondown>150</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1635,8 +1635,8 @@
                         <onright>302</onright>
                         <onup>111</onup>
                         <ondown>151</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1658,8 +1658,8 @@
                         <onright>140</onright>
                         <onup>302</onup>
                         <ondown>304</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textureradioonfocus></textureradioonfocus>
                         <textureradioonnofocus></textureradioonnofocus>
                         <textureradioofffocus></textureradioofffocus>
@@ -1684,8 +1684,8 @@
                         <onright>141</onright>
                         <onup>120</onup>
                         <ondown>160</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1701,8 +1701,8 @@
                         <onright>142</onright>
                         <onup>121</onup>
                         <ondown>161</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1718,8 +1718,8 @@
                         <onright>143</onright>
                         <onup>122</onup>
                         <ondown>162</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1735,8 +1735,8 @@
                         <onright>144</onright>
                         <onup>123</onup>
                         <ondown>163</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1752,8 +1752,8 @@
                         <onright>145</onright>
                         <onup>124</onup>
                         <ondown>164</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1769,8 +1769,8 @@
                         <onright>146</onright>
                         <onup>125</onup>
                         <ondown>165</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1786,8 +1786,8 @@
                         <onright>147</onright>
                         <onup>126</onup>
                         <ondown>166</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1803,8 +1803,8 @@
                         <onright>148</onright>
                         <onup>127</onup>
                         <ondown>167</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1820,8 +1820,8 @@
                         <onright>149</onright>
                         <onup>128</onup>
                         <ondown>168</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1837,8 +1837,8 @@
                         <onright>150</onright>
                         <onup>129</onup>
                         <ondown>169</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1854,8 +1854,8 @@
                         <onright>151</onright>
                         <onup>130</onup>
                         <ondown>170</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1871,8 +1871,8 @@
                         <onright>303</onright>
                         <onup>131</onup>
                         <ondown>171</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1894,8 +1894,8 @@
                         <onright>307</onright>
                         <onup>303</onup>
                         <ondown>309</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textureradioonfocus></textureradioonfocus>
                         <textureradioonnofocus></textureradioonnofocus>
                         <textureradioofffocus></textureradioofffocus>
@@ -1917,8 +1917,8 @@
                         <posy>-17</posy>
                         <width>200</width>
                         <height>100</height>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <label>31093</label>
                         <textoffsetx>0</textoffsetx>
                         <onleft>304</onleft>
@@ -1940,8 +1940,8 @@
                         <onright>161</onright>
                         <onup>140</onup>
                         <ondown>32</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1957,8 +1957,8 @@
                         <onright>162</onright>
                         <onup>141</onup>
                         <ondown>32</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1974,8 +1974,8 @@
                         <onright>163</onright>
                         <onup>142</onup>
                         <ondown>32</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1991,8 +1991,8 @@
                         <onright>164</onright>
                         <onup>143</onup>
                         <ondown>32</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -2008,8 +2008,8 @@
                         <onright>165</onright>
                         <onup>144</onup>
                         <ondown>32</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -2025,8 +2025,8 @@
                         <onright>166</onright>
                         <onup>145</onup>
                         <ondown>32</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -2042,8 +2042,8 @@
                         <onright>167</onright>
                         <onup>146</onup>
                         <ondown>305</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -2059,8 +2059,8 @@
                         <onright>168</onright>
                         <onup>147</onup>
                         <ondown>306</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -2076,8 +2076,8 @@
                         <onright>169</onright>
                         <onup>148</onup>
                         <ondown>8</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -2093,8 +2093,8 @@
                         <onright>170</onright>
                         <onup>149</onup>
                         <ondown>8</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -2110,8 +2110,8 @@
                         <onright>171</onright>
                         <onup>150</onup>
                         <ondown>8</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -2127,8 +2127,8 @@
                         <onright>304</onright>
                         <onup>151</onup>
                         <ondown>8</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -2150,8 +2150,8 @@
                         <onright>32</onright>
                         <onup>304</onup>
                         <ondown>312</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -2165,8 +2165,8 @@
                         <width>415</width>
                         <height>100</height>
                         <label>20182</label>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -2189,8 +2189,8 @@
                         <onright>309</onright>
                         <onup>171</onup>
                         <ondown>312</ondown>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -2205,8 +2205,8 @@
                         <width>100</width>
                         <height>100</height>
                         <label>&lt;</label>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -2224,8 +2224,8 @@
                         <width>100</width>
                         <height>100</height>
                         <label>&gt;</label>
-                        <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                        <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>$VAR[Home]</focusedcolor>
                         <textcolor>textActive</textcolor>

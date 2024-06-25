@@ -128,8 +128,8 @@
                         <posy>90</posy>
                         <width>66</width>
                         <height>15</height>
-                        <texturebg colordiffuse="overlay">colors/white.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
                         <info>ListItem.Progress</info>
                     </control>
 				</itemlayout>
@@ -140,7 +140,7 @@
                         <width>8-col</width>
                         <height>105</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="0">background-shelfbackdrop.png</texture>
+                        <texture border="0">masks/discsurface.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
 					<control type="image">
@@ -181,8 +181,8 @@
                         <posy>88</posy>
                         <width>66</width>
                         <height>15</height>
-                        <texturebg colordiffuse="$VAR[HOME]">colors/white.png</texturebg>
-                        <midtexture colordiffuse="$VAR[selected]">colors/white.png</midtexture>
+                        <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
                         <info>ListItem.Progress</info>
                     </control>
 				</focusedlayout>

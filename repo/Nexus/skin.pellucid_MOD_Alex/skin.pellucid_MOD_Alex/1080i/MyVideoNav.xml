@@ -71,8 +71,8 @@
                 <label2></label2>
                 <textcolor>$VAR[selected]</textcolor>
                 <focusedcolor>green</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturenofocus>
                 <textoffsetx>2</textoffsetx>
 				<onclick>setfocus(9000)</onclick>
                 <visible>skin.hassetting(Touch) + !controlgroup(500).hasfocus + !controlgroup(9000).hasfocus + !window.isactive(1130) + !window.isactive(MyMusicNav)</visible>
@@ -91,8 +91,8 @@
                 <label2></label2>
                 <textcolor>$VAR[selected]</textcolor>
                 <focusedcolor>$VAR[selected]</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturenofocus>
                 <textoffsetx>2</textoffsetx>
 				<onclick>Dialog.Close(1132)</onclick>
 				<visible>skin.hassetting(Touch) + [controlgroup(500).hasfocus | controlgroup(9000).hasfocus]</visible>

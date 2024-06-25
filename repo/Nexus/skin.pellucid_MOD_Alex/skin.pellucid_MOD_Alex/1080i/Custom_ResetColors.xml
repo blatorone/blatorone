@@ -73,7 +73,7 @@
                         <width>1-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>background-shelfbackdrop.png</texture>
+                        <texture>masks/discsurface.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="image">
@@ -82,9 +82,9 @@
                         <width>100</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>background-shelfbackdrop.png</texture>
+                        <texture>masks/discsurface.png</texture>
 
-                        <colordiffuse>overlay</colordiffuse>
+                        <colordiffuse>textDisabled</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -115,7 +115,7 @@
                         <width>1-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>background-shelfbackdrop.png</texture>
+                        <texture>masks/discsurface.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="image">
@@ -124,7 +124,7 @@
                         <width>100</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                        <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                         <colordiffuse>eeffffff</colordiffuse>
                     </control>
                     <control type="label">

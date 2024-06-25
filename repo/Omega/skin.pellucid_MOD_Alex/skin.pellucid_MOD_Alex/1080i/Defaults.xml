@@ -55,7 +55,7 @@
         <font>buttonTitle</font>
         <textcolor>textActive</textcolor>
         <focusedcolor>black</focusedcolor>
-        <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+        <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
         <texturenofocus></texturenofocus>
         <textoffsetx>24</textoffsetx>
         <disabledcolor>textDisabled</disabledcolor>
@@ -71,9 +71,9 @@
         <aligny>center</aligny>
         <textoffsetx>24</textoffsetx>
         <label></label>
-        <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+        <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
         <texturenofocus></texturenofocus>
-        <alttexturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</alttexturefocus>
+        <alttexturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</alttexturefocus>
         <alttexturenofocus></alttexturenofocus>
         <font>buttonTitle</font>
         <textcolor>textActive</textcolor>
@@ -99,7 +99,7 @@
         <disabledcolor>textDisabled</disabledcolor>
         <radioposx>0</radioposx>
         <radioposy>0</radioposy>
-        <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+        <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
         <texturenofocus></texturenofocus>
         <pulseonselect>false</pulseonselect>
         <colordiffuse>FFFFFFFF</colordiffuse>
@@ -125,7 +125,7 @@
         <disabledcolor>textDisabled</disabledcolor>
         <spinwidth>30</spinwidth>
         <spinheight>30</spinheight>
-        <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+        <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
         <texturenofocus></texturenofocus>
         <textureup>UIControls/arrow-up-nf.png</textureup>
         <texturedown>UIControls/arrow-down-nf.png</texturedown>
@@ -148,7 +148,7 @@
         <disabledcolor>textDisabled</disabledcolor>
         <spinwidth>36</spinwidth>
         <spinheight>36</spinheight>
-        <texturefocus>background-shelfbackdrop.png</texturefocus>
+        <texturefocus>masks/discsurface.png</texturefocus>
         <texturenofocus></texturenofocus>
         <textureup>UIControls/arrow-up-nf.png</textureup>
         <texturedown>UIControls/arrow-down-nf.png</texturedown>
@@ -170,7 +170,7 @@
         <focusedcolor>black</focusedcolor>
         <disabledcolor>textDisabled</disabledcolor>
         <texturenofocus></texturenofocus>
-        <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+        <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
         <sliderwidth>0</sliderwidth>
         <sliderheight>0</sliderheight>
         <texturesliderbar></texturesliderbar>
@@ -180,16 +180,17 @@
     </default>
     <default type="progress">
         <height>12</height>
-        <texturebg border="0"></texturebg>
-        <midtexture border="10">colors/white.png</midtexture>
+        <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
+        <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
         <righttexture></righttexture>
         <overlaytexture></overlaytexture>
     </default>
     <default type="scrollbar">
         <width>12</width>
         <texturesliderbar></texturesliderbar>
-        <texturesliderbackground colordiffuse="overlay">colors/black.png</texturesliderbackground>
-        <texturesliderbarfocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturesliderbarfocus>
+        <texturesliderbar colordiffuse="textDisabled">masks/discsurface.png</texturesliderbar>
+        <texturesliderbackground colordiffuse="black">masks/discsurface.png</texturesliderbackground>
+        <texturesliderbarfocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturesliderbarfocus>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
     </default>
@@ -221,9 +222,9 @@
 		<colorwidth>100</colorwidth>
 		<colorheight>40</colorheight>
 		<texturecolormask>colors/white.png</texturecolormask>
-		<texturecolordisabledmask colordiffuse="40FFFFFF">background-shelfbackdrop.png</texturecolordisabledmask>
+		<texturecolordisabledmask colordiffuse="40FFFFFF">masks/discsurface.png</texturecolordisabledmask>
 		<font>buttonTitle</font>
 		<textoffsetx>30</textoffsetx>
-		<texturefocus colordiffuse="$VAR[selected_box]" border="3">background-shelfbackdrop.png</texturefocus>
+		<texturefocus colordiffuse="$VAR[selected_box]" border="3">masks/discsurface.png</texturefocus>
 	</default>
 </includes>

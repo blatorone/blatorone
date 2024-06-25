@@ -368,7 +368,7 @@
                     			<posy>-3</posy>
                     			<width>fullscreenwidth</width>
                     			<height>136</height>
-                    			<texture>background-shelfbackdrop.png</texture>
+                    			<texture>masks/discsurface.png</texture>
                     			<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
                     			<aspectratio>stretch</aspectratio>
                 			</control>
@@ -378,7 +378,7 @@
                     			<posy>-3</posy>
                     			<width>fullscreenwidth</width>
                     			<height>136</height>
-                    			<texture>background-shelfbackdrop.png</texture>
+                    			<texture>masks/discsurface.png</texture>
                     			<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
                     			<aspectratio>stretch</aspectratio>
                 			</control>
@@ -749,7 +749,7 @@
                     <width>5-col</width>
                     <height>7-col</height>
                     <focusedcolor>00FFFFFF</focusedcolor>
-                    <texturefocus colordiffuse="00FFFFFF">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="00FFFFFF">masks/discsurface.png</texturefocus>
                     <texturenofocus>00FFFFFF</texturenofocus>
                     <aspectratio>stretch</aspectratio>
                     <visible>Skin.HasSetting(crosskey)</visible>
@@ -766,8 +766,8 @@
                     <onclick>setfocus($PARAM[focus])</onclick>
                     <onclick>$PARAM[up]</onclick>
                     <font>symbol</font>
-                    <texturenofocus colordiffuse="$PARAM[color]">background-shelfbackdrop.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus colordiffuse="$PARAM[color]">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <visible>Skin.HasSetting(crosskey) + $PARAM[upview]</visible>
@@ -783,8 +783,8 @@
                     <onclick>setfocus($PARAM[focus])</onclick>
                     <onclick>$PARAM[left]</onclick>
                     <font>symbol</font>
-                    <texturenofocus colordiffuse="$PARAM[color]">background-shelfbackdrop.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus colordiffuse="$PARAM[color]">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <visible>Skin.HasSetting(crosskey) + $PARAM[leftview]</visible>
@@ -801,8 +801,8 @@
                     <onclick>setfocus($PARAM[focus])</onclick>
                     <onclick>$PARAM[down]</onclick>
                     <font>symbol</font>
-                    <texturenofocus colordiffuse="$PARAM[color]">background-shelfbackdrop.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus colordiffuse="$PARAM[color]">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <visible>Skin.HasSetting(crosskey) + $PARAM[downview]</visible>
@@ -818,8 +818,8 @@
                     <onclick>setfocus($PARAM[focus])</onclick>
                     <onclick>$PARAM[right]</onclick>
                     <font>symbol</font>
-                    <texturenofocus colordiffuse="$PARAM[color]">background-shelfbackdrop.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus colordiffuse="$PARAM[color]">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <visible>Skin.HasSetting(crosskey) + $PARAM[rightview]</visible>
@@ -833,14 +833,14 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <texturenofocus colordiffuse="$PARAM[color]">background-shelfbackdrop.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus colordiffuse="$PARAM[color]">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                     <onclick>setfocus($PARAM[focus])</onclick>
                     <onclick>$PARAM[select]</onclick>
                     
                     <font>symbol</font>
-                    <texturenofocus colordiffuse="$PARAM[color]">background-shelfbackdrop.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus colordiffuse="$PARAM[color]">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <visible>Skin.HasSetting(crosskey) + $PARAM[selectview]</visible>
@@ -856,8 +856,8 @@
                     <align>center</align>
                     <textwidth>180</textwidth>
                     <onclick>$PARAM[back]</onclick>
-                    <texturenofocus colordiffuse="$PARAM[color]">background-shelfbackdrop.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus colordiffuse="$PARAM[color]">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <font>buttonTitle</font>
@@ -886,8 +886,8 @@
                     <onclick>setfocus($PARAM[focus])</onclick>
                     <onclick>$PARAM[up]</onclick>
                     <font>symbol</font>
-                    <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <visible>Skin.HasSetting(crosskey)</visible>
@@ -903,8 +903,8 @@
                     <onclick>setfocus($PARAM[focus])</onclick>
                     <onclick>$PARAM[left]</onclick>
                     <font>symbol</font>
-                    <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <visible>Skin.HasSetting(crosskey)</visible>
@@ -921,8 +921,8 @@
                     <onclick>setfocus($PARAM[focus])</onclick>
                     <onclick>$PARAM[down]</onclick>
                     <font>symbol</font>
-                    <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <visible>Skin.HasSetting(crosskey)</visible>
@@ -938,8 +938,8 @@
                     <onclick>setfocus($PARAM[focus])</onclick>
                     <onclick>$PARAM[right]</onclick>
                     <font>symbol</font>
-                    <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <visible>Skin.HasSetting(crosskey)</visible>
@@ -956,8 +956,8 @@
                     <onclick>setfocus($PARAM[focus])</onclick>
                     <onclick>$PARAM[select]</onclick>
                     <font>symbol</font>
-                    <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <visible>Skin.HasSetting(crosskey) + !window.isactive(12901)</visible>
@@ -973,8 +973,8 @@
                     <align>center</align>
                     <textwidth>180</textwidth>
                     <onclick>back</onclick>
-                    <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus colordiffuse="keyboardInactive">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <font>buttonTitle</font>
@@ -1088,14 +1088,15 @@
     <include name="scrollbarcolor">
         <include  condition="Skin.HasSetting(Touch)">scrollbarcolor1</include>
         <include  condition="!Skin.HasSetting(Touch)">scrollbarcolor2</include>
-    </include>
+    </include> 
     <include name="scrollbarcolor1">
         <texturesliderbackground colordiffuse="77black">colors/white.png</texturesliderbackground>
         <texturesliderbarfocus colordiffuse="77overlay">colors/white.png</texturesliderbarfocus>
     </include>
     <include name="scrollbarcolor2">
-        <texturesliderbackground colordiffuse="overlay">colors/black.png</texturesliderbackground>
-        <texturesliderbarfocus colordiffuse="$VAR[highlight]">colors/white.png</texturesliderbarfocus>
+        <texturesliderbar colordiffuse="textDisabled">masks/discsurface.png</texturesliderbar>
+        <texturesliderbackground colordiffuse="black">masks/discsurface.png</texturesliderbackground>
+        <texturesliderbarfocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturesliderbarfocus>
     </include>
 
     <include name="scrollbarposxosd">
@@ -1314,7 +1315,7 @@
 		<textoffsetx>15</textoffsetx>
 		<textcolor>$VAR[Home]</textcolor>
 		<focusedcolor>$VAR[selected]</focusedcolor>
-        <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+        <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
 		<textwidth>300</textwidth>
 		<aligny>center</aligny>
 		<font>buttonTitle</font>

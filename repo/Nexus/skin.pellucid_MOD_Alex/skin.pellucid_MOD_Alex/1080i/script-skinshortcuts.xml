@@ -27,7 +27,7 @@
                 <posy>0</posy>
                 <width>18-col</width>
                 <height>2-row</height>
-                <texture>background-shelfbackdrop.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -36,7 +36,7 @@
                 <posy>71</posy>
                 <width>18-col</width>
                 <height>1</height>
-                <texture>background-shelfbackdrop.png</texture>
+                <texture>masks/discsurface.png</texture>
                 
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -129,7 +129,7 @@
                         <posy>0</posy>
                         <width>14-col</width>
                         <height>2-row</height>
-                        <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                        <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                         <colordiffuse>textActive</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                         <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(211)">Conditional</animation>

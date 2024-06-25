@@ -69,7 +69,7 @@
                 <posy>-12</posy>
                 <width>8-col</width>
                 <height>102</height>
-                <texture>background-shelfbackdrop.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>eeFFFFFF</colordiffuse>
             </control>
             <control type="label" id="23">

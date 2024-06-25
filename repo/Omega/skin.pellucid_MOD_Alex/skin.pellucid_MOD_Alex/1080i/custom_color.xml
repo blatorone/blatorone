@@ -44,7 +44,7 @@
                     <posy>0</posy>
                     <width>8-col</width>
                     <height>2-row</height>
-                    <texture>background-shelfbackdrop.png</texture>
+                    <texture>masks/discsurface.png</texture>
                     <colordiffuse>$VAR[highlight]</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -76,7 +76,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Lightblue.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Lightblue.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Lightblue.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>Lightblue</label> 
                     <onclick>Skin.Togglesetting(lightblue)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -106,7 +106,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Lightblue.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Lightblue.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Lightblue.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]Lightblue[/COLOR]</label> 
                     <onclick>Skin.Togglesetting(lightblue)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -136,7 +136,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Bluewood.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Bluewood.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Bluewood.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>Bluewood</label>
                     <onclick>Skin.Togglesetting(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -165,7 +165,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Bluewood.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Bluewood.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Bluewood.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]Bluewood[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Bluewood)</onclick>
                     <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
@@ -195,7 +195,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Darkblue.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Darkblue.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Darkblue.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>Darkblue</label>
                     <onclick>Skin.Togglesetting(Darkblue)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -224,7 +224,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Darkblue.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Darkblue.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Darkblue.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]Darkblue[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Darkblue)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -254,7 +254,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Default.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Default.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Default.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>$LOCALIZE[15109]</label>
                     <onclick>Skin.Togglesetting(Default)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -283,7 +283,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Default.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Default.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Default.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]$LOCALIZE[15109][/COLOR]</label>
                     <onclick>Skin.Togglesetting(Default)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -313,7 +313,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Dribble.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Dribble.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Dribble.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>Dribble</label>
                     <onclick>Skin.Togglesetting(Dribble)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -342,7 +342,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Dribble.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Dribble.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Dribble.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]Dribble[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Dribble)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -372,7 +372,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Gold.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Gold.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Gold.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>Gold</label>
                     <onclick>Skin.Togglesetting(Gold)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -401,7 +401,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Gold.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Gold.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Gold.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]Gold[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Gold)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -431,7 +431,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Green.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Green.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Green.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>Green</label>
                     <onclick>Skin.Togglesetting(Green)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -460,7 +460,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Green.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Green.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Green.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]Green[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Green)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -490,7 +490,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Interest.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Interest.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Interest.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>Interest</label>
                     <onclick>Skin.Togglesetting(Interest)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -519,7 +519,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Interest.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Interest.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Interest.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]Interest[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Interest)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -549,7 +549,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Medium.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Medium.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Medium.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>Medium</label>
                     <onclick>Skin.Togglesetting(Medium)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -578,7 +578,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Medium.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Medium.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Medium.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]Medium[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Medium)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -608,7 +608,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Orange.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Orange.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Orange.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>Orange</label>
                     <onclick>Skin.Togglesetting(Orange)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -637,7 +637,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Orange.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Orange.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Orange.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]Orange[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Orange)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -667,7 +667,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/PellucidV1.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/PellucidV1.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/PellucidV1.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>PellucidV1</label>
                     <onclick>Skin.Togglesetting(PellucidV1)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -696,7 +696,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/PellucidV1.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/PellucidV1.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/PellucidV1.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]PellucidV1[/COLOR]</label>
                     <onclick>Skin.Togglesetting(PellucidV1)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -726,7 +726,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Razzmatazz.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Razzmatazz.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Razzmatazz.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>Razzmatazz</label>
                     <onclick>Skin.Togglesetting(Razzmatazz)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -755,7 +755,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Razzmatazz.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Razzmatazz.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Razzmatazz.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]Razzmatazz[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Razzmatazz)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -785,7 +785,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Tumble.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Tumble.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Tumble.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>Tumble</label>
                     <onclick>Skin.Togglesetting(Tumble)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -814,7 +814,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Tumble.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Tumble.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Tumble.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]Tumble[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Tumble)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -844,7 +844,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Turquoise.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Turquoise.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Turquoise.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>Turquoise</label>
                     <onclick>Skin.Togglesetting(Turquoise)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -873,7 +873,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Turquoise.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Turquoise.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Turquoise.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]Turquoise[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Turquoise)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -903,7 +903,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Vine.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Vine.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Vine.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>Vine</label>
                     <onclick>Skin.Togglesetting(Vine)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -932,7 +932,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/Vine.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/Vine.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/Vine.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]Vine[/COLOR]</label>
                     <onclick>Skin.Togglesetting(Vine)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -962,7 +962,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/VK.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/VK.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/VK.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>VK</label>
                     <onclick>Skin.Togglesetting(VK)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -991,7 +991,7 @@
                     <textureradioonnofocus colordiffuse="textActive">Colors/VK.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="textactive">Colors/VK.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="textactive">Colors/VK.png</textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <label>[COLOR $VAR[selected]]VK[/COLOR]</label>
                     <onclick>Skin.Togglesetting(VK)</onclick>
                     <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
@@ -1020,7 +1020,7 @@
                     <description>Enable Home Button Further apart</description>
                     <width>8-col</width>
                     <label>636</label>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <texturefocus></texturefocus>
                     <textureradioonfocus></textureradioonfocus>
                     <textureradioonnofocus></textureradioonnofocus>
@@ -1052,7 +1052,7 @@
                     <description>Enable Home Button Further apart</description>
                     <width>8-col</width>
                     <label>[COLOR $VAR[selected]]$LOCALIZE[636][/COLOR]</label>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <textureradioonfocus></textureradioonfocus>
                     <textureradioonnofocus></textureradioonnofocus>
                     <textureradioofffocus></textureradioofffocus>
@@ -1114,7 +1114,7 @@
                         <width>60</width>
                         <height>60</height>
                         <aspectratio>scale</aspectratio>
-                        <texture colordiffuse="$VAR[highlight]">Colors/white.png</texture>
+                        <texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
                         <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
                         <bordersize>3</bordersize>
                 </control>
@@ -1126,7 +1126,7 @@
                     <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
                     <bordersize>3</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
-                    <texture colordiffuse="$VAR[highlight_Shadow]">Colors/white.png</texture>
+                    <texture colordiffuse="$VAR[highlight_Shadow]">masks/discsurface.png</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
@@ -1135,7 +1135,7 @@
                     <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
                     <bordersize>3</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
-                    <texture colordiffuse="$VAR[Home]">Colors/white.png</texture>
+                    <texture colordiffuse="$VAR[Home]">masks/discsurface.png</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
@@ -1144,7 +1144,7 @@
                     <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
                     <bordersize>3</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
-                    <texture colordiffuse="$VAR[selected]">Colors/white.png</texture>
+                    <texture colordiffuse="$VAR[selected]">masks/discsurface.png</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
@@ -1153,7 +1153,7 @@
                     <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
                     <bordersize>3</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
-                    <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                    <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
             </control>

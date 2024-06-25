@@ -42,7 +42,7 @@
                 <posy>0</posy>
                 <width>18-col</width>
                 <height>2-row</height>
-                <texture>background-shelfbackdrop.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>  
@@ -113,7 +113,7 @@
                         <width>1-col-textbox</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>background-shelfbackdrop.png</texture>
+                        <texture>masks/discsurface.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                         <include>spinFocusIcon</include>
                     </control>
@@ -123,7 +123,7 @@
                         <width>3-col-textbox</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                        <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -185,7 +185,7 @@
                 <description>Default Category Button</description>
                 <width>287</width>
                 <font>buttonTitle</font>
-                <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                 <texturenofocus></texturenofocus>
             </control>
             <control type="button" id="7">

@@ -96,7 +96,7 @@
                             <width>23-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="0">background-shelfbackdrop.png</texture>
+                            <texture border="0">masks/discsurface.png</texture>
                             <colordiffuse>$VAR[highlight]</colordiffuse>
                         </control>
                         <control type="group">
@@ -110,7 +110,7 @@
                                 <width>66</width>
                                 <height>66</height>
                                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="background-shelfbackdrop.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                                <texture fallback="masks/discsurface.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
                             </control>
                             <control type="label">
                                 <visible>!String.IsEmpty(ListItem.playcount) + !ListItem.IsResumable + !Skin.HasSetting(Disable.overlays)</visible>

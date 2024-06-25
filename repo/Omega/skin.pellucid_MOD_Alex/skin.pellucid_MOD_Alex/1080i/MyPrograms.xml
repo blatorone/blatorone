@@ -135,7 +135,7 @@
 			                    <width>23-col</width>
 			                    <height>2-row</height>
 			                    <aspectratio>stretch</aspectratio>
-			                    <texture border="0">background-shelfbackdrop.png</texture>
+			                    <texture border="0">masks/discsurface.png</texture>
 			                    <colordiffuse>$VAR[highlight]</colordiffuse>
 			                </control>
 			                <control type="label">
@@ -181,7 +181,7 @@
 			                    <width>18-col</width>
 			                    <height>100</height>
 			                    <aspectratio>stretch</aspectratio>
-			                    <texture border="0">background-shelfbackdrop.png</texture>
+			                    <texture border="0">masks/discsurface.png</texture>
 			                    <colordiffuse>$VAR[highlight]</colordiffuse>
 			                </control>
 			                <control type="label">

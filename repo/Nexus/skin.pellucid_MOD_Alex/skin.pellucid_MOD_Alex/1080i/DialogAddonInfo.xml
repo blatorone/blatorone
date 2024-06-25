@@ -43,7 +43,7 @@
                 <posy>-60</posy>
                 <width>18-col</width>
                 <height>2-row</height>
-                <texture>background-shelfbackdrop.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -100,7 +100,7 @@
                             <height>4-col-gutter</height>
                             <aspectratio>scale</aspectratio>
                             <texture>$INFO[Listitem.thumb]</texture>
-                            <bordertexture border="6">background-shelfbackdrop.png</bordertexture>
+                            <bordertexture border="6">masks/discsurface.png</bordertexture>
                             <bordersize>6</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
                         </control>
@@ -193,9 +193,10 @@
                             <width>1-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>background-shelfbackdrop.png</texture>
+                            <texture>masks/discsurface.png</texture>
                             <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
+                            <visible>!control.hasfocus(13) + !control.hasfocus(50)</visible>
                         </control>
                         <control type="image">
                             <posx>1-col</posx>
@@ -203,7 +204,8 @@
                             <width>5-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
+                            <visible>!control.hasfocus(13) + !control.hasfocus(50)</visible>
                         </control>
                         <control type="label">
                             <posx>0</posx>
@@ -216,6 +218,7 @@
                             <textcolor>$VAR[Home]</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor></shadowcolor>
+                            <visible>!control.hasfocus(13) + !control.hasfocus(50)</visible>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
@@ -227,6 +230,32 @@
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
                             <shadowcolor></shadowcolor>
+                            <visible>!control.hasfocus(13) + !control.hasfocus(50)</visible>
+                        </control>
+                         <control type="label">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1-col</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>symbolLarge</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.label2]</label>
+                            <shadowcolor></shadowcolor>
+                            <visible>control.hasfocus(13) | control.hasfocus(50)</visible>
+                        </control>
+                        <control type="label">
+                            <posx>1-col-indent</posx>
+                            <posy>-1</posy>
+                            <width>5-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.label]</label>
+                            <shadowcolor></shadowcolor>
+                            <visible>control.hasfocus(13) | control.hasfocus(50)</visible>
                         </control>
                     </focusedlayout>
                     <content>
@@ -301,14 +330,23 @@
         <!--Auto update Button-->
         <control type="radiobutton" id="13">
 			<description>Auto Update Addon button</description>
-			<width>5-col</width>
+			<width>460</width>
 			<height>2-row</height>
+            <align>right</align>
+            <aligny>center</aligny>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>black</focusedcolor>
+            <disabledcolor>textDisabled</disabledcolor>
+            <textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
+            <textureradioonnofocus colordiffuse="textActive">buttons/radio-button-on.png</textureradioonnofocus>
+            <textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
+            <textureradiooffnofocus colordiffuse="textActive">buttons/radio-button-off.png</textureradiooffnofocus>
             <onup>8000</onup>
             <ondown>7</ondown>
 			<posy>920</posy>
-            <posx>382</posx>
-            <radiowidth>785</radiowidth>
-		    <radioheight>76</radioheight>
+            <posx>315</posx>
+            <radioposx>-25</radioposx>
+            <radioposy>0</radioposy>
             <visible>ListItem.Property(Addon.IsEnabled)</visible>
         </control>
         <!--not in use

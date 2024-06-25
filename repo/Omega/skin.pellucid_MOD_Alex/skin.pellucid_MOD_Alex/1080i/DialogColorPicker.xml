@@ -67,7 +67,7 @@
 				<control type="image">
 						<width>100</width>
 						<height>80</height>
-						<texture>background-shelfbackdrop.png</texture>
+						<texture>masks/discsurface.png</texture>
 						<bordersize>1</bordersize>
 						<bordertexture border="1" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
 						<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
@@ -75,7 +75,7 @@
 				<control type="image">
 						<width>100</width>
 						<height>80</height>
-						<texture>background-shelfbackdrop.png</texture>
+						<texture>masks/discsurface.png</texture>
 						<bordersize>1</bordersize>
 						<bordertexture border="1" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
 						<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
@@ -87,7 +87,7 @@
 					<control type="image">
 						<width>100</width>
 						<height>80</height>
-						<texture>background-shelfbackdrop.png</texture>
+						<texture>masks/discsurface.png</texture>
 						<bordersize>1</bordersize>
 						<bordertexture border="1" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
 						<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
@@ -100,7 +100,7 @@
 			<left>15</left>
 			<width>300</width>
 			<height>184</height>
-			<texture colordiffuse="$INFO[ListItem.Label2]">background-shelfbackdrop.png</texture>
+			<texture colordiffuse="$INFO[ListItem.Label2]">masks/discsurface.png</texture>
 			<animation effect="fade" start="100" end="0" condition="!Control.HasFocus(6)">Conditional</animation>
 		</control>
 		<control type="image">
@@ -129,7 +129,7 @@
                         <width>1-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>background-shelfbackdrop.png</texture>
+                        <texture>masks/discsurface.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="image">
@@ -138,7 +138,7 @@
                         <width>240</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="black">background-shelfbackdrop.png</texture>
+                        <texture colordiffuse="textDisabled">masks/discsurface.png</texture>
                         
                     </control>
                     <control type="label">
@@ -171,7 +171,7 @@
                         <width>1-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>background-shelfbackdrop.png</texture>
+                        <texture>masks/discsurface.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="image">
@@ -180,7 +180,7 @@
                         <width>240</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                        <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                         <colordiffuse>eeffffff</colordiffuse>
                     </control>
                     <control type="label">

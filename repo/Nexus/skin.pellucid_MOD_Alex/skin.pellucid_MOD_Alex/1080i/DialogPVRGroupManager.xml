@@ -28,7 +28,7 @@
                 <posy>0</posy>
                 <width>20-col</width>
                 <height>2-row</height>
-                <texture>background-shelfbackdrop.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -93,7 +93,7 @@
                             <width>4-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                         </control>
                         <control type="label">
                             <posx>24</posx>
@@ -173,7 +173,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                             <width>502</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
                         </control>
@@ -258,7 +258,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                             <width>502</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
                         </control>
@@ -318,7 +318,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                         <width>1-col-textbox</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>background-shelfbackdrop.png</texture>
+                        <texture>masks/discsurface.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                         <include>spinFocusIcon</include>
                     </control>
@@ -328,7 +328,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                         <width>5-col-textbox</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                        <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                     </control>
                     <control type="label">
                         <posx>0</posx>

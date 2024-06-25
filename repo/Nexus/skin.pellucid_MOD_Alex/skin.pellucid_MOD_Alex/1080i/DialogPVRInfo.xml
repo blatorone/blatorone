@@ -188,7 +188,7 @@
                             <width>1-col-textbox</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>background-shelfbackdrop.png</texture>
+                            <texture>masks/discsurface.png</texture>
                             <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
@@ -198,7 +198,7 @@
                             <width>3-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                         </control>
                         <control type="label">
                             <posx>0</posx>

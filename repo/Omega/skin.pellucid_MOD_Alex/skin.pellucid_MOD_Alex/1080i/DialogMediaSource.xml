@@ -19,7 +19,7 @@
                 <posy>0</posy>
                 <width>12-col</width>
                 <height>2-row</height>
-                <texture>background-shelfbackdrop.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -83,7 +83,7 @@
                             <width>1-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>background-shelfbackdrop.png</texture>
+                            <texture>masks/discsurface.png</texture>
                             <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
@@ -156,7 +156,7 @@
                             <width>11-col-gutter</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>ffFFFFFF</colordiffuse>
                         </control>
@@ -271,7 +271,7 @@
                             <width>1-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>background-shelfbackdrop.png</texture>
+                            <texture>masks/discsurface.png</texture>
                             <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
@@ -281,7 +281,7 @@
                             <width>3-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                         </control>
                         <control type="label">
                             <posx>0</posx>

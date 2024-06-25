@@ -18,7 +18,7 @@
                 <posy>0</posy>
                 <width>384</width>
                 <height>1500</height>
-                <texture>background-shelfbackdrop.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -53,8 +53,8 @@
             <control type="button" id="501">
                 <focusedcolor>$VAR[selected]</focusedcolor>
                 <textcolor>$VAR[Home]</textcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
-                <alttexturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</alttexturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+                <alttexturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
                 <width>384</width>
@@ -67,8 +67,8 @@
              <control type="button" id="5">
                 <focusedcolor>$VAR[selected]</focusedcolor>
                 <textcolor>$VAR[Home]</textcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
-                <alttexturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</alttexturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+                <alttexturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
                 <width>384</width>
@@ -83,9 +83,9 @@
                 <focusedcolor>$VAR[selected]</focusedcolor>
                 <textcolor>$VAR[Home]</textcolor>
                 <textwidth>295</textwidth>
-                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                 <texturenofocus>$VAR[selected]</texturenofocus>
-                <alttexturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</alttexturefocus>
+                <alttexturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
                 <width>384</width>
@@ -97,9 +97,9 @@
                 <focusedcolor>$VAR[selected]</focusedcolor>
                 <textcolor>$VAR[Home]</textcolor>
 			    <description>Sort by button</description>
-			    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+			    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                 <texturenofocus>$VAR[selected]</texturenofocus>
-                <alttexturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</alttexturefocus>
+                <alttexturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
                 <width>384</width>
@@ -111,9 +111,9 @@
                 <focusedcolor>$VAR[selected]</focusedcolor>
                 <textcolor>$VAR[Home]</textcolor>
 			    <description>Sort asc</description>
-			    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+			    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                 <texturenofocus>textActive</texturenofocus>
-                <alttexturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</alttexturefocus>
+                <alttexturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</alttexturefocus>
                 <align>center</align>
                 <aligny>center</aligny>
                 <width>384</width>
@@ -161,7 +161,7 @@
                         <posy>0</posy>
                         <width>406</width>
                         <height>2-row</height>
-                        <texture condition="!control.hasfocus(501) | control.hasfocus(2) | !control.hasfocus(3) | !control.hasfocus(4) | !control.hasfocus(5)" colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texture>
+                        <texture condition="!control.hasfocus(501) | control.hasfocus(2) | !control.hasfocus(3) | !control.hasfocus(4) | !control.hasfocus(5)" colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">

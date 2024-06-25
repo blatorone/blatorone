@@ -22,7 +22,7 @@
                 <posy>0</posy>
                 <width>20-col</width>
                 <height>71</height>
-                <texture>background-shelfbackdrop.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -94,7 +94,7 @@
                             <width>16-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>FFFFFFFF</colordiffuse>
                         </control>
@@ -193,7 +193,7 @@
                             <width>4-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>ffFFFFFF</colordiffuse>
                         </control>
@@ -204,7 +204,7 @@
                             <width>4-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>aaFFFFFF</colordiffuse>
                         </control>

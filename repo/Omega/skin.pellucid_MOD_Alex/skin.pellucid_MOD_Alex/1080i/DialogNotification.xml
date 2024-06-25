@@ -21,9 +21,9 @@
                     <posy>0</posy>
                     <width>8-col</width>
                     <height>3-row</height>
-                    <texture>background-shelfbackdrop.png</texture>
+                    <texture>masks/discsurface.png</texture>
                     <colordiffuse>FFFFFFFF</colordiffuse>
-                    <bordertexture colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</bordertexture>
+                    <bordertexture colordiffuse="$VAR[highlight]">masks/discsurface.png</bordertexture>
                     <bordersize>6,0,0,0</bordersize>
                 </control>
                 <control type="label" id="401">

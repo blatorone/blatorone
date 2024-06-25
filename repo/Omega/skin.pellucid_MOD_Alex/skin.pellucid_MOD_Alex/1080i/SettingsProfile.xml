@@ -43,7 +43,7 @@
                 <posy>0</posy>
                 <width>8-col</width>
                 <height>2-row</height>
-                <texture>background-shelfbackdrop.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -72,8 +72,8 @@
                 <posy>372</posy>
                 <width>8-col</width>
                 <height>73</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>textboxInactive</colordiffuse>
+                <texture>masks/discsurface.png</texture>
+                <colordiffuse>black</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
              <control type="label">
@@ -95,7 +95,7 @@
                 <posy>540</posy>
                 <width>8-col</width>
                 <label>20096</label>
-                <texturenofocus colordiffuse="overlay">background-shelfbackdrop.png</texturenofocus>
+                <texturenofocus></texturenofocus>
                 <align>left</align>
                 <onup>5</onup>
                 <ondown>2</ondown>
@@ -110,8 +110,8 @@
                 <onup>2</onup>
                 <ondown>4</ondown>
                 <font>itemSubTitle</font>
-                <texturenofocus colordiffuse="overlay">background-shelfbackdrop.png</texturenofocus>
-                <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                <texturenofocus></texturenofocus>
+                <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                 <label>$LOCALIZE[33084]: [COLOR $VAR[selected]]$INFO[System.ProfileAutoLogin][/COLOR]</label>
                 <enable>!System.HasLoginScreen</enable>
             </control>
@@ -160,7 +160,7 @@
                         <width>7-col</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                        <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                         <bordersize>0</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>
                     </control>

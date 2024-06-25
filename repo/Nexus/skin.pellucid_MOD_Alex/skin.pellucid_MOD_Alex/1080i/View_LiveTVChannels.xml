@@ -20,7 +20,7 @@
 						<width>955</width>
 						<height>135</height>
 						<aspectratio>stretch</aspectratio>
-						<texture border="0">background-shelfbackdrop.png</texture>
+						<texture border="0">masks/discsurface.png</texture>
 						<colordiffuse>grey</colordiffuse>
 					</control>
 					<control type="image">
@@ -52,8 +52,8 @@
                         <posy>83</posy>
                         <width>66</width>
                         <height>15</height>
-                        <texturebg colordiffuse="overlay">colors/white.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
                         <info>ListItem.Progress</info>
                     </control>
 					<control type="label">
@@ -88,7 +88,7 @@
 						<width>955</width>
 						<height>135</height>
 						<aspectratio>stretch</aspectratio>
-						<texture border="0">background-shelfbackdrop.png</texture>
+						<texture border="0">masks/discsurface.png</texture>
 						<colordiffuse>$VAR[highlight]</colordiffuse>
 					</control>
 					<control type="image">
@@ -121,8 +121,8 @@
                         <posy>83</posy>
                         <width>66</width>
                         <height>15</height>
-                        <texturebg colordiffuse="overlay">colors/white.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
                         <info>ListItem.Progress</info>
                     </control>
 		
@@ -204,8 +204,8 @@
                         <posy>185</posy>
                         <width>875</width>
                         <height>12</height>
-                        <texturebg colordiffuse="overlay">colors/white.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
                         <info>ListItem.Progress</info>
             		</control>
 					<control type="grouplist">

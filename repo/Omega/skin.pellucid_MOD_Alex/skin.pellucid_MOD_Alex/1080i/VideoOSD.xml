@@ -241,8 +241,8 @@
                         <posy>84</posy>
                         <width>7-col</width>
                         <height>6</height>
-                        <texturebg colordiffuse="overlay">colors/white.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
                         <info>Player.Progress</info>
                     </control>
                     <control type="label">
@@ -393,7 +393,7 @@
                         <width>1-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>background-shelfbackdrop.png</texture>
+                        <texture>masks/discsurface.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="label">
@@ -412,7 +412,7 @@
                 <content>
 					<item>
                         <description>VolumeDown</description>
-                        <label2> −</label2>
+                        <label2></label2>
                         <thumb></thumb>
                         <onclick>VolumeDown</onclick>
                         
@@ -480,7 +480,7 @@
                     </item>
 					<item>
                         <description>VolumeUp</description>
-                        <label2> +</label2>
+                        <label2></label2>
                         <thumb></thumb>
                         <onclick>VolumeUp</onclick>
                     </item>
@@ -538,7 +538,7 @@
                         <width>1-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>background-shelfbackdrop.png</texture>
+                        <texture>masks/discsurface.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="image">
@@ -547,7 +547,7 @@
                         <width>240</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                        <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                         <colordiffuse>eeffffff</colordiffuse>
                     </control>
                     <control type="label">

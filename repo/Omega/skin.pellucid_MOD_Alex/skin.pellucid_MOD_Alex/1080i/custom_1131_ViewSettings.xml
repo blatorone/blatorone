@@ -22,7 +22,7 @@
                 <posy></posy>
                 <width>384</width>
                 <height>1500</height>
-                <texture>background-shelfbackdrop.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -127,8 +127,8 @@
                 <label2></label2>
                 <textcolor>$VAR[selected]</textcolor>
                 <focusedcolor>$VAR[selected]</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturenofocus>
                 <textoffsetx>2</textoffsetx>
 				<onclick>Dialog.Close(1131)</onclick>
 				<visible>skin.hassetting(Touch) + window.isactive(1131)</visible>

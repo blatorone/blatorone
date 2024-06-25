@@ -8,7 +8,7 @@
                 <posy></posy>
                 <width>384</width>
                 <height>1500</height>
-                <texture>background-shelfbackdrop.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -66,7 +66,7 @@
 						<control type="image">
 							<width>col-5-begin</width>
                         	<height>2-row</height>
-							<texture colordiffuse="$VAR[highlight]" border="4">background-shelfbackdrop.png</texture>
+							<texture colordiffuse="$VAR[highlight]" border="4">masks/discsurface.png</texture>
 							<animation effect="fade" start="100" end="0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
 						</control>
 						<control type="label">
@@ -199,8 +199,8 @@
                 <label2></label2>
                 <textcolor>$VAR[selected]</textcolor>
                 <focusedcolor>$VAR[selected]</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturenofocus>
                 <textoffsetx>2</textoffsetx>
 				<onclick>Dialog.Close(1130)</onclick>
 				<visible>skin.hassetting(Touch) + [controlgroup(9000).hasfocus | window.isactive(1130)] + !window.isactive(1132) + !window.isactive(MyMusicNav)</visible>

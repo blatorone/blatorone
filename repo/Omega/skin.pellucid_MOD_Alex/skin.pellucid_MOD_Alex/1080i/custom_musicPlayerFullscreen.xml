@@ -108,8 +108,8 @@
 		                <posy>195</posy>
 		                <width>6-col</width>
 		                <height>12</height>
-		                <texturebg colordiffuse="overlay">colors/white.png</texturebg>
-		                <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+		                <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
 		                <info>player.progress</info>
 		            </control>
 					<control type="label">
@@ -188,7 +188,7 @@
 		                        <width>1-col</width>
 		                        <height>69</height>
 		                        <aspectratio>stretch</aspectratio>
-		                        <texture colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texture>
+		                        <texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
 		                    </control>
 		                    <control type="label">
 		                        <posx>0</posx>
@@ -302,7 +302,7 @@
 		                        <width>1-col</width>
 		                        <height>69</height>
 		                        <aspectratio>stretch</aspectratio>
-		                        <texture colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texture>
+		                        <texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
 		                    </control>
 		                    <control type="label">
 		                        <posx>0</posx>
@@ -348,7 +348,7 @@
 		                <height>69</height>
 						<label></label>
 						<font></font>
-                    	<texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    	<texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
 						<texturenofocus />
 						<onleft>Control.SetFocus(8001,7)</onleft>
 						<onright>8004</onright>
@@ -380,7 +380,7 @@
 					<textureradiooffnofocus>osd/fullscreen/buttons/random-off.png</textureradiooffnofocus>
 					<textureradioondisabled colordiffuse="$VAR[Home]">osd/fullscreen/buttons/random-on.png</textureradioondisabled>
 					<textureradiooffdisabled colordiffuse="$VAR[Home]">osd/fullscreen/buttons/random-off.png</textureradiooffdisabled>
-                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
 					<width>1-col</width>
 		            <height>69</height>
 					<radiowidth>56</radiowidth>

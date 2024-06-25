@@ -28,7 +28,7 @@
                 <posy>0</posy>
                 <width>12-col</width>
                 <height>2-row</height>
-                <texture>background-shelfbackdrop.png</texture>
+                <texture>masks/discsurface.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -56,7 +56,7 @@
                 <posy>84</posy>
                 <control type="button" id="15">
                     <description>Rule Field</description>
-                    <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
                     <posx>12</posx>
                     <posy>0</posy>
                     <width>6-col-gutter</width>
@@ -66,7 +66,7 @@
                 </control>
                 <control type="button" id="16">
                     <description>Rule operator</description>
-                    <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
                     <posx>6-col</posx>
                     <posy>0</posy>
                     <width>420</width>
@@ -97,8 +97,8 @@
                     <align>center</align>
                     <aligny>center</aligny>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
-                    <texturenofocus>background-shelfbackdrop.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturenofocus>
                     <label></label>
                     <font>symbolLarge</font>
                     <textcolor>$VAR[Home]</textcolor>
@@ -109,13 +109,30 @@
                 </control>
                 <!--OK / Cancel buttons-->
                 <control type="panel" id="9002">
-                    <posx>204</posx>
+                    <posx>100</posx>
                     <posy>168</posy>
-                    <width>9-col</width>
+                    <width>10-col</width>
                     <height>2-row</height>
                     <onup>17</onup>
                     <orientation>horizontal</orientation>
-                    <itemlayout width="3-col" height="2-row">
+                    <itemlayout width="230" height="2-row">
+                        <control type="image">
+                            <posx>1-col</posx>
+                            <posy>0</posy>
+                            <width>150</width>
+                            <height>2-row</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture colordiffuse="black">masks/discsurface.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1-col-textbox</width>
+                            <height>2-row</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>masks/discsurface.png</texture>
+                            <colordiffuse>$VAR[highlight]</colordiffuse>
+                        </control>
                         <control type="label">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -138,24 +155,24 @@
                             <label>$INFO[ListItem.label]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="3-col" height="2-row">
+                    <focusedlayout width="230" height="2-row">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>1-col-textbox</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>background-shelfbackdrop.png</texture>
+                            <texture>masks/discsurface.png</texture>
                             <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
                         <control type="image">
                             <posx>1-col</posx>
                             <posy>0</posy>
-                            <width>2-col</width>
+                            <width>150</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                         </control>
                         <control type="label">
                             <posx>0</posx>
