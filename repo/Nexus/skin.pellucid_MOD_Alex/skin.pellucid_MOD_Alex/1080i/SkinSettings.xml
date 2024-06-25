@@ -285,7 +285,7 @@
 
                 <!--Apps-->
                 <control type="label" id="1002">
-                        <visible>Container(8000).Hasfocus(4) + $EXP[hasWeather]  + !Skin.HasSetting(settings) | System.Platform.Android + $EXP[hasWeather]  + !Skin.HasSetting(settings)</visible>
+                        <visible>Container(8000).Hasfocus(4) + $EXP[hasWeather] + !Skin.HasSetting(settings) | System.Platform.Android + Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
 						<posx>12</posx>
 						<posy>0</posy>
 						<width>14-col</width>
