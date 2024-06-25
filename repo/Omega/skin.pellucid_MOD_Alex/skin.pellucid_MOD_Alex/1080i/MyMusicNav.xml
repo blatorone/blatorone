@@ -69,7 +69,7 @@
                     			<posy>-3</posy>
                     			<width>fullscreenwidth</width>
                     			<height>136</height>
-                    			<texture>discsurface30%.png</texture>
+                    			<texture>masks/discsurface30%.png</texture>
                     			<colordiffuse>$VAR[highlight]</colordiffuse>
                     			<aspectratio>stretch</aspectratio>
                 			</control>

@@ -46,7 +46,7 @@
                         <width>1-col-textbox</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="$VAR[highlight]">discsurface50%.png</texture>
+                        <texture colordiffuse="$VAR[highlight]">masks/discsurface50%.png</texture>
                     </control>
                     <control type="image">
                         <posx>1-col</posx>

@@ -17,7 +17,7 @@
                 <posy>0</posy>
                 <width>1-col-textbox</width>
                 <height>54</height>
-                <texture>discsurface30%.png</texture>
+                <texture>masks/discsurface30%.png</texture>
                 <colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
             </control>
             <control type="image">
@@ -28,7 +28,7 @@
                 <posy>0</posy>
                 <width>1-col-textbox</width>
                 <height>54</height>
-                <texture>discsurface30%.png</texture>
+                <texture>masks/discsurface30%.png</texture>
                 <colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
             </control>
 			<control type="image">
@@ -37,7 +37,7 @@
                 <posy>0</posy>
                 <width>1195</width>
                 <height>54</height>
-                <texture>discsurface30%.png</texture>
+                <texture>masks/discsurface30%.png</texture>
                 <colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
             </control>
             <control type="image">
@@ -46,7 +46,7 @@
                 <posy>0</posy>
                 <width>1393</width>
                 <height>54</height>
-                <texture>discsurface30%.png</texture>
+                <texture>masks/discsurface30%.png</texture>
                 <colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
             </control>
             <control type="label">

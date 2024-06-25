@@ -64,7 +64,7 @@
                     <posy>84</posy>
                     <width>18-col</width>
                     <height>71</height>
-                    <texture colordiffuse="$VAR[highlight_Shadow]">discsurface50%.png</texture>
+                    <texture colordiffuse="$VAR[highlight_Shadow]">masks/discsurface50%.png</texture>
                     <aspectratio>stretch</aspectratio>
                     
                 </control>
