@@ -5,7 +5,7 @@
         <control type="button" id="506">
             <description>Search</description>
             <visible>System.HasAddon(script.globalsearch)</visible>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>137</label>
@@ -14,7 +14,7 @@
         <control type="button" id="3">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort by</description>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
@@ -26,8 +26,8 @@
         <control type="togglebutton" id="4">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort direction</description>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
-            <alttexturefocus colordiffuse="$VAR[highlight]">colors/white.png</alttexturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+            <alttexturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</alttexturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <label>31109</label>
             <altlabel>31110</altlabel>
@@ -40,7 +40,7 @@
         <control type="button" id="509">
             <visible>[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml)] + PVR.HasTVChannels</visible>
             <description>PVR Channel Group</description>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31222</label>
@@ -51,14 +51,14 @@
         <control type="button" id="508">
             <visible>[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml)] + PVR.HasTVChannels</visible>
             <description>PVR Timers</description>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31087</label>
             <onclick>ActivateWindow(TVTimerRules)</onclick>
         </control>
         <control type="button" id="507">
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>653</label>
@@ -68,7 +68,7 @@
             <description>Watched Toggle</description>
             <label>31195</label>
             <width>12-col</width>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <textureradioonfocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonfocus>
             <textureradioofffocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradioofffocus>
@@ -78,7 +78,7 @@
             <description>Unlock Shares</description>
             <label>20336</label>
             <width>12-col</width>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <textureradioonfocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonfocus>
             <textureradioofffocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradioofffocus>
@@ -89,7 +89,7 @@
         </control>
 		<control type="button" id="13">
             <description>Edit video menu</description>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31172</label>
@@ -100,7 +100,7 @@
     <include name="musicSideMenu">
         <control type="button" id="553">
             <description>Playlist</description>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31123</label>
@@ -109,7 +109,7 @@
 		<control type="button" id="506">
             <description>Search</description>
             <visible>System.HasAddon(script.globalsearch)</visible>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>137</label>
@@ -120,7 +120,7 @@
             <description>Sort by</description>
             <width>12-col</width>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
             <onclick condition="window.isactive(music)">sendclick(music,3)</onclick>
 			<onclick condition="window.isactive(radiochannels)">sendclick(radiochannels,3)</onclick>
@@ -134,8 +134,8 @@
             <altlabel>31110</altlabel>
             <width>12-col</width>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
-            <alttexturefocus colordiffuse="$VAR[highlight]">colors/white.png</alttexturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+            <alttexturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</alttexturefocus>
             <onclick condition="window.isactive(music)">sendclick(music,4)</onclick>
 			<onclick condition="window.isactive(radiochannels)">sendclick(radiochannels,4)</onclick>
 			<onclick condition="window.isactive(radiorecordings)">sendclick(radiorecordings,4)</onclick>
@@ -144,7 +144,7 @@
         <control type="button" id="509">
 		  	<visible>[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml)] + PVR.HasRadioChannels</visible>
             <description>PVR Channel Group</description>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31222</label>
@@ -153,7 +153,7 @@
         <control type="button" id="508">
 		  	<visible>[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml)] + PVR.HasRadioChannels</visible>
             <description>PVR Timers</description>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31087</label>
@@ -162,7 +162,7 @@
         <control type="button" id="504">
             <width>12-col</width>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <label>653</label>
             <onclick>UpdateLibrary(music)</onclick>
         </control>
@@ -171,7 +171,7 @@
             <description>Shuffle</description>
             <width>12-col</width>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <textureradioonfocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonfocus>
             <textureradioofffocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradioofffocus>
             <label>191</label>
@@ -180,7 +180,7 @@
         </control>
 		<control type="button" id="14">
             <description>Edit music menu</description>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31173</label>
@@ -195,7 +195,7 @@
             <description>Sort by</description>
             <width>12-col</width>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <label>103</label>
             <onclick>sendclick(pictures,3)</onclick>
         </control>
@@ -206,13 +206,13 @@
             <altlabel>31110</altlabel>
             <width>12-col</width>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
-            <alttexturefocus colordiffuse="$VAR[highlight]">colors/white.png</alttexturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+            <alttexturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</alttexturefocus>
             <onclick>sendclick(pictures,4)</onclick>
         </control>
 		<control type="button" id="17">
             <description>Edit pictures menu</description>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31174</label>
@@ -223,7 +223,7 @@
     <include name="addonsSideMenu">	
         <control type="radiobutton" id="7">
             <width>12-col</width>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <textureradiofocus></textureradiofocus>
             <textureradionofocus></textureradionofocus>
@@ -234,7 +234,7 @@
         </control>
         <control type="radiobutton" id="8">
             <width>12-col</width>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <textureradiofocus></textureradiofocus>
             <textureradionofocus></textureradionofocus>
@@ -244,7 +244,7 @@
             <onclick>sendclick(addonbrowser,8)</onclick>
         </control>
         <control type="button" id="9">
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>24034</label>
@@ -256,7 +256,7 @@
         <control type="button" id="3">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort by</description>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
@@ -265,8 +265,8 @@
         <control type="togglebutton" id="4">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort direction</description>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
-            <alttexturefocus colordiffuse="$VAR[highlight]">colors/white.png</alttexturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+            <alttexturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</alttexturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <label>31109</label>
             <altlabel>31110</altlabel>
@@ -275,7 +275,7 @@
         </control>
 		<control type="button" id="17">
             <description>Edit Games menu</description>
-            <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <width>12-col</width>
             <label>31233</label>

@@ -241,8 +241,8 @@
                         <posy>84</posy>
                         <width>7-col</width>
                         <height>6</height>
-                        <texturebg colordiffuse="77000000">colors/black.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <texturebg colordiffuse="77000000">background-shelfbackdrop.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</midtexture>
                         <info>Player.Progress</info>
                     </control>
                     <control type="label">
@@ -393,7 +393,7 @@
                         <width>1-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>colors/white.png</texture>
+                        <texture>background-shelfbackdrop.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="label">
@@ -538,7 +538,7 @@
                         <width>1-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>Colors/listselect_fo.png</texture>
+                        <texture>background-shelfbackdrop.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="image">
@@ -547,7 +547,7 @@
                         <width>240</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                        <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
                         <colordiffuse>eeffffff</colordiffuse>
                     </control>
                     <control type="label">

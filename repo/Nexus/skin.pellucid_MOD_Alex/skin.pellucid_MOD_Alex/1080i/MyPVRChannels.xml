@@ -46,7 +46,7 @@
 								<top>0</top>
 								<width>298</width>
 								<height>49</height>
-								<texture colordiffuse="overlay">colors/white.png</texture>
+								<texture colordiffuse="overlay">background-shelfbackdrop.png</texture>
 							</control>
 							<control type="label">
 								<left>5</left>
@@ -65,7 +65,7 @@
 								<top>0</top>
 								<width>298</width>
 								<height>50</height>
-								<texture colordiffuse="$VAR[selected]">colors/white.png</texture>
+								<texture colordiffuse="$VAR[selected]">background-shelfbackdrop.png</texture>
 								<animation effect="fade" end="30" condition="true">Conditional</animation>
 								<visible>!Control.HasFocus(11)</visible>
 							</control>
@@ -74,7 +74,7 @@
 								<top>0</top>
 								<width>298</width>
 								<height>50</height>
-								<texture colordiffuse="$VAR[highlight]">colors/white.png</texture>
+								<texture colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texture>
 								<animation effect="fade" end="30" condition="true">Conditional</animation>
 								<visible>Control.HasFocus(11)</visible>
 							</control>
@@ -131,7 +131,7 @@
                             <width>400</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/black.png</texture>
+                            <texture>background-shelfbackdrop.png</texture>
                             <colordiffuse>overlay</colordiffuse>
                         </control>
                         <control type="label">
@@ -165,7 +165,7 @@
                             <width>1-col-textbox</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture>background-shelfbackdrop.png</texture>
                             <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
@@ -175,7 +175,7 @@
                             <width>325</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture>background-shelfbackdrop.png</texture>
                         </control>
                         <control type="label">
                             <posx>0</posx>

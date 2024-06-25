@@ -76,7 +76,7 @@
                 <texture>$INFO[listitem.art(poster)]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordertexture border="3">background-shelfbackdrop.png</bordertexture>
                 <bordersize>3</bordersize>
             </control>
             <control type="image">
@@ -87,7 +87,7 @@
                 <texture>$INFO[listitem.art(fanart)]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordertexture border="3">background-shelfbackdrop.png</bordertexture>
                 <bordersize>3</bordersize>
             </control>
             <control type="panel" id="50">
@@ -104,7 +104,7 @@
                         <height>300</height>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <texture border="0" fallback="colors/offblack.png">$INFO[listitem.thumb]</texture>
-                        <bordertexture border="3">colors/white.png</bordertexture>
+                        <bordertexture border="3">background-shelfbackdrop.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>
@@ -140,7 +140,7 @@
                 <texture>$INFO[container(99999).ListItemNoWrap(0).filenameandpath,,]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordertexture border="3">background-shelfbackdrop.png</bordertexture>
                 <bordersize>3</bordersize>
             </control>
             <control type="image">
@@ -160,7 +160,7 @@
                 <texture>$INFO[container(99999).ListItemNoWrap(1).filenameandpath,,]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordertexture border="3">background-shelfbackdrop.png</bordertexture>
                 <bordersize>3</bordersize>
             </control>
             <control type="image">
@@ -171,7 +171,7 @@
                 <texture>$INFO[container(99999).ListItemNoWrap(2).filenameandpath,,]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordertexture border="3">background-shelfbackdrop.png</bordertexture>
                 <bordersize>3</bordersize>
             </control>
             <control type="image">
@@ -182,7 +182,7 @@
                 <texture>$INFO[container(99999).ListItemNoWrap(3).filenameandpath,,]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordertexture border="3">background-shelfbackdrop.png</bordertexture>
                 <bordersize>3</bordersize>
             </control>
             <control type="image">
@@ -193,7 +193,7 @@
                 <texture>$INFO[container(99999).ListItemNoWrap(4).filenameandpath,,]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordertexture border="3">background-shelfbackdrop.png</bordertexture>
                 <bordersize>3</bordersize>
             </control>
         </control>
@@ -207,60 +207,60 @@
             <control type="button" id="999981">
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999982">
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999983">
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999984">
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999985">
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(0).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999986">
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(0).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999987">
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(0).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999988">
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(0).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
                 <onback>8000</onback>
             </control>
             <control type="button" id="999989">
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(0).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1-col</width>
                 <height>12</height>
-                <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
                 <onback>8000</onback>
             </control>
         </control>

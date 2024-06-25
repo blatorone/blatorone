@@ -28,7 +28,7 @@
                 <posy>-200</posy>
                 <width>584</width>
                 <height>1500</height>
-                <texture>colors/white.png</texture>
+                <texture>background-shelfbackdrop.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -75,7 +75,7 @@
                         <posy>0</posy>
                         <width>col-5-begin</width>
                         <height>2-row</height>
-                        <texture colordiffuse="$INFO[Skin.String(highlight_Shadow_color)]">Colors/white.png</texture>
+                        <texture colordiffuse="$INFO[Skin.String(highlight_Shadow_color)]">background-shelfbackdrop.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label"> 

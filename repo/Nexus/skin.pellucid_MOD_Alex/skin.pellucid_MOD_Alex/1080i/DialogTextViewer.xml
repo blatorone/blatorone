@@ -16,7 +16,7 @@
                 <posy>0</posy>
                 <width>16-col</width>
                 <height>2-row</height>
-                <texture>colors/white.png</texture>
+                <texture>background-shelfbackdrop.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>

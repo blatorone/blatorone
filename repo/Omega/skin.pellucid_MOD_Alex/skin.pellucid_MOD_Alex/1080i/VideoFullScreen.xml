@@ -69,7 +69,7 @@
                 <posy>-12</posy>
                 <width>8-col</width>
                 <height>102</height>
-                <texture>colors/white.png</texture>
+                <texture>background-shelfbackdrop.png</texture>
                 <colordiffuse>eeFFFFFF</colordiffuse>
             </control>
             <control type="label" id="23">

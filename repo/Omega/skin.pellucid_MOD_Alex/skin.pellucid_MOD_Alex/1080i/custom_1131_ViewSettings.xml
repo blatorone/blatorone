@@ -22,7 +22,7 @@
                 <posy></posy>
                 <width>384</width>
                 <height>1500</height>
-                <texture>colors/white.png</texture>
+                <texture>background-shelfbackdrop.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -111,18 +111,7 @@
 				<!-- Button IDs (1550-1559) -->
 				<!-- InfoPopup Delay -->
 				
-				<!-- HD/SD/3D Indicators -->
-				<control type="button" id="1551">
-					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31607]</label>
-					<label2>[COLOR $VAR[highlight]]$VAR[DisableHDIndicatorsLabelVar][/COLOR]</label2>
-					<onclick condition="String.IsEqual(Window(Home).Property(actualViewtype),List)">Skin.ToggleSetting(noindicatorlist)</onclick>
-					<onclick condition="String.IsEqual(Window(Home).Property(actualViewtype),FanartList)">Skin.ToggleSetting(noindicatorfanartlist)</onclick>
-					<onclick condition="String.IsEqual(Window(Home).Property(actualViewtype),Wall)">Skin.ToggleSetting(noindicatorwall)</onclick>
-					<onclick condition="String.IsEqual(Window(Home).Property(actualViewtype),Gallery)">Skin.ToggleSetting(noindicatorgallery)</onclick>
-					<onclick condition="String.IsEqual(Window(Home).Property(actualViewtype),BigList)">Skin.ToggleSetting(noindicatorbiglist)</onclick>
-					
-				</control>
+				
 
 			</control>
 		</control>
@@ -138,8 +127,8 @@
                 <label2></label2>
                 <textcolor>$VAR[selected]</textcolor>
                 <focusedcolor>$VAR[selected]</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturenofocus>
                 <textoffsetx>2</textoffsetx>
 				<onclick>Dialog.Close(1131)</onclick>
 				<visible>skin.hassetting(Touch) + window.isactive(1131)</visible>

@@ -43,7 +43,7 @@
                     <posy>0</posy>
                     <width>8-col</width>
                     <height>2-row</height>
-                    <texture>colors/white.png</texture>
+                    <texture>background-shelfbackdrop.png</texture>
                     <colordiffuse>$VAR[highlight]</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -74,7 +74,7 @@
                     <label>31286</label>
 					<onclick>SetProperty(Reset.Color,highlight_color)</onclick>
 					<onclick>Skin.SetColor(highlight_color, 31286, ffad1e4e, special://skin/extras/colors.xml)</onclick>
-					<texturefocus colordiffuse="$VAR[selected_box]">Colors/listselect_fo.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
                     <textureradioonfocus colordiffuse="$VAR[highlight]">Colors/white.png</textureradioonfocus>
                     <textureradioonnofocus colordiffuse="$VAR[highlight]">Colors/white.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="$VAR[highlight]">Colors/white.png</textureradioofffocus>
@@ -88,7 +88,7 @@
                     <label>31287</label>
 					<onclick>SetProperty(Reset.Color,highlight_Shadow_color)</onclick>
 					<onclick>Skin.SetColor(highlight_Shadow_color, 31287, 77ad1e4e, special://skin/extras/colors.xml)</onclick>
-					<texturefocus colordiffuse="$VAR[selected_box]">Colors/listselect_fo.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
                     <textureradioonfocus colordiffuse="$VAR[highlight_Shadow]">Colors/white.png</textureradioonfocus>
                     <textureradioonnofocus colordiffuse="$VAR[highlight_Shadow]">Colors/white.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="$VAR[highlight_Shadow]">Colors/white.png</textureradioofffocus>
@@ -102,7 +102,7 @@
                     <label>31288</label>
 					<onclick>SetProperty(Reset.Color,Home_color)</onclick>
 					<onclick>Skin.SetColor(Home_color, 31288, fff0f0f0, special://skin/extras/colors.xml)</onclick>
-					<texturefocus colordiffuse="$VAR[selected_box]">Colors/listselect_fo.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
                     <textureradioonfocus colordiffuse="$VAR[Home]">Colors/white.png</textureradioonfocus>
                     <textureradioonnofocus colordiffuse="$VAR[Home]">Colors/white.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="$VAR[Home]">Colors/white.png</textureradioofffocus>
@@ -116,7 +116,7 @@
                     <label>31289</label>
 					<onclick>SetProperty(Reset.Color,Selected_color)</onclick>
 					<onclick>Skin.SetColor(Selected_color, 31289, FFFFFF00, special://skin/extras/colors.xml)</onclick>
-					<texturefocus colordiffuse="$VAR[selected_box]">Colors/listselect_fo.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
                     <textureradioonfocus colordiffuse="$VAR[selected]">Colors/white.png</textureradioonfocus>
                     <textureradioonnofocus colordiffuse="$VAR[selected]">Colors/white.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="$VAR[selected]">Colors/white.png</textureradioofffocus>
@@ -130,7 +130,7 @@
                     <label>31290</label>
 					<onclick>SetProperty(Reset.Color,Selected_box_color)</onclick>
 					<onclick>Skin.SetColor(Selected_box_color, 31290, 7fffffff, special://skin/extras/colors.xml)</onclick>
-					<texturefocus colordiffuse="$VAR[selected_box]">Colors/listselect_fo.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
                     <textureradioonfocus colordiffuse="$VAR[selected_box]">Colors/white.png</textureradioonfocus>
                     <textureradioonnofocus colordiffuse="$VAR[selected_box]">Colors/white.png</textureradioonnofocus>
                     <textureradioofffocus colordiffuse="$VAR[selected_box]">Colors/white.png</textureradioofffocus>
@@ -140,8 +140,8 @@
                 </control>
                 <control type="togglebutton" id="6">
 					<width>8-col</width>
-                    <texturefocus colordiffuse="$VAR[selected_box]">Colors/listselect_fo.png</texturefocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">Colors/listselect_fo.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
                     <label>$LOCALIZE[13007]</label>
 					<onclick>activateWindow(1113)</onclick>
                     

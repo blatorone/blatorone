@@ -730,7 +730,27 @@
 				</control>
 				<include>ShowCaseRollingMovieSetDiscs</include>
 			</control>
-			
+			<control type="group">
+				<include>OpenCaseAnimation</include>
+				<control type="multiimage">
+					<left>16</left>
+					<top>10</top>
+					<width>264</width>
+					<height>394</height>
+					<aspectratio>scale</aspectratio>
+					<fadetime>200</fadetime>
+					<imagepath background="true" fallback="DefaultVideo.png">$VAR[ShowcaseFocusedItem0Var]</imagepath>
+				</control>
+				<control type="image">
+					<texture background="true">$VAR[CaseTypePathVar]$VAR[GlobalCaseVar]</texture>
+					<include>MovieShowcaseCase</include>
+					<visible>![ListItem.IsCollection + Skin.HasSetting(Disable.ShowCaseSetCases)]</visible>
+				</control>
+				<control type="image">
+					<texture background="true">$VAR[IconOverlay0Var]</texture>
+					<include>WatchedOverlayShowCase</include>
+				</control>
+			</control>
 			<control type="group">
 				<left>28</left>
 				<top>22</top>

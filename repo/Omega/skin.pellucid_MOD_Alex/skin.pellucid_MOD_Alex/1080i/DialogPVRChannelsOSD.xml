@@ -140,7 +140,7 @@
                         <width>8-col</width>
                         <height>105</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="0">colors/white.png</texture>
+                        <texture border="0">background-shelfbackdrop.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
 					<control type="image">

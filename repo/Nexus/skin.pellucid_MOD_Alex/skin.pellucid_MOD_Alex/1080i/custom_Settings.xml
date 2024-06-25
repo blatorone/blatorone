@@ -41,7 +41,7 @@
                 <posy>0</posy>
                 <width>18-col</width>
                 <height>2-row</height>
-                <texture>colors/white.png</texture>
+                <texture>background-shelfbackdrop.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -87,7 +87,7 @@
                             <width>287</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
                         </control>
                         <control type="label">
                             <posx>24</posx>

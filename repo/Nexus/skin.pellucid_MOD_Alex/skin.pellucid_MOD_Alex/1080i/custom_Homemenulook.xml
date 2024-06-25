@@ -73,7 +73,7 @@
                     <textureradioonnofocus></textureradioonnofocus>
                     <textureradioofffocus></textureradioofffocus>
                     <textureradiooffnofocus></textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
                     <label>[COLOR $VAR[selected]]$LOCALIZE[31262][/COLOR]</label>
                     <onclick>Skin.ToggleSetting(homemenugrid)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>
@@ -88,7 +88,7 @@
                     <textureradioonnofocus></textureradioonnofocus>
                     <textureradioofffocus></textureradioofffocus>
                     <textureradiooffnofocus></textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
                     <label>$LOCALIZE[31262]</label>
                     <onclick>Skin.ToggleSetting(homemenugrid)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>
@@ -103,7 +103,7 @@
                     <textureradioonnofocus></textureradioonnofocus>
                     <textureradioofffocus></textureradioofffocus>
                     <textureradiooffnofocus></textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
                     <label>[COLOR $VAR[selected]]$LOCALIZE[31263][/COLOR]</label>
                     <onclick>Skin.ToggleSetting(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuside)">Skin.Reset(homemenuside)</onclick>
@@ -118,7 +118,7 @@
                     <textureradioonnofocus></textureradioonnofocus>
                     <textureradioofffocus></textureradioofffocus>
                     <textureradiooffnofocus></textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
                     <label>$LOCALIZE[31263]</label>
                     <onclick>Skin.ToggleSetting(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuside)">Skin.Reset(homemenuside)</onclick>
@@ -133,7 +133,7 @@
                     <textureradioonnofocus></textureradioonnofocus>
                     <textureradioofffocus></textureradioofffocus>
                     <textureradiooffnofocus></textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
                     <label>[COLOR $VAR[selected]]$LOCALIZE[31264][/COLOR]</label>
                     <onclick>Skin.ToggleSetting(homemenuside)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>
@@ -149,7 +149,7 @@
                     <textureradioonnofocus></textureradioonnofocus>
                     <textureradioofffocus></textureradioofffocus>
                     <textureradiooffnofocus></textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
                     <label>$LOCALIZE[31264]</label>
                     <onclick>Skin.ToggleSetting(homemenuside)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>

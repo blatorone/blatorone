@@ -43,7 +43,7 @@
                 <posy>-60</posy>
                 <width>18-col</width>
                 <height>2-row</height>
-                <texture>colors/white.png</texture>
+                <texture>background-shelfbackdrop.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -100,7 +100,7 @@
                             <height>4-col-gutter</height>
                             <aspectratio>scale</aspectratio>
                             <texture>$INFO[Listitem.thumb]</texture>
-                            <bordertexture border="6">colors/white.png</bordertexture>
+                            <bordertexture border="6">background-shelfbackdrop.png</bordertexture>
                             <bordersize>6</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
                         </control>
@@ -193,7 +193,7 @@
                             <width>1-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture>background-shelfbackdrop.png</texture>
                             <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
@@ -203,7 +203,7 @@
                             <width>5-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
                         </control>
                         <control type="label">
                             <posx>0</posx>

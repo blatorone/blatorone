@@ -52,7 +52,7 @@
                 <posy>0</posy>
                 <width>18-col</width>
                 <height>2-row</height>
-                <texture>colors/white.png</texture>
+                <texture>background-shelfbackdrop.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -72,7 +72,7 @@
                 <posx>0</posx>
                 <posy>624</posy>
                 <font>smallStrong</font>
-                <texturenofocus colordiffuse="FFFFFF">colors/white.png</texturenofocus>
+                <texturenofocus colordiffuse="FFFFFF">background-shelfbackdrop.png</texturenofocus>
                 <label>[B][COLOR $VAR[selected]]$LOCALIZE[21417]:[/COLOR][/B] $INFO[control.getlabel(20)]</label>
                 <onclick>SettingsLevelChange</onclick>
                 <onup>3</onup>
@@ -142,7 +142,7 @@
                 <description>Default Category Button</description>
                 <width>276</width>
                 <font>buttonTitle</font>
-                <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
                 <texturenofocus></texturenofocus>
             </control>
             <control type="button" id="20">

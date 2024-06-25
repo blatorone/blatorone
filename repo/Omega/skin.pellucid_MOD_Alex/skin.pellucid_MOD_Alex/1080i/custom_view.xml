@@ -23,7 +23,7 @@
                 <posy>0</posy>
                 <width>500</width>
                 <height>2-row</height>
-                <texture>colors/white.png</texture>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>

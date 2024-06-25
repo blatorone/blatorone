@@ -105,8 +105,8 @@
                 <posy>84</posy>
                 <width>20-col</width>
                 <height>6</height>
-                <texturesliderbar colordiffuse="00FFFFFF">colors/white.png</texturesliderbar>
-                <textureslidernib>colors/white.png</textureslidernib>
+                <texturesliderbar colordiffuse="00FFFFFF">background-shelfbackdrop.png</texturesliderbar>
+                <textureslidernib>background-shelfbackdrop.png</textureslidernib>
                 <orientation>horizontal</orientation>
             </control>
 			<control type="slider" id="403">
@@ -114,9 +114,9 @@
 				<posy>84</posy>
 				<width>20-col</width>
 				<height>6</height>
-				<texturesliderbar colordiffuse="00FFFFFF">colors/white.png</texturesliderbar>
-				<textureslidernib>colors/white.png</textureslidernib>
-				<textureslidernibfocus>colors/white.png</textureslidernibfocus>
+				<texturesliderbar colordiffuse="00FFFFFF">background-shelfbackdrop.png</texturesliderbar>
+				<textureslidernib>background-shelfbackdrop.png</textureslidernib>
+				<textureslidernibfocus>background-shelfbackdrop.png</textureslidernibfocus>
 				<orientation>horizontal</orientation>
 				<visible>Player.SeekEnabled + !Player.ChannelPreviewActive</visible>
 			</control>

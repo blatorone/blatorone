@@ -73,8 +73,8 @@
                 <textoffsetx>2</textoffsetx>
                 <textcolor>$VAR[selected]</textcolor>
                 <focusedcolor>$VAR[selected]</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">Colors/listselect_fo.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturenofocus>
                 <onclick>setfocus(9000)</onclick>
                 <visible>skin.hassetting(Touch)  + !window.isactive(1130)</visible>
             </control>
@@ -91,8 +91,8 @@
                 <label2></label2>
                 <textcolor>$VAR[selected]</textcolor>
                 <focusedcolor>$VAR[selected]</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturenofocus>
                 <textoffsetx>2</textoffsetx>
 				<onclick>Dialog.Close(1132)</onclick>
 				<visible>skin.hassetting(Touch) + [controlgroup(500).hasfocus | controlgroup(9000).hasfocus]</visible>

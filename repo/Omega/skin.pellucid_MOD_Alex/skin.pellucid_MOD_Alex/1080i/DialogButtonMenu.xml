@@ -37,7 +37,7 @@
                         <width>6-col</width>
                         <height>2-row</height>
                         <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture border="0" colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                        <texture border="0" colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
                         <bordersize>0</bordersize>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>

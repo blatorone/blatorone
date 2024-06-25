@@ -45,7 +45,7 @@
                     <posy>0</posy>
                     <width>8-col</width>
                     <height>2-row</height>
-                    <texture>colors/white.png</texture>
+                    <texture>background-shelfbackdrop.png</texture>
                     <colordiffuse>$VAR[highlight]</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -109,7 +109,7 @@
                                 <width>1-col</width>
                                 <height>2-row</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture>colors/white.png</texture>
+                                <texture>background-shelfbackdrop.png</texture>
                                 <colordiffuse>$VAR[highlight]</colordiffuse>
                             </control>
                             <control type="image">
@@ -129,7 +129,7 @@
                             <width>7-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
                         </control>
                         <control type="label">
                             <posx>0</posx>
@@ -182,7 +182,7 @@
                     <posy>0</posy>
                     <width>12-col</width>
                     <height>71</height>
-                    <texture>colors/white.png</texture>
+                    <texture>background-shelfbackdrop.png</texture>
                     <colordiffuse>$VAR[highlight]</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -345,7 +345,7 @@
                             <width>11-col-textbox</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="0" colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                            <texture border="0" colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>

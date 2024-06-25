@@ -28,7 +28,7 @@
                 <posy>0</posy>
                 <width>12-col</width>
                 <height>2-row</height>
-                <texture>colors/white.png</texture>
+                <texture>background-shelfbackdrop.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -97,8 +97,8 @@
                     <align>center</align>
                     <aligny>center</aligny>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
-                    <texturenofocus>colors/white.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texturefocus>
+                    <texturenofocus>background-shelfbackdrop.png</texturenofocus>
                     <label></label>
                     <font>symbolLarge</font>
                     <textcolor>$VAR[Home]</textcolor>
@@ -145,7 +145,7 @@
                             <width>1-col-textbox</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture>background-shelfbackdrop.png</texture>
                             <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
@@ -155,7 +155,7 @@
                             <width>2-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
                         </control>
                         <control type="label">
                             <posx>0</posx>

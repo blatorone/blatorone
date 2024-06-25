@@ -341,7 +341,7 @@
 							<control type="image">
 								<width>1198</width>
 								<height>62</height>
-								<texture colordiffuse="overlay" border="4">listselect_fo.png</texture>
+								<texture colordiffuse="overlay" border="4">background-shelfbackdrop.png</texture>
 								<visible>Control.HasFocus(3000)</visible>
 								<include>VisibleFadeAnimation</include>
 							</control>
@@ -561,7 +561,7 @@
 							<ondown>10052</ondown>
 							<textcolor>textActive</textcolor>
         					<focusedcolor>black</focusedcolor>
-        					<texturefocus colordiffuse="overlay">Colors/white.png</texturefocus>
+        					<texturefocus colordiffuse="overlay">background-shelfbackdrop.png</texturefocus>
         					<texturenofocus></texturenofocus>
         					<textoffsetx>24</textoffsetx>
         					<disabledcolor>textDisabled</disabledcolor>
@@ -1039,7 +1039,7 @@
                     <width>5-col</width>
                     <height>5-col</height>
                     <focusedcolor>00FFFFFF</focusedcolor>
-                    <texturefocus colordiffuse="00FFFFFF">Colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="00FFFFFF">background-shelfbackdrop.png</texturefocus>
                     <texturenofocus>FFFFFF</texturenofocus>
                     <aspectratio>stretch</aspectratio>
                     <visible>Skin.HasSetting(Touch)</visible>
@@ -1055,8 +1055,8 @@
                     <onclick>setfocus(90000)</onclick>
                     <onclick>up</onclick>
                     <font>symbol</font>
-                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <visible>Skin.HasSetting(Touch)</visible>
@@ -1074,8 +1074,8 @@
                     <onclick>setfocus(90000)</onclick>
                     <onclick>down</onclick>
                     <font>symbol</font>
-                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <visible>Skin.HasSetting(Touch)</visible>
@@ -1090,8 +1090,8 @@
                     <width>100</width>
                     <height>100</height>
                     <align>center</align>
-                    <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
-                    <texturefocus colordiffuse="$VAR[highlight]">colors/white.png</texturefocus>
+                    <texturenofocus colordiffuse="keyboardInactive">background-shelfbackdrop.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
                     <onclick>setfocus(90000])</onclick>
                     <onclick>select</onclick>
                     

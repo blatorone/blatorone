@@ -73,7 +73,7 @@
                         <width>1-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>Colors/listselect_fo.png</texture>
+                        <texture>background-shelfbackdrop.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="image">
@@ -82,7 +82,8 @@
                         <width>100</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="overlay">Colors/white.png</texture>
+                        <texture>background-shelfbackdrop.png</texture>
+
                         <colordiffuse>overlay</colordiffuse>
                     </control>
                     <control type="label">
@@ -114,7 +115,7 @@
                         <width>1-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>Colors/listselect_fo.png</texture>
+                        <texture>background-shelfbackdrop.png</texture>
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                     </control>
                     <control type="image">
@@ -123,7 +124,7 @@
                         <width>100</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                        <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
                         <colordiffuse>eeffffff</colordiffuse>
                     </control>
                     <control type="label">

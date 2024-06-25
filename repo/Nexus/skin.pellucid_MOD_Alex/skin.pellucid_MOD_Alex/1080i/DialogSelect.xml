@@ -39,7 +39,7 @@
                     <posy>0</posy>
                     <width>16-col</width>
                     <height>2-row</height>
-                    <texture>colors/white.png</texture>
+                    <texture>background-shelfbackdrop.png</texture>
                     <colordiffuse>$VAR[highlight]</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -130,7 +130,7 @@
                                 <width>11-col</width>
                                 <height>69</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                                <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
                                 <bordersize>0</bordersize>
                                 <colordiffuse>ffffffff</colordiffuse>
                             </control>
@@ -222,7 +222,7 @@
                                 <width>11-col</width>
                                 <height>69</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                                <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
                                 <bordersize>0</bordersize>
                                 <colordiffuse>ffffffff</colordiffuse>
                             </control>
@@ -280,7 +280,7 @@
                             <width>1-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture>background-shelfbackdrop.png</texture>
                             <colordiffuse>$VAR[highlight]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
@@ -290,7 +290,7 @@
                             <width>5-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="$VAR[selected_box]">Colors/white.png</texture>
+                            <texture colordiffuse="$VAR[selected_box]">background-shelfbackdrop.png</texture>
                         </control>
                         <control type="label">
                             <posx>0</posx>

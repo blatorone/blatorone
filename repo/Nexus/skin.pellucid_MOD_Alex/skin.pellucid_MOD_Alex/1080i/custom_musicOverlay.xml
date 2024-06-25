@@ -17,7 +17,18 @@
                 <posy>0</posy>
                 <width>1-col-textbox</width>
                 <height>54</height>
-                <texture>colors/white.png</texture>
+                <texture>background-shelfbackdrop.png</texture>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
+            </control>
+            <control type="image">
+				<animation type="conditional" condition="true">
+					<effect type="fade" start="100" end="33" time="0"/>
+				</animation>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1-col-textbox</width>
+                <height>54</height>
+                <texture>background-shelfbackdrop.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
             </control>
 			<control type="image">
@@ -26,7 +37,7 @@
                 <posy>0</posy> 
                 <width>1655</width>
                 <height>54</height>
-                <texture>Colors/listselect_fo.png</texture>
+                <texture>background-shelfbackdrop.png</texture>
                 <colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
             </control>
             <control type="image">
@@ -35,7 +46,7 @@
                 <posy>0</posy>
                 <width>fullscreenWidth</width>
                 <height>54</height>
-                <texture>Colors/listselect_fo.png</texture>
+                <texture>background-shelfbackdrop.png</texture>
                 <colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
             </control>
             <control type="image">

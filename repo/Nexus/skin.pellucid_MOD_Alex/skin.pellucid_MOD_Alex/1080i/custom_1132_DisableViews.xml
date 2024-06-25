@@ -34,7 +34,7 @@
                 <posy>-200</posy>
                 <width>584</width>
                 <height>1500</height>
-                <texture>colors/white.png</texture>
+                <texture>background-shelfbackdrop.png</texture>
                 <colordiffuse>$VAR[highlight]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -287,12 +287,13 @@
 				<control type="togglebutton" id="9013">
 				<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
 				<top>1022</top>
-				<width>400</width>
+				<width>384</width>
 				<align>center</align>
 				<textoffsetx>30</textoffsetx>
 				<textcolor>$VAR[Home]</textcolor>
 				<focusedcolor>$VAR[selected]</focusedcolor>
-				<texturefocus />
+				<texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+
 				<label>$LOCALIZE[31043]</label>
 				
 				<onclick>ReloadSkin()</onclick>
@@ -311,8 +312,8 @@
                 <label2></label2>
                 <textcolor>$VAR[selected]</textcolor>
                 <focusedcolor>$VAR[selected]</focusedcolor>
-                <texturefocus colordiffuse="$VAR[highlight]">Colors/white.png</texturefocus>
-                <texturenofocus colordiffuse="$VAR[highlight]">Colors/white.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturenofocus>
                 <textoffsetx>2</textoffsetx>
 				<onclick>Dialog.Close(1132)</onclick>
 				<visible>skin.hassetting(Touch) + window.isactive(1132)</visible>

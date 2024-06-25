@@ -19,7 +19,7 @@
 						<width>955</width>
 						<height>135</height>
 						<aspectratio>stretch</aspectratio>
-						<texture border="0">colors/white.png</texture>
+						<texture border="0">background-shelfbackdrop.png</texture>
 						<colordiffuse>grey</colordiffuse>
 					</control>
 					<control type="image">
@@ -52,7 +52,7 @@
                         <width>66</width>
                         <height>15</height>
                         <texturebg colordiffuse="77000000">colors/black.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <midtexture colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</midtexture>
                         <info>ListItem.Progress</info>
                     </control>
 					<control type="label">
@@ -87,7 +87,7 @@
 						<width>955</width>
 						<height>135</height>
 						<aspectratio>stretch</aspectratio>
-						<texture border="0">colors/white.png</texture>
+						<texture border="0">background-shelfbackdrop.png</texture>
 						<colordiffuse>$VAR[highlight]</colordiffuse>
 					</control>
 					<control type="image">
@@ -121,7 +121,7 @@
                         <width>66</width>
                         <height>15</height>
                         <texturebg colordiffuse="77000000">colors/black.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <midtexture colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</midtexture>
                         <info>ListItem.Progress</info>
                     </control>
 		
@@ -204,7 +204,7 @@
                         <width>875</width>
                         <height>12</height>
                         <texturebg colordiffuse="77000000">colors/black.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
+                        <midtexture colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</midtexture>
                         <info>ListItem.Progress</info>
             		</control>
 					<control type="grouplist">

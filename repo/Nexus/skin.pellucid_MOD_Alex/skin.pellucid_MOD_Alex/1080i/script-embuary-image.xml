@@ -30,7 +30,7 @@
 			<showonepage>false</showonepage>
 			<texturesliderbackground />
 			<texturesliderbar>colors/white25.png</texturesliderbar>
-			<texturesliderbarfocus colordiffuse="$VAR[highlight]">colors/white.png</texturesliderbarfocus>
+			<texturesliderbarfocus colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texturesliderbarfocus>
 			<animation effect="fade" time="300" start="100" end="0" condition="System.IdleTime(2)">Conditional</animation>
 		</control>
 		<include>DebugGrid</include>
