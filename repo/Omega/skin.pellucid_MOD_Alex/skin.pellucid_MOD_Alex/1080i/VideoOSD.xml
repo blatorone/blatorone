@@ -241,8 +241,8 @@
                         <posy>84</posy>
                         <width>7-col</width>
                         <height>6</height>
-                        <texturebg colordiffuse="77000000">background-shelfbackdrop.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</midtexture>
+                        <texturebg colordiffuse="overlay">colors/white.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
                         <info>Player.Progress</info>
                     </control>
                     <control type="label">

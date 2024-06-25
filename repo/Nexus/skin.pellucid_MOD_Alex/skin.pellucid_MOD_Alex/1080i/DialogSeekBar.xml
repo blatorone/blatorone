@@ -86,7 +86,7 @@
                 <posy>84</posy>
                 <width>20-col</width>
                 <height>6</height>
-                <texturebg colordiffuse="77000000">colors/black.png</texturebg>
+                <texturebg colordiffuse="overlay">colors/white.png</texturebg>
                 <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
                 <info>Player.Progress</info>
             </control>
@@ -96,7 +96,7 @@
 				<posy>84</posy>
 				<width>20-col</width>
 				<height>6</height>
-				<texturebg colordiffuse="77000000">colors/black.png</texturebg>
+				<texturebg colordiffuse="overlay">colors/white.png</texturebg>
 				<midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
 				<info>PVR.EpgEventProgress</info>
 			</control>

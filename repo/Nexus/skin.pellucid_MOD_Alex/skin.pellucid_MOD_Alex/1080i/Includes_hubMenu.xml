@@ -61,7 +61,7 @@
 				<textwidth>320</textwidth>
                 <font>menuTitle2</font>
                 <label>$INFO[Container.Viewmode,$LOCALIZE[31306] ]</label>
-                <onclick>activateWindow(1130)</onclick>
+                <onclick condition="!String.IsEqual(Container.Viewmode,$LOCALIZE[31249])">activateWindow(1130)</onclick>
                 <visible>Container.Content(videos) + !window.isactive(1130) | container.Content(movies) + !window.isactive(1130) | container.Content(tvshows) + !window.isactive(1130) | container.content(seasons) + !window.isactive(1130) | Container.Content(episodes) + !window.isactive(1130) | window.isactive(10060) | Container.Content() + !window.isactive(1130)</visible>
             </control>
              <control type="button" id="5">
@@ -76,7 +76,7 @@
                 <font>menuTitle2</font>
                 <label>$INFO[Container.Viewmode,$LOCALIZE[5] ]</label>
                 <onclick>activateWindow(1131)</onclick>
-                <visible>Container.Content(videos) + !window.isactive(1130) | container.Content(movies) + !window.isactive(1130) | container.Content(tvshows) + !window.isactive(1130) | container.content(seasons) + !window.isactive(1130) | Container.Content(episodes) + !window.isactive(1130) | window.isactive(10060)</visible>
+                <visible>Container.Content(videos) + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249]) | container.Content(movies) + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249]) | container.Content(tvshows) + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249]) | container.content(seasons) + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249]) | Container.Content(episodes) + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249]) | window.isactive(10060) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249])</visible>
             </control>
            
             <control type="button" id="2">
@@ -90,7 +90,7 @@
                 <aligny>center</aligny>
                 <width>384</width>
                 <font>menuTitle2</font>
-                <visible>[Container.Content(addons)  + !window.isactive(1130) | Container.Content(albums)  + !window.isactive(1130) | Container.Content(songs)  + !window.isactive(1130) | Container.Content(artists)  + !window.isactive(1130) | Container.Content(genres)  + !window.isactive(1130) | Container.Content(years)  + !window.isactive(1130) | Window.IsActive(pictures)  + !window.isactive(1130) | Container.Content(files)] + !Skin.HasSetting(Disable.ShowCaseView)  + !window.isactive(1130) | window.IsActive(AddonBrowser) + !window.isactive(1130)</visible>
+                <visible>[Container.Content(addons)  + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249]) | Container.Content(albums)  + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249]) | Container.Content(songs)  + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249]) | Container.Content(artists)  + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249]) | Container.Content(genres)  + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249]) | Container.Content(years)  + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249]) | Window.IsActive(pictures)  + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249]) | Container.Content(files)] + !Skin.HasSetting(Disable.ShowCaseView)  + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249]) | window.IsActive(AddonBrowser) + !window.isactive(1130) + !String.IsEqual(Container.Viewmode,$LOCALIZE[31249])</visible>
             </control>
              
              <control type="button" id="3">
@@ -156,12 +156,12 @@
                 </itemlayout>
                 <focusedlayout width="col-5-begin" height="2-row">
 					<control type="image">
-                        <visible>!window.isactive(contextmenu) + !control.hasfocus(501) + !control.hasfocus(2) + !control.hasfocus(3) + !control.hasfocus(4)</visible>
+                        <visible>!window.isactive(contextmenu) + !control.hasfocus(501) + !control.hasfocus(2) + !control.hasfocus(3) + !control.hasfocus(4) + !control.hasfocus(5)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>406</width>
                         <height>2-row</height>
-                        <texture condition="!control.hasfocus(501) | control.hasfocus(2) | !control.hasfocus(3) | !control.hasfocus(4)" colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texture>
+                        <texture condition="!control.hasfocus(501) | control.hasfocus(2) | !control.hasfocus(3) | !control.hasfocus(4) | !control.hasfocus(5)" colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">

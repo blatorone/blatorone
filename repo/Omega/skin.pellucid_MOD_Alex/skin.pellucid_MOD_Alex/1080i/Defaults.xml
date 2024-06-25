@@ -181,7 +181,7 @@
     <default type="progress">
         <height>12</height>
         <texturebg border="0"></texturebg>
-        <midtexture border="10">background-shelfbackdrop.png</midtexture>
+        <midtexture border="10">colors/white.png</midtexture>
         <righttexture></righttexture>
         <overlaytexture></overlaytexture>
     </default>

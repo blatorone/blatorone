@@ -108,7 +108,7 @@
 		                <posy>195</posy>
 		                <width>6-col</width>
 		                <height>12</height>
-		                <texturebg colordiffuse="textboxInactive">colors/offblack.png</texturebg>
+		                <texturebg colordiffuse="overlay">colors/white.png</texturebg>
 		                <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
 		                <info>player.progress</info>
 		            </control>

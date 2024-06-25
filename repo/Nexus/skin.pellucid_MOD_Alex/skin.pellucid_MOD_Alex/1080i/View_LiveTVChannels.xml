@@ -3,6 +3,7 @@
 	<include name="liveTVChannels">
 		<control type="group">
 			<control type="panel" id="50">
+				<viewtype label="$LOCALIZE[31249]">$LOCALIZE[31249]</viewtype>
 				<posx>1%</posx>
 				<posy>row-6-begin</posy>
 				<width>935</width>
@@ -51,8 +52,8 @@
                         <posy>83</posy>
                         <width>66</width>
                         <height>15</height>
-                        <texturebg colordiffuse="77000000">colors/black.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</midtexture>
+                        <texturebg colordiffuse="overlay">colors/white.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
                         <info>ListItem.Progress</info>
                     </control>
 					<control type="label">
@@ -120,8 +121,8 @@
                         <posy>83</posy>
                         <width>66</width>
                         <height>15</height>
-                        <texturebg colordiffuse="77000000">colors/black.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</midtexture>
+                        <texturebg colordiffuse="overlay">colors/white.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
                         <info>ListItem.Progress</info>
                     </control>
 		
@@ -203,8 +204,8 @@
                         <posy>185</posy>
                         <width>875</width>
                         <height>12</height>
-                        <texturebg colordiffuse="77000000">colors/black.png</texturebg>
-                        <midtexture colordiffuse="$VAR[highlight]">background-shelfbackdrop.png</midtexture>
+                        <texturebg colordiffuse="overlay">colors/white.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">colors/white.png</midtexture>
                         <info>ListItem.Progress</info>
             		</control>
 					<control type="grouplist">

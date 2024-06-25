@@ -5,7 +5,7 @@
         <control type="group">
             
             <control type="image">
-							<visible>control.IsVisible(602) + Skin.hassetting(Touch) + !String.IsEmpty(ListItem.Rating)</visible>
+							<visible>control.IsVisible(602) + Skin.hassetting(Touch) + String.IsEqual(Container.Viewmode,$LOCALIZE[31311])</visible>
                     		<posx>20</posx>
                     		<posy>row-5-begin</posy>
                     		<width>100</width>
@@ -15,7 +15,7 @@
                     		<colordiffuse>grey</colordiffuse>
                 	</control>
 					<control type="image">
-							<visible>control.IsVisible(602) + !Skin.hassetting(Touch) + !String.IsEmpty(ListItem.Rating)</visible>
+							<visible>control.IsVisible(602) + !Skin.hassetting(Touch) + String.IsEqual(Container.Viewmode,$LOCALIZE[31311])</visible>
                     		<posx>20</posx>
                     		<posy>row-5-begin</posy>
                     		<width>50</width>
@@ -54,7 +54,7 @@
                     <height>69</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="0">background-shelfbackdrop.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
+                    <colordiffuse>keyboardInactive</colordiffuse>
                 </control>
                 <control type="label">
                     <posx>1-col-indent</posx>
@@ -115,7 +115,7 @@
                     <height>100</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="0">background-shelfbackdrop.png</texture>
-                    <colordiffuse>black</colordiffuse>
+                    <colordiffuse>keyboardInactive</colordiffuse>
                 </control>
                 <control type="label">
                     <posx>110</posx>
@@ -282,7 +282,7 @@
         </control>
 		
 		<control type="image">
-						<visible>control.IsVisible(602)</visible>
+						<visible>control.IsVisible(602) + String.IsEqual(Container.Viewmode,$LOCALIZE[31311])</visible>
 						<posx>1250</posx>
 						<posy>200</posy>
 						<width>650</width>
