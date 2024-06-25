@@ -962,7 +962,7 @@
 							<width>1-col</width>
 							<height>1-col</height>
 							<aspectratio>stretch</aspectratio>
-							<texture diffuse="masks/circle.png">colors/white.png</texture>
+							<texture diffuse="masks/circle.png">masks/discsurface.png</texture>
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label">

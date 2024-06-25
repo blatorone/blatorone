@@ -709,8 +709,8 @@
 					<onright>50</onright>
 					<ondown>50</ondown>
 					<texturesliderbackground colordiffuse="1AFFFFFF">colors/white50.png</texturesliderbackground>
-					<texturesliderbar colordiffuse="1AFFFFFF">colors/white.png</texturesliderbar>
-					<texturesliderbarfocus colordiffuse="$VAR[Home]">colors/white.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="1AFFFFFF">masks/discsurface.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="$VAR[Home]">masks/discsurface.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 				</control>
 				<control type="image">

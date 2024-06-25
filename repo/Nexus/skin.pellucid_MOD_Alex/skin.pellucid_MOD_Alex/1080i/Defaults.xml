@@ -222,7 +222,7 @@
 		<height>81</height>
 		<colorwidth>100</colorwidth>
 		<colorheight>40</colorheight>
-		<texturecolormask>colors/white.png</texturecolormask>
+		<texturecolormask>masks/discsurface.png</texturecolormask>
 		<texturecolordisabledmask colordiffuse="40FFFFFF">masks/discsurface.png</texturecolordisabledmask>
 		<font>buttonTitle</font>
 		<textoffsetx>30</textoffsetx>

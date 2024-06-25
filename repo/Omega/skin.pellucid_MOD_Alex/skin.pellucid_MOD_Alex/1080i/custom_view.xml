@@ -49,7 +49,7 @@
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <control type="togglebutton" id="1">
-                    <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <align>center</align>
                     <aligny>center</aligny>
                     <width>4-col</width>
@@ -58,7 +58,7 @@
                     <onclick>close</onclick>
                 </control>
                 <control type="togglebutton" id="2">
-                    <texturefocus colordiffuse="$VAR[selected_box]">Colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <align>center</align>
                     <aligny>center</aligny>
                     <width>4-col</width>

@@ -92,7 +92,7 @@
         </control>
 		<control type="image">
             <include>dimensionsFullscreen</include>
-            <texture>colors/white.png</texture>
+            <texture>masks/discsurface.png</texture>
             <colordiffuse>background</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>
@@ -235,7 +235,7 @@
        </control> 
        <control type="image">
            <include>dimensionsFullscreen</include>
-           <texture>colors/white.png</texture>
+           <texture>masks/discsurface.png</texture>
            <colordiffuse>background</colordiffuse>
            <aspectratio>stretch</aspectratio>
        </control>
@@ -1081,8 +1081,8 @@
         <include  condition="!Skin.HasSetting(Touch)">scrollbarcolor2</include>
     </include> 
     <include name="scrollbarcolor1">
-        <texturesliderbackground colordiffuse="77black">colors/white.png</texturesliderbackground>
-        <texturesliderbarfocus colordiffuse="77overlay">colors/white.png</texturesliderbarfocus>
+        <texturesliderbackground colordiffuse="77black">masks/discsurface.png</texturesliderbackground>
+        <texturesliderbarfocus colordiffuse="77overlay">masks/discsurface.png</texturesliderbarfocus>
     </include>
     <include name="scrollbarcolor2">
         <texturesliderbar colordiffuse="textDisabled">masks/discsurface.png</texturesliderbar>
@@ -1137,12 +1137,12 @@
         <include  condition="!Skin.HasSetting(Touch)">scrollbarcolorfanartlist2</include>
     </include>
     <include name="scrollbarcolorfanartlist1">
-        <texturesliderbackground colordiffuse="77black">colors/white.png</texturesliderbackground>
-        <texturesliderbarfocus colordiffuse="77overlay">colors/white.png</texturesliderbarfocus>
+        <texturesliderbackground colordiffuse="77black">masks/discsurface.png</texturesliderbackground>
+        <texturesliderbarfocus colordiffuse="77overlay">masks/discsurface.png</texturesliderbarfocus>
     </include>
     <include name="scrollbarcolorfanartlist2">
         <texturesliderbackground colordiffuse="overlay">colors/black.png</texturesliderbackground>
-        <texturesliderbarfocus colordiffuse="$VAR[highlight]">colors/white.png</texturesliderbarfocus>
+        <texturesliderbarfocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturesliderbarfocus>
     </include>
 
     <include name="pvrchannelsonupondown">

@@ -289,7 +289,7 @@
                                 <width>1-col</width>
                                 <height>1-col</height>
                                 <aspectratio scalediffuse="false">stretch</aspectratio>
-	                            <texture fallback="colors/white" border="0">$INFO[Listitem.thumb]</texture>
+	                            <texture fallback="masks/discsurface" border="0">$INFO[Listitem.thumb]</texture>
                             </control>
                             <control type="image">
 								<animation type="focus">

@@ -64,9 +64,9 @@
                     <posy>84</posy>
                     <width>18-col</width>
                     <height>71</height>
-                    <texture colordiffuse="highlight_Shadow">masks/discsurface.png</texture>
+                    <texture colordiffuse="$VAR[highlight_Shadow]">discsurface50%.png</texture>
                     <aspectratio>stretch</aspectratio>
-                    <colordiffuse>$VAR[highlight]</colordiffuse>
+                    
                 </control>
             </control>
             <!--left panel-->
@@ -81,7 +81,7 @@
                     <width>636</width>
                     <label></label>
                     <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
+                    <textcolor>$VAR[Home]</textcolor>
                     <shadowcolor></shadowcolor>
                 </control>
 				<!--page scrollbar-->
@@ -166,7 +166,7 @@
                     <height>2-row</height>
                     <label></label>
                     <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
+                    <textcolor>$VAR[Home]</textcolor>
                 </control>
                 <control type="list" id="21">
                     <posx>0</posx>

@@ -173,7 +173,7 @@
                         <colordiffuse>$VAR[highlight]</colordiffuse>
                         <texture fallback="kodilogo.png">$INFO[listitem.icon]</texture>
                         <bordersize>0</bordersize>
-                        <texture fallback="colors/white.png" border="0">$INFO[System.ProfileThumb]</texture>
+                        <texture fallback="masks/discsurface.png" border="0">$INFO[System.ProfileThumb]</texture>
                         <include>spinFocusIcon</include>
                     </control>
                     <control type="image">
@@ -184,7 +184,7 @@
                         <aspectratio>stretch</aspectratio>
                         <texture fallback="white.png">$INFO[listitem.icon]</texture>
                         <bordersize>0</bordersize>
-                        <texture fallback="colors/white.png" border="0">$INFO[System.ProfileThumb]</texture>
+                        <texture fallback="masks/discsurface.png" border="0">$INFO[System.ProfileThumb]</texture>
                         <include>spinFocusIcon</include>
                     </control>
                     <control type="label">

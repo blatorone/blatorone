@@ -41,7 +41,7 @@
 	                    <width>4-col</width>
 	                    <height>2-row</height>
 	                    <aspectratio>stretch</aspectratio>
-	                    <texture border="0">colors/white.png</texture>
+	                    <texture border="0">masks/discsurface.png</texture>
 	                    <colordiffuse>$VAR[highlight]</colordiffuse>
 	                </control>
 					<control type="label">
@@ -103,7 +103,7 @@
 	                    <width>66</width>
 	                    <height>66</height>
 	                    <aspectratio scalediffuse="false">stretch</aspectratio>
-	                    <texture fallback="colors/white.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+	                    <texture fallback="masks/discsurface.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
 	                    <animation type="focus" loop="false" reversible="false">
 	                        <effect type="fade" time="500"/>
 	                        <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
@@ -115,7 +115,7 @@
 	                    <width>18-col</width>
 	                    <height>2-row</height>
 	                    <aspectratio>stretch</aspectratio>
-	                    <texture border="0">colors/white.png</texture>
+	                    <texture border="0">masks/discsurface.png</texture>
 	                    <colordiffuse>$VAR[highlight]</colordiffuse>
 	                </control>
 	                <control type="label">

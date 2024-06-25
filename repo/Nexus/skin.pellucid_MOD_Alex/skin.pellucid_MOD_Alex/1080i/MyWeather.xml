@@ -335,10 +335,10 @@
             <aligny>center</aligny>
             <textoffsetx>24</textoffsetx>
             <label>396</label>
-            <texturefocus colordiffuse="00FFFFFF">Colors/white.png</texturefocus>
-            <texturenofocus colordiffuse="00FFFFFF">colors/white.png</texturenofocus>
-            <alttexturefocus colordiffuse="00FFFFFF">colors/white.png</alttexturefocus>
-            <alttexturenofocus colordiffuse="00FFFFFF">colors/white.png</alttexturenofocus>
+            <texturefocus colordiffuse="00FFFFFF">masks/discsurface.png</texturefocus>
+            <texturenofocus colordiffuse="00FFFFFF">masks/discsurface.png</texturenofocus>
+            <alttexturefocus colordiffuse="00FFFFFF">masks/discsurface.png</alttexturefocus>
+            <alttexturenofocus colordiffuse="00FFFFFF">masks/discsurface.png</alttexturenofocus>
             <font>sectionTitle</font>
             <textcolor>textDisabled</textcolor>
             <focusedcolor>textActive</focusedcolor>
@@ -379,7 +379,7 @@
 	                        <width>1-col</width>
 	                        <height>69</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture diffuse="masks/circle.png">colors/white.png</texture>
+	                        <texture diffuse="masks/circle.png">masks/discsurface.png</texture>
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 	                    </control>
 	                    <control type="label">

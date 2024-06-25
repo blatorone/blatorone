@@ -37,9 +37,9 @@
                 <posy>84</posy>
                 <width>1140</width>
                 <height>71</height>
-                <texture>colors/offblack.png</texture>
+                <texture>discsurface50%.png</texture>
                 <aspectratio>stretch</aspectratio>
-                <colordiffuse>$VAR[highlight]</colordiffuse>
+                <colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
             </control>
             <control type="label">
                 <posx>24</posx>
@@ -61,7 +61,7 @@
                 <height>2-row</height>
                 <aligny>center</aligny>
                 <font>itemSubTitle</font>
-                <textcolor>textActive</textcolor>
+                <textcolor>$VAR[Home]</textcolor>
                 <label>$LOCALIZE[19141]</label>
             </control>
             <control type="group">
@@ -122,7 +122,7 @@
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <font>itemSubTitle</font>
-                    <textcolor>textActive</textcolor>
+                    <textcolor>$VAR[Home]</textcolor>
                 </control>
                 <control type="panel" id="12">
                     <posx>0</posx>
@@ -161,7 +161,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                             <width>69</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture fallback="colors/white.png" border="0">$INFO[ListItem.Icon]</texture>
+                            <texture fallback="masks/discsurface.png" border="0">$INFO[ListItem.Icon]</texture>
                             <animation type="focus" loop="false" reversible="false">
                                 <effect type="fade" time="500"/>
                                 <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
@@ -207,7 +207,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <font>itemSubTitle</font>
-                    <textcolor>textActive</textcolor>
+                    <textcolor>$VAR[Home]</textcolor>
                 </control>
                 <control type="panel" id="11">
                     <posx>0</posx>
@@ -246,7 +246,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                             <width>69</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture fallback="colors/white.png" border="0">$INFO[ListItem.Icon]</texture>
+                            <texture fallback="masks/discsurface.png" border="0">$INFO[ListItem.Icon]</texture>
                             <animation type="focus" loop="false" reversible="false">
                                 <effect type="fade" time="500"/>
                                 <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
@@ -289,6 +289,24 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                 <orientation>vertical</orientation>
                 <onleft>12</onleft>
                 <itemlayout width="8-col" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>discsurface50%.png</texture>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
+                        <include>spinFocusIcon</include>
+                    </control>
+                    <control type="image">
+                        <posx>1-col</posx>
+                        <posy>0</posy>
+                        <width>5-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture colordiffuse="textDisabled">masks/discsurface.png</texture>
+                    </control>
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -345,11 +363,12 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                     <control type="label">
                         <posx>1-col-indent</posx>
                         <posy>-1</posy>
-                        <width>5-col-gutter</width>
+                        <width>3-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>buttonTitle</font>
                         <textcolor>black</textcolor>
+                        <scroll>true</scroll>
                         <label>$INFO[ListItem.label]</label>
                         <shadowcolor></shadowcolor>
                     </control>

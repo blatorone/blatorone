@@ -1170,7 +1170,7 @@
                     <height>60</height>
                     <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
                     <bordersize>3</bordersize>
-                    <texture colordiffuse="Skin.String(highlight_color)">Colors/white.png</texture>
+                    <texture colordiffuse="Skin.String(highlight_color)">masks/discsurface.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
@@ -1178,7 +1178,7 @@
                     <height>60</height>
                     <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
                     <bordersize>3</bordersize>
-                    <texture colordiffuse="Skin.String(highlight_Shadow_color)">Colors/white.png</texture>
+                    <texture colordiffuse="Skin.String(highlight_Shadow_color)">masks/discsurface.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
@@ -1186,7 +1186,7 @@
                     <height>60</height>
                     <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
                     <bordersize>3</bordersize>
-                    <texture colordiffuse="Skin.String(Home_color)">Colors/white.png</texture>
+                    <texture colordiffuse="Skin.String(Home_color)">masks/discsurface.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
@@ -1194,7 +1194,7 @@
                     <height>60</height>
                     <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
                     <bordersize>3</bordersize>
-                    <texture colordiffuse="Skin.String(Selected_color)">Colors/white.png</texture>
+                    <texture colordiffuse="Skin.String(Selected_color)">masks/discsurface.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
@@ -1202,7 +1202,7 @@
                     <height>60</height>
                     <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
                     <bordersize>3</bordersize>
-                    <texture colordiffuse="Skin.String(Selected_box_color)">Colors/white.png</texture>
+                    <texture colordiffuse="Skin.String(Selected_box_color)">masks/discsurface.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
             </control>

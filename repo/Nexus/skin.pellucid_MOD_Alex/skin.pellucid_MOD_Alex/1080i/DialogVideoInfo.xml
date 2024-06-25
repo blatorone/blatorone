@@ -336,7 +336,7 @@
                     <height>486</height>
                     <aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
                     <texture fallback="colors/black.png">$INFO[Listitem.icon]</texture>
-                    <bordertexture colordiffuse="11ffffff">colors/white.png</bordertexture>
+                    <bordertexture colordiffuse="11ffffff">masks/discsurface.png</bordertexture>
                     <bordersize>6</bordersize>
                 </control>
             </control>

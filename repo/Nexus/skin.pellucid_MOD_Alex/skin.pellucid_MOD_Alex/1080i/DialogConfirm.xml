@@ -5,12 +5,22 @@
     <controls>
         <!--Backbutton touchscreen-->
         <include>Backbutton</include>
-        <include>modalDialog</include>
+        
+        
         <control type="group">
             <posx>col-9-begin</posx>
             <posy>row-8-begin</posy>
             <!--animations-->
             <include>modalDialogInOut</include>
+            <control type="image">
+                <posx>-20</posx>
+                <posy>-12</posy>
+                <width>520</width>
+                <height>400</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>black</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
             <!--progress-->
 			<control type="label">
 					<posx>0</posx>
@@ -22,20 +32,22 @@
 	                <textcolor>textActive</textcolor>
 					<label>$INFO[System.Progressbar,,%]</label>
 				</control>
+                
 			<!--text-->
             <control type="label" id="1">
                 <description>heading</description>
-                <posx>0</posx>
-                <posy>0</posy>
+                <posx>10</posx>
+                <posy>20</posy>
                 <width>8-col-gutter</width>
                 <height>2-row</height>
                 <wrapmultiline>true</wrapmultiline>
                 <font>confirmTitle</font>
                 <textcolor>textActive</textcolor>
             </control>
+            
             <control type="textbox" id="9">
-                <posx>0</posx>
-                <posy>80</posy>
+                <posx>10</posx>
+                <posy>110</posy>
                 <width>8-col-gutter</width>
                 <height>124</height>
                 <font>textbox</font>
@@ -44,89 +56,97 @@
            </control>
            <!--options-->
            <control type="panel" id="9000">
-               <posx>0</posx>
-               <posy>228</posy>
+               <posx>45</posx>
+               <posy>300</posy>
                <width>8-col</width>
                <height>6-row</height>
                <orientation>vertical</orientation>
-               <itemlayout width="8-col" height="2-row">
-                   <control type="label">
-                       <posx>0</posx>
-                       <posy>0</posy>
-                       <width>1-col</width>
-                       <height>2-row</height>
-                       <align>center</align>
-                       <aligny>center</aligny>
-                       <font>symbolLarge</font>
-                       <textcolor>textActive</textcolor>
-                       <label>$INFO[ListItem.label2]</label>
-                   </control>
-                   <control type="label">
-                       <posx>1-col-indent</posx>
-                       <posy>-1</posy>
-                       <width>7-col-gutter</width>
-                       <height>2-row</height>
-                       <aligny>center</aligny>
-                       <font>buttonTitle</font>
-                       <textcolor>textActive</textcolor>
-                       <label>$INFO[ListItem.label]</label>
-                   </control>
-               </itemlayout>
-               <focusedlayout width="8-col" height="2-row">
-                   <control type="image">
-                       <posx>0</posx>
-                       <posy>0</posy>
-                       <width>1-col-textbox</width>
-                       <height>2-row</height>
-                       <aspectratio>stretch</aspectratio>
-                       <texture>masks/discsurface.png</texture>
-                       <colordiffuse>$VAR[highlight]</colordiffuse>
-                       <include>spinFocusIcon</include>
-		   				<animation type="conditional" condition="true">
-		   					<effect type="fade" start="100" end="50" time="0"/>
-		   				</animation>
-                   </control>
-                   <control type="image">
-                       <posx>1-col</posx>
-                       <posy>0</posy>
-                       <width>7-col</width>
-                       <height>2-row</height>
-                       <aspectratio>stretch</aspectratio>
-                       <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
-                   </control>
-                   <control type="label">
-                       <posx>0</posx>
-                       <posy>0</posy>
-                       <width>1-col</width>
-                       <height>2-row</height>
-                       <align>center</align>
-                       <aligny>center</aligny>
-                       <font>symbolLarge</font>
-                       <textcolor>$VAR[Home]</textcolor>
-                       <label>$INFO[ListItem.label2]</label>
-                       <shadowcolor></shadowcolor>
-                   </control>
-                   <control type="label">
-                       <posx>1-col-indent</posx>
-                       <posy>-1</posy>
-                       <width>7-col-gutter</width>
-                       <height>2-row</height>
-                       <aligny>center</aligny>
-                       <font>buttonTitle</font>
-                       <textcolor>black</textcolor>
-                       <label>$INFO[ListItem.label]</label>
-                       <shadowcolor></shadowcolor>
-                   </control>
-               </focusedlayout>
+               <itemlayout width="200" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>masks/discsurface.png</texture>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
+                    </control>
+                    <control type="image">
+                        <posx>1-col</posx>
+                        <posy>0</posy>
+                        <width>100</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>masks/discsurface.png</texture>
+
+                        <colordiffuse>textDisabled</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>symbolLarge</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.label2]</label>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>0</posy>
+                        <width>224</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemSubTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="200" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>masks/discsurface.png</texture>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
+                    </control>
+                    <control type="image">
+                        <posx>1-col</posx>
+                        <posy>0</posy>
+                        <width>100</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
+                        <colordiffuse>eeffffff</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>symbolLarge</font>
+                        <textcolor>$VAR[Home]</textcolor>
+                        <label>$INFO[ListItem.label2]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>0</posy>
+                        <width>224</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemSubTitle</font>
+                        <textcolor>black</textcolor>
+                        <label>$INFO[ListItem.label]</label>
+                    </control>
+                </focusedlayout>
                <content>
-                   <item id="1">
-                       <visible>control.isvisible(10)</visible>
-                       <description>No</description>
-                       <label>$INFO[control.getlabel(10)]</label>
-                       <label2></label2>
-                       <thumb></thumb>
-                       <onclick>SendClick(10)</onclick>
-                   </item>
+                   
                    <item id="2">
                        <visible>control.isvisible(11)</visible>
                        <description>Yes / OK</description>
@@ -134,6 +154,14 @@
                        <label2></label2>
                        <thumb></thumb>
                        <onclick>SendClick(11)</onclick>
+                   </item>
+                   <item id="1">
+                       <visible>control.isvisible(10)</visible>
+                       <description>No</description>
+                       <label>$INFO[control.getlabel(10)]</label>
+                       <label2></label2>
+                       <thumb></thumb>
+                       <onclick>SendClick(10)</onclick>
                    </item>
                    <item id="3">
                        <visible>control.isvisible(12)</visible>
