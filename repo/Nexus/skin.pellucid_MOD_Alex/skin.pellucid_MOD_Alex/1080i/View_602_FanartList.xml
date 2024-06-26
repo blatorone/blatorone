@@ -292,6 +292,17 @@
 						<bordersize>6</bordersize>
 						<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
 					</control>
+                    <control type="progress">
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays) + control.IsVisible(602)</visible>
+                        	<description>Progress Bar</description>
+                        	<posx>1256</posx>
+                        	<posy>680</posy>
+                        	<width>638</width>
+                        	<height>15</height>
+                        	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
+                        	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
+                        	<info>ListItem.PercentPlayed</info>
+                    	</control>
 					<control type="label">
 							<visible>!String.isEmpty(ListItem.RatingandVotes) + control.isvisible(602)</visible>
 							<posx>1280</posx>

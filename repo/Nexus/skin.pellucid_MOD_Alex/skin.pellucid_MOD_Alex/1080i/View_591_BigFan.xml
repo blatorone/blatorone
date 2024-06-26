@@ -30,6 +30,7 @@
 					<effect type="fade" time="240" start="100" end="0" />
 				</animation>
 			</control>
+			
 		</focusedlayout>
 	</include>
 	<include name="BigFanList">
@@ -62,6 +63,17 @@
 				<bordersize>20</bordersize>
 				<animation effect="fade" delay="240" time="240" reversible="false">Hidden</animation>
 			</control>
+			<control type="progress">
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+                        	<description>Progress Bar</description>
+                        	<posx>40</posx>
+                        	<posy>928</posy>
+                        	<width>252</width>
+                        	<height>15</height>
+                        	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
+                        	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
+                        	<info>ListItem.PercentPlayed</info>
+                    	</control>
 			<control type="image">
 				<left>243</left>
 				<top>570</top>

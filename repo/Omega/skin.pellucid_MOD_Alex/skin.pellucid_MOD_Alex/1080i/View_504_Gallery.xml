@@ -134,6 +134,17 @@
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<colordiffuse>BAffffff</colordiffuse>
 						</control>
+						<control type="progress">
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+                        	<description>Progress Bar</description>
+                        	<posx>0</posx>
+                        	<posy>610</posy>
+                        	<width>1124</width>
+                        	<height>15</height>
+                        	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
+                        	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
+                        	<info>ListItem.PercentPlayed</info>
+                    	</control>
 					</control>
 				</itemlayout>
 				<focusedlayout width="1125" height="633">
@@ -162,6 +173,7 @@
 							<bordertexture colordiffuse="textActive" border="8">thumbs/thumbnail_focused.png</bordertexture>
 							<bordersize>8</bordersize>
 						</control>
+						
 						<control type="image">
 							<visible>![Window.IsActive(pictures) | Container.Content(artists)]</visible>
 							<left>1039</left>
@@ -188,6 +200,17 @@
 							<bordertexture colordiffuse="textActive" border="8">thumbs/thumbnail_focused.png</bordertexture>
 							<bordersize>8</bordersize>
 						</control>
+						<control type="progress">
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+                        	<description>Progress Bar</description>
+                        	<posx>8</posx>
+                        	<posy>610</posy>
+                        	<width>1109</width>
+                        	<height>15</height>
+                        	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
+                        	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
+                        	<info>ListItem.PercentPlayed</info>
+                    	</control>
 					</control>
 				</focusedlayout>
 			</control>

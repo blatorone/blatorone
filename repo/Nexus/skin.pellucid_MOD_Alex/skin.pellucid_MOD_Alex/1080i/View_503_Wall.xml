@@ -52,6 +52,17 @@
 						<textcolor>textDisabled</textcolor>
 						<label>[B]$INFO[ListItem.label][/B][CR]$INFO[ListItem.year]</label>
 					</control>
+					<control type="progress">
+				        <visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+                        <description>Progress Bar</description>
+                        <posx>6</posx>
+                        <posy>322</posy>
+                        <width>216</width>
+                        <height>15</height>
+                        <texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
+                        <info>ListItem.PercentPlayed</info>
+                    </control>
 					<control type="group">
 						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
@@ -96,7 +107,7 @@
 						<control type="label">
 							<visible>!Skin.HasSetting(Disable.overlays)</visible>
 							<posx>28</posx>
-							<posy>-4</posy>
+							<posy>-4</posy> 
 							<width>36</width>
 							<height>36</height>
 							<aligny>center</aligny>
@@ -142,6 +153,7 @@
 							<label></label>
 						</control>
 					</control>
+					
 				</itemlayout>
 				<itemlayout width="252" height="438" condition='Skin.HasSetting(touch)'>
 					<control type="image">
@@ -165,6 +177,17 @@
 						<bordersize>6</bordersize>
 						<colordiffuse>99ffffff</colordiffuse>
 					</control>
+					<control type="progress">
+				        <visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+                        <description>Progress Bar</description>
+                        <posx>6</posx>
+                        <posy>322</posy>
+                        <width>216</width>
+                        <height>15</height>
+                        <texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
+                        <info>ListItem.PercentPlayed</info>
+                    </control>
 					<control type="label">
 						<visible>!controlgroup(9000).hasfocus</visible>
 						<posx>12</posx>
@@ -176,6 +199,7 @@
 						<textcolor>textDisabled</textcolor>
 						<label>[B]$INFO[ListItem.label][/B][CR]$INFO[ListItem.year]</label>
 					</control>
+					
 					<control type="group">
 						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
@@ -276,6 +300,17 @@
 							<texture fallback="defaultposter.png">$INFO[listitem.icon]</texture>
 							<bordersize>6</bordersize>
 						</control>
+						<control type="progress">
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+                        	<description>Progress Bar</description>
+                        	<posx>6</posx>
+                        	<posy>322</posy>
+                        	<width>216</width>
+                        	<height>15</height>
+                        	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
+                        	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
+                        	<info>ListItem.PercentPlayed</info>
+                    	</control>
 						<control type="label">
 							<posx>12</posx>
 							<posy>350</posy>
@@ -387,6 +422,17 @@
 							<texture fallback="defaultposter.png">$INFO[listitem.icon]</texture>
 							<bordersize>6</bordersize>
 						</control>
+						<control type="progress">
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+                        	<description>Progress Bar</description>
+                        	<posx>6</posx>
+                        	<posy>322</posy>
+                        	<width>216</width>
+                        	<height>15</height>
+                        	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
+                        	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
+                        	<info>ListItem.PercentPlayed</info>
+                    	</control>
 						<control type="label">
 							<posx>12</posx>
 							<posy>350</posy>
@@ -479,8 +525,6 @@
 					</control>
 				</focusedlayout>
             </control>
-			
         	</control>
-
 	</include>
 </includes>

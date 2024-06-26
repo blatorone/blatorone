@@ -46,6 +46,17 @@
 						
 						<colordiffuse>99ffffff</colordiffuse>
 					</control>
+					<control type="progress">
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+                        	<description>Progress Bar</description>
+                        	<posx>6</posx>
+                        	<posy>298</posy>
+                        	<width>198</width>
+                        	<height>15</height>
+                        	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
+                        	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
+                        	<info>ListItem.PercentPlayed</info>
+                    	</control>
 					
 					<control type="group">
 						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.overlays)</visible>
@@ -150,7 +161,17 @@
 							<bordersize>6</bordersize>
 							<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
 						</control>
-					
+						<control type="progress">
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+                        	<description>Progress Bar</description>
+                        	<posx>6</posx>
+                        	<posy>298</posy>
+                        	<width>198</width>
+                        	<height>15</height>
+                        	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
+                        	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
+                        	<info>ListItem.PercentPlayed</info>
+                    	</control>
 					<control type="group">
 						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
