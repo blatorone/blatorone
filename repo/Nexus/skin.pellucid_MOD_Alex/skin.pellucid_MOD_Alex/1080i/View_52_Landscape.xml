@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	
 	<include name="LandscapeFixed">
+		<visible>$EXP[isAddonMovieOrTVshow]</visible>
 		<control type="fixedlist" id="52">
 			<include>contents52list</include>
 		</control>
 	</include>
 	<include name="LandscapeWrap">
+		<visible>$EXP[isAddonMovieOrTVshow]</visible>
 		<control type="wraplist" id="52">
 			<include>contents52list</include>
 		</control>
 	</include>
 	<include name="contents52list">
+		<visible>$EXP[isAddonMovieOrTVshow]</visible>
 		<width>100%</width>
 		<height>960</height>
 		<onleft>52</onleft>

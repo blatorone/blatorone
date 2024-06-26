@@ -3,7 +3,7 @@
     <include name="View_602_FanartList">
         <!--fanart-->
         <control type="group">
-            
+            <visible>$EXP[isAddonMovieOrTVshow]</visible>
             <control type="image">
 							<visible>control.IsVisible(602) + Skin.hassetting(Touch) + String.IsEqual(Container.Viewmode,$LOCALIZE[31311])</visible>
                     		<posx>20</posx>
@@ -26,6 +26,7 @@
                 	</control>
         
         <control type="panel" id="602" width='15-col' height='100' condition='Skin.HasSetting(Touch)'>
+            <visible>$EXP[isAddonMovieOrTVshow]</visible>
             <viewtype label="$LOCALIZE[31311]">$LOCALIZE[31311]</viewtype>
             <posx>20</posx>
             <posy>row-5-begin</posy>

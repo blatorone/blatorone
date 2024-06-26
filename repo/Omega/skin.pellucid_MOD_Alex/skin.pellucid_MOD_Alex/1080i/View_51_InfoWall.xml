@@ -2,9 +2,9 @@
 <includes>
 	<!-- Wall -->
 	<include name="View_51_InfoWall">
-
+		
 		<control type="group">
-			<visible>Control.IsVisible(51) + !Window.IsActive(addoninformation)</visible>
+			<visible>Control.IsVisible(51) + !Window.IsActive(addoninformation) + [$EXP[isAddonMovieOrTVshow] |  container.content(songs)]</visible>
 			<control type="image">
 						<visible>Control.IsVisible(51)</visible>
 			    		<include>ViewAnimation</include>
@@ -19,7 +19,7 @@
 			<include>Battery</include>
 			
             <control type="panel" id="51">
-			
+				<visible>$EXP[isAddonMovieOrTVshow] | container.content(songs)</visible>
                 <viewtype label="$LOCALIZE[31316]">$LOCALIZE[31316]</viewtype>
 				
                 <posx>100</posx>

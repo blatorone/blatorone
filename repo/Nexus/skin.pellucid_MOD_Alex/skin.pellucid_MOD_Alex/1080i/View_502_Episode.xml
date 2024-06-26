@@ -3,10 +3,10 @@
     <include name="View_502_Episode">
         <!--fanart-->
         <control type="group">
-            
-            
+            <visible>$EXP[isTVShow] | $EXP[isSeason] | $EXP[isEpisode]</visible>  
         
         <control type="panel" id="502" width='18-col' height='100' condition='Skin.HasSetting(Touch)'>
+            <visible>$EXP[isTVShow] | $EXP[isSeason] | $EXP[isEpisode]</visible>
             <viewtype label="$LOCALIZE[20359]">list</viewtype>
             <posx>col-1-begin</posx>
             <posy>row-5-begin</posy>

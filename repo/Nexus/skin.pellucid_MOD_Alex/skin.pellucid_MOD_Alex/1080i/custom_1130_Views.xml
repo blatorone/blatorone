@@ -112,8 +112,7 @@
 						<item>
 							<label>[CAPITALIZE]$LOCALIZE[36906][/CAPITALIZE]</label>
 							<onclick>Container.SetViewMode(502)</onclick>
-							<visible>Window.IsActive(videos)</visible>
-							<visible>[container.content(movies) | Container.Content(episodes) | Container.Content(videos)] + !Skin.HasSetting(Disable.EpisodeView)</visible>
+							<visible>[$EXP[isTVShow] | $EXP[isSeason] | $EXP[isEpisode]] + !Skin.HasSetting(Disable.EpisodeView)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[31305]</label>

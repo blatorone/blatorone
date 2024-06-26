@@ -17,6 +17,31 @@
             </animation>
             
         </control>
+		<control type="image">
+                <visible>!window.isactive(1130) </visible>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>384</width>
+                <height>1500</height>
+                <texture>masks/discsurface.png</texture>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+			<!--logo-->
+			<control type="group">
+                <control type="label">
+	                <posx>70</posx>
+	                <posy>10</posy>
+	                <width>73</width>
+	                <height>73</height>
+	                <font>symbolVeryLarge</font>
+	                <aligny>center</aligny>
+	                <textcolor>$VAR[Home]</textcolor>
+	                <label>$VAR[menuLogo]</label>
+	            </control>
+               
+                
+			</control>
         <control type="group" id="9000">
             <animation type="windowopen">
                 <effect type="slide" start="-1084" end="0" tween="sine" delay="500" time="400"/>

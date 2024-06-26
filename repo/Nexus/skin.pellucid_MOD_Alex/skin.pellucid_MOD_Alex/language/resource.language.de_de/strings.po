@@ -749,6 +749,10 @@ msgctxt "#31301"
 msgid "Homescreen Settings"
 msgstr "Startbildschirm Einstellungen"
 
+msgctxt "#31302"
+msgid "Premiered"
+msgstr "Erstmals ausgestrahlt"
+
 msgctxt "#31303"
 msgid "Panel"
 msgstr "Panel"
@@ -764,6 +768,8 @@ msgstr "SchauKasten"
 msgctxt "#31306"
 msgid "View:"
 msgstr "Ansicht:"
+
+
 
 msgctxt "#31309"
 msgid "SongList"

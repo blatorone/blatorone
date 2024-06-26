@@ -3,7 +3,8 @@
     <include name="View_50_List">
         <!--fanart-->
         <control type="group">
-            
+            <visible>Control.IsVisible(50) + !Window.IsActive(addoninformation)</visible>
+
             
         
         <control type="panel" id="50" width='18-col' height='100' condition='Skin.HasSetting(Touch)'>

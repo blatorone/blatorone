@@ -2,7 +2,7 @@
 <includes>
 	<include name="View_505_Panel">
 		<control type="group">
-			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(files) | Container.Content(episodes)</visible>
+			<visible>Control.IsVisible(505)</visible>
 			
 			<control type="list" id="505">
 				<viewtype label="$LOCALIZE[31303]">$LOCALIZE[31303]</viewtype>

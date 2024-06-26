@@ -5,8 +5,9 @@
 		<control type="group">
 			
 			<include>Battery</include>
-			
+			<visible>Control.IsVisible(503) + !Window.IsActive(addoninformation)</visible>
             <control type="panel" id="503">
+				<visible>$EXP[isAddonMovieOrTVshow] | container.content(songs)</visible>
                 <viewtype label="$LOCALIZE[31304]">$LOCALIZE[31304]</viewtype>
                 <posx>90</posx>
 				<posy>50</posy>
@@ -15,7 +16,7 @@
 				<onleft>9000</onleft>
 				<onright>60</onright>
                 <ondown>503</ondown>
-                <onup>503</onup>
+                <onup>503</onup> 
 				<onback>Container.Refresh</onback>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="cubic" easing="out">600</scrolltime>
