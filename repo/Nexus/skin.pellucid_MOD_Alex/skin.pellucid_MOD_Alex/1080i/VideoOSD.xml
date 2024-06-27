@@ -243,7 +243,18 @@
                         <height>6</height>
                         <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
                         <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
-                        <info>Player.Progress</info>
+                        <info>player.progress</info>
+                    </control>
+                    <control type="progress">
+				        <visible>Pvr.IsPlayingTv</visible>
+                        <description>Progress Bar</description>
+                        <posx>0</posx>
+                        <posy>84</posy>
+                        <width>7-col</width>
+                        <height>6</height>
+                        <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
+                        <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
+                        <info>PVR.EpgEventProgress</info>
                     </control>
                     <control type="label">
 						<visible>!Pvr.IsPlayingTv</visible>

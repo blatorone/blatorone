@@ -1181,7 +1181,53 @@
         <ondown>50</ondown>
         <onup>8000</onup>
     </include>
+    <include name="pvrguidesonupondown">
+        <include  condition="!player.hasvideo + !VideoPlayer.IsFullscreen">pvrguidesonupondown1</include>
+        <include  condition="player.hasvideo + !VideoPlayer.IsFullscreen">pvrguidesonupondown2</include>
+    </include>
+    <include name="pvrguidesonupondown1">
+        <ondown>10</ondown>
+        <onup>8000</onup>
+    </include>
+    <include name="pvrguidesonupondown2">
+        <ondown>10</ondown>
+        <onup>11</onup>
+    </include>
+    <include name="pvrguidesonupondown20">
+        <include  condition="!player.hasvideo + !VideoPlayer.IsFullscreen">pvrguidesonupondown21</include>
+        <include  condition="player.hasvideo + !VideoPlayer.IsFullscreen">pvrguidesonupondown22</include>
+    </include>
+    <include name="pvrguidesonupondown21">
+        <ondown>10</ondown>
+        <onup>11</onup>
+    </include>
+    <include name="pvrguidesonupondown22">
+        <ondown>11</ondown>
+        <onup>10</onup>
+    </include>
+    <include name="pvrguidesonupondown3">
+        <include  condition="!player.hasvideo + !VideoPlayer.IsFullscreen">pvrguidesonupondown31</include>
+        <include  condition="player.hasvideo + !VideoPlayer.IsFullscreen">pvrguidesonupondown32</include>
+    </include>
+    <include name="pvrguidesonupondown31">
+        <ondown>8000</ondown>
+        <onup>10</onup>
+    </include>
+    <include name="pvrguidesonupondown32">
+        <ondown>10</ondown>
+        <onup>8000</onup>
+    </include>
 
+    <include name="pvrprogresstexture">
+        <include condition="Skin.Hassetting(Touch)">pvrprogresstexture1</include>
+        <include condition="!Skin.Hassetting(Touch)">pvrprogresstexture2</include>
+    </include>
+    <include name="pvrprogresstexture1">
+        <progresstexture colordiffuse="$VAR[highlight]" border="0,40,18,14">epg_progress_vertical.png</progresstexture>
+    </include>
+    <include name="pvrprogresstexture2">
+        <progresstexture colordiffuse="$VAR[highlight]" border="0,44,18,14">epg_progress_vertical.png</progresstexture>
+    </include>
     <!--homemenu slide or grid-->
    <include name="homemenuslide">
         <include  condition="Skin.HasSetting(homemenuslide) + !Skin.HasSetting(homemenugrid) + !Skin.HasSetting(homemenuside)">homemenuslide1</include>

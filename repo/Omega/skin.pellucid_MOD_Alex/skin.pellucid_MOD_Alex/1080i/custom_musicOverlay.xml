@@ -55,7 +55,7 @@
                 <posy>0</posy>
                 <width>1-col-gutter</width>
                 <height>1-col-gutter</height>
-                <texture>audio-8777_128.gif</texture>
+                <texture>special://skin/extras/audio-8777_128.gif</texture>
                 <colordiffuse>$VAR[Home]</colordiffuse>
             </control>
             <control type="label">

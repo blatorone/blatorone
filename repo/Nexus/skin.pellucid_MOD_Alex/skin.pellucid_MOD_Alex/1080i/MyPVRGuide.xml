@@ -54,73 +54,7 @@
 			<control type="group" id="9999">
 				<!--initial animation-->
 				<include>contentOpen</include>
-				<control type="fixedlist" id="11">
-						<animation type="conditional" condition="player.playing" reversible="true">
-		                    <effect type="slide" start="0" end="100" time="200" delay="0"/>
-		                </animation>
-		                <animation type="conditional" condition="player.playing" reversible="true">
-		                    <effect type="slide" start="0,0" end="0,180" time="200" delay="0"/>
-                        </animation>
-						<top>0</top>
-						<left>210</left>
-						<right>210</right>
-						<onleft>noop</onleft>
-						<onright>noop</onright>
-						<onup>10</onup>
-						<ondown>10</ondown>
-						<orientation>horizontal</orientation>
-						<scrolltime>200</scrolltime>
-						<visible></visible>
-						<itemlayout height="50" width="300">
-							<control type="image">
-								<left>1</left>
-								<top>0</top>
-								<width>298</width>
-								<height>49</height>
-								<texture colordiffuse="textDisabled">masks/discsurface.png</texture>
-							</control>
-							<control type="label">
-								<left>5</left>
-								<width>298</width>
-								<height>48</height>
-								<align>center</align>
-								<aligny>center</aligny>
-								<font>itemTitle</font>
-								<label>$INFO[ListItem.Label]</label>
-								<textcolor>lightgrey</textcolor>
-							</control>
-						</itemlayout>
-						<focusedlayout height="50" width="300">
-							<control type="image">
-								<left>1</left>
-								<top>0</top>
-								<width>298</width>
-								<height>50</height>
-								<texture colordiffuse="$VAR[selected]">masks/discsurface.png</texture>
-								<animation effect="fade" end="30" condition="true">Conditional</animation>
-								<visible>!Control.HasFocus(11)</visible>
-							</control>
-							<control type="image">
-								<left>1</left>
-								<top>0</top>
-								<width>298</width>
-								<height>50</height>
-								<texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
-								<animation effect="fade" end="30" condition="true">Conditional</animation>
-								<visible>Control.HasFocus(11)</visible>
-							</control>
-							<control type="label">
-								<left>5</left>
-								<width>288</width>
-								<height>48</height>
-								<align>center</align>
-								<aligny>center</aligny>
-								<scroll>true</scroll>
-								<font>itemTitle</font>
-								<label>$INFO[ListItem.Label]</label>
-							</control>
-						</focusedlayout>
-					</control>
+				
 				<control type="epggrid" id="10">
 					<description>EPG Grid</description>
 					<posx>col-1-begin</posx>
@@ -128,10 +62,10 @@
 					<include>pvrguidewidth</include>
 					<height>24-row</height>
 					<timeblocks>30</timeblocks>
-					<progresstexture colordiffuse="$VAR[highlight]" border="0,33,18,14">progressline2.png</progresstexture>
+					<include>pvrprogresstexture</include>					
 					<rulerunit>6</rulerunit>
 					<onleft>9000</onleft>
-					<onup>8000</onup>
+					<include>pvrguidesonupondown</include>	
 					<rulerlayout height="2-row" width="216" condition='!Skin.HasSetting(touch)'>
 						<control type="label" id="2">
 							<posx>0</posx>
@@ -292,13 +226,13 @@
 							<scroll>true</scroll>
 						</control>
 					</focusedchannellayout>
-					<itemlayout height="2-row" width="216" condition='!Skin.HasSetting(touch)'>
+					<itemlayout height="2-row" width="210" condition='!Skin.HasSetting(touch)'>
 						<control type="image" id="2">
 							<width>213</width>
 							<height>69</height>
 							<aspectratio>stretch</aspectratio>
-							<texture border="0">colors/black.png</texture>
-							<bordertexture colordiffuse="">masks/discsurface.png</bordertexture>
+							<texture border="0">masks/discsurface.png</texture>
+							<bordertexture colordiffuse="">colors/black.png</bordertexture>
 							<bordersize>3,0,0,0</bordersize>
 							<colordiffuse>textDisabled</colordiffuse>
 						</control>
@@ -324,7 +258,7 @@
 							<animation effect="fade" start="30" end="100" time="1000" condition="true" pulse="true">conditional</animation>
 						</control>
 					</itemlayout>
-					<itemlayout height="115" width="216" condition='Skin.HasSetting(touch)'>
+					<itemlayout height="111" width="210" condition='Skin.HasSetting(touch)'>
 						<control type="image" id="2">
 							<width>213</width>
 							<height>3-row</height>
@@ -356,11 +290,14 @@
 							<animation effect="fade" start="30" end="100" time="1000" condition="true" pulse="true">conditional</animation>
 						</control>
 					</itemlayout>
-					<focusedlayout height="2-row" width="216" condition='!Skin.HasSetting(touch)'>
+					<focusedlayout height="2-row" width="210" condition='!Skin.HasSetting(touch)'>
 						<control type="image" id="14">
-							<width>213</width>
-							<height>2-row</height>
+							<width>210</width>
+							<height>69</height>
+							<aspectratio>stretch</aspectratio>
 							<texture border="0">masks/discsurface.png</texture>
+							<bordertexture colordiffuse="">colors/black.png</bordertexture>
+							<bordersize>3,0,0,0</bordersize>
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label" id="1">
@@ -385,11 +322,14 @@
 							<animation effect="fade" start="30" end="100" time="1000" condition="true" pulse="true">conditional</animation>
 						</control>
 					</focusedlayout>
-					<focusedlayout height="115" width="216" condition='Skin.HasSetting(touch)'>
+					<focusedlayout height="111" width="210" condition='Skin.HasSetting(touch)'>
 						<control type="image" id="14">
-							<width>213</width>
+							<width>210</width>
 							<height>3-row</height>
+							<aspectratio>stretch</aspectratio>
 							<texture border="0">masks/discsurface.png</texture>
+							<bordertexture colordiffuse="">colors/black.png</bordertexture>
+							<bordersize>3,0,0,0</bordersize>
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 						<control type="label" id="1">
@@ -416,14 +356,80 @@
 					</focusedlayout>
 				</control>
 			</control>
+			<control type="list" id="11">
+						
+		                <animation type="conditional" condition="player.playing" reversible="true">
+		                    <effect type="slide" start="0,0" end="0,180" time="200" delay="0"/>
+                        </animation>
+						<top>0</top>
+						<left>210</left>
+						<height>2-col</height>
+						<right>210</right>
+						<onleft>noop</onleft>
+						<onright>noop</onright>
+						<include>pvrguidesonupondown3</include>
+						<orientation>horizontal</orientation>
+						<scrolltime>200</scrolltime>
+						<visible></visible>
+						<itemlayout height="50" width="300">
+							<control type="button">
+								<left>1</left>
+								<top>0</top>
+								<width>298</width>
+								<height>49</height>
+								<texturenofocus colordiffuse="textDisabled">masks/discsurface.png</texturenofocus>
+							</control>
+							<control type="label">
+								<left>5</left>
+								<width>298</width>
+								<height>48</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>itemTitle</font>
+								<label>$INFO[ListItem.Label]</label>
+								<textcolor>lightgrey</textcolor>
+							</control>
+						</itemlayout>
+						<focusedlayout height="50" width="300">
+							<control type="button">
+								<left>1</left>
+								<top>0</top>
+								<width>298</width>
+								<height>50</height>
+								<texturenofocus colordiffuse="$VAR[selected]">masks/discsurface.png</texturenofocus>
+								<animation effect="fade" end="30" condition="true">Conditional</animation>
+								<visible>!Control.HasFocus(11)</visible>
+							</control>
+							<control type="button">
+								<left>1</left>
+								<top>0</top>
+								<width>298</width>
+								<height>50</height>
+								<texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+                                <texturenofocus colordiffuse="textDisabled">masks/discsurface.png</texturenofocus>
+								<animation effect="fade" end="30" condition="true">Conditional</animation>
+								<visible>Control.HasFocus(11)</visible>
+							</control>
+							<control type="label">
+								<left>5</left>
+								<width>288</width>
+								<height>48</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<scroll>true</scroll>
+								<font>itemTitle</font>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+						</focusedlayout>
+					</control>
 			<control type="Panel" id="8000">
                     <posx>585</posx>
                     <posy>100</posy>
                     <width>15-col</width>
                     <height>2-row</height>
-                    <ondown>10</ondown>
+                    
 					<onright>8001</onright>
-					<onup>11</onup>
+					<include>pvrguidesonupondown20</include>
                     <orientation>horizontal</orientation>
                     <itemlayout width="6-col" height="2-row">
                         <control type="image">
@@ -441,7 +447,7 @@
                             <width>1-col-textbox</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>masks/discsurface.png</texture>
+                            <texture>masks/discsurface50%.png</texture>
                             <colordiffuse>$VAR[highlight]</colordiffuse>
                         </control>
                         <control type="label">
@@ -452,7 +458,7 @@
                             <aligny>center</aligny>
                             <align>center</align>
                             <font>symbolLarge</font>
-                            <textcolor>textActive</textcolor>
+                            <textcolor>$VAR[Home]</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor></shadowcolor>
                         </control>
@@ -497,6 +503,7 @@
                             <font>symbolLarge</font>
                             <textcolor>$VAR[Home]</textcolor>
                             <label>$INFO[ListItem.label2]</label>
+							<include>spinFocusIcon</include>
                             <shadowcolor></shadowcolor>
                         </control>
                         <control type="label">
