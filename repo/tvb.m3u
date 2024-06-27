@@ -129,6 +129,8 @@ plugin://plugin.video.BauBauVavoo/?action=channels&group=Germany&name=SILVERLINE
 plugin://plugin.video.BauBauVavoo/?action=channels&group=Germany&name=SIXX
 #EXTINF:-1 tvg-id="DE: Syfy" group-title="Sky" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/Syfy_HD_Logo_2017.png",Syfy
 plugin://plugin.video.BauBauVavoo/?action=channels&group=Germany&name=SYFY
+#EXTINF:-1 tvg-id="DE: HGTV" group-title="Standard" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/HGTV_logo.svg/300px-HGTV_logo.svg.png",HGTV
+plugin://plugin.video.BauBauVavoo/?action=channels&group=Germany&name=HGTV
 #EXTINF:-1 tvg-id="DE: TLC" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/944.png",TLC
 plugin://plugin.video.BauBauVavoo/?action=channels&group=Germany&name=TLC
 #EXTINF:-1 tvg-id="DE: Tagesschau24" group-title="Dokumentation" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/1046.png",Tagesschau 24
