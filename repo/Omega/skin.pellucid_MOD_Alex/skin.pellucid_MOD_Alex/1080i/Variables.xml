@@ -1019,7 +1019,7 @@
 		<value condition="Control.HasFocus(308) | Control.HasFocus(309)">$LOCALIZE[31480]</value>
 		<value condition="Control.HasFocus(310) | Control.HasFocus(311)">$LOCALIZE[31428]</value>
 		<value condition="Container(9000).HasFocus(1)">$LOCALIZE[31325]</value>
-		<value condition="Container(9000).HasFocus(2)">$LOCALIZE[31326]</value>
+		<value condition="Container(9000).HasFocus(2)">$LOCALIZE[31307]</value>
 		<value condition="Container(9000).HasFocus(3)">$LOCALIZE[31327]</value>
 	</variable>
 	<variable name="centermainmenuVar">

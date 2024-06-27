@@ -437,7 +437,7 @@
 					<control type="button">
 						<width>650</width>
 						<texturenofocus />
-						<disabledcolor>grey</disabledcolor>
+						<disabledcolor>grey</disabledcolor> 
 						<font>buttonTitle</font>
 						<align>left</align>
 						<textoffsetx>16</textoffsetx>

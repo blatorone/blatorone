@@ -769,6 +769,9 @@ msgctxt "#31306"
 msgid "View:"
 msgstr "Ansicht:"
 
+msgctxt "#31307"
+msgid "YouTube"
+msgstr "YouTube"
 
 
 msgctxt "#31309"
@@ -828,9 +831,7 @@ msgctxt "#31326"
 msgid "Disable Overlays Info"
 msgstr "Deaktiviere Overlays"
 
-msgctxt "#31326"
-msgid "YouTube"
-msgstr "YouTube"
+
 
 msgctxt "#31327"
 msgid "Years old"
@@ -912,4 +913,11 @@ msgctxt "#31346"
 msgid "Known for"
 msgstr "Bekannt für"
 
+msgctxt "#31347"
+msgid "Similar"
+msgstr "Ähnliches"
+
+msgctxt "#31348"
+msgid "Recomend"
+msgstr "Empfehlen"
 

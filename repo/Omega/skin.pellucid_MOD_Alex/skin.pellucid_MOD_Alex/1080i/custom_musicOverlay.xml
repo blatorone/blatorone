@@ -52,10 +52,10 @@
             <control type="image">
                 <visible>!player.paused + !Skin.HasSetting(lowPowerMode)</visible>
                 <posx>9</posx>
-                <posy>-10</posy>
+                <posy>0</posy>
                 <width>1-col-gutter</width>
                 <height>1-col-gutter</height>
-                <texture>equaliser.gif</texture>
+                <texture>audio-8777_128.gif</texture>
                 <colordiffuse>$VAR[Home]</colordiffuse>
             </control>
             <control type="label">

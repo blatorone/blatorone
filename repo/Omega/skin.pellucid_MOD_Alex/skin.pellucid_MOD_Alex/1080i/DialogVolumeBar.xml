@@ -60,7 +60,7 @@
         </control>
 		<!--provide % vals for volume-->
 		<control type="progress" id="20">
-		    <visible>false</visible>
+		    <visible>true</visible>
             <info>Player.Volume</info>
         </control>
         <!--debugging-->

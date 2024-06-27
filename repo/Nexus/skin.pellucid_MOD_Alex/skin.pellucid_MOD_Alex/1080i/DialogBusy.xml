@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true"></defaultcontrol>
     <controls>
-        <control type="progress">
+        <control type="progress" id="10">
 		    <description>Progress Bar</description>
 		    <posx>38%</posx>
 		    <posy>60%</posy>
@@ -10,7 +10,6 @@
 		    <height>12</height>
 		    <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
             <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
-		    <info>$INFO[Control.GetLabel(10)]</info>
             <visible>!Integer.IsEqual(Control.GetLabel(10), 0)</visible>
 		</control>
         <control type="label">
