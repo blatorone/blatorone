@@ -131,6 +131,8 @@ plugin://plugin.video.vavooto/?action=channels&group=Germany&name=SERVUS+TV
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=SILVERLINE
 #EXTINF:-1 tvg-id="DE: SIXX" group-title="Standard" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Sixx.svg/300px-Sixx.svg.png",Sixx
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=SIXX
+#EXTINF:-1 tvg-id="DE: HGTV" group-title="Standard" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/HGTV_logo.svg/300px-HGTV_logo.svg.png",HGTV
+plugin://plugin.video.vavooto/?action=channels&group=Germany&name=HGTV
 #EXTINF:-1 tvg-id="DE: Syfy" group-title="Sky" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/Syfy_HD_Logo_2017.png",Syfy
 plugin://plugin.video.vavooto/?action=channels&group=Germany&name=SYFY
 #EXTINF:-1 tvg-id="DE: TLC" group-title="Standard" tvg-logo="http://epggw.a1.net/img/station/darkbg/100x100/944.png",TLC
