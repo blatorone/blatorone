@@ -540,6 +540,7 @@
 							<textcolor>textActive</textcolor>
 							<label>$VAR[starRating]]</label>
 		</control>
+        <include condition="!String.IsEqual(ListItem.DBTYPE,set) + !String.IsEqual(ListItem.Property(item.type),person)">InfoMPAA</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

@@ -1453,5 +1453,23 @@
 
 
     <!--aeonocsilvio-->
+    <include name="InfoMPAA">
+		<control type="image">
+			<width>135</width>
+			<height>90</height>
+			<include>MediaFlagValues</include>
+			<texture fallback="flags/default/mpaa/NR.png">$VAR[MediaFlagsPathVar]/mpaa/$VAR[RatingFlagVar]</texture>
+		</control>
+	</include>
+    <!-- Media Flags -->
+	<include name="MediaFlagValues">
+		<width>170</width>
+		<height>78</height>
+		<aspectratio>keep</aspectratio>
+		<fadetime>250</fadetime>
+		<colordiffuse>white</colordiffuse>
+		<animation effect="fade" time="200">VisibleChange</animation>
+	</include>
+
     
 </includes>

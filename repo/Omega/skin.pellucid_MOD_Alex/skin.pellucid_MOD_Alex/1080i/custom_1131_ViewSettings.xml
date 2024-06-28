@@ -73,15 +73,7 @@
 				<ondown>9011</ondown>
 				<!-- Top Settings -->
 				<!-- Button IDs (1500-1509) -->
-				<!-- TopBar 
-				<control type="button" id="1500">
-					<include>ButtonCommonValues</include>
-					<label>$LOCALIZE[31252]</label>
-					<label2>[COLOR $VAR[Home]]$VAR[NoTopBarLabelVar][/COLOR]</label2>
-					<onclick>$VAR[NoTopBarOnClickVar]</onclick>
-					<visible>!Skin.HasSetting(Disable.TopBar)</visible>
-				</control>
-				-->
+				
 				<!-- Watched Status Indicators -->
 				<control type="button" id="1501">
 					<include>ButtonCommonValues</include>

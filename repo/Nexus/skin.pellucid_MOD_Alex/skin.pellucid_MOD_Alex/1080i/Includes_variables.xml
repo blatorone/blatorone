@@ -349,7 +349,7 @@
 
 
 
-
+<!--copied-->
 
 
     <variable name="DisableHDIndicatorsLabelVar">
@@ -517,6 +517,278 @@
 		<value condition="!String.IsEmpty(ListItem.PlotOutline) + Skin.HasSetting(ViewInfoPlotToggle)">$INFO[ListItem.PlotOutline]</value>
 		<value condition="System.GetBool(videolibrary.showunwatchedplots)">$INFO[ListItem.Plot]</value>
 		<value>$INFO[ListItem.Plot]</value>
+	</variable>
+
+    <variable name="OtherPlotVar">
+		<value condition="Container.Content(albums) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
+		<value condition="Container.Content(albums)">$LOCALIZE[414]</value>
+		<value condition="Container.Content(artists) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
+		<value condition="Container.Content(artists)">$LOCALIZE[547]</value>
+	</variable>
+	<!-- InfoPanel -->
+	<variable name="FloorLabelVar">
+		<value condition="Container.Content(episodes) + String.Contains(Container.FolderPath,/recentlyaddedepisodes)">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.Title]</value>
+		<value>$INFO[ListItem.Label]</value>
+	</variable>
+	<variable name="RatingFlagVar">
+		<value condition="String.IsEmpty(ListItem.Mpaa) | String.Contains(ListItem.Mpaa,NR) | String.IsEqual(ListItem.Mpaa,Rated) | String.IsEqual(ListItem.Mpaa,Rated ) | String.IsEqual(ListItem.Mpaa,Not Rated)">NR.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,US:R) | String.IsEqual(ListItem.Mpaa,USA:R) | String.IsEqual(ListItem.Mpaa,Rated R) | String.IsEqual(ListItem.Mpaa,R)">R.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,US:NC-17) | String.IsEqual(ListItem.Mpaa,USA:NC-17) | String.IsEqual(ListItem.Mpaa,Rated NC-17) | String.IsEqual(ListItem.Mpaa,NC-17)">NC-17.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,US:PG-13) | String.IsEqual(ListItem.Mpaa,USA:PG-13) | String.IsEqual(ListItem.Mpaa,Rated PG-13) | String.IsEqual(ListItem.Mpaa,PG-13)">PG-13.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,US:PG) | String.IsEqual(ListItem.Mpaa,USA:PG) | String.IsEqual(ListItem.Mpaa,Rated PG) | String.IsEqual(ListItem.Mpaa,PG)">PG.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,US:G) | String.IsEqual(ListItem.Mpaa,USA:G) | String.IsEqual(ListItem.Mpaa,Rated G) | String.IsEqual(ListItem.Mpaa,G) | String.IsEqual(ListItem.Mpaa,Rated Approved) | String.IsEqual(ListItem.Mpaa,Approved) | String.IsEqual(ListItem.Mpaa,Rated Passed) | String.IsEqual(ListItem.Mpaa,Passed)">G.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:U) | String.IsEqual(ListItem.Mpaa,United Kingdom:U)">BBFC_U_Certificate_UK.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:PG) | String.IsEqual(ListItem.Mpaa,United Kingdom:PG)">BBFC_PG_Certificate_UK.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:12A) | String.IsEqual(ListItem.Mpaa,United Kingdom:12A)">BBFC_12A_Certificate_UK.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:12) | String.IsEqual(ListItem.Mpaa,United Kingdom:12)">BBFC_12_Certificate_UK.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:15) | String.IsEqual(ListItem.Mpaa,United Kingdom:15)">BBFC_15_Certificate_UK.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:18) | String.IsEqual(ListItem.Mpaa,United Kingdom:18)">BBFC_18_Certificate_UK.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,Germany:16) | String.Contains(ListItem.Mpaa,ab 16) | String.IsEqual(ListItem.Mpaa,16) | String.Contains(ListItem.Mpaa,FSK 16) | String.IsEqual(ListItem.Mpaa,Rated 16)">FSK-16.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany:0) | String.Contains(ListItem.Mpaa,ab 0) | String.IsEqual(ListItem.Mpaa,0) | String.Contains(ListItem.Mpaa,FSK 0) | String.Contains(ListItem.Mpaa,Rated 0)">FSK-0.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany:6) | String.Contains(ListItem.Mpaa,ab 6) | String.IsEqual(ListItem.Mpaa,6) | String.Contains(ListItem.Mpaa,FSK 6) | String.Contains(ListItem.Mpaa,Rated 6)">FSK-6.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany:12) | String.Contains(ListItem.Mpaa,ab 12) | String.IsEqual(ListItem.Mpaa,12) | String.Contains(ListItem.Mpaa,FSK 12) | String.Contains(ListItem.Mpaa,Rated 12)">FSK-12.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany:18) | String.Contains(ListItem.Mpaa,ab 18) | String.IsEqual(ListItem.Mpaa,18) | String.Contains(ListItem.Mpaa,FSK 18) | String.Contains(ListItem.Mpaa,Rated 18)">FSK-18.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany) | String.Contains(ListItem.Mpaa,FSK) | String.Contains(ListItem.Mpaa,o.A) | String.Contains(ListItem.Mpaa,Rated 0)">FSK-0.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,besorolás alatt)">HU_BA.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,korhatárra való tekintett nélkül megtekintetheto)">HU_KN.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,12 éven aluliak számára a megtekintése nagykorú felügyelete mellett ajánlott)">HU_12.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,16 éven aluliak számára nem ajánlott)">HU_16.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,18 éven aluliak számára nem ajánlott)">HU_18.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,FR-U) | String.Contains(ListItem.Mpaa,FR-TP) | String.Contains(ListItem.Mpaa,France:U) | String.Contains(ListItem.Mpaa,Tout public) | String.Contains(ListItem.Mpaa,partir de 3 ans) | String.Contains(ListItem.Mpaa,partir de 6 ans)">csaU.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,FR-10) | String.Contains(ListItem.Mpaa,France:-10) | String.Contains(ListItem.Mpaa,Interdit aux moins de 10 ans) | String.Contains(ListItem.Mpaa,des propos ou des images peuvent heurter)">csa10.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,FR-12) | String.Contains(ListItem.Mpaa,France:-12) | String.Contains(ListItem.Mpaa,Interdit aux moins de 12 ans)">csa12.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,FR-16) | String.Contains(ListItem.Mpaa,France:-16) | String.Contains(ListItem.Mpaa,Interdit aux moins de 16 ans)">csa16.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,FR-18) | String.Contains(ListItem.Mpaa,France:-18) | String.Contains(ListItem.Mpaa,Interdit aux moins de 18 ans)">csa18.png</value>
+		<value condition="String.Contains(ListItem.MPAA,전체)">KR_Certificate_All.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,12세)">KR_Certificate_12.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,15세)">KR_Certificate_15.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,불가)">KR_Certificate_18.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,제한)">KR_Certificate_R.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Brazil:Livre) | String.Contains(ListItem.Mpaa,Livre)">Mpaa_Brazil_Livre.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Brazil:10) | String.Contains(ListItem.Mpaa,10 anos)">Mpaa_Brazil_10.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Brazil:12) | String.Contains(ListItem.Mpaa,12 anos)">Mpaa_Brazil_12.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Brazil:14) | String.Contains(ListItem.Mpaa,14 anos)">Mpaa_Brazil_14.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Brazil:16) | String.Contains(ListItem.Mpaa,16 anos)">Mpaa_Brazil_16.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Brazil:18) | String.Contains(ListItem.Mpaa,18 anos)">Mpaa_Brazil_18.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Australia:R) | String.Contains(ListItem.Mpaa,Australia:R18)">australia_R.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Australia:MA) | String.Contains(ListItem.Mpaa,Australia:MA15)">australia_MA.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Australia:M)">australia_M.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Australia:M)">australia_M.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Australia:PG)">australia_PG.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,Australia:G)">australia_G.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,NL:AL)">NL-AL.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,NL:6)">NL-6.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,NL:9)">NL-9.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,NL:12)">NL-12.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,NL:16)">NL-16.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,NL:18)">NL-18.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,GR:K)">GR-K.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,GR:8)">GR-8.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,GR:12)">GR-12.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,GR:16)">GR-16.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,GR:18)">GR-18.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,DK:A) | String.IsEqual(ListItem.Mpaa,Denmark:A)">MCCYP_Denmark-A.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,DK:7) | String.IsEqual(ListItem.Mpaa,Denmark:7)">MCCYP_Denmark-7.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,DK:11) | String.IsEqual(ListItem.Mpaa,Denmark:11)">MCCYP_Denmark-11.png</value>
+		<value condition="String.Contains(ListItem.Mpaa,DK:15) | String.IsEqual(ListItem.Mpaa,Denmark:15)">MCCYP_Denmark-15.png</value>
+		<value>$INFO[ListItem.Mpaa,,.png]</value>
+	</variable>
+	<variable name="EmbuaryInfoRatingFlagVar">
+		<value condition="String.IsEmpty(Container(10051).ListItem.Mpaa) | String.Contains(Container(10051).ListItem.Mpaa,NR) | String.IsEqual(Container(10051).ListItem.Mpaa,Rated) | String.IsEqual(Container(10051).ListItem.Mpaa,Rated ) | String.IsEqual(Container(10051).ListItem.Mpaa,Not Rated)">NR.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,US:R) | String.Contains(Container(10051).ListItem.Mpaa,USA:R) | String.IsEqual(Container(10051).ListItem.Mpaa,Rated R) | String.IsEqual(Container(10051).ListItem.Mpaa,R)">R.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,US:NC-17) | String.Contains(Container(10051).ListItem.Mpaa,USA:NC-17) | String.IsEqual(Container(10051).ListItem.Mpaa,Rated NC-17) | String.IsEqual(Container(10051).ListItem.Mpaa,NC-17)">NC-17.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,US:PG-13) | String.Contains(Container(10051).ListItem.Mpaa,USA:PG-13) | String.IsEqual(Container(10051).ListItem.Mpaa,Rated PG-13) | String.IsEqual(Container(10051).ListItem.Mpaa,PG-13)">PG-13.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,US:PG) | String.Contains(Container(10051).ListItem.Mpaa,USA:PG) | String.IsEqual(Container(10051).ListItem.Mpaa,Rated PG) | String.IsEqual(Container(10051).ListItem.Mpaa,PG)">PG.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,US:G) | String.Contains(Container(10051).ListItem.Mpaa,USA:G) | String.IsEqual(Container(10051).ListItem.Mpaa,Rated G) | String.IsEqual(Container(10051).ListItem.Mpaa,G) | String.IsEqual(Container(10051).ListItem.Mpaa,Rated Approved) | String.IsEqual(Container(10051).ListItem.Mpaa,Approved) | String.IsEqual(Container(10051).ListItem.Mpaa,Rated Passed) | String.IsEqual(Container(10051).ListItem.Mpaa,Passed)">G.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,UK:U)| String.Contains(Container(10051).ListItem.Mpaa,United Kingdom:U)">BBFC_U_Certificate_UK.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,UK:PG) | String.Contains(Container(10051).ListItem.Mpaa,United Kingdom:PG)"> BBFC_PG_Certificate_UK.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,UK:12A) | String.Contains(Container(10051).ListItem.Mpaa,United Kingdom:12A)">BBFC_12A_Certificate_UK.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,UK:12) | String.Contains(Container(10051).ListItem.Mpaa,United Kingdom:12)">BBFC_12_Certificate_UK.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,UK:15) | String.Contains(Container(10051).ListItem.Mpaa,United Kingdom:15)">BBFC_15_Certificate_UK.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,UK:18) | String.Contains(Container(10051).ListItem.Mpaa,United Kingdom:18)">BBFC_18_Certificate_UK.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Germany:16) | String.Contains(Container(10051).ListItem.Mpaa,ab 16) | String.IsEqual(Container(10051).ListItem.Mpaa,16) | String.Contains(Container(10051).ListItem.Mpaa,FSK 16) | String.Contains(Container(10051).ListItem.Mpaa,Rated 16)">FSK-16.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Germany:0) | String.Contains(Container(10051).ListItem.Mpaa,ab 0) | String.IsEqual(Container(10051).ListItem.Mpaa,0) | String.Contains(Container(10051).ListItem.Mpaa,FSK 0) | String.Contains(Container(10051).ListItem.Mpaa,Rated 0)">FSK-0.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Germany:6) | String.Contains(Container(10051).ListItem.Mpaa,ab 6) | String.IsEqual(Container(10051).ListItem.Mpaa,6) | String.Contains(Container(10051).ListItem.Mpaa,FSK 6) | String.Contains(Container(10051).ListItem.Mpaa,Rated 6)">FSK-6.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Germany:12) | String.Contains(Container(10051).ListItem.Mpaa,ab 12) | String.IsEqual(Container(10051).ListItem.Mpaa,12) | String.Contains(Container(10051).ListItem.Mpaa,FSK 12) | String.Contains(Container(10051).ListItem.Mpaa,Rated 12)">FSK-12.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Germany:18) | String.Contains(Container(10051).ListItem.Mpaa,ab 18) | String.IsEqual(Container(10051).ListItem.Mpaa,18) | String.Contains(Container(10051).ListItem.Mpaa,FSK 18) | String.Contains(Container(10051).ListItem.Mpaa,Rated 18)">FSK-18.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Germany) |String.Contains(Container(10051).ListItem.Mpaa,FSK) | String.Contains(Container(10051).ListItem.Mpaa,o.A) | String.Contains(Container(10051).ListItem.Mpaa,Rated 0)">FSK-0.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,besorolás alatt)">HU_BA.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,korhatárra való tekintett nélkül megtekintetheto)">HU_KN.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,12 éven aluliak számára a megtekintése nagykorú felügyelete mellett ajánlott)">HU_12.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,16 éven aluliak számára nem ajánlott)">HU_16.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,18 éven aluliak számára nem ajánlott)">HU_18.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,FR-U) | String.Contains(Container(10051).ListItem.Mpaa,FR-TP) | String.Contains(Container(10051).ListItem.Mpaa,France:U) | String.Contains(Container(10051).ListItem.Mpaa,Tout public) | String.Contains(Container(10051).ListItem.Mpaa,partir de 3 ans) | String.Contains(Container(10051).ListItem.Mpaa,partir de 6 ans)">csaU.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,FR-10) | String.Contains(Container(10051).ListItem.Mpaa,France:-10) | String.Contains(Container(10051).ListItem.Mpaa,Interdit aux moins de 10 ans) | String.Contains(Container(10051).ListItem.Mpaa,des propos ou des images peuvent heurter)">csa10.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,FR-12) | String.Contains(Container(10051).ListItem.Mpaa,France:-12) | String.Contains(Container(10051).ListItem.Mpaa,Interdit aux moins de 12 ans)">csa12.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,FR-16) | String.Contains(Container(10051).ListItem.Mpaa,France:-16) | String.Contains(Container(10051).ListItem.Mpaa,Interdit aux moins de 16 ans)">csa16.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,FR-18) | String.Contains(Container(10051).ListItem.Mpaa,France:-18) | String.Contains(Container(10051).ListItem.Mpaa,Interdit aux moins de 18 ans)">csa18.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,전체)">KR_Certificate_All.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,12세)">KR_Certificate_12.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,15세)">KR_Certificate_15.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,불가)">KR_Certificate_18.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,제한)">KR_Certificate_R.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Brazil:Livre) | String.Contains(Container(10051).ListItem.Mpaa,Livre)">Mpaa_Brazil_Livre.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Brazil:10) | String.Contains(Container(10051).ListItem.Mpaa,10 anos)">Mpaa_Brazil_10.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Brazil:12) | String.Contains(Container(10051).ListItem.Mpaa,12 anos)">Mpaa_Brazil_12.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Brazil:14) | String.Contains(Container(10051).ListItem.Mpaa,14 anos)">Mpaa_Brazil_14.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Brazil:16) | String.Contains(Container(10051).ListItem.Mpaa,16 anos)">Mpaa_Brazil_16.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Brazil:18) | String.Contains(Container(10051).ListItem.Mpaa,18 anos)">Mpaa_Brazil_18.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Australia:R) | String.Contains(Container(10051).ListItem.Mpaa,Australia:R18)">australia_R.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Australia:MA) | String.Contains(Container(10051).ListItem.Mpaa,Australia:MA15)">australia_MA.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Australia:M)">australia_M.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Australia:PG)">australia_PG.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,Australia:G)">australia_G.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,NL:AL)">NL-AL.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,NL:6)">NL-6.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,NL:9)">NL-9.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,NL:12)">NL-12.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,NL:16)">NL-16.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,NL:18)">NL-18.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,GR:K)">GR-K.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,GR:8)">GR-8.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,GR:12)">GR-12.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,GR:16)">GR-16.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,GR:18)">GR-18.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,DK:A) | String.Contains(Container(10051).ListItem.Mpaa,Denmark:A)">MCCYP_Denmark-A.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,DK:7) | String.Contains(Container(10051).ListItem.Mpaa,Denmark:7)">MCCYP_Denmark-7.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,DK:11) | String.Contains(Container(10051).ListItem.Mpaa,Denmark:11)">MCCYP_Denmark-11.png</value>
+		<value condition="String.Contains(Container(10051).ListItem.Mpaa,DK:15) | String.Contains(Container(10051).ListItem.Mpaa,Denmark:15)">MCCYP_Denmark-15.png</value>
+		<value>$INFO[Container(10051).ListItem.Mpaa,,.png]</value>
+	</variable>
+	<variable name="MediaFlagsPathVar">
+		<value condition="Skin.HasSetting(coloredflags)">flags/colored</value>
+		<value>flags/default</value>
+	</variable>
+	<!-- Embuary Info -->
+	<variable name="EmbuaryInfoPosterVar">
+		<value condition="ControlGroup(90000).HasFocus(10052) + !String.IsEmpty(Container(10052).ListItem.Art(thumb))">$INFO[Container(10052).ListItem.Art(thumb)]</value>
+		<value condition="ControlGroup(90000).HasFocus(10053) + !String.IsEmpty(Container(10053).ListItem.Art(thumb))">$INFO[Container(10053).ListItem.Art(thumb)]</value>
+		<value condition="Window.IsActive(script-embuary-person.xml) + ControlGroup(90000).HasFocus(10054) + !String.IsEmpty(Container(10054).ListItem.Art(thumb))">$INFO[Container(10054).ListItem.Art(thumb)]</value>
+		<value condition="ControlGroup(90000).HasFocus(10056) + !String.IsEmpty(Container(10056).ListItem.Art(thumb))">$INFO[Container(10056).ListItem.Art(thumb)]</value>
+		<value>$INFO[Container(10051).ListItem.Art(thumb)]</value>
+	</variable>
+	<variable name="EmbuaryInfoButtonLabelVar">
+		<value condition="Control.HasFocus(900) + String.IsEqual(Container(10051).ListItem.Property(call),tv)">$LOCALIZE[1024]</value>
+		<value condition="Control.HasFocus(900)">$LOCALIZE[208]</value>
+		<value condition="Control.HasFocus(901)">$LOCALIZE[206]</value>
+		<value condition="Control.HasFocus(902)">$LOCALIZE[31345]</value> 
+		<value condition="Control.HasFocus(903)">$LOCALIZE[5]</value>
+		<value condition="Control.HasFocus(3000) | Control.HasFocus(64)">$LOCALIZE[31340]</value>
+		<value condition="Control.HasFocus(90002) | Container(90000).HasNext + !Container(90000).HasPrevious">$LOCALIZE[31341]</value>
+	</variable>
+	<variable name="EmbuaryInfoDetailsLabelVar">
+		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10052)">$INFO[Container(10051).ListItem.Label,$LOCALIZE[31342] ]</value>
+		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10053)">$INFO[Container(10051).ListItem.Label,$LOCALIZE[31343] ]</value>
+		<value condition="Window.IsActive(script-embuary-person.xml) + Control.HasFocus(10054) | Control.HasFocus(10055)">$LOCALIZE[31344]</value>
+		<value condition="Control.HasFocus(10052)">$LOCALIZE[206]</value>
+		<value condition="Control.HasFocus(10053)">$ADDON[script.embuary.info 32009]</value>
+		<value condition="Control.HasFocus(10054)">$LOCALIZE[31345]</value>
+		<value condition="Control.HasFocus(10056)">$ADDON[script.embuary.info 32018]</value>
+	</variable>
+	<variable name="MinsToHourDurationVar">
+		<value condition="Integer.IsEqual(ListItem.Duration(mins),60) | Integer.IsEqual(ListItem.Duration(mins),120) | Integer.IsEqual(ListItem.Duration(mins),180) | Integer.IsEqual(ListItem.Duration(mins),240) | Integer.IsEqual(ListItem.Duration(mins),300) | Integer.IsEqual(ListItem.Duration(mins),360) | Integer.IsEqual(ListItem.Duration(mins),420) | Integer.IsEqual(ListItem.Duration(mins),480) | Integer.IsEqual(ListItem.Duration(mins),540) | Integer.IsEqual(ListItem.Duration(mins),600)">$INFO[ListItem.Duration(hours),,h]</value>
+		<value condition="Integer.IsLess(ListItem.Duration(mins),60)">$INFO[ListItem.Duration(m),,m]</value>
+		<value condition="Integer.IsLess(ListItem.Duration(mins),1)">$INFO[ListItem.Duration(ss),,$LOCALIZE[31338]]</value>
+		<value>$INFO[ListItem.Duration(h),,h] $INFO[.ListItem.Duration(m),,m]</value>
+	</variable>
+	<variable name="DisableOverlayLabelVar">
+		<!-- InfoWall -->
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),InfoWall) + Container.Content(movies) + !String.IsEmpty(Skin.String(51.Movies.DisableOverlay))">$INFO[Skin.String(51.Movies.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),InfoWall) + Container.Content(tvshows) + !String.IsEmpty(Skin.String(51.TV.DisableOverlay))">$INFO[Skin.String(51.TV.DisableOverlay)]</value>
+		<!-- Landscape -->
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + Container.Content(movies) + !String.IsEmpty(Skin.String(52.Movies.DisableOverlay))">$INFO[Skin.String(52.Movies.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + Container.Content(sets) + !String.IsEmpty(Skin.String(52.Sets.DisableOverlay))">$INFO[Skin.String(52.Sets.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + Container.Content(tvshows) + !String.IsEmpty(Skin.String(52.TV.DisableOverlay))">$INFO[Skin.String(52.TV.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + Container.Content(episodes) + !String.IsEmpty(Skin.String(52.Episodes.DisableOverlay))">$INFO[Skin.String(52.Episodes.DisableOverlay)]</value>
+		<!-- ShowCase -->
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(movies) + !String.IsEmpty(Skin.String(53.Movies.DisableOverlay))">$INFO[Skin.String(53.Movies.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(sets) + !String.IsEmpty(Skin.String(53.Sets.DisableOverlay))">$INFO[Skin.String(53.Sets.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(tvshows) + !String.IsEmpty(Skin.String(53.TV.DisableOverlay))">$INFO[Skin.String(53.TV.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(seasons) + !String.IsEmpty(Skin.String(53.Seasons.DisableOverlay))">$INFO[Skin.String(53.Seasons.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(musicvideos) + !String.IsEmpty(Skin.String(53.MusicVideos.DisableOverlay))">$INFO[Skin.String(53.MusicVideos.DisableOverlay)]</value>
+		<!-- Wall -->
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Wall) + Container.Content(movies) + !String.IsEmpty(Skin.String(503.Movies.DisableOverlay))">$INFO[Skin.String(503.Movies.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Wall) + Container.Content(tvshows) + !String.IsEmpty(Skin.String(503.TV.DisableOverlay))">$INFO[Skin.String(503.TV.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Wall) + Container.Content(seasons) + !String.IsEmpty(Skin.String(503.Seasons.DisableOverlay))">$INFO[Skin.String(503.Seasons.DisableOverlay)]</value>
+		
+		<!-- FullscreenWall -->
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + Container.Content(movies) + !String.IsEmpty(Skin.String(609.Movies.DisableOverlay))">$INFO[Skin.String(609.Movies.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + Container.Content(tvshows) + !String.IsEmpty(Skin.String(609.TV.DisableOverlay))">$INFO[Skin.String(609.TV.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + Container.Content(sets) + !String.IsEmpty(Skin.String(609.Sets.DisableOverlay))">$INFO[Skin.String(609.Sets.DisableOverlay)]</value>
+		<!-- MyFlix --> 
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + Container.Content(movies) + !String.IsEmpty(Skin.String(509.Movies.DisableOverlay))">$INFO[Skin.String(509.Movies.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + Container.Content(sets) + !String.IsEmpty(Skin.String(509.Sets.DisableOverlay))">$INFO[Skin.String(509.Sets.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + [Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(Skin.String(509.TV.DisableOverlay))">$INFO[Skin.String(509.TV.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + Container.Content(episodes) + !String.IsEmpty(Skin.String(509.Episodes.DisableOverlay))">$INFO[Skin.String(509.Episodes.DisableOverlay)]</value>
+		<!-- BigFan -->
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + Container.Content(movies) + !String.IsEmpty(Skin.String(591.Movies.DisableOverlay))">$INFO[Skin.String(591.Movies.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + Container.Content(sets) + !String.IsEmpty(Skin.String(591.Sets.DisableOverlay))">$INFO[Skin.String(591.Sets.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + Container.Content(tvshows) + !String.IsEmpty(Skin.String(591.TV.DisableOverlay))">$INFO[Skin.String(591.TV.DisableOverlay)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + Container.Content(seasons) + !String.IsEmpty(Skin.String(591.Seasons.DisableOverlay))">$INFO[Skin.String(591.Seasons.DisableOverlay)]</value>
+		<value>$LOCALIZE[1223]</value>
+	</variable>
+	<variable name="DisableOverlayOnclickVar">
+		<!-- InfoWall -->
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),InfoWall) + Container.Content(movies) + String.IsEmpty(Skin.String(51.Movies.DisableOverlay))">Skin.SetString(51.Movies.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),InfoWall) + Container.Content(movies) + String.IsEqual(Skin.String(51.Movies.DisableOverlay),$LOCALIZE[305])">Skin.Reset(51.Movies.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),InfoWall) + Container.Content(tvshows) + String.IsEmpty(Skin.String(51.TV.DisableOverlay))">Skin.SetString(51.TV.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),InfoWall) + Container.Content(tvshows) + String.IsEqual(Skin.String(51.TV.DisableOverlay),$LOCALIZE[305])">Skin.Reset(51.TV.DisableOverlay)</value>
+		<!-- Landscape -->
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + Container.Content(movies) + String.IsEmpty(Skin.String(52.Movies.DisableOverlay))">Skin.SetString(52.Movies.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + Container.Content(movies) + String.IsEqual(Skin.String(52.Movies.DisableOverlay),$LOCALIZE[305])">Skin.Reset(52.Movies.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + Container.Content(sets) + String.IsEmpty(Skin.String(52.Sets.DisableOverlay))">Skin.SetString(52.Sets.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + Container.Content(sets) + String.IsEqual(Skin.String(52.Sets.DisableOverlay),$LOCALIZE[305])">Skin.Reset(52.Sets.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + Container.Content(tvshows) + String.IsEmpty(Skin.String(52.TV.DisableOverlay))">Skin.SetString(52.TV.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + Container.Content(tvshows) + String.IsEqual(Skin.String(52.TV.DisableOverlay),$LOCALIZE[305])">Skin.Reset(52.TV.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + Container.Content(episodes) + String.IsEmpty(Skin.String(52.Episodes.DisableOverlay))">Skin.SetString(52.Episodes.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Landscape) + Container.Content(episodes) + String.IsEqual(Skin.String(52.Episodes.DisableOverlay),$LOCALIZE[305])">Skin.Reset(52.Episodes.DisableOverlay)</value>
+		<!-- ShowCase -->
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(movies) + String.IsEmpty(Skin.String(53.Movies.DisableOverlay))">Skin.SetString(53.Movies.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(movies) + String.IsEqual(Skin.String(53.Movies.DisableOverlay),$LOCALIZE[305])">Skin.Reset(53.Movies.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(sets) + String.IsEmpty(Skin.String(53.Sets.DisableOverlay))">Skin.SetString(53.Sets.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(sets) + String.IsEqual(Skin.String(53.Sets.DisableOverlay),$LOCALIZE[305])">Skin.Reset(53.Sets.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(tvshows) + String.IsEmpty(Skin.String(53.TV.DisableOverlay))">Skin.SetString(53.TV.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(tvshows) + String.IsEqual(Skin.String(53.TV.DisableOverlay),$LOCALIZE[305])">Skin.Reset(53.TV.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(seasons) + String.IsEmpty(Skin.String(53.Seasons.DisableOverlay))">Skin.SetString(53.Seasons.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(seasons) + String.IsEqual(Skin.String(53.Seasons.DisableOverlay),$LOCALIZE[305])">Skin.Reset(53.Seasons.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(musicvideos) + String.IsEmpty(Skin.String(53.MusicVideos.DisableOverlay))">Skin.SetString(53.MusicVideos.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),ShowCase) + Container.Content(musicvideos) + String.IsEqual(Skin.String(53.MusicVideos.DisableOverlay),$LOCALIZE[305])">Skin.Reset(53.MusicVideos.DisableOverlay)</value>
+		<!-- Wall -->
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Wall) + Container.Content(movies) + String.IsEmpty(Skin.String(503.Movies.DisableOverlay))">Skin.SetString(503.Movies.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Wall) + Container.Content(movies) + String.IsEqual(Skin.String(503.Movies.DisableOverlay),$LOCALIZE[305])">Skin.Reset(503.Movies.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Wall) + Container.Content(tvshows) + String.IsEmpty(Skin.String(503.TV.DisableOverlay))">Skin.SetString(503.TV.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Wall) + Container.Content(tvshows) + String.IsEqual(Skin.String(503.TV.DisableOverlay),$LOCALIZE[305])">Skin.Reset(503.TV.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Wall) + Container.Content(seasons) + String.IsEmpty(Skin.String(503.Seasons.DisableOverlay))">Skin.SetString(503.Seasons.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),Wall) + Container.Content(seasons) + String.IsEqual(Skin.String(503.Seasons.DisableOverlay),$LOCALIZE[305])">Skin.Reset(503.Seasons.DisableOverlay)</value>
+		<!-- FullscreenWall -->
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + Container.Content(movies) + String.IsEmpty(Skin.String(609.Movies.DisableOverlay))">Skin.SetString(609.Movies.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + Container.Content(movies) + String.IsEqual(Skin.String(609.Movies.DisableOverlay),$LOCALIZE[305])">Skin.Reset(609.Movies.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + Container.Content(tvshows) + String.IsEmpty(Skin.String(609.TV.DisableOverlay))">Skin.SetString(609.TV.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + Container.Content(tvshows) + String.IsEqual(Skin.String(609.TV.DisableOverlay),$LOCALIZE[305])">Skin.Reset(609.TV.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + Container.Content(sets) + String.IsEmpty(Skin.String(609.Sets.DisableOverlay))">Skin.SetString(609.Sets.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),FullscreenWall) + Container.Content(sets) + String.IsEqual(Skin.String(609.Sets.DisableOverlay),$LOCALIZE[305])">Skin.Reset(609.Sets.DisableOverlay)</value>
+		<!-- MyFlix-->
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + Container.Content(movies) + String.IsEmpty(Skin.String(509.Movies.DisableOverlay))">Skin.SetString(509.Movies.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + Container.Content(movies) + String.IsEqual(Skin.String(509.Movies.DisableOverlay),$LOCALIZE[305])">Skin.Reset(509.Movies.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + Container.Content(sets) + String.IsEmpty(Skin.String(509.Sets.DisableOverlay))">Skin.SetString(509.Sets.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + Container.Content(sets) + String.IsEqual(Skin.String(509.Sets.DisableOverlay),$LOCALIZE[305])">Skin.Reset(509.Sets.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + [Container.Content(tvshows) | Container.Content(seasons)] + String.IsEmpty(Skin.String(509.TV.DisableOverlay))">Skin.SetString(509.TV.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + [Container.Content(tvshows) | Container.Content(seasons)] + String.IsEqual(Skin.String(509.TV.DisableOverlay),$LOCALIZE[305])">Skin.Reset(509.TV.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + Container.Content(episodes) + String.IsEmpty(Skin.String(509.Episodes.DisableOverlay))">Skin.SetString(509.Episodes.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),MyFlix) + Container.Content(episodes) + String.IsEqual(Skin.String(509.Episodes.DisableOverlay),$LOCALIZE[305])">Skin.Reset(509.Episodes.DisableOverlay)</value>
+		<!-- BigFan-->
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + Container.Content(movies) + String.IsEmpty(Skin.String(591.Movies.DisableOverlay))">Skin.SetString(591.Movies.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + Container.Content(movies) + String.IsEqual(Skin.String(591.Movies.DisableOverlay),$LOCALIZE[305])">Skin.Reset(591.Movies.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + Container.Content(sets) + String.IsEmpty(Skin.String(591.Sets.DisableOverlay))">Skin.SetString(591.Sets.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + Container.Content(sets) + String.IsEqual(Skin.String(591.Sets.DisableOverlay),$LOCALIZE[305])">Skin.Reset(591.Sets.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + Container.Content(tvshows) + String.IsEmpty(Skin.String(591.TV.DisableOverlay))">Skin.SetString(591.TV.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + Container.Content(tvshows) + String.IsEqual(Skin.String(591.TV.DisableOverlay),$LOCALIZE[305])">Skin.Reset(591.TV.DisableOverlay)</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + Container.Content(seasons) + String.IsEmpty(Skin.String(591.Seasons.DisableOverlay))">Skin.SetString(591.Seasons.DisableOverlay,$LOCALIZE[305])</value>
+		<value condition="String.IsEqual(Window(Home).Property(actualViewtype),BigFan) + Container.Content(seasons) + String.IsEqual(Skin.String(591.Seasons.DisableOverlay),$LOCALIZE[305])">Skin.Reset(591.Seasons.DisableOverlay)</value>
+	</variable>
+	<variable name="MyFlixDimmerLabelVar">
+		<value condition="!String.IsEmpty(Skin.String(MyFlix.Dimmer))">$INFO[Skin.String(MyFlix.Dimmer)]</value>
+		<value>50%</value>
 	</variable>
 </includes>
 
