@@ -389,6 +389,27 @@
                     <onclick>Skin.Togglesetting(crosskey)</onclick>
                     <selected>Skin.HasSetting(crosskey)</selected>
                 </control>
+                <!--PVR-->
+                <control type="label" id="1004">
+                        <visible>Container(8000).Hasfocus(4) + Integer.IsGreater(System.BatteryLevel,1)</visible>
+						<posx>12</posx>
+						<posy>0</posy>
+						<width>14-col</width>
+						<height>2-col</height>
+						<font>dialogTitle</font>
+						<aligny>center</aligny>
+						<align>center</align>
+						<label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31249] $LOCALIZE[5][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
+				</control>
+                <control type="button" id="41">
+                    <visible>Container(8000).Hasfocus(4)</visible>
+                    <description>Change Main Button Menu to Slider</description>
+                    <width>14-col</width>
+                    <label>$LOCALIZE[31308]</label>
+                    <label2>$VAR[PVRListlook]</label2>
+                    <onclick>Skin.Togglesetting(PVRList)</onclick>
+                    <selected>Skin.HasSetting(PVRList)</selected>
+                </control>
                 <!--
                 <control type="radiobutton" id="34">
 					<visible>Container(8000).Hasfocus(4)</visible>

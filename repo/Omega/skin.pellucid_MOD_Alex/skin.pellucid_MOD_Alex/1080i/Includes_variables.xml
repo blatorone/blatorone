@@ -311,6 +311,11 @@
         <value condition="String.IsEmpty(Skin.String(Selected_box_Color))">white</value>
     </variable>
 
+    <variable name="PVRListlook">
+		<value condition="!Skin.Hassetting(PVRList)">[COLOR $VAR[selected]]Liste[/COLOR]</value>
+		<value condition="Skin.Hassetting(PVRList)">[COLOR $VAR[selected]]Hintergund[/COLOR]</value>
+    </variable>
+
     <variable name="homestyle">
 		<value condition="Skin.HasSetting(homemenugrid)">[COLOR $VAR[selected]]$LOCALIZE[31262][/COLOR]</value>
 		<value condition="Skin.HasSetting(homemenuslide)">[COLOR $VAR[selected]]$LOCALIZE[31263][/COLOR]</value>

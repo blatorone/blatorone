@@ -773,6 +773,9 @@ msgctxt "#31307"
 msgid "YouTube"
 msgstr "YouTube"
 
+msgctxt "#31308"
+msgid "Live TV Look"
+msgstr "Live TV Darstellung"
 
 msgctxt "#31309"
 msgid "SongList"
@@ -830,8 +833,6 @@ msgstr "Querformat"
 msgctxt "#31326"
 msgid "Disable Overlays Info"
 msgstr "Deaktiviere Overlays"
-
-
 
 msgctxt "#31327"
 msgid "Years old"
