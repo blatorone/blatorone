@@ -78,6 +78,21 @@
                 <onclick>activateWindow(1131)</onclick>
                 <visible>$EXP[isAddonMovieOrTVshow] + !window.isactive(1130) + !window.isactive(1130) | Container.Content(episodes) + !window.isactive(1130)</visible>
             </control>
+            <control type="button" id="41">
+                    <description>Change Main Button Menu to Slider</description>
+                    <width>384</width>
+                    <focusedcolor>$VAR[selected]</focusedcolor>
+                    <textcolor>$VAR[Home]</textcolor>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+                    <alttexturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</alttexturefocus>
+                    <textoffsetx>45</textoffsetx>
+                    <label>$LOCALIZE[31306]</label>
+                    <label2>$VAR[PVRListlook]</label2>
+                    <onclick>Skin.Togglesetting(PVRList)</onclick>
+                    <selected>Skin.HasSetting(PVRList)</selected>
+                    <visible>Window.IsActive(10700) + !window.isactive(1130) + !window.isactive(1130)</visible>
+
+                </control>
            
             <control type="button" id="2">
                 <focusedcolor>$VAR[selected]</focusedcolor>
@@ -172,16 +187,16 @@
                 </itemlayout>
                 <focusedlayout width="col-5-begin" height="2-row">
 					<control type="image">
-                        <visible>!window.isactive(contextmenu) + !control.hasfocus(501) + !control.hasfocus(2) + !control.hasfocus(3) + !control.hasfocus(4) + !control.hasfocus(5) + !control.hasfocus(6)</visible>
+                        <visible>!window.isactive(contextmenu) + !control.hasfocus(501) + !control.hasfocus(2) + !control.hasfocus(3) + !control.hasfocus(4) + !control.hasfocus(5) + !control.hasfocus(41) + !control.hasfocus(6)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>406</width>
                         <height>2-row</height>
-                        <texture condition="!control.hasfocus(501) | control.hasfocus(2) | !control.hasfocus(3) | !control.hasfocus(4) | !control.hasfocus(5)" colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
+                        <texture condition="!control.hasfocus(501) | control.hasfocus(2) | !control.hasfocus(3) | !control.hasfocus(4) | !control.hasfocus(5) | !control.hasfocus(41)" colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">
-                        <visible>!window.isactive(contextmenu) + [!control.hasfocus(501) | !control.hasfocus(5) + !control.hasfocus(6)] + !control.hasfocus(2) + !control.hasfocus(3) + !control.hasfocus(4)</visible>
+                        <visible>!window.isactive(contextmenu) + [!control.hasfocus(501) | !control.hasfocus(5) + !control.hasfocus(41) + !control.hasfocus(6)] + !control.hasfocus(2) + !control.hasfocus(3) + !control.hasfocus(4)</visible>
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
                         <width>4-col-gutter</width>
@@ -193,7 +208,7 @@
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>
                     <control type="label">
-                        <visible>control.hasfocus(501) | window.isactive(contextmenu) | control.hasfocus(5) | control.hasfocus(2) | control.hasfocus(3) | control.hasfocus(4) | control.hasfocus(6)</visible>
+                        <visible>control.hasfocus(501) | window.isactive(contextmenu) | control.hasfocus(5) | control.hasfocus(41) | control.hasfocus(2) | control.hasfocus(3) | control.hasfocus(4) | control.hasfocus(6)</visible>
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
                         <width>4-col-gutter</width>

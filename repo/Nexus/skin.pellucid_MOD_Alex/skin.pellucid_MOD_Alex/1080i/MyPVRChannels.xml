@@ -277,6 +277,25 @@
 			     <visible>false</visible>
             </control>
         </control>
+        <control type="button" id="3000">
+                <posx>0</posx>
+                <posy>500</posy>
+                <textwidth>60</textwidth>
+                <font>symbolLarge</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>60</width>
+                <textoffsetx>2</textoffsetx>
+                <label></label>
+                <label2></label2>
+                <textoffsetx>2</textoffsetx>
+                <textcolor>$VAR[selected]</textcolor>
+                <focusedcolor>$VAR[selected]</focusedcolor>
+                <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturenofocus>
+                <onclick>setfocus(9000)</onclick>
+                <visible>skin.hassetting(Touch)  + !window.isactive(1130)</visible>
+            </control>
         <!--Keyboard Crosskey-->
         <include content="keyboard select">
             <param name="posx">87%</param>
