@@ -100,4 +100,20 @@
         <thumb />
         <action>ActivateWindow(Pictures)</action>
     </shortcut>
+    <shortcut>
+        <visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
+        <label>Trakt Movies</label>
+        <label2>Trakt Series</label2>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>ActivateWindow(1142)</action>
+    </shortcut>
+    <shortcut>
+        <visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
+        <label>Trakt Series</label>
+        <label2>Trakt Series</label2>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>ActivateWindow(1143)</action>
+    </shortcut>
 </shortcuts>

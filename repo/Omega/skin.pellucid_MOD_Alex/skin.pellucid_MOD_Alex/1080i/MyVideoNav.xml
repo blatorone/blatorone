@@ -7,18 +7,18 @@
     <include>fadeInOut</include>
 	<views>503,50,51,52,53,54,502,504,505,508,509,591,602,609</views>
     <controls>
-        
+           
 			<control type="image">
 						<visible>!Control.IsVisible(50) + !Control.IsVisible(609) + !control.isvisible(602)</visible>
 			    		<include>ViewAnimation</include>
 	            		<include>dimensionsFullscreen</include>
-	            		<texture fallback="backgroundimage.jpg">$INFO[listitem.thumb]</texture>
+	            		<texture fallback="$INFO[listitem.thumb]">$INFO[listitem.art(fanart)]</texture>
 	            		<colordiffuse>FF555555</colordiffuse>
 	            		<aspectratio>scale</aspectratio>
 						<fadetime>250</fadetime>
 	        </control>
 			<control type="image">
-						<visible>Control.IsVisible(50) |  Control.IsVisible(609) | control.isvisible(602)</visible>
+						<visible>[Control.IsVisible(50) | Control.IsVisible(609) | control.isvisible(602)] | [String.IsEmpty(listitem.art(fanart)) + String.IsEmpty(listitem.thumb) + String.IsEmpty(listitem.thumb) + [!Control.IsVisible(50) |  !Control.IsVisible(609) | !control.isvisible(602)]] | [!String.IsEmpty(listitem.icon) + !String.IsEmpty(listitem.thumb) + String.IsEmpty(listitem.art(fanart))]</visible>
 			    		<include>ViewAnimation</include>
 	            		<include>dimensionsFullscreen</include>
 	            		<texture>backgroundimage.jpg</texture>

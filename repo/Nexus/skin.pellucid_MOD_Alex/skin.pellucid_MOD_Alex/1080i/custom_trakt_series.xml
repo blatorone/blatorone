@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1143" type="window">
+    <defaultcontrol always="true">200</defaultcontrol>
+
+    <controls>
+        <!--background-->
+        <include>globalBackground</include>
+        <control type="multiimage">
+			<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+			<include>dimensionsFullscreen</include>
+			<imagepath>$VAR[homeBackgroundLocation]</imagepath>
+			<timeperimage>45000</timeperimage>
+			<fadetime>200</fadetime>
+			<pauseatend>10000</pauseatend>
+			<randomize>true</randomize>
+			<loop>yes</loop>
+			<aspectratio>scale</aspectratio>
+			<colordiffuse>99ffffff</colordiffuse>
+		</control>
+        <!--Battery level-->
+        <include>Battery</include>
+         <!--Backbutton touchscreen-->
+        <include>Backbutton</include>
+        <control type="group">
+            <posx>490</posx>
+            <posy>row-5-begin</posy>
+            <!--animations-->
+            <include>modalDialogInOutVertical</include>
+            <control type="image">
+                <posx>-12</posx>
+                <posy>-12</posy>
+                <width>1030</width>
+                <height>720</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>14-col</width>
+                <height>2-row</height>
+                <texture>masks/discsurface.png</texture>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--title-->
+            <control type="label">
+                <posx>24</posx>
+                <posy>0</posy>
+                <width>14-col</width>
+                <height>2-row</height>
+                <font>dialogTitle</font>
+                <label>Auswahlliste Serien</label>
+                <textcolor>$VAR[Home]</textcolor>
+                <shadowcolor></shadowcolor>
+            </control>
+            
+            <!--options-->
+            
+            
+           <control type="grouplist" id="200" width="69" height="69">
+                <posx>0</posx>
+                <posy>90</posy>
+                <width>14-col</width>
+                <height>17-row</height>
+                <onleft>8000</onleft>
+                <itemgap>0</itemgap>
+                <orientation>vertical</orientation>
+				<control type="radiobutton" id="1">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultaddonssearch.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultaddonssearch.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultaddonssearch.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultaddonssearch.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>137</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=dir_search&amp;tmdb_type=tv&quot;,return)</onclick>
+                </control>
+               
+				<control type="radiobutton" id="2">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultaddonpvrclient.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultaddonpvrclient.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultaddonpvrclient.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultaddonpvrclient.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Im Trend Serien</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;tmdb_type=tv&quot;,return)</onclick>
+                </control>
+                
+				
+				
+				<control type="radiobutton" id="3">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultgenre.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultgenre.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultgenre.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultgenre.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Serien Genre</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_genres&amp;tmdb_type=tv&quot;,return)</onclick>
+                </control>
+                
+				
+				
+				<control type="radiobutton" id="4">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultaddonpvrclient.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultaddonpvrclient.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultaddonpvrclient.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultaddonpvrclient.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Deine begonnenen Episoden</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_ondeck&amp;tmdb_type=tv&quot;,return)</onclick>
+                </control>
+                <control type="radiobutton" id="5">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>play.png</textureradioonfocus>
+                    <textureradioonnofocus>play.png</textureradioonnofocus>
+                    <textureradioofffocus>play.png</textureradioofffocus>
+                    <textureradiooffnofocus>play.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Nächste Episode</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_airingnext&amp;tmdb_type=tv&quot;,return)</onclick>
+                </control>
+                <control type="radiobutton" id="6">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>3d.png</textureradioonfocus>
+                    <textureradioonnofocus>3d.png</textureradioonnofocus>
+                    <textureradioofffocus>3d.png</textureradioofffocus>
+                    <textureradiooffnofocus>3d.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Empfohlende Serien</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_recommendations&amp;tmdb_type=tv&quot;,return)</onclick>
+                </control>
+                <control type="radiobutton" id="7">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultinprogressshows.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultinprogressshows.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultinprogressshows.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultinprogressshows.png</textureradiooffnofocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <label>Serien noch zu Schauen</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_towatch&amp;tmdb_type=tv&quot;,return)</onclick>
+                </control>
+                <control type="radiobutton" id="8">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultplaylist.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultplaylist.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultplaylist.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultplaylist.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Serien Beobachtungsliste</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Serien%20Beobachtungsliste&amp;tmdb_type=tv&quot;,return)</onclick>
+                </control>
+                <control type="radiobutton" id="9">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultplaylist.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultplaylist.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultplaylist.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultplaylist.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Staffeln Beobachtungsliste</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Staffeln%20Beobachtungsliste&amp;tmdb_type=season&quot;,return)</onclick>
+                </control>
+                <control type="radiobutton" id="10">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultplaylist.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultplaylist.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultplaylist.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultplaylist.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Episoden Beobachtungsliste</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Episoden%20Beobachtungsliste&amp;tmdb_type=episode&quot;,return)</onclick>
+                </control>
+                <control type="radiobutton" id="11">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>favourites.png</textureradioonfocus>
+                    <textureradioonnofocus>favourites.png</textureradioonnofocus>
+                    <textureradioofffocus>favourites.png</textureradioofffocus>
+                    <textureradiooffnofocus>favourites.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Serien Favouriten</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_favorites&amp;list_name=Serien%20Favoriten&amp;tmdb_type=tv&quot;,return)</onclick>
+                </control>
+
+
+            </control>
+		</control>
+        <include>MediaMenuTop</include>
+		<include>pageHeadervideonav</include>
+		<include>pageHeader</include>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
+        <!--hub menu-->
+        <include>hubMenu</include>
+        <!--loading indicator-->
+        <include>loadingIndicator</include>
+        <!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <include>DialogID</include>
+            <label>Homemenulook.xml</label>
+        </control>
+    </controls>
+</window>
