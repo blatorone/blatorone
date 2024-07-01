@@ -83,6 +83,22 @@
                     <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=dir_search&amp;tmdb_type=tv&quot;,return)</onclick>
                 </control>
                
+                <control type="radiobutton" id="2">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultaddonpvrclient.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultaddonpvrclient.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultaddonpvrclient.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultaddonpvrclient.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Anbieter</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=tv&quot;,return)</onclick>
+                </control>
+
 				<control type="radiobutton" id="2">
                     <description>Grid Menu</description>
 					<posx>500</posx>
