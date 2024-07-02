@@ -102,18 +102,34 @@
     </shortcut>
     <shortcut>
         <visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
-        <label>Trakt Movies</label>
-        <label2>Trakt Series</label2>
+        <label>31349</label>
+        <label2>32034</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(1142)</action>
     </shortcut>
     <shortcut>
         <visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
-        <label>Trakt Series</label>
-        <label2>Trakt Series</label2>
+        <label>31350</label>
+        <label2>32034</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(1143)</action>
+    </shortcut>
+    <shortcut>
+        <visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
+        <label>31351</label>
+        <label2>32034</label2>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>ActivateWindow(1144)</action>
+    </shortcut>
+    <shortcut>
+        <visible>System.HasAddon(plugin.video.themoviedb.helper)</visible>
+        <label>31352</label>
+        <label2>32034</label2>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>ActivateWindow(1145)</action>
     </shortcut>
 </shortcuts>

@@ -199,7 +199,7 @@
         </control>
 
         <!--navigation-->
-        <control type="grouplist">
+        <control type="grouplist" id="20000">
             <posx>636</posx>
             <posy>row-27-begin</posy>
             <orientation>horizontal</orientation>

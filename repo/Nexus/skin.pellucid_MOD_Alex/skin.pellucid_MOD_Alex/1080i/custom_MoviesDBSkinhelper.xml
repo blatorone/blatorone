@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1144" type="window">
+    <defaultcontrol always="true">200</defaultcontrol>
+
+    <controls>
+        <!--background-->
+        <include>globalBackground</include>
+        <control type="multiimage">
+			<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+			<include>dimensionsFullscreen</include>
+			<imagepath>$VAR[homeBackgroundLocation]</imagepath>
+			<timeperimage>45000</timeperimage>
+			<fadetime>200</fadetime>
+			<pauseatend>10000</pauseatend>
+			<randomize>true</randomize>
+			<loop>yes</loop>
+			<aspectratio>scale</aspectratio>
+			<colordiffuse>99ffffff</colordiffuse>
+		</control>
+        <!--Battery level-->
+        <include>Battery</include>
+         <!--Backbutton touchscreen-->
+        <include>Backbutton</include>
+        <control type="group">
+            <posx>490</posx>
+            <posy>row-5-begin</posy>
+            <!--animations-->
+            <include>modalDialogInOutVertical</include>
+            <control type="image">
+                <posx>-12</posx>
+                <posy>-12</posy>
+                <width>1030</width>
+                <height>720</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>14-col</width>
+                <height>2-row</height>
+                <texture>masks/discsurface.png</texture>
+                <colordiffuse>$VAR[highlight]</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--title-->
+            <control type="label">
+                <posx>24</posx>
+                <posy>0</posy>
+                <width>14-col</width>
+                <height>2-row</height>
+                <font>dialogTitle</font>
+                <label>Auswahlliste Filme</label>
+                <textcolor>$VAR[Home]</textcolor>
+                <shadowcolor></shadowcolor>
+            </control>
+            
+            <!--options-->
+            
+            
+           <control type="grouplist" id="200" width="69" height="69">
+                <posx>0</posx>
+                <posy>90</posy>
+                <width>14-col</width>
+                <height>17-row</height>
+                <onleft>8000</onleft>
+                <itemgap>0</itemgap>
+                <orientation>vertical</orientation>
+				<control type="radiobutton" id="1">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultaddonssearch.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultaddonssearch.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultaddonssearch.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultaddonssearch.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>137</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=dir_search&amp;tmdb_type=movie&quot;,return)</onclick>
+                </control>
+                <control type="radiobutton" id="9">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultvideo.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultvideo.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultvideo.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultvideo.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Anbieter</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=movie&quot;,return)</onclick>
+                </control>
+
+                <control type="radiobutton" id="3">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultyear.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultyear.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultyear.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultyear.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Filme im Trend</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=movie&quot;,return)</onclick>
+                </control>
+                <control type="radiobutton" id="4">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultgenre.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultgenre.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultgenre.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultgenre.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Filme Genre</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=genres&amp;tmdb_type=movie&quot;,return)</onclick>
+                </control>
+                <control type="radiobutton" id="5">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultmusictop100.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultmusictop100.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultmusictop100.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultmusictop100.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Beliebte Filme</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=popular&amp;tmdb_type=movie&quot;,return)</onclick>
+                </control>
+               
+		
+				<control type="radiobutton" id="7">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultplaylist.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultplaylist.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultplaylist.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultplaylist.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Filme Bibliothek</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(Videos,videodb://movies/)</onclick>
+                </control>
+                <control type="radiobutton" id="6">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultaddonvideo.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultaddonvideo.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultaddonvideo.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultaddonvideo.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Im Kino</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=now_playing&amp;tmdb_type=movie&quot;,return)</onclick>
+                </control>
+                
+                <control type="radiobutton" id="8">
+                    <description>Grid Menu</description>
+					<posx>500</posx>
+                    <width>14-col</width>
+                    <textureradioonfocus>defaultyear.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultyear.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultyear.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultyear.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
+                    <label>Demnächst</label>
+					<radioposx>-29</radioposx>
+					<textoffsetx>100</textoffsetx>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie&quot;,return)</onclick>
+                </control>
+            </control>
+		</control>
+        <include>MediaMenuTop</include>
+		<include>pageHeadervideonav</include>
+		<include>pageHeader</include>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
+        <!--hub menu-->
+        <include>hubMenu</include>
+        <!--loading indicator-->
+        <include>loadingIndicator</include>
+        <!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <include>DialogID</include>
+            <label>Homemenulook.xml</label>
+        </control>
+    </controls>
+</window>

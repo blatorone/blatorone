@@ -118,10 +118,10 @@
                     <description>Grid Menu</description>
 					<posx>500</posx>
                     <width>14-col</width>
-                    <textureradioonfocus>defaultvideo.png</textureradioonfocus>
-                    <textureradioonnofocus>defaultvideo.png</textureradioonnofocus>
-                    <textureradioofffocus>defaultvideo.png</textureradioofffocus>
-                    <textureradiooffnofocus>defaultvideo.png</textureradiooffnofocus>
+                    <textureradioonfocus>defaultyear.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultyear.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultyear.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultyear.png</textureradiooffnofocus>
                     <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
                     <label>Filme im Trend</label>

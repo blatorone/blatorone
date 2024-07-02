@@ -120,10 +120,10 @@
                     <description>Grid Menu</description>
 					<posx>500</posx>
                     <width>14-col</width>
-                    <textureradioonfocus>defaultaddonpvrclient.png</textureradioonfocus>
-                    <textureradioonnofocus>defaultaddonpvrclient.png</textureradioonnofocus>
-                    <textureradioofffocus>defaultaddonpvrclient.png</textureradioofffocus>
-                    <textureradiooffnofocus>defaultaddonpvrclient.png</textureradiooffnofocus>
+                    <textureradioonfocus>defaultyear.png</textureradioonfocus>
+                    <textureradioonnofocus>defaultyear.png</textureradioonnofocus>
+                    <textureradioofffocus>defaultyear.png</textureradioofffocus>
+                    <textureradiooffnofocus>defaultyear.png</textureradiooffnofocus>
                     <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
                     <texturenofocus colordiffuse="black">masks/discsurface.png</texturenofocus>
                     <label>Serien im Trend</label>

@@ -922,3 +922,21 @@ msgctxt "#31348"
 msgid "Recomend"
 msgstr "Empfehlen"
 
+msgctxt "#31349"
+msgid "Trakt Movies"
+msgstr "Trakt Filme"
+
+msgctxt "#31350"
+msgid "Trakt Series"
+msgstr "Trakt Serien"
+
+msgctxt "#31351"
+msgid "Movies DB"
+msgstr "Filme DB"
+
+msgctxt "#31352"
+msgid "Series DB"
+msgstr "Serien DB"
+
+
+
