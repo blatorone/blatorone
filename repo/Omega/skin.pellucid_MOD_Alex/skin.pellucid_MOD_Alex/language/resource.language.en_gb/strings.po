@@ -719,7 +719,7 @@ msgid "Disable startup intro"
 msgstr ""
 
 msgctxt "#31294"
-msgid "Extra Button on Homescreen"
+msgid "Video Widget on Homescreen"
 msgstr ""
 
 msgctxt "#31295"
