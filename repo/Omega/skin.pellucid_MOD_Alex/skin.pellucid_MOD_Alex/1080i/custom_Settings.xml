@@ -169,7 +169,7 @@
                     <onclick condition="!Skin.HasSetting(StartupIntro)">Skin.Reset(StartupIntro)</onclick>
                     <selected>Skin.HasSetting(StartupIntro)</selected>
                 </control>
-                <control type="radiobutton" id="113">
+                <control type="radiobutton" id="114">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Intro enable</description>
                     <width>14-col</width>

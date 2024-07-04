@@ -718,8 +718,8 @@ msgid "Disable startup intro"
 msgstr "Deaktiviere Start-Intro"
 
 msgctxt "#31294"
-msgid "Extra Button on Homescreen"
-msgstr "Zusatz Button auf Startbildschirm"
+msgid "Video Widget on Homescreen"
+msgstr "Video Widget auf dem Startbildschirm"
 
 msgctxt "#31295"
 msgid "Extra Button on Homescreen edit"
