@@ -169,7 +169,15 @@
                     <onclick condition="!Skin.HasSetting(StartupIntro)">Skin.Reset(StartupIntro)</onclick>
                     <selected>Skin.HasSetting(StartupIntro)</selected>
                 </control>
-
+                <control type="radiobutton" id="113">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Intro enable</description>
+                    <width>14-col</width>
+                    <label>31294</label>
+                    <onclick>Skin.Togglesetting(widget)</onclick>
+                    
+                    <selected>!Skin.HasSetting(widget)</selected>
+                </control>
                 <!--general-->
                 <control type="label" id="1001">
                         <visible>Container(8000).Hasfocus(1) + Integer.IsGreater(System.BatteryLevel,1)</visible>

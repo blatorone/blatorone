@@ -3,6 +3,7 @@
     <!--sets base screen dimensions-->
     <constant name="fullscreenWidth">1920</constant>
     <constant name="fullscreenHeight">1080</constant>
+    <constant name="DepthContentPopout">0.10</constant>
     <include name="dimensionsFullscreen">
         <posx>0</posx>
         <posy>0</posy>

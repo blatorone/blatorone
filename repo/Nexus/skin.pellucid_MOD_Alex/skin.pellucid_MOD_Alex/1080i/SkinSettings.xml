@@ -455,7 +455,7 @@
                     <label>31294</label>
                     <onclick>Skin.Togglesetting(widget)</onclick>
                     
-                    <selected>Skin.HasSetting(widget)</selected>
+                    <selected>!Skin.HasSetting(widget)</selected>
                 </control>
 
                 <control type="button" id="30">

@@ -364,6 +364,7 @@
 					<include>skinshortcuts-mainmenu</include>
 				</content>
 			</control>
+			<!--
 			<control type="group">
 				<control type="panel" id="7001">
 					<visible>Skin.HasSetting(widget) + Skin.HasSetting(homemenuside)</visible>
@@ -431,6 +432,53 @@
 					</content>
 				</control>
 			</control>
+			-->
+				<include content="WidgetListPoster5" condition="Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trending_day&amp;tmdb_type=movie&quot;"/>
+							<param name="widget_header5" value="Filme im Trend"/>
+							<param name="widget_target" value="videos"/>
+							<param name="list_id" value="5200"/>
+						</include>
+				 <include content="WidgetListPoster6" condition="Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trending_day&amp;tmdb_type=tv&quot;"/>
+							<param name="widget_header6" value="Serien im Trend"/>
+							<param name="widget_target" value="videos"/>
+							<param name="list_id" value="5300"/>
+						</include>
+					<control type="label">
+							<animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
+								<effect type="fade" start="100" end="0" time="500" delay="0"/>
+							</animation>
+	                        <posx>1500</posx>
+	                        <posy>460</posy>
+	                        <width>1-col</width>
+	                        <height>2-row</height>
+	                        <align>center</align>
+	                        <aligny>center</aligny>
+	                        <font>symbolLarge</font>
+	                        <textcolor>textActive</textcolor>
+	                        <label></label>
+	                        <shadowcolor></shadowcolor>
+							<visible>Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget)</visible>
+	                    </control>
+						<control type="label">
+							<animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
+								<effect type="fade" start="100" end="0" time="500" delay="0"/>
+							</animation>
+	                        <posx>1500</posx>
+	                        <posy>760</posy>
+	                        <width>1-col</width>
+	                        <height>2-row</height>
+	                        <align>center</align>
+	                        <aligny>center</aligny>
+	                        <font>symbolLarge</font>
+	                        <textcolor>textActive</textcolor>
+	                        <label></label>
+	                        <shadowcolor></shadowcolor>
+							<visible>Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget)</visible>
+	                    </control>
+
+
 			<!--Android Apps-->
 			<control type="group">
 				<animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
