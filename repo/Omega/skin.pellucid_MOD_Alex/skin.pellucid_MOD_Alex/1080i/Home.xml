@@ -435,13 +435,15 @@
 			-->
 				<include content="WidgetListPoster5" condition="Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget)">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trending_day&amp;tmdb_type=movie&quot;"/>
-							<param name="widget_header5" value="Filme im Trend"/>
+							<param name="widget_header5" value="Filme im Trend:"/>
+							<param name="widget_label5" value="$INFO[Container(5200).ListItem.Label]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5200"/>
 						</include>
 				 <include content="WidgetListPoster6" condition="Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget)">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trending_day&amp;tmdb_type=tv&quot;"/>
-							<param name="widget_header6" value="Serien im Trend"/>
+							<param name="widget_header6" value="Serien im Trend:"/>
+							<param name="widget_label6" value="$INFO[Container(5300).ListItem.Label]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5300"/>
 						</include>
@@ -460,7 +462,7 @@
 	                        <textcolor>textActive</textcolor>
 	                        <label></label>
 	                        <shadowcolor></shadowcolor>
-							<visible>Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget)</visible>
+							<visible>Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget) + !Container(5200).IsUpdating</visible>
 	                    </control>
 						<control type="label">
 							<animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
@@ -476,8 +478,10 @@
 	                        <textcolor>textActive</textcolor>
 	                        <label></label>
 	                        <shadowcolor></shadowcolor>
-							<visible>Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget)</visible>
+							<visible>Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget) + !Container(5300).IsUpdating</visible>
 	                    </control>
+						
+						
 
 
 			<!--Android Apps-->

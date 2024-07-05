@@ -1499,8 +1499,10 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="-115"/>
-                <param name="posy2" value="-100"/>
+				<param name="posy" value="70"/>
+                <param name="posy2" value="85"/>
+				<param name="posx" value="45"/>
+				<param name="posx2" value="60"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				
@@ -1577,8 +1579,10 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="150"/>
-                <param name="posy2" value="165"/>
+				<param name="posy" value="70"/>
+                <param name="posy2" value="85"/>
+				<param name="posx" value="45"/>
+				<param name="posx2" value="60"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				
@@ -1650,8 +1654,10 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="400"/>
-                <param name="posy2" value="415"/>
+				<param name="posy" value="70"/>
+                <param name="posy2" value="85"/>
+				<param name="posx" value="45"/>
+				<param name="posx2" value="60"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				
@@ -1723,8 +1729,10 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="650"/>
-                <param name="posy2" value="665"/>
+				<param name="posy" value="70"/>
+                <param name="posy2" value="85"/>
+				<param name="posx" value="45"/>
+				<param name="posx2" value="60"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				
@@ -1795,12 +1803,15 @@
 		<definition>
 			<include content="CategoryLabel5">
 				<param name="label">$PARAM[widget_header5]</param>
+				<param name="label2">$PARAM[widget_label5]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="posy" value="410"/>
                 <param name="posy2" value="425"/>
+				<param name="posx" value="925"/>
+				<param name="posx2" value="940"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
                     <animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
@@ -1847,12 +1858,8 @@
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
-              
 				</itemlayout>
 				<focusedlayout width="150" height="200">
-					
-						
-				
 				<control type="image">
                     <animation type="Focus">
 							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="230,130" />
@@ -1869,9 +1876,8 @@
 					<visible>$PARAM[focused]</visible>
 					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 				</control>
-				
 				<control type="image">
-                <animation type="Focus">
+                		<animation type="Focus">
 							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="125,130" />
 						</animation>
 						<animation type="Unfocus">
@@ -1885,8 +1891,6 @@
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
-                
-					
 				</focusedlayout>
 				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
@@ -1899,12 +1903,15 @@
 		<definition>
 			<include content="CategoryLabel6">
 				<param name="label">$PARAM[widget_header6]</param>
+				<param name="label2">$PARAM[widget_label6]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="posy" value="700"/> 
                 <param name="posy2" value="715"/>
+				<param name="posx" value="925"/>
+				<param name="posx2" value="940"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
                     <animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
@@ -2008,8 +2015,10 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="650"/>
-                <param name="posy2" value="665"/>
+				<param name="posy" value="70"/>
+                <param name="posy2" value="85"/>
+				<param name="posx" value="45"/>
+				<param name="posx2" value="60"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				
@@ -2080,8 +2089,10 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="650"/>
-                <param name="posy2" value="665"/>
+				<param name="posy" value="70"/>
+                <param name="posy2" value="85"/>
+				<param name="posx" value="45"/>
+				<param name="posx2" value="60"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				
@@ -2152,8 +2163,10 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="650"/>
-                <param name="posy2" value="665"/>
+				<param name="posy" value="70"/>
+                <param name="posy2" value="85"/>
+				<param name="posx" value="45"/>
+				<param name="posx2" value="60"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				
@@ -2224,8 +2237,10 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="650"/>
-                <param name="posy2" value="665"/>
+				<param name="posy" value="70"/>
+                <param name="posy2" value="85"/>
+				<param name="posx" value="45"/>
+				<param name="posx2" value="60"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				
@@ -2296,8 +2311,10 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="650"/>
-                <param name="posy2" value="665"/>
+				<param name="posy" value="70"/>
+                <param name="posy2" value="85"/>
+				<param name="posx" value="45"/>
+				<param name="posx2" value="60"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				
@@ -2368,8 +2385,10 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="650"/>
-                <param name="posy2" value="665"/>
+				<param name="posy" value="70"/>
+                <param name="posy2" value="85"/>
+				<param name="posx" value="45"/>
+				<param name="posx2" value="60"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				
@@ -2440,8 +2459,10 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="650"/>
-                <param name="posy2" value="665"/>
+				<param name="posy" value="70"/>
+                <param name="posy2" value="85"/>
+				<param name="posx" value="45"/>
+				<param name="posx2" value="60"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				
@@ -2512,8 +2533,10 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="650"/>
-                <param name="posy2" value="665"/>
+				<param name="posy" value="70"/>
+                <param name="posy2" value="85"/>
+				<param name="posx" value="45"/>
+				<param name="posx2" value="60"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				
@@ -2644,7 +2667,7 @@
 
 
     <include name="CategoryLabel5">
-		<param name="visible">true</param>
+		<param name="visible">!Container(5200).IsUpdating</param>
 		<param name="item_treshold">0</param>
 		<definition>
 			<control type="label" id="$PARAM[list_id]666">
@@ -2661,10 +2684,26 @@
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,$PARAM[item_treshold]) | [Container($PARAM[list_id]).IsUpdating + Integer.IsEqual(Container($PARAM[list_id]).NumItems,0)]</visible>
 			</control>
+			<control type="label" id="$PARAM[list_id]666">
+                <animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
+						<effect type="fade" start="100" end="0" time="500" delay="0"/>
+					</animation>
+				<left>750</left>
+				<top>610</top>
+				<width>550</width>
+				<height>90</height>
+				<font>dialogTitle</font>
+				<scroll>true</scroll>
+				<align>center</align>
+				<label>[B]$PARAM[label2][/B]</label>
+				<shadowcolor>textDisabled</shadowcolor>
+				<visible>control.Hasfocus(5200)</visible>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,$PARAM[item_treshold]) | [Container($PARAM[list_id]).IsUpdating + Integer.IsEqual(Container($PARAM[list_id]).NumItems,0)]</visible>
+			</control>
 		</definition>
 	</include>
     <include name="CategoryLabel6">
-		<param name="visible">true</param>
+		<param name="visible">!Container(5300).IsUpdating</param>
 		<param name="item_treshold">0</param>
 		<definition>
 			<control type="label" id="$PARAM[list_id]666">
@@ -2672,13 +2711,29 @@
 						<effect type="fade" start="100" end="0" time="500" delay="0"/>
 					</animation>
 				<left>460</left>
-				<top>650</top>
+				<top>640</top>
 				<width>900</width>
 				<height>90</height>
 				<font>dialogTitle</font>
 				<label>$PARAM[label]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 				<visible>$PARAM[visible]</visible>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,$PARAM[item_treshold]) | [Container($PARAM[list_id]).IsUpdating + Integer.IsEqual(Container($PARAM[list_id]).NumItems,0)]</visible>
+			</control>
+			<control type="label" id="$PARAM[list_id]666">
+                <animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
+						<effect type="fade" start="100" end="0" time="500" delay="0"/>
+					</animation>
+				<left>750</left>
+				<top>610</top>
+				<width>550</width>
+				<height>90</height>
+				<font>dialogTitle</font>
+				<scroll>true</scroll>
+				<align>center</align>
+				<label>[B]$PARAM[label2][/B]</label>
+				<shadowcolor>textDisabled</shadowcolor>
+				<visible>control.Hasfocus(5300)</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,$PARAM[item_treshold]) | [Container($PARAM[list_id]).IsUpdating + Integer.IsEqual(Container($PARAM[list_id]).NumItems,0)]</visible>
 			</control>
 		</definition>
@@ -2689,12 +2744,13 @@
 		<definition>
 			<control type="group" id="$PARAM[list_id]599">
 				<height>160</height>
-				<left>450</left>
+				
                 <top>70</top>
 				<visible>Container($PARAM[list_id]).IsUpdating + !Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)</visible>
 				<visible>$PARAM[visible]</visible>
 				<control type="image">
 					<top>$PARAM[posy]</top>
+					<left>$PARAM[posx]</left>
 					<width>80</width>
                 <height>80</height>
                 <aspectratio>keep</aspectratio>
@@ -2703,7 +2759,7 @@
 				</control>
 				<control type="image">
 					<top>$PARAM[posy2]</top>
-                    <left>15</left>
+                    <left>$PARAM[posx2]</left>
 					<width>50</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
