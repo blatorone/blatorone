@@ -51,7 +51,7 @@
 						<aligny>center</aligny>
 						<font>thumbTitle</font>
 						<textcolor>textDisabled</textcolor>
-						<label>[B]$INFO[ListItem.label][/B][CR]$INFO[ListItem.year]</label>
+						<label>[B]$INFO[ListItem.label][/B][CR]$INFO[ListItem.premiered]</label>
 					</control>
 					<control type="progress">
 				        <visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>

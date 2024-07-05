@@ -1799,8 +1799,8 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="650"/>
-                <param name="posy2" value="665"/>
+				<param name="posy" value="410"/>
+                <param name="posy2" value="425"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
                     <animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
@@ -1903,8 +1903,8 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="650"/>
-                <param name="posy2" value="665"/>
+				<param name="posy" value="700"/> 
+                <param name="posy2" value="715"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
                     <animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
@@ -2575,23 +2575,6 @@
 		</definition>
 	</include>
 
-
-    
-			<control type="group">
-				<left>135</left>
-				<top>-8</top>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
-			</control>
-			<control type="progress">
-				<left>35</left>
-				<top>365</top>
-				<width>250</width>
-				<height>1</height>
-				<texturebg></texturebg>
-				<midtexture></midtexture>
-				<info>ListItem.PercentPlayed</info>
-				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
-			</control>
 	<!--	
     <include name="CategoryLabel1">
 		<param name="visible">true</param>

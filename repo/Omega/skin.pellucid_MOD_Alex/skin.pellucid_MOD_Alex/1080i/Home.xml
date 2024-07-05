@@ -445,6 +445,7 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5300"/>
 						</include>
+						
 					<control type="label">
 							<animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
 								<effect type="fade" start="100" end="0" time="500" delay="0"/>

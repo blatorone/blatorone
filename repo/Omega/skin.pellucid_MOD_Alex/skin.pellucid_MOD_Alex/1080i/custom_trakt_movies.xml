@@ -16,7 +16,7 @@
         <!--Battery level-->
         <include>Battery</include>
          <!--Backbutton touchscreen-->
-        <include>Backbutton</include>
+        <include>Backbuttoncross</include>
         <control type="group">
             <posx>0</posx>
             <posy>row-5-begin</posy>
@@ -36,7 +36,7 @@
 						<control type="togglebutton" id="9013">
 				            <font>regular</font>
 				            
-				            <width>384</width>
+				            <width>600</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -62,7 +62,7 @@
                         <control type="togglebutton" id="9014">
 				            <font>regular</font>
 				            
-				            <width>384</width>
+				            <width>600</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -88,7 +88,7 @@
 						<control type="togglebutton" id="9015">
 				            <font>regular</font>
 				            <top>360</top>
-				            <width>384</width>
+				            <width>600</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -114,7 +114,7 @@
 						<control type="togglebutton" id="9016">
 				            <font>regular</font>
 				            
-				            <width>384</width>
+				            <width>600</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -139,7 +139,7 @@
 						<control type="togglebutton" id="9017">
 				            <font>regular</font>
 				            
-				            <width>384</width>
+				            <width>600</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -164,7 +164,7 @@
 						<control type="togglebutton" id="9018">
 				            <font>regular</font>
 				            
-				            <width>384</width>
+				            <width>600</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -189,7 +189,7 @@
 						<control type="togglebutton" id="9019">
 				            <font>regular</font>
 				            
-				            <width>384</width>
+				            <width>600</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -215,7 +215,7 @@
                         <control type="togglebutton" id="9020">
 				            <font>regular</font>
 				            
-				            <width>384</width>
+				            <width>600</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -240,7 +240,7 @@
                         <control type="togglebutton" id="9021">
 				            <font>regular</font>
 				            
-				            <width>384</width>
+				            <width>600</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
