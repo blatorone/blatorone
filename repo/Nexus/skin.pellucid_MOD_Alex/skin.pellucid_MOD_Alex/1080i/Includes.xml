@@ -1333,7 +1333,7 @@
     </include>
     <include name="homemenukeycontrol3android">
         <onup>9001</onup>
-        <ondown>9001</ondown>
+        <ondown>5200</ondown>
 		<onright>9000</onright>
         <onleft>9000</onleft>
     </include>

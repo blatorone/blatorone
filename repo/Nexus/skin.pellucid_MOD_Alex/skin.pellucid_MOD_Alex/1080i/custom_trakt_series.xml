@@ -52,7 +52,7 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=tv&quot;,return)</onclick>
 			            </control>
 						<include content="WidgetListPoster1">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=tv&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=tv"/>
 							<param name="widget_header1" value="Anbieter"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5100"/>
@@ -79,7 +79,7 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_mylists&amp;tmdb_type=both&quot;,return)</onclick>
 			            </control>
 						<include content="WidgetListPoster2">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_mylists&amp;tmdb_type=both&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_mylists&amp;tmdb_type=both"/>
 							<param name="widget_header2" value="Meine Liste"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5200"/>
@@ -105,7 +105,7 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;tmdb_type=tv&quot;,return)</onclick>
 			            </control>
                         <include content="WidgetListPoster3">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;tmdb_type=tv&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;tmdb_type=tv"/>
 							<param name="widget_header3" value="Serien im Trend"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5300"/>
@@ -131,7 +131,7 @@
 				            <onclick>ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=trakt_genres&amp;tmdb_type=tv&quot;,return)</onclick>
 			            </control>
                         <include content="WidgetListPoster4">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_genres&amp;tmdb_type=tv&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_genres&amp;tmdb_type=tv"/>
 							<param name="widget_header4" value="Serien Genre"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5400"/>
@@ -156,7 +156,7 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_ondeck&amp;tmdb_type=tv&quot;,return)</onclick>
 			            </control>
 						<include content="WidgetListPoster7">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_ondeck&amp;tmdb_type=tv&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_ondeck&amp;tmdb_type=tv"/>
 							<param name="widget_header4" value="Deine Begonnene Episoden"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5700"/>
@@ -181,7 +181,7 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_nextepisodes&amp;tmdb_type=tv&quot;,return)</onclick>
 			            </control>
 						<include content="WidgetListPoster8">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_nextepisodes&amp;tmdb_type=tv&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_nextepisodes&amp;tmdb_type=tv"/>
 							<param name="widget_header4" value="Nächste Episode"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5800"/>
@@ -206,7 +206,7 @@
 				            <onclick>ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=trakt_recommendations&amp;tmdb_type=tv&quot;,return)</onclick>
 			            </control>
 						<include content="WidgetListPoster9">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_recommendations&amp;tmdb_type=tv&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_recommendations&amp;tmdb_type=tv"/>
 							<param name="widget_header4" value="Empfohlende Serien"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5900"/>
@@ -232,7 +232,7 @@
 				            <onclick>ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=trakt_towatch&amp;tmdb_type=tv&quot;,return)</onclick>
 			            </control>
 						<include content="WidgetListPoster10">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_towatch&amp;tmdb_type=tv&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_towatch&amp;tmdb_type=tv"/>
 							<param name="widget_header4" value="Serien noch zu Schauen"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6000"/>
@@ -257,7 +257,7 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Serien%20Beobachtungsliste&amp;tmdb_type=tv&quot;,return)</onclick>
 			            </control>
 						<include content="WidgetListPoster11">
-							<param name="content_path" value="plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Serien%20Beobachtungsliste&amp;tmdb_type=tv&quot;"/>
+							<param name="content_path" value="plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Serien%20Beobachtungsliste&amp;tmdb_type=tv"/>
 							<param name="widget_header4" value="Serien Beobachtungsliste"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6100"/>
@@ -283,7 +283,7 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Staffeln%20Beobachtungsliste&amp;tmdb_type=season&quot;,return)</onclick>
 			            </control>
 						<include content="WidgetListPoster12">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Staffeln%20Beobachtungsliste&amp;tmdb_type=season&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Staffeln%20Beobachtungsliste&amp;tmdb_type=season"/>
 							<param name="widget_header4" value="Staffeln Bebobachtungsliste"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6200"/>
@@ -309,7 +309,7 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Episoden%20Beobachtungsliste&amp;tmdb_type=episode&quot;return)</onclick>
 			            </control>
 						<include content="WidgetListPoster13">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Episoden%20Beobachtungsliste&amp;tmdb_type=episode&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Episoden%20Beobachtungsliste&amp;tmdb_type=episode"/>
 							<param name="widget_header4" value="Episoden Bebobachtungsliste"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6300"/>
@@ -335,7 +335,7 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_favorites&amp;list_name=Serien%20Favoriten&amp;tmdb_type=tv&quot;,return)</onclick>
 			            </control>
 						<include content="WidgetListPoster14">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_favorites&amp;list_name=Serien%20Favoriten&amp;tmdb_type=tv&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_favorites&amp;list_name=Serien%20Favoriten&amp;tmdb_type=tv"/>
 							<param name="widget_header4" value="Serien Favoriten"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6400"/>

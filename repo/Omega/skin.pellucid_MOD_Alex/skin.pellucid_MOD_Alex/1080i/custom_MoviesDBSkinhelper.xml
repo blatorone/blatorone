@@ -52,7 +52,7 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=movie&quot;,return)</onclick>
 			            </control>
 						<include content="WidgetListPoster1">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=movie&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=movie"/>
 							<param name="widget_header1" value="Anbieter"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5100"/>
@@ -79,7 +79,7 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trending_day&amp;tmdb_type=movie&quot;,return)</onclick>
 			            </control>
 						<include content="WidgetListPoster2">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trending_day&amp;tmdb_type=movie&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trending_day&amp;tmdb_type=movie"/>
 							<param name="widget_header2" value="Filme im Trend"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5200"/>
@@ -105,7 +105,7 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=genres&amp;tmdb_type=movie&quot;,return)</onclick>
 			            </control>
                         <include content="WidgetListPoster3">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=genres&amp;tmdb_type=movie&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=genres&amp;tmdb_type=movie"/>
 							<param name="widget_header3" value="Filme Genre"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5300"/>
@@ -131,7 +131,7 @@
 				            <onclick>ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=popular&amp;tmdb_type=movie&quot;,return)</onclick>
 			            </control>
                         <include content="WidgetListPoster4">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=popular&amp;tmdb_type=movie&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=popular&amp;tmdb_type=movie"/>
 							<param name="widget_header4" value="Beliebte Filme"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5400"/>
@@ -181,7 +181,7 @@
 				            <onclick>ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=now_playing&amp;tmdb_type=movie&quot;,return)</onclick>
 			            </control>
 						<include content="WidgetListPoster8">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=now_playing&amp;tmdb_type=movie&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=now_playing&amp;tmdb_type=movie"/>
 							<param name="widget_header4" value="Im Kino"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5800"/>
@@ -206,7 +206,7 @@
 				            <onclick>ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie&quot;,return)</onclick>
 			            </control>
 						<include content="WidgetListPoster9">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie&quot;"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie"/>
 							<param name="widget_header4" value="Demnächst"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5900"/>
