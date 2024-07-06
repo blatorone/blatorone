@@ -4,20 +4,20 @@
     <controls>
 		<control type="image">
 			<visible>!String.IsEmpty(player.Art(clearart))</visible>
-            <posx>col-15-begin</posx>
-            <posy>row-18-begin</posy>
-            <width>12-col</width>
-            <height>6-col</height>
+            <posx>col-17-begin</posx>
+            <posy>row-17-begin</posy>
+            <width>450</width>
+            <height>275</height>
             <texture>$INFO[player.Art(clearart)]</texture>
             <aspectratio align="right">scale</aspectratio>
             <colordiffuse>BBffffff</colordiffuse>
         </control>
 		<control type="image">
 			<visible>!String.IsEmpty(player.Art(clearlogo)) + String.IsEmpty(player.Art(clearart))</visible>
-            <posx>col-14-begin</posx>
+            <posx>col-19-begin</posx>
             <posy>0</posy>
-            <width>12-col</width>
-            <height>6-col</height>
+            <width>450</width>
+            <height>275</height>
             <texture>$INFO[player.Art(clearlogo)]</texture>
             <aspectratio align="right">keep</aspectratio>
             <colordiffuse>BBffffff</colordiffuse>
