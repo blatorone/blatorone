@@ -15,7 +15,7 @@
 		<control type="image">
 			<visible>!String.IsEmpty(player.Art(clearlogo)) + String.IsEmpty(player.Art(clearart))</visible>
             <posx>col-14-begin</posx>
-            <posy>row-18-begin</posy>
+            <posy>0</posy>
             <width>12-col</width>
             <height>6-col</height>
             <texture>$INFO[player.Art(clearlogo)]</texture>
