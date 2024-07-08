@@ -123,18 +123,19 @@
                     <posy>45</posy>
 					<orientation>vertical</orientation>
 					<itemgap>35</itemgap>
-                    <control type="label">
+                    <control type="textbox">
                         <visible>!Pvr.IsPlayingTv</visible>
 	                    <width>8-col</width>
 	                    <align>left</align>
 	                    <height>4-row</height>
 	                    <aligny>center</aligny>
 	                    <font>VideoOSDTitel</font>
-	                    <textcolor>textActive</textcolor>
-						<wrapmultiline>true</wrapmultiline>
+	                    <textcolor>textDisabled</textcolor>
+						
 	                    <label>$INFO[videoplayer.Title]</label>
+                        <autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 	                </control>
-                    <control type="label">
+                    <control type="textbox">
                         <visible>Pvr.IsPlayingTv + String.IsEmpty(Videoplayer.Episode)</visible>
 	                    <width>8-col</width>
 	                    <align>left</align>
@@ -142,10 +143,11 @@
 	                    <aligny>center</aligny>
 	                    <font>VideoOSDTitel</font>
 	                    <textcolor>textDisabled</textcolor>
-						<wrapmultiline>true</wrapmultiline>
+						<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 	                    <label>$INFO[Player.title]</label>
+                        
 	                </control>
-                    <control type="label">
+                    <control type="textbox">
                         <visible>Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.Episode)</visible>
 	                    <width>8-col</width>
 	                    <align>left</align>
@@ -153,9 +155,10 @@
 	                    <aligny>center</aligny>
 	                    <font>VideoOSDTitel</font>
 	                    <textcolor>textActive</textcolor>
-						<wrapmultiline>true</wrapmultiline>
+						<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 	                    <label>[COLOR textDisabled][B]$INFO[Player.title][/B][/COLOR][CR]$INFO[VideoPlayer.EpisodeName]</label>
 	                </control>
+                   
 				</control>
 				<!--player position-->
 				<!--Start Time-->

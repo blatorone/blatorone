@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">8000</defaultcontrol>
+    <defaultcontrol condition="!String.Contains(Container.folderpath,plugin) + !container.content(episodes) + !container.content(musicvideos)" always="true">8000</defaultcontrol>
+    <defaultcontrol condition="String.Contains(Container.folderpath,plugin) + container.content(episodes) + container.content(musicvideos)" always="true">8001</defaultcontrol>
     <animation type="windowClose">
         <effect type="fade" start="100" end="0" time="400" delay="200"/>
     </animation>
@@ -73,7 +74,7 @@
         </control>
         <!--content is movie, music video or tvshow (from XBMC Library)-->
         <control type="group">
-            <visible>!String.Contains(Container.folderpath,plugin) + !container.content(episodes)</visible>
+            <visible>!String.Contains(Container.folderpath,plugin) + !container.content(episodes) | !container.content(tvshows) | !container.content(movies)</visible>
             <posx>1200</posx>
             <posy>0</posy>
             <animation type="Windowopen">
@@ -116,7 +117,7 @@
                     <height>115</height>
                     <aligny>center</aligny>
                     <font>largeTitle</font>
-                    <textcolor>pink</textcolor>
+                    <textcolor>textActive</textcolor>
                     <label>$INFO[listitem.title]</label>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
@@ -248,6 +249,12 @@
                         <onclick>SendClick(2003,6)</onclick>
                     </item>
                     <item>
+                            <label>206</label>
+                            <label2></label2>
+                            <thumb></thumb>
+                            <onclick>SetFocus(999983)</onclick>
+                        </item>
+                    <item>
                         <label>13511</label>
                         <label2></label2>
                         <thumb></thumb>
@@ -265,9 +272,9 @@
         </control>
 
         <!--content is tvshow episode or content is from a plugin-->
-        <include condition="String.Contains(Container.folderpath,plugin) | container.content(episodes)">itemShowcase</include>
+        <include condition="String.Contains(Container.folderpath,plugin) | container.content(episodes) | container.content(tvshows) | container.content(movies)">itemShowcase</include>
         <control type="group">
-            <visible>String.Contains(Container.folderpath,plugin) | container.content(episodes)</visible>
+            <visible>String.Contains(Container.folderpath,plugin) | container.content(episodes) | container.content(tvshows) | container.content(movies)</visible>
             <!--animations-->
             <control type="image">
             <posx>0</posx>
@@ -447,7 +454,7 @@
                 </control>
                 
                 <!--dialog controls-->
-                <control type="panel" id="8000">
+                <control type="panel" id="8001">
                 <posx>1000</posx>
                 <posy>100</posy>
                 <width>10-col</width>
