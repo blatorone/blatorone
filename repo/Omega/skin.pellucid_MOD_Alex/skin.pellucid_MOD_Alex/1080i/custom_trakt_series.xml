@@ -36,7 +36,7 @@
 						<control type="togglebutton" id="9013">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -46,7 +46,7 @@
                             <texturefocus></texturefocus>
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Anbieter</label>
+				            <label>[COLOR $VAR[highlight]]Anbieter:[/COLOR] [B]$INFO[container(5100).Listitem.label][/B]</label>
                             <onup>5400</onup>
 				            <ondown>5100</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=tv&quot;,return)</onclick>
@@ -62,7 +62,7 @@
                         <control type="togglebutton" id="9014">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -73,7 +73,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Meine Liste</label>
+				            <label>[COLOR $VAR[highlight]]Meine Liste:[/COLOR] [B]$INFO[container(5200).Listitem.label][/B]</label>
                             <onup>5100</onup>
 				            <ondown>5200</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_mylists&amp;tmdb_type=both&quot;,return)</onclick>
@@ -88,7 +88,7 @@
 						<control type="togglebutton" id="9015">
 				            <font>regular</font>
 				            <top>360</top>
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -99,7 +99,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Serien im Trend</label>
+				            <label>[COLOR $VAR[highlight]]Serien im Trend:[/COLOR] [B]$INFO[container(5300).Listitem.label][/B]</label>
                             <onup>5200</onup>
 				            <ondown>5300</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;tmdb_type=tv&quot;,return)</onclick>
@@ -114,7 +114,7 @@
 						<control type="togglebutton" id="9016">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -125,7 +125,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Serien Genre</label>
+				            <label>[COLOR $VAR[highlight]]Serien Genre:[/COLOR] [B]$INFO[container(5400).Listitem.label][/B]</label>
                             <onup>5300</onup>
 				            <ondown>5400</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_genres&amp;tmdb_type=tv&quot;,return)</onclick>
@@ -139,7 +139,7 @@
 						<control type="togglebutton" id="9017">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -150,7 +150,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Deine Begonnenen Epidosen</label>
+				            <label>[COLOR $VAR[highlight]]Deine Begonnene Episoden:[/COLOR] [B]$INFO[container(5700).Listitem.label][/B]</label>
                             <onup>5400</onup>
 				            <ondown>5700</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_ondeck&amp;tmdb_type=tv&quot;,return)</onclick>
@@ -164,7 +164,7 @@
 						<control type="togglebutton" id="9018">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -175,7 +175,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Nächste Episode</label>
+				            <label>[COLOR $VAR[highlight]]Nächste Episode:[/COLOR] [B]$INFO[container(5800).Listitem.label][/B]</label>
                             <onup>5700</onup>
 				            <ondown>5800</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_nextepisodes&amp;tmdb_type=tv&quot;,return)</onclick>
@@ -189,7 +189,7 @@
 						<control type="togglebutton" id="9019">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -200,7 +200,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Empfohlende Serien</label>
+				            <label>[COLOR $VAR[highlight]]Empfohlende Serien:[/COLOR] [B]$INFO[container(5900).Listitem.label][/B]</label>
                             <onup>5800</onup>
 				            <ondown>5900</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_recommendations&amp;tmdb_type=tv&quot;,return)</onclick>
@@ -215,7 +215,7 @@
                         <control type="togglebutton" id="9020">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -226,7 +226,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Serien noch zu Schauen</label>
+				            <label>[COLOR $VAR[highlight]]Serien noch zu Schauen:[/COLOR] [B]$INFO[container(6000).Listitem.label][/B]</label>
                             <onup>5900</onup>
 				            <ondown>6000</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_towatch&amp;tmdb_type=tv&quot;,return)</onclick>
@@ -240,7 +240,7 @@
                         <control type="togglebutton" id="9021">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -251,7 +251,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Serien Beobachtungsliste</label>
+				            <label>[COLOR $VAR[highlight]]Serien Beobachtungsliste:[/COLOR] [B]$INFO[container(6100).Listitem.label][/B]</label>
                             <onup>6000</onup>
 				            <ondown>6100</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Serien%20Beobachtungsliste&amp;tmdb_type=tv&quot;,return)</onclick>
@@ -266,7 +266,7 @@
                         <control type="togglebutton" id="9022">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -277,7 +277,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Staffeln Bebobachtungsliste</label>
+				            <label>[COLOR $VAR[highlight]]Staffeln Beobachtungsliste:[/COLOR] [B]$INFO[container(6200).Listitem.label][/B]</label>
                             <onup>6100</onup>
 				            <ondown>6200</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Staffeln%20Beobachtungsliste&amp;tmdb_type=season&quot;,return)</onclick>
@@ -292,7 +292,7 @@
                         <control type="togglebutton" id="9023">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -303,7 +303,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Episoden Bebobachtungsliste</label>
+				            <label>[COLOR $VAR[highlight]]Episoden Beobachtungsliste:[/COLOR] [B]$INFO[container(6300).Listitem.label][/B]</label>
                             <onup>6200</onup>
 				            <ondown>6300</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Episoden%20Beobachtungsliste&amp;tmdb_type=episode&quot;return)</onclick>
@@ -318,7 +318,7 @@
                         <control type="togglebutton" id="9024">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -329,7 +329,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Serien Favoriten</label>
+				            <label>[COLOR $VAR[highlight]]Serien Favouriten:[/COLOR] [B]$INFO[container(6400).Listitem.label][/B]</label>
                             <onup>6300</onup>
 				            <ondown>6400</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_favorites&amp;list_name=Serien%20Favoriten&amp;tmdb_type=tv&quot;,return)</onclick>
@@ -354,7 +354,7 @@
 							
 						</control>
 						-->
-					
+					<!-- not in use
 					 <control type="textbox">
 					<left>750</left>
 					<top>-220</top>
@@ -368,6 +368,7 @@
 					<autoscroll time="2000" delay="3000" repeat="5000">$PARAM[focused]</autoscroll>
 					<visible>!Skin.Hassetting(touch)</visible>
 				</control>
+				-->
 				<control type="scrollbar" id="2000">
                     <posx>1000</posx>
                     <posy>100</posy>

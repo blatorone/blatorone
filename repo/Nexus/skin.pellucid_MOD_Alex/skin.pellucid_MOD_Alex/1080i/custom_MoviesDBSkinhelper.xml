@@ -36,7 +36,7 @@
 						<control type="togglebutton" id="9013">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -46,7 +46,7 @@
                             <texturefocus></texturefocus>
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Anbieter</label>
+				            <label>[COLOR $VAR[highlight]]Anbieter:[/COLOR] [B]$INFO[container(5100).Listitem.label][/B]</label>
                             <onup>5400</onup>
 				            <ondown>5100</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=movie&quot;,return)</onclick>
@@ -62,7 +62,7 @@
                         <control type="togglebutton" id="9014">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -73,7 +73,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Filme im Trend</label>
+				            <label>[COLOR $VAR[highlight]]Filme im Trend:[/COLOR] [B]$INFO[container(5200).Listitem.label][/B]</label>
                             <onup>5100</onup>
 				            <ondown>5200</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trending_day&amp;tmdb_type=movie&quot;,return)</onclick>
@@ -88,7 +88,7 @@
 						<control type="togglebutton" id="9015">
 				            <font>regular</font>
 				            <top>360</top>
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -99,7 +99,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Film Genre</label>
+				            <label>[COLOR $VAR[highlight]]Film Genre:[/COLOR] [B]$INFO[container(5300).Listitem.label][/B]</label>
                             <onup>5200</onup>
 				            <ondown>5300</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=genres&amp;tmdb_type=movie&quot;,return)</onclick>
@@ -114,7 +114,7 @@
 						<control type="togglebutton" id="9016">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -125,7 +125,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Beliebt</label>
+				            <label>[COLOR $VAR[highlight]]Beliebt:[/COLOR] [B]$INFO[container(5400).Listitem.label][/B]</label>
                             <onup>5300</onup>
 				            <ondown>5400</ondown>
 				            <onclick>ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=popular&amp;tmdb_type=movie&quot;,return)</onclick>
@@ -139,7 +139,7 @@
 						<control type="togglebutton" id="9017">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -150,7 +150,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Filme Bibliothek</label>
+				            <label>[COLOR $VAR[highlight]]FIlme Bibliothek:[/COLOR] [B]$INFO[container(5700).Listitem.label][/B]</label>
                             <onup>5400</onup>
 				            <ondown>5700</ondown>
 				            <onclick>ActivateWindow(Videos,videodb://movies/)</onclick>
@@ -166,7 +166,7 @@
 						<control type="togglebutton" id="9018">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -177,7 +177,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Im Kino</label>
+				            <label>[COLOR $VAR[highlight]]Im Kino:[/COLOR] [B]$INFO[container(5800).Listitem.label][/B]</label>
                             <onup>5700</onup>
 				            <ondown>5800</ondown>
 				            <onclick>ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=now_playing&amp;tmdb_type=movie&quot;,return)</onclick>
@@ -191,7 +191,7 @@
 						<control type="togglebutton" id="9019">
 				            <font>regular</font>
 				            
-				            <width>600</width>
+				            <width>1200</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -202,7 +202,8 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>Demnächst</label>
+				            <label>[COLOR $VAR[highlight]]Demnächst:[/COLOR] [B]$INFO[container(5900).Listitem.label] / [COLOR red]$INFO[container(5900).Listitem.premiered][/B][/COLOR] </label>
+							<altlabel>Demnächst</altlabel>
                             <onup>5800</onup>
 				            <ondown>5900</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie&quot;,return)</onclick>
@@ -227,7 +228,7 @@
 							
 						</control>
 						-->
-					
+					<!-- not in use
 					 <control type="textbox">
 					<left>750</left>
 					<top>-220</top>
@@ -237,10 +238,11 @@
 					<align>center</align>
 					<aligny>center</aligny>
                     <wrapmultiline>false</wrapmultiline>
-					<label>[B]$INFO[ListItem.Label][/B]</label>
+					<label>[B]$INFO[ListItem.Label][/B] $INFO[ListItem.premiered]</label>
 					<autoscroll time="2000" delay="3000" repeat="5000">$PARAM[focused]</autoscroll>
 					<visible>!Skin.Hassetting(touch)</visible>
 				</control>
+				-->
 				<control type="scrollbar" id="2000">
                     <posx>1000</posx>
                     <posy>100</posy>
