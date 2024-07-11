@@ -95,7 +95,7 @@
 							<textcolor>grey</textcolor>
 							<shadowcolor>ff8a795d</shadowcolor>
 							<include>DefaultButtonsValues</include>
-							<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.RatingAndVotes,, • ]$INFO[ListItem.Duration(mins),,m]$INFO[ListItem.Endtime, • $LOCALIZE[19127]: ,]</label>
+							<label>$INFO[ListItem.premiered,, • ]$INFO[ListItem.RatingAndVotes,, • ]$INFO[ListItem.Duration(mins),,m]$INFO[ListItem.Endtime, • $LOCALIZE[19127]: ,]</label>
 							<visible>!Skin.HasSetting(Enable.HourMinuteDuration)</visible>
 						</control>
 						<control type="label">

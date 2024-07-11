@@ -62,7 +62,7 @@
 						<aligny>center</aligny>
 						<font>thumbTitle</font>
 						<textcolor>textDisabled</textcolor>
-						<label>[B]$INFO[ListItem.label][/B][CR]$INFO[ListItem.year]</label>
+						<label>[B]$INFO[ListItem.label][/B][CR]$INFO[ListItem.Premiered]</label>
 					</control>
 					<control type="group">
 						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.overlays)</visible>
@@ -196,7 +196,7 @@
 							<aligny>center</aligny>
 							<font>thumbTitle</font>
 							<textcolor>textActive</textcolor>
-							<label>[B]$INFO[ListItem.label][/B][CR]$INFO[ListItem.year]</label>
+							<label>[B]$INFO[ListItem.label][/B][CR]$INFO[ListItem.Premiered]</label>
 						</control>
 						<control type="group">
 						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.overlays)</visible>

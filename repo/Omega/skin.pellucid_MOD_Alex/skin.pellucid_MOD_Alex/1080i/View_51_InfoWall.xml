@@ -319,7 +319,7 @@
 								<font>menuTitle</font>
 								<textcolor>textDisabled</textcolor>
 								<shadowcolor>ff8a795d</shadowcolor>
-								<label>$INFO[ListItem.year] • $VAR[Durationtiminmin]</label>
+								<label>$INFO[ListItem.premiered] • $VAR[Durationtiminmin]</label>
 								<visible>integer.IsGreater(ListItem.duration,120)</visible>
 						</control>
 						<control type="textbox">
