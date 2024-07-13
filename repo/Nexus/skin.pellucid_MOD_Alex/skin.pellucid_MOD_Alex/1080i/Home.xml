@@ -1037,6 +1037,7 @@
 						</item>
 					</content>
 				</control>
+				
 		</control>
 		<!--Battery-->
 		<include>Battery</include>
