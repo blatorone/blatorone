@@ -229,6 +229,13 @@
 	                    	<onclick>ActivateWindow(Weather,return)</onclick>
 	                	</item>
 						<item>
+							<visible>!$EXP[hasWeather]</visible>
+	                    	<description>weather</description>
+	                    	<label2></label2>
+	                    	<thumb></thumb>
+	                    	<onclick>ActivateWindow(ServiceSettings,weather)</onclick>
+	                	</item>
+						<item>
 	                        <description>change Color</description>
 	                        <label2></label2>
 	                        <thumb></thumb>
