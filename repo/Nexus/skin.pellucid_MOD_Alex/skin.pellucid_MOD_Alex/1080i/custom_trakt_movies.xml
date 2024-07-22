@@ -364,7 +364,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>[COLOR $VAR[highlight]]Apple TV Top 10 Top 10:[/COLOR] [B]$INFO[container(6500).Listitem.label][/B]</label>
+				            <label>[COLOR $VAR[highlight]]Apple TV Top 10:[/COLOR] [B]$INFO[container(6500).Listitem.label][/B]</label>
                             <onup>6400</onup>
 				            <ondown>6500</ondown>
 							<onright>6500</onright>

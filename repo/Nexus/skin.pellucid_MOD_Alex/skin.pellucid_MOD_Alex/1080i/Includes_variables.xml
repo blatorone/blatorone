@@ -31,6 +31,7 @@
 		<value condition="Window.isactive(musicplaylist) | Window.isactive(videoplaylist)">$LOCALIZE[31123]</value>
 		<value condition="Window.isactive(pictures)">$LOCALIZE[31056]</value>
 		<value condition="Window.isactive(games)">$LOCALIZE[31232] [LOWERCASE][COLOR $VAR[highlight]]$INFO[container.foldername][/COLOR][/LOWERCASE]</value>
+		<value condition="Window.isactive(10060)">$LOCALIZE[1036]</value>
 	</variable>
     <variable name="listSubTitle">
         <value condition="Window.isactive(Videos)">$INFO[Container.NumAllItems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
@@ -43,6 +44,7 @@
 		<value condition="Window.isactive(games)">$INFO[container.NumAllItems,, $LOCALIZE[31145]]</value>
 		<value condition="Window.isactive(musicplaylist) | Window.isactive(videoplaylist)">$INFO[container.NumAllItems,, $LOCALIZE[31014]]</value>
 		<value condition="Window.isactive(pictures) + Integer.IsGreater(container.Numitems,0)">$INFO[container.NumAllItems,, $LOCALIZE[31014]]</value>
+		<value condition="Window.isactive(10060)">$INFO[container.NumAllItems,, $LOCALIZE[31014]]</value>
 	</variable>
     <!--list view item detail / subheader-->
     <variable name="itemDetail">
@@ -180,7 +182,7 @@
         <value condition="window.isactive(music) | window.isactive(radiochannels) | window.isactive(radioguide) | window.isactive(radiorecordings) | window.isactive(radiotimers) | window.isactive(musicplaylist)"></value>
         <value condition="window.isactive(videos) | window.isactive(tvrecordings) | window.isactive(tvguide) | window.isactive(tvtimers) | window.isactive(videoplaylist)"></value>
         <value condition="window.isactive(tvchannels)"></value>
-         
+		<value condition="window.isactive(10060)"></value>
     </variable>
     <!--extra fanart sourcing-->
     <variable name="extraFanartLocation">
