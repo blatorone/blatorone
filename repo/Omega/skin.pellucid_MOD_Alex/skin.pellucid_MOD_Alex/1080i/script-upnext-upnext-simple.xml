@@ -59,7 +59,7 @@
                             <pulseonselect>no</pulseonselect>
                         </control>
                         <control type="button" id="11">
-                            <label>    $ADDON[service.upnext 30037]</label>
+                            <label>    $LOCALIZE[31355]</label>
                             <onclick>SendClick(3012)</onclick>
                             <visible>Integer.IsGreater(Player.TimeRemaining,25)</visible>
                             <height>56</height>
