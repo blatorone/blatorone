@@ -938,5 +938,9 @@ msgctxt "#31352"
 msgid "Series DB"
 msgstr "Serien DB"
 
+msgctxt "#31353"
+msgid "Watching stopped in [COLOR $VAR[highlight]]$INFO[Window.Property(remaining)][/COLOR] seconds"
+msgstr "Wiedergabe wird gestoppt in [COLOR $VAR[highlight]]$INFO[Window.Property(remaining)][/COLOR] Sekunden"
+
 
 
