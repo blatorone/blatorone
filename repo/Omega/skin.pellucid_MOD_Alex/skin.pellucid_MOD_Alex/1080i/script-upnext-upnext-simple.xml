@@ -101,20 +101,11 @@
                         <control type="label" id="12">
                             <label>$LOCALIZE[31354]</label>
                             <height>56</height>
-                            <width>650</width>
+                            <width>485</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
                             <textcolor>ddffffff</textcolor>
                         </control>
-                    </control>
-                    <control type="image">
-                        <width>46</width>
-                        <height>46</height>
-                        <aspect>keep</aspect>
-                        <texture colordiffuse="ddffffff">nextupicons/30.png</texture>
-                        <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
-                        <visible>Integer.IsGreater(Player.TimeRemaining,30)</visible>
-                    </control>
                     <control type="image">
                         <width>46</width>
                         <height>46</height>
@@ -122,6 +113,26 @@
                         <texture colordiffuse="ddffffff">$INFO[Player.TimeRemaining(ss),nextupicons/,.png]</texture>
                         <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
                         <visible>!Integer.IsGreater(Player.TimeRemaining,30)</visible>
+                    </control>
+                    </control>
+                    
+                    <control type="image">
+                        <visible>Control.IsVisible(11) + [control.hasfocus(11) | control.hasfocus(10)]</visible>
+                        <bottom>12</bottom>
+                        <width>46</width>
+                        <height>46</height>
+                        <aspect>keep</aspect>
+                        <texture colordiffuse="$VAR[Home]">nextupicons/00.png</texture>
+                        <animation effect="slide" end="13,-5" time="0" condition="true">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <visible>Control.IsVisible(11) + [!control.hasfocus(11) + !control.hasfocus(10)]</visible>
+                        <bottom>12</bottom>
+                        <width>46</width>
+                        <height>46</height>
+                        <aspect>keep</aspect>
+                        <texture colordiffuse="ddffffff">nextupicons/00.png</texture>
+                        <animation effect="slide" end="13,-5" time="0" condition="true">Conditional</animation>
                     </control>
                 </control>
             </control>

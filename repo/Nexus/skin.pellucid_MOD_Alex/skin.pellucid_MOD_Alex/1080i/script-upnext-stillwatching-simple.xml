@@ -18,7 +18,7 @@
                 <!-- Background -->
                 <control type="image">
                     <top>0</top>
-                    <width>100%</width>
+                    <width>100%</width> 
                     <height>80</height>
                     <texture colordiffuse="dd000000">bg.png</texture>
                 </control>
@@ -38,28 +38,19 @@
                         <height>56</height>
                         <itemgap>10</itemgap>
                         <align>left</align>
-                        <control type="button" id="10">
-                            <label>    $ADDON[service.upnext 30010]</label>
-                            <onclick>SendClick(3012)</onclick>
-                            <visible>Integer.IsGreater(Player.TimeRemaining,59)</visible>
+                        <!-- Label -->
+                        <control type="label">
+                            <width>auto</width>
                             <height>56</height>
-                            <width min="50">auto</width>
-                            <font>font20_title</font>
-                            <textoffsetx>55</textoffsetx>
-                            <textcolor>ddffffff</textcolor>
-                            <focusedcolor>$VAR[Home]</focusedcolor>
-                            <selectedcolor>ddffffff</selectedcolor>
-                            <shadowcolor>22000000</shadowcolor>
                             <aligny>center</aligny>
-                            <align>center</align>
-                            <texturefocus border="10" colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
-                            <texturenofocus border="10" colordiffuse="FF212121">masks/discsurface.png</texturenofocus>
-                            <alttexturefocus border="10" colordiffuse="$VAR[highlight]">masks/discsurface.png</alttexturefocus>
-                            <alttexturenofocus border="10" colordiffuse="FF212121">masks/discsurface.png</alttexturenofocus>
-                            <pulseonselect>no</pulseonselect>
+                            <font>font32_title</font>
+                            <textcolor>eeffffff</textcolor>
+                            <shadowcolor>00000000</shadowcolor>
+                            <label>[B]$ADDON[service.upnext 30024][/B]</label>
                         </control>
-                        <control type="button" id="11">
-                            <label>    $LOCALIZE[31353]</label>
+                        <control type="button" id="10">
+                            <label>$ADDON[service.upnext 30010]</label>
+                            <visible>Integer.IsGreater(Player.TimeRemaining,25)</visible>
                             <onclick>SendClick(3012)</onclick>
                             <height>56</height>
                             <width min="50">auto</width>
@@ -95,7 +86,6 @@
                             <alttexturenofocus border="10" colordiffuse="FF212121">masks/discsurface.png</alttexturenofocus>
                             <pulseonselect>no</pulseonselect>
                         </control>
-                        <!-- Label -->
                         <control type="label">
                             <width>auto</width>
                             <height>56</height>
@@ -103,9 +93,10 @@
                             <font>font32_title</font>
                             <textcolor>eeffffff</textcolor>
                             <shadowcolor>00000000</shadowcolor>
-                            <label>$ADDON[service.upnext 30024]</label>
+                            <label>    $LOCALIZE[31353]</label>
                         </control>
                     </control>
+                    <!--
                     <control type="image">
                         <width>46</width>
                         <height>46</height>
@@ -122,6 +113,7 @@
                         <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
                         <visible>!Integer.IsGreater(Player.TimeRemaining,30)</visible>
                     </control>
+                    -->
                 </control>
             </control>
         </control>

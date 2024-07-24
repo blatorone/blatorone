@@ -208,7 +208,7 @@
                         </control>
                     </control>
                     <control type="image">
-                        <visible>Integer.IsGreater(Player.TimeRemaining,25) + control.hasfocus(3012)</visible>
+                        <visible>control.isvisible(3012) + control.hasfocus(3012)</visible>
                         <bottom>20</bottom>
                         <width>46</width>
                         <height>46</height>
@@ -217,7 +217,7 @@
                         <animation effect="slide" end="13,-5" time="0" condition="true">Conditional</animation>
                     </control>
                     <control type="image">
-                        <visible>Integer.IsGreater(Player.TimeRemaining,25) + !control.hasfocus(3012)</visible>
+                        <visible>control.isvisible(3012) + !control.hasfocus(3012)</visible>
                         <bottom>20</bottom>
                         <width>46</width>
                         <height>46</height>
@@ -225,23 +225,12 @@
                         <texture colordiffuse="ddffffff">nextupicons/00.png</texture>
                         <animation effect="slide" end="13,-5" time="0" condition="true">Conditional</animation>
                     </control>
-                    
                     <control type="group">
                         <visible>!Window.IsVisible(extendedprogressdialog)</visible>
                         <animation effect="fade" time="150">VisibleChange</animation>
                         <control type="label">
-                            <font>font_clock</font>
-                            <shadowcolor>text_shadow</shadowcolor>
-                            <top>0</top>
                             <right>24</right>
-                            <height>200</height>
-                            <width>600</width>
-                            <align>right</align>
-                            <label>$INFO[System.Time]</label>
-                        </control>
-                        <control type="label">
-                            <right>24</right>
-                            <top>84</top>
+                            <top>50</top>
                             <width>800</width>
                             <height>100</height>
                             <align>right</align>
@@ -249,7 +238,7 @@
                             <orientation>horizontal</orientation>
                             <usecontrolcoords>true</usecontrolcoords>
                             <label>$ADDON[service.upnext 30009]</label>
-                            <shadowcolor>text_shadow</shadowcolor>
+                            <font>title</font>
                             <visible>!String.IsEmpty(Window.Property(endtime))</visible>
                         </control>
                     </control>

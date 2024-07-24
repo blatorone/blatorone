@@ -18,7 +18,7 @@
                 <!-- Background -->
                 <control type="image">
                     <top>0</top>
-                    <width>100%</width>
+                    <width>100%</width> 
                     <height>181</height>
                     <texture colordiffuse="dd000000">bg.png</texture>
                 </control>
@@ -97,7 +97,7 @@
                         <font>font30_title</font>
                         <textcolor>ffffffff</textcolor>
                         <shadowcolor>00000000</shadowcolor>
-                        <label>$ADDON[service.upnext 30024]</label>
+                        <label>[B]$ADDON[service.upnext 30024][/B]</label>
                     </control>
                     <!-- Details -->
                     <control type="grouplist">
@@ -159,27 +159,7 @@
                         <control type="button" id="10">
                             <label>    $ADDON[service.upnext 30010]</label>
                             <onclick>SendClick(3012)</onclick>
-                            <visible>Integer.IsGreater(Player.TimeRemaining,59)</visible>
-                            <height>56</height>
-                            <width min="50">auto</width>
-                            <font>font20_title</font>
-                            <textoffsetx>55</textoffsetx>
-                            <textcolor>ddffffff</textcolor>
-                            <focusedcolor>$VAR[Home]</focusedcolor>
-                            <selectedcolor>ddffffff</selectedcolor>
-                            <shadowcolor>22000000</shadowcolor>
-                            <aligny>center</aligny>
-                            <align>center</align>
-                            <texturefocus border="10" colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
-                            <texturenofocus border="10" colordiffuse="FF212121">masks/discsurface.png</texturenofocus>
-                            <alttexturefocus border="10" colordiffuse="$VAR[highlight]">masks/discsurface.png</alttexturefocus>
-                            <alttexturenofocus border="10" colordiffuse="FF212121">masks/discsurface.png</alttexturenofocus>
-                            <pulseonselect>no</pulseonselect>
-                        </control>
-                        <control type="button" id="11">
-                            <label>    $ADDON[service.upnext 30010]</label>
-                            <visible>!Integer.IsGreater(Player.TimeRemaining,59)</visible>
-                            <onclick>SendClick(3012)</onclick>
+                            <visible>Integer.IsGreater(Player.TimeRemaining,25)</visible>
                             <height>56</height>
                             <width min="50">auto</width>
                             <font>font20_title</font>
@@ -217,11 +197,12 @@
                         <control type="label" id="12">
                             <label>$LOCALIZE[31353]</label>
                             <height>56</height>
-                            <width>650</width>
+                            <width>600</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
                             <textcolor>ddffffff</textcolor>
                         </control>
+                        <!--
                         <control type="image">
                             <width>46</width>
                             <height>46</height>
@@ -230,9 +211,10 @@
                             <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
                             <visible>!Integer.IsGreater(Player.TimeRemaining,30)</visible>
                         </control>
+                        -->
                     </control>
                     <control type="image">
-                        <visible>control.hasfocus(11) | control.hasfocus(10)</visible>
+                        <visible>control.isvisible(10) + control.hasfocus(10)</visible>
                         <bottom>20</bottom>
                         <width>46</width>
                         <height>46</height>
@@ -241,7 +223,7 @@
                         <animation effect="slide" end="13,-5" time="0" condition="true">Conditional</animation>
                     </control>
                     <control type="image">
-                        <visible>!control.hasfocus(11) + !control.hasfocus(10)</visible>
+                        <visible>control.isvisible(10) + !control.hasfocus(10)</visible>
                         <bottom>20</bottom>
                         <width>46</width>
                         <height>46</height>
@@ -252,19 +234,9 @@
                     <control type="group">
                         <visible>!Window.IsVisible(extendedprogressdialog)</visible>
                         <animation effect="fade" time="150">VisibleChange</animation>
-                        <control type="label">
-                            <font>font_clock</font>
-                            <shadowcolor>text_shadow</shadowcolor>
-                            <top>0</top>
-                            <right>20</right>
-                            <height>200</height>
-                            <width>600</width>
-                            <align>right</align>
-                            <label>$INFO[System.Time]</label>
-                        </control>
-                        <control type="label">
+                       <control type="label">
                             <right>24</right>
-                            <top>84</top>
+                            <top>60</top>
                             <width>800</width>
                             <height>100</height>
                             <align>right</align>
@@ -272,7 +244,7 @@
                             <orientation>horizontal</orientation>
                             <usecontrolcoords>true</usecontrolcoords>
                             <label>$ADDON[service.upnext 30009]</label>
-                            <shadowcolor>text_shadow</shadowcolor>
+                            <font>title</font>
                             <visible>!String.IsEmpty(Window.Property(endtime))</visible>
                         </control>
                     </control>
