@@ -170,7 +170,7 @@
                             <shadowcolor>22000000</shadowcolor>
                             <aligny>center</aligny>
                             <align>center</align>
-                            <texturefocus border="10" colordiffuse="$VAR[highlight]">bumasks/discsurfacetton.png</texturefocus>
+                            <texturefocus border="10" colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
                             <texturenofocus border="10" colordiffuse="FF212121">masks/discsurface.png</texturenofocus>
                             <alttexturefocus border="10" colordiffuse="$VAR[highlight]">masks/discsurface.png</alttexturefocus>
                             <alttexturenofocus border="10" colordiffuse="FF212121">masks/discsurface.png</alttexturenofocus>
@@ -178,6 +178,7 @@
                         </control>
                         <control type="button" id="11">
                             <label>    $ADDON[service.upnext 30010]</label>
+                            <visible>!Integer.IsGreater(Player.TimeRemaining,59)</visible>
                             <onclick>SendClick(3012)</onclick>
                             <height>56</height>
                             <width min="50">auto</width>
@@ -231,7 +232,7 @@
                         </control>
                     </control>
                     <control type="image">
-                        <visible>control.hasfocus(11)</visible>
+                        <visible>control.hasfocus(11) | control.hasfocus(10)</visible>
                         <bottom>20</bottom>
                         <width>46</width>
                         <height>46</height>
@@ -240,7 +241,7 @@
                         <animation effect="slide" end="13,-5" time="0" condition="true">Conditional</animation>
                     </control>
                     <control type="image">
-                        <visible>!control.hasfocus(11)</visible>
+                        <visible>!control.hasfocus(11) + !control.hasfocus(10)</visible>
                         <bottom>20</bottom>
                         <width>46</width>
                         <height>46</height>
