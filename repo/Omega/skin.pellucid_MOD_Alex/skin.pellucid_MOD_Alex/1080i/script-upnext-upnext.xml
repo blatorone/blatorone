@@ -44,7 +44,7 @@
                         <left>10</left>
                         <width>230</width>
                         <height>121</height>
-                        <font>font12</font>
+                        <font>textbox</font>
                         <textcolor>ffffffff</textcolor>
                         <shadowcolor>00000000</shadowcolor>
                         <align>center</align>
@@ -94,7 +94,7 @@
                         <width>auto</width>
                         <height>35</height>
                         <aligny>center</aligny>
-                        <font>font25_title</font>
+                        <font>buttonTitle</font>
                         <textcolor>eeffffff</textcolor>
                         <shadowcolor>00000000</shadowcolor>
                         <label>$LOCALIZE[31354]</label>
@@ -104,7 +104,7 @@
                         <width>auto</width>
                         <height>35</height>
                         <aligny>center</aligny>
-                        <font>font25_title</font>
+                        <font>buttonTitle</font>
                         <textcolor>eeffffff</textcolor>
                         <shadowcolor>00000000</shadowcolor>
                         <label>$ADDON[service.upnext 30008]</label>
@@ -120,7 +120,7 @@
                             <width>auto</width>
                             <height>35</height>
                             <aligny>center</aligny>
-                            <font>font12</font>
+                            <font>buttonTitle</font>
                             <textcolor>eeffffff</textcolor>
                             <shadowcolor>00000000</shadowcolor>
                             <label>$INFO[Window.Property(tvshowtitle),, - ]$INFO[Window.Property(season),S,]$INFO[Window.Property(episode),E, - ]$INFO[Window.Property(title)]   </label>
@@ -130,7 +130,7 @@
                             <width>auto</width>
                             <height>35</height>
                             <aligny>center</aligny>
-                            <font>font12</font>
+                            <font>buttonTitle</font>
                             <textcolor>eeffffff</textcolor>
                             <shadowcolor>00000000</shadowcolor>
                             <label>$INFO[Window.Property(year),(,)   ]</label>
@@ -149,7 +149,7 @@
                             <height>35</height>
                             <aligny>center</aligny>
                             <label>$INFO[Window.Property(rating), ,   ]</label>
-                            <font>font12</font>
+                            <font>buttonTitle</font>
                             <textcolor>eeffffff</textcolor>
                             <shadowcolor>00000000</shadowcolor>
                             <visible>!String.IsEmpty(Window.Property(rating))</visible>
@@ -166,7 +166,7 @@
                             <visible>Integer.IsGreater(Player.TimeRemaining,25)</visible>
                             <height>56</height>
                             <width min="50">auto</width>
-                            <font>font20_title</font>
+                            <font>buttonTitle</font>
                             <textoffsetx>55</textoffsetx>
                             <textcolor>ddffffff</textcolor>
                             <focusedcolor>$VAR[Home]</focusedcolor>
@@ -184,7 +184,7 @@
                             <label>$ADDON[service.upnext 30034]</label>
                             <height>56</height>
                             <width min="50">auto</width>
-                            <font>font20_title</font>
+                            <font>buttonTitle</font>
                             <textoffsetx>15</textoffsetx>
                             <textcolor>ddffffff</textcolor>
                             <focusedcolor>$VAR[Home]</focusedcolor>

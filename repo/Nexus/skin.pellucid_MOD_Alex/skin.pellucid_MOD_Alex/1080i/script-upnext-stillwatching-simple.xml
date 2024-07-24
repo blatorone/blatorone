@@ -43,7 +43,7 @@
                             <width>auto</width>
                             <height>56</height>
                             <aligny>center</aligny>
-                            <font>font32_title</font>
+                            <font>buttonTitle</font>
                             <textcolor>eeffffff</textcolor>
                             <shadowcolor>00000000</shadowcolor>
                             <label>[B]$ADDON[service.upnext 30024][/B]</label>
@@ -54,7 +54,7 @@
                             <onclick>SendClick(3012)</onclick>
                             <height>56</height>
                             <width min="50">auto</width>
-                            <font>font20_title</font>
+                            <font>buttonTitle</font>
                             <textoffsetx>55</textoffsetx>
                             <textcolor>ddffffff</textcolor>
                             <focusedcolor>$VAR[Home]</focusedcolor>
@@ -72,7 +72,7 @@
                             <label>$ADDON[service.upnext 30034]</label>
                             <height>56</height>
                             <width min="50">auto</width>
-                            <font>font20_title</font>
+                            <font>buttonTitle</font>
                             <textoffsetx>15</textoffsetx>
                             <textcolor>ddffffff</textcolor>
                             <focusedcolor>$VAR[Home]</focusedcolor>
@@ -90,7 +90,7 @@
                             <width>auto</width>
                             <height>56</height>
                             <aligny>center</aligny>
-                            <font>font32_title</font>
+                            <font>buttonTitle</font>
                             <textcolor>eeffffff</textcolor>
                             <shadowcolor>00000000</shadowcolor>
                             <label>    $LOCALIZE[31353]</label>

@@ -66,7 +66,7 @@
                             <visible>Integer.IsGreater(Player.TimeRemaining,25)</visible>
                             <height>56</height>
                             <width min="50">auto</width>
-                            <font>font20_title</font>
+                            <font>buttonTitle</font>
                             <textoffsetx>55</textoffsetx>
                             <textcolor>ddffffff</textcolor>
                             <focusedcolor>$VAR[Home]</focusedcolor>
@@ -84,7 +84,7 @@
                             <label>$ADDON[service.upnext 30034]</label>
                             <height>56</height>
                             <width min="50">auto</width>
-                            <font>font20_title</font>
+                            <font>buttonTitle</font>
                             <textoffsetx>15</textoffsetx>
                             <textcolor>ddffffff</textcolor>
                             <focusedcolor>$VAR[Home]</focusedcolor>
@@ -102,7 +102,7 @@
                             <label>$LOCALIZE[31354]</label>
                             <height>56</height>
                             <width>485</width>
-                            <font>font20_title</font>
+                            <font>buttonTitle</font>
                             <textoffsetx>15</textoffsetx>
                             <textcolor>ddffffff</textcolor>
                         </control>
@@ -110,7 +110,7 @@
                         <width>46</width>
                         <height>46</height>
                         <aspect>keep</aspect>
-                        <texture colordiffuse="ddffffff">$INFO[Player.TimeRemaining(ss),nextupicons/,.png]</texture>
+                        <texture colordiffuse="$VAR[highlight]">$INFO[Player.TimeRemaining(ss),nextupicons/,.png]</texture>
                         <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
                         <visible>!Integer.IsGreater(Player.TimeRemaining,30)</visible>
                     </control>
