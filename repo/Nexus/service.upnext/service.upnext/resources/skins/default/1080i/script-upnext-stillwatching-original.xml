@@ -179,6 +179,7 @@
                         <itemgap>10</itemgap>
                         <control type="button" id="3012">
                             <label>       $ADDON[service.upnext 30010]</label>
+                            <visible>Integer.IsGreater(Window.Property(remaining),25)</visible>
                             <height>56</height>
                             <width min="50">auto</width>
                             <font>font20_title</font>
@@ -221,8 +222,18 @@
                         <width>46</width>
                         <height>46</height>
                         <aspect>keep</aspect>
-                        <texture colordiffuse="DD000000">nextupicons/00.png</texture>
+                        <texture colordiffuse="$VAR[Home]">nextupicons/00.png</texture>
                         <animation effect="slide" end="13,-5" time="0" condition="true">Conditional</animation>
+                        <visible>control.hasfocus(3012)</visible>
+                    </control>
+                    <control type="image">
+                        <bottom>20</bottom>
+                        <width>46</width>
+                        <height>46</height>
+                        <aspect>keep</aspect>
+                        <texture colordiffuse="DDFFFFFF">nextupicons/00.png</texture>
+                        <animation effect="slide" end="13,-5" time="0" condition="true">Conditional</animation>
+                        <visible>!control.hasfocus(3012)</visible>
                     </control>
                     <control type="grouplist">
                         <visible>!Window.IsVisible(extendedprogressdialog)</visible>

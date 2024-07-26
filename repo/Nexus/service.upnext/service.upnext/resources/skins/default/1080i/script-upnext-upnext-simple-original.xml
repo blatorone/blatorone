@@ -47,6 +47,7 @@
                         <itemgap>10</itemgap>
                         <control type="button" id="3012">
                             <label>       $ADDON[service.upnext 30006]</label>
+                            <visible>Integer.IsGreater(Window.Property(remaining),25)</visible>
                             <height>56</height>
                             <width min="50">auto</width>
                             <font>font20_title</font>
@@ -116,9 +117,17 @@
                         <width>46</width>
                         <height>46</height>
                         <aspect>keep</aspect>
-                        <texture colordiffuse="DD000000">$INFO[Window.Property(remaining),nextupicons/,.png]</texture>
+                        <texture colordiffuse="$VAR[Home]">$INFO[Window.Property(remaining),nextupicons/,.png]</texture>
                         <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
-                        <visible>Integer.IsLessOrEqual(Window.Property(remaining),30)</visible>
+                        <visible>control.hasfocus(3012) + Integer.IsLessOrEqual(Window.Property(remaining),30) + Integer.IsGreater(Window.Property(remaining),25)</visible>
+                    </control>
+                    <control type="image">
+                        <width>46</width>
+                        <height>46</height>
+                        <aspect>keep</aspect>
+                        <texture colordiffuse="DDFFFFFF">$INFO[Window.Property(remaining),nextupicons/,.png]</texture>
+                        <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
+                        <visible>!control.hasfocus(3012) + Integer.IsLessOrEqual(Window.Property(remaining),30) + Integer.IsGreater(Window.Property(remaining),25)</visible>
                     </control>
                 </control>
             </control>

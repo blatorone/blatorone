@@ -47,6 +47,7 @@
                         <itemgap>10</itemgap>
                         <control type="button" id="3012">
                             <label>       $ADDON[service.upnext 30010]</label>
+                            <visible>Integer.IsGreater(Window.Property(remaining),25)</visible>
                             <height>56</height>
                             <width min="50">auto</width>
                             <font>font20_title</font>
@@ -118,7 +119,7 @@
                         <width>46</width>
                         <height>46</height>
                         <aspect>keep</aspect>
-                        <texture colordiffuse="DD000000">nextupicons/30.png</texture>
+                        <texture colordiffuse="DD000000">nextupicons/00.png</texture>
                         <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
                         <visible>Integer.IsGreater(Window.Property(remaining),30)</visible>
                     </control>
