@@ -51,15 +51,15 @@ msgid "Close"
 msgstr ""
 
 msgctxt "#30035"
-msgid "Continue watching in [COLOR $INFO[Window.Property(accent_colour)]]$INFO[Window.Property(remaining)][/COLOR] seconds"
+msgid "Watching stopped in [COLOR $VAR[highlight]]$INFO[Window.Property(remaining)][/COLOR] seconds"
 msgstr ""
 
 msgctxt "#30036"
-msgid "Up next in [COLOR $INFO[Window.Property(accent_colour)]]$INFO[Window.Property(remaining)][/COLOR] seconds"
+msgid "Up next in [COLOR $VAR[highlight]]$INFO[Window.Property(remaining)][/COLOR] seconds"
 msgstr ""
 
 msgctxt "#30037"
-msgid "Next video in [COLOR $INFO[Window.Property(accent_colour)]]$INFO[Window.Property(remaining)][/COLOR] seconds"
+msgid "Next episode in [COLOR $VAR[highlight]]$INFO[Window.Property(remaining)][/COLOR] seconds"
 msgstr ""
 
 msgctxt "#30038"

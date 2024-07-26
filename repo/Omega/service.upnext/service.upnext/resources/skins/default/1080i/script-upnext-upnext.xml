@@ -88,6 +88,16 @@
                         <aspectratio>scale</aspectratio>
                         <visible>String.IsEmpty(Window.Property(thumb)) + String.IsEmpty(Window.Property(fanart)) + !String.IsEmpty(Window.Property(landscape))</visible>
                     </control>
+                    <control type="image">
+                        <width>100</width>
+                        <height>100</height>
+                        <posx>60</posx>
+                        <posy>10</posy>
+                        <aspect>keep</aspect>
+                        <texture colordiffuse="ddffffff">$INFO[Window.Property(remaining),nextupicons/,.png]</texture>
+                        <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
+                        <visible>Integer.IsLessOrEqual(Window.Property(remaining),30)</visible>
+                    </control>
                     <control type="progress" id="3014">
                         <width>250</width>
                         <top>136</top>
@@ -97,7 +107,7 @@
                         <overlaytexture></overlaytexture>
                         <lefttexture></lefttexture>
                         <texturebg colordiffuse="FF212121">white.jpg</texturebg>
-                        <midtexture colordiffuse="$INFO[Window.Property(accent_colour)]">white.jpg</midtexture>
+                        <midtexture colordiffuse="$VAR[highlight]">white.jpg</midtexture>
                     </control>
                 </control>
                 <!-- Labels -->
@@ -156,7 +166,7 @@
                             <width>19</width>
                             <height>19</height>
                             <aspect>keep</aspect>
-                            <texture colordiffuse="$INFO[Window.Property(accent_colour)]">star.png</texture>
+                            <texture colordiffuse="$VAR[highlight]">star.png</texture>
                             <animation effect="slide" end="0,8" time="0" condition="true">Conditional</animation>
                             <visible>!String.IsEmpty(Window.Property(rating))</visible>
                         </control>
@@ -187,7 +197,7 @@
                             <shadowcolor>FF000000</shadowcolor>
                             <aligny>center</aligny>
                             <align>center</align>
-                            <texturefocus border="10" colordiffuse="$INFO[Window.Property(accent_colour)]">button.png</texturefocus>
+                            <texturefocus border="10" colordiffuse="$VAR[highlight]">button.png</texturefocus>
                             <texturenofocus border="10" colordiffuse="FF212121">button.png</texturenofocus>
                             <pulseonselect>no</pulseonselect>
                         </control>
@@ -201,17 +211,17 @@
                             <shadowcolor>FF000000</shadowcolor>
                             <aligny>center</aligny>
                             <align>center</align>
-                            <texturefocus border="10" colordiffuse="$INFO[Window.Property(accent_colour)]">button.png</texturefocus>
+                            <texturefocus border="10" colordiffuse="$VAR[highlight]">button.png</texturefocus>
                             <texturenofocus border="10" colordiffuse="FF212121">button.png</texturenofocus>
                             <pulseonselect>no</pulseonselect>
                         </control>
 						<control type="togglebutton" id="3015">
 							<visible>String.IsEqual(Window.Property(shuffle_enable),True)</visible>
 							<selected>String.IsEqual(Window.Property(shuffle_on),True)</selected>
-							<texturenofocus colordiffuse="FF212121">shuffle.png</texturenofocus>
-							<texturefocus colordiffuse="$INFO[Window.Property(accent_colour)]">shuffle.png</texturefocus>
+							<texturenofocus colordiffuse="DDFFFFFF">shuffle.png</texturenofocus>
+							<texturefocus colordiffuse="$VAR[highlight]">shuffle.png</texturefocus>
 							<alttexturenofocus colordiffuse="DDFFFFFF">shuffle.png</alttexturenofocus>
-							<alttexturefocus colordiffuse="$INFO[Window.Property(accent_colour)]">shuffle.png</alttexturefocus>
+							<alttexturefocus colordiffuse="$VAR[highlight]">shuffle.png</alttexturefocus>
 							<width>56</width>
 							<height>56</height>
 						</control>

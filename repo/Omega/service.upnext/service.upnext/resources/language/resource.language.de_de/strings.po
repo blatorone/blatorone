@@ -52,16 +52,16 @@ msgid "Close"
 msgstr "Schließen"
 
 msgctxt "#30035"
-msgid "Continue watching in [COLOR FFFF4081]$INFO[Window.Property(remaining)][/COLOR] seconds"
-msgstr "Wiedergabe fortsetzen in [COLOR FFFF4081]$INFO[Window.Property(remaining)][/COLOR] Sekunden"
+msgid "Watching stopped in [COLOR $VAR[highlight]]$INFO[Window.Property(remaining)][/COLOR] seconds"
+msgstr "Wiedergabe wird gestoppt in [COLOR $VAR[highlight]]$INFO[Window.Property(remaining)][/COLOR] Sekunden"
 
 msgctxt "#30036"
-msgid "Up next in [COLOR FFFF4081]$INFO[Window.Property(remaining)][/COLOR] seconds"
-msgstr "Als Nächstes in [COLOR FFFF4081]$INFO[Window.Property(remaining)][/COLOR] Sekunden"
+msgid "Up next in [COLOR $VAR[highlight]]$INFO[Window.Property(remaining)][/COLOR] seconds"
+msgstr "Als Nächstes in [COLOR $VAR[highlight]]$INFO[Window.Property(remaining)][/COLOR] Sekunden"
 
 msgctxt "#30037"
-msgid "Next episode in [COLOR FFFF4081]$INFO[Window.Property(remaining)][/COLOR] seconds"
-msgstr "Nächste Episode in [COLOR FFFF4081]$INFO[Window.Property(remaining)][/COLOR] Sekunden"
+msgid "Next episode in [COLOR $VAR[highlight]]$INFO[Window.Property(remaining)][/COLOR] seconds"
+msgstr "Nächste Episode in [COLOR $VAR[highlight]]$INFO[Window.Property(remaining)][/COLOR] Sekunden"
 
 msgctxt "#30038"
 msgid "Simple"
