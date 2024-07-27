@@ -183,14 +183,6 @@
                         <thumb></thumb>
                         <onclick>Back</onclick>
                     </item>
-                    <item id="5">
-                        
-                        <description>Back Button</description>
-                        <label>$LOCALIZE[31253]</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>SendClick(30)</onclick>
-                    </item>
                 </content>
             </control>
             <control type="togglebutton" id="10">
@@ -224,9 +216,11 @@
 				<textoffsetx>24</textoffsetx>
             </control>
 			<control type="sliderex" id="13">
+                <width>0</width>
                 <sliderwidth>100</sliderwidth>
                 <aligny>top</aligny>
                 <textoffsety>30</textoffsety>
+                <textwidth>470</textwidth>
                 <texturesliderbar colordiffuse="textDisabled">buttons/slider-back.png</texturesliderbar>
 		        <textureslidernib colordiffuse="textDisabled">buttons/slider-nib.png</textureslidernib>
 		        <textureslidernibfocus colordiffuse="$VAR[highlight]">buttons/slider-nib.png</textureslidernibfocus>
