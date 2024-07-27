@@ -37,7 +37,7 @@ msgstr "Wiedergabe fortsetzen"
 
 msgctxt "#30024"
 msgid "Still there?"
-msgstr "Noch da?"
+msgstr "Schaust Du noch?"
 
 msgctxt "#30032"
 msgid "Enable on playlists"

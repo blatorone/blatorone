@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-    <addon id="skin.pellucid_MOD_Alex" version="2.0.51" name="Pellucid MOD Blatorone" provider-name="Blatorone">
+    <addon id="skin.pellucid_MOD_Alex" version="2.0.53" name="Pellucid MOD Blatorone" provider-name="Blatorone">
         <requires>
             <import addon="xbmc.gui" version="5.15.0"/>
             <import addon="script.skinshortcuts" version="1.1.4"/>
@@ -115,7 +115,7 @@
 		        </assets>
 	        </extension>
         </addon>
-        <addon id="service.upnext" name="UpNext" version="2.0.28+dev.2" provider-name="im85288">
+        <addon id="service.upnext" name="UpNext" version="2.0.28+dev.3" provider-name="im85288">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>

@@ -343,7 +343,7 @@
                 </setting>
                 <setting id="nextSeason" type="boolean" label="30644" help="">
                     <level>0</level>
-                    <default>false</default>
+                    <default>true</default>
                     <control type="toggle"/>
                 </setting>
                 <setting id="enablePlaylist" type="boolean" label="30646" help="">
