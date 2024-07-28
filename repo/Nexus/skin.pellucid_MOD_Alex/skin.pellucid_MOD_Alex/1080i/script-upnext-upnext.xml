@@ -35,7 +35,7 @@
                     <top>0</top>
                     <width>100%</width>
                     <height>181</height>
-                    <texture colordiffuse="$VAR[Home]">upnext/bg.png</texture>
+                    <texture colordiffuse="overlay">upnext/bg.png</texture>
                 </control>
                 <!-- Thumb -->
                 <control type="group">
