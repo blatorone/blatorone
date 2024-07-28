@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.blatorone" name="Blatorone Repository" provider-name="blatorone" version="1.0.10">
+<addon id="repository.blatorone" name="Blatorone Repository" provider-name="blatorone" version="1.0.11">
 	    <extension point="xbmc.addon.repository" name="Blatorone repo">
             <dir>
                 <info compressed="false">https://blatorone.github.io/blatorone/repo/Omega/addons.xml</info>
@@ -12,6 +12,16 @@
 				<datadir zip="true">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/_zips</datadir>
 				<hashes>false</hashes>
 			</dir>
+            <dir>
+			    <info compressed="false">https://michaz1988.github.io/repo/addons.xml</info>
+			    <checksum>https://michaz1988.github.io/repo/addons.xml.md5</checksum>
+			    <datadir zip="true">https://michaz1988.github.io/repo/</datadir>
+		    </dir>
+            <dir minversion="20.9.1">
+                <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/</datadir>
+            </dir>
         </extension>
         <extension point="xbmc.addon.metadata">
             <summary>Kodi</summary>
