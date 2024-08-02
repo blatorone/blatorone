@@ -947,4 +947,7 @@ msgctxt "#31354"
 msgid "Next episode in [COLOR $VAR[highlight]]$INFO[Window.Property(remaining)][/COLOR] seconds"
 msgstr ""
 
+msgctxt "#31355"
+msgid "Addon Settings"
+msgstr ""
 

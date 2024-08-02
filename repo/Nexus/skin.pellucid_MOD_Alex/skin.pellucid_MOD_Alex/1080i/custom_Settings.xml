@@ -169,15 +169,7 @@
                     <onclick condition="!Skin.HasSetting(StartupIntro)">Skin.Reset(StartupIntro)</onclick>
                     <selected>Skin.HasSetting(StartupIntro)</selected>
                 </control>
-                <control type="radiobutton" id="114">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Intro enable</description>
-                    <width>14-col</width>
-                    <label>31294</label>
-                    <onclick>Skin.Togglesetting(widget)</onclick>
-                    
-                    <selected>!Skin.HasSetting(widget)</selected>
-                </control>
+                
                 <!--general-->
                 <control type="label" id="1001">
                         <visible>Container(8000).Hasfocus(1) + Integer.IsGreater(System.BatteryLevel,1)</visible>
@@ -219,7 +211,7 @@
                 <!--Apps-->
                 
                 <control type="label" id="1002">
-                        <visible>Container(8000).Hasfocus(1) + $EXP[hasWeather] | Container(8000).Hasfocus(1) + System.Platform.Android</visible>
+                        <visible>Container(8000).Hasfocus(1) + $EXP[hasWeather] | Container(8000).Hasfocus(1)</visible>
 						<posx>12</posx>
 						<posy>0</posy>
 						<width>14-col</width>
@@ -229,6 +221,12 @@
 						<align>center</align>
 						<label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31300][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
 				</control>
+                <control type="button" id="115">
+					<visible>Container(8000).Hasfocus(1)</visible>
+					<width>14-col</width>
+                    <label>Addon Einstellungen</label>
+					<onclick>ActivateWindow(10040,"addons://user/",return)</onclick>
+                </control>
                 <control type="radiobutton" id="2">
                     <visible>System.Platform.Android + Container(8000).Hasfocus(1)</visible>
                     <description>Android System allowed</description>
@@ -294,6 +292,15 @@
                     <onclick>activatewindow(1106)</onclick>
                 </control>
 
+                <control type="radiobutton" id="114">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Intro enable</description>
+                    <width>14-col</width>
+                    <label>31294</label>
+                    <onclick>Skin.Togglesetting(widget)</onclick>
+                    
+                    <selected>!Skin.HasSetting(widget)</selected>
+                </control>
                
 
                 <control type="radiobutton" id="7">
