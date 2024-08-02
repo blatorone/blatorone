@@ -154,7 +154,7 @@
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>[COLOR $VAR[highlight]]Deine Begonnene Episoden:[/COLOR] $INFO[container(5800).Listitem.title] [B]$INFO[container(5700).Listitem.label][/B]</label>
+				            <label>[COLOR $VAR[highlight]]Deine Begonnene Episoden:[/COLOR] [COLOR green][B]$INFO[container(5800).ListItem.TVShowTitle][/COLOR] / $INFO[container(5800).Listitem.title] [B]$INFO[container(5700).Listitem.label][/B]</label>
                             <onup>5400</onup>
 				            <ondown>5700</ondown>
 							<onright>5700</onright>
@@ -176,11 +176,11 @@
 				            <textcolor>textActive</textcolor>
 				            <focusedcolor>$VAR[selected]</focusedcolor>
 				            <focusedcolor></focusedcolor>
-				            <texturefocus></texturefocus>
+				            <texturefocus></texturefocus> 
                             
                             <alttexturefocus></alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
-				            <label>[COLOR $VAR[highlight]]Nächste Episode:[/COLOR] $INFO[container(5800).Listitem.title] [B]$INFO[container(5800).Listitem.label][/B]</label>
+				            <label>[COLOR $VAR[highlight]]Nächste Episode:[/COLOR] [COLOR green][B]$INFO[container(5800).ListItem.TVShowTitle][/COLOR] / [/B][B]$INFO[container(5800).Listitem.label][/B]</label>
                             <onup>5700</onup>
 				            <ondown>5800</ondown>
 							<onright>5800</onright>
