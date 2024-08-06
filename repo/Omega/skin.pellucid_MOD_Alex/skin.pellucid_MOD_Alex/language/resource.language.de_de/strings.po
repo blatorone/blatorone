@@ -949,3 +949,7 @@ msgstr "Nächste Episode in [COLOR $VAR[highlight]]$INFO[Window.Property(remaini
 msgctxt "#31355"
 msgid "Addon Settings"
 msgstr "Addon Einstellungen"
+
+msgctxt "#31356"
+msgid "Prioritize pause before stop in video OSD"
+msgstr "Priorisiere Pause vor Stopp in Video OSD"

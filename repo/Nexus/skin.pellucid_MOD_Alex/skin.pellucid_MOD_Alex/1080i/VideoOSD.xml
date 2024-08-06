@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8001</defaultcontrol>
-    <onload>Control.SetFocus(8001,3)</onload>
+    <onload condition="!Skin.HasSetting(pausebeforstop)">Control.SetFocus(8001,3)</onload>
+    <onload condition="Skin.HasSetting(pausebeforstop)">Control.SetFocus(8001,4)</onload>
     <controls>
     <control type="group">
          <animation type="Windowopen">
@@ -474,7 +475,7 @@
                         <onclick>PlayerControl(stop)</onclick>
                     </item>
                     <item>
-                        <visible>Player.Playing | player.forwarding | player.rewinding</visible>
+                        <visible>Player.Playing</visible>
                         <description>Play/Pause</description>
                         <label2></label2>
                         <thumb></thumb>
@@ -488,6 +489,13 @@
 						<onclick>action(back)</onclick>
                         <onclick>PlayerControl(play)</onclick>
                     </item>
+                    <item>
+	                        <visible>player.rewinding | player.forwarding</visible>
+	                        <description>Pause</description>
+	                        <label2></label2>
+	                        <thumb></thumb>
+	                        <onclick>PlayerControl(play)</onclick>
+	                    </item>
                     <item>
                         <description>Fast forward</description>
                         <label2></label2>

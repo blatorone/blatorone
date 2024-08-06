@@ -951,3 +951,6 @@ msgctxt "#31355"
 msgid "Addon Settings"
 msgstr ""
 
+msgctxt "#31356"
+msgid "Prioritize pause before stop in video OSD"
+msgstr ""

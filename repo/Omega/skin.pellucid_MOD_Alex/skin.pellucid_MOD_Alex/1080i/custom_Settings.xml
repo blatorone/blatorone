@@ -169,6 +169,14 @@
                     <onclick condition="!Skin.HasSetting(StartupIntro)">Skin.Reset(StartupIntro)</onclick>
                     <selected>Skin.HasSetting(StartupIntro)</selected>
                 </control>
+                <control type="radiobutton" id="116">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Pause is for Stop in Video OSD</description>
+                    <width>14-col</width>
+                    <label>$LOCALIZE[31356]</label>
+                    <onclick>Skin.ToggleSetting(pausebeforstop)</onclick>
+                    <selected>Skin.HasSetting(pausebeforstop)</selected>
+                </control>
                 
                 <!--general-->
                 <control type="label" id="1001">
