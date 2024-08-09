@@ -78,6 +78,7 @@
                     <onclick>Skin.ToggleSetting(homemenugrid)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuside)">Skin.Reset(homemenuside)</onclick>
+                    <onclick>back</onclick>
                     <selected>Skin.HasSetting(homemenugrid)</selected>
                 </control>
                 <control type="radiobutton" id="2">
@@ -93,6 +94,7 @@
                     <onclick>Skin.ToggleSetting(homemenugrid)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuside)">Skin.Reset(homemenuside)</onclick>
+                    <onclick>back</onclick>
                     <selected>Skin.HasSetting(homemenugrid)</selected>
                 </control>
                 <control type="radiobutton" id="3">
@@ -108,6 +110,7 @@
                     <onclick>Skin.ToggleSetting(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuside)">Skin.Reset(homemenuside)</onclick>
                     <onclick condition="Skin.HasSetting(homemenugrid)">Skin.Reset(homemenugrid)</onclick>
+                    <onclick>back</onclick>
                     <selected>Skin.HasSetting(homemenuslide)</selected>
                 </control>
                 <control type="radiobutton" id="4">
@@ -123,6 +126,7 @@
                     <onclick>Skin.ToggleSetting(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuside)">Skin.Reset(homemenuside)</onclick>
                     <onclick condition="Skin.HasSetting(homemenugrid)">Skin.Reset(homemenugrid)</onclick>
+                    <onclick>back</onclick>
                     <selected>Skin.HasSetting(homemenuslide)</selected>
                 </control>
                 <control type="radiobutton" id="5">
@@ -138,6 +142,7 @@
                     <onclick>Skin.ToggleSetting(homemenuside)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenugrid)">Skin.Reset(homemenugrid)</onclick>
+                    <onclick>back</onclick>
                     <selected>Skin.HasSetting(homemenuside)</selected>
                 </control>
             
@@ -154,6 +159,7 @@
                     <onclick>Skin.ToggleSetting(homemenuside)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenugrid)">Skin.Reset(homemenugrid)</onclick>
+                    <onclick>back</onclick>
                     <selected>Skin.HasSetting(homemenuside)</selected>
                 </control>
                 

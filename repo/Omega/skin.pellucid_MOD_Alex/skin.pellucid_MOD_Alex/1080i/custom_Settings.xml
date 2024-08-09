@@ -301,7 +301,7 @@
                 </control>
 
                 <control type="radiobutton" id="114">
-                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <visible>Container(8000).Hasfocus(1) + Skin.HasSetting(homemenuside)</visible>
                     <description>Intro enable</description>
                     <width>14-col</width>
                     <label>31294</label>

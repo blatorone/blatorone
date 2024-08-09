@@ -442,7 +442,15 @@
                     <label2>$VAR[homestyle]</label2>
                     <onclick>activatewindow(1106)</onclick>
                 </control>
-                
+                <control type="radiobutton" id="33">
+                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings) + Skin.HasSetting(homemenuside)</visible>
+                    <description>Intro enable</description>
+                    <width>14-col</width>
+                    <label>31294</label>
+                    <onclick>Skin.Togglesetting(widget)</onclick>
+                    
+                    <selected>!Skin.HasSetting(widget)</selected>
+                </control>
                 <control type="radiobutton" id="29">
                     <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
                     <description>Enable Home Button Further apart</description>
@@ -462,15 +470,7 @@
                     <selected>Skin.HasSetting(StartupIntro)</selected>
                 </control>
 
-                <control type="radiobutton" id="33">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
-                    <description>Intro enable</description>
-                    <width>14-col</width>
-                    <label>31294</label>
-                    <onclick>Skin.Togglesetting(widget)</onclick>
-                    
-                    <selected>!Skin.HasSetting(widget)</selected>
-                </control>
+                
 
                 <control type="button" id="30">
                     <width>1360</width>
