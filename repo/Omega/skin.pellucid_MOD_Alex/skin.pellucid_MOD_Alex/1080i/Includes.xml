@@ -854,6 +854,24 @@
                     <font>buttonTitle</font>
                     <visible>Skin.HasSetting(crosskey)</visible>
                 </control>
+				<control type="button">
+                    <description>5 button</description>
+                    <label></label>
+                    <posx>200</posx>
+                    <posy>400</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <texturenofocus colordiffuse="$PARAM[color]">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+                    <onclick>$PARAM[OSDChannel]</onclick>
+                    <font>symbol</font>
+                    <texturenofocus colordiffuse="$PARAM[color]">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <visible>Skin.HasSetting(crosskey) + $PARAM[osdview]</visible>
+                </control>
             </control>
     </include>
 

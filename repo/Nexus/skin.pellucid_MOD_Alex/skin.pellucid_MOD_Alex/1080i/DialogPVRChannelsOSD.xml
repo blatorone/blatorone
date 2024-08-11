@@ -203,6 +203,7 @@
 					<param name="leftview">false</param>
 					<param name="rightview">false</param>
 					<param name="selectview">true</param>
+					<param name="osdview">false</param>
 					<param name="color">keyboardInactive</param>
 			</include>
 		</control>
