@@ -15,6 +15,28 @@
 	        </control>
         <!--Battery level-->
         <include>Battery</include> 
+		<!--System time and Date-->
+		<!--time-->
+			<control type="label">
+	            <posx>24-col</posx>
+	            <posy>0</posy>
+	            <width>12-col</width>
+	            <align>right</align>
+	            <font>sectionTitle</font>
+	            <label>[B]$INFO[System.Time][/B]</label>
+	            <textcolor>textActive</textcolor>
+	        </control>
+			<!--date-->
+	        <control type="label">
+	            <posx>24-col</posx>
+	            <posy>15</posy>
+	            <width>12-col</width>
+				<height>2-row</height>
+				<align>right</align>
+	            <font>menuTitle2</font>
+	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
+	            <textcolor>textActive</textcolor>
+	        </control>
          <!--Backbutton touchscreen-->
         <include>Backbuttoncross</include>
         <control type="group">
@@ -273,8 +295,7 @@
             <param name="color">keyboardInactive</param>
         </include>
         <include>MediaMenuTop</include>
-		<include>pageHeadervideonav</include>
-		<include>pageHeader</include>
+		
         <!--mini window-->
         <include>miniVideoPlayer</include>
         <!--hub menu-->
