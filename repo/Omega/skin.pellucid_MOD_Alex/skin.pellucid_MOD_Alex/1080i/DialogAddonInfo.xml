@@ -330,6 +330,7 @@
         <!--Auto update Button-->
         <control type="radiobutton" id="13">
 			<description>Auto Update Addon button</description>
+            <include>modalDialogInOutVertical</include>
 			<width>460</width>
 			<height>2-row</height>
             <align>right</align>
