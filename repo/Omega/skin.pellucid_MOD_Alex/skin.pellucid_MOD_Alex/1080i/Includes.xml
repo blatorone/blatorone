@@ -318,37 +318,7 @@
 	            <font>menuTitle2</font>
 	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
 	            <textcolor>textActive</textcolor>
-	        </control>
-			<!--time-->
-			<control type="label">
-				<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[20359])</visible>
-				<animation type="conditional" condition="!Skin.HasSetting(show_battery)" reversible="true">
-		    		<effect type="slide" start="0" end="210" time="200" delay="0"/>
-		        </animation>
-	            <posx>22-col</posx>
-	            <posy>-50</posy>
-	            <width>12-col</width>
-	            <align>right</align>
-	            <font>sectionTitle</font>
-	            <label>[B]$INFO[System.Time][/B]</label>
-	            <textcolor>textActive</textcolor>
-	        </control>
-			<!--date-->
-	        <control type="label">
-				<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[20359])</visible>
-				<animation type="conditional" condition="!Skin.HasSetting(show_battery)" reversible="true">
-		    		<effect type="slide" start="0" end="210" time="200" delay="0"/>
-		        </animation>
-	            <posx>22-col</posx>
-	            <posy>-36</posy>
-	            <width>12-col</width>
-				<height>2-row</height>
-				<align>right</align>
-	            <font>menuTitle2</font>
-	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
-	            <textcolor>textActive</textcolor>
-	        </control>
-			
+	        </control>	
 		</control>
 	</include>
     <include name="pageHeadervideonav">
@@ -394,6 +364,50 @@
 				<height>2-row</height>
 				<align>right</align>
 	            <font>menuTitle2</font>
+	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
+	            <textcolor>$VAR[Home]</textcolor>
+	        </control>
+		</control>
+	</include>
+
+	<!--page header movies and series-->
+	<include name="pageheadermovies_series">
+		<control type="group">
+			<control type="image">
+            	<posx>-450</posx>
+            	<posy>-3</posy>
+            	<width>fullscreenwidth</width>
+            	<height>80</height>
+            	<texture>masks/discsurface30%.png</texture>
+            	<colordiffuse>$VAR[highlight_Shadow]</colordiffuse>
+            	<aspectratio>stretch</aspectratio>
+        	</control>
+		<!--time-->
+			<control type="label">
+				
+	            <posx>24-col</posx>
+	            <posy>0</posy>
+				<animation type="conditional" condition="!Skin.HasSetting(show_battery)" reversible="true">
+		    		<effect type="slide" start="0" end="150" time="200" delay="0"/>
+		        </animation>
+	            <width>12-col</width>
+	            <align>right</align>
+	            <font>dialogTitle</font>
+	            <label>[B]$INFO[System.Time][/B]</label>
+	            <textcolor>$VAR[Home]</textcolor>
+	        </control>
+			<!--date-->
+	        <control type="label">
+				
+	            <posx>24-col</posx>
+	            <posy>15</posy>
+				<animation type="conditional" condition="!Skin.HasSetting(show_battery)" reversible="true">
+		    		<effect type="slide" start="0" end="150" time="200" delay="0"/>
+		        </animation>
+	            <width>12-col</width>
+				<height>2-row</height>
+				<align>right</align>
+	            <font>dialogTitle</font>
 	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
 	            <textcolor>$VAR[Home]</textcolor>
 	        </control>

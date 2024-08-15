@@ -13,6 +13,14 @@
 	            		<aspectratio>scale</aspectratio>
 						<fadetime>250</fadetime>
 	        </control>
+			<control type="group">
+		<include>pageheadermovies_series</include>
+		<!--Battery level-->
+        <include>Battery</include>
+		<include>modalDialogInOutVertical</include>
+         <!--Backbutton touchscreen-->
+        <include>Backbuttoncross</include>
+		</control>
         <control type="grouplist" id="9998">
 					<include>modalDialogInOutVertical</include>
 					<posx>0</posx>
@@ -21,13 +29,13 @@
                 	<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="togglebutton" id="9014">
-				            <font>regular</font>
+				            <font>dialogTitle</font>
 				            
 				            <width>auto</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
-				            <textcolor>$VAR[highlight]</textcolor>
+				            <textcolor>$VAR[Home]</textcolor>
 							<focusedcolor>$VAR[selected]</focusedcolor>
 				            <texturefocus></texturefocus>
         					<texturenofocus></texturenofocus>
@@ -42,14 +50,14 @@
 			            </control>
            
 					<control type="togglebutton" id="9016">
-				            <font>regular</font>
+				            <font>dialogTitle</font>
 				            
 				            <width>auto</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
 				            <focusedcolor>$VAR[selected]</focusedcolor>
-							<textcolor>$VAR[highlight]</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 				            <texturefocus></texturefocus>
         					<texturenofocus></texturenofocus>
         					<alttexturefocus></alttexturefocus>
@@ -63,14 +71,14 @@
 			            </control>
 
 						<control type="togglebutton" id="9026">
-				            <font>regular</font>
+				            <font>dialogTitle</font>
 				            
 				            <width>auto</width>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
 				            <focusedcolor>$VAR[selected]</focusedcolor>
-							<textcolor>$VAR[highlight]</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 				            <texturefocus></texturefocus>
         					<texturenofocus></texturenofocus>
         					<alttexturefocus></alttexturefocus>
@@ -83,45 +91,7 @@
 				            <onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=dir_search&amp;tmdb_type=movie",return)</onclick>
 			            </control>
 					</control>
-		<!--Battery level-->
-		<control type="group">
-        <include>Battery</include>
-		<include>modalDialogInOutVertical</include>
-
-		<!--System time and Date-->
-		<!--time-->
-			<control type="label">
-				
-	            <posx>24-col</posx>
-	            <posy>0</posy>
-				<animation type="conditional" condition="!Skin.HasSetting(show_battery)" reversible="true">
-		    		<effect type="slide" start="0" end="150" time="200" delay="0"/>
-		        </animation>
-	            <width>12-col</width>
-	            <align>right</align>
-	            <font>sectionTitle</font>
-	            <label>[B]$INFO[System.Time][/B]</label>
-	            <textcolor>textActive</textcolor>
-	        </control>
-			<!--date-->
-	        <control type="label">
-				
-	            <posx>24-col</posx>
-	            <posy>15</posy>
-				<animation type="conditional" condition="!Skin.HasSetting(show_battery)" reversible="true">
-		    		<effect type="slide" start="0" end="150" time="200" delay="0"/>
-		        </animation>
-	            <width>12-col</width>
-				<height>2-row</height>
-				<align>right</align>
-	            <font>menuTitle2</font>
-	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
-	            <textcolor>textActive</textcolor>
-	        </control>
 		
-         <!--Backbutton touchscreen-->
-        <include>Backbuttoncross</include>
-		</control>
         <control type="group">
             <posx>0</posx>
             <posy>row-5-begin</posy>
@@ -140,7 +110,7 @@
 						<pagecontrol>2000</pagecontrol>
 						<onup>9014</onup>
 						<control type="togglebutton" id="9013">
-				            <font>regular</font>
+				            <font>dialogTitle</font>
 				            
 				            <include>Text_Movie_Series_width</include>
                 
@@ -196,7 +166,7 @@
 						</include>
 						-->
 						<control type="togglebutton" id="9015">
-				            <font>regular</font>
+				            <font>dialogTitle</font>
 				            <top>360</top>
 				            <include>Text_Movie_Series_width</include>
                 
@@ -252,7 +222,7 @@
 						</include>
 						-->
 						<control type="togglebutton" id="9017">
-				            <font>regular</font>
+				            <font>dialogTitle</font>
 				            
 				            <include>Text_Movie_Series_width</include>
                 
@@ -306,7 +276,7 @@
 							<param name="list_id" value="5800"/>
 						</include>
 						<control type="togglebutton" id="9019">
-				            <font>regular</font>
+				            <font>dialogTitle</font>
 				            
 				            <include>Text_Movie_Series_width</include>
                 
@@ -334,7 +304,7 @@
 						</include>
 
                         <control type="togglebutton" id="9020">
-				            <font>regular</font>
+				            <font>dialogTitle</font>
 				            
 				            <include>Text_Movie_Series_width</include>
                 
@@ -361,7 +331,7 @@
 							<param name="list_id" value="6000"/>
 						</include>
                         <control type="togglebutton" id="9021">
-				            <font>regular</font>
+				            <font>dialogTitle</font>
 				            
 				            <include>Text_Movie_Series_width</include>
                 
@@ -389,7 +359,7 @@
 						</include>
 
 						<control type="togglebutton" id="9022">
-				            <font>regular</font>
+				            <font>dialogTitle</font>
 				            
 				            <include>Text_Movie_Series_width</include>
                 
@@ -416,7 +386,7 @@
 							<param name="list_id" value="6200"/>
 						</include>
 						<control type="togglebutton" id="9023">
-				            <font>regular</font>
+				            <font>dialogTitle</font>
 				            
 				            <include>Text_Movie_Series_width</include>
                 
@@ -443,7 +413,7 @@
 							<param name="list_id" value="6300"/>
 						</include>
 						<control type="togglebutton" id="9024">
-				            <font>regular</font>
+				            <font>dialogTitle</font>
 				            
 				            <include>Text_Movie_Series_width</include>
                 
@@ -470,7 +440,7 @@
 							<param name="list_id" value="6400"/>
 						</include>
 						<control type="togglebutton" id="9025">
-				            <font>regular</font>
+				            <font>dialogTitle</font>
 				            
 				            <include>Text_Movie_Series_width</include>
                 
