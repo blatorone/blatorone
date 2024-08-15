@@ -954,3 +954,11 @@ msgstr ""
 msgctxt "#31356"
 msgid "Prioritize pause before stop in video OSD"
 msgstr ""
+
+msgctxt "#31357"
+msgid "Disable Rating Info"
+msgstr "Deaktiviere Rating"
+
+msgctxt "#31358"
+msgid "Disable Progressbar Info"
+msgstr "Deaktiviere Prozessinfo"

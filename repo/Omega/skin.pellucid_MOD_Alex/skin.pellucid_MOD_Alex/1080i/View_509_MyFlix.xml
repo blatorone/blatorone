@@ -332,7 +332,7 @@
 						<texture background="true">$VAR[CaseTypePathVar]$VAR[GlobalCaseVar]</texture>
 					</control>
 					<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>31</posx>
                         	<posy>429</posy>
@@ -361,7 +361,7 @@
 						</control>
 						<include>FlixPosterOverlay</include>
 					</control><control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>31</posx>
                         	<posy>429</posy>
@@ -397,7 +397,7 @@
 						<texture background="true">$VAR[CaseTypePathVar]$VAR[GlobalCaseVar]</texture>
 					</control>
 					<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>31</posx>
                         	<posy>429</posy>
@@ -424,7 +424,7 @@
 					</control>
 					<include>FlixPosterOverlay</include>
 					<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>31</posx>
                         	<posy>429</posy>
@@ -456,7 +456,7 @@
 						<bordersize>20</bordersize>
 					</control>
 					<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>31</posx>
                         	<posy>429</posy>
@@ -479,7 +479,7 @@
 						<visible>[!Skin.HasSetting(Disable.overlays) + Container.Content(movies)] | [!Skin.HasSetting(Disable.overlays) + Container.Content(sets)] | [!Skin.HasSetting(Disable.overlays) + Container.Content(tvshows)]</visible>
 					</control>
 					<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>31</posx>
                         	<posy>429</posy>
@@ -510,7 +510,7 @@
 						<bordersize>20</bordersize>
 					</control>
 					<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>31</posx>
                         	<posy>429</posy>
@@ -533,7 +533,7 @@
 						<visible>!Skin.HasSetting(Disable.overlays) + Container.Content(episodes)</visible>
 					</control>
 					<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>31</posx>
                         	<posy>429</posy>
@@ -594,7 +594,7 @@
 			<bordersize>20</bordersize>
 		</control>
 		<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>31</posx>
                         	<posy>429</posy>
@@ -616,7 +616,7 @@
 			<visible>[!Skin.HasSetting(Disable.overlays) + Container.Content(movies)] | [!String.IsEmpty(Skin.String(509.Sets.DisableOverlay)) + Container.Content(sets)] | !String.IsEmpty(Skin.String(509.TV.DisableOverlay)) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 		</control>
 		<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>31</posx>
                         	<posy>429</posy>
@@ -638,7 +638,7 @@
 			<bordersize>20</bordersize>
 		</control>
 		<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>31</posx>
                         	<posy>429</posy>
@@ -659,7 +659,7 @@
 			<bordersize>20</bordersize>
 		</control>
 		<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>31</posx>
                         	<posy>429</posy>

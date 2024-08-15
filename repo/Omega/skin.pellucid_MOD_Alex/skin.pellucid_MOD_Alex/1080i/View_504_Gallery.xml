@@ -135,7 +135,7 @@
 							<colordiffuse>BAffffff</colordiffuse>
 						</control>
 						<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>0</posx>
                         	<posy>610</posy>
@@ -201,7 +201,7 @@
 							<bordersize>8</bordersize>
 						</control>
 						<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>8</posx>
                         	<posy>610</posy>

@@ -64,7 +64,7 @@
 				<animation effect="fade" delay="240" time="240" reversible="false">Hidden</animation>
 			</control>
 			<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>40</posx>
                         	<posy>928</posy>

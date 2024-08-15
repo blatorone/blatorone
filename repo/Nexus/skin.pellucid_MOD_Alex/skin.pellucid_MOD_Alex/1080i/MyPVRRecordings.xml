@@ -55,7 +55,7 @@
 							<colordiffuse>overlay</colordiffuse>
                         </control>
                         <control type="label">
-                            <visible>!String.IsEmpty(ListItem.playcount) + !ListItem.IsResumable + !Skin.HasSetting(Disable.overlays)</visible>
+                            <visible>!String.IsEmpty(ListItem.playcount) + !ListItem.IsResumable + !Skin.HasSetting(Disable.overlays) +!Skin.HasSetting(Disable.progressbar) + !Skin.HasSetting(Disable.rating)</visible>
                             <posx>16</posx>
                             <posy>2</posy>
                             <width>66</width>
@@ -113,7 +113,7 @@
                                 <texture fallback="masks/discsurface.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
                             </control>
                             <control type="label">
-                                <visible>!String.IsEmpty(ListItem.playcount) + !ListItem.IsResumable + !Skin.HasSetting(Disable.overlays)</visible>
+                                <visible>!String.IsEmpty(ListItem.playcount) + !ListItem.IsResumable + !Skin.HasSetting(Disable.overlays) + !Skin.HasSetting(Disable.progressbar) + !Skin.HasSetting(Disable.rating)</visible>
                                 <posx>16</posx>
                                 <posy>2</posy>
                                 <width>66</width>

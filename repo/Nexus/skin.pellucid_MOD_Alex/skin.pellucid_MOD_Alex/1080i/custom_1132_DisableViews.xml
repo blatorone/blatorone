@@ -309,6 +309,34 @@
 					<onclick>Skin.toggleSetting(Disable.overlays)</onclick>
 					<selected>Skin.HasSetting(Disable.overlays)</selected>
 				</control>
+				<control type="radiobutton" id="1637">
+					<description>Disable rating</description>
+					<width>383</width>
+					<textwidth>383</textwidth>
+					<radiowidth>110</radiowidth>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[31357]</label>
+					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
+        			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
+        			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
+        			<textureradiooffnofocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradiooffnofocus>
+					<onclick>Skin.toggleSetting(Disable.rating)</onclick>
+					<selected>Skin.HasSetting(Disable.rating)</selected>
+				</control>
+				<control type="radiobutton" id="1638">
+					<description>Disable progressbar</description>
+					<width>383</width>
+					<textwidth>383</textwidth>
+					<radiowidth>110</radiowidth>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[31358]</label>
+					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
+        			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
+        			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
+        			<textureradiooffnofocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradiooffnofocus>
+					<onclick>Skin.toggleSetting(Disable.progress)</onclick>
+					<selected>Skin.HasSetting(Disable.progress)</selected>
+				</control>
 				<control type="togglebutton" id="9013">
 				<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
 				<top>1022</top>

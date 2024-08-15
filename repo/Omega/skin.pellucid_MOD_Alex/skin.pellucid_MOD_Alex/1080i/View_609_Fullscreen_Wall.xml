@@ -36,7 +36,7 @@
 						<colordiffuse>99ffffff</colordiffuse>
 					</control>
 					<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>6</posx>
                         	<posy>351</posy>
@@ -48,7 +48,7 @@
                     	</control>
 					
 					<control type="group">
-						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.overlays)</visible>
+						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.rating)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>6</posx>
 						<posy>6</posy>
@@ -153,7 +153,7 @@
 							<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
 						</control>
 						<control type="progress">
-				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
+				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>6</posx>
                         	<posy>351</posy>
@@ -165,7 +165,7 @@
                     	</control>
 						
 						<control type="group">
-						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.overlays)</visible>
+						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.rating)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 						<posx>6</posx>
 						<posy>6</posy>

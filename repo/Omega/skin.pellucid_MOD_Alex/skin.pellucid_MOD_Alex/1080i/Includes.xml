@@ -257,7 +257,7 @@
             <posy>row-2-begin</posy>
 			<!--title-->
 			<control type="label">
-                <visible>!Control.IsVisible(509)</visible>
+                <visible>!Control.IsVisible(509) + !String.IsEqual(Container.Viewmode,$LOCALIZE[20359])</visible>
 	            <posx>0</posx>
 	            <posy>0</posy>
 	            <width>18-col</width>
@@ -267,7 +267,7 @@
 	        </control>
 	        <!--subtitle-->
 	        <control type="label">
-                <visible>!Control.IsVisible(509)</visible>
+                <visible>!Control.IsVisible(509) + !String.IsEqual(Container.Viewmode,$LOCALIZE[20359])</visible>
 	            <posx>0</posx>
 	            <posy>26</posy>
 	            <width>12-col</width>
@@ -276,8 +276,29 @@
 	            <label>$VAR[listSubTitle]</label>
 	            <textcolor>textActive</textcolor>
 	        </control>
+			<control type="label">
+                <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[20359])</visible>
+	            <posx>0</posx>
+	            <posy>-50</posy>
+	            <width>18-col</width>
+	            <font>sectionTitle</font>
+	            <label>$INFO[ListItem.TVShowTitle] - $INFO[ListItem.season,$LOCALIZE[20373] ,]</label>
+	            <textcolor>textActive</textcolor>
+	        </control>
+	        <!--subtitle-->
+	        <control type="label">
+                <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[20359])</visible>
+	            <posx>0</posx>
+	            <posy>-36</posy>
+	            <width>12-col</width>
+				<height>2-row</height>
+	            <font>menuTitle2</font>
+	            <label>$VAR[listSubTitle]</label>
+	            <textcolor>textActive</textcolor>
+	        </control>
 			<!--time-->
 			<control type="label">
+				<visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[20359])</visible>
 	            <posx>24-col</posx>
 	            <posy>0</posy>
 	            <width>12-col</width>
@@ -288,6 +309,7 @@
 	        </control>
 			<!--date-->
 	        <control type="label">
+				<visible>!String.IsEqual(Container.Viewmode,$LOCALIZE[20359])</visible>
 	            <posx>24-col</posx>
 	            <posy>26</posy>
 	            <width>12-col</width>
@@ -297,6 +319,36 @@
 	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
 	            <textcolor>textActive</textcolor>
 	        </control>
+			<!--time-->
+			<control type="label">
+				<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[20359])</visible>
+				<animation type="conditional" condition="!Skin.HasSetting(show_battery)" reversible="true">
+		    		<effect type="slide" start="0" end="210" time="200" delay="0"/>
+		        </animation>
+	            <posx>22-col</posx>
+	            <posy>-50</posy>
+	            <width>12-col</width>
+	            <align>right</align>
+	            <font>sectionTitle</font>
+	            <label>[B]$INFO[System.Time][/B]</label>
+	            <textcolor>textActive</textcolor>
+	        </control>
+			<!--date-->
+	        <control type="label">
+				<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[20359])</visible>
+				<animation type="conditional" condition="!Skin.HasSetting(show_battery)" reversible="true">
+		    		<effect type="slide" start="0" end="210" time="200" delay="0"/>
+		        </animation>
+	            <posx>22-col</posx>
+	            <posy>-36</posy>
+	            <width>12-col</width>
+				<height>2-row</height>
+				<align>right</align>
+	            <font>menuTitle2</font>
+	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
+	            <textcolor>textActive</textcolor>
+	        </control>
+			
 		</control>
 	</include>
     <include name="pageHeadervideonav">
@@ -1367,7 +1419,16 @@
         <width>fullscreenWidth</width>
     </include>
 
-
+	<include name="Text_Movie_Series_width">
+        <include  condition="!skin.hassetting(touch)">Text_Movie_Series_width1</include>
+        <include  condition="skin.hassetting(touch)">Text_Movie_Series_width2</include>
+    </include>
+    <include name="Text_Movie_Series_width1">
+        <width>1800</width>
+    </include>
+    <include name="Text_Movie_Series_width2">
+        <width>1000</width>
+    </include>
 
 
 

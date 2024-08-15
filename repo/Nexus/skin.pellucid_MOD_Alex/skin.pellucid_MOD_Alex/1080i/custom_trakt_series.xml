@@ -130,7 +130,7 @@
 						<control type="togglebutton" id="9013">
 				            <font>regular</font>
 				            
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -185,7 +185,7 @@
 						<control type="togglebutton" id="9015">
 				            <font>regular</font>
 				            <top>360</top>
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -240,7 +240,7 @@
 						<control type="togglebutton" id="9017">
 				            <font>regular</font>
 				            
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -267,7 +267,7 @@
 						<control type="togglebutton" id="9018">
 				            <font>regular</font>
 				            
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -295,7 +295,7 @@
 						<control type="togglebutton" id="9019">
 				            <font>regular</font>
 				            
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -323,7 +323,7 @@
                         <control type="togglebutton" id="9020">
 				            <font>regular</font>
 				            
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -350,7 +350,7 @@
                         <control type="togglebutton" id="9021">
 				            <font>regular</font>
 				            
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -378,7 +378,7 @@
                         <control type="togglebutton" id="9022">
 				            <font>regular</font>
 				            
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -406,7 +406,7 @@
                         <control type="togglebutton" id="9023">
 				            <font>regular</font>
 				            
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -434,7 +434,7 @@
                         <control type="togglebutton" id="9024">
 				            <font>regular</font>
 				            
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -462,7 +462,7 @@
 						<control type="togglebutton" id="9025">
 				            <font>regular</font>
 				            
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -489,7 +489,7 @@
 						<control type="togglebutton" id="9026">
 				            <font>regular</font>
 				            
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -516,7 +516,7 @@
 						<control type="togglebutton" id="9027">
 				            <font>regular</font>
 				            
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
@@ -543,7 +543,7 @@
 						<control type="togglebutton" id="9028">
 				            <font>regular</font>
 				            
-				            <width>1200</width>
+				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
 				            <textoffsetx>30</textoffsetx>
