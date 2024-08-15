@@ -11,7 +11,9 @@
             <posx>20</posx>
             <posy>row-3-begin</posy>
             <onleft>9000</onleft>
-            <onright>63</onright>
+            <onright condition="control.isvisible(63)">63</onright>
+            <onright condition="!control.isvisible(63)">80</onright>
+
             <ondown>502</ondown>
             <onup>502</onup>
             <pagecontrol>63</pagecontrol>
