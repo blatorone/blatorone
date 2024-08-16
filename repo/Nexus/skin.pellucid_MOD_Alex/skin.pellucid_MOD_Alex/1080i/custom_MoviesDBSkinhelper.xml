@@ -30,7 +30,26 @@
 					<orientation>horizontal</orientation>
 				
            
-					
+						<control type="togglebutton" id="9015">
+				            <font>dialogTitle</font>
+				            
+				            <width>auto</width>
+                
+				            <align>left</align>
+				            <textoffsetx>30</textoffsetx>
+				            <focusedcolor>$VAR[selected]</focusedcolor>
+							<textcolor>$VAR[Home]</textcolor>
+				            <texturefocus></texturefocus>
+        					<texturenofocus></texturenofocus>
+        					<alttexturefocus></alttexturefocus>
+        					<alttexturenofocus></alttexturenofocus>
+				            <label>Film Genre</label>
+                            <onup>5900</onup>
+				            <ondown>9013</ondown>
+							<onright>9026</onright>
+							<onleft>9026</onleft>
+				            <onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=genres&amp;tmdb_type=movie",return)</onclick>
+			            </control>
 
 						<control type="togglebutton" id="9026">
 				            <font>dialogTitle</font>
@@ -46,10 +65,10 @@
         					<alttexturefocus></alttexturefocus>
         					<alttexturenofocus></alttexturenofocus>
 				            <label>137</label>
-                            <onup>6800</onup>
+                            <onup>5900</onup>
 				            <ondown>9013</ondown>
-							<onright>9014</onright>
-							<onleft>9014</onleft>
+							<onright>9015</onright>
+							<onleft>9015</onleft>
 				            <onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=dir_search&amp;tmdb_type=movie",return)</onclick>
 			            </control>
 					</control>
@@ -69,7 +88,7 @@
 						<posx>0</posx>
 						<posy>-70</posy>
 						<pagecontrol>2000</pagecontrol>
-						<onup>9026</onup>
+						<onup>9015</onup>
 						<control type="togglebutton" id="9013">
 				            <font>dialogTitle</font>
 				            
@@ -121,7 +140,7 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5200"/>
 						</include>
-						
+						<!--
 						<control type="togglebutton" id="9015">
 				            <font>dialogTitle</font>
 				            <top>360</top>
@@ -147,7 +166,7 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5300"/>
 						</include>
-						
+						-->
 						<control type="togglebutton" id="9016">
 				            <font>dialogTitle</font>
 				            
