@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1144" type="window">
-    <defaultcontrol always="true">5100</defaultcontrol>
+    <defaultcontrol always="true">9999</defaultcontrol>
 
     <controls>
         <!--background-->

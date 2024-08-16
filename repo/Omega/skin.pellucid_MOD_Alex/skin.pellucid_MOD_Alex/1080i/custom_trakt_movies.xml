@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1142" type="window">
-    <defaultcontrol always="true">5100</defaultcontrol>
+    <defaultcontrol always="true">9999</defaultcontrol>
 
     <controls>
         <!--background-->
@@ -266,7 +266,7 @@
                             <onup>5700</onup>
 				            <ondown>5800</ondown>
 							<onright>5800</onright>
-				            <onclick>ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=trakt_towatch&amp;tmdb_type=movie&quot;,return)</onclick>
+				            <onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=trakt_towatch&amp;tmdb_type=movie",return)</onclick>
 			            	<visible>!Container(5800).IsUpdating + integer.IsGreater(Container(5800).NumItems,0)</visible>
 						</control>
 						<include content="WidgetListPoster8">
@@ -293,7 +293,7 @@
                             <onup>5800</onup>
 				            <ondown>5900</ondown>
 							<onright>5900</onright>
-				            <onclick>ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Filme%20Beobachtungsliste&amp;tmdb_type=movie&quot;,return)</onclick>
+				            <onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Filme%20Beobachtungsliste&amp;tmdb_type=movie",return)</onclick>
 			            	<visible>!Container(5900).IsUpdating + integer.IsGreater(Container(5900).NumItems,0)</visible>
 						</control>
 						<include content="WidgetListPoster9">
@@ -321,7 +321,7 @@
                             <onup>5900</onup>
 				            <ondown>6000</ondown>
 							<onright>6000</onright>
-				            <onclick>ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=trakt_boxoffice&amp;tmdb_type=movie&quot;,return)</onclick>
+				            <onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=trakt_boxoffice&amp;tmdb_type=movie",return)</onclick>
 			            	<visible>!Container(6000).IsUpdating + integer.IsGreater(Container(6000).NumItems,0)</visible>
 						</control>
 						<include content="WidgetListPoster10">

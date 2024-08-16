@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1145" type="window">
-    <defaultcontrol always="true">5100</defaultcontrol>
+    <defaultcontrol always="true">9999</defaultcontrol>
 
     <controls>
         <!--background-->
@@ -34,7 +34,26 @@
 				
            
 					
-
+						<control type="togglebutton" id="9015">
+				            <font>dialogTitle</font>
+				            
+				            <width>auto</width>
+                
+				            <align>left</align>
+				            <textoffsetx>30</textoffsetx>
+				            <focusedcolor>$VAR[selected]</focusedcolor>
+							<textcolor>$VAR[Home]</textcolor>
+				            <texturefocus></texturefocus>
+        					<texturenofocus></texturenofocus>
+        					<alttexturefocus></alttexturefocus>
+        					<alttexturenofocus></alttexturenofocus>
+				            <label>Serien Genre</label>
+                            <onup>6800</onup>
+				            <ondown>9013</ondown>
+							<onright>9014</onright>
+							<onleft>9014</onleft>
+				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_genres&amp;tmdb_type=tv&quot;,return)</onclick>
+			            </control>
 						<control type="togglebutton" id="9026">
 				            <font>dialogTitle</font>
 				            
@@ -73,7 +92,7 @@
 						<posx>0</posx>
 						<posy>-70</posy>
 						<pagecontrol>2000</pagecontrol>
-						<onup>9026</onup>
+						<onup>9015</onup>
 						<control type="togglebutton" id="9013">
 				            <font>dialogTitle</font>
 				            
@@ -125,7 +144,7 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5200"/>
 						</include>
-						
+						<!--
 						<control type="togglebutton" id="9015">
 				            <font>dialogTitle</font>
 				            <top>360</top>
@@ -151,7 +170,7 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5300"/>
 						</include>
-						
+						-->
 						<control type="togglebutton" id="9016">
 				            <font>dialogTitle</font>
 				            
