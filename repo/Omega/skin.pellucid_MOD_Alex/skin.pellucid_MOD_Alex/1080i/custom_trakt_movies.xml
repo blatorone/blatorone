@@ -67,7 +67,7 @@
 				            <ondown>9013</ondown>
 							<onright>9014</onright>
 							<onleft>9014</onleft>
-				            <onclick>ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=trakt_genres&amp;tmdb_type=movie&quot;,return)</onclick>
+				            <onclick>ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=trakt_genres&amp;tmdb_type=movie,return)</onclick>
 			            </control>
 
 						<control type="togglebutton" id="9026">
