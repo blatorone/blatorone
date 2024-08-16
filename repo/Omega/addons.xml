@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-    <addon id="skin.pellucid_MOD_Alex" version="2.0.70" name="Pellucid MOD Blatorone" provider-name="Blatorone">
+    <addon id="skin.pellucid_MOD_Alex" version="2.0.71" name="Pellucid MOD Blatorone" provider-name="Blatorone">
         <requires>
             <import addon="xbmc.gui" version="5.17.0"/>
             <import addon="script.skinshortcuts" version="1.1.4"/>
             <import addon="script.embuary.info" version="0.0.1"/>
             <import addon="script.embuary.helper" version="1.2.14"/>
             <import addon="plugin.video.themoviedb.helper" version="0.0.1"/>
-            <import addon="service.upnext" version="1.1.0"/>
+            <import addon="service.upnext" version="1.1.0" optional="true"/>
             <import addon="plugin.program.autocompletion" version="1.0.0"/>
         </requires>
         <extension point="xbmc.gui.skin" debugging="false">
@@ -54,24 +54,6 @@
                     <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml</info>
                     <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml.md5</checksum>
                     <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/</datadir>
-                </dir>
-            </extension>
-            <extension point="xbmc.addon.metadata">
-                <summary>Kodi</summary>
-                <description lang="de">Addons von blatorone</description>
-                <disclaimer></disclaimer>
-                <platform>all</platform>
-                <assets>
-			        <icon>icon.png</icon>
-		        </assets>
-            </extension>
-        </addon>
-        <addon id="repository.blatorone" name="Blatorone Repository" provider-name="blatorone" version="1.0.8">
-	        <extension point="xbmc.addon.repository" name="Blatorone Repository">
-                <dir minversion="19.9.701" maxversion="20.9.700">
-                    <info compressed="false">https://blatorone.github.io/blatorone/repo/Nexus/addons.xml</info>
-                    <checksum>https://blatorone.github.io/blatorone/repo/Nexus/addons.xml.md5</checksum>
-                    <datadir zip="true">https://blatorone.github.io/blatorone/repo/Nexus/</datadir>
                 </dir>
             </extension>
             <extension point="xbmc.addon.metadata">

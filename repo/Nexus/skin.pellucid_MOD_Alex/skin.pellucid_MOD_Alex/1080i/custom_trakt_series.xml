@@ -71,7 +71,7 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_genres&amp;tmdb_type=tv&quot;,return)</onclick>
 			            </control>
 
-						<control type="togglebutton" id="9026">
+						<control type="togglebutton" id="9029">
 				            <font>dialogTitle</font>
 				            <width>auto</width>
 				            <align>left</align>
@@ -630,7 +630,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>DialogID</include>
-            <label>Homemenulook.xml</label>
+            <label>custom_trakt_series.xml</label>
         </control>
     </controls>
 </window>

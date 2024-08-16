@@ -554,7 +554,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>DialogID</include>
-            <label>Homemenulook.xml</label>
+            <label>custom_trakt_movies.xml</label>
         </control>
     </controls>
 </window>
