@@ -441,14 +441,14 @@
 			</control>
 			-->
 				<include content="WidgetListPoster5" condition="Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget)">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;tmdb_type=movie"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=movie"/>
 							<param name="widget_header5" value="Filme im Trend:"/>
 							<param name="widget_label5" value="$INFO[Container(5200).ListItem.Label]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5200"/>
 						</include>
 				 <include content="WidgetListPoster6" condition="Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget)">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;tmdb_type=tv"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=tv"/>
 							<param name="widget_header6" value="Serien im Trend:"/>
 							<param name="widget_label6" value="$INFO[Container(5300).ListItem.Label]"/>
 							<param name="widget_target" value="videos"/>
