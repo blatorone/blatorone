@@ -349,17 +349,17 @@
 			</item>
 		<item id="21">
 			<property name="id">$NUMBER[21]</property>
-			<label>test</label>
+			<label>$LOCALIZE[19548]</label>
 			<label2>Benutzerdefinierter Eintrag</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">test</property>
+			<property name="labelID">19548</property>
 			<property name="defaultID" />
-			<onclick>RunScript(plugin.video.themoviedb.helper,sync_trakt)</onclick>
-			<property name="path">RunScript(plugin.video.themoviedb.helper,sync_trakt)</property>
-			<property name="list">RunScript(plugin.video.themoviedb.helper,sync_trakt)</property>
+			<onclick>activatewindow(1146,return)</onclick>
+			<property name="path">activatewindow(1146,return)</property>
+			<property name="list">activatewindow(1146,return)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">test</property>
+			<property name="submenuVisibility">num-19548</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
@@ -1832,10 +1832,10 @@
 			<property name="isSubmenu">True</property>
 			</item>
 		</include>
-	<include name="skinshortcuts-group-test">
+	<include name="skinshortcuts-group-num-19548">
 		<description>No items</description>
 		</include>
-	<include name="skinshortcuts-group-alt-test">
+	<include name="skinshortcuts-group-alt-num-19548">
 		<description>No items</description>
 		</include>
 	<include name="skinshortcuts-group-videosubmenu">

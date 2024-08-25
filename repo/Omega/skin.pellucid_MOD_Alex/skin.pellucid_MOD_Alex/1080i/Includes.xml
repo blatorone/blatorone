@@ -1608,7 +1608,7 @@
                 <onup>9013</onup>
                 <ondown>9014</ondown>
 				<orientation>horizontal</orientation>
-				<itemlayout width="150" height="200" condition="!Skin.Hassetting(Touch)">
+				<itemlayout width="150" height="200">
 					<control type="image">
 					
 					<width>142</width>
@@ -1631,7 +1631,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.icon]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -1700,7 +1700,7 @@
                     	</control>
 					</control>
 				</itemlayout>
-				<focusedlayout width="150" height="200" condition="!Skin.Hassetting(Touch)">
+				<focusedlayout width="150" height="200">
 					
 						
 				
@@ -1711,7 +1711,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.icon]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -1721,12 +1721,7 @@
 				<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 						
-						<animation type="Focus">
-							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="125,130" />
-						</animation>
-						<animation type="Unfocus">
-							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="125,130" />
-						</animation>
+						
 						<posx>80</posx>
 						<posy>6</posy>
 						<control type="image">
@@ -1789,7 +1784,7 @@
 				
 
 
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
             
 		</definition>
@@ -1843,7 +1838,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -1920,7 +1915,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -1995,7 +1990,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
             
 		</definition>
@@ -2049,7 +2044,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -2126,7 +2121,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -2195,7 +2190,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -2248,7 +2243,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -2325,7 +2320,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -2394,7 +2389,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -2426,7 +2421,7 @@
 				<top>400</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<right>0</right>
-				<height>200</height>
+				<height>225</height>
                 <width>1080</width>
 				<onclick condition="$PARAM[onclick_condition]">$PARAM[onclick_action]</onclick>
                 <onleft>9000</onleft>
@@ -2459,7 +2454,7 @@
 					<top>-1</top>
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -2537,8 +2532,8 @@
 						</animation>
 					<left>15</left>
 					<top>-10</top>
-					<width>142</width>
-					<height>225</height>
+					<width>132</width>
+					<height>205</height>
 					<texture colordiffuse="button_focus">colors/grey.png</texture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
@@ -2551,13 +2546,14 @@
 						<animation type="Unfocus">
 							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="125,130" />
 						</animation>
-					<left>24</left>
-					<top>-1</top>
-					<width>142</width>
-					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<left>32</left>
+					<top>0</top>
+					<width>132</width>
+					<height>205</height>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
-					<bordersize>20</bordersize>
+					<bordersize>5</bordersize>
+					<bordertexture border="5" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
 				</control>
 
 				<control type="group">
@@ -2569,8 +2565,8 @@
 						<animation type="Unfocus">
 							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="125,130" />
 						</animation>
-						<posx>90</posx>
-						<posy>19</posy>
+						<posx>105</posx>
+						<posy>4</posy>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -2633,7 +2629,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -2662,7 +2658,7 @@
 				<top>700</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<right>0</right>
-				<height>200</height>
+				<height>225</height>
                 <width>1080</width>
 				<onclick condition="$PARAM[onclick_condition]">$PARAM[onclick_action]</onclick>
                 <onleft>9000</onleft>
@@ -2695,7 +2691,7 @@
 					<top>-1</top>
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -2780,8 +2776,8 @@
 						</animation>
 					<left>15</left>
 					<top>-10</top>
-					<width>142</width>
-					<height>225</height>
+					<width>132</width>
+					<height>205</height>
 					<texture colordiffuse="button_focus">colors/grey.png</texture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
@@ -2795,13 +2791,14 @@
 						<animation type="Unfocus">
 							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="125,130" />
 						</animation>
-					<left>24</left>
-					<top>-1</top>
-					<width>142</width>
-					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<left>32</left>
+					<top>10</top>
+					<width>132</width>
+					<height>205</height>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
-					<bordersize>20</bordersize>
+					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
+					<bordersize>6</bordersize>
 				</control>
                 
 					
@@ -2814,8 +2811,8 @@
 						<animation type="Unfocus">
 							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="125,130" />
 						</animation>
-						<posx>90</posx>
-						<posy>19</posy>
+						<posx>105</posx>
+						<posy>4</posy>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -2882,7 +2879,7 @@
 
 				</focusedlayout>
 				
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -2936,7 +2933,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -3013,7 +3010,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -3082,7 +3079,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -3135,7 +3132,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -3212,7 +3209,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -3281,7 +3278,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -3334,7 +3331,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -3411,7 +3408,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -3480,7 +3477,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -3533,7 +3530,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -3610,7 +3607,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -3679,7 +3676,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -3732,7 +3729,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -3809,7 +3806,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -3878,7 +3875,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -3931,7 +3928,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -4008,7 +4005,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -4077,7 +4074,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -4130,7 +4127,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -4207,7 +4204,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -4276,7 +4273,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -4329,7 +4326,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -4406,7 +4403,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -4475,7 +4472,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -4529,7 +4526,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -4606,7 +4603,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -4675,7 +4672,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -4729,7 +4726,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -4806,7 +4803,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -4875,7 +4872,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -5006,7 +5003,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -5075,7 +5072,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -5129,7 +5126,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
@@ -5206,7 +5203,7 @@
 					
 					<width>142</width>
 					<height>225</height>
-					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture border="6" fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>6</bordersize>
 					<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
@@ -5275,7 +5272,7 @@
                     	</control>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
