@@ -2,7 +2,9 @@
 <window>
     <defaultcontrol always="true">8001</defaultcontrol>
     <onload condition="!Skin.HasSetting(pausebeforstop)">Control.SetFocus(8001,3)</onload>
-    <onload condition="Skin.HasSetting(pausebeforstop)">Control.SetFocus(8001,4)</onload>
+    <onload condition="Skin.HasSetting(pausebeforstop) + !player.paused">Control.SetFocus(8001,4)</onload>
+    <onload condition="Skin.HasSetting(pausebeforstop) + player.paused">Control.SetFocus(8001,4)</onload>
+    <onload condition="Skin.HasSetting(pausebeforstopauto) + !player.paused">PlayerControl(play)</onload>
     <controls>
     <control type="group">
          <animation type="Windowopen">

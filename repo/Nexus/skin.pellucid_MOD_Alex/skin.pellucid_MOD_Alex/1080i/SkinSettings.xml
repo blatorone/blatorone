@@ -182,6 +182,15 @@
                     <onclick>Skin.ToggleSetting(pausebeforstop)</onclick>
                     <selected>Skin.HasSetting(pausebeforstop)</selected>
                 </control>
+                <control type="radiobutton" id="36">
+                    <visible>Container(8000).Hasfocus(1) + Skin.HasSetting(pausebeforstop)</visible>
+                    <description>Pause is for Stop in Video OSD</description>
+                    <width>14-col</width>
+                    <label>- $LOCALIZE[31359]</label>
+                    <onclick>Skin.ToggleSetting(pausebeforstopauto)</onclick>
+                    <selected>Skin.HasSetting(pausebeforstopauto)</selected>
+                    <enable>Skin.HasSetting(pausebeforstop)</enable>
+                </control>
                 <control type="radiobutton" id="6">
                     <visible>Container(8000).Hasfocus(3)</visible>
                     <description>Enable Debug Grid</description>

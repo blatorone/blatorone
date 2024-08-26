@@ -807,12 +807,24 @@
 					<loop>yes</loop>
 					<aspectratio>scale</aspectratio>
         		</control>
+				<control type="label">
+					<visible>!System.InternetState</visible>
+					<posx>0</posx>
+					<posy>-125</posy>
+					<width>24-col</width>
+					<height>2-row</height>
+					<font>regular</font>
+					<align>center</align>
+					<textcolor>textActive</textcolor>
+					<shadowcolor>44000000</shadowcolor>
+					<label>[B][COLOR red]$INFO[System.InternetState][/COLOR][/B]</label>
+				</control>
 			</control>
 			<!--now playing music-->
 			<control type="group">
 				<visible>player.hasaudio</visible>
 				<posx>75</posx>
-				<posy>row-24-begin</posy>
+				<posy>912</posy>
 				<control type="grouplist">
 					<posx>0</posx>
 					<posy>8</posy>
@@ -878,7 +890,7 @@
 			<control type="group">
 				<visible>player.hasvideo</visible>
 				<posx>75</posx>
-				<posy>row-24-begin</posy>
+				<posy>902</posy>
 				<control type="grouplist">
 					<posx>0</posx>
 					<posy>8</posy>
@@ -1048,6 +1060,7 @@
 		</control>
 		<!--Battery-->
 		<include>Battery</include>
+		
 		<!--debugging-->
 		<include>DebugGrid</include>
 		<control type="label">

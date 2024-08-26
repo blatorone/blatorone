@@ -58,8 +58,9 @@
                 <shadowcolor></shadowcolor>
             </control>
         </control>
+        
         <!--buffering label-->
-        <control type="group" id="1">
+        <control type="group" id="20">
             <posx>0</posx>
             <posy>row-2-begin</posy>
             <depth>DepthOSD+</depth>
@@ -71,6 +72,8 @@
                 <height>102</height>
                 <texture>masks/discsurface.png</texture>
                 <colordiffuse>eeFFFFFF</colordiffuse>
+                <bordertexture colordiffuse="$VAR[highlight]">masks/discsurface.png</bordertexture>
+                <bordersize>0,0,6,0</bordersize>
             </control>
             <control type="label" id="23">
                 <description>heading</description>
@@ -95,6 +98,18 @@
                 <shadowcolor></shadowcolor>
             </control>
         </control>
+        <control type="label" id="25">
+					<visible>!System.InternetState</visible>
+					<posx>100</posx>
+					<posy>0</posy>
+					<width>24-col</width>
+					<height>2-row</height>
+					<font>regular</font>
+					<align>center</align>
+					<textcolor>textActive</textcolor>
+					<shadowcolor>44000000</shadowcolor>
+					<label>[B][COLOR red]$INFO[System.InternetState][/COLOR][/B]</label>
+				</control>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

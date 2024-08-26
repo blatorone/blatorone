@@ -177,6 +177,15 @@
                     <onclick>Skin.ToggleSetting(pausebeforstop)</onclick>
                     <selected>Skin.HasSetting(pausebeforstop)</selected>
                 </control>
+                <control type="radiobutton" id="117">
+                    <visible>Container(8000).Hasfocus(1) + Skin.HasSetting(pausebeforstop)</visible>
+                    <description>Pause is for Stop in Video OSD</description>
+                    <width>14-col</width>
+                    <label>- $LOCALIZE[31359]</label>
+                    <onclick>Skin.ToggleSetting(pausebeforstopauto)</onclick>
+                    <selected>Skin.HasSetting(pausebeforstopauto)</selected>
+                    <enable>Skin.HasSetting(pausebeforstop)</enable>
+                </control>
                 
                 <!--general-->
                 <control type="label" id="1001">

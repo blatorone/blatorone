@@ -961,3 +961,7 @@ msgstr "Deaktiviere Rating"
 msgctxt "#31358"
 msgid "Disable Progressbar Info"
 msgstr "Deaktiviere Prozessinfo"
+
+msgctxt "#31359"
+msgid "Auto Pause"
+msgstr "Automatische Pause"
