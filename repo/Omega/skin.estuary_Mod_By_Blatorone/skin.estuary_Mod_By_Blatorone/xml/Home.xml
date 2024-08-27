@@ -45,10 +45,12 @@
 				<include>OpenClose_Right</include>
 				<control type="group" id="1000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),DBHelper) + System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)</visible>
-					
+						<include content="Visible_Right_Delayed">
+							<param name="id" value="DBHelper"/>
+						</include>
 					<control type="grouplist" id="1001">
 						<include>WidgetGroupListCommon</include>
-						<pagecontrol>4010</pagecontrol>
+						<pagecontrol>1010</pagecontrol>
 						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=dir_movie&amp;tmdb_type=None"/>
 							<param name="additional_movie_items" value="true"/>
@@ -101,7 +103,7 @@
 					</include>
 					<control type="grouplist" id="100001">
 						<include>WidgetGroupListCommon</include>
-						<pagecontrol>10010</pagecontrol>
+						<pagecontrol>100010</pagecontrol>
 						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=dir_tv&amp;tmdb_type=None"/>
 							<param name="additional_movie_items" value="true"/>
