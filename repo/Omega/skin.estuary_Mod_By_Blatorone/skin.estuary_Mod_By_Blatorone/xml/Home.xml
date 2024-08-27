@@ -110,7 +110,7 @@
 							<param name="list_id" value="100900"/>
 						</include>
 						
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) +  + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_nextepisodes&amp;tmdb_type=tv"/>
 							<param name="widget_header" condition="integer.IsGreater(Container(10100).NumItems,0)" value="$ADDON[plugin.video.themoviedb.helper 32197]: [B]$INFO[container(100100).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -233,7 +233,7 @@
 					<control type="grouplist" id="6001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>6010</pagecontrol>
-						<include content="WidgetListCategories" condition="!Library.HasContent(tvshows) + !Skin.HasSetting(home_no_tvshows_categories_widget)">
+						<include content="WidgetListCategories" condition="Library.HasContent(tvshows) + !Skin.HasSetting(home_no_tvshows_categories_widget)">
 							<param name="content_path" value="library://video/tvshows/"/>
 							<param name="additional_tvshow_items" value="true"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
