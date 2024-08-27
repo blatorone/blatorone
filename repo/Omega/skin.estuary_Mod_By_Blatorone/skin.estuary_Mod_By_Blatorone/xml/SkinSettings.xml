@@ -149,11 +149,20 @@
 				<visible>Container(9000).HasFocus(2)</visible>
 				<control type="radiobutton" id="640">
 					<visible>Container(9000).HasFocus(2) + System.HasAddon(plugin.video.themoviedb.helper)</visible>
-					<label>The Movie DB Helper</label>
+					<label>The Movie DB Helper Filme</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(Moviedbhelper)</selected>
 					<onclick>Skin.ToggleSetting(Moviedbhelper)</onclick>
 				</control>
+				<control type="radiobutton" id="641">
+					<visible>Container(9000).HasFocus(2) + System.HasAddon(plugin.video.themoviedb.helper)</visible>
+					<label>The Movie DB Helper Serien</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(Moviedbhelperseries)</selected>
+					<onclick>Skin.ToggleSetting(Moviedbhelperseries)</onclick>
+				</control>
+
+				
 				<control type="radiobutton" id="611">
 					<label>$LOCALIZE[342]</label>
 					<include>DefaultSettingButton</include>
