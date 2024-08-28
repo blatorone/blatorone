@@ -32,6 +32,7 @@
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="integer.IsGreater(Container($PARAM[list_id]).NumItems,0) + !Container($PARAM[list_id]).IsUpdating"/>
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
@@ -72,7 +73,7 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="15" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="50" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
@@ -406,9 +407,33 @@
 			</item>
 			<item>
 				<label>$LOCALIZE[137]</label>
+				<onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=dir_search&amp;tmdb_type=movie",return)</onclick>
+				<thumb>DefaultAddonsSearch.png</thumb>
+				<visible>System.HasAddon(plugin.video.themoviedb.helper) + String.IsEqual(Container(9000).ListItem.Property(id),DBHelpermovies)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[31146]</label>
+				<onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=now_playing&amp;tmdb_type=movie",return)</onclick>
+				<thumb>DefaultStudios.png</thumb>
+				<visible>System.HasAddon(plugin.video.themoviedb.helper) + String.IsEqual(Container(9000).ListItem.Property(id),DBHelpermovies)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[31147]</label>
+				<onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie",return)</onclick>
+				<thumb>DefaultYear.png</thumb>
+				<visible>System.HasAddon(plugin.video.themoviedb.helper) + String.IsEqual(Container(9000).ListItem.Property(id),DBHelpermovies)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[137]</label>
 				<onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=dir_search&amp;tmdb_type=tv",return)</onclick>
 				<thumb>DefaultAddonsSearch.png</thumb>
 				<visible>System.HasAddon(plugin.video.themoviedb.helper) + String.IsEqual(Container(9000).ListItem.Property(id),DBseries)</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[137]</label>
+				<onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=dir_search&amp;tmdb_type=tv",return)</onclick>
+				<thumb>DefaultAddonsSearch.png</thumb>
+				<visible>System.HasAddon(plugin.video.themoviedb.helper) + String.IsEqual(Container(9000).ListItem.Property(id),Traktseries)</visible>
 			</item>
 		</content>
 	</include>
@@ -419,6 +444,12 @@
 				<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_nextepisodes&amp;tmdb_type=tv&quot;,return)</onclick>
 				<thumb>DefaultYear.png</thumb>
 				<visible>System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))</visible>
+			</item>
+			<item>
+				<label>$LOCALIZE[31027]</label>
+				<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_nextepisodes&amp;tmdb_type=tv&quot;,return)</onclick>
+				<thumb>DefaultYear.png</thumb>
+				<visible>System.HasAddon(plugin.video.themoviedb.helper) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))</visible>
 			</item>
 		</content>
 	</include>

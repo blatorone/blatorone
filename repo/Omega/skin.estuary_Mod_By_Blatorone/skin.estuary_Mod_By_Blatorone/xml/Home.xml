@@ -52,7 +52,7 @@
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>1010</pagecontrol>
 						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=dir_movie&amp;tmdb_type=None"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=genres&amp;tmdb_type=movie"/>
 							<param name="additional_movie_items" value="true"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="Videos"/>
@@ -89,13 +89,120 @@
 							
 						</include>
 
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=movie"/>
+							<param name="widget_header" value="Provider $LOCALIZE[342]: [B]$INFO[container(1500).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="name"/>
+							<param name="list_id" value="1500"/>
+							
+						</include>
 
+
+
+						
 					</control>
 					
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="1010"/>
 					</include>
 				</control>
+
+
+
+
+
+				<control type="group" id="2000000">
+					<visible>String.IsEqual(Container(9000).ListItem.Property(id),DBHelpermovies) + System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)</visible>
+						<include content="Visible_Right_Delayed">
+							<param name="id" value="DBHelpermovies"/>
+						</include>
+					<control type="grouplist" id="2000001">
+						<include>WidgetGroupListCommon</include>
+						<pagecontrol>1010</pagecontrol>
+						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_genres&amp;tmdb_type=movie"/>
+							<param name="additional_movie_items" value="true"/>
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="list_id" value="2000900"/>
+						</include>
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;tmdb_type=movie"/>
+							<param name="widget_header" value="$LOCALIZE[342] $ADDON[plugin.video.themoviedb.helper 32204]: [B]$INFO[container(2000100).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="2000100"/>
+							
+						</include>
+						
+						
+
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_towatch&amp;tmdb_type=movie"/>
+							<param name="widget_header" value="$LOCALIZE[342] noch anzuschauen: [B]$INFO[container(2000300).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="2000300"/>
+							
+						</include>
+
+						
+
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_popular&amp;tmdb_type=movie"/>
+							<param name="widget_header" value="Beliebte $LOCALIZE[342]: [B]$INFO[container(2000500).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="2000500"/>
+							
+						</include>
+
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_favorites&amp;list_name=Filme%20Favoriten&amp;tmdb_type=movie"/>
+							<param name="widget_header" value="$LOCALIZE[342] Favoriten: [B]$INFO[container(2000600).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="2000600"/>
+							
+						</include>
+
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_history&amp;tmdb_type=movie"/>
+							<param name="widget_header" value="Deine kürzlich angesehene $LOCALIZE[342]: [B]$INFO[container(2000700).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="2000700"/>
+							
+						</include>
+
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=movie"/>
+							<param name="widget_header" value="Provider $LOCALIZE[342]: [B]$INFO[container(2000800).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="name"/>
+							<param name="list_id" value="2000800"/>
+							
+						</include>
+
+
+						
+
+
+
+						
+
+					</control>
+					
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
+						<param name="scrollbar_id" value="2000010"/>
+					</include>
+				</control>
+
+
+
+
+
 				<control type="group" id="100000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),DBseries)</visible>
 					<include content="Visible_Right_Delayed">
@@ -105,20 +212,14 @@
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>100010</pagecontrol>
 						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=dir_tv&amp;tmdb_type=None"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=genres&amp;tmdb_type=tv"/>
 							<param name="additional_movie_items" value="true"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="Videos"/>
 							<param name="list_id" value="100900"/>
 						</include>
 						
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_nextepisodes&amp;tmdb_type=tv"/>
-							<param name="widget_header" condition="integer.IsGreater(Container(10100).NumItems,0)" value="$ADDON[plugin.video.themoviedb.helper 32197]: [B]$INFO[container(100100).Listitem.label][/B]"/>
-							<param name="widget_target" value="Videos"/>
-							<param name="sortby" value="date"/>
-							<param name="list_id" value="100100"/>
-						</include>
+						
 
 						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=tv"/>
@@ -143,20 +244,139 @@
 						
 
 						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
-							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=genres&amp;tmdb_type=tv"/>
-							<param name="widget_header" value="$LOCALIZE[20343] $LOCALIZE[135]: [B]$INFO[container(100500).Listitem.label][/B]"/>
-							<param name="widget_target" value="Vidoes"/>
-							<param name="sortby" value="date"/>
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=tv"/>
+							<param name="widget_header" value="Provider $LOCALIZE[135]: [B]$INFO[container(100500).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="name"/>
 							<param name="list_id" value="100600"/>
-							
 						</include>
-
 					</control>
-					
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="100010"/>
 					</include>
 				</control>
+
+
+
+
+
+
+				
+
+
+
+				<control type="group" id="300000">
+					<visible>String.IsEqual(Container(9000).ListItem.Property(id),Traktseries)</visible>
+					<include content="Visible_Right_Delayed">
+						<param name="id" value="Traktseries"/>
+					</include>
+					<control type="grouplist" id="300001">
+						<include>WidgetGroupListCommon</include>
+						<pagecontrol>300010</pagecontrol>
+						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_genres&amp;tmdb_type=tv"/>
+							<param name="additional_movie_items" value="true"/>
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="list_id" value="300900"/>
+						</include>
+						
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_nextepisodes&amp;tmdb_type=tv"/>
+							<param name="widget_header" value="$ADDON[plugin.video.themoviedb.helper 32197]: [B][COLOR grey]$INFO[container(300100).ListItem.TVShowTitle]:[/COLOR] $INFO[container(300100).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="300100"/>
+						</include>
+						
+
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;tmdb_type=tv"/>
+							<param name="widget_header" value="$LOCALIZE[20343] $ADDON[plugin.video.themoviedb.helper 32204]: [B]$INFO[container(300200).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="300200"/>
+							
+						</include>
+
+						
+
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_popular&amp;tmdb_type=tv"/>
+							<param name="widget_header" value="Beliebte $LOCALIZE[20343]: [B]$INFO[container(300300).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="300300"/>
+							
+						</include>
+
+						
+
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_towatch&amp;tmdb_type=tv"/>
+							<param name="widget_header" value="$LOCALIZE[20343] noch zu schauen: [B]$INFO[container(300400).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="300400"/>
+						</include>
+
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_recommendations&amp;tmdb_type=tv"/>
+							<param name="widget_header" value="$LOCALIZE[20343] für Dich empfohlen: [B]$INFO[container(300500).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="300500"/>
+						</include>
+
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_history&amp;tmdb_type=tv"/>
+							<param name="widget_header" value="Deine kürzlich angesehenen $LOCALIZE[20343]: [B]$INFO[container(300600).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="300600"/>
+						</include>
+
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Serien%20Beobachtungsliste&amp;tmdb_type=tv"/>
+							<param name="widget_header" value="$LOCALIZE[20343] Beobachtungsliste: [B]$INFO[container(300700).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="300700"/>
+						</include>
+
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_favorites&amp;list_name=Serien%20Favoriten&amp;tmdb_type=tv"/>
+							<param name="widget_header" value="$LOCALIZE[20343] Favoriten: [B]$INFO[container(300800).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="300800"/>
+						</include>
+
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=tv"/>
+							<param name="widget_header" value="Provider $LOCALIZE[20343]: [B]$INFO[container(301000).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="name"/>
+							<param name="list_id" value="301000"/>
+						</include>
+
+
+						
+
+						
+						
+					</control>
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
+						<param name="scrollbar_id" value="300010"/>
+					</include>
+				</control>
+
+
+
+
+
+
+
 				<control type="group" id="5000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),movies)</visible>
 					<include content="Visible_Right_Delayed">
@@ -928,7 +1148,7 @@
 					</include>
 					<control type="grouplist" id="4001">
 						<include>WidgetGroupListCommon</include>
-						<include content="WidgetListCategories" condition="!Skin.HasSetting(HomeMenuNoPicturesButton)">
+						<include content="WidgetListCategories" condition="Skin.HasSetting(HomeMenuNoPicturesButton)">
 							<param name="content_path" value="sources://pictures/"/>
 							<param name="widget_header" value="$LOCALIZE[20094]"/>
 							<param name="widget_target" value="pictures"/>
@@ -1077,7 +1297,16 @@
 							<property name="menu_id">$NUMBER[1000]</property>
 							<thumb>icons/sidemenu/movies.png</thumb>
 							<property name="id">DBHelper</property>
-							<visible>!Skin.HasSetting(Moviedbhelper)</visible>
+							<visible>!Skin.HasSetting(Moviedbhelper) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[342]</label>
+							
+							<onclick condition="System.HasAddon(plugin.video.themoviedb.helper)">ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=dir_movie&amp;tmdb_type=None",return)</onclick>
+							<property name="menu_id">$NUMBER[2000000]</property>
+							<thumb>icons/sidemenu/movies.png</thumb>
+							<property name="id">DBHelpermovies</property>
+							<visible>!Skin.HasSetting(Moviedbhelper) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[20343]</label>
@@ -1086,7 +1315,16 @@
 							<property name="menu_id">$NUMBER[100000]</property>
 							<thumb>icons/sidemenu/tv.png</thumb>
 							<property name="id">dbseries</property>
-							<visible>!Skin.HasSetting(Moviedbhelperseries)</visible>
+							<visible>!Skin.HasSetting(Moviedbhelperseries) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[20343]</label>
+							
+							<onclick condition="System.HasAddon(plugin.video.themoviedb.helper)">ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=dir_tv&amp;tmdb_type=None",return)</onclick>
+							<property name="menu_id">$NUMBER[300000]</property>
+							<thumb>icons/sidemenu/tv.png</thumb>
+							<property name="id">Traktseries</property>
+							<visible>!Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[14022] $LOCALIZE[342]</label>
@@ -1097,7 +1335,7 @@
 							<property name="menu_id">$NUMBER[5000]</property>
 							<thumb>icons/sidemenu/movies.png</thumb>
 							<property name="id">movies</property>
-							<visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
+							<visible>Skin.HasSetting(HomeMenuNoMovieButton)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[14022] $LOCALIZE[20343]</label>
@@ -1108,7 +1346,7 @@
 							<property name="menu_id">$NUMBER[6000]</property>
 							<thumb>icons/sidemenu/tv.png</thumb>
 							<property name="id">tvshows</property>
-							<visible>!Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
+							<visible>Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[14022] $LOCALIZE[2]</label>
@@ -1116,7 +1354,7 @@
 							<property name="menu_id">$NUMBER[7000]</property>
 							<thumb>icons/sidemenu/music.png</thumb>
 							<property name="id">music</property>
-							<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+							<visible>Skin.HasSetting(HomeMenuNoMusicButton)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[427]</label>
@@ -1132,7 +1370,7 @@
 							<onclick>ActivateWindow(Videos,musicvideos,return)</onclick>
 							<thumb>icons/sidemenu/musicvideos.png</thumb>
 							<property name="id">musicvideos</property>
-							<visible>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</visible>
+							<visible>Skin.HasSetting(HomeMenuNoMusicVideoButton)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[19020]</label>
@@ -1148,7 +1386,7 @@
 							<onclick>ActivateWindow(RadioChannels)</onclick>
 							<thumb>icons/sidemenu/radio.png</thumb>
 							<property name="id">radio</property>
-							<visible>!Skin.HasSetting(HomeMenuNoRadioButton)</visible>
+							<visible>Skin.HasSetting(HomeMenuNoRadioButton)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[15016]</label>
@@ -1156,7 +1394,7 @@
 							<onclick>ActivateWindow(Games)</onclick>
 							<thumb>icons/sidemenu/games.png</thumb>
 							<property name="id">games</property>
-							<visible>System.GetBool(gamesgeneral.enable) + !Skin.HasSetting(HomeMenuNoGamesButton)</visible>
+							<visible>System.GetBool(gamesgeneral.enable) + Skin.HasSetting(HomeMenuNoGamesButton)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[24001]</label>
@@ -1164,7 +1402,7 @@
 							<onclick>ActivateWindow(1100)</onclick>
 							<thumb>icons/sidemenu/addons.png</thumb>
 							<property name="id">addons</property>
-							<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
+							<visible>Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[1]</label>
@@ -1172,7 +1410,7 @@
 							<property name="menu_id">$NUMBER[4000]</property>
 							<thumb>icons/sidemenu/pictures.png</thumb>
 							<property name="id">pictures</property>
-							<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
+							<visible>Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[14022] $LOCALIZE[3]</label>
@@ -1180,7 +1418,7 @@
 							<property name="menu_id">$NUMBER[11000]</property>
 							<thumb>icons/sidemenu/videos.png</thumb>
 							<property name="id">video</property>
-							<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
+							<visible>Skin.HasSetting(HomeMenuNoVideosButton)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[10134]</label>
@@ -1197,7 +1435,7 @@
 							<property name="menu_id">$NUMBER[15000]</property>
 							<thumb>icons/sidemenu/weather.png</thumb>
 							<property name="id">weather</property>
-							<visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
+							<visible>Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
 						</item>
 					</content>
 				</control>
@@ -1229,6 +1467,13 @@
 						<param name="onclick" value="ActivateWindow(1107)" />
 						<param name="icon" value="icons/search.png" />
 						<param name="label" value="$LOCALIZE[137]" />
+						<param name="visible" value="Skin.HasSetting(Moviedbhelper) | Skin.HasSetting(Moviedbhelperseries)"/>
+					</include>
+					<include content="IconButtonsearch">
+						<param name="control_id" value="806" />
+						<param name="icon" value="icons/search.png" />
+						<param name="label" value="$LOCALIZE[137]" />
+						<param name="visible" value="!Skin.HasSetting(Moviedbhelper) | !Skin.HasSetting(Moviedbhelperseries)"/>
 					</include>
 					<include content="IconButton">
 						<param name="control_id" value="803" />
