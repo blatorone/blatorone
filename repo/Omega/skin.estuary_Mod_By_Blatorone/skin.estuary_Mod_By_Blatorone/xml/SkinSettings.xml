@@ -271,7 +271,7 @@
 				<control type="radiobutton" id="614">
 					<label>$LOCALIZE[24001]</label>
 					<include>DefaultSettingButton</include>
-					<selected>Skin.HasSetting(HomeMenuNoProgramsButton)</selected>
+					<selected>!Skin.HasSetting(HomeMenuNoProgramsButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoProgramsButton)</onclick>
 				</control>
 				<control type="radiobutton" id="6140">

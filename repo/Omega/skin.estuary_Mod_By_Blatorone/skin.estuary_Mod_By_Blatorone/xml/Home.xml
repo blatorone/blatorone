@@ -44,21 +44,21 @@
 				</animation>
 				<include>OpenClose_Right</include>
 				<control type="group" id="1000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),DBHelper) + System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)</visible>
+					<visible>String.IsEqual(Container(9000).ListItem.Property(id),DBHelper) + System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))</visible>
 						<include content="Visible_Right_Delayed">
 							<param name="id" value="DBHelper"/>
 						</include>
 					<control type="grouplist" id="1001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>1010</pagecontrol>
-						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=genres&amp;tmdb_type=movie"/>
 							<param name="additional_movie_items" value="true"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="Videos"/>
 							<param name="list_id" value="1900"/>
 						</include>
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=movie"/>
 							<param name="widget_header" value="$LOCALIZE[342] $ADDON[plugin.video.themoviedb.helper 32204]: [B]$INFO[container(1100).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -69,7 +69,7 @@
 						
 						
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=popular&amp;tmdb_type=movie"/>
 							<param name="widget_header" value="$ADDON[plugin.video.themoviedb.helper 32175] $LOCALIZE[342]: [B]$INFO[container(1300).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -80,7 +80,7 @@
 
 						
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=genres&amp;tmdb_type=movie"/>
 							<param name="widget_header" value="$LOCALIZE[342] $LOCALIZE[135]: [B]$INFO[container(1500).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -89,7 +89,7 @@
 							
 						</include>
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=movie"/>
 							<param name="widget_header" value="Provider $LOCALIZE[342]: [B]$INFO[container(1500).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -113,21 +113,21 @@
 
 
 				<control type="group" id="2000000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),DBHelpermovies) + System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)</visible>
+					<visible>String.IsEqual(Container(9000).ListItem.Property(id),DBHelpermovies) + System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))</visible>
 						<include content="Visible_Right_Delayed">
 							<param name="id" value="DBHelpermovies"/>
 						</include>
 					<control type="grouplist" id="2000001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>1010</pagecontrol>
-						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_genres&amp;tmdb_type=movie"/>
 							<param name="additional_movie_items" value="true"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="Videos"/>
 							<param name="list_id" value="2000900"/>
 						</include>
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;tmdb_type=movie"/>
 							<param name="widget_header" value="$LOCALIZE[342] $ADDON[plugin.video.themoviedb.helper 32204]: [B]$INFO[container(2000100).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -138,7 +138,7 @@
 						
 						
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_towatch&amp;tmdb_type=movie"/>
 							<param name="widget_header" value="$LOCALIZE[342] noch anzuschauen: [B]$INFO[container(2000300).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -149,7 +149,7 @@
 
 						
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_popular&amp;tmdb_type=movie"/>
 							<param name="widget_header" value="Beliebte $LOCALIZE[342]: [B]$INFO[container(2000500).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -158,7 +158,7 @@
 							
 						</include>
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_favorites&amp;list_name=Filme%20Favoriten&amp;tmdb_type=movie"/>
 							<param name="widget_header" value="$LOCALIZE[342] Favoriten: [B]$INFO[container(2000600).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -167,7 +167,7 @@
 							
 						</include>
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_history&amp;tmdb_type=movie"/>
 							<param name="widget_header" value="Deine kürzlich angesehene $LOCALIZE[342]: [B]$INFO[container(2000700).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -176,7 +176,7 @@
 							
 						</include>
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=movie"/>
 							<param name="widget_header" value="Provider $LOCALIZE[342]: [B]$INFO[container(2000800).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -204,14 +204,14 @@
 
 
 				<control type="group" id="100000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),DBseries)</visible>
+					<visible>String.IsEqual(Container(9000).ListItem.Property(id),dbseries) + System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))</visible>
 					<include content="Visible_Right_Delayed">
-						<param name="id" value="DBseries"/>
+						<param name="id" value="dbseries"/>
 					</include>
 					<control type="grouplist" id="100001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>100010</pagecontrol>
-						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=genres&amp;tmdb_type=tv"/>
 							<param name="additional_movie_items" value="true"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
@@ -221,7 +221,7 @@
 						
 						
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=tv"/>
 							<param name="widget_header" value="$LOCALIZE[20343] $ADDON[plugin.video.themoviedb.helper 32204]: [B]$INFO[container(100200).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -232,7 +232,7 @@
 
 						
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=popular&amp;tmdb_type=tv"/>
 							<param name="widget_header" value="$ADDON[plugin.video.themoviedb.helper 32175] $LOCALIZE[20343]: [B]$INFO[container(100400).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -243,7 +243,7 @@
 
 						
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=tv"/>
 							<param name="widget_header" value="Provider $LOCALIZE[135]: [B]$INFO[container(100500).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -266,14 +266,14 @@
 
 
 				<control type="group" id="300000">
-					<visible>String.IsEqual(Container(9000).ListItem.Property(id),Traktseries)</visible>
+					<visible>String.IsEqual(Container(9000).ListItem.Property(id),Traktseries) + System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))</visible>
 					<include content="Visible_Right_Delayed">
 						<param name="id" value="Traktseries"/>
 					</include>
 					<control type="grouplist" id="300001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>300010</pagecontrol>
-						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListCategories" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_genres&amp;tmdb_type=tv"/>
 							<param name="additional_movie_items" value="true"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
@@ -281,7 +281,7 @@
 							<param name="list_id" value="300900"/>
 						</include>
 						
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_nextepisodes&amp;tmdb_type=tv"/>
 							<param name="widget_header" value="$ADDON[plugin.video.themoviedb.helper 32197]: [B][COLOR grey]$INFO[container(300100).ListItem.TVShowTitle]:[/COLOR] $INFO[container(300100).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -289,8 +289,16 @@
 							<param name="list_id" value="300100"/>
 						</include>
 						
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
+							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_ondeck&amp;tmdb_type=tv"/>
+							<param name="widget_header" value="$ADDON[plugin.video.themoviedb.helper 32406]: [B]$INFO[container(301100).Listitem.label][/B]"/>
+							<param name="widget_target" value="Videos"/>
+							<param name="sortby" value="date"/>
+							<param name="list_id" value="301100"/>
+							
+						</include>
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;tmdb_type=tv"/>
 							<param name="widget_header" value="$LOCALIZE[20343] $ADDON[plugin.video.themoviedb.helper 32204]: [B]$INFO[container(300200).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -301,7 +309,7 @@
 
 						
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_popular&amp;tmdb_type=tv"/>
 							<param name="widget_header" value="Beliebte $LOCALIZE[20343]: [B]$INFO[container(300300).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -312,7 +320,7 @@
 
 						
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_towatch&amp;tmdb_type=tv"/>
 							<param name="widget_header" value="$LOCALIZE[20343] noch zu schauen: [B]$INFO[container(300400).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -320,7 +328,7 @@
 							<param name="list_id" value="300400"/>
 						</include>
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_recommendations&amp;tmdb_type=tv"/>
 							<param name="widget_header" value="$LOCALIZE[20343] für Dich empfohlen: [B]$INFO[container(300500).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -328,7 +336,7 @@
 							<param name="list_id" value="300500"/>
 						</include>
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_history&amp;tmdb_type=tv"/>
 							<param name="widget_header" value="Deine kürzlich angesehenen $LOCALIZE[20343]: [B]$INFO[container(300600).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -336,7 +344,7 @@
 							<param name="list_id" value="300600"/>
 						</include>
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Serien%20Beobachtungsliste&amp;tmdb_type=tv"/>
 							<param name="widget_header" value="$LOCALIZE[20343] Beobachtungsliste: [B]$INFO[container(300700).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -344,7 +352,7 @@
 							<param name="list_id" value="300700"/>
 						</include>
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_favorites&amp;list_name=Serien%20Favoriten&amp;tmdb_type=tv"/>
 							<param name="widget_header" value="$LOCALIZE[20343] Favoriten: [B]$INFO[container(300800).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -352,7 +360,7 @@
 							<param name="list_id" value="300800"/>
 						</include>
 
-						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelper)">
+						<include content="WidgetListPoster" condition="System.HasAddon(plugin.video.themoviedb.helper) + !Skin.HasSetting(Moviedbhelperseries) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=tv"/>
 							<param name="widget_header" value="Provider $LOCALIZE[20343]: [B]$INFO[container(301000).Listitem.label][/B]"/>
 							<param name="widget_target" value="Videos"/>
@@ -1402,7 +1410,7 @@
 							<onclick>ActivateWindow(1100)</onclick>
 							<thumb>icons/sidemenu/addons.png</thumb>
 							<property name="id">addons</property>
-							<visible>Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
+							<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[1]</label>
@@ -1436,6 +1444,12 @@
 							<thumb>icons/sidemenu/weather.png</thumb>
 							<property name="id">weather</property>
 							<visible>Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[20183]</label>
+							<onclick>ReloadSkin()</onclick>
+							<thumb>DefaultAddonsUpdates.png</thumb>
+							<visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))</visible>
 						</item>
 					</content>
 				</control>
