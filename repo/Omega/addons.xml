@@ -32,7 +32,7 @@
         </assets>
     </extension>
     </addon>
-	<addon id="skin.estuary_Mod_By_Blatorone" version="4.0.5" name="Estuary Mod By Blatorone" provider-name="phil65, Ichabod Fletchman, Blatorone">
+	<addon id="skin.estuary_Mod_By_Blatorone" version="4.0.6" name="Estuary Mod By Blatorone" provider-name="phil65, Ichabod Fletchman, Blatorone">
 		<requires>
 			<import addon="xbmc.gui" version="5.17.0"/>
         	<import addon="plugin.video.themoviedb.helper" version="0.0.1"/>
