@@ -3,6 +3,7 @@
 	<defaultcontrol always="true">6</defaultcontrol>
 	<include>DialogOpenCloseAnimation</include>
 	<onunload>ClearProperty(Reset.Color,1112)</onunload>
+	<include>fadeInOut</include>
 	<controls>
 		<!--background-->
         <include>globalBackground</include>
@@ -54,7 +55,6 @@
 			<texture colordiffuse="white">separator_horizontal.png</texture>
 		</control>
 		<control type="panel" id="6">
-			
 			<top>80</top>
 			<left>10</left>
 			<width>1900</width>

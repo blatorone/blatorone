@@ -12,7 +12,7 @@
             <posx>col-3-begin</posx>
             <posy>row-3-begin</posy>
             <!--animations-->
-            <include>modalDialogInOutVertical</include>
+            <include>fadeInOut</include>
             <!--content provider title / info-->
             <control type="image">
                 <posx>-12</posx>

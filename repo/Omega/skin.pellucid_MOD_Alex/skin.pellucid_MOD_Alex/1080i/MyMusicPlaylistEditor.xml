@@ -8,7 +8,7 @@
         <include>Battery</include>
         <control type="group">
             <!--animations-->
-            <include>modalDialogInOutVertical</include>
+            <include>fadeInOut</include>
             <!--page title-->
             <control type="group">
                 <posx>col-2-begin</posx>

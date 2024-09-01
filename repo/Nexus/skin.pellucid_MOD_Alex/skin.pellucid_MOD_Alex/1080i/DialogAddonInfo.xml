@@ -27,7 +27,7 @@
             <posx>col-4-begin</posx>
             <posy>row-4-begin</posy>
             <!--animations-->
-            <include>modalDialogInOutVertical</include>
+            <include>fadeInOut</include>
             <!--dialog background-->
             <control type="image">
                 <posx>-12</posx>
@@ -330,7 +330,7 @@
         <!--Auto update Button-->
         <control type="radiobutton" id="13">
 			<description>Auto Update Addon button</description>
-            <include>modalDialogInOutVertical</include>
+            <include>fadeInOut</include>
 			<width>460</width>
 			<height>2-row</height>
             <align>right</align>

@@ -17,12 +17,12 @@
 		<include>pageheadermovies_series</include>
 		<!--Battery level-->
         <include>Battery</include>
-		<include>modalDialogInOutVertical</include>
+		
          <!--Backbutton touchscreen-->
         <include>Backbuttoncross</include>
 		</control>
         <control type="grouplist" id="9998">
-					<include>modalDialogInOutVertical</include>
+					<include>OpenClose_FadeSlide_Right</include>
 					<posx>0</posx>
 					<posy>0</posy>
                 	<height>400</height>
@@ -96,14 +96,23 @@
             <posx>0</posx>
             <posy>row-5-begin</posy>
             <!--animations-->
-            <include>modalDialogInOutVertical</include>
-           
-          
-            
-            
-           
-					
-					
+            <include>OpenClose_FadeSlide_Left</include>
+
+						<control type="scrollbar" id="2000">
+                   			<posx>1000</posx>
+                    		<posy>100</posy>
+                    		<texturesliderbar colordiffuse="textDisabled">masks/discsurface.png</texturesliderbar>
+                    		<texturesliderbackground colordiffuse="black">masks/discsurface.png</texturesliderbackground>
+                    		<texturesliderbarfocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturesliderbarfocus>
+                    		<showonepage>true</showonepage>
+                    		<height>500</height>
+                    		<width>35</width>
+                    		<onleft>50</onleft>
+                    		<onup>8000</onup>
+                    		<onright>80</onright>
+							<visible>Skin.Hassetting(touch)</visible>
+                		</control>
+
 						<control type="grouplist" id="9999">
 						<posx>0</posx>
 						<posy>-70</posy>
@@ -523,20 +532,7 @@
 					<visible>!Skin.Hassetting(touch)</visible>
 				</control>
 				-->
-				<control type="scrollbar" id="2000">
-                    <posx>1000</posx>
-                    <posy>100</posy>
-                    <texturesliderbar colordiffuse="textDisabled">masks/discsurface.png</texturesliderbar>
-                    <texturesliderbackground colordiffuse="black">masks/discsurface.png</texturesliderbackground>
-                    <texturesliderbarfocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturesliderbarfocus>
-                    <showonepage>true</showonepage>
-                    <height>500</height>
-                    <width>35</width>
-                    <onleft>50</onleft>
-                    <onup>8000</onup>
-                    <onright>80</onright>
-					<visible>Skin.Hassetting(touch)</visible>
-                </control>
+				
 		</control>
 		
 		<control type="textbox">

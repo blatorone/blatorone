@@ -14,7 +14,7 @@
                 <posx>col-5-begin</posx>
                 <posy>row-4-begin</posy>
                 <!--animations-->
-                <include condition="!Player.hasVideo">modalDialogInOutVertical</include>
+                <include condition="!Player.hasVideo">fadeInOut</include>
                 <control type="image">
                     <visible>player.hasvideo</visible>
                     <posx>-12</posx>

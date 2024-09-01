@@ -26,7 +26,7 @@
             <posx>col-4-begin</posx>
             <posy>row-4-begin</posy>
             <!--animations-->
-            <include>modalDialogInOutVertical</include>
+            <include>fadeInOut</include>
             <!--content provider title / info-->
             <control type="image">
                 <posx>-12</posx>

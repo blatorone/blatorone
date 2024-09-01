@@ -103,7 +103,7 @@
         <control type="group">
             <posx>col-1-begin</posx>
             <posy>row-6-begin</posy>
-            <include>modalDialogInOutVertical</include>
+            <include>fadeInOut</include>
             <control type="panel">
                 <visible>container(95).hasfocus(1)</visible>
                 <posx>0</posx>

@@ -21,7 +21,7 @@
             <posx>col-1-begin</posx>
             <posy>row-1-begin</posy>
             <!--animations-->
-            <include>modalDialogInOutVertical</include>
+            <include>fadeInOut</include>
             <control type="label">
                 <posx>0</posx>
                 <posy>0</posy>

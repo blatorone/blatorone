@@ -29,7 +29,7 @@
                 <posy>row-6-begin</posy>
                 <visible>String.IsEqual(container.folderpath,addons://)</visible>
                 <!--animations-->
-                <include>modalDialogInOutVertical</include>
+                <include>fadeInOut</include>
                 <!--Initial menu-->
                 <control type="image">
                     <posx>-12</posx>

@@ -24,7 +24,7 @@
             <posx>col-9-begin</posx>
             <posy>row-4-begin</posy>
             <!--animations-->
-            <include>modalDialogInOutVertical</include>
+            <include>fadeInOut</include>
             <animation type="conditional" condition="window.isactive(profilesettings)">
                 <effect type="fade" start="100" end="0" time="300"/>
                 <effect type="rotatey" start="0" end="90" center="960" tween="cubic" easing="out" time="500"/>

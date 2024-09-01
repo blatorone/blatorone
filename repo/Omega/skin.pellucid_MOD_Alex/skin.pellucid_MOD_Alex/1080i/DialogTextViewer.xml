@@ -10,7 +10,7 @@
             <posx>col-5-begin</posx>
             <posy>row-3-begin</posy>
             <!--animations-->
-            <include>modalDialogInOutVertical</include>
+            <include>fadeInOut</include>
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>

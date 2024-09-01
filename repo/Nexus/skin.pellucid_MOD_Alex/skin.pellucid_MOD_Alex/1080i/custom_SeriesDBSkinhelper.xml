@@ -19,13 +19,13 @@
 		<include>pageheadermovies_series</include>
 		<!--Battery level-->
         <include>Battery</include>
-		<include>modalDialogInOutVertical</include>
+		
          <!--Backbutton touchscreen-->
         <include>Backbuttoncross</include>
 		</control>
 
 		<control type="grouplist" id="9998">
-					<include>modalDialogInOutVertical</include>
+					<include>OpenClose_FadeSlide_Right</include>
 					<posx>0</posx>
 					<posy>0</posy>
                 	<height>400</height>
@@ -80,7 +80,7 @@
             <posx>0</posx>
             <posy>row-5-begin</posy>
             <!--animations-->
-            <include>modalDialogInOutVertical</include>
+            <include>OpenClose_FadeSlide_Left</include>
            
 						
             

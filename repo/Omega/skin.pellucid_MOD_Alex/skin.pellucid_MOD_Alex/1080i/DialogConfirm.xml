@@ -33,11 +33,19 @@
             </control>
 
             <!--progress-->
-
+        <control type="group">
+            <animation type="windowOpen">
+                <effect type="fade" start="0" end="100" time="1000"/>
+            </animation>
+            <animation type="windowClose">
+                <effect type="fade" start="100" end="0" time="1000"/>
+            </animation>
+            <posx>-60</posx>
+            <posy>388</posy>
             <control type="image">
                 <visible>Integer.IsGreater(System.Progressbar,0)</visible>
-                <posx>-60</posx>
-                <posy>388</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>650</width>
                 <height>138</height>
                 <texture>colors/black.png</texture>
@@ -47,26 +55,27 @@
             <control type="progress">
 				        <visible>Integer.IsGreater(System.Progressbar,0)</visible>
                         <description>Progress Bar</description>
-                        <posx>-35</posx>
-                        <posy>450</posy>
+                        <left>25</left>
+                        <posy>62</posy>
                         <width>480</width>
                         <height>20</height>
                         <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
                         <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
                         <info>System.Progressbar</info>
                     </control>
-			<control type="label">
+			    <control type="label">
                     <visible>Integer.IsGreater(System.Progressbar,0)</visible>
-					<posx>485</posx>
-	                <posy>420</posy>
+					<left>80</left>
+	                <posy>32</posy>
 	                <width>8-col-gutter</width>
 	                <height>2-row</height>
 	                <wrapmultiline>true</wrapmultiline>
 	                <font>mediumStrong</font>
 	                <textcolor>textActive</textcolor>
+                    <align>right</align>
 					<label>$INFO[System.Progressbar,,%]</label>
 				</control>
-                
+            </control>
 			<!--text-->
             <control type="label" id="1">
                 <description>heading</description>
