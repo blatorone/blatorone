@@ -241,8 +241,14 @@
                 <control type="button" id="115">
 					<visible>Container(8000).Hasfocus(1)</visible>
 					<width>14-col</width>
-                    <label>Addon Einstellungen</label>
+                    <label>$LOCALIZE[24000] $LOCALIZE[10004]</label>
 					<onclick>ActivateWindow(10040,"addons://user/",return)</onclick>
+                </control>
+                <control type="button" id="118">
+					<visible>Container(8000).Hasfocus(1)</visible>
+					<width>14-col</width>
+                    <label>$LOCALIZE[20085]</label>
+					<onclick>ActivateWindow(10007,return)</onclick>
                 </control>
                 <control type="radiobutton" id="2">
                     <visible>System.Platform.Android + Container(8000).Hasfocus(1)</visible>
