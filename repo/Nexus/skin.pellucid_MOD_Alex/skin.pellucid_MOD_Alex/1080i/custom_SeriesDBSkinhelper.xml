@@ -84,7 +84,20 @@
            
 						
             
-            
+						<control type="scrollbar" id="2000">
+                    		<posx>1200</posx>
+                    		<posy>100</posy>
+                    		<texturesliderbar colordiffuse="textDisabled">masks/discsurface.png</texturesliderbar>
+                    		<texturesliderbackground colordiffuse="black">masks/discsurface.png</texturesliderbackground>
+                    		<texturesliderbarfocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturesliderbarfocus>
+                    		<showonepage>true</showonepage>
+                    		<height>500</height>
+                    		<width>35</width>
+                    		<onleft>50</onleft>
+                    		<onup>8000</onup>
+                    		<onright>80</onright>
+							<visible>Skin.Hassetting(touch)</visible>
+                		</control>
            
 					
 					
@@ -284,26 +297,13 @@
 					<visible>!Skin.Hassetting(touch)</visible>
 				</control>
 				-->
-				<control type="scrollbar" id="2000">
-                    <posx>1000</posx>
-                    <posy>100</posy>
-                    <texturesliderbar colordiffuse="textDisabled">masks/discsurface.png</texturesliderbar>
-                    <texturesliderbackground colordiffuse="black">masks/discsurface.png</texturesliderbackground>
-                    <texturesliderbarfocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturesliderbarfocus>
-                    <showonepage>true</showonepage>
-                    <height>500</height>
-                    <width>35</width>
-                    <onleft>50</onleft>
-                    <onup>8000</onup>
-                    <onright>80</onright>
-					<visible>Skin.Hassetting(touch)</visible>
-                </control>
+				
 		</control>
 		
 		<control type="textbox">
 					<left>1100</left>
 					<top>300</top>
-					<width>800</width>
+					<width>650</width>
 					<height>400</height>
 					<font>veryLarge</font>
 					<align>center</align>

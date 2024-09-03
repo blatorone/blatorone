@@ -77,7 +77,7 @@
 					<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
-						<posx>166</posx>
+						<posx>167</posx>
 						<posy>6</posy>
 						<control type="image">
 							<posx>23</posx>
@@ -103,7 +103,7 @@
 					<control type="group">
 						<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
-						<posx>166</posx>
+						<posx>167</posx>
 						<posy>6</posy>
 						<control type="image">
 							<posx>23</posx>
@@ -141,6 +141,16 @@
 				
 				<focusedlayout width="190" height="300">
 					<control type="group">
+						<control type="image">
+							<posx>0</posx>
+						<posy>0</posy>
+						<width>252</width>
+						<height>372</height>
+						<aspectratio>stretch</aspectratio>
+							<texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
+							<bordersize>0</bordersize>
+							<bordertexture border="0" infill="false" colordiffuse="$VAR[highlight]">overlays/shadow.png</bordertexture>
+						</control>
 						
 						<control type="image">
 							<posx>0</posx>
@@ -149,15 +159,15 @@
 						<height>372</height>
 						<aspectratio>stretch</aspectratio>
 							<texture fallback="defaultposter.png">$INFO[listitem.icon]</texture>
-							<bordersize>6</bordersize>
-							<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
+							<bordersize>5</bordersize>
+							
 						</control>
 						<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
-                        	<posx>6</posx>
-                        	<posy>351</posy>
-                        	<width>240</width>
+                        	<posx>5</posx>
+                        	<posy>352</posy>
+                        	<width>242</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -167,8 +177,8 @@
 						<control type="group">
 						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.rating)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
-						<posx>6</posx>
-						<posy>6</posy>
+						<posx>5</posx>
+						<posy>5</posy>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -194,8 +204,8 @@
 					<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
-						<posx>166</posx>
-						<posy>6</posy>
+						<posx>168</posx>
+						<posy>5</posy>
 						<control type="image">
 							<posx>23</posx>
 							<posy>0</posy>
@@ -220,8 +230,8 @@
 					<control type="group">
 						<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
-						<posx>166</posx>
-						<posy>6</posy>
+						<posx>168</posx>
+						<posy>5</posy>
 						<control type="image">
 							<posx>23</posx>
 							<posy>0</posy>

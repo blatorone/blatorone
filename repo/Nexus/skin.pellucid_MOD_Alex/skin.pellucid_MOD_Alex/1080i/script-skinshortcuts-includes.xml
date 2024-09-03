@@ -1097,14 +1097,14 @@
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">25</property>
 			<label>$LOCALIZE[31296]</label>
-			<label2>$LOCALIZE[31296]</label2>
+			<label2>Benutzerdefinierter Eintrag</label2>
 			<icon>DefaultAddonPicture.png</icon>
 			<thumb />
 			<property name="labelID">31296</property>
 			<property name="defaultID">31296</property>
-			<onclick>ActivateWindow(Videos,sources://video/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,sources://video/,return)</property>
-			<property name="list">sources://video/</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</property>
+			<property name="list">plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9001).ListItem.Property(submenuVisibility),extrashortcutmain)</visible>
 			<property name="group">extrashortcutmain</property>
 			<property name="isSubmenu">True</property>
@@ -2727,14 +2727,14 @@
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">25</property>
 			<label>$LOCALIZE[31296]</label>
-			<label2>$LOCALIZE[31296]</label2>
+			<label2>Benutzerdefinierter Eintrag</label2>
 			<icon>DefaultAddonPicture.png</icon>
 			<thumb />
 			<property name="labelID">31296</property>
 			<property name="defaultID">31296</property>
-			<onclick>ActivateWindow(Videos,sources://video/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,sources://video/,return)</property>
-			<property name="list">sources://video/</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</property>
+			<property name="list">plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">extrashortcutmain</property>
 			<property name="isSubmenu">True</property>
@@ -2745,14 +2745,14 @@
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">25</property>
 			<label>$LOCALIZE[31296]</label>
-			<label2>$LOCALIZE[31296]</label2>
+			<label2>Benutzerdefinierter Eintrag</label2>
 			<icon>DefaultAddonPicture.png</icon>
 			<thumb />
 			<property name="labelID">31296</property>
 			<property name="defaultID">31296</property>
-			<onclick>ActivateWindow(Videos,sources://video/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,sources://video/,return)</property>
-			<property name="list">sources://video/</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</property>
+			<property name="list">plugin://plugin.video.themoviedb.helper/?info=upcoming&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),extrashortcutmain)</visible>
 			<property name="group">extrashortcutmain</property>
 			<property name="isSubmenu">True</property>

@@ -164,8 +164,19 @@
 							<width>228</width>
 							<height>442</height>
 							<aspectratio>stretch</aspectratio>
+							<texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
+							<bordersize>0</bordersize>
+							<bordertexture border="0" infill="false" colordiffuse="$VAR[highlight]">overlays/shadow.png</bordertexture>
+							<colordiffuse>overlay</colordiffuse>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>228</width>
+							<height>442</height>
+							<aspectratio>stretch</aspectratio>
 							<texture fallback="defaultposter.png">$INFO[listitem.icon]</texture>
-							<bordersize>6</bordersize>
+							<bordersize>5</bordersize>
 							<colordiffuse>overlay</colordiffuse>
 						</control>
 						<control type="image">
@@ -201,8 +212,8 @@
 						<control type="group">
 						<visible>!String.isEmpty(ListItem.RatingandVotes) + !Skin.HasSetting(Disable.rating)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
-						<posx>6</posx>
-						<posy>6</posy>
+						<posx>5</posx>
+						<posy>5</posy>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -228,8 +239,8 @@
 						<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
-						<posx>166</posx>
-						<posy>6</posy>
+						<posx>167</posx>
+						<posy>5</posy>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -254,8 +265,8 @@
 					<control type="group">
 						<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
-						<posx>166</posx>
-						<posy>6</posy>
+						<posx>167</posx>
+						<posy>5</posy>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
