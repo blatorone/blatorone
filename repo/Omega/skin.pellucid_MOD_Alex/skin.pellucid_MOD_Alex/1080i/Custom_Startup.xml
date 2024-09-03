@@ -6,8 +6,10 @@
 		 
     <controls>
         <control type="button" id="10">
+			<texturefocus></texturefocus>
 			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
 			<onfocus>PlayMedia($ESCINFO[Skin.String(StartupIntro)])</onfocus>
+			<onfocus>Playlist.Clear</onfocus>
 		</control>
 
         

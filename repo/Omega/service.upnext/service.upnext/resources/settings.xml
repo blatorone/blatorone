@@ -375,7 +375,7 @@
             <group id="unknownEndCreditsTime" label="30613">
                 <setting id="customAutoPlayTime" type="boolean" label="30615" help="">
                     <level>0</level>
-                    <default>false</default>
+                    <default>true</default>
                     <control type="toggle"/>
                 </setting>
                 <setting id="autoPlaySeasonTime" type="integer" label="30617" help="" parent="customAutoPlayTime">

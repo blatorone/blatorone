@@ -90,7 +90,7 @@
 					
 						<control type="grouplist" id="9999">
 						<posx>0</posx>
-						<posy>-70</posy>
+						<posy>-75</posy>
 						<pagecontrol>2000</pagecontrol>
 						<onup>9015</onup>
 						<control type="togglebutton" id="9013">
@@ -111,9 +111,9 @@
 				            <ondown>5100</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=tv&quot;,return)</onclick>
 			            </control>
-						<include content="WidgetListPoster1">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=tv"/>
-							<param name="widget_header1" value="Anbieter"/>
+							<param name="widget_header" value="Anbieter"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5100"/>
 						</include>
@@ -138,9 +138,9 @@
 				            <ondown>5200</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trending_day&amp;tmdb_type=tv&quot;,return)</onclick>
 			            </control>
-						<include content="WidgetListPoster2">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trending_day&amp;tmdb_type=tv"/>
-							<param name="widget_header2" value="Serien im Trend"/>
+							<param name="widget_header" value="Serien im Trend"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5200"/>
 						</include>
@@ -190,9 +190,9 @@
 				            <ondown>5400</ondown>
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=popular&amp;tmdb_type=tv&quot;,return)</onclick>
 			            </control>
-                        <include content="WidgetListPoster4">
+                        <include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=popular&amp;tmdb_type=tv"/>
-							<param name="widget_header4" value="Beliebte Serien"/>
+							<param name="widget_header" value="Beliebte Serien"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5400"/>
 						</include>
@@ -216,9 +216,9 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=library_airingnext&amp;tmdb_type=tv&quot;,return)</onclick>
 							<visible>Library.HasContent(TVshows)</visible>
 			            </control>
-						<include content="WidgetListPoster7">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=library_airingnext&amp;tmdb_type=tv"/>
-							<param name="widget_header4" value="Nächste Episode (Bibliothek)"/>
+							<param name="widget_header" value="Nächste Episode (Bibliothek)"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5700"/>
 							<visible>Library.HasContent(TVshows)</visible>
@@ -243,9 +243,9 @@
 				            <onclick>ActivateWindow(Videos,videodb://tvshows/)</onclick>
 							<visible>Library.HasContent(TVshows)</visible>
 			            </control>
-						<include content="WidgetListPoster8">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="library://video/tvshows/titles.xml/"/>
-							<param name="widget_header4" value="Serien Bibliothek"/>
+							<param name="widget_header" value="Serien Bibliothek"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5800"/>
 							<visible>Library.HasContent(TVshows)</visible>

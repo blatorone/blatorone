@@ -113,7 +113,7 @@
 				
 						<control type="grouplist" id="9999">
 						<posx>0</posx>
-						<posy>-120</posy>
+						<posy>-75</posy>
 						<pagecontrol>2000</pagecontrol>
 						<onup>9014</onup>
 						<control type="togglebutton" id="9013">
@@ -136,9 +136,9 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=tv&quot;,return)</onclick>
 			            	<visible>!Container(5100).IsUpdating + integer.IsGreater(Container(5100).NumItems,0)</visible>
 						</control>
-						<include content="WidgetListPoster1">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=watch_providers&amp;tmdb_type=tv"/>
-							<param name="widget_header1" value="Anbieter"/>
+							<param name="widget_header" value="Anbieter"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5100"/>
 						</include>
@@ -173,7 +173,7 @@
 						-->
 						<control type="togglebutton" id="9015">
 				            <font>dialogTitle</font>
-				            <top>360</top>
+				           
 				            <include>Text_Movie_Series_width</include>
                 
 				            <align>left</align>
@@ -192,9 +192,9 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;tmdb_type=tv&quot;,return)</onclick>
 			            	<visible>!Container(5300).IsUpdating + integer.IsGreater(Container(5300).NumItems,0)</visible>
 						</control>
-                        <include content="WidgetListPoster3">
+                        <include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp;tmdb_type=tv"/>
-							<param name="widget_header3" value="Serien im Trend"/>
+							<param name="widget_header" value="Serien im Trend"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5300"/>
 						</include>
@@ -247,9 +247,9 @@
 							<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_nextepisodes&amp;tmdb_type=tv&quot;,return)</onclick>
 			            	<visible>!Container(5700).IsUpdating + integer.IsGreater(Container(5700).NumItems,0)</visible>
 						</control>
-						<include content="WidgetListPoster7">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_nextepisodes&amp;tmdb_type=tv"/>
-							<param name="widget_header4" value="Nächste Episode"/>
+							<param name="widget_header" value="Nächste Episode"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5700"/>
 						</include>
@@ -275,9 +275,9 @@
 						</control>
 
 							
-						<include content="WidgetListPoster8">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_ondeck&amp;tmdb_type=tv"/>
-							<param name="widget_header4" value="Deine Begonnene Episoden"/>
+							<param name="widget_header" value="Deine Begonnene Episoden"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5800"/>
 						</include>
@@ -302,9 +302,9 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_recommendations&amp;tmdb_type=tv&quot;,return)</onclick>
 			            	<visible>!Container(5900).IsUpdating + integer.IsGreater(Container(5900).NumItems,0)</visible>
 						</control>
-						<include content="WidgetListPoster9">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_recommendations&amp;tmdb_type=tv"/>
-							<param name="widget_header4" value="Empfohlende Serien"/>
+							<param name="widget_header" value="Empfohlende Serien"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5900"/>
 						</include>
@@ -330,9 +330,9 @@
 				            <onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=trakt_towatch&amp;tmdb_type=tv",return)</onclick>
 			            	<visible>!Container(6000).IsUpdating + integer.IsGreater(Container(6000).NumItems,0)</visible>
 						</control>
-						<include content="WidgetListPoster10">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_towatch&amp;tmdb_type=tv"/>
-							<param name="widget_header4" value="Serien noch zu Schauen"/>
+							<param name="widget_header" value="Serien noch zu Schauen"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6000"/>
 						</include>
@@ -357,9 +357,9 @@
 				            <onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=trakt_history&amp;tmdb_type=tv",return)</onclick>
 			            	<visible>!Container(6100).IsUpdating + integer.IsGreater(Container(6100).NumItems,0)</visible>
 						</control>
-						<include content="WidgetListPoster11">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_history&amp;tmdb_type=tv"/>
-							<param name="widget_header4" value="Serien Kürzlich gesehen"/>
+							<param name="widget_header" value="Serien Kürzlich gesehen"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6100"/>
 						</include>
@@ -385,9 +385,9 @@
 				            <onclick>ActivateWindow(10025,"plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Serien%20Beobachtungsliste&amp;tmdb_type=tv",return)</onclick>
 			            	<visible>!Container(6200).IsUpdating + integer.IsGreater(Container(6200).NumItems,0)</visible>
 						</control>
-						<include content="WidgetListPoster12">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_watchlist&amp;list_name=Serien%20Beobachtungsliste&amp;tmdb_type=tv"/>
-							<param name="widget_header4" value="Serien Beobachtungsliste"/>
+							<param name="widget_header" value="Serien Beobachtungsliste"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6200"/>
 						</include>
@@ -441,9 +441,9 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_favorites&amp;list_name=Serien%20Favoriten&amp;tmdb_type=tv&quot;,return)</onclick>
 			            	<visible>!Container(6400).IsUpdating + integer.IsGreater(Container(6400).NumItems,0)</visible>
 						</control>
-						<include content="WidgetListPoster14">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_favorites&amp;list_name=Serien%20Favoriten&amp;tmdb_type=tv"/>
-							<param name="widget_header4" value="Serien Favoriten"/>
+							<param name="widget_header" value="Serien Favoriten"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6400"/>
 						</include>
@@ -469,9 +469,9 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_userlist&amp;list_name=netflix-top-10&amp;list_slug=netflix-top-10&amp;plugin_category=netflix-top-10&amp;user_slug=danqbudz&quot;,return)</onclick>
 			            	<visible>!Container(6500).IsUpdating + integer.IsGreater(Container(6500).NumItems,0)</visible>
 						</control>
-						<include content="WidgetListPoster15">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_userlist&amp;list_name=netflix-top-10&amp;list_slug=netflix-top-10&amp;plugin_category=netflix-top-10&amp;user_slug=danqbudz"/>
-							<param name="widget_header12" value="Netflix Top 10"/>
+							<param name="widget_header" value="Netflix Top 10"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6500"/>
 						</include>
@@ -496,9 +496,9 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_userlist&amp;list_name=prime-video-top-10&amp;list_slug=prime-video-top-10&amp;plugin_category=prime-video-top-10&amp;user_slug=danqbudz&quot;,return)</onclick>
 			            	<visible>!Container(6600).IsUpdating + integer.IsGreater(Container(6600).NumItems,0)</visible>
 						</control>
-						<include content="WidgetListPoster16">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_userlist&amp;list_name=prime-video-top-10&amp;list_slug=prime-video-top-10&amp;plugin_category=prime-video-top-10&amp;user_slug=danqbudz"/>
-							<param name="widget_header13" value="Amazon Prime Top 10"/>
+							<param name="widget_header" value="Amazon Prime Top 10"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6600"/>
 						</include>
@@ -523,9 +523,9 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_userlist&amp;list_name=disney-plus-top-10&amp;list_slug=disney-plus-top-10&amp;plugin_category=disney-plus-top-10&amp;user_slug=danqbudz&quot;,return)</onclick>
 			            	<visible>!Container(6700).IsUpdating + integer.IsGreater(Container(6700).NumItems,0)</visible>
 						</control>
-						<include content="WidgetListPoster17">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_userlist&amp;list_name=disney-plus-top-10&amp;list_slug=disney-plus-top-10&amp;plugin_category=disney-plus-top-10&amp;user_slug=danqbudz"/>
-							<param name="widget_header14" value="Disney+ Top 10"/>
+							<param name="widget_header" value="Disney+ Top 10"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6700"/>
 						</include>
@@ -550,9 +550,9 @@
 				            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.themoviedb.helper/?info=trakt_userlist&amp;list_name=apple-tv-plus-top-10&amp;list_slug=apple-tv-plus-top-10&amp;plugin_category=apple-tv-plus-top-10&amp;user_slug=danqbudz&quot;,return)</onclick>
 			            	<visible>!Container(6800).IsUpdating + integer.IsGreater(Container(6800).NumItems,0)</visible>
 						</control>
-						<include content="WidgetListPoster18">
+						<include content="WidgetListPoster">
 							<param name="content_path" value="plugin://plugin.video.themoviedb.helper/?info=trakt_userlist&amp;list_name=apple-tv-plus-top-10&amp;list_slug=apple-tv-plus-top-10&amp;plugin_category=apple-tv-plus-top-10&amp;user_slug=danqbudz"/>
-							<param name="widget_header15" value="Apple TV Top 10"/>
+							<param name="widget_header" value="Apple TV Top 10"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6800"/>
 						</include>

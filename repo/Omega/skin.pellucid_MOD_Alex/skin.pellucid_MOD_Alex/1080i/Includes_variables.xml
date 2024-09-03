@@ -202,7 +202,7 @@
 	</variable>
     <variable name="SkinSettingOSDAutoCloseTime">
 		<value condition="!String.IsEmpty(Skin.String(OSDAutoCloseTime))">$INFO[Skin.String(OSDAutoCloseTime)]</value>
-		<value condition="String.IsEmpty(Skin.String(OSDAutoCloseTime))">4</value> <!-- Default value -->
+		<value condition="String.IsEmpty(Skin.String(OSDAutoCloseTime))">10</value> <!-- Default value -->
 	</variable>
 
 	<variable name="buttonname">
