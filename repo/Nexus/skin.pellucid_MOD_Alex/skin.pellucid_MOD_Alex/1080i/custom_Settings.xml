@@ -259,7 +259,7 @@
                     <selected>Skin.HasSetting(Show Android Apps)</selected>
                 </control>
                 <control type="radiobutton" id="3">
-                    <visible>Container(8000).Hasfocus(1) + System.Platform.Android + Skin.Togglesetting(Show Android Apps)</visible>
+                    <visible>Container(8000).Hasfocus(1) + System.Platform.Android + Skin.HasSetting(Show Android Apps)</visible>
                     <description>Enable Youtube</description>
                     <width>14-col</width>
                     <label>31255</label>
@@ -267,7 +267,7 @@
                     <selected>Skin.HasSetting(Youtube)</selected>
                 </control>
                 <control type="radiobutton" id="4">
-                    <visible>Container(8000).Hasfocus(1) + System.Platform.Android + Skin.Togglesetting(Show Android Apps)</visible>
+                    <visible>Container(8000).Hasfocus(1) + System.Platform.Android + Skin.HasSetting(Show Android Apps)</visible>
                     <description>Enable SmartTube</description>
                     <width>14-col</width>
                     <label>31256</label>
