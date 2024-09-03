@@ -1616,7 +1616,7 @@
 					<top>-10</top>
 					<width>290</width>
 					<height>415</height>
-					<texture>masks/discsurface.png</texture>
+					<texture>masks/discsurface50%.png</texture>
 					<bordertexture border="21" infill="false">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>
@@ -1625,7 +1625,7 @@
 					<top>-10</top>
 					<width>290</width>
 					<height>415</height>
-					<texture colordiffuse="button_focus">colors/grey.png</texture>
+					<texture colordiffuse="grey">masks/discsurface50%.png</texture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
 					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
@@ -1635,7 +1635,7 @@
 					<top>244</top>
 					<width>242</width>
 					<height>120</height>
-					<font>font27</font>
+					<font>dialogTitle</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -1667,7 +1667,7 @@
 					
 					<width>290</width>
 					<height>415</height>
-					<texture colordiffuse="button_focus">colors/grey.png</texture>
+					<texture colordiffuse="grey">masks/discsurface50%.png</texture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
 					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
@@ -1756,7 +1756,7 @@
 					<top>-10</top>
 					<width>290</width>
 					<height>415</height>
-					<texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
+					<texture colordiffuse="$VAR[highlight]">masks/discsurface50%.png</texture>
 					<bordertexture border="15" infill="false" colordiffuse="$VAR[highlight]">shadow.png</bordertexture>
 					<bordersize>15</bordersize>
 				</control>
@@ -1765,20 +1765,21 @@
 					<top>-10</top>
 					<width>290</width>
 					<height>415</height>
-					<texture colordiffuse="button_focus">colors/grey.png</texture>
+					<texture colordiffuse="grey">masks/discurface50%.png</texture>
 					<bordersize>15</bordersize>
 					<visible>$PARAM[focused]</visible>
 					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 				</control>
 				<control type="textbox">
 					<left>40</left>
-					<top>244</top>
+					<top>250</top>
 					<width>242</width>
 					<height>120</height>
-					<font>font27</font>
+					<font>dialogTitle</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
+					<textcolor>$VAR[selected]</textcolor>
 					<autoscroll time="2000" delay="3000" repeat="5000">$PARAM[focused]</autoscroll>
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
@@ -1922,16 +1923,7 @@
 				<orientation>horizontal</orientation>
 				<itemlayout width="150" height="200">
 					
-				<control type="image">
-					<left>15</left>
-					<top>-10</top>
-					<width>142</width>
-					<height>225</height>
-					<texture colordiffuse="button_focus">colors/grey.png</texture>
-					<bordersize>20</bordersize>
-					<visible>$PARAM[focused]</visible>
-					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
-				</control>
+				
 				
 				<control type="image">
 					<left>24</left>
@@ -2150,16 +2142,7 @@
 				<orientation>horizontal</orientation>
 				<itemlayout width="150" height="200">
 					
-				<control type="image">
-					<left>15</left>
-					<top>-10</top>
-					<width>142</width>
-					<height>225</height>
-					<texture colordiffuse="button_focus">colors/grey.png</texture>
-					<bordersize>20</bordersize>
-					<visible>$PARAM[focused]</visible>
-					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
-				</control>
+				
 				
 				<control type="image">
 					<left>24</left>
