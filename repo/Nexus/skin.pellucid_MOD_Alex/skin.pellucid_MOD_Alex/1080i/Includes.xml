@@ -1677,7 +1677,7 @@
 					
 					<width>290</width>
 					<height>415</height>
-					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.art(poster)]</texture>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.icon]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
