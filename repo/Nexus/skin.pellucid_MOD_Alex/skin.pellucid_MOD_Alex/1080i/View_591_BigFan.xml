@@ -13,7 +13,7 @@
 		<viewtype label="$LOCALIZE[31318]">list</viewtype>
 		<preloaditems>2</preloaditems>
 		<scrolltime tween="quadratic">200</scrolltime>
-		<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+		<visible>$EXP[isAddonMovieOrTVshow]</visible>
 		<itemlayout width="1080" height="1920" />
 		<focusedlayout width="1080" height="1920">
 			<control type="group">

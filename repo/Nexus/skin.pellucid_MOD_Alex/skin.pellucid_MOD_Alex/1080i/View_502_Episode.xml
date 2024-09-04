@@ -55,7 +55,7 @@
                     <width>1025</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
-                    <font>itemTitle</font>
+                    <font>dialogTitle</font>
                     <textcolor>textActive</textcolor>
                     <selectedcolor>yellow</selectedcolor>
                     <shadowcolor></shadowcolor>
@@ -126,7 +126,7 @@
                     <width>1040</width>
                     <height>100</height>
                     <aligny>center</aligny>
-                    <font>itemTitle</font>
+                    <font>dialogTitle</font>
                     <textcolor>textActive</textcolor>
                     <selectedcolor>yellow</selectedcolor>
                     <shadowcolor></shadowcolor>
@@ -197,7 +197,7 @@
                     <width>14-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
-                    <font>itemTitle</font>
+                    <font>dialogTitle</font>
                     <textcolor>$VAR[Home]</textcolor>
                     <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
@@ -269,7 +269,7 @@
                     <width>1040</width>
                     <height>100</height>
                     <aligny>center</aligny>
-                    <font>itemTitle</font>
+                    <font>dialogTitle</font>
                     <textcolor>$VAR[Home]</textcolor>
                     <selectedcolor>yellow</selectedcolor>
                     <shadowcolor></shadowcolor>
@@ -320,7 +320,18 @@
 
 						</control>
                         </control>
-		<control type="image">
+		            <control type="image">
+						<visible>control.IsVisible(502) + String.IsEqual(Container.Viewmode,$LOCALIZE[20359])</visible>
+						<posx>1250</posx>
+						<posy>row-3-begin</posy>
+						<width>650</width>
+						<height>500</height>
+						<aspectratio>stretch</aspectratio>
+						<texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
+						<bordersize>0</bordersize>
+						<bordertexture border="0" infill="false" colordiffuse="$VAR[highlight]">shadow.png</bordertexture>
+					</control>
+                    <control type="image">
 						<visible>control.IsVisible(502) + String.IsEqual(Container.Viewmode,$LOCALIZE[20359])</visible>
 						<posx>1250</posx>
 						<posy>row-3-begin</posy>
@@ -329,7 +340,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="defaultposter.png">$INFO[listitem.icon]</texture>
 						<bordersize>6</bordersize>
-						<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
+						
 					</control>
                     <control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress) + control.IsVisible(502)</visible>
@@ -353,6 +364,17 @@
 							<textcolor>textActive</textcolor>
 							<label>$VAR[starRating]]</label>
 				</control>
+                        <control type="label">
+							<visible></visible>
+							<posx>1720</posx>
+							<posy>-40</posy>
+							<width>225</width>
+							<height>300</height>
+							<aligny>center</aligny>
+							<font>dialogTitle</font>
+							<textcolor>textActive</textcolor>
+							<label>$INFO[ListItem.Premiered]</label>
+				        </control>
 					<control type="group">
 					<control type="textbox">
 					<visible>control.IsVisible(502)</visible>

@@ -334,9 +334,9 @@
 					<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
-                        	<posx>31</posx>
-                        	<posy>429</posy>
-                        	<width>226</width>
+                        	<posx>20</posx>
+                        	<posy>432</posy>
+                        	<width>440</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -363,9 +363,9 @@
 					</control><control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
-                        	<posx>31</posx>
-                        	<posy>429</posy>
-                        	<width>226</width>
+                        	<posx>20</posx>
+                        	<posy>432</posy>
+                        	<width>440</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -399,9 +399,9 @@
 					<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
-                        	<posx>31</posx>
-                        	<posy>429</posy>
-                        	<width>226</width>
+                        	<posx>20</posx>
+                        	<posy>432</posy>
+                        	<width>440</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -426,9 +426,9 @@
 					<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
-                        	<posx>31</posx>
-                        	<posy>429</posy>
-                        	<width>226</width>
+                        	<posx>20</posx>
+                        	<posy>432</posy>
+                        	<width>440</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -438,7 +438,7 @@
 				<itemlayout height="270" width="480" condition="[Container.Content(movies) + Skin.HasSetting(Enable.MyFlix.MovieLandscape)] | [Container.Content(tvshows) + Skin.HasSetting(Enable.MyFlix.TVLandscape)]">
 					<include>FlixLandscape</include>
 					<control type="image">
-						<left>410</left>
+						<left>420</left>
 						<top>217</top>
 						<width>40</width>
 						<height>40</height>
@@ -458,9 +458,9 @@
 					<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
-                        	<posx>31</posx>
-                        	<posy>429</posy>
-                        	<width>226</width>
+                        	<posx>20</posx>
+                        	<posy>432</posy>
+                        	<width>440</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -481,9 +481,9 @@
 					<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
-                        	<posx>31</posx>
-                        	<posy>429</posy>
-                        	<width>226</width>
+                        	<posx>20</posx>
+                        	<posy>432</posy>
+                        	<width>440</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -493,7 +493,7 @@
 				<itemlayout height="270" width="480" condition="Container.Content(episodes)">
 					<include>FlixEpisodeThumb</include>
 					<control type="image">
-						<left>410</left>
+						<left>420</left>
 						<top>217</top>
 						<width>40</width>
 						<height>40</height>
@@ -512,9 +512,9 @@
 					<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
-                        	<posx>31</posx>
-                        	<posy>429</posy>
-                        	<width>226</width>
+                        	<posx>20</posx>
+                        	<posy>432</posy>
+                        	<width>440</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -524,7 +524,7 @@
 				<focusedlayout height="270" width="480" condition="Container.Content(episodes)">
 					<include>FlixEpisodeThumb</include>
 					<control type="image">
-						<left>410</left>
+						<left>420</left>
 						<top>217</top>
 						<width>40</width>
 						<height>40</height>
@@ -535,9 +535,9 @@
 					<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
-                        	<posx>31</posx>
-                        	<posy>429</posy>
-                        	<width>226</width>
+                        	<posx>20</posx>
+                        	<posy>432</posy>
+                        	<width>440</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -596,9 +596,9 @@
 		<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
-                        	<posx>31</posx>
-                        	<posy>429</posy>
-                        	<width>226</width>
+                        	<posx>20</posx>
+                        	<posy>432</posy>
+                        	<width>440</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -618,9 +618,9 @@
 		<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
-                        	<posx>31</posx>
-                        	<posy>429</posy>
-                        	<width>226</width>
+                        	<posx>20</posx>
+                        	<posy>432</posy>
+                        	<width>440</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -640,9 +640,9 @@
 		<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
-                        	<posx>31</posx>
-                        	<posy>429</posy>
-                        	<width>226</width>
+                        	<posx>20</posx>
+                        	<posy>432</posy>
+                        	<width>440</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -661,9 +661,9 @@
 		<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
-                        	<posx>31</posx>
-                        	<posy>429</posy>
-                        	<width>226</width>
+                        	<posx>20</posx>
+                        	<posy>432</posy>
+                        	<width>440</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>

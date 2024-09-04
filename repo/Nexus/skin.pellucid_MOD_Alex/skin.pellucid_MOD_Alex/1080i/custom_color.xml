@@ -1084,8 +1084,8 @@
 
             <control type="image">
                 	<visible>control.hasfocus(43)</visible>
-                    <posx>48%</posx>
-                    <posy>-10</posy>
+                    <posx>10%</posx>
+                    <posy>-112</posy>
                     <width>340</width>
                     <height>100</height>
                     <texture colordiffuse="overlay">colors/black.png</texture>
@@ -1094,8 +1094,8 @@
             </control>
             <control type="image">
                 	<visible>control.hasfocus(42)</visible>
-                    <posx>48%</posx>
-                    <posy>-10</posy>
+                    <posx>10%</posx>
+                    <posy>-112</posy>
                     <width>340</width>
                     <height>100</height>
                     <texture colordiffuse="overlay">colors/black.png</texture>
@@ -1104,106 +1104,201 @@
             </control>
             <control type="grouplist">
                 <visible>control.hasfocus(43)</visible>
-                <posx>49%</posx>
-                <posy>10</posy>
+                <posx>129</posx>
+                <posy>-90</posy>
                 <width>6-col-gutter</width>
                 <height>400</height>
-                <itemgap>10</itemgap>
+                <itemgap>68</itemgap>
                 <orientation>horizontal</orientation>
+                <control type="group">
+                <control type="image">
+                    <width>60</width>
+					<height>60</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture colordiffuse="black">masks/discsurface.png</texture>
+                    <bordertexture border="0" infill="false" colordiffuse="black">shadow.png</bordertexture>
+                    <bordersize>0</bordersize>
+                </control>
                     <control type="image">
                         <width>60</width>
-                        <height>60</height>
+					    <height>60</height>
                         <aspectratio>scale</aspectratio>
                         <texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
-                        <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
-                        <bordersize>3</bordersize>
+                        
+                        <bordersize>5</bordersize>
                 </control>
-                
+                </control>
+                <control type="group">
+                <control type="image">
+                        <width>60</width>
+					<height>60</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture colordiffuse="black">masks/discsurface.png</texture>
+                        <bordertexture border="0" infill="false" colordiffuse="black">shadow.png</bordertexture>
+                        <bordersize>0</bordersize>
+                </control>
                 <control type="image">
                     
                     <width>60</width>
-                    <height>60</height>
-                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
-                    <bordersize>3</bordersize>
+					<height>60</height>
+                    
+                    <bordersize>5</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                     <texture colordiffuse="$VAR[highlight_Shadow]">masks/discsurface.png</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
+                </control>
+                <control type="group">
                 <control type="image">
-                    <width>60</width>
-                    <height>60</height>
-                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
-                    <bordersize>3</bordersize>
+                        <width>60</width>
+					<height>60</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture colordiffuse="black">masks/discsurface.png</texture>
+                        <bordertexture border="0" infill="false" colordiffuse="black">shadow.png</bordertexture>
+                        <bordersize>0</bordersize>
+                </control>
+                <control type="image">
+                   <width>60</width>
+					<height>60</height>
+                    
+                    <bordersize>5</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                     <texture colordiffuse="$VAR[Home]">masks/discsurface.png</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
+                </control>
+                <control type="group">
+                <control type="image">
+                        <width>60</width>
+					<height>60</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture colordiffuse="black">masks/discsurface.png</texture>
+                        <bordertexture border="0" infill="false" colordiffuse="black">shadow.png</bordertexture>
+                        <bordersize>0</bordersize>
+                </control>
                 <control type="image">
                     <width>60</width>
-                    <height>60</height>
-                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
-                    <bordersize>3</bordersize>
+					<height>60</height>
+                    
+                    <bordersize>5</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                     <texture colordiffuse="$VAR[selected]">masks/discsurface.png</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
+                </control>
+                <control type="group">
                 <control type="image">
-                    <width>60</width>
-                    <height>60</height>
-                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
-                    <bordersize>3</bordersize>
+                        <width>60</width>
+					<height>60</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture colordiffuse="black">masks/discsurface.png</texture>
+                        <bordertexture border="0" infill="false" colordiffuse="black">shadow.png</bordertexture>
+                        <bordersize>0</bordersize>
+                </control>
+                <control type="image">
+                   <width>60</width>
+					<height>60</height>
+                    
+                    <bordersize>5</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                     <texture colordiffuse="$VAR[selected_box]">masks/discsurface.png</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
+                </control>
             </control>
             <control type="grouplist">
                 <visible>control.hasfocus(42)</visible>
-                <posx>49%</posx>
-                <posy>10</posy>
+                <posx>129</posx>
+                <posy>-90</posy>
                 <width>6-col-gutter</width>
                 <height>400</height>
-                <itemgap>10</itemgap>
+                <itemgap>68</itemgap>
                 <orientation>horizontal</orientation>
+                    <control type="group">
+                        <control type="image">
+                        <width>60</width>
+					    <height>60</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture colordiffuse="black">masks/discsurface.png</texture>
+                        <bordertexture border="0" infill="false" colordiffuse="black">shadow.png</bordertexture>
+                        <bordersize>0</bordersize>
+                    </control>
                     <control type="image">
                     <width>60</width>
                     <height>60</height>
-                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
-                    <bordersize>3</bordersize>
+                    <bordersize>5</bordersize>
                     <texture colordiffuse="Skin.String(highlight_color)">masks/discsurface.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
+                </control>
+                    <control type="group">
+                        <control type="image">
+                        <width>60</width>
+					    <height>60</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture colordiffuse="black">masks/discsurface.png</texture>
+                        <bordertexture border="0" infill="false" colordiffuse="black">shadow.png</bordertexture>
+                        <bordersize>0</bordersize>
+                    </control>
                 <control type="image">
                     <width>60</width>
                     <height>60</height>
-                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
-                    <bordersize>3</bordersize>
+                    <bordersize>5</bordersize>
                     <texture colordiffuse="Skin.String(highlight_Shadow_color)">masks/discsurface.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
+                </control>
+                    <control type="group">
+                        <control type="image">
+                        <width>60</width>
+					    <height>60</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture colordiffuse="black">masks/discsurface.png</texture>
+                        <bordertexture border="0" infill="false" colordiffuse="black">shadow.png</bordertexture>
+                        <bordersize>0</bordersize>
+                    </control>
                 <control type="image">
                     <width>60</width>
                     <height>60</height>
-                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
-                    <bordersize>3</bordersize>
+                    
+                    <bordersize>5</bordersize>
                     <texture colordiffuse="Skin.String(Home_color)">masks/discsurface.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
+                </control>
+                    <control type="group">
+                        <control type="image">
+                        <width>60</width>
+					    <height>60</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture colordiffuse="black">masks/discsurface.png</texture>
+                        <bordertexture border="0" infill="false" colordiffuse="black">shadow.png</bordertexture>
+                        <bordersize>0</bordersize>
+                    </control>
                 <control type="image">
                     <width>60</width>
                     <height>60</height>
-                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
-                    <bordersize>3</bordersize>
+                    <bordersize>5</bordersize>
                     <texture colordiffuse="Skin.String(Selected_color)">masks/discsurface.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
+                </control>
+                    <control type="group">
+                        <control type="image">
+                        <width>60</width>
+					    <height>60</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture colordiffuse="black">masks/discsurface.png</texture>
+                        <bordertexture border="0" infill="false" colordiffuse="black">shadow.png</bordertexture>
+                        <bordersize>0</bordersize>
+                    </control>
                 <control type="image">
                     <width>60</width>
                     <height>60</height>
-                    <bordertexture border="3" infill="false" colordiffuse="black">Colors/border_frame.png</bordertexture>
-                    <bordersize>3</bordersize>
+                    <bordersize>5</bordersize>
                     <texture colordiffuse="Skin.String(Selected_box_color)">masks/discsurface.png</texture>
                     <aspectratio>stretch</aspectratio>
+                </control>
                 </control>
             </control>
             

@@ -309,9 +309,20 @@
 						<width>650</width>
 						<height>500</height>
 						<aspectratio>stretch</aspectratio>
+						<texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
+						<bordersize>0</bordersize>
+						<bordertexture border="0" infill="false" colordiffuse="$VAR[highlight]">shadow.png</bordertexture>
+					</control>
+                    <control type="image">
+						<visible>control.IsVisible(602) + String.IsEqual(Container.Viewmode,$LOCALIZE[31311])</visible>
+						<posx>1250</posx>
+						<posy>200</posy>
+						<width>650</width>
+						<height>500</height>
+						<aspectratio>stretch</aspectratio>
 						<texture fallback="defaultposter.png">$INFO[listitem.icon]</texture>
-						<bordersize>6</bordersize>
-						<bordertexture border="6" infill="false" colordiffuse="$VAR[highlight]">Colors/border_frame.png</bordertexture>
+						<bordersize>5</bordersize>
+						
 					</control>
                     <control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress) + control.IsVisible(602)</visible>
@@ -335,6 +346,17 @@
 							<textcolor>textActive</textcolor>
 							<label>$VAR[starRating]]</label>
 				</control>
+                 <control type="label">
+							<visible>control.isvisible(602)</visible>
+							<posx>1300</posx>
+							<posy>-20</posy>
+							<width>225</width>
+							<height>300</height>
+							<aligny>center</aligny>
+							<font>dialogTitle</font>
+							<textcolor>textActive</textcolor>
+							<label>$INFO[ListItem.Premiered]</label>
+				        </control>
 					<control type="group">
 					<control type="textbox">
 					<visible>control.IsVisible(602)</visible>

@@ -450,7 +450,7 @@
 								<label>[B]$INFO[ListItem.label][/B]</label>
 							</control>
 							<control type="label">
-								<visible>!String.IsEmpty(ListItem.Duration)</visible>
+								<visible></visible>
 								<width>1020</width>
 								<height>46</height>
 								<posy>45</posy>
@@ -458,7 +458,7 @@
 								<font>menuTitle2</font>
 								<scroll>true</scroll>
 								<textcolor>$VAR[Home]</textcolor>
-								<label>$LOCALIZE[180]: $VAR[MinsToHourDurationVar]       $LOCALIZE[31160]: $INFO[ListItem.EndTimeResume]       $LOCALIZE[20473]: $INFO[ListItem.Premiered]</label>
+								<label>$VAR[MinsToHourDurationVar]$VAR[EndTimeResumeVar]$VAR[premieredVar]</label>
 							</control>
 							<control type="label">
 								<visible>!Control.IsVisible(51)</visible>
@@ -1427,7 +1427,7 @@
         <include  condition="!Skin.HasSetting(Touch)">Widget_Touch_width2</include>
     </include>
     <include name="Widget_Touch_width1">
-        <width>1178</width>
+        <width>1218</width>
     </include>
     <include name="Widget_Touch_width2">
         <width>fullscreenWidth</width>
@@ -1441,7 +1441,7 @@
         <width>1800</width>
     </include>
     <include name="Text_Movie_Series_width2">
-        <width>1000</width>
+        <width>1500</width>
     </include>
 
 
@@ -1594,8 +1594,8 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="posy" value="70"/>
                 <param name="posy2" value="85"/>
-				<param name="posx" value="45"/>
-				<param name="posx2" value="60"/>
+				<param name="posx" value="50%"/>
+				<param name="posx2" value="50.8%"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				
@@ -1607,7 +1607,7 @@
 				<onclick condition="$PARAM[onclick_condition]">$PARAM[onclick_action]</onclick>
                 
 				<orientation>horizontal</orientation>
-				<itemlayout width="298" height="438">
+				<itemlayout width="300" height="450">
 
 					<control type="group">
 				<visible>String.IsEmpty(ListItem.Art(poster))</visible>
@@ -1617,7 +1617,7 @@
 					<width>290</width>
 					<height>415</height>
 					<texture>masks/discsurface50%.png</texture>
-					<bordertexture border="21" infill="false">overlays/shadow.png</bordertexture>
+					<bordertexture border="21" infill="false">shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>
 				<control type="image">
@@ -1660,7 +1660,7 @@
 					<width>290</width>
 					<height>415</height>
 					<texture>dialogs/dialog-bg-nobo.png</texture>
-					<bordertexture border="21" infill="false">overlays/shadow.png</bordertexture>
+					<bordertexture border="21" infill="false">shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 				</control>
 				<control type="image">
@@ -1747,7 +1747,7 @@
 					</control>
 					</control>
 				</itemlayout>
-				<focusedlayout width="292" height="438">
+				<focusedlayout width="300" height="450">
 				
 				<control type="group">
 				<visible>String.IsEmpty(ListItem.Art(poster))</visible>
@@ -1790,7 +1790,7 @@
 					<height>270</height>
 					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>scale</aspectratio>
-					<bordertexture border="15" infill="false" colordiffuse="$VAR[highlight]">overlays/shadow.png</bordertexture>
+					<bordertexture border="15" infill="false" colordiffuse="$VAR[highlight]">shadow.png</bordertexture>
 					<bordersize>15</bordersize>
 				</control>
 			</control>
@@ -1802,7 +1802,7 @@
 					<width>290</width>
 					<height>415</height>
 					<texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
-					<bordertexture border="0" infill="false" colordiffuse="$VAR[highlight]">overlays/shadow.png</bordertexture>
+					<bordertexture border="0" infill="false" colordiffuse="$VAR[highlight]">shadow.png</bordertexture>
 					<bordersize>0</bordersize>
 				</control>
 				<control type="image">
@@ -1881,7 +1881,7 @@
 				
 
 
-				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="130" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="50" browse="$PARAM[browse_mode]">$PARAM[content_path]</content>
 			</control>
             
 		</definition>
