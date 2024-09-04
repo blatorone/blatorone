@@ -24,6 +24,52 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="cubic" easing="out">600</scrolltime>
 				<itemlayout width="240" height="360">
+				<control type="group">
+					<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+				<control type="image">
+					<left>-15</left>
+					<top>-15</top>
+					<width>280</width>
+					<height>400</height>
+					<texture>masks/discsurface50%.png</texture>
+					<bordertexture border="21" infill="false">shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>-15</left>
+					<top>-15</top>
+					<width>280</width>
+						<height>400</height>
+					<texture colordiffuse="grey">masks/discsurface50%.png</texture>
+					<bordersize>20</bordersize>
+					<visible>$PARAM[focused]</visible>
+					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				</control>
+				
+				<control type="image">
+					<left>0</left>
+					<top>-1</top>
+					<width>250</width>
+					<height>250</height>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio>scale</aspectratio>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="textbox">
+					<left>10</left>
+					<top>225</top>
+					<width>222</width>
+					<height>120</height>
+					<font>buttonTitle</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					
+					<visible>!ListItem.IsParentFolder</visible>
+				</control>
+			</control>
+					<control type="group">
+					<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -137,10 +183,59 @@
 							<label></label>
 						</control>
 					</control>
+					</control>
 				</itemlayout>
 				
 				<focusedlayout width="190" height="300">
 					<control type="group">
+					<include>focusThumb</include>
+					<control type="group">
+					<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+				<control type="image">
+					<left>-15</left>
+					<top>-15</top>
+					<width>280</width>
+					<height>400</height>
+					<texture>masks/discsurface50%.png</texture>
+					<bordertexture border="21" infill="false">shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>-15</left>
+					<top>-15</top>
+					<width>280</width>
+					<height>400</height>
+					<texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
+					<bordersize>20</bordersize>
+					<visible>$PARAM[focused]</visible>
+					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				</control>
+				<control type="textbox">
+					<left>10</left>
+					<top>225</top>
+					<width>222</width>
+					<height>120</height>
+					<font>buttonTitle</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.label]</label>
+					<textcolor>$VAR[selected]</textcolor>
+					<autoscroll time="2000" delay="3000" repeat="5000">$PARAM[focused]</autoscroll>
+					<visible>!ListItem.IsParentFolder</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>-1</top>
+					<width>250</width>
+					<height>250</height>
+					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio>scale</aspectratio>
+					<bordersize>20</bordersize>
+				</control>
+			</control>
+
+						<control type="group">
+					<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
 						<control type="image">
 							<posx>0</posx>
 						<posy>0</posy>
@@ -263,6 +358,7 @@
 							<textcolor>textActive</textcolor>
 							<label></label>
 						</control>
+					</control>
 					</control>
 					</control>
 				</focusedlayout>
