@@ -408,7 +408,7 @@
 					<top>-10</top>
 					<width>310</width>
 					<height>475</height>
-					<texture colordiffuse="grey">masks/discsurface50%.png</texture>
+					<texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
 					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
@@ -581,7 +581,7 @@
 					<top>-10</top>
 					<width>310</width>
 					<height>475</height>
-					<texture colordiffuse="grey">masks/discsurface50%.png</texture>
+					<texture colordiffuse="$VAR[highlight]">masks/discsurface.png</texture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
 					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
