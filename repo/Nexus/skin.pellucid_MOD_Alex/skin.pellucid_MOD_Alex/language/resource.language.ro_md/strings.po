@@ -1,11 +1,11 @@
 # Kodi Media Center language file
-# Addon Name: Pellucid
-# Addon id: skin.pellucid
-# Addon Provider: chrisbevan
+# Addon Name: Pellucid MOD Blatorone
+# Addon id: skin.pellucid_MOD_Alex
+# Addon Provider: blatorone
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Skins\n"
-"Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
+"Report-Msgid-Bugs-To: blatorone.github"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
@@ -18,7 +18,7 @@ msgstr ""
 "n % 100 <= 19) ? 1 : 2);\n"
 
 msgctxt "Addon Summary"
-msgid "A skin for Kodi from theDeadmanInYossariansTent"
+msgid "A skin for Kodi from blatorone"
 msgstr ""
 
 msgctxt "Addon Description"

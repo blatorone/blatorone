@@ -3,7 +3,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<label>$LOCALIZE[31221]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31221</property>
@@ -20,7 +20,7 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<label>$LOCALIZE[31251]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31251</property>
@@ -37,7 +37,7 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<label>$LOCALIZE[137]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">137</property>
@@ -54,7 +54,7 @@
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
 			<label>$LOCALIZE[342]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">movies</property>
@@ -73,7 +73,7 @@
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
 			<label>$LOCALIZE[20343]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">tvshows</property>
@@ -92,7 +92,7 @@
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
 			<label>$LOCALIZE[342]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">movies--0</property>
@@ -109,7 +109,7 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<label>$LOCALIZE[20343]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">tvshows--0</property>
@@ -126,7 +126,7 @@
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<label>$LOCALIZE[31249]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>kodilogo.png</icon>
 			<thumb>$INFO[Listitem.thumb]</thumb>
 			<property name="labelID">31249</property>
@@ -142,8 +142,40 @@
 			</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
+			<label>film</label>
+			<label2>Benutzerdefinierter Eintrag</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">film</property>
+			<property name="defaultID" />
+			<onclick>activatewindow(1144)</onclick>
+			<property name="path">activatewindow(1144)</property>
+			<property name="list">activatewindow(1144)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">film</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">False</property>
+			</item>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
+			<label>serien</label>
+			<label2>Benutzerdefinierter Eintrag</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">serien</property>
+			<property name="defaultID" />
+			<onclick>activatewindow(1145)</onclick>
+			<property name="path">activatewindow(1145)</property>
+			<property name="list">activatewindow(1145)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">serien</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">False</property>
+			</item>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<label>$LOCALIZE[31250]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31250</property>
@@ -157,10 +189,10 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<label>$LOCALIZE[342]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">movies--1</property>
@@ -176,10 +208,10 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="13">
+			<property name="id">$NUMBER[13]</property>
 			<label>$LOCALIZE[20343]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">tvshows--1</property>
@@ -195,10 +227,10 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="14">
+			<property name="id">$NUMBER[14]</property>
 			<label>$LOCALIZE[3]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">videos</property>
@@ -212,10 +244,10 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 			</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="15">
+			<property name="id">$NUMBER[15]</property>
 			<label>$LOCALIZE[2]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">music</property>
@@ -232,10 +264,10 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 			</item>
-		<item id="14">
-			<property name="id">$NUMBER[14]</property>
+		<item id="16">
+			<property name="id">$NUMBER[16]</property>
 			<label>$LOCALIZE[2]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">music--0</property>
@@ -249,10 +281,10 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
-		<item id="15">
-			<property name="id">$NUMBER[15]</property>
+		<item id="17">
+			<property name="id">$NUMBER[17]</property>
 			<label>$LOCALIZE[31229]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31229</property>
@@ -266,10 +298,10 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
-		<item id="16">
-			<property name="id">$NUMBER[16]</property>
+		<item id="18">
+			<property name="id">$NUMBER[18]</property>
 			<label>$LOCALIZE[31088]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31088</property>
@@ -282,10 +314,10 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
-		<item id="17">
-			<property name="id">$NUMBER[17]</property>
+		<item id="19">
+			<property name="id">$NUMBER[19]</property>
 			<label>$LOCALIZE[31090]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31090</property>
@@ -298,10 +330,10 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
-		<item id="18">
-			<property name="id">$NUMBER[18]</property>
+		<item id="20">
+			<property name="id">$NUMBER[20]</property>
 			<label>$LOCALIZE[31232]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31232</property>
@@ -314,10 +346,10 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
-		<item id="19">
-			<property name="id">$NUMBER[19]</property>
+		<item id="21">
+			<property name="id">$NUMBER[21]</property>
 			<label>$LOCALIZE[12600]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">weather</property>
@@ -331,10 +363,10 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 			</item>
-		<item id="20">
-			<property name="id">$NUMBER[20]</property>
+		<item id="22">
+			<property name="id">$NUMBER[22]</property>
 			<label>$LOCALIZE[10002]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Gemeinsamer Menüeintrag</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">pictures</property>
@@ -537,7 +569,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultMusicVideos.png</icon>
@@ -554,7 +586,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -570,7 +602,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[1037]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddonVideo.png</icon>
@@ -586,7 +618,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -602,7 +634,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[15100]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -618,7 +650,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[1038]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultAddonMusic.png</icon>
@@ -634,7 +666,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">20</property>
+			<property name="mainmenuid">22</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -650,7 +682,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31136]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -668,7 +700,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31215]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -686,7 +718,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31112]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -704,7 +736,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31165]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -722,7 +754,7 @@
 			</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[342]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -747,7 +779,7 @@
 			</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[20343]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -772,7 +804,7 @@
 			</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31088]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -789,7 +821,7 @@
 			</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -806,7 +838,7 @@
 			</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -823,7 +855,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31136]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -841,7 +873,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31248]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -859,7 +891,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31031]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -877,7 +909,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31250]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -895,7 +927,7 @@
 			</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[133]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -915,7 +947,7 @@
 			</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[132]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -940,7 +972,7 @@
 			</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -959,7 +991,7 @@
 			</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -976,7 +1008,7 @@
 			</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -995,7 +1027,7 @@
 			</item>
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31090]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -1012,7 +1044,7 @@
 			</item>
 		<item id="11">
 			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -1029,7 +1061,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">23</property>
+			<property name="mainmenuid">25</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -1046,7 +1078,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">23</property>
+			<property name="mainmenuid">25</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -1063,7 +1095,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">24</property>
+			<property name="mainmenuid">26</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -1079,7 +1111,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">24</property>
+			<property name="mainmenuid">26</property>
 			<label>$LOCALIZE[31234]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -1095,7 +1127,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">25</property>
+			<property name="mainmenuid">27</property>
 			<label>$LOCALIZE[31296]</label>
 			<label2>Benutzerdefinierter Eintrag</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -1524,6 +1556,18 @@
 	<include name="skinshortcuts-group-alt-num-31249">
 		<description>No items</description>
 		</include>
+	<include name="skinshortcuts-group-film">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-alt-film">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-serien">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-alt-serien">
+		<description>No items</description>
+		</include>
 	<include name="skinshortcuts-group-num-31250">
 		<description>No items</description>
 		</include>
@@ -1545,7 +1589,7 @@
 	<include name="skinshortcuts-group-videos">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultMusicVideos.png</icon>
@@ -1562,7 +1606,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1578,7 +1622,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[1037]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddonVideo.png</icon>
@@ -1596,7 +1640,7 @@
 	<include name="skinshortcuts-group-alt-videos">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultMusicVideos.png</icon>
@@ -1613,7 +1657,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1629,7 +1673,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[1037]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddonVideo.png</icon>
@@ -1647,7 +1691,7 @@
 	<include name="skinshortcuts-group-music">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1663,7 +1707,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[15100]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1679,7 +1723,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[1038]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultAddonMusic.png</icon>
@@ -1697,7 +1741,7 @@
 	<include name="skinshortcuts-group-alt-music">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1713,7 +1757,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[15100]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1729,7 +1773,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[1038]</label>
 			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultAddonMusic.png</icon>
@@ -1783,7 +1827,7 @@
 	<include name="skinshortcuts-group-pictures">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">20</property>
+			<property name="mainmenuid">22</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -1801,7 +1845,7 @@
 	<include name="skinshortcuts-group-alt-pictures">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">20</property>
+			<property name="mainmenuid">22</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -1819,7 +1863,7 @@
 	<include name="skinshortcuts-group-videosubmenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31136]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -1837,7 +1881,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31215]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -1855,7 +1899,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31112]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -1873,7 +1917,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31165]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -1891,7 +1935,7 @@
 			</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[342]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -1916,7 +1960,7 @@
 			</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[20343]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -1941,7 +1985,7 @@
 			</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31088]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -1958,7 +2002,7 @@
 			</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -1975,7 +2019,7 @@
 			</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -1994,7 +2038,7 @@
 	<include name="skinshortcuts-group-alt-videosubmenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31136]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2012,7 +2056,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31215]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2030,7 +2074,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31112]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2048,7 +2092,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31165]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2066,7 +2110,7 @@
 			</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[342]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2091,7 +2135,7 @@
 			</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[20343]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2116,7 +2160,7 @@
 			</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[31088]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2133,7 +2177,7 @@
 			</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2150,7 +2194,7 @@
 			</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">21</property>
+			<property name="mainmenuid">23</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2169,7 +2213,7 @@
 	<include name="skinshortcuts-group-musicsubmenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31136]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2187,7 +2231,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31248]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2205,7 +2249,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31031]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2223,7 +2267,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31250]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2241,7 +2285,7 @@
 			</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[133]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2261,7 +2305,7 @@
 			</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[132]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2286,7 +2330,7 @@
 			</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2305,7 +2349,7 @@
 			</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2322,7 +2366,7 @@
 			</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2341,7 +2385,7 @@
 			</item>
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31090]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2358,7 +2402,7 @@
 			</item>
 		<item id="11">
 			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2377,7 +2421,7 @@
 	<include name="skinshortcuts-group-alt-musicsubmenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31136]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2395,7 +2439,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31248]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2413,7 +2457,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31031]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2431,7 +2475,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31250]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2449,7 +2493,7 @@
 			</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[133]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2469,7 +2513,7 @@
 			</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[132]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2494,7 +2538,7 @@
 			</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2513,7 +2557,7 @@
 			</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2530,7 +2574,7 @@
 			</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2549,7 +2593,7 @@
 			</item>
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[31090]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2566,7 +2610,7 @@
 			</item>
 		<item id="11">
 			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">22</property>
+			<property name="mainmenuid">24</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
@@ -2585,7 +2629,7 @@
 	<include name="skinshortcuts-group-picturessubmenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">23</property>
+			<property name="mainmenuid">25</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2602,7 +2646,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">23</property>
+			<property name="mainmenuid">25</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2621,7 +2665,7 @@
 	<include name="skinshortcuts-group-alt-picturessubmenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">23</property>
+			<property name="mainmenuid">25</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2638,7 +2682,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">23</property>
+			<property name="mainmenuid">25</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2657,7 +2701,7 @@
 	<include name="skinshortcuts-group-gamesubmenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">24</property>
+			<property name="mainmenuid">26</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2673,7 +2717,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">24</property>
+			<property name="mainmenuid">26</property>
 			<label>$LOCALIZE[31234]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2691,7 +2735,7 @@
 	<include name="skinshortcuts-group-alt-gamesubmenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">24</property>
+			<property name="mainmenuid">26</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2707,7 +2751,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">24</property>
+			<property name="mainmenuid">26</property>
 			<label>$LOCALIZE[31234]</label>
 			<label2>$ADDON[script.skinshortcuts 32020]</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2725,7 +2769,7 @@
 	<include name="skinshortcuts-group-extrashortcutmain">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">25</property>
+			<property name="mainmenuid">27</property>
 			<label>$LOCALIZE[31296]</label>
 			<label2>Benutzerdefinierter Eintrag</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -2743,7 +2787,7 @@
 	<include name="skinshortcuts-group-alt-extrashortcutmain">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">25</property>
+			<property name="mainmenuid">27</property>
 			<label>$LOCALIZE[31296]</label>
 			<label2>Benutzerdefinierter Eintrag</label2>
 			<icon>DefaultAddonPicture.png</icon>
