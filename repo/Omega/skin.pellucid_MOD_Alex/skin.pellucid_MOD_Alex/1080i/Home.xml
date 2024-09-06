@@ -87,10 +87,18 @@
 	                </focusedlayout>
 	                <content>
 	                    <item>
-	                        <description>Playlist</description>
-	                        <label2></label2>
+	                        <description>favourites/withouttrakt</description>
+	                        <visible>String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))</visible>
+							<label2></label2>
 	                        <thumb></thumb>
 	                        <onclick>activateWindow(FavouritesBrowser,return)</onclick>
+	                    </item>
+						<item>
+	                        <description>favourites/withtrakt</description>
+	                        <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))</visible>
+							<label2></label2>
+	                        <thumb></thumb>
+	                        <onclick>activateWindow(1114,return)</onclick>
 	                    </item>
 						<item>
 							<visible>!player.hasvideo + !player.hasaudio + !VideoPlayer.Content(LiveTV)</visible>

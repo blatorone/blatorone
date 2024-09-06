@@ -40,6 +40,7 @@
     <constant name="DepthOSD">0.40</constant>
 	<constant name="DepthOSD+">0.44</constant>
     <include file="MyVideoNav"/>
+	
 
     
 
@@ -250,7 +251,7 @@
 	<include name="pageHeader">
         
 		<control type="group">
-        <visible>Control.IsVisible(50) + !window.isactive(1130) | Control.IsVisible(502) + !window.isactive(1130) | Control.IsVisible(509) + !window.isactive(1130) | Control.IsVisible(504) + !window.isactive(1130) | Control.IsVisible(602) + !window.isactive(1130)</visible>
+        <visible>Control.IsVisible(50) + !window.isactive(1130) | Control.IsVisible(502) + !window.isactive(1130) | Control.IsVisible(509) + !window.isactive(1130) | Control.IsVisible(504) + !window.isactive(1130) | Control.IsVisible(602) + !window.isactive(1130) | window.isactive(1114)</visible>
 			<posx>col-1-begin</posx>
             <posy>row-2-begin</posy>
 			<!--title-->

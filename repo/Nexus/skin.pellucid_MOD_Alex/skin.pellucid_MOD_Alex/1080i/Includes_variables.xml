@@ -32,6 +32,8 @@
 		<value condition="Window.isactive(pictures)">$LOCALIZE[31056]</value>
 		<value condition="Window.isactive(games)">$LOCALIZE[31232] [LOWERCASE][COLOR $VAR[highlight]]$INFO[container.foldername][/COLOR][/LOWERCASE]</value>
 		<value condition="Window.isactive(10060)">$LOCALIZE[1036]</value>
+		<value condition="Window.isactive(1114)">[COLOR $VAR[Home]]$LOCALIZE[10134][/COLOR]</value>
+
 	</variable>
     <variable name="listSubTitle">
         <value condition="Window.isactive(Videos)">$INFO[Container.NumAllItems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
@@ -45,6 +47,9 @@
 		<value condition="Window.isactive(musicplaylist) | Window.isactive(videoplaylist)">$INFO[container.NumAllItems,, $LOCALIZE[31014]]</value>
 		<value condition="Window.isactive(pictures) + Integer.IsGreater(container.Numitems,0)">$INFO[container.NumAllItems,, $LOCALIZE[31014]]</value>
 		<value condition="Window.isactive(10060)">$INFO[container.NumAllItems,, $LOCALIZE[31014]]</value>
+		<value condition="Window.isactive(1114) + control.hasfocus(5100) | Window.isactive(1114) +  control.hasfocus(9013)">[COLOR $VAR[Home]]$INFO[container(5100).NumAllItems,, $LOCALIZE[31145]][/COLOR]</value>
+		<value condition="Window.isactive(1114) + control.hasfocus(5300) | Window.isactive(1114) +  control.hasfocus(9015)">[COLOR $VAR[Home]]$INFO[container(5300).NumAllItems,, $LOCALIZE[31145]][/COLOR]</value>
+		<value condition="Window.isactive(1114) + control.hasfocus(5700) | Window.isactive(1114) +  control.hasfocus(9017)">[COLOR $VAR[Home]]$INFO[container(5700).NumAllItems,, $LOCALIZE[31145]][/COLOR]</value>
 	</variable>
     <!--list view item detail / subheader-->
     <variable name="itemDetail">
