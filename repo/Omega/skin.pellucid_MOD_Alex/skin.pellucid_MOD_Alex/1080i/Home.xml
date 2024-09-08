@@ -267,6 +267,7 @@
 		           <aspectratio>stretch</aspectratio>
 		       </control>
 				<control type="multiimage">
+					<visible>String.IsEmpty(Skin.String(homeBackgroundimage))</visible>
 					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
 					<include>dimensionsFullscreen</include>
 					<imagepath>$VAR[homeBackgroundLocation]</imagepath>
@@ -277,6 +278,13 @@
 					<loop>yes</loop>
 					<aspectratio>scale</aspectratio>
 					<colordiffuse>99ffffff</colordiffuse>
+				</control>
+				<control type="image">
+					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+					<include>dimensionsFullscreen</include>
+					<texture>$VAR[homeBackgroundLocation]</texture>
+					<fadetime>200</fadetime>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
 					<include>dimensionsFullscreen</include>
@@ -801,6 +809,7 @@
 					<shadowcolor>44000000</shadowcolor>
 					<label>$INFO[System.Date(DDD)]  [B]$INFO[System.Date(dd)][/B]  $INFO[System.Date(MMM)]</label>
 				</control>
+				
 				<control type="multiimage">
             		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons)</visible>
 					<posx>1000</posx>
@@ -808,6 +817,22 @@
             		<width>200</width>
             		<height>200</height>
 					<imagepath>$VAR[WeatherIconsPathVar]$INFO[Weather.FanartCode]$VAR[WeatherIconsExtVar]</imagepath>
+					<timeperimage>70</timeperimage>
+					<fadetime>1</fadetime>
+					<pauseatend></pauseatend>
+					<randomize>false</randomize>
+					<loop>yes</loop>
+					<aspectratio>scale</aspectratio>
+        		</control>
+				
+				<control type="image">
+            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons)</visible>
+					<posx>1000</posx>
+            		<posy>-200</posy>
+            		<width>200</width>
+            		<height>200</height>
+					
+					<texture>$VAR[WeatherIconsPathVar]$INFO[Weather.FanartCode]$VAR[WeatherIconsExtVar]</texture>
 					<timeperimage>70</timeperimage>
 					<fadetime>1</fadetime>
 					<pauseatend></pauseatend>

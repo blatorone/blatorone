@@ -6,6 +6,7 @@
         <!--background-->
         <include>globalBackground</include>
         <control type="multiimage">
+            <visible>String.IsEmpty(Skin.String(SettingsCategoryBackgroundimage))</visible>
 			<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
 			<include>dimensionsFullscreen</include>
 			<imagepath>$VAR[SettingsCategoryBackgroundLocation]</imagepath>
@@ -17,6 +18,13 @@
 			<aspectratio>scale</aspectratio>
 			<colordiffuse>99ffffff</colordiffuse>
 		</control>
+        <control type="image">
+					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+					<include>dimensionsFullscreen</include>
+					<texture>$VAR[SettingsCategoryBackgroundLocation]</texture>
+					<fadetime>200</fadetime>
+					<aspectratio>keep</aspectratio>
+				</control>
         <!--Battery Level-->
         <include>Battery</include>
         <include>Backbutton</include>

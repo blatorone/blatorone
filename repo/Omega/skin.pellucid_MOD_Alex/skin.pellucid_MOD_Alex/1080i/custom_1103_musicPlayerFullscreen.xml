@@ -13,12 +13,27 @@
 			<include>fadeInOut</include>
 			<control type="group">
 				<!--art-->
+				
 				<control type="multiimage">
-					<visible>!Visualisation.Enabled</visible>
+					<visible>!Visualisation.Enabled + String.IsEmpty(Skin.String(musicfullscreenBackgroundimage))</visible>
+					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
 					<include>dimensionsFullscreen</include>
 					<imagepath>$VAR[musicfullscreenBackgroundLocation]</imagepath>
+					<timeperimage>45000</timeperimage>
+					<fadetime>200</fadetime>
+					<pauseatend>10000</pauseatend>
+					<randomize>true</randomize>
+					<loop>yes</loop>
 					<aspectratio>scale</aspectratio>
 					<colordiffuse>99ffffff</colordiffuse>
+				</control>
+				 <control type="image">
+				 	<visible>!Visualisation.Enabled</visible>
+					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+					<include>dimensionsFullscreen</include>
+					<texture>$VAR[musicfullscreenBackgroundLocation]</texture>
+					<fadetime>200</fadetime>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<!--Battery level-->
 				<include>Battery</include>

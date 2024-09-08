@@ -5,6 +5,7 @@
     <controls>
         <include>globalBackground</include>
         <control type="multiimage">
+            <visible>String.IsEmpty(Skin.String(DialogAddonInfoBackgroundimage))</visible>
 			<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
 			<include>dimensionsFullscreen</include>
 			<imagepath>$VAR[DialogAddonInfoBackgroundLocation]</imagepath>
@@ -16,6 +17,13 @@
 			<aspectratio>scale</aspectratio>
 			<colordiffuse>99ffffff</colordiffuse>
 		</control>
+        <control type="image">
+					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+					<include>dimensionsFullscreen</include>
+					<texture>$VAR[DialogAddonInfoBackgroundLocation]</texture>
+					<fadetime>200</fadetime>
+					<aspectratio>keep</aspectratio>
+				</control>
 		<!--mini window-->
 		<include>miniVideoPlayer</include>
         <!--Battery Level-->

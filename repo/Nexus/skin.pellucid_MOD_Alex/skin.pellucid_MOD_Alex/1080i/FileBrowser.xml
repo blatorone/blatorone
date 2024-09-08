@@ -7,6 +7,7 @@
         <!--background-->
         <include>globalBackground</include>
         <control type="multiimage">
+            <visible>String.IsEmpty(Skin.String(FileBrowserBackgroundimage))</visible>
 			<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
 			<include>dimensionsFullscreen</include>
 			<imagepath>$VAR[FileBrowserBackgroundLocation]</imagepath>
@@ -18,6 +19,13 @@
 			<aspectratio>scale</aspectratio>
 			<colordiffuse>99ffffff</colordiffuse>
 		</control>
+        <control type="image">
+					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+					<include>dimensionsFullscreen</include>
+					<texture>$VAR[FileBrowserBackgroundLocation]</texture>
+					<fadetime>200</fadetime>
+					<aspectratio>stretch</aspectratio>
+				</control>
         <!--Battery Level-->
         <include>Battery</include>
         <!--Backbutton touchscreen-->

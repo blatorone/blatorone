@@ -6,7 +6,8 @@
     <controls>
         <!--background-->
         <include>globalBackground</include>
-        <control type="multiimage">
+         <control type="multiimage">
+            <visible>String.IsEmpty(Skin.String(settingsBackgroundimage))</visible>
 			<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
 			<include>dimensionsFullscreen</include>
 			<imagepath>$VAR[settingsBackgroundLocation]</imagepath>
@@ -18,6 +19,13 @@
 			<aspectratio>scale</aspectratio>
 			<colordiffuse>99ffffff</colordiffuse>
 		</control>
+        <control type="image">
+					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+					<include>dimensionsFullscreen</include>
+					<texture>$VAR[settingsBackgroundLocation]</texture>
+					<fadetime>200</fadetime>
+					<aspectratio>keep</aspectratio>
+				</control>
         <!--Battery level-->
         <include>Battery</include>
          <!--Backbutton touchscreen-->
@@ -363,8 +371,9 @@
                     <description>Set home background image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
-                    <label2>$INFO[Skin.String(homeBackground)]</label2> 
-                    <onclick>Skin.SetPath(homeBackground)</onclick>
+                    <label2>$INFO[Skin.String(homeBackgroundpath)]</label2> 
+                    <onclick>Skin.SetPath(homeBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(homeBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="66">
@@ -372,8 +381,9 @@
                     <description>Set home background image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
-                    <label2>$INFO[Skin.String(homeBackground)]</label2>
-                    <onclick>Skin.SetImage(homeBackground)</onclick>
+                    <label2>$INFO[Skin.String(homeBackgroundimage)]</label2>
+                    <onclick>Skin.SetImage(homeBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(homeBackgroundpath)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="67">
@@ -381,7 +391,8 @@
                     <description>Reset home background image directory</description>
                     <width>14-col</width>
                     <label>31268</label>
-                    <onclick>Skin.Reset(homeBackground)</onclick>
+                    <onclick>Skin.Reset(homeBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(homeBackgroundpath)</onclick>
                     <textwidth>8-col</textwidth>
                 </control>
 
@@ -401,8 +412,9 @@
                     <description>Set settingsBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
-                    <label2>$INFO[Skin.String(settingsBackground)]</label2>
-                    <onclick>Skin.SetPath(settingsBackground)</onclick>
+                    <label2>$INFO[Skin.String(settingsBackgroundpath)]</label2>
+                    <onclick>Skin.SetPath(settingsBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(settingsBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="70">
@@ -410,8 +422,9 @@
                     <description>Set settingsBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
-                    <label2>$INFO[Skin.String(settingsBackground)]</label2>
-                    <onclick>Skin.SetImage(settingsBackground)</onclick>
+                    <label2>$INFO[Skin.String(settingsBackgroundimage)]</label2>
+                    <onclick>Skin.SetImage(settingsBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(settingsBackgroundpath)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="71">
@@ -419,7 +432,8 @@
                     <description>Reset settingsBackground image directory</description>
                     <width>14-col</width>
                     <label>31268</label>
-                    <onclick>Skin.Reset(settingsBackground)</onclick>
+                    <onclick>Skin.Reset(settingsBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(settingsBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth>
                 </control>
 
@@ -439,8 +453,9 @@
                     <description>Set SettingsCategoryBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
-                    <label2>$INFO[Skin.String(SettingsCategoryBackground)]</label2>
-                    <onclick>Skin.SetPath(SettingsCategoryBackground)</onclick>
+                    <label2>$INFO[Skin.String(SettingsCategoryBackgroundpath)]</label2>
+                    <onclick>Skin.SetPath(SettingsCategoryBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(SettingsCategoryBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="74">
@@ -448,8 +463,9 @@
                     <description>Set SettingsCategoryBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
-                    <label2>$INFO[Skin.String(SettingsCategoryBackground)]</label2>
-                    <onclick>Skin.SetImage(SettingsCategoryBackground)</onclick>
+                    <label2>$INFO[Skin.String(SettingsCategoryBackgroundimage)]</label2>
+                    <onclick>Skin.SetImage(SettingsCategoryBackgroundimage)</onclick>#
+                    <onclick>Skin.Reset(SettingsCategoryBackgroundpath)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="75">
@@ -457,7 +473,8 @@
                     <description>Reset SettingsCategoryBackground image directory</description>
                     <width>14-col</width>
                     <label>31268</label>
-                    <onclick>Skin.Reset(SettingsCategoryBackground)</onclick>
+                    <onclick>Skin.Reset(SettingsCategoryBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(SettingsCategoryBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth>
                 </control>
 
@@ -477,8 +494,9 @@
                     <description>Set DialogAddonSettingsBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
-                    <label2>$INFO[Skin.String(DialogAddonSettingsBackground)]</label2>
-                    <onclick>Skin.SetPath(DialogAddonSettingsBackground)</onclick>
+                    <label2>$INFO[Skin.String(DialogAddonSettingsBackgroundpath)]</label2>
+                    <onclick>Skin.SetPath(DialogAddonSettingsBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(DialogAddonSettingsBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="78">
@@ -486,8 +504,9 @@
                     <description>Set DialogAddonSettingsBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
-                    <label2>$INFO[Skin.String(DialogAddonSettingsBackground)]</label2>
-                    <onclick>Skin.SetImage(DialogAddonSettingsBackground)</onclick>
+                    <label2>$INFO[Skin.String(DialogAddonSettingsBackgroundimage)]</label2>
+                    <onclick>Skin.SetImage(DialogAddonSettingsBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(DialogAddonSettingsBackgroundpath)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="79">
@@ -495,7 +514,8 @@
                     <description>Reset DialogAddonSettingsBackground image directory</description>
                     <width>14-col</width>
                     <label>31268</label>
-                    <onclick>Skin.Reset(DialogAddonSettingsBackground)</onclick>
+                    <onclick>Skin.Reset(DialogAddonSettingsBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(DialogAddonSettingsBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth>
                 </control>
 
@@ -515,8 +535,9 @@
                     <description>Set FileBrowserBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
-                    <label2>$INFO[Skin.String(FileBrowserBackground)]</label2>
-                    <onclick>Skin.SetPath(FileBrowserBackground)</onclick>
+                    <label2>$INFO[Skin.String(FileBrowserBackgroundpath)]</label2>
+                    <onclick>Skin.SetPath(FileBrowserBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(FileBrowserBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="82">
@@ -524,8 +545,9 @@
                     <description>Set FileBrowserBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
-                    <label2>$INFO[Skin.String(FileBrowserBackground)]</label2>
-                    <onclick>Skin.SetImage(FileBrowserBackground)</onclick>
+                    <label2>$INFO[Skin.String(FileBrowserBackgroundimage)]</label2>
+                    <onclick>Skin.SetImage(FileBrowserBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(FileBrowserBackgroundpath)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="83">
@@ -533,7 +555,8 @@
                     <description>Reset FileBrwoserBackground image directory</description>
                     <width>14-col</width>
                     <label>31268</label>
-                    <onclick>Skin.Reset(FileBrowserBackground)</onclick>
+                    <onclick>Skin.Reset(FileBrowserBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(FileBrowserBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth>
                 </control>
 
@@ -553,8 +576,9 @@
                     <description>Set FileManagerBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
-                    <label2>$INFO[Skin.String(FileManagerBackground)]</label2>
-                    <onclick>Skin.SetPath(FileManagerBackground)</onclick>
+                    <label2>$INFO[Skin.String(FileManagerBackgroundpath)]</label2>
+                    <onclick>Skin.SetPath(FileManagerBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(FileManagerBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="86">
@@ -562,8 +586,9 @@
                     <description>Set FileManagerBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
-                    <label2>$INFO[Skin.String(FileManagerBackground)]</label2>
-                    <onclick>Skin.SetImage(FileManagerBackground)</onclick>
+                    <label2>$INFO[Skin.String(FileManagerBackgroundimage)]</label2>
+                    <onclick>Skin.SetImage(FileManagerBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(FileManagerBackgroundpath)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="87">
@@ -571,7 +596,8 @@
                     <description>Reset FileManagerBackground image directory</description>
                     <width>14-col</width>
                     <label>31268</label>
-                    <onclick>Skin.Reset(FileManagerBackground)</onclick>
+                    <onclick>Skin.Reset(FileManagerBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(FileManagerBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth>
                 </control>
 
@@ -591,8 +617,9 @@
                     <description>Set home background image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
-                    <label2>$INFO[Skin.String(SkinSettingsBackground)]</label2>
-                    <onclick>Skin.SetPath(SkinSettingsBackground)</onclick>
+                    <label2>$INFO[Skin.String(SkinSettingsBackgroundpath)]</label2>
+                    <onclick>Skin.SetPath(SkinSettingsBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(SkinSettingsBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="90">
@@ -600,8 +627,9 @@
                     <description>Set home background image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
-                    <label2>$INFO[Skin.String(SkinSettingsBackground)]</label2>
-                    <onclick>Skin.SetImage(SkinSettingsBackground)</onclick>
+                    <label2>$INFO[Skin.String(SkinSettingsBackgroundimage)]</label2>
+                    <onclick>Skin.SetImage(SkinSettingsBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(SkinSettingsBackgroundpath)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="91">
@@ -609,8 +637,8 @@
                     <description>Reset home background image directory</description>
                     <width>14-col</width>
                     <label>31268</label>
-                    <onclick>Skin.Reset(SkinSettingsBackground)</onclick>
-                    
+                    <onclick>Skin.Reset(SkinSettingsBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(SkinSettingsBackgroundimage)</onclick>
                 </control>
 
                 <control type="label" id="92">
@@ -629,8 +657,9 @@
                     <description>Set SettingsSystemInfoBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
-                    <label2>$INFO[Skin.String(SettingsSystemInfoBackground)]</label2>
-                    <onclick>Skin.SetPath(SettingsSystemInfoBackground)</onclick>
+                    <label2>$INFO[Skin.String(SettingsSystemInfoBackgroundpath)]</label2>
+                    <onclick>Skin.SetPath(SettingsSystemInfoBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(SettingsSystemInfoBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="94">
@@ -638,8 +667,9 @@
                     <description>Set SettingsSystemInfoBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
-                    <label2>$INFO[Skin.String(SettingsSystemInfoBackground)]</label2>
-                    <onclick>Skin.SetImage(SettingsSystemInfoBackground)</onclick>
+                    <label2>$INFO[Skin.String(SettingsSystemInfoBackgroundimage)]</label2>
+                    <onclick>Skin.SetImage(SettingsSystemInfoBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(SettingsSystemInfoBackgroundpath)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="95">
@@ -647,7 +677,8 @@
                     <description>Reset SettingsSystemInfoBackground image directory</description>
                     <width>14-col</width>
                     <label>31268</label>
-                    <onclick>Skin.Reset(SettingsSystemInfoBackground)</onclick>
+                    <onclick>Skin.Reset(SettingsSystemInfoBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(SettingsSystemInfoBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth>
                 </control>
 
@@ -667,8 +698,9 @@
                     <description>Set DialogAddonInfoBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
-                    <label2>$INFO[Skin.String(DialogAddonInfoBackground)]</label2>
-                    <onclick>Skin.SetPath(DialogAddonInfoBackground)</onclick>
+                    <label2>$INFO[Skin.String(DialogAddonInfoBackgroundpath)]</label2>
+                    <onclick>Skin.SetPath(DialogAddonInfoBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(DialogAddonInfoBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="98">
@@ -676,8 +708,9 @@
                     <description>Set DialogAddonInfoBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
-                    <label2>$INFO[Skin.String(DialogAddonInfoBackground)]</label2>
-                    <onclick>Skin.SetImage(DialogAddonInfoBackground)</onclick>
+                    <label2>$INFO[Skin.String(DialogAddonInfoBackgroundimage)]</label2>
+                    <onclick>Skin.SetImage(DialogAddonInfoBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(DialogAddonInfoBackgroundpath)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="99">
@@ -685,7 +718,8 @@
                     <description>Reset DialogAddonInfoBackground image directory</description>
                     <width>14-col</width>
                     <label>31268</label>
-                    <onclick>Skin.Reset(DialogAddonInfoBackground)</onclick>
+                    <onclick>Skin.Reset(DialogAddonInfoBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(DialogAddonInfoBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth>
                 </control>
 
@@ -705,8 +739,9 @@
                     <description>Set AddonBrowserBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
-                    <label2>$INFO[Skin.String(AddonBrowserBackground)]</label2>
-                    <onclick>Skin.SetPath(AddonBrowserBackground)</onclick>
+                    <label2>$INFO[Skin.String(AddonBrowserBackgroundpath)]</label2>
+                    <onclick>Skin.SetPath(AddonBrowserBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(AddonBrowserBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="102">
@@ -714,8 +749,9 @@
                     <description>Set AddonBrowserBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
-                    <label2>$INFO[Skin.String(AddonBrowserBackground)]</label2>
-                    <onclick>Skin.SetImage(AddonBrowserBackground)</onclick>
+                    <label2>$INFO[Skin.String(AddonBrowserBackgroundimage)]</label2>
+                    <onclick>Skin.SetImage(AddonBrowserBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(AddonBrowserBackgroundpath)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="103">
@@ -723,7 +759,8 @@
                     <description>Reset AddonBrowserBackground image directory</description>
                     <width>14-col</width>
                     <label>31268</label>
-                    <onclick>Skin.Reset(AddonBrowserBackground)</onclick>
+                    <onclick>Skin.Reset(AddonBrowserBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(AddonBrowserBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth>
                 </control>
 
@@ -807,8 +844,9 @@
                     <description>Set musicfullscreenBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
-                    <label2>$INFO[Skin.String(musicfullscreenBackground)]</label2>
-                    <onclick>Skin.SetPath(musicfullscreenBackground)</onclick>
+                    <label2>$INFO[Skin.String(musicfullscreenBackgroundpath)]</label2>
+                    <onclick>Skin.SetPath(musicfullscreenBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(musicfullscreenBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="106">
@@ -816,8 +854,9 @@
                     <description>Set musicfullscreenBackground image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
-                    <label2>$INFO[Skin.String(musicfullscreenBackground)]</label2>
-                    <onclick>Skin.SetImage(musicfullscreenBackground)</onclick>
+                    <label2>$INFO[Skin.String(musicfullscreenBackgroundimage)]</label2>
+                    <onclick>Skin.SetImage(musicfullscreenBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(musicfullscreenBackgroundpath)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="107">
@@ -825,7 +864,8 @@
                     <description>Reset musicfullscreenBackground image directory</description>
                     <width>14-col</width>
                     <label>31268</label>
-                    <onclick>Skin.Reset(musicfullscreenBackground)</onclick>
+                    <onclick>Skin.Reset(musicfullscreenBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(musicfullscreenBackgroundimage)</onclick>
                     <textwidth>8-col</textwidth>
                 </control>
 
@@ -846,8 +886,9 @@
                     <description>Set Background for all image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31267]</label>
-                    <label2>$INFO[Skin.String(all)]</label2>
-                    <onclick>Skin.SetPath(all)</onclick>
+                    <label2>$INFO[Skin.String(allpath)]</label2>
+                    <onclick>Skin.SetPath(allpath)</onclick>
+                    <onclick>Skin.Reset(allimage)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
                 <control type="button" id="110">
@@ -855,8 +896,9 @@
                     <description>Set Background for all image directory</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
-                    <label2>$INFO[Skin.String(all)]</label2>
-                    <onclick>Skin.SetImage(all)</onclick>
+                    <label2>$INFO[Skin.String(allimage)]</label2>
+                    <onclick>Skin.SetImage(allimage)</onclick>
+                    <onclick>Skin.Reset(allpath)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
 
@@ -876,20 +918,34 @@
                     <description>Reset home background image directory</description>
                     <width>14-col</width>
                     <label>10041</label>
-                    <onclick>Skin.Reset(homeBackground)</onclick>
-                    <onclick>Skin.Reset(settingsBackground)</onclick>
+                    <onclick>Skin.Reset(homeBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(settingsBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(SettingsCategoryBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(DialogAddonSettingsBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(FileBrowserBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(FileManagerBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(SkinSettingsBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(SettingsSystemInfoBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(DialogAddonInfoBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(AddonBrowserBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(MyProgramsBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(musicsBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(musicfullscreenBackgroundpath)</onclick>
+                    <onclick>Skin.Reset(allpath)</onclick>
+                    <onclick>Skin.Reset(homeBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(settingsBackgroundimage)</onclick>
                     <onclick>Skin.Reset(SettingsCategoryBackground)</onclick>
-                    <onclick>Skin.Reset(DialogAddonSettingsBackground)</onclick>
-                    <onclick>Skin.Reset(FileBrowserBackground)</onclick>
-                    <onclick>Skin.Reset(FileManagerBackground)</onclick>
-                    <onclick>Skin.Reset(SkinSettingsBackground)</onclick>
-                    <onclick>Skin.Reset(SettingsSystemInfoBackground)</onclick>
-                    <onclick>Skin.Reset(DialogAddonInfoBackground)</onclick>
-                    <onclick>Skin.Reset(AddonBrowserBackground)</onclick>
-                    <onclick>Skin.Reset(MyProgramsBackground)</onclick>
-                    <onclick>Skin.Reset(musicsBackground)</onclick>
-                    <onclick>Skin.Reset(musicfullscreenBackground)</onclick>
-                    <onclick>Skin.Reset(all)</onclick>
+                    <onclick>Skin.Reset(DialogAddonSettingsBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(FileBrowserBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(FileManagerBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(SkinSettingsBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(SettingsSystemInfoBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(DialogAddonInfoBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(AddonBrowserBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(MyProgramsBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(musicsBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(musicfullscreenBackgroundimage)</onclick>
+                    <onclick>Skin.Reset(allimage)</onclick>
                     <textwidth>8-col</textwidth>
                 </control>
                 

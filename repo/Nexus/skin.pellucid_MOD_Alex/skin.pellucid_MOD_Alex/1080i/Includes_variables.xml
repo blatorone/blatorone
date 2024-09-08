@@ -103,81 +103,107 @@
     </variable>
     <!--home background location-->
     <variable name="homeBackgroundLocation">
-        <value condition="!String.IsEmpty(Skin.String(homeBackground))">$INFO[Skin.String(homeBackground)]</value>
-        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
-        <value>special://skin/extras/homeBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(homeBackgroundpath))">$INFO[Skin.String(homeBackgroundpath)]</value>
+        <value condition="!String.IsEmpty(Skin.String(homeBackgroundimage))">$INFO[Skin.String(homeBackgroundimage)]</value>
+       <value condition="!String.IsEmpty(Skin.String(allpath))">$INFO[Skin.String(allpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
+        <value condition="String.IsEmpty(Skin.String(homeBackgroundpath)) + String.IsEmpty(Skin.String(homeBackgroundimage))">special://skin/extras/homeBackgrounds</value>
     </variable>
      <!--settings background location-->
     <variable name="settingsBackgroundLocation">
-        <value condition="!String.IsEmpty(Skin.String(settingsBackground))">$INFO[Skin.String(settingsBackground)]</value>
-        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
-        <value>special://skin/extras/homeBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(settingsBackgroundpath))">$INFO[Skin.String(settingsBackgroundpath)]</value>
+        <value condition="!String.IsEmpty(Skin.String(settingsBackgroundimage))">$INFO[Skin.String(settingsBackgroundimage)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allpath))">$INFO[Skin.String(allpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
+        <value condition="String.IsEmpty(Skin.String(settingsBackgroundpath)) + String.IsEmpty(Skin.String(settingsBackgroundimage))">special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--SettingsCategory background location-->
     <variable name="SettingsCategoryBackgroundLocation">
-        <value condition="!String.IsEmpty(Skin.String(SettingsCategoryBackground))">$INFO[Skin.String(SettingsCategoryBackground)]</value>
-        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
-        <value>special://skin/extras/homeBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(SettingsCategoryBackgroundpath))">$INFO[Skin.String(SettingsCategoryBackgroundpath)]</value>
+        <value condition="!String.IsEmpty(Skin.String(SettingsCategoryBackgroundimage))">$INFO[Skin.String(SettingsCategoryBackgroundimage)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allpath))">$INFO[Skin.String(allpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
+        <value condition="String.IsEmpty(Skin.String(SettingsCategoryBackgroundpath)) + String.IsEmpty(Skin.String(SettingsCategoryBackgroundimage))">special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--DialogAddonSettings background location-->
     <variable name="DialogAddonSettingsBackgroundLocation">
-        <value condition="!String.IsEmpty(Skin.String(DialogAddonSettingsBackground))">$INFO[Skin.String(DialogAddonSettingsBackground)]</value>
-        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
-        <value>special://skin/extras/homeBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(DialogAddonSettingsBackgroundpath))">$INFO[Skin.String(DialogAddonSettingsBackgroundpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(DialogAddonSettingsBackgroundimage))">$INFO[Skin.String(DialogAddonSettingsBackgroundimage)]</value>
+        <value condition="!String.IsEmpty(Skin.String(allpath))">$INFO[Skin.String(allpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
+        <value condition="String.IsEmpty(Skin.String(DialogAddonSettingsBackgroundpath)) + String.IsEmpty(Skin.String(DialogAddonSettingsBackgroundimage))">special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--FileBrowser background location-->
     <variable name="FileBrowserBackgroundLocation">
-        <value condition="!String.IsEmpty(Skin.String(FileBrowserBackground))">$INFO[Skin.String(FileBrowserBackground)]</value>
-        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
-        <value>special://skin/extras/homeBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(FileBrowserBackgroundpath))">$INFO[Skin.String(FileBrowserBackgroundpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(FileBrowserBackgroundimage))">$INFO[Skin.String(FileBrowserBackgroundimage)]</value>
+        <value condition="!String.IsEmpty(Skin.String(allpath))">$INFO[Skin.String(allpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
+        <value condition="String.IsEmpty(Skin.String(FileBrowserBackgroundpath)) + String.IsEmpty(Skin.String(FileBrowserBackgroundimage))">special://skin/extras/homeBackgrounds</value>
     </variable>
         <!--FileManager background location-->
     <variable name="FileManagerBackgroundLocation">
-        <value condition="!String.IsEmpty(Skin.String(FileManagerBackground))">$INFO[Skin.String(FileManagerBackground)]</value>
-        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
-        <value>special://skin/extras/homeBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(FileManagerBackgroundpath))">$INFO[Skin.String(FileManagerBackgroundpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(FileManagerBackgroundimage))">$INFO[Skin.String(FileManagerBackgroundimage)]</value>
+        <value condition="!String.IsEmpty(Skin.String(allpath))">$INFO[Skin.String(allpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
+        <value condition="String.IsEmpty(Skin.String(FileManagerBackgroundpath)) + String.IsEmpty(Skin.String(FileManagerBackgroundimage))">special://skin/extras/homeBackgrounds</value>
     </variable>
      <!--SkinSettings background location-->
     <variable name="SkinSettingsBackgroundLocation">
-        <value condition="!String.IsEmpty(Skin.String(SkinSettingsBackground))">$INFO[Skin.String(SkinSettingsBackground)]</value>
-        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
-        <value>special://skin/extras/homeBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(SkinSettingsBackgroundpath))">$INFO[Skin.String(SkinSettingsBackgroundpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(SkinSettingsBackgroundimage))">$INFO[Skin.String(SkinSettingsBackgroundimage)]</value>
+        <value condition="!String.IsEmpty(Skin.String(allpath))">$INFO[Skin.String(allpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
+        <value condition="String.IsEmpty(Skin.String(SkinSettingsBackgroundpath)) + String.IsEmpty(Skin.String(SkinSettingsBackgroundimage))">special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--Settingssysteminfo background location-->
     <variable name="SettingsSystemInfoBackgroundLocation">
-        <value condition="!String.IsEmpty(Skin.String(SettingsSystemInfoBackground))">$INFO[Skin.String(SettingsSystemInfoBackground)]</value>
-        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
-        <value>special://skin/extras/homeBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(SettingsSystemInfoBackgroundpath))">$INFO[Skin.String(SettingsSystemInfoBackgroundpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(SettingsSystemInfoBackgroundimage))">$INFO[Skin.String(SettingsSystemInfoBackgroundimage)]</value>
+        <value condition="!String.IsEmpty(Skin.String(allpath))">$INFO[Skin.String(allpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
+        <value condition="String.IsEmpty(Skin.String(SettingsSystemInfoBackgroundpath)) + String.IsEmpty(Skin.String(SettingsSystemInfoBackgroundimage))">special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--DialogAddonInfo background location-->
     <variable name="DialogAddonInfoBackgroundLocation">
-        <value condition="!String.IsEmpty(Skin.String(DialogAddonInfoBackground))">$INFO[Skin.String(DialogAddonInfoBackground)]</value>
-        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
-        <value>special://skin/extras/homeBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(DialogAddonInfoBackgroundpath))">$INFO[Skin.String(DialogAddonInfoBackgroundpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(DialogAddonInfoBackgroundimage))">$INFO[Skin.String(DialogAddonInfoBackgroundimage)]</value>
+        <value condition="!String.IsEmpty(Skin.String(allpath))">$INFO[Skin.String(allpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
+        <value condition="String.IsEmpty(Skin.String(DialogAddonInfoBackgroundpath)) + String.IsEmpty(Skin.String(DialogAddonInfoBackgroundimage))">special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--AddonBrowser background location-->
     <variable name="AddonBrowserBackgroundLocation">
-        <value condition="!String.IsEmpty(Skin.String(AddonBrowserBackground))">$INFO[Skin.String(AddonBrowserBackground)]</value>
-        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
-        <value>special://skin/extras/homeBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(AddonBrowserBackgroundpath))">$INFO[Skin.String(AddonBrowserBackgroundpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(AddonBrowserBackgroundimage))">$INFO[Skin.String(AddonBrowserBackgroundimage)]</value>
+        <value condition="!String.IsEmpty(Skin.String(allpath))">$INFO[Skin.String(allpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
+        <value condition="String.IsEmpty(Skin.String(AddonBrowserBackgroundpath)) + String.IsEmpty(Skin.String(AddonBrowserBackgroundimage))">special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--MyPrograms background location-->
     <variable name="MyProgramsBackgroundLocation">
-        <value condition="!String.IsEmpty(Skin.String(MyProgramsBackground))">$INFO[Skin.String(MyProgramsBackground)]</value>
-        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
-        <value>special://skin/extras/homeBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(MyProgramsBackgroundpath))">$INFO[Skin.String(MyProgramsBackgroundpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(MyProgramsBackgroundpath))">$INFO[Skin.String(MyProgramsBackgroundimage)]</value>
+        <value condition="!String.IsEmpty(Skin.String(allpath))">$INFO[Skin.String(allpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
+        <value condition="String.IsEmpty(Skin.String(MyProgramsBackgroundpath)) + String.IsEmpty(Skin.String(MyProgramsBackgroundimage))">special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--Music background location-->
     <variable name="musicBackgroundLocation">
-        <value condition="!String.IsEmpty(Skin.String(musicsBackground))">$INFO[Skin.String(musicBackground)]</value>
-        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
-        <value>special://skin/extras/homeBackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(musicsBackgroundpath))">$INFO[Skin.String(musicBackgroundpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(musicsBackgroundimage))">$INFO[Skin.String(musicBackgroundimage)]</value>
+        <value condition="!String.IsEmpty(Skin.String(allpath))">$INFO[Skin.String(allpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
+        <value condition="String.IsEmpty(Skin.String(musicBackgroundpath)) + String.IsEmpty(Skin.String(musicBackgroundimage))">special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--Music fullscreenbackground location-->
     <variable name="musicfullscreenBackgroundLocation">
-        <value condition="!String.IsEmpty(Skin.String(musicfullscreenBackground))">$INFO[Skin.String(musicfullscreenBackground)]</value>
-        <value condition="!String.IsEmpty(Skin.String(all))">$INFO[Skin.String(all)]</value>
-        <value>special://skin/extras/musicfullbackgrounds</value>
+        <value condition="!String.IsEmpty(Skin.String(musicfullscreenBackgroundpath))">$INFO[Skin.String(musicfullscreenBackgroundpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(musicfullscreenBackgroundimage))">$INFO[Skin.String(musicfullscreenBackgroundimage)]</value>
+        <value condition="!String.IsEmpty(Skin.String(allpath))">$INFO[Skin.String(allpath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
+        <value condition="String.IsEmpty(Skin.String(musicfullscreenBackgroundpath)) + String.IsEmpty(Skin.String(musicfullscreenBackgroundimage))">special://skin/extras/musicfullbackgrounds</value>
     </variable>
     
     <!--menu logos-->
@@ -349,7 +375,7 @@
 	<variable name="WeatherIconsExtVar">
 		<value condition="String.Contains(Skin.String(weathericons.path),animated)" />
 		<value condition="!String.IsEmpty(Skin.String(weathericons.ext))">$INFO[Skin.String(weathericons.ext)]</value>
-		<value>.png</value>
+		<value>.gif</value>
 	</variable>
 
     <variable name="Durationtiminmin">
