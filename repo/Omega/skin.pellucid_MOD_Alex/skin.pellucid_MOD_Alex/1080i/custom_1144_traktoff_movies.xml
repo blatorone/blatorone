@@ -28,7 +28,7 @@
                 	<height>400</height>
                 	<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
-				
+				 
            
 						<control type="togglebutton" id="9015">
 				            <font>dialogTitle</font>

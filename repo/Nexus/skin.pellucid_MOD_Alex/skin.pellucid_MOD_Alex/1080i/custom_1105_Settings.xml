@@ -464,7 +464,7 @@
                     <width>14-col</width>
                     <label>$LOCALIZE[31266]</label>
                     <label2>$INFO[Skin.String(SettingsCategoryBackgroundimage)]</label2>
-                    <onclick>Skin.SetImage(SettingsCategoryBackgroundimage)</onclick>#
+                    <onclick>Skin.SetImage(SettingsCategoryBackgroundimage)</onclick>
                     <onclick>Skin.Reset(SettingsCategoryBackgroundpath)</onclick>
                     <textwidth>8-col</textwidth> 
                 </control>
