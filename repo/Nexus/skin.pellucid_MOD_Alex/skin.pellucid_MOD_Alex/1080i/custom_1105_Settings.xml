@@ -290,6 +290,7 @@
                     <onclick>Skin.Togglesetting(weather icons)</onclick>
                     <selected>Skin.HasSetting(weather icons)</selected>
                 </control>
+                <!--entfernen bei gif-->
                 <control type="button" id="63">
 					<visible>Container(8000).Hasfocus(1) + $EXP[hasWeather] + Skin.HasSetting(weather icons)</visible>
 					<width>14-col</width>
@@ -298,6 +299,26 @@
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
                 </control>
+                <!-- neu hinzufügen bei gif
+                <control type="button" id="63">
+					<visible>Container(8000).Hasfocus(1) + $EXP[hasWeather] + Skin.HasSetting(weather icons) + Skin.HasSetting(Weather icons default)</visible>
+					<width>14-col</width>
+                    <label>- $LOCALIZE[31265]</label>
+					<label2>[COLOR $VAR[selected]]$INFO[Skin.String(weathericons.name)] [/COLOR]</label2>
+					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
+					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
+                </control>
+                -->
+                <!--   neu hinzugügen bei gif
+                <control type="togglebutton" id="119">
+                    <visible>Container(8000).Hasfocus(1) + $EXP[hasWeather] + Skin.HasSetting(weather icons)</visible>
+                    <description>Weather icons</description>
+                    <width>14-col</width>
+                    <label>$VAR[weatherbuttonskinicon]</label>
+                    <onclick>Skin.togglesetting(Weather icons default)</onclick>
+                    <selected>!Skin.HasSetting(Weather icons default)</selected>
+                </control>
+               -->
 
                 <!--PVR-->
                 

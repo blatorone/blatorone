@@ -1650,6 +1650,29 @@
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
+				
+				<control type="image">
+							<visible>!string.isempty(ListItem.Property(TotalEpisodes)) + !Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>245</posx>
+							<posy>367</posy>
+							<width>32</width>
+							<height>32</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>played-total.png</texture>
+							<colordiffuse>$VAR[Home]</colordiffuse>
+						</control>
+					<control type="label">
+							<visible>!string.isempty(ListItem.Property(TotalEpisodes)) + !Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>110</posx>
+							<posy>355</posy>
+							<width>100</width>
+							<height>50</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>smallstrong</font>
+							<textcolor>$VAR[Home]</textcolor>
+							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+						</control>
 			</control>
 
 				<control type="group">
@@ -1680,7 +1703,40 @@
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
-
+				
+						
+				<control type="image">
+							<visible>!string.isempty(ListItem.Property(TotalEpisodes)) + !Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>20</posx>
+							<posy>370</posy>
+							<width>250</width>
+							<height>25</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>masks/discsurface50%.png</texture>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
+						</control>
+						<control type="image">
+							<visible>!string.isempty(ListItem.Property(TotalEpisodes)) + !Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>230</posx>
+							<posy>367</posy>
+							<width>32</width>
+							<height>32</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>played-total.png</texture>
+							<colordiffuse>$VAR[Home]</colordiffuse>
+						</control>
+					<control type="label">
+							<visible>!string.isempty(ListItem.Property(TotalEpisodes)) + !Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>95</posx>
+							<posy>355</posy>
+							<width>100</width>
+							<height>50</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>smallstrong</font>
+							<textcolor>$VAR[Home]</textcolor>
+							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+						</control>
 
 				<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
@@ -1769,6 +1825,29 @@
 					<visible>$PARAM[focused]</visible>
 					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 				</control>
+				
+						<control type="image">
+							<visible>!string.isempty(ListItem.Property(TotalEpisodes)) + !Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>247</posx>
+							<posy>372</posy>
+							<width>32</width>
+							<height>32</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>played-total.png</texture>
+							<colordiffuse>$VAR[Home]</colordiffuse>
+						</control>
+					<control type="label">
+							<visible>!string.isempty(ListItem.Property(TotalEpisodes)) + !Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>110</posx>
+							<posy>360</posy>
+							<width>100</width>
+							<height>50</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>smallstrong</font>
+							<textcolor>black</textcolor>
+							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+						</control>
 				<control type="textbox">
 					<left>40</left>
 					<top>250</top>
@@ -1812,7 +1891,38 @@
 					<aspectratio>scale</aspectratio>
 					<bordersize>5</bordersize>
 				</control>
-
+				<control type="image">
+							<visible>!string.isempty(ListItem.Property(TotalEpisodes)) + !Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>0</posx>
+							<posy>388</posy>
+							<width>290</width>
+							<height>25</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>masks/discsurface.png</texture>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
+						</control>
+						<control type="image">
+							<visible>!string.isempty(ListItem.Property(TotalEpisodes)) + !Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>250</posx>
+							<posy>385</posy>
+							<width>32</width>
+							<height>32</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>played-total.png</texture>
+							<colordiffuse>$VAR[Home]</colordiffuse>
+						</control>
+					<control type="label">
+							<visible>!string.isempty(ListItem.Property(TotalEpisodes)) + !Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>95</posx>
+							<posy>373</posy>
+							<width>100</width>
+							<height>50</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>smallstrong</font>
+							<textcolor>black</textcolor>
+							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+						</control>
 
 				<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
@@ -2458,7 +2568,28 @@
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
-
+				<control type="image">
+							<visible>!Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>44</posx>
+							<posy>180</posy>
+							<width>103</width>
+							<height>25</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>masks/discsurface50%.png</texture>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
+						</control>
+					<control type="label">
+							<visible>!Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>45</posx>
+							<posy>168</posy>
+							<width>100</width>
+							<height>50</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>smallstrong</font>
+							<textcolor>black</textcolor>
+							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+						</control>
 
 				<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
@@ -2485,7 +2616,6 @@
 							<label></label>
 						</control>
 					</control>
-				
 					<control type="group">
 						<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
@@ -2521,6 +2651,7 @@
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
                         	<info>ListItem.PercentPlayed</info>
                     	</control>
+						
 					</control>
 
 
@@ -2561,7 +2692,40 @@
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
-                
+                <control type="image">
+							<visible>!Skin.HasSetting(Disable.totalepisodes)</visible>
+							<animation type="Focus">
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="125,130" />
+						</animation>
+						<animation type="Unfocus">
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="125,130" />
+						</animation>
+							<posx>44</posx>
+							<posy>180</posy>
+							<width>103</width>
+							<height>25</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>masks/discsurface.png</texture>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
+						</control>
+					<control type="label">
+							<animation type="Focus">
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="125,130" />
+						</animation>
+						<animation type="Unfocus">
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="125,130" />
+						</animation>
+							<visible>!Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>45</posx>
+							<posy>168</posy>
+							<width>100</width>
+							<height>50</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>smallstrong</font>
+							<textcolor>black</textcolor>
+							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+						</control>
 					
 				<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>

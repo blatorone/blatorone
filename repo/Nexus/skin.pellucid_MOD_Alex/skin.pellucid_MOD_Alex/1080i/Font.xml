@@ -76,6 +76,12 @@
             <linespacing>1.0</linespacing>
         </font>
         <font>
+            <name>verysmall</name>
+            <filename>roboto/regular.ttf</filename>
+            <size>20</size>
+            <linespacing>0.9</linespacing>
+        </font>
+        <font>
             <name>small</name>
             <filename>roboto/regular.ttf</filename>
             <size>30</size>
@@ -341,12 +347,19 @@
             <size>36</size>
             <linespacing>1.0</linespacing>
         </font>
+         <font>
+            <name>verysmall</name>
+            <filename>heebo/regular.ttf</filename>
+            <size>15</size>
+            <linespacing>0.9</linespacing>
+        </font>
         <font>
             <name>small</name>
             <filename>heebo/regular.ttf</filename>
             <size>30</size>
             <linespacing>0.9</linespacing>
         </font>
+       
         <font>
             <name>smallStrong</name>
             <filename>heebo/bold.ttf</filename>
@@ -616,6 +629,12 @@
             <filename>arial.ttf</filename>
             <size>36</size>
             <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>verysmall</name>
+            <filename>arial.ttf</filename>
+            <size>15</size>
+            <linespacing>0.9</linespacing>
         </font>
         <font>
             <name>small</name>

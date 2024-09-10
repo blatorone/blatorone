@@ -965,3 +965,8 @@ msgstr "Deaktiviere Prozessinfo"
 msgctxt "#31359"
 msgid "Auto Pause"
 msgstr "Automatische Pause"
+
+msgctxt "#31360"
+msgid "Skin default Weather icons"
+msgstr "Oberflächen Standard Wetter icons"
+

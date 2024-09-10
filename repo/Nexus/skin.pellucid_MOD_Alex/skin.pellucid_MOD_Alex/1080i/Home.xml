@@ -811,7 +811,7 @@
 				</control>
 				
 				<control type="multiimage">
-            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons)</visible>
+            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + !String.IsEmpty(Skin.String(weathericons.path)) | $EXP[hasWeather] + Skin.HasSetting(Weather icons) + !Skin.HasSetting(Weather icons default)</visible>
 					<posx>1000</posx>
             		<posy>-200</posy>
             		<width>200</width>
@@ -826,18 +826,13 @@
         		</control>
 				
 				<control type="image">
-            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons)</visible>
+            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + String.IsEmpty(Skin.String(weathericons.path)) + Skin.HasSetting(Weather icons default)</visible>
 					<posx>1000</posx>
             		<posy>-200</posy>
             		<width>200</width>
             		<height>200</height>
 					
 					<texture>$VAR[WeatherIconsPathVar]$INFO[Weather.FanartCode]$VAR[WeatherIconsExtVar]</texture>
-					<timeperimage>70</timeperimage>
-					<fadetime>1</fadetime>
-					<pauseatend></pauseatend>
-					<randomize>false</randomize>
-					<loop>yes</loop>
 					<aspectratio>scale</aspectratio>
         		</control>
 				<control type="label">

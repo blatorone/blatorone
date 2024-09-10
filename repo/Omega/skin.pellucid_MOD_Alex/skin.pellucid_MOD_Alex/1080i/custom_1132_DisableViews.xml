@@ -337,6 +337,20 @@
 					<onclick>Skin.toggleSetting(Disable.progress)</onclick>
 					<selected>Skin.HasSetting(Disable.progress)</selected>
 				</control>
+				<control type="radiobutton" id="1639">
+					<description>Disable total episodes </description>
+					<width>383</width>
+					<textwidth>383</textwidth>
+					<radiowidth>110</radiowidth>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[20161] $LOCALIZE[20360]</label>
+					<textureradioonfocus colordiffuse="$VAR[selected]">buttons/radio-button-on.png</textureradioonfocus>
+        			<textureradioonnofocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonnofocus>
+        			<textureradioofffocus colordiffuse="$VAR[selected]">buttons/radio-button-off.png</textureradioofffocus>
+        			<textureradiooffnofocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradiooffnofocus>
+					<onclick>Skin.toggleSetting(Disable.totalepisodes)</onclick>
+					<selected>!Skin.HasSetting(Disable.totalepisodes)</selected>
+				</control>
 				<control type="togglebutton" id="9013">
 				<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
 				<top>1022</top>

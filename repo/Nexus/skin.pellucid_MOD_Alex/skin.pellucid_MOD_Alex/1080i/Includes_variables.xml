@@ -363,12 +363,22 @@
         <value condition="!Skin.HasSetting(homemenuslide) + !Skin.HasSetting(homemenuside) + !Skin.HasSetting(homemenugrid)">[COLOR $VAR[selected]]$LOCALIZE[31262][/COLOR]</value>
 	</variable>
 
+	<variable name="weatherbuttonskinicon">
+		<value condition="Skin.HasSetting(Weather icons default)">[COLOR textDisabled]- $LOCALIZE[31360][/COLOR]</value>
+		<value condition="!Skin.HasSetting(Weather icons default)">[COLOR $VAR[selected]]- $LOCALIZE[31360][/COLOR]</value>
+	</variable>
+	<variable name="watchedepisode">
+		<value condition="!string.isempty(ListItem.Property(WatchedEpisodes))">$INFO[ListItem.Property(WatchedEpisodes)]</value>
+		<value condition="string.isempty(ListItem.Property(WatchedEpisodes))">0</value>
+	</variable>
+
+
     <variable name="PVRInfoPanelDateDurationLabel">
 		<value condition="!String.IsEmpty(ListItem.StartDate) + !String.IsEmpty(ListItem.StartTime)">[COLOR $VAR[highlight]]$LOCALIZE[552]:[/COLOR]$INFO[ListItem.StartDate] [CR][COLOR $VAR[highlight]]$LOCALIZE[19126]:[/COLOR]$INFO[ListItem.StartTime] [CR][COLOR $VAR[highlight]]$LOCALIZE[180]:[/COLOR]$INFO[ListItem.Duration] </value>
 		<value>[COLOR $VAR[highlight]]$LOCALIZE[552]:[/COLOR]$INFO[ListItem.Date][CR][COLOR $VAR[highlight]]$LOCALIZE[180]:[/COLOR]$INFO[ListItem.Duration]</value>
 	</variable>
-
-    <variable name="WeatherIconsPathVar">
+	<!--entfernen bei gif-->
+	 <variable name="WeatherIconsPathVar">
 		<value condition="!String.IsEmpty(Skin.String(weathericons.path))">$INFO[Skin.String(weathericons.path)]</value>
 		<value>resource://resource.images.weathericons.default/</value>
 	</variable> 
@@ -377,7 +387,19 @@
 		<value condition="!String.IsEmpty(Skin.String(weathericons.ext))">$INFO[Skin.String(weathericons.ext)]</value>
 		<value>.png</value>
 	</variable>
-
+	<!-- neu hinzufügen bei gif
+    <variable name="WeatherIconsPathVar">
+		<value condition="!String.IsEmpty(Skin.String(weathericons.path)) + Skin.HasSetting(Weather icons default)">$INFO[Skin.String(weathericons.path)]</value>
+		<value condition="Skin.HasSetting(Weather icons default)">resource://resource.images.weathericons.default/</value>
+		<value condition="!Skin.HasSetting(Weather icons default)">special://skin/extras/wetter_icons/</value>
+	</variable> 
+	<variable name="WeatherIconsExtVar">
+		<value condition="String.Contains(Skin.String(weathericons.path),animated) + Skin.HasSetting(Weather icons default)" />
+		<value condition="!String.IsEmpty(Skin.String(weathericons.ext)) + Skin.HasSetting(Weather icons default)">$INFO[Skin.String(weathericons.ext)]</value>
+		<value condition="!Skin.HasSetting(Weather icons default)">.gif</value>
+		<value>.png</value>
+	</variable>
+	-->
     <variable name="Durationtiminmin">
         <value condition="integer.isless(Listitem.duration,1)"></value>
         <value>$INFO[ListItem.duration(mins)] $LOCALIZE[12391]</value>
