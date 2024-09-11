@@ -957,12 +957,24 @@ msgstr ""
 
 msgctxt "#31357"
 msgid "Disable Rating Info"
-msgstr "Deaktiviere Rating"
+msgstr ""
 
 msgctxt "#31358"
 msgid "Disable Progressbar Info"
-msgstr "Deaktiviere Prozessinfo"
+msgstr ""
+
+msgctxt "#31359"
+msgid "Auto Pause"
+msgstr ""
 
 msgctxt "#31360"
 msgid "Skin default Weather icons"
+msgstr ""
+
+msgctxt "#31361"
+msgid "Show fanart"
+msgstr ""
+
+msgctxt "#31362"
+msgid "Cast not available"
 msgstr ""

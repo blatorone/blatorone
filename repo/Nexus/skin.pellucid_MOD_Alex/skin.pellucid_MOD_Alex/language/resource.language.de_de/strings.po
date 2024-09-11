@@ -970,3 +970,10 @@ msgctxt "#31360"
 msgid "Skin default Weather icons"
 msgstr "Oberflächen Standard Wetter icons"
 
+msgctxt "#31361"
+msgid "Show fanart"
+msgstr "Fanart anzeigen"
+
+msgctxt "#31362"
+msgid "Cast not available"
+msgstr "Besetzung nicht verfügbar"

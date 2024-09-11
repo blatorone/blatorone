@@ -476,11 +476,9 @@
 						<texturenofocus />
 						<textoffsetx>17</textoffsetx>
 						<include>ButtonInfoDialogsCommonValues</include>
-						<label2></label2>
-						<onclick>SetProperty(TextViewerHeader,$ESCINFO[Container(10051).ListItem.Label,[B],[/B]],Home)</onclick>
-						<onclick>SetProperty(TextViewerSubHeader,$ESCINFO[Container(10051).ListItem.Tagline],Home)</onclick>
-						<onclick>SetProperty(TextViewerContent,$ESCINFO[Container(10051).ListItem.Plot],Home)</onclick>
-						<onclick>ActivateWindow(1140)</onclick>
+						<label2></label2>#
+						<onclick>RunScript(plugin.video.themoviedb.helper,add_path=$INFO[ListItem.FolderPath],call_auto=1190)</onclick>
+						<onclick>RunScript(plugin.video.themoviedb.helper,add_query=$INFO[ListItem.Label],type=person,call_auto=1190)</onclick>
 						
 					</control>
 					<control type="togglebutton" id="900">

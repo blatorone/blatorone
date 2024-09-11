@@ -1715,6 +1715,17 @@
 							<texture>masks/discsurface50%.png</texture>
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
+						
+						<control type="image">
+							<visible>!string.isempty(ListItem.Property(TotalEpisodes)) + !Skin.HasSetting(Disable.totalepisodes)</visible>
+							<posx>20</posx>
+							<posy>370</posy>
+							<width>250</width>
+							<height>25</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>masks/discsurface50%.png</texture>
+							<colordiffuse>$VAR[highlight]</colordiffuse>
+						</control>
 						<control type="image">
 							<visible>!string.isempty(ListItem.Property(TotalEpisodes)) + !Skin.HasSetting(Disable.totalepisodes)</visible>
 							<posx>230</posx>
@@ -1725,7 +1736,7 @@
 							<texture>played-total.png</texture>
 							<colordiffuse>$VAR[Home]</colordiffuse>
 						</control>
-					<control type="label">
+						<control type="label">
 							<visible>!string.isempty(ListItem.Property(TotalEpisodes)) + !Skin.HasSetting(Disable.totalepisodes)</visible>
 							<posx>95</posx>
 							<posy>355</posy>
@@ -1736,6 +1747,19 @@
 							<font>smallstrong</font>
 							<textcolor>$VAR[Home]</textcolor>
 							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+						</control>
+					<control type="textbox">
+							<visible>string.isempty(ListItem.status)</visible>
+							<posx>25</posx>
+							<posy>50</posy>
+							<width>250</width>
+							<height>300</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>largeTitle2</font>
+							<wrapmultiline>true</wrapmultiline>
+							<textcolor>red</textcolor>
+							<label>Noch nicht released</label>
 						</control>
 
 				<control type="group">
@@ -1923,7 +1947,20 @@
 							<textcolor>black</textcolor>
 							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
 						</control>
-
+						<control type="textbox">
+							<include>focusThumb</include>
+							<visible>string.isempty(ListItem.status)</visible>
+							<posx>25</posx>
+							<posy>50</posy>
+							<width>250</width>
+							<height>300</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>largeTitle2</font>
+							<wrapmultiline>true</wrapmultiline>
+							<textcolor>red</textcolor>
+							<label>Noch nicht released</label>
+						</control>
 				<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 						
@@ -2349,7 +2386,20 @@
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
-
+				<control type="textbox">
+							
+							<visible>string.isempty(ListItem.status)</visible>
+							<posx>35</posx>
+							<posy>-35</posy>
+							<width>120</width>
+							<height>300</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>Title</font>
+							<wrapmultiline>true</wrapmultiline>
+							<textcolor>red</textcolor>
+							<label>[B]No released[/B]</label>
+						</control>
 				<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 						<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
@@ -2445,7 +2495,20 @@
 					<bordersize>20</bordersize>
 					
 				</control>
-
+				<control type="textbox">
+							<include>focusThumb</include>
+							<visible>string.isempty(ListItem.status)</visible>
+							<posx>35</posx>
+							<posy>-35</posy>
+							<width>120</width>
+							<height>300</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>Title</font>
+							<wrapmultiline>true</wrapmultiline>
+							<textcolor>red</textcolor>
+							<label>[B]No released[/B]</label>
+						</control>
 				<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
 						
@@ -2950,4 +3013,173 @@
 			</control>
 		</definition>
 	</include>
+
+	<include name="InfoDialogMetadata">
+		<param name="onclick_condition">false</param>
+		<param name="onclick">noop</param>
+		<param name="altclick_condition">false</param>
+		<param name="altclick">noop</param>
+		<definition>
+			<control type="togglebutton" id="$PARAM[control_id]">
+				<width>472</width>
+				<height>49</height>
+				<textoffsetx>16</textoffsetx>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+				<alttexturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</alttexturefocus>
+				<texturenofocus />
+				<alttexturenofocus />
+				<onclick>noop</onclick>
+				<onclick condition="$PARAM[onclick_condition]">$PARAM[onclick]</onclick>
+				<altclick>noop</altclick>
+				<altclick condition="$PARAM[altclick_condition]">$PARAM[altclick]</altclick>
+				<label>$PARAM[label]</label>
+				<altlabel>$PARAM[altlabel]</altlabel>
+				<usealttexture>Control.HasFocus($PARAM[control_id])</usealttexture>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="InfoDialogToggleButton">
+		<param name="width">262</param>
+		<definition>
+			<control type="radiobutton" id="$PARAM[id]">
+				<width>$PARAM[width]</width>
+				<height>142</height>
+				<align>center</align>
+				<aligny>top</aligny>
+				<texturefocus border="21" colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+				<texturenofocus border="21" colordiffuse="80000000">masks/discsurface.png</texturenofocus>
+				<textcolor>textActive</textcolor>
+				<focusedcolor>$VAR[Home]</focusedcolor>
+				<textoffsetx>35</textoffsetx>
+				<textoffsety>78</textoffsety>
+				<radioposx>108</radioposx>
+				<radioposy>16</radioposy>
+				<radiowidth>48</radiowidth>
+				<font>font12</font>
+				<textureradioonfocus colordiffuse="$VAR[Home]">$PARAM[icon_on]</textureradioonfocus>
+				<textureradioonnofocus colordiffuse="textActive">$PARAM[icon_on]</textureradioonnofocus>
+				<textureradioofffocus colordiffuse="$VAR[Home]">$PARAM[icon_off]</textureradioofffocus>
+				<textureradiooffnofocus colordiffuse="textActive">$PARAM[icon_off]</textureradiooffnofocus>
+				<textureradiooffdisabled colordiffuse="textDisable">$PARAM[icon_off]</textureradiooffdisabled>
+				<textureradioondisabled colordiffuse="textDisable">$PARAM[icon_on]</textureradioondisabled>
+				<selected>$PARAM[selected]</selected>
+				<label>$PARAM[label]</label>
+				<onclick>$PARAM[onclick_1]</onclick>
+				<onclick>$PARAM[onclick_2]</onclick>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="InfoDialogButton">
+		<param name="width">264</param>
+		<param name="onclick_1_condition">true</param>
+		<param name="onclick_2_condition">true</param>
+		<param name="onclick_3_condition">true</param>
+		<definition>
+			<control type="radiobutton" id="$PARAM[id]">
+				<width>$PARAM[width]</width>
+				<height>142</height>
+				<align>center</align>
+				<aligny>top</aligny>
+				<texturefocus border="21" colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+				<texturenofocus border="21" colordiffuse="80000000">masks/discsurface.png</texturenofocus>
+				<textcolor>textActive</textcolor>
+				<focusedcolor>$VAR[Home]</focusedcolor>
+				<textoffsetx>22</textoffsetx>
+				<textoffsety>78</textoffsety>
+				<radioposx>108</radioposx>
+				<radioposy>16</radioposy>
+				<radiowidth>48</radiowidth>
+				<font>font12</font>
+				<textcolor>$VAR[Home]</textcolor>
+				<textureradioonfocus colordiffuse="$VAR[Home]">$PARAM[icon]</textureradioonfocus>
+				<textureradioonnofocus colordiffuse="textActive">$PARAM[icon]</textureradioonnofocus>
+				<textureradioofffocus colordiffuse="$VAR[Home]">$PARAM[icon]</textureradioofffocus>
+				<textureradiooffnofocus colordiffuse="textActive">$PARAM[icon]</textureradiooffnofocus>
+				<textureradiooffdisabled colordiffuse="textDisable">$PARAM[icon]</textureradiooffdisabled>
+				<textureradioondisabled colordiffuse="textDisable">$PARAM[icon]</textureradioondisabled>
+				<label>$PARAM[label]</label>
+				<onclick condition="$PARAM[onclick_1_condition]">$PARAM[onclick_1]</onclick>
+				<onclick condition="$PARAM[onclick_2_condition]">$PARAM[onclick_2]</onclick>
+				<onclick condition="$PARAM[onclick_3_condition]">$PARAM[onclick_3]</onclick>
+				<visible>$PARAM[visible]</visible>
+				<animation effect="fade" start="100" end="0" time="300" delay="300">Hidden</animation>
+			</control>
+		</definition>
+	</include>
+	<include name="VideoInfoButtonsCommon">
+		<param name="width">264</param>
+		<definition>
+			<width>$PARAM[width]</width>
+			<height>142</height>
+			<align>center</align>
+			<aligny>top</aligny>
+			<texturefocus border="21" colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+				<texturenofocus border="21" colordiffuse="80000000">masks/discsurface.png</texturenofocus>
+				<textcolor>textActive</textcolor>
+				<focusedcolor>$VAR[Home]</focusedcolor>
+			<textoffsetx>22</textoffsetx>
+			<textoffsety>78</textoffsety>
+			<radioposx>108</radioposx>
+			<radioposy>13</radioposy>
+			<radiowidth>48</radiowidth>
+			<font>font12</font>
+			<textcolor>$VAR[Home]</textcolor>
+			<textureradioonfocus colordiffuse="$VAR[Home]">$PARAM[icon]</textureradioonfocus>
+				<textureradioonnofocus colordiffuse="textActive">$PARAM[icon]</textureradioonnofocus>
+				<textureradioofffocus colordiffuse="$VAR[Home]">$PARAM[icon]</textureradioofffocus>
+				<textureradiooffnofocus colordiffuse="textActive">$PARAM[icon]</textureradiooffnofocus>
+				<textureradiooffdisabled colordiffuse="textDisable">$PARAM[icon]</textureradiooffdisabled>
+				<textureradioondisabled colordiffuse="textDisable">$PARAM[icon]</textureradioondisabled>
+		</definition>
+	</include>
+	<include name="HiddenObject">
+		<left>-3000</left>
+		<top>-3000</top>
+		<width>1</width>
+		<height>1</height>
+		<texturefocus />
+		<texturenofocus />
+		<label></label>
+		<font></font>
+	</include>
+	
+	<include name="InfoDialogTopBarInfo">
+		<param name="id">33333</param>
+		<param name="posy">20</param>
+		<definition>
+			<control type="grouplist">
+				<left>100</left>
+				<right>100</right>
+				<top>$PARAM[posy]</top>
+				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				<height>150</height>
+				<itemgap>0</itemgap>
+				<orientation>vertical</orientation>
+				<control type="label">
+					<width>100%</width>
+					<label>$PARAM[main_label]</label>
+					<font>largeTitle</font>
+					<shadowcolor>textActive</shadowcolor>
+					<height>65</height>
+					<align>center</align>
+					<scroll>true</scroll>
+					<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(Control.GetLabel($PARAM[id]))">Conditional</animation>
+				</control>
+				<control type="label" id="$PARAM[id]">
+					<label>$PARAM[sub_label]</label>
+					<left>85</left>
+					<shadowcolor>textActive</shadowcolor>
+					<align>center</align>
+					<height>100</height>
+					<width>100%</width>
+				</control>
+			</control>
+		</definition>
+	</include>
+	
 </includes>
