@@ -91,6 +91,19 @@
 						
 						<colordiffuse>99ffffff</colordiffuse>
 					</control>
+					<control type="textbox">
+							
+							<posx>-15</posx>
+							<posy>50</posy>
+							<width>245</width>
+							<height>300</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>dialogTitle</font>
+							<wrapmultiline>true</wrapmultiline>
+							<textcolor>red</textcolor>
+							<label>$VAR[TV_Movie_Status_label]</label>
+						</control>
 					<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
@@ -263,6 +276,19 @@
 							<aspectratio>stretch</aspectratio>
 							<texture fallback="DefaultMovies.png">$INFO[listitem.icon]</texture>
 							<bordersize>5</bordersize>
+						</control>
+						<control type="textbox">
+							
+							<posx>-15</posx>
+							<posy>50</posy>
+							<width>245</width>
+							<height>300</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>dialogTitle</font>
+							<wrapmultiline>true</wrapmultiline>
+							<textcolor>red</textcolor>
+							<label>$VAR[TV_Movie_Status_label]</label>
 						</control>
 						<control type="progress">
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>

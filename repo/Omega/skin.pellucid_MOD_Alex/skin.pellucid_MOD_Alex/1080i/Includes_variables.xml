@@ -205,6 +205,39 @@
 		<value condition="!String.IsEmpty(Skin.String(allimage))">$INFO[Skin.String(allimage)]</value>
         <value condition="String.IsEmpty(Skin.String(musicfullscreenBackgroundpath)) + String.IsEmpty(Skin.String(musicfullscreenBackgroundimage))">special://skin/extras/musicfullbackgrounds</value>
     </variable>
+
+	<variable name="TV_Movie_Status_label">
+		<value condition="!String.isEqual(ListItem.Status,released) + !String.isEqual(ListItem.Status,returning series) + !String.isEqual(ListItem.Status,in production) + !String.isEqual(ListItem.Status,planned) + !String.isEqual(ListItem.Status,canceled) + !String.isEqual(ListItem.Status,ended) + integer.isGreaterorEqual(ListItem.year,System.Date(yyyy))">[B]Noch nicht released[/B]</value>
+		<value condition="!String.isEqual(ListItem.Status,released) + !String.isEqual(ListItem.Status,returning series) + !String.isEqual(ListItem.Status,in production) + !String.isEqual(ListItem.Status,planned) + !String.isEqual(ListItem.Status,canceled) + !String.isEqual(ListItem.Status,ended) + integer.isless(ListItem.year,System.Date(yyyy))"></value>
+		<!--<value condition="String.isEqual(ListItem.Status,returning series)">[B]Wiederkehrend[/B]</value>-->
+		<value condition="String.isEqual(ListItem.Status,in production)">[B]In Produktion[/B]</value>
+		<value condition="String.isEqual(ListItem.Status,planned)">[B]geplant[/B]</value>
+		<value condition="String.isEqual(ListItem.Status,canceled)">[B]Abgesetzt[/B]</value>
+		<value condition="String.isEqual(ListItem.Status,ended)">[B]Beendet[/B]</value>
+		<value condition="String.isEqual(ListItem.Status,released)"></value>
+	</variable>
+
+	<variable name="TV_Movie_Status_label_Home">
+		<value condition="!String.isEqual(ListItem.Status,released) + !String.isEqual(ListItem.Status,returning series) + !String.isEqual(ListItem.Status,in production) + !String.isEqual(ListItem.Status,planned) + !String.isEqual(ListItem.Status,canceled) + !String.isEqual(ListItem.Status,ended) + integer.isGreaterorEqual(ListItem.year,System.Date(yyyy))">[B]Noch nicht released[/B]</value>
+		<!--<value condition="String.isEqual(ListItem.Status,returning series)">[B]Wiederkehrend[/B]</value>-->
+		<!--<value condition="String.isEqual(ListItem.Status,in production)">[B]In Produktion[/B]</value>-->
+		<value condition="String.isEqual(ListItem.Status,planned)">[B]geplant[/B]</value>
+		<value condition="String.isEqual(ListItem.Status,canceled)">[COLOR red][B]Abgesetzt[/B][/COLOR]</value>
+		<!--<value condition="String.isEqual(ListItem.Status,ended)">[B]Beendet[/B]</value>-->
+		<value condition="String.isEqual(ListItem.Status,released)"></value>
+	</variable>
+
+	<variable name="TV_Movie_Status_label_Home_series">
+		<value condition="!String.isEqual(ListItem.Status,released) + !String.isEqual(ListItem.Status,returning series) + !String.isEqual(ListItem.Status,in production) + !String.isEqual(ListItem.Status,planned) + !String.isEqual(ListItem.Status,canceled) + !String.isEqual(ListItem.Status,ended) + integer.isGreaterorEqual(ListItem.year,System.Date(yyyy))">[B]Noch nicht released[/B]</value>
+		<!--<value condition="String.isEqual(ListItem.Status,returning series)">[B]Wiederkehrend[/B]</value>-->
+		<!--<value condition="String.isEqual(ListItem.Status,in production)">[B]In Produktion[/B]</value>-->
+		<value condition="String.isEqual(ListItem.Status,planned)">[B]geplant[/B]</value>
+		<value condition="String.isEqual(ListItem.Status,canceled)">[COLOR red][B]Abgesetzt[/B][/COLOR]</value>
+		<!--<value condition="String.isEqual(ListItem.Status,ended)">[B]Beendet[/B]</value>-->
+		<value condition="String.isEqual(ListItem.Status,released)"></value>
+	</variable>
+
+	
     
     <!--menu logos-->
     <variable name="menuLogo">

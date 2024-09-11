@@ -74,6 +74,7 @@
 	<!--weather-->
 	<expression name="hasWeather">!String.IsEmpty(Window(Weather).Property(WeatherProvider)) + !String.String.IsEmpty(weather.temperature) + !String.String.IsEmpty(weather.conditions)</expression>
 
+
 	<!--item fanart-->
     <include name="itemFanart">
         <control type="wraplist" id="99999">
@@ -1749,7 +1750,7 @@
 							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
 						</control>
 					<control type="textbox">
-							<visible>string.isempty(ListItem.status)</visible>
+							
 							<posx>25</posx>
 							<posy>50</posy>
 							<width>250</width>
@@ -1759,7 +1760,7 @@
 							<font>largeTitle2</font>
 							<wrapmultiline>true</wrapmultiline>
 							<textcolor>red</textcolor>
-							<label>Noch nicht released</label>
+							<label>$VAR[TV_Movie_Status_label]</label>
 						</control>
 
 				<control type="group">
@@ -1949,7 +1950,7 @@
 						</control>
 						<control type="textbox">
 							<include>focusThumb</include>
-							<visible>string.isempty(ListItem.status)</visible>
+							
 							<posx>25</posx>
 							<posy>50</posy>
 							<width>250</width>
@@ -1959,7 +1960,7 @@
 							<font>largeTitle2</font>
 							<wrapmultiline>true</wrapmultiline>
 							<textcolor>red</textcolor>
-							<label>Noch nicht released</label>
+							<label>$VAR[TV_Movie_Status_label]</label>
 						</control>
 				<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
@@ -2388,7 +2389,7 @@
 				</control>
 				<control type="textbox">
 							
-							<visible>string.isempty(ListItem.status)</visible>
+							
 							<posx>35</posx>
 							<posy>-35</posy>
 							<width>120</width>
@@ -2398,7 +2399,7 @@
 							<font>Title</font>
 							<wrapmultiline>true</wrapmultiline>
 							<textcolor>red</textcolor>
-							<label>[B]No released[/B]</label>
+							<label>$VAR[TV_Movie_Status_label_Home]</label>
 						</control>
 				<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
@@ -2497,7 +2498,7 @@
 				</control>
 				<control type="textbox">
 							<include>focusThumb</include>
-							<visible>string.isempty(ListItem.status)</visible>
+							
 							<posx>35</posx>
 							<posy>-35</posy>
 							<width>120</width>
@@ -2507,7 +2508,7 @@
 							<font>Title</font>
 							<wrapmultiline>true</wrapmultiline>
 							<textcolor>red</textcolor>
-							<label>[B]No released[/B]</label>
+							<label>$VAR[TV_Movie_Status_label_Home]</label>
 						</control>
 				<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
@@ -2631,6 +2632,20 @@
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
+				<control type="textbox">
+							
+							
+							<posx>35</posx>
+							<posy>-35</posy>
+							<width>120</width>
+							<height>300</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>Title</font>
+							<wrapmultiline>true</wrapmultiline>
+							<textcolor>red</textcolor>
+							<label>$VAR[TV_Movie_Status_label_Home]</label>
+						</control>
 				<control type="image">
 							<visible>!Skin.HasSetting(Disable.totalepisodes)</visible>
 							<posx>44</posx>
@@ -2755,6 +2770,20 @@
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
 				</control>
+				<control type="textbox">
+							<include>focusThumb</include>
+							
+							<posx>35</posx>
+							<posy>-35</posy>
+							<width>120</width>
+							<height>300</height>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>Title</font>
+							<wrapmultiline>true</wrapmultiline>
+							<textcolor>red</textcolor>
+							<label>$VAR[TV_Movie_Status_label_Home]</label>
+						</control>
                 <control type="image">
 							<visible>!Skin.HasSetting(Disable.totalepisodes)</visible>
 							<animation type="Focus">
