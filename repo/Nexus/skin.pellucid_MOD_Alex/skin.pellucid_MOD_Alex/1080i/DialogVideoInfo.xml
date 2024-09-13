@@ -84,8 +84,10 @@
 				<control type="group" id="140">
 					<top>468</top>
 					<control type="button" id="138">
-						<width>754</width>
-						<height>418</height>
+						<posy>20</posy>
+						<posx>20</posx>
+						<width>700</width>
+						<height>375</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
 						<aligny>bottom</aligny>
@@ -94,10 +96,15 @@
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">ActivateWindow(1140)</onclick>
 						<onup>50</onup>
-						<onleft>4000</onleft>
+						<onleft>21</onleft>
 						<onright>4000</onright>
 						<ondown>5000</ondown>
-						<texturenofocus border="21">dialog-bg.png</texturenofocus>
+						<textcolor>textActive</textcolor>
+        				<focusedcolor>black</focusedcolor>
+        				<texturefocus colordiffuse="textDisabled">masks/discsurface.png</texturefocus>
+        				<disabledcolor>textDisabled</disabledcolor>
+        				<invalidcolor>textDisabled</invalidcolor>
+						<texturenofocus colordiffuse="black" border="21">masks/discsurface30%.png</texturenofocus>
 						<visible>Integer.IsGreater(Container(4000).NumItems,0)</visible>
 					</control>
 					<control type="image">
@@ -109,25 +116,33 @@
 						<visible>Integer.IsGreater(Container(4000).NumItems,0)</visible>
 					</control>
 					<control type="button" id="139">
+						<posx>20</posx>
+						<posy>20</posy>
 						<width>1245</width>
 						<height>418</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
 						<aligny>bottom</aligny>
 						<label></label>
-						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
-						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
+						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewerSubHeader,$LOCALIZE[207],home)</onclick>
+						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewerSubHeader,$ESCINFO[ListItem.Plot],home)</onclick>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">ActivateWindow(1140)</onclick>
 						<onup>50</onup>
-						<onleft>4000</onleft>
+						<onleft>20</onleft>
 						<onright>4000</onright>
 						<ondown>5000</ondown>
+						<textcolor>textActive</textcolor>
+        				<focusedcolor>black</focusedcolor>
+        				<texturefocus colordiffuse="textDisabled">masks/discsurface.png</texturefocus>
+        				<disabledcolor>textDisabled</disabledcolor>
+        				<invalidcolor>textDisabled</invalidcolor>
 						<texturenofocus border="21">dialog-bg.png</texturenofocus>
 						<visible>!Integer.IsGreater(Container(4000).NumItems,0)</visible>
 					</control>
 					<control type="textbox">
-						<left>40</left>
-						<top>25</top>
+						<pagecontrol>21</pagecontrol>
+						<posx>50</posx>
+						<posy>35</posy>
 						<width>670</width>
 						<height>363</height>
 						<label fallback="19055">$INFO[ListItem.Plot]</label>
@@ -135,14 +150,50 @@
 						<visible>Integer.IsGreater(Container(4000).NumItems,0)</visible>
 					</control>
 					<control type="textbox">
-						<left>40</left>
-						<top>25</top>
+						<pagecontrol>20</pagecontrol>
+						<posx>50</posx>
+						<posy>35</posy>
 						<width>1165</width>
 						<height>363</height>
 						<label fallback="19055">$INFO[ListItem.Plot]</label>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>!Integer.IsGreater(Container(4000).NumItems,0)</visible>
 					</control>
+				</control>
+				<control type="group" id="8002">
+	                <visible>Control.IsVisible(20)</visible>
+	                
+				<control type="scrollbar" id="20">
+                   			<left>-15</left>
+                    		<top>515</top>
+                    		<texturesliderbar colordiffuse="textDisabled">masks/discsurface.png</texturesliderbar>
+                    		<texturesliderbackground colordiffuse="black">masks/discsurface.png</texturesliderbackground>
+                    		<texturesliderbarfocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturesliderbarfocus>
+                    		<showonepage>true</showonepage>
+                    		<height>315</height>
+                    		<width>25</width>
+                    		<onleft>140</onleft>
+                    		<ondown>5000</ondown>
+                    		<onright>140</onright>
+                		</control>
+				</control>
+				
+				<control type="group" id="8001">
+	                <visible>Control.IsVisible(21)</visible>
+	                
+				<control type="scrollbar" id="21">
+                   			<left>-15</left>
+                    		<top>515</top>
+                    		<texturesliderbar colordiffuse="textDisabled">masks/discsurface.png</texturesliderbar>
+                    		<texturesliderbackground colordiffuse="black">masks/discsurface.png</texturesliderbackground>
+                    		<texturesliderbarfocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturesliderbarfocus>
+                    		<showonepage>true</showonepage>
+                    		<height>315</height>
+                    		<width>25</width>
+                    		<onleft>140</onleft>
+                    		<ondown>5000</ondown>
+                    		<onright>140</onright>
+                		</control>
 				</control>
 				<control type="grouplist" id="4000">
 					<orientation>vertical</orientation>
@@ -224,8 +275,8 @@
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="157" />
-						<param name="label" value="[COLOR $VAR[highlight]]$LOCALIZE[563]: [/COLOR]$INFO[ListItem.Mpaa]" />
-						<param name="altlabel" value="$LOCALIZE[563]: $INFO[ListItem.Mpaa]" />
+						<param name="label" value="[COLOR $VAR[highlight]]$LOCALIZE[20074]: [/COLOR]$VAR[RatingFlaggermanlabel]" />
+						<param name="altlabel" value="$LOCALIZE[20074]: $VAR[RatingFlaggermanlabel]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Mpaa)" />
 					</include>
 					<include content="InfoDialogMetadata">
@@ -242,9 +293,9 @@
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="160" />
-						<param name="label" value="[COLOR $VAR[highlight]]$LOCALIZE[126]: [/COLOR]$INFO[ListItem.Status]" />
-						<param name="altlabel" value="$LOCALIZE[126]: $INFO[ListItem.Status]" />
-						<param name="visible" value="!String.IsEmpty(ListItem.Status)" />
+						<param name="label" value="[COLOR $VAR[highlight]]$LOCALIZE[126]: [/COLOR]$VAR[TV_Movie_Status_label_INFO]" />
+						<param name="altlabel" value="$LOCALIZE[126]: $VAR[TV_Movie_Status_label_INFO]" />
+						<!--<param name="visible" value="!String.IsEmpty(ListItem.Status)" />-->
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="161" />
@@ -330,7 +381,7 @@
 								<left>20</left>
 								<width>224</width>
 								<height>277</height>
-								<texture background="true">$INFO[ListItem.Thumb]</texture>
+								<texture fallback="defaultactor.png" background="true">$INFO[ListItem.Thumb]</texture>
 								<aspectratio aligny="center">scale</aspectratio>
 							</control>
 							<control type="image">
@@ -392,7 +443,7 @@
 								<left>20</left>
 								<width>224</width>
 								<height>277</height>
-								<texture background="true">$INFO[ListItem.Thumb]</texture>
+								<texture fallback="defaultactor.png" background="true">$INFO[ListItem.Thumb]</texture>
 								<aspectratio aligny="center">scale</aspectratio>
 								<bordersize>6</bordersize>
 							</control>
@@ -454,7 +505,7 @@
 								<left>20</left>
 								<width>186</width>
 								<height>279</height>
-								<texture background="true">$INFO[ListItem.Art(poster)]</texture>
+								<texture fallback="defaultactor.png" background="true">$INFO[ListItem.Art(poster)]</texture>
 								<aspectratio aligny="center">scale</aspectratio>
 							</control>
 							<control type="image">
@@ -497,7 +548,7 @@
 								<left>20</left>
 								<width>186</width>
 								<height>279</height>
-								<texture background="true">$INFO[ListItem.Art(poster)]</texture>
+								<texture fallback="defaultactor.png"  background="true">$INFO[ListItem.Art(poster)]</texture>
 								<aspectratio aligny="center">scale</aspectratio>
 							</control>
 							<control type="image">
@@ -601,11 +652,11 @@
 						</control>
 						<control type="label">
 							<visible>control.hasfocus(7)</visible>
-							<label colordiffuse="$VAR[Home]">$INFO[ListItem.UserRating]</label>
+							<label>$INFO[ListItem.Rating]</label>
 							<font>font45_title</font>
-							<colordiffuse>$VAR[Home]</colordiffuse>
 							<left>0</left>
-							<top>24</top>
+							<top>55</top>
+							<textcolor>$VAR[Home]</textcolor>
 							<width>264</width>
 							<align>center</align>
 						</control>
@@ -613,27 +664,27 @@
 							<visible>control.hasfocus(7)</visible>
 							<texture colordiffuse="$VAR[Home]">icons/infodialogs/rating.png</texture>
 							<left>108</left>
-							<top>30</top>
+							<top>10</top>
 							<width>48</width>
 							<height>48</height>
 							<align>center</align>
 							<visible>String.IsEmpty(ListItem.UserRating)</visible>
 						</control>
 						<control type="label">
-							<visible>!control.hasfocuse(7)</visible>
+							<visible>!control.hasfocus(7)</visible>
 							<label>$INFO[ListItem.Rating]</label>
 							<font>font45_title</font>
 							<left>0</left>
-							<top>85</top>
+							<top>55</top>
 							<textcolor>textActive</textcolor>
 							<width>264</width>
 							<align>center</align>
 						</control>
 						<control type="image">
-							<visible>!control.hasfocuse(7)</visible>
+							<visible>!control.hasfocus(7)</visible>
 							<texture colordiffuse="textActive">icons/infodialogs/rating.png</texture>
 							<left>108</left>
-							<top>30</top>
+							<top>10</top>
 							<width>48</width>
 							<height>48</height>
 							<align>center</align>
@@ -714,7 +765,7 @@
 								<effect type="fade" start="100" end="0" time="500" delay="0"/>
 							</animation>
 	                        <right>0</right>
-	                        <posy>880</posy>
+	                        <posy>870</posy>
 	                        <width>1-col</width>
 	                        <height>2-row</height>
 	                        <align>center</align>
@@ -798,5 +849,7 @@
 				</control>
 			</control>
 		</control>
+		<!-- MPAA -->
+						<include condition="!String.IsEqual(ListItem.DBTYPE,set) + !String.IsEqual(ListItem.Property(item.type),person)">InfoMPAA</include>
 	</controls>
 </window>

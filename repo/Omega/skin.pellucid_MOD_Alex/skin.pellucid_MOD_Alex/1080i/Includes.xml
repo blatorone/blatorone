@@ -1870,7 +1870,7 @@
 							<aligny>center</aligny>
 							<align>center</align>
 							<font>smallstrong</font>
-							<textcolor>black</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
 						</control>
 				<control type="textbox">
@@ -1945,7 +1945,7 @@
 							<aligny>center</aligny>
 							<align>center</align>
 							<font>smallstrong</font>
-							<textcolor>black</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
 						</control>
 						<control type="textbox">
@@ -2399,7 +2399,7 @@
 							<font>Title</font>
 							<wrapmultiline>true</wrapmultiline>
 							<textcolor>red</textcolor>
-							<label>$VAR[TV_Movie_Status_label_Home]</label>
+							<label>$VAR[TV_Movie_Status_label]</label>
 						</control>
 				<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
@@ -2508,7 +2508,7 @@
 							<font>Title</font>
 							<wrapmultiline>true</wrapmultiline>
 							<textcolor>red</textcolor>
-							<label>$VAR[TV_Movie_Status_label_Home]</label>
+							<label>$VAR[TV_Movie_Status_label]</label>
 						</control>
 				<control type="group">
 						<visible>!String.IsEmpty(ListItem.PlayCount) + !Skin.HasSetting(Disable.overlays)</visible>
@@ -2644,7 +2644,7 @@
 							<font>Title</font>
 							<wrapmultiline>true</wrapmultiline>
 							<textcolor>red</textcolor>
-							<label>$VAR[TV_Movie_Status_label_Home]</label>
+							<label>$VAR[TV_Movie_Status_label]</label>
 						</control>
 				<control type="image">
 							<visible>!Skin.HasSetting(Disable.totalepisodes)</visible>
@@ -2665,7 +2665,7 @@
 							<aligny>center</aligny>
 							<align>center</align>
 							<font>smallstrong</font>
-							<textcolor>black</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
 						</control>
 
@@ -2782,7 +2782,7 @@
 							<font>Title</font>
 							<wrapmultiline>true</wrapmultiline>
 							<textcolor>red</textcolor>
-							<label>$VAR[TV_Movie_Status_label_Home]</label>
+							<label>$VAR[TV_Movie_Status_label]</label>
 						</control>
                 <control type="image">
 							<visible>!Skin.HasSetting(Disable.totalepisodes)</visible>
@@ -2815,7 +2815,7 @@
 							<aligny>center</aligny>
 							<align>center</align>
 							<font>smallstrong</font>
-							<textcolor>black</textcolor>
+							<textcolor>$VAR[Home]</textcolor>
 							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
 						</control>
 					
@@ -3075,7 +3075,7 @@
 		<definition>
 			<control type="radiobutton" id="$PARAM[id]">
 				<width>$PARAM[width]</width>
-				<height>142</height>
+				<height>100</height>
 				<align>center</align>
 				<aligny>top</aligny>
 				<texturefocus border="21" colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
@@ -3083,9 +3083,9 @@
 				<textcolor>textActive</textcolor>
 				<focusedcolor>$VAR[Home]</focusedcolor>
 				<textoffsetx>35</textoffsetx>
-				<textoffsety>78</textoffsety>
+				<textoffsety>48</textoffsety>
 				<radioposx>108</radioposx>
-				<radioposy>16</radioposy>
+				<radioposy>-5</radioposy>
 				<radiowidth>48</radiowidth>
 				<font>font12</font>
 				<textureradioonfocus colordiffuse="$VAR[Home]">$PARAM[icon_on]</textureradioonfocus>
@@ -3110,7 +3110,7 @@
 		<definition>
 			<control type="radiobutton" id="$PARAM[id]">
 				<width>$PARAM[width]</width>
-				<height>142</height>
+				<height>100</height>
 				<align>center</align>
 				<aligny>top</aligny>
 				<texturefocus border="21" colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
@@ -3118,9 +3118,9 @@
 				<textcolor>textActive</textcolor>
 				<focusedcolor>$VAR[Home]</focusedcolor>
 				<textoffsetx>22</textoffsetx>
-				<textoffsety>78</textoffsety>
+				<textoffsety>55</textoffsety>
 				<radioposx>108</radioposx>
-				<radioposy>16</radioposy>
+				<radioposy>-5</radioposy>
 				<radiowidth>48</radiowidth>
 				<font>font12</font>
 				<textcolor>$VAR[Home]</textcolor>
@@ -3143,13 +3143,13 @@
 		<param name="width">264</param>
 		<definition>
 			<width>$PARAM[width]</width>
-			<height>142</height>
+			<height>100</height>
 			<align>center</align>
 			<aligny>top</aligny>
 			<texturefocus border="21" colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
-				<texturenofocus border="21" colordiffuse="80000000">masks/discsurface.png</texturenofocus>
-				<textcolor>textActive</textcolor>
-				<focusedcolor>$VAR[Home]</focusedcolor>
+			<texturenofocus border="21" colordiffuse="80000000">masks/discsurface.png</texturenofocus>
+			<textcolor>textActive</textcolor>
+			<focusedcolor>$VAR[Home]</focusedcolor>
 			<textoffsetx>22</textoffsetx>
 			<textoffsety>78</textoffsety>
 			<radioposx>108</radioposx>

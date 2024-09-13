@@ -207,18 +207,37 @@
     </variable>
 
 	<variable name="TV_Movie_Status_label">
-		<value condition="!String.isEqual(ListItem.Status,released) + !String.isEqual(ListItem.Status,returning series) + !String.isEqual(ListItem.Status,in production) + !String.isEqual(ListItem.Status,planned) + !String.isEqual(ListItem.Status,canceled) + !String.isEqual(ListItem.Status,ended) + integer.isGreaterorEqual(ListItem.year,System.Date(yyyy))">[B]Noch nicht released[/B]</value>
+		<value condition="!String.isEmpty(Listitem.status) + String.isEqual(ListItem.Status,in production) | !String.isEmpty(Listitem.status) + String.isEqual(ListItem.Status,planned) | !String.isEmpty(Listitem.status) + String.isEqual(ListItem.Status,post production) | integer.isGreater(ListItem.year,System.Date(yyyy)) | !String.isEqual(ListItem.status,released) + !String.isEqal(ListItem.status,canceled) + !String.Startswith(ListItem.status,Returning Series) + !String.Startswith(ListItem.Status,Ended) + !String.isEqal(ListItem.status,in production) + !String.isEqal(ListItem.status,post production) + !String.isEqal(ListItem.status,planed) + !integer.isLess(ListItem.year,System.Date(yyyy))">[B]Noch nicht released[/B]</value>
+		
 		<value condition="!String.isEqual(ListItem.Status,released) + !String.isEqual(ListItem.Status,returning series) + !String.isEqual(ListItem.Status,in production) + !String.isEqual(ListItem.Status,planned) + !String.isEqual(ListItem.Status,canceled) + !String.isEqual(ListItem.Status,ended) + integer.isless(ListItem.year,System.Date(yyyy))"></value>
-		<!--<value condition="String.isEqual(ListItem.Status,returning series)">[B]Wiederkehrend[/B]</value>-->
+		<!--
+		
+		maybe let it green  grün lassen <value condition="String.isEqual(ListItem.Status,returning series)">[B]Wiederkehrend[/B]</value>
+		
+		dont let it green
 		<value condition="String.isEqual(ListItem.Status,in production)">[B]In Produktion[/B]</value>
 		<value condition="String.isEqual(ListItem.Status,planned)">[B]geplant[/B]</value>
 		<value condition="String.isEqual(ListItem.Status,canceled)">[B]Abgesetzt[/B]</value>
 		<value condition="String.isEqual(ListItem.Status,ended)">[B]Beendet[/B]</value>
+		-->
 		<value condition="String.isEqual(ListItem.Status,released)"></value>
+	</variable>
+	<!--delete when label is fixed-->
+	<variable name="TV_Movie_Status_label_INFO">
+		<value condition="!String.isEqual(ListItem.Status,released) + !String.isEqual(ListItem.Status,returning series) + !String.isEqual(ListItem.Status,in production) + !String.isEqual(ListItem.Status,planned) + !String.isEqual(ListItem.Status,canceled) + !String.isEqual(ListItem.Status,ended) + !String.isEmpty(ListItem.Status) + !String.isEqual(ListItem.Status,post production)  | integer.isGreater(ListItem.year,System.Date(yyyy))">[COLOR red]Noch nicht released[/COLOR]</value>
+		<value condition="String.isEmpty(ListItem.Status) + !integer.isLess(ListItem.year,System.Date(yyyy))">$LOCALIZE[19055]</value>
+		<value condition="String.isEqual(ListItem.Status,released) + !String.isEqual(ListItem.Status,ended) + !String.isEqual(ListItem.Status,canceled) | integer.isLess(ListItem.year,System.Date(yyyy)) + !String.isEqual(ListItem.Status,ended) + !String.isEqual(ListItem.Status,canceled)">Veröffentlicht</value>
+		<value condition="String.isEqual(ListItem.Status,returning series)">Wiederkehrend</value>
+		<value condition="String.isEqual(ListItem.Status,in production)">In Produktion</value>
+		<value condition="String.isEqual(ListItem.Status,planned)">geplant</value>
+		<value condition="String.isEqual(ListItem.Status,canceled)">[COLOR red]Abgesetzt[/COLOR]</value>
+		<value condition="String.isEqual(ListItem.Status,ended)">[COLOR green]Beendet[/COLOR]</value>
+		<value condition="String.isEqual(ListItem.Status,post production)">Nachbearbeitung</value>
+		<!--<value condition="String.isEqual(ListItem.Status,released)">Veröffentlicht</value>-->S
 	</variable>
 
 	<variable name="TV_Movie_Status_label_Home">
-		<value condition="!String.isEqual(ListItem.Status,released) + !String.isEqual(ListItem.Status,returning series) + !String.isEqual(ListItem.Status,in production) + !String.isEqual(ListItem.Status,planned) + !String.isEqual(ListItem.Status,canceled) + !String.isEqual(ListItem.Status,ended) + integer.isGreaterorEqual(ListItem.year,System.Date(yyyy))">[B]Noch nicht released[/B]</value>
+		<value condition="!String.isEqual(ListItem.Status,released) + !String.isEqual(ListItem.Status,returning series) + !String.isEqual(ListItem.Status,in production) + !String.isEqual(ListItem.Status,planned) + !String.isEqual(ListItem.Status,canceled) + !String.isEqual(ListItem.Status,ended) + !String.isEmpty(ListItem.Status) | String.isEqual(ListItem.Status,post production) | integer.isGreater(ListItem.year,System.Date(yyyy))">[COLOR red]Noch nicht released[/B]</value>
 		<!--<value condition="String.isEqual(ListItem.Status,returning series)">[B]Wiederkehrend[/B]</value>-->
 		<!--<value condition="String.isEqual(ListItem.Status,in production)">[B]In Produktion[/B]</value>-->
 		<value condition="String.isEqual(ListItem.Status,planned)">[B]geplant[/B]</value>
@@ -670,6 +689,17 @@
 		<value condition="Container.Content(episodes) + String.Contains(Container.FolderPath,/recentlyaddedepisodes)">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.Title]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
+
+	<variable name="RatingFlaggermanlabel">
+		<value condition="String.IsEqual(ListItem.Mpaa,Germany:16) | String.Contains(ListItem.Mpaa,ab 16) | String.IsEqual(ListItem.Mpaa,16) | String.Contains(ListItem.Mpaa,FSK 16) | String.IsEqual(ListItem.Mpaa,Rated 16)">16</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany:0) | String.Contains(ListItem.Mpaa,ab 0) | String.IsEqual(ListItem.Mpaa,0) | String.Contains(ListItem.Mpaa,FSK 0) | String.Contains(ListItem.Mpaa,Rated 0)">0</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany:6) | String.Contains(ListItem.Mpaa,ab 6) | String.IsEqual(ListItem.Mpaa,6) | String.Contains(ListItem.Mpaa,FSK 6) | String.Contains(ListItem.Mpaa,Rated 6)">6</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany:12) | String.Contains(ListItem.Mpaa,ab 12) | String.IsEqual(ListItem.Mpaa,12) | String.Contains(ListItem.Mpaa,FSK 12) | String.Contains(ListItem.Mpaa,Rated 12)">12</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany:18) | String.Contains(ListItem.Mpaa,ab 18) | String.IsEqual(ListItem.Mpaa,18) | String.Contains(ListItem.Mpaa,FSK 18) | String.Contains(ListItem.Mpaa,Rated 18)">18</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany) | String.Contains(ListItem.Mpaa,FSK) | String.Contains(ListItem.Mpaa,o.A) | String.Contains(ListItem.Mpaa,Rated 0)">0</value>
+		<value>$INFO[ListItem.Mpaa]</value>
+	</variable>
+
 	<variable name="RatingFlagVar">
 		<value condition="String.IsEmpty(ListItem.Mpaa) | String.Contains(ListItem.Mpaa,NR) | String.IsEqual(ListItem.Mpaa,Rated) | String.IsEqual(ListItem.Mpaa,Rated ) | String.IsEqual(ListItem.Mpaa,Not Rated)">NR.png</value>
 		<value condition="String.IsEqual(ListItem.Mpaa,US:R) | String.IsEqual(ListItem.Mpaa,USA:R) | String.IsEqual(ListItem.Mpaa,Rated R) | String.IsEqual(ListItem.Mpaa,R)">R.png</value>
