@@ -207,10 +207,11 @@
     </variable>
 
 	<variable name="TV_Movie_Status_label">
+	<!--
 		<value condition="!String.isEmpty(Listitem.status) + String.isEqual(ListItem.Status,in production) | !String.isEmpty(Listitem.status) + String.isEqual(ListItem.Status,planned) | !String.isEmpty(Listitem.status) + String.isEqual(ListItem.Status,post production) | integer.isGreater(ListItem.year,System.Date(yyyy)) | !String.isEqual(ListItem.status,released) + !String.isEqal(ListItem.status,canceled) + !String.Startswith(ListItem.status,Returning Series) + !String.Startswith(ListItem.Status,Ended) + !String.isEqal(ListItem.status,in production) + !String.isEqal(ListItem.status,post production) + !String.isEqal(ListItem.status,planed) + !integer.isLess(ListItem.year,System.Date(yyyy))">[B]Noch nicht released[/B]</value>
 		
 		<value condition="!String.isEqual(ListItem.Status,released) + !String.isEqual(ListItem.Status,returning series) + !String.isEqual(ListItem.Status,in production) + !String.isEqual(ListItem.Status,planned) + !String.isEqual(ListItem.Status,canceled) + !String.isEqual(ListItem.Status,ended) + integer.isless(ListItem.year,System.Date(yyyy))"></value>
-		<!--
+		
 		
 		maybe let it green  grün lassen <value condition="String.isEqual(ListItem.Status,returning series)">[B]Wiederkehrend[/B]</value>
 		
@@ -690,15 +691,7 @@
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 
-	<variable name="RatingFlaggermanlabel">
-		<value condition="String.IsEqual(ListItem.Mpaa,Germany:16) | String.Contains(ListItem.Mpaa,ab 16) | String.IsEqual(ListItem.Mpaa,16) | String.Contains(ListItem.Mpaa,FSK 16) | String.IsEqual(ListItem.Mpaa,Rated 16)">16</value>
-		<value condition="String.Contains(ListItem.Mpaa,Germany:0) | String.Contains(ListItem.Mpaa,ab 0) | String.IsEqual(ListItem.Mpaa,0) | String.Contains(ListItem.Mpaa,FSK 0) | String.Contains(ListItem.Mpaa,Rated 0)">0</value>
-		<value condition="String.Contains(ListItem.Mpaa,Germany:6) | String.Contains(ListItem.Mpaa,ab 6) | String.IsEqual(ListItem.Mpaa,6) | String.Contains(ListItem.Mpaa,FSK 6) | String.Contains(ListItem.Mpaa,Rated 6)">6</value>
-		<value condition="String.Contains(ListItem.Mpaa,Germany:12) | String.Contains(ListItem.Mpaa,ab 12) | String.IsEqual(ListItem.Mpaa,12) | String.Contains(ListItem.Mpaa,FSK 12) | String.Contains(ListItem.Mpaa,Rated 12)">12</value>
-		<value condition="String.Contains(ListItem.Mpaa,Germany:18) | String.Contains(ListItem.Mpaa,ab 18) | String.IsEqual(ListItem.Mpaa,18) | String.Contains(ListItem.Mpaa,FSK 18) | String.Contains(ListItem.Mpaa,Rated 18)">18</value>
-		<value condition="String.Contains(ListItem.Mpaa,Germany) | String.Contains(ListItem.Mpaa,FSK) | String.Contains(ListItem.Mpaa,o.A) | String.Contains(ListItem.Mpaa,Rated 0)">0</value>
-		<value>$INFO[ListItem.Mpaa]</value>
-	</variable>
+	
 
 	<variable name="RatingFlagVar">
 		<value condition="String.IsEmpty(ListItem.Mpaa) | String.Contains(ListItem.Mpaa,NR) | String.IsEqual(ListItem.Mpaa,Rated) | String.IsEqual(ListItem.Mpaa,Rated ) | String.IsEqual(ListItem.Mpaa,Not Rated)">NR.png</value>
@@ -824,6 +817,15 @@
 		<value condition="String.Contains(Container(10051).ListItem.Mpaa,DK:11) | String.Contains(Container(10051).ListItem.Mpaa,Denmark:11)">MCCYP_Denmark-11.png</value>
 		<value condition="String.Contains(Container(10051).ListItem.Mpaa,DK:15) | String.Contains(Container(10051).ListItem.Mpaa,Denmark:15)">MCCYP_Denmark-15.png</value>
 		<value>$INFO[Container(10051).ListItem.Mpaa,,.png]</value>
+	</variable>
+	<variable name="RatingFlaggermanlabel">
+		<value condition="String.IsEqual(ListItem.Mpaa,Germany:16) | String.Contains(ListItem.Mpaa,ab 16) | String.IsEqual(ListItem.Mpaa,16) | String.Contains(ListItem.Mpaa,FSK 16) | String.IsEqual(ListItem.Mpaa,Rated 16)">16</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany:0) | String.Contains(ListItem.Mpaa,ab 0) | String.IsEqual(ListItem.Mpaa,0) | String.Contains(ListItem.Mpaa,FSK 0) | String.Contains(ListItem.Mpaa,Rated 0)">0</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany:6) | String.Contains(ListItem.Mpaa,ab 6) | String.IsEqual(ListItem.Mpaa,6) | String.Contains(ListItem.Mpaa,FSK 6) | String.Contains(ListItem.Mpaa,Rated 6)">6</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany:12) | String.Contains(ListItem.Mpaa,ab 12) | String.IsEqual(ListItem.Mpaa,12) | String.Contains(ListItem.Mpaa,FSK 12) | String.Contains(ListItem.Mpaa,Rated 12)">12</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany:18) | String.Contains(ListItem.Mpaa,ab 18) | String.IsEqual(ListItem.Mpaa,18) | String.Contains(ListItem.Mpaa,FSK 18) | String.Contains(ListItem.Mpaa,Rated 18)">18</value>
+		<value condition="String.Contains(ListItem.Mpaa,Germany) | String.Contains(ListItem.Mpaa,FSK) | String.Contains(ListItem.Mpaa,o.A) | String.Contains(ListItem.Mpaa,Rated 0)">0</value>
+		<value condition="String.isEqual(System.Language,German)">$INFO[ListItem.Mpaa]</value>
 	</variable>
 	<variable name="MediaFlagsPathVar">
 		<value condition="Skin.HasSetting(coloredflags)">flags/colored</value>

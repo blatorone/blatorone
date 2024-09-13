@@ -597,6 +597,7 @@
 	                        <shadowcolor></shadowcolor>
 							
 	                    </control>
+						
 				<control type="grouplist" id="5000">
 					<left>20</left>
 					<top>884</top>
@@ -850,6 +851,6 @@
 			</control>
 		</control>
 		<!-- MPAA -->
-						<include condition="!String.IsEqual(ListItem.DBTYPE,set) + !String.IsEqual(ListItem.Property(item.type),person)">InfoMPAA</include>
+		<include condition="!String.IsEqual(ListItem.DBTYPE,set) + !String.IsEqual(ListItem.Property(item.type),person)">InfoMPAA</include>
 	</controls>
 </window>
