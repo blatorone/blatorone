@@ -2647,7 +2647,7 @@
 							<label>$VAR[TV_Movie_Status_label]</label>
 						</control>
 				<control type="image">
-							<visible>!Skin.HasSetting(Disable.totalepisodes)</visible>
+							<visible>!Skin.HasSetting(Disable.totalepisodes) + !string.isempty(ListItem.Property(TotalEpisodes))</visible>
 							<posx>44</posx>
 							<posy>180</posy>
 							<width>103</width>
@@ -2657,7 +2657,7 @@
 							<colordiffuse>$VAR[highlight]</colordiffuse>
 						</control>
 					<control type="label">
-							<visible>!Skin.HasSetting(Disable.totalepisodes)</visible>
+							<visible>!Skin.HasSetting(Disable.totalepisodes) + !string.isempty(ListItem.Property(TotalEpisodes))</visible>
 							<posx>45</posx>
 							<posy>168</posy>
 							<width>100</width>
@@ -2785,7 +2785,7 @@
 							<label>$VAR[TV_Movie_Status_label]</label>
 						</control>
                 <control type="image">
-							<visible>!Skin.HasSetting(Disable.totalepisodes)</visible>
+							<visible>!Skin.HasSetting(Disable.totalepisodes) + !string.isempty(ListItem.Property(TotalEpisodes))</visible>
 							<animation type="Focus">
 							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="125,130" />
 						</animation>
@@ -2807,7 +2807,7 @@
 						<animation type="Unfocus">
 							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="125,130" />
 						</animation>
-							<visible>!Skin.HasSetting(Disable.totalepisodes)</visible>
+							<visible>!Skin.HasSetting(Disable.totalepisodes) + !string.isempty(ListItem.Property(TotalEpisodes))</visible>
 							<posx>45</posx>
 							<posy>168</posy>
 							<width>100</width>

@@ -825,7 +825,7 @@
 		<value condition="String.Contains(ListItem.Mpaa,Germany:12) | String.Contains(ListItem.Mpaa,ab 12) | String.IsEqual(ListItem.Mpaa,12) | String.Contains(ListItem.Mpaa,FSK 12) | String.Contains(ListItem.Mpaa,Rated 12)">12</value>
 		<value condition="String.Contains(ListItem.Mpaa,Germany:18) | String.Contains(ListItem.Mpaa,ab 18) | String.IsEqual(ListItem.Mpaa,18) | String.Contains(ListItem.Mpaa,FSK 18) | String.Contains(ListItem.Mpaa,Rated 18)">18</value>
 		<value condition="String.Contains(ListItem.Mpaa,Germany) | String.Contains(ListItem.Mpaa,FSK) | String.Contains(ListItem.Mpaa,o.A) | String.Contains(ListItem.Mpaa,Rated 0)">0</value>
-		<value condition="String.isEqual(System.Language,German)">$INFO[ListItem.Mpaa]</value>
+		<value condition="!String.isEqual(System.Language,German)">$INFO[ListItem.Mpaa]</value>
 	</variable>
 	<variable name="MediaFlagsPathVar">
 		<value condition="Skin.HasSetting(coloredflags)">flags/colored</value>
