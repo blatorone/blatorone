@@ -333,7 +333,7 @@
 					<left>105</left>
 					<top>355</top>
 					<width>145</width>
-					<label>$VAR[WatchedStatusVar]</label>
+					<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
 					<font>font20_title</font>
 					<shadowcolor>text_shadow</shadowcolor>
 					<align>right</align>
