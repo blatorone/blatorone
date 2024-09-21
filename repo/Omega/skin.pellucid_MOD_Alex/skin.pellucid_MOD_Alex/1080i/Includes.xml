@@ -1672,7 +1672,7 @@
 							<align>center</align>
 							<font>smallstrong</font>
 							<textcolor>$VAR[Home]</textcolor>
-							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+							<label>$VAR[watchedepisode]$INFO[ListItem.Property(TotalEpisodes)]</label>
 						</control>
 			</control>
 
@@ -1747,7 +1747,7 @@
 							<align>center</align>
 							<font>smallstrong</font>
 							<textcolor>$VAR[Home]</textcolor>
-							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+							<label>$VAR[watchedepisode]$INFO[ListItem.Property(TotalEpisodes)]</label>
 						</control>
 					<control type="textbox">
 							
@@ -1871,7 +1871,7 @@
 							<align>center</align>
 							<font>smallstrong</font>
 							<textcolor>$VAR[Home]</textcolor>
-							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+							<label>$VAR[watchedepisode]$INFO[ListItem.Property(TotalEpisodes)]</label>
 						</control>
 				<control type="textbox">
 					<left>40</left>
@@ -1946,7 +1946,7 @@
 							<align>center</align>
 							<font>smallstrong</font>
 							<textcolor>$VAR[Home]</textcolor>
-							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+							<label>$VAR[watchedepisode]$INFO[ListItem.Property(TotalEpisodes)]</label>
 						</control>
 						<control type="textbox">
 							<include>focusThumb</include>
@@ -2354,8 +2354,8 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="410"/>
-                <param name="posy2" value="425"/>
+				<param name="posy" value="430"/>
+                <param name="posy2" value="445"/>
 				<param name="posx" value="925"/>
 				<param name="posx2" value="940"/>
 			</include>
@@ -2364,7 +2364,7 @@
 						<effect type="fade" start="100" end="0" time="500" delay="0"/>
 					</animation>
 				<left>420</left>
-				<top>390</top>
+				<top>410</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<right>0</right>
 				<height>225</height>
@@ -2599,8 +2599,8 @@
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="posy" value="700"/> 
-                <param name="posy2" value="715"/>
+				<param name="posy" value="720"/> 
+                <param name="posy2" value="735"/>
 				<param name="posx" value="925"/>
 				<param name="posx2" value="940"/>
 			</include>
@@ -2609,7 +2609,7 @@
 						<effect type="fade" start="100" end="0" time="500" delay="0"/>
 					</animation>
 				<left>420</left>
-				<top>700</top>
+				<top>720</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<right>0</right>
 				<height>225</height>
@@ -2666,7 +2666,7 @@
 							<align>center</align>
 							<font>smallstrong</font>
 							<textcolor>$VAR[Home]</textcolor>
-							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+							<label>$VAR[watchedepisode]$INFO[ListItem.Property(TotalEpisodes)]</label>
 						</control>
 
 				<control type="group">
@@ -2816,7 +2816,7 @@
 							<align>center</align>
 							<font>smallstrong</font>
 							<textcolor>$VAR[Home]</textcolor>
-							<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+							<label>$VAR[watchedepisode]$INFO[ListItem.Property(TotalEpisodes)]</label>
 						</control>
 					
 				<control type="group">
@@ -2948,7 +2948,7 @@
 						<effect type="fade" start="100" end="0" time="500" delay="0"/>
 					</animation>
 				<left>460</left>
-				<top>580</top>
+				<top>600</top>
 				<width>900</width>
 				<height>90</height>
 				<font>dialogTitle</font>
@@ -2962,7 +2962,7 @@
 						<effect type="fade" start="100" end="0" time="500" delay="0"/>
 					</animation>
 				<left>750</left>
-				<top>610</top>
+				<top>630</top>
 				<width>550</width>
 				<height>90</height>
 				<font>dialogTitle</font>
@@ -2984,7 +2984,7 @@
 						<effect type="fade" start="100" end="0" time="500" delay="0"/>
 					</animation>
 				<left>460</left>
-				<top>640</top>
+				<top>660</top>
 				<width>900</width>
 				<height>90</height>
 				<font>dialogTitle</font>
@@ -2998,7 +2998,7 @@
 						<effect type="fade" start="100" end="0" time="500" delay="0"/>
 					</animation>
 				<left>750</left>
-				<top>610</top>
+				<top>630</top>
 				<width>550</width>
 				<height>90</height>
 				<font>dialogTitle</font>

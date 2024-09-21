@@ -87,10 +87,10 @@
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="ListLabel2Var">
-		<value condition="String.IsEmpty(Container.PluginName) + Container.Content(tvshows) + Container.SortMethod(29)">$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</value>
-		<value condition="String.IsEmpty(Container.PluginName) + String.IsEqual(ListItem.DBType,season) + Container.SortMethod(29)">$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</value>
-		<value condition="String.IsEmpty(Container.PluginName) + String.IsEqual(ListItem.DBType,set) + Container.SortMethod(1)">$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</value>
-		<value condition="ListItem.IsFolder + [Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)]">$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</value>
+		<value condition="String.IsEmpty(Container.PluginName) + Container.Content(tvshows) + Container.SortMethod(29)">$VAR[watchedepisode]$INFO[ListItem.Property(TotalEpisodes)]</value>
+		<value condition="String.IsEmpty(Container.PluginName) + String.IsEqual(ListItem.DBType,season) + Container.SortMethod(29)">$VAR[watchedepisode]$INFO[ListItem.Property(TotalEpisodes)]</value>
+		<value condition="String.IsEmpty(Container.PluginName) + String.IsEqual(ListItem.DBType,set) + Container.SortMethod(1)">$VAR[watchedepisode]$INFO[ListItem.Property(TotalEpisodes)]</value>
+		<value condition="ListItem.IsFolder + [Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)]">$VAR[watchedepisode]$INFO[ListItem.Property(TotalEpisodes)]</value>
 		<value condition="Container.SortMethod(7) | Container.SortMethod(29)">$INFO[ListItem.Year]</value>
 		<value condition="!String.isempty(ListItem.Appearances)">$LOCALIZE[38026]: $INFO[ListItem.Appearances]</value>
 		<value condition="Window.IsActive(musicplaylist) | Window.IsActive(videoplaylist)">$INFO[ListItem.Duration]</value>
@@ -502,8 +502,8 @@
 		<value>icons/pvr/timers/recording.png</value>
   </variable>
   <variable name="watchedepisode">
-		<value condition="!string.isempty(ListItem.Property(WatchedEpisodes))">$INFO[ListItem.Property(WatchedEpisodes)]</value>
-		<value condition="string.isempty(ListItem.Property(WatchedEpisodes))">0</value>
+		<value condition="!string.isempty(ListItem.Property(WatchedEpisodes))">$INFO[ListItem.Property(WatchedEpisodes)]/</value>
+		<value condition="string.isempty(ListItem.Property(WatchedEpisodes)) + !string.isempty(ListItem.Property(TotalEpisodes))">0/</value>
 	</variable>
 	<!-- Breadcrumbs -->
 	<variable name="BreadcrumbsVideoVar">

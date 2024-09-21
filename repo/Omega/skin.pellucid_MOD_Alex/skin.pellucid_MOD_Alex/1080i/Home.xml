@@ -472,11 +472,11 @@
 						</include>
 						
 					<control type="label">
-							<animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
+							 <animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
 								<effect type="fade" start="100" end="0" time="500" delay="0"/>
 							</animation>
 	                        <posx>1500</posx>
-	                        <posy>460</posy>
+	                        <posy>490</posy>
 	                        <width>1-col</width>
 	                        <height>2-row</height>
 	                        <align>center</align>
@@ -485,14 +485,30 @@
 	                        <textcolor>textActive</textcolor>
 	                        <label></label>
 	                        <shadowcolor></shadowcolor>
-							<visible>Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget) + !Container(5200).IsUpdating</visible>
+							<visible>Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget) + !Container(5200).IsUpdating + Container(5200).HasNext</visible>
+	                    </control>
+						<control type="label">
+							<animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
+								<effect type="fade" start="100" end="0" time="500" delay="0"/>
+							</animation>
+	                        <posx>375</posx>
+	                        <posy>490</posy>
+	                        <width>1-col</width>
+	                        <height>2-row</height>
+	                        <align>center</align>
+	                        <aligny>center</aligny>
+	                        <font>symbolLarge</font>
+	                        <textcolor>textActive</textcolor>
+	                        <label></label>
+	                        <shadowcolor></shadowcolor>
+							<visible>Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget) + !Container(5200).IsUpdating + Container(5200).HasPrevious</visible>
 	                    </control>
 						<control type="label">
 							<animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
 								<effect type="fade" start="100" end="0" time="500" delay="0"/>
 							</animation>
 	                        <posx>1500</posx>
-	                        <posy>760</posy>
+	                        <posy>790</posy>
 	                        <width>1-col</width>
 	                        <height>2-row</height>
 	                        <align>center</align>
@@ -501,7 +517,26 @@
 	                        <textcolor>textActive</textcolor>
 	                        <label></label>
 	                        <shadowcolor></shadowcolor>
-							<visible>Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget) + !Container(5300).IsUpdating</visible>
+							<visible>Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget) + !Container(5300).IsUpdating + Container(5300).HasNext</visible>
+	                    </control>
+						<control type="label">
+							<animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
+								<effect type="fade" start="100" end="0" time="500" delay="0"/>
+							</animation>
+							<animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
+								<effect type="rotatey" end="360" center="36" tween="back" easing="out" time="1000"/>
+							</animation>
+	                        <posx>375</posx>
+	                        <posy>790</posy>
+	                        <width>1-col</width>
+	                        <height>2-row</height>
+	                        <align>center</align>
+	                        <aligny>center</aligny>
+	                        <font>symbolLarge</font>
+	                        <textcolor>textActive</textcolor>
+	                        <label></label>
+	                        <shadowcolor></shadowcolor>
+							<visible>Skin.HasSetting(homemenuside) + !Skin.HasSetting(widget) + !Container(5300).IsUpdating + Container(5300).HasPrevious</visible>
 	                    </control>
 						
 						

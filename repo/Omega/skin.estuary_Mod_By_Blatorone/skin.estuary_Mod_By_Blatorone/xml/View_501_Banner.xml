@@ -152,7 +152,7 @@
 								<font>font12</font>
 								<align>right</align>
 								<aligny>center</aligny>
-								<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+								<label>$VAR[watchedepisode]$INFO[ListItem.Property(TotalEpisodes)]</label>
 							</control>
 						</control>
 						<control type="group">

@@ -232,7 +232,7 @@
 				<top>522</top>
 				<width>185</width>
 				<height>24</height>
-				<label>$VAR[watchedepisode]/$INFO[ListItem.Property(TotalEpisodes)]</label>
+				<label>$VAR[watchedepisode]$INFO[ListItem.Property(TotalEpisodes)]</label>
 				<font>font20_title</font>
 				<shadowcolor>text_shadow</shadowcolor>
 				<align>right</align>
