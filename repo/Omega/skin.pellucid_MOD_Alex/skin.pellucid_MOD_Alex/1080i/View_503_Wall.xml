@@ -119,8 +119,8 @@
                         <description>Progress Bar</description>
                         <posx>6</posx>
                         <posy>322</posy>
-                        <width>216</width>
-                        <height>15</height>
+                        <posy>429</posy>
+                        <width>278</width>
                         <texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
                         <info>ListItem.PercentPlayed</info>
@@ -316,8 +316,8 @@
 				        <visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         <description>Progress Bar</description>
                         <posx>6</posx>
-                        <posy>322</posy>
-                        <width>216</width>
+                        <posy>429</posy>
+                        <width>278</width>
                         <height>15</height>
                         <texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -501,8 +501,8 @@
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>6</posx>
-                        	<posy>322</posy>
-                        	<width>216</width>
+                        	<posy>429</posy>
+                       		<width>278</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
@@ -687,8 +687,8 @@
 				        	<visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         	<description>Progress Bar</description>
                         	<posx>6</posx>
-                        	<posy>322</posy>
-                        	<width>216</width>
+                        	<posy>429</posy>
+                        	<width>278</width>
                         	<height>15</height>
                         	<texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         	<midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
