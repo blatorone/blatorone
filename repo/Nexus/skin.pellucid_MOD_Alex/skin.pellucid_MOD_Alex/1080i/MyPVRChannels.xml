@@ -14,6 +14,21 @@
         <include>Battery</include>
         <!--Backbutton touchscreen-->
         <include>Backbuttoncross</include>
+        <control type="label">
+        <animation type="conditional" condition="player.hasvideo + !VideoPlayer.IsFullscreen" reversible="true">
+		    		<effect type="slide" start="0" end="-450" time="200" delay="0"/>
+		        </animation>
+				<right>-25</right>
+                <posy>-25</posy>
+				<width>288</width>
+				<height>200</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<scroll>true</scroll>
+				<font>sectionTitle</font>
+	            <label>[B]$INFO[System.Time][/B]</label>
+                <textcolor>$VAR[Home]</textcolor>
+		</control>
         <!--page container group--> 
         <control type="group">
             <!--window fader-->
@@ -21,7 +36,7 @@
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation>
             <!--shift page for certain modal dialogs-->
-            <include>modalDialogContentShift</include>
+            
             <!--Main content listing-->
 
             <control type="list" id="11">

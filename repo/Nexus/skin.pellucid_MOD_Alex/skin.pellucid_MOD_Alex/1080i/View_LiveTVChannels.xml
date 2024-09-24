@@ -230,7 +230,7 @@
             		</control>
 					<control type="grouplist">
 						<posx>10</posx>
-						<posy>225</posy>
+						<posy>200</posy>
 						<control type="label">
 							<visible>ListItem.Hasepg</visible>
 							<width>869</width>
@@ -239,13 +239,12 @@
 							<font>sectionTitle</font>
 							<wrapmultiline>false</wrapmultiline>
 							<scroll>true</scroll>
-							<textcolor>overlay</textcolor>
+							<textcolor>textActive</textcolor>
 							<selectedcolor>yellow</selectedcolor>
 							<label>[I][B]$INFO[ListItem.Title][/B][/I]</label>
 						</control>
 						<control type="label">
 							<visible>!ListItem.Hasepg</visible>
-							
 							<width>695</width>
 							<height>2-row</height>
 							<aligny>center</aligny>
@@ -255,12 +254,10 @@
 							<selectedcolor>yellow</selectedcolor>
 							<label>$LOCALIZE[19055]</label>
 						</control>
-
-						
 						<control type="label">
 							<visible>!String.IsEmpty(ListItem.Episode)</visible>
                         	<width>12-col</width>
-                        	<font>sectionTitle</font>
+                        	<font>sectionTitle_small</font>
                         	<scroll>true</scroll>
                         	<textcolor>textActive</textcolor>
                         	<label>[B]$INFO[ListItem.EpisodeName][/B]</label>
@@ -272,7 +269,7 @@
                         		<font>sectionTitle</font>
                         		<scroll>true</scroll>
                         		<textcolor>textActive</textcolor>
-                        		<label>[COLOR $VAR[highlight]]$LOCALIZE[20373]:[/COLOR] $INFO[ListItem.Season]          [COLOR $VAR[highlight]]$LOCALIZE[20359]:[/COLOR] $INFO[ListItem.Episode]</label>
+                        		<label>[COLOR $VAR[highlight]]$LOCALIZE[20373]:[/COLOR] $INFO[ListItem.Season]          [COLOR $VAR[highlight]]$LOCALIZE[20359]:[/COLOR] $INFO[ListItem.Episode][CR]</label>
                         		<shadowcolor></shadowcolor>
                     		</control>
 							<control type="label">
@@ -281,44 +278,53 @@
                         		<font>sectionTitle</font>
                         		<scroll>true</scroll>
                         		<textcolor>textActive</textcolor>
-                        		<label>[COLOR $VAR[highlight]]$LOCALIZE[20359]:[/COLOR] $INFO[ListItem.Episode]</label>
+                        		<label>[COLOR $VAR[highlight]]$LOCALIZE[20359]:[/COLOR] $INFO[ListItem.Episode][CR]</label>
                         		<shadowcolor></shadowcolor>
                     		</control>
 						
 						<control type="label">
-							<visible>ListItem.Hasepg + String.IsEmpty(ListItem.Year)</visible>
+							<visible>ListItem.Hasepg + String.IsEmpty(ListItem.Year) + !String.contains(ListItem.Genre,$LOCALIZE[19499])</visible>
                         	<width>10-col</width>
                         	<font>sectionTitle</font>
                         	<scroll>true</scroll>
                         	<textcolor>textActive</textcolor>
-                        	<label>[COLOR $VAR[highlight]]$LOCALIZE[515]: [/COLOR][COLOR textDisabled]$INFO[ListItem.Genre][/COLOR]</label>
+                        	<label>[COLOR $VAR[highlight]]$LOCALIZE[515]: [/COLOR][COLOR textDisabled]$INFO[ListItem.Genre][/COLOR][CR]</label>
                         	<shadowcolor></shadowcolor>
                     	</control>
 						<control type="label">
-							<visible>ListItem.Hasepg + !String.isEmpty(listItem.Year)</visible>
+							<visible>ListItem.Hasepg + !String.isEmpty(listItem.Year) + !String.contains(ListItem.Genre,$LOCALIZE[19499])</visible>
                         	<width>10-col</width>
                         	<font>sectionTitle</font>
                         	<scroll>true</scroll>
                         	<textcolor>textActive</textcolor>
-                        	<label>[COLOR $VAR[highlight]]$LOCALIZE[515]: [/COLOR][COLOR textDisabled]$INFO[ListItem.Genre][/COLOR]  [COLOR $VAR[highlight]]$LOCALIZE[345]: [/COLOR][COLOR textDisabled]$INFO[ListItem.Year][/COLOR]</label>
+                        	<label>[COLOR $VAR[highlight]]$LOCALIZE[515]: [/COLOR][COLOR textDisabled]$INFO[ListItem.Genre][/COLOR]  [COLOR $VAR[highlight]]$LOCALIZE[345]: [/COLOR][COLOR textDisabled]$INFO[ListItem.Year][/COLOR][CR]</label>
                         	<shadowcolor></shadowcolor>
                     	</control>
+						
 						<control type="label">
-							<visible>ListItem.Hasepg</visible>
-                        	
-                        	<width>6-col</width>
+							<visible>ListItem.Hasepg + !String.isEmpty(listItem.Year) + String.contains(ListItem.Genre,$LOCALIZE[19499])</visible>
+                        	<width>10-col</width>
                         	<font>sectionTitle</font>
                         	<scroll>true</scroll>
                         	<textcolor>textActive</textcolor>
-                        	<label></label>
+                        	<label>[COLOR $VAR[highlight]]$LOCALIZE[345]: [/COLOR][COLOR textDisabled]$INFO[ListItem.Year][/COLOR][CR]</label>
+                        	<shadowcolor></shadowcolor>
+                    	</control>
+						<control type="label">
+							<visible>ListItem.Hasepg + !String.isEmpty(ListItem.Plot)</visible>
+                        	<width>10-col</width>
+                        	<font>sectionTitle</font>
+                        	<scroll>true</scroll>
+                        	<textcolor>textActive</textcolor>
+                        	<label>[COLOR $VAR[highlight]]$LOCALIZE[19033]:[/COLOR]</label>
                         	<shadowcolor></shadowcolor>
                     	</control>
 						<control type="grouplist">
 						<orientation>horizontal</orientation>
 						<control type="textbox">
-							
+							<visible>ListItem.Hasepg + !String.isEmpty(ListItem.Plot)</visible>
 							<width>800</width>
-							<height>200</height>
+							<height>215</height>
 							<font>sectionTitle</font>
 							<label>$INFO[ListItem.Plot]</label>
 							<pagecontrol>80</pagecontrol>
@@ -331,7 +337,7 @@
                    			<include>scrollbarposxpvrchannels</include>
                     		<include>scrollbarcolor</include>
                     		<posy>0</posy>
-                    		<height>8-row</height>
+                    		<height>6-row</height>
                     		<onleft>60</onleft>
 							<onup>8000</onup>
                 		</control>

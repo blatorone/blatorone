@@ -4,8 +4,8 @@
 	<controls>
 		<control type="image">
 					<depth>DepthContentPopout</depth> 
-					<left>4</left>
-					<top>4</top>
+					<left>0</left>
+					<top>0</top>
 					<width>fullscreenWidth</width>
 					<height>fullscreenHeight</height>
 					<aspectratio>scale</aspectratio>
@@ -595,7 +595,7 @@
 	                        <textcolor>textActive</textcolor>
 	                        <label></label>
 	                        <shadowcolor></shadowcolor>
-							
+							<visible>Container(50).HasNext</visible>
 	                    </control>
 						
 				<control type="grouplist" id="5000">
@@ -775,7 +775,7 @@
 	                        <textcolor>textActive</textcolor>
 	                        <label></label>
 	                        <shadowcolor></shadowcolor>
-							
+							<visible>Container(5000).HasNext</visible>
 	                    </control>
 						
 			<control type="label">

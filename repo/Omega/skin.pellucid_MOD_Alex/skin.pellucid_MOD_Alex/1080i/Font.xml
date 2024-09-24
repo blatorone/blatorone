@@ -126,6 +126,13 @@
 			<style>capitalize</style>
         </font>
         <font>
+            <name>sectionTitle_small</name>
+            <filename>roboto_slab/bold.ttf</filename>
+            <size>28</size>
+            <linespacing>1.0</linespacing>
+			<style>capitalize</style>
+        </font>
+        <font>
             <name>pageSubTitle</name>
             <filename>roboto/medium.ttf</filename>
             <size>30</size>
@@ -399,6 +406,13 @@
 			<style>capitalize</style>
         </font>
         <font>
+            <name>sectionTitle_small</name>
+            <filename>roboto_slab/bold.ttf</filename>
+            <size>28</size>
+            <linespacing>1.0</linespacing>
+			<style>capitalize</style>
+        </font>
+        <font>
             <name>pageSubTitle</name>
             <filename>heebo/medium.ttf</filename>
             <size>30</size>
@@ -545,12 +559,7 @@
             <size>30</size>
         </font>
     </fontset>
-	
-        
 
-
-	
-	
 	<fontset id="arial">
         <!--Arial fontset-->
         <font>
@@ -681,6 +690,13 @@
             <filename>arial.ttf</filename>
 			<style>bold</style>
             <size>36</size>
+            <linespacing>1.0</linespacing>
+			<style>capitalize</style>
+        </font>
+        <font>
+            <name>sectionTitle_small</name>
+            <filename>roboto_slab/bold.ttf</filename>
+            <size>28</size>
             <linespacing>1.0</linespacing>
 			<style>capitalize</style>
         </font>

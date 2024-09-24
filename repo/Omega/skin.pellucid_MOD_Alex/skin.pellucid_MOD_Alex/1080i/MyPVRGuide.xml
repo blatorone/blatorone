@@ -46,10 +46,25 @@
 	        </control>
 		</control>
 		<!--Backbutton touchscreen-->
-       	<include>Backbutton</include>
+       	<include>Backbuttoncross</include>
+		<control type="label">
+        <animation type="conditional" condition="player.hasvideo + !VideoPlayer.IsFullscreen" reversible="true">
+		    		<effect type="slide" start="0" end="-450" time="200" delay="0"/>
+		        </animation>
+				<right>-25</right>
+                <posy>-25</posy>
+				<width>288</width>
+				<height>200</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<scroll>true</scroll>
+				<font>sectionTitle</font>
+	            <label>[B]$INFO[System.Time][/B]</label>
+                <textcolor>$VAR[Home]</textcolor>
+		</control>
 		<control type="group">
 			<!--shift page for certain modal dialogs-->
-			<include>modalDialogContentShift</include>
+			
 			<!--Main content listing-->
 			<control type="group" id="9999">
 				<!--initial animation-->
@@ -538,6 +553,25 @@
 				<visible>false</visible>
 			</control>
 		</control>
+		 <!--Keyboard Crosskey-->
+        <include content="keyboard select">
+            <param name="posx">87%</param>
+            <param name="posy">35%</param>
+            <param name="focus">9999</param>
+            <param name="up">up</param>
+            <param name="down">down</param>
+            <param name="left">left</param>
+            <param name="right">right</param>
+            <param name="select">select</param>
+            <param name="back">back</param>
+            <param name="visible">skin.hassetting(Touch)</param>
+            <param name="upview">true</param>
+			<param name="downview">true</param>
+			<param name="leftview">true</param>
+			<param name="rightview">true</param>
+			<param name="selectview">true</param>
+            <param name="color">keyboardInactive</param>
+        </include>
 		<!--mini window-->
 		<include>miniVideoPlayer</include>
 		<!--hub menu-->

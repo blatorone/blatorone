@@ -573,7 +573,7 @@
 				<visible>Skin.HasSetting(show_battery)</visible>
 				<posx>950</posx>
 				<posy>0</posy>
-                <animation type="conditional" condition="player.hasvideo + !VideoPlayer.IsFullscreen" reversible="true">
+                <animation type="conditional" condition="player.hasvideo + !VideoPlayer.IsFullscreen + !window.isactive(12003)" reversible="true">
 		    		<effect type="slide" start="0" end="-450" time="200" delay="0"/>
 		        </animation>
 				<control type="grouplist">
@@ -906,6 +906,23 @@
                 <control type="button">
                     <description>Backspace button</description>
                     <label>31253</label>
+                    <posx>-185</posx>
+                    <posy>400</posy>
+                    <width>3-col</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <textwidth>180</textwidth>
+                    <onclick>$PARAM[back]</onclick>
+                    <texturenofocus colordiffuse="$PARAM[color]">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <font>buttonTitle</font>
+                    <visible>Skin.HasSetting(crosskey) + Pvr.IsPlayingTv + window.isactive(12901)</visible>
+                </control>
+				<control type="button">
+                    <description>Backspace button</description>
+                    <label>31253</label>
                     <posx>-60</posx>
                     <posy>400</posy>
                     <width>3-col</width>
@@ -918,14 +935,31 @@
                     <focusedcolor>$VAR[Home]</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <font>buttonTitle</font>
-                    <visible>Skin.HasSetting(crosskey)</visible>
+                    <visible>Skin.HasSetting(crosskey) + !Pvr.IsPlayingTv + window.isactive(12901)</visible>
                 </control>
 				<control type="button">
-                    <description>5 button</description>
-                    <label></label>
-                    <posx>200</posx>
+                    <description>Backspace button</description>
+                    <label>31253</label>
+                    <posx>-60</posx>
                     <posy>400</posy>
-                    <width>100</width>
+                    <width>3-col</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <textwidth>180</textwidth>
+                    <onclick>$PARAM[back]</onclick>
+                    <texturenofocus colordiffuse="$PARAM[color]">masks/discsurface.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
+                    <focusedcolor>$VAR[Home]</focusedcolor>
+                    <textcolor>textActive</textcolor>
+                    <font>buttonTitle</font>
+                    <visible>Skin.HasSetting(crosskey) + !window.isactive(12901)</visible>
+                </control>
+				<control type="button">
+                    <description>OSD/Config button</description>
+                    <label></label>
+                    <posx>65</posx>
+                    <posy>400</posy>
+                    <width>3-col</width>
                     <height>100</height>
                     <align>center</align>
                     <texturenofocus colordiffuse="$PARAM[color]">masks/discsurface.png</texturenofocus>

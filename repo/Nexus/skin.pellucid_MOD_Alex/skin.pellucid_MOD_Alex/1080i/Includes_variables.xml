@@ -452,9 +452,9 @@
 	</variable>
 	<variable name="VideoInfoMainLabelVar">
 		<value condition="String.IsEqual(ListItem.DBType,set)">$INFO[ListItem.Title]</value>
-		<value condition="!String.IsEmpty(ListItem.TVShowTitle)">$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]</value>
-		<value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]</value>
-		<value>$INFO[ListItem.Label]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]</value>
+		<value condition="!String.IsEmpty(ListItem.TVShowTitle)">$INFO[ListItem.TVShowTitle]$INFO[ListItem.Year, ([COLOR highlight],[/COLOR])]</value>
+		<value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]$INFO[ListItem.Year, ([COLOR highlight],[/COLOR])]</value>
+		<value>$INFO[ListItem.Label]$INFO[ListItem.Year, ([COLOR highlight],[/COLOR])]</value>
 	</variable>
 	<variable name="VideoInfoSubLabelVar">
 		<value condition="String.IsEqual(ListItem.DBType,episode)">$INFO[ListItem.Season]$INFO[ListItem.Episode,[COLOR grey]x[/COLOR],: ]$INFO[ListItem.Title]</value>

@@ -20,7 +20,7 @@
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation>
             <!--shift page for certain modal dialogs-->
-            <include>modalDialogContentShift</include>
+            
             <!--Main content listing-->
             <control type="group" id="9999">
                 <include>contentOpen</include>
