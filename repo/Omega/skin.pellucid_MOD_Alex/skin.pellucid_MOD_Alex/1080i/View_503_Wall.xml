@@ -118,8 +118,7 @@
 				        <visible>ListItem.IsResumable + !String.IsEqual(ListItem.PercentPlayed,0) + !Skin.HasSetting(Disable.progress)</visible>
                         <description>Progress Bar</description>
                         <posx>6</posx>
-                        <posy>322</posy>
-                        <posy>429</posy>
+                        <posy>432</posy>
                         <width>278</width>
                         <texturebg colordiffuse="grey">masks/discsurface.png</texturebg>
                         <midtexture colordiffuse="$VAR[highlight]">masks/discsurface.png</midtexture>
