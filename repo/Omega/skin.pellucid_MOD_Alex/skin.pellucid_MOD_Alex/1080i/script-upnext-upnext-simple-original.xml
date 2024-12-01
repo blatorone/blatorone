@@ -46,14 +46,14 @@
                         <height>56</height>
                         <itemgap>10</itemgap>
                         <control type="button" id="3012">
-                            <label>       $ADDON[service.upnext 30006]</label>
-                            <visible>Integer.IsGreater(Window.Property(remaining),25)</visible>
+                            <label>$ADDON[service.upnext 30006]</label>
+                        
                             <height>56</height>
                             <width min="50">auto</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>DDFFFFFF</textcolor>
-                            <shadowcolor>FF000000</shadowcolor>
+                            <textcolor>$VAR[Home]</textcolor>
+                            <focusedcolor>$VAR[Home]</focusedcolor>
                             <aligny>center</aligny>
                             <align>center</align>
                             <texturefocus border="10" colordiffuse="$VAR[highlight]">upnext/button.png</texturefocus>
@@ -66,8 +66,8 @@
                             <width min="50">auto</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>DDFFFFFF</textcolor>
-                            <shadowcolor>FF000000</shadowcolor>
+                            <textcolor>$VAR[Home]</textcolor>
+                            <focusedcolor>$VAR[Home]</focusedcolor>
                             <aligny>center</aligny>
                             <align>center</align>
                             <texturefocus border="10" colordiffuse="v">upnext/button.png</texturefocus>
@@ -109,7 +109,7 @@
                         <width>46</width>
                         <height>46</height>
                         <aspect>keep</aspect>
-                        <texture colordiffuse="$VAR[Home]">upnext/nextupicons/30.png</texture>
+                        <texture colordiffuse="$VAR[highlight]">upnext/nextupicons/30.png</texture>
                         <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
                         <visible>Integer.IsGreater(Window.Property(remaining),30)</visible>
                     </control>
@@ -117,7 +117,7 @@
                         <width>46</width>
                         <height>46</height>
                         <aspect>keep</aspect>
-                        <texture colordiffuse="$VAR[Home]">$INFO[Window.Property(remaining),upnext/nextupicons/,.png]</texture>
+                        <texture colordiffuse="$VAR[highlight]">$INFO[Window.Property(remaining),upnext/nextupicons/,.png]</texture>
                         <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
                         <visible>control.hasfocus(3012) + Integer.IsLessOrEqual(Window.Property(remaining),30) + Integer.IsGreater(Window.Property(remaining),25)</visible>
                     </control>
@@ -125,7 +125,7 @@
                         <width>46</width>
                         <height>46</height>
                         <aspect>keep</aspect>
-                        <texture colordiffuse="DDFFFFFF">$INFO[Window.Property(remaining),upnext/nextupicons/,.png]</texture>
+                        <texture colordiffuse="$VAR[highlight]">$INFO[Window.Property(remaining),upnext/nextupicons/,.png]</texture>
                         <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
                         <visible>!control.hasfocus(3012) + Integer.IsLessOrEqual(Window.Property(remaining),30) + Integer.IsGreater(Window.Property(remaining),25)</visible>
                     </control>

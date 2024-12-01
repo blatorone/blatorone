@@ -59,7 +59,7 @@ class UpNextMonitor(xbmc.Monitor, object):
     def log(cls, msg, level=utils.LOGDEBUG):
         utils.log(msg, name=cls.__name__, level=level)
 
-    # pylint: disable=too-many-return-statements
+    # pylint: disable=too-many-branches,too-many-return-statements
     def _check_video(self, plugin_data=None, player_data=None):
         # Only process one start at a time unless plugin data has been received
         if self.state.starting and not plugin_data:
@@ -71,7 +71,10 @@ class UpNextMonitor(xbmc.Monitor, object):
 
         # onPlayBackEnded for current file can trigger after next file starts
         # Wait additional 5s after onPlayBackEnded or last start
-        wait_count = SETTINGS.start_delay * start_num
+        if plugin_data:
+            wait_count = 0
+        else:
+            wait_count = SETTINGS.start_delay * start_num
         while not self.abortRequested() and wait_count > 0:
             self.waitForAbort(1)
             wait_count -= 1
@@ -189,7 +192,10 @@ class UpNextMonitor(xbmc.Monitor, object):
         play_info = self._get_playback_details()
 
         # Update stored video resolution if detector is running
-        if play_info and self.detector and not self.detector.credits_detected():
+        if (play_info
+                and self.detector
+                and self.detector.hashes
+                and not self.detector.credits_detected()):
             self.detector.get_video_resolution(_cache=[None])
             if (play_info['speed'] == 1
                     and not self.state.is_tracking()
@@ -502,17 +508,23 @@ class UpNextMonitor(xbmc.Monitor, object):
                 self.popuphandler = None
                 self.log('Cleanup popuphandler')
 
-    def _widget_reload(self, init=False):
-        if self._idle[0] != constants.IDLE_STATE['idle']:
-            return 0
-        now = int(time())
-        if init:
-            if xbmc.getCondVisibility('System.ScreenSaverActive'):
-                self._idle[0] = constants.IDLE_STATE['sleeping']
-            self._idle[1] = now
-        delta = now - self._idle[1]
-        if delta <= SETTINGS.widget_refresh_period - 10:
-            return delta
+    def _widget_reload(self, init=False, force=False):
+        if force:
+            now = int(time())
+        else:
+            if self._idle[0] != constants.IDLE_STATE['idle']:
+                utils.set_property(constants.WIDGET_RELOAD_PROPERTY_NAME, '')
+                return 0
+            now = int(time())
+            if init:
+                if xbmc.getCondVisibility('System.ScreenSaverActive'):
+                    self._idle[0] = constants.IDLE_STATE['sleeping']
+                self._idle[1] = now
+            delta = now - self._idle[1]
+            if delta <= SETTINGS.widget_refresh_period - 10:
+                utils.set_property(constants.WIDGET_RELOAD_PROPERTY_NAME, '')
+                return delta
+
         self.log('Widget reload')
         self._idle[1] = now
         utils.set_property(constants.WIDGET_RELOAD_PROPERTY_NAME, str(now))
@@ -625,7 +637,7 @@ class UpNextMonitor(xbmc.Monitor, object):
             self.log('UpNext disabled', utils.LOGINFO)
             self.stop()
         elif self._started:
-            self._widget_reload()
+            self._widget_reload(force=True)
         else:
             self.log('UpNext enabled', utils.LOGINFO)
             self.start()

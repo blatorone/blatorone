@@ -579,7 +579,7 @@ msgid "Detector resize method"
 msgstr ""
 
 msgctxt "#30736"
-msgid "Nearest (fastest, lowest quality"
+msgid "Nearest (fastest, lowest quality)"
 msgstr ""
 
 msgctxt "#30737"

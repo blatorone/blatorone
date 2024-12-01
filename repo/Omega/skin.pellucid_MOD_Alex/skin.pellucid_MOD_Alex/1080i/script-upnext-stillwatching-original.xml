@@ -115,7 +115,7 @@
                         <textcolor>DDFFFFFF</textcolor>
                         <shadowcolor>FF000000</shadowcolor>
                         <label>$ADDON[service.upnext 30035]</label>
-                        <visible>Integer.IsLessOrEqual(Window.Property(remaining),60)</visible>
+                        
                     </control>
                     <control type="label">
                         <width>auto</width>
@@ -180,13 +180,13 @@
                         <itemgap>10</itemgap>
                         <control type="button" id="3012">
                             <label>       $ADDON[service.upnext 30010]</label>
-                            <visible>Integer.IsGreater(Window.Property(remaining),25)</visible>
+                            
                             <height>56</height>
                             <width min="50">auto</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>DDFFFFFF</textcolor>
-                            <shadowcolor>FF000000</shadowcolor>
+                            <textcolor>$VAR[Home]</textcolor>
+                            <focusedcolor>$VAR[Home]</focusedcolor>
                             <aligny>center</aligny>
                             <align>center</align>
                             <texturefocus border="10" colordiffuse="$VAR[highlight]">upnext/button.png</texturefocus>
@@ -199,8 +199,8 @@
                             <width min="50">auto</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>DDFFFFFF</textcolor>
-                            <shadowcolor>FF000000</shadowcolor>
+                            <textcolor>$VAR[Home]</textcolor>
+                            <focusedcolor>$VAR[Home]</focusedcolor>
                             <aligny>center</aligny>
                             <align>center</align>
                             <texturefocus border="10" colordiffuse="$VAR[highlight]">upnext/button.png</texturefocus>

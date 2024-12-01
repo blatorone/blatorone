@@ -179,13 +179,13 @@
                         <itemgap>10</itemgap>
                         <control type="button" id="3012">
                             <label>       $ADDON[service.upnext 30006]</label>
-                            <visible>Integer.IsGreater(Window.Property(remaining),25)</visible>
+                            
                             <height>56</height>
                             <width min="50">auto</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>DDFFFFFF</textcolor>
-                            <shadowcolor>FF000000</shadowcolor>
+                            <textcolor>$VAR[Home]</textcolor>
+                            <focusedcolor>$VAR[Home]</focusedcolor>
                             <aligny>center</aligny>
                             <align>center</align>
                             <texturefocus border="10" colordiffuse="$VAR[highlight]">upnext/button.png</texturefocus>
@@ -198,8 +198,8 @@
                             <width min="50">auto</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>DDFFFFFF</textcolor>
-                            <shadowcolor>FF000000</shadowcolor>
+                            <textcolor>$VAR[Home]</textcolor>
+                            <focusedcolor>$VAR[Home]</focusedcolor>
                             <aligny>center</aligny>
                             <align>center</align>
                             <texturefocus border="10" colordiffuse="$VAR[highlight]">upnext/button.png</texturefocus>
@@ -209,9 +209,9 @@
 						<control type="togglebutton" id="3015">
 							<visible>String.IsEqual(Window.Property(shuffle_enable),True)</visible>
 							<selected>String.IsEqual(Window.Property(shuffle_on),True)</selected>
-							<texturenofocus colordiffuse="DDFFFFFF">upnext/shuffle.png</texturenofocus>
+							<texturenofocus colordiffuse="VAR[Home]">upnext/shuffle.png</texturenofocus>
 							<texturefocus colordiffuse="$VAR[highlight]">upnext/shuffle.png</texturefocus>
-							<alttexturenofocus colordiffuse="DDFFFFFF">upnext/shuffle.png</alttexturenofocus>
+							<alttexturenofocus colordiffuse="VAR[Home]">upnext/shuffle.png</alttexturenofocus>
 							<alttexturefocus colordiffuse="$VAR[highlight]">upnext/shuffle.png</alttexturefocus>
 							<width>56</width>
 							<height>56</height>
@@ -224,7 +224,16 @@
                         <aspect>keep</aspect>
                         <texture colordiffuse="$VAR[Home]">upnext/nextupicons/00.png</texture>
                         <animation effect="slide" end="13,-5" time="0" condition="true">Conditional</animation>
-                        <visible>Integer.IsGreater(Window.Property(remaining),25) + control.hasfocus(3012)</visible>
+                        <visible>!control.hasfocus(3012)</visible>
+                    </control>
+                    <control type="image">
+                        <bottom>20</bottom>
+                        <width>46</width>
+                        <height>46</height>
+                        <aspect>keep</aspect>
+                        <texture colordiffuse="$VAR[highlight]">upnext/nextupicons/00.png</texture>
+                        <animation effect="slide" end="13,-5" time="0" condition="true">Conditional</animation>
+                        <visible>control.hasfocus(3012)</visible>
                     </control>
                     <control type="image">
                         <bottom>20</bottom>

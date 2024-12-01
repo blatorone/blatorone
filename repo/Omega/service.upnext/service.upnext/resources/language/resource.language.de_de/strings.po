@@ -95,6 +95,22 @@ msgctxt "#30049"
 msgid "Next Episode"
 msgstr "Nächste Episode"
 
+msgctxt "#30051"
+msgid "Forced on"
+msgstr "Forced on"
+
+msgctxt "#30052"
+msgid "Forced off"
+msgstr "Forced off"
+
+msgctxt "#30053"
+msgid "Play or focused popup button action"
+msgstr "Play or focused popup button action"
+
+msgctxt "#30054"
+msgid "Stop or focused popup button action"
+msgstr "Stop or focused popup button action"
+
 
 ### SETTINGS
 msgctxt "#30500"
@@ -200,3 +216,83 @@ msgstr "StillWatching-Popup anzeigen"
 msgctxt "#30811"
 msgid "Show a StillWatchingSimple pop-up…"
 msgstr "StillWatchingSimple-Popup anzeigen"
+
+msgctxt "#30813"
+msgid "Test UpNext operation"
+msgstr ""
+
+msgctxt "#30815"
+msgid "Simulation mode"
+msgstr ""
+
+msgctxt "#30816"
+msgid "Enables configurable simulation of internal Kodi and UpNext operation"
+msgstr ""
+
+msgctxt "#30817"
+msgid "Simulation seek"
+msgstr ""
+
+msgctxt "#30818"
+msgid "Auto seek after playback starts to reduce testing time and avoid having to manually seek to end of video"
+msgstr ""
+
+msgctxt "#30819"
+msgid "Simulation cue"
+msgstr ""
+
+msgctxt "#30820"
+msgid "Force creation of popup cue point that is used when end credit detail are detected or provided by video plugin"
+msgstr ""
+
+msgctxt "#30821"
+msgid "Simulation plugin"
+msgstr ""
+
+msgctxt "#30822"
+msgid "Force use of auto-generated plugin data and playback method when playing Kodi library content"
+msgstr ""
+
+msgctxt "#30823"
+msgid "Additional developer settings"
+msgstr ""
+
+msgctxt "#30824"
+msgid "Detector debug"
+msgstr ""
+
+msgctxt "#30825"
+msgid "Enable detector debug logging and profiling"
+msgstr ""
+
+msgctxt "#30826"
+msgid "Detector image debug"
+msgstr ""
+
+msgctxt "#30827"
+msgid "Enable saving detector debug image output"
+msgstr ""
+
+msgctxt "#30828"
+msgid "Widget debug"
+msgstr ""
+
+msgctxt "#30829"
+msgid "Enable widget debug logging and profiling"
+msgstr ""
+
+msgctxt "#30830"
+msgid "Simulation trigger"
+msgstr ""
+
+msgctxt "#30831"
+msgid "Re-trigger a simulated playback start event on addon start"
+msgstr ""
+
+msgctxt "#30832"
+msgid "Enable full integration"
+msgstr ""
+
+msgctxt "#30833"
+msgid "Allows for fetching episode details and playlist integration"
+msgstr ""
