@@ -23,7 +23,7 @@
                     <texture>masks/discsurface.png</texture>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                     <bordertexture colordiffuse="$VAR[highlight]">masks/discsurface.png</bordertexture>
-                    <bordersize>6,0,0,0</bordersize>
+                    <bordersize>6,6,6,6</bordersize>
                 </control>
                 <control type="label" id="30">
                     <visible>!String.IsEqual(control.getlabel(30),control.getlabel(31))</visible>
