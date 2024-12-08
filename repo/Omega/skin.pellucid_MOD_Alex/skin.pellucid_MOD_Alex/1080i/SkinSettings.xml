@@ -11,7 +11,7 @@
 			<include>dimensionsFullscreen</include>
 			<imagepath>$VAR[SkinSettingsBackgroundLocation]</imagepath>
 			<timeperimage>45000</timeperimage>
-			<fadetime>200</fadetime>
+			<fadetime>4000</fadetime>
 			<pauseatend>10000</pauseatend>
 			<randomize>true</randomize>
 			<loop>yes</loop>

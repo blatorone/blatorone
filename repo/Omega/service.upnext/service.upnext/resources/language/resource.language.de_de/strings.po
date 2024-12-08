@@ -157,6 +157,10 @@ msgctxt "#30611"
 msgid "Customize autoplay duration by episode length"
 msgstr "Automatisch Abspielen anhand Episodenlänge festlegen"
 
+msgctxt "#30612"
+msgid "Force default action after popup is shown"
+msgstr "Standardaktion erzwingen, nachdem Popup angezeigt wird"
+
 msgctxt "#30613"
 msgid "All episodes  [COLOR gray]any length[/COLOR]"
 msgstr "Alle Episoden  [COLOR gray]Beliebige Länge[/COLOR]"

@@ -184,12 +184,12 @@
                             <width min="50">auto</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>$VAR[Home]</textcolor>
+                            <textcolor>textDisabled</textcolor>
                             <focusedcolor>$VAR[Home]</focusedcolor>
                             <aligny>center</aligny>
                             <align>center</align>
                             <texturefocus border="10" colordiffuse="$VAR[highlight]">upnext/button.png</texturefocus>
-                            <texturenofocus border="10" colordiffuse="FF212121">upnext/button.png</texturenofocus>
+                            <texturenofocus border="10" colordiffuse="FFFFFF">upnext/button.png</texturenofocus>
                             <pulseonselect>no</pulseonselect>
                         </control>
                         <control type="button" id="3013">
@@ -198,12 +198,12 @@
                             <width min="50">auto</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>$VAR[Home]</textcolor>
+                            <textcolor>textDisabled</textcolor>
                             <focusedcolor>$VAR[Home]</focusedcolor>
                             <aligny>center</aligny>
                             <align>center</align>
                             <texturefocus border="10" colordiffuse="$VAR[highlight]">upnext/button.png</texturefocus>
-                            <texturenofocus border="10" colordiffuse="FF212121">upnext/button.png</texturenofocus>
+                            <texturenofocus border="10" colordiffuse="FFFFFF">upnext/button.png</texturenofocus>
                             <pulseonselect>no</pulseonselect>
                         </control>
 						<control type="togglebutton" id="3015">

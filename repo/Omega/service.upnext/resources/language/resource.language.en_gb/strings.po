@@ -390,6 +390,10 @@ msgctxt "#30611"
 msgid "Delay before default action is taken"
 msgstr ""
 
+msgctxt "#30612"
+msgid "Force default action after popup is shown"
+msgstr ""
+
 msgctxt "#30613"
 msgid "When credits time is unknown (e.g. local media, other)"
 msgstr ""

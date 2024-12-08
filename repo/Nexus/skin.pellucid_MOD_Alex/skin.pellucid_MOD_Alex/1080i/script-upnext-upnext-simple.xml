@@ -52,7 +52,7 @@
                             <width min="50">auto</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>$VAR[Home]</textcolor>
+                            <textcolor>textDisabled</textcolor>
                             <focusedcolor>$VAR[Home]</focusedcolor>
                             <aligny>center</aligny>
                             <align>center</align>
@@ -66,7 +66,7 @@
                             <width min="50">auto</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>$VAR[Home]</textcolor>
+                            <textcolor>textDisabled</textcolor>
                             <focusedcolor>$VAR[Home]</focusedcolor>
                             <aligny>center</aligny>
                             <align>center</align>

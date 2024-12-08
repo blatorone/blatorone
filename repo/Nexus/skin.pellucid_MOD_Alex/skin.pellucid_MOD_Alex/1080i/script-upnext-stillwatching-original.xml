@@ -185,7 +185,7 @@
                             <width min="50">auto</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>$VAR[Home]</textcolor>
+                            <textcolor>textDisabled</textcolor>
                             <focusedcolor>$VAR[Home]</focusedcolor>
                             <aligny>center</aligny>
                             <align>center</align>
@@ -199,7 +199,7 @@
                             <width min="50">auto</width>
                             <font>font20_title</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>$VAR[Home]</textcolor>
+                            <textcolor>textDisabled</textcolor>
                             <focusedcolor>$VAR[Home]</focusedcolor>
                             <aligny>center</aligny>
                             <align>center</align>
@@ -225,16 +225,17 @@
                         <aspect>keep</aspect>
                         <texture colordiffuse="$VAR[Home]">upnext/nextupicons/00.png</texture>
                         <animation effect="slide" end="13,-5" time="0" condition="true">Conditional</animation>
-                        <visible>Integer.IsGreater(Window.Property(remaining),25) + control.hasfocus(3012)</visible>
+                        <visible>control.hasfocus(3012)</visible>
                     </control>
                     <control type="image">
                         <bottom>20</bottom>
                         <width>46</width>
                         <height>46</height>
                         <aspect>keep</aspect>
-                        <texture colordiffuse="DDFFFFFF">upnext/nextupicons/00.png</texture>
+                        <texture colordiffuse="$VAR
+                        [highlight]">upnext/nextupicons/00.png</texture>
                         <animation effect="slide" end="13,-5" time="0" condition="true">Conditional</animation>
-                        <visible>Integer.IsGreater(Window.Property(remaining),25) + !control.hasfocus(3012)</visible>
+                        <visible>!control.hasfocus(3012)</visible>
                     </control>
                     <control type="grouplist">
                         <visible>!Window.IsVisible(extendedprogressdialog)</visible>
