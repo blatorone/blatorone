@@ -157,13 +157,13 @@
 							<onclick>Container.SetViewMode(52)</onclick>
 							<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(artists) | Container.Content(sets)] + !Skin.HasSetting(Disable.LandscapeView)</visible>
 						</item>
-						
+						<!--
 						<item>
 							<label>$LOCALIZE[31318]</label>
 							<onclick>Container.SetViewMode(591)</onclick>
 							<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(Disable.BigFanView)</visible>
 						</item>
-						
+						-->
 						
 						<item>
 							<label>$LOCALIZE[31321]</label>
@@ -171,11 +171,13 @@
 							<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets) | Window.IsActive(pictures)] + !Skin.HasSetting(Disable.GalleryView)</visible>
 							<visible>![Window.IsActive(pictures) + Container.Content(addons)]</visible>
 						</item>
+						<!--
 						<item>
 							<label>$LOCALIZE[31303]</label>
 							<onclick>Container.SetViewMode(505)</onclick>
 							<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] + !Skin.HasSetting(Disable.PanelView)</visible>
 						</item>
+						-->
 						<item>
 							<label>$LOCALIZE[5]</label>
 							<posx>20</posx>

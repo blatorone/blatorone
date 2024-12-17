@@ -48,10 +48,10 @@
                     <include condition="!Skin.HasSetting(Disable.EpisodeView)">View_502_Episode</include>
                     <include condition="!Skin.HasSetting(Disable.WallView)">View_503_Wall</include>
                     <include condition="!Skin.HasSetting(Disable.GalleryView)">View_504_Gallery</include>
-                    <include condition="!Skin.HasSetting(Disable.PanelView)">View_505_Panel</include>
+                    <!--<include condition="!Skin.HasSetting(Disable.PanelView)">View_505_Panel</include>-->
                     <include condition="!Skin.HasSetting(Disable.SongListView)">View_508_SongList</include>
                     <include condition="!Skin.HasSetting(Disable.MyFlixView)">View_509_MyFlix</include>
-                    <include condition="!Skin.HasSetting(Disable.BigFanView)">View_591_BigFan</include>
+                    <!--<include condition="!Skin.HasSetting(Disable.BigFanView)">View_591_BigFan</include>-->
                     <include condition="!Skin.HasSetting(Disable.FanartListView)">View_602_FanartList</include>
                     <include condition="!Skin.HasSetting(Disable.FullscreenWallView)">View_609_Fullscreen_Wall</include>
                 </control>
