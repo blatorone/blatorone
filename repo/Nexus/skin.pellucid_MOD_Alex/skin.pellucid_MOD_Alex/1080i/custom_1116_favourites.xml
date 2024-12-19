@@ -4,7 +4,23 @@
     
     <controls>
         <!--background-->
-        <include>globalBackground</include>
+       <control type="image">
+			    		<include>ViewAnimation</include>
+	            		<include>dimensionsFullscreen</include>
+	            		<texture fallback="$INFO[listitem.thumb]">$INFO[listitem.art(fanart)]</texture>
+	            		<colordiffuse>FF555555</colordiffuse>
+	            		<aspectratio>scale</aspectratio>
+						<fadetime>250</fadetime>
+	        </control>
+			<control type="image">
+						<visible>String.IsEmpty(listitem.art(fanart)) + String.IsEmpty(listitem.thumb)</visible>
+			    		<include>ViewAnimation</include>
+	            		<include>dimensionsFullscreen</include>
+	            		<texture>backgroundimage.jpg</texture>
+	            		<colordiffuse>FF555555</colordiffuse>
+	            		<aspectratio>scale</aspectratio>
+						<fadetime>250</fadetime>
+	        </control>
         
         
          <!--Backbutton touchscreen-->
