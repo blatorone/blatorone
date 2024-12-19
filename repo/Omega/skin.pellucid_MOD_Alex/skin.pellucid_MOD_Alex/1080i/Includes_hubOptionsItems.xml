@@ -7,7 +7,7 @@
             <visible>System.HasAddon(script.globalsearch)</visible>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>137</label>
             <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true&amp;livetv=true&amp;actors=true&amp;directors=true)</onclick>
         </control>
@@ -16,7 +16,7 @@
             <description>Sort by</description>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
             <onclick condition="window.isactive(videos)">sendclick(videos,3)</onclick>
 			<onclick condition="window.isactive(tvchannels)">sendclick(tvchannels,3)</onclick>
@@ -31,7 +31,7 @@
             <focusedcolor>$VAR[Home]</focusedcolor>
             <label>31109</label>
             <altlabel>31110</altlabel>
-            <width>12-col</width>
+            <width>500</width>
             <onclick condition="window.isactive(videos)">sendclick(videos,4)</onclick>
 			<onclick condition="window.isactive(tvchannels)">sendclick(tvchannels,4)</onclick>
 			<onclick condition="window.isactive(tvrecordings)">sendclick(tvrecordings,4)</onclick>
@@ -42,7 +42,7 @@
             <description>PVR Channel Group</description>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>31222</label>
 			<onclick condition="window.isactive(tvchannels)">sendclick(tvchannels,28)</onclick>
 			<onclick condition="window.isactive(tvguide)">sendclick(tvguide,28)</onclick>
@@ -53,35 +53,47 @@
             <description>PVR Timers</description>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>31087</label>
             <onclick>ActivateWindow(TVTimerRules)</onclick>
         </control>
         <control type="button" id="507">
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>653</label>
             <onclick>UpdateLibrary(video)</onclick>
         </control>
         <control type="radiobutton" id="14">
             <description>Watched Toggle</description>
             <label>31195</label>
-            <width>12-col</width>
+            <width>500</width>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <textureradioonfocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonfocus>
-            <textureradioofffocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradioofffocus>
+            <textureradioonfocus colordiffuse="$VAR[selected]">icons/addonstatus/enabled-normal.png</textureradioonfocus>
+            <textureradioofffocus colordiffuse="$VAR[Home]">icons/addonstatus/disable.png</textureradioofffocus>
+            <textureradiooffnofocus colordiffuse="$VAR[Home]">icons/addonstatus/disable.png</textureradiooffnofocus>
+            <textureradioonnofocus colordiffuse="$VAR[selected]">icons/addonstatus/enabled-normal.png</textureradioonnofocus>
+            <radiowidth>40</radiowidth>
+		    <radioheight>40</radioheight>
+            <radioposx>465</radioposx>
+            <radioposy>20</radioposy>
             <onclick>sendclick(videos,14)</onclick>
         </control>
         <control type="radiobutton" id="11">
             <description>Unlock Shares</description>
             <label>20336</label>
-            <width>12-col</width>
+            <width>500</width>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <textureradioonfocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonfocus>
-            <textureradioofffocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradioofffocus>
+            <textureradioonfocus colordiffuse="$VAR[selected]">icons/addonstatus/enabled-normal.png</textureradioonfocus>
+            <textureradioofffocus colordiffuse="$VAR[Home]">icons/addonstatus/disable.png</textureradioofffocus>
+            <textureradiooffnofocus colordiffuse="$VAR[Home]">icons/addonstatus/disable.png</textureradiooffnofocus>
+            <textureradioonnofocus colordiffuse="$VAR[selected]">icons/addonstatus/enabled-normal.png</textureradioonnofocus>
+            <radiowidth>40</radiowidth>
+		    <radioheight>40</radioheight>
+            <radioposx>465</radioposx>
+            <radioposy>20</radioposy>
             <onclick>right</onclick>
             <onclick>Mastermode</onclick>
             <selected>system.ismaster</selected>
@@ -91,7 +103,7 @@
             <description>Edit video menu</description>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>31172</label>
             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=videosubmenu)</onclick>
         </control>
@@ -102,7 +114,7 @@
             <description>Playlist</description>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>31123</label>
             <onclick>activateWindow(musicplaylist)</onclick>
         </control>
@@ -111,14 +123,14 @@
             <visible>System.HasAddon(script.globalsearch)</visible>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>137</label>
             <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true&amp;songs=true&amp;musicvideos=true)</onclick>
         </control>
         <control type="button" id="3">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort by</description>
-            <width>12-col</width>
+            <width>500</width>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
@@ -132,7 +144,7 @@
             <description>Sort direction</description>
             <label>31109</label>
             <altlabel>31110</altlabel>
-            <width>12-col</width>
+            <width>500</width>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <alttexturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</alttexturefocus>
@@ -146,7 +158,7 @@
             <description>PVR Channel Group</description>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>31222</label>
             <onclick>sendclick(radiochannels,28)</onclick>
         </control>
@@ -155,12 +167,12 @@
             <description>PVR Timers</description>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>31087</label>
             <onclick>ActivateWindow(RadioTimerRules)</onclick>
         </control>
         <control type="button" id="504">
-            <width>12-col</width>
+            <width>500</width>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <label>653</label>
@@ -169,11 +181,16 @@
         <control type="radiobutton" id="20">
             <!--<visible>musicPlaylist</visible>-->
             <description>Shuffle</description>
-            <width>12-col</width>
+            <width>500</width>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
-            <textureradioonfocus colordiffuse="$VAR[Home]">buttons/radio-button-on.png</textureradioonfocus>
-            <textureradioofffocus colordiffuse="$VAR[Home]">buttons/radio-button-off.png</textureradioofffocus>
+            <textureradioonfocus colordiffuse="$VAR[selected]">icons/addonstatus/enabled-normal.png</textureradioonfocus>
+            <textureradioofffocus colordiffuse="$VAR[Home]">icons/addonstatus/disable.png</textureradioofffocus>
+            <textureradiooffnofocus colordiffuse="$VAR[Home]">icons/addonstatus/disable.png</textureradiooffnofocus>
+            <textureradioonnofocus colordiffuse="$VAR[selected]">icons/addonstatus/enabled-normal.png</textureradioonnofocus>
+            <radiowidth>40</radiowidth>
+		    <radioheight>40</radioheight>
+            <radioposx>465</radioposx>
+            <radioposy>20</radioposy>
             <label>191</label>
             <onclick condition="!Playlist.IsRandom">PlayerControl(randomOn)</onclick>
             <onclick condition="Playlist.IsRandom">PlayerControl(randomOff)</onclick>
@@ -182,7 +199,7 @@
             <description>Edit music menu</description>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>31173</label>
             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=musicsubmenu)</onclick>
         </control>
@@ -193,7 +210,7 @@
         <control type="button" id="3">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort by</description>
-            <width>12-col</width>
+            <width>500</width>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <label>103</label>
@@ -204,7 +221,7 @@
             <description>Sort direction</description>
             <label>31109</label>
             <altlabel>31110</altlabel>
-            <width>12-col</width>
+            <width>500</width>
             <focusedcolor>$VAR[Home]</focusedcolor>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <alttexturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</alttexturefocus>
@@ -214,7 +231,7 @@
             <description>Edit pictures menu</description>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>31174</label>
             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=picturessubmenu)</onclick>
         </control>
@@ -222,31 +239,39 @@
     <!--pictures submenu items-->
     <include name="addonsSideMenu">	
         <control type="radiobutton" id="7">
-            <width>12-col</width>
+            <width>500</width>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <textureradiofocus></textureradiofocus>
-            <textureradionofocus></textureradionofocus>
-            <radiowidth/>
-            <radioheight/>
+            <textureradioonfocus colordiffuse="$VAR[selected]">icons/addonstatus/enabled-normal.png</textureradioonfocus>
+            <textureradioofffocus colordiffuse="$VAR[Home]">icons/addonstatus/disable.png</textureradioofffocus>
+            <textureradiooffnofocus colordiffuse="$VAR[Home]">icons/addonstatus/disable.png</textureradiooffnofocus>
+            <textureradioonnofocus colordiffuse="$VAR[selected]">icons/addonstatus/enabled-normal.png</textureradioonnofocus>
+            <radiowidth>40</radiowidth>
+		    <radioheight>40</radioheight>
+            <radioposx>465</radioposx>
+            <radioposy>20</radioposy>
             <label>$LOCALIZE[25001]</label>
             <onclick>sendclick(addonbrowser,7)</onclick>
         </control>
         <control type="radiobutton" id="8">
-            <width>12-col</width>
+            <width>500</width>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <textureradiofocus></textureradiofocus>
-            <textureradionofocus></textureradionofocus>
-            <radiowidth/>
-            <radioheight/>
+            <textureradioonfocus colordiffuse="$VAR[selected]">icons/addonstatus/enabled-normal.png</textureradioonfocus>
+            <textureradioofffocus colordiffuse="$VAR[Home]">icons/addonstatus/disable.png</textureradioofffocus>
+            <textureradiooffnofocus colordiffuse="$VAR[Home]">icons/addonstatus/disable.png</textureradiooffnofocus>
+            <textureradioonnofocus colordiffuse="$VAR[selected]">icons/addonstatus/enabled-normal.png</textureradioonnofocus>
+            <radiowidth>40</radiowidth>
+		    <radioheight>40</radioheight>
+            <radioposx>465</radioposx>
+            <radioposy>20</radioposy>
             <label>$LOCALIZE[24999]</label>
             <onclick>sendclick(addonbrowser,8)</onclick>
         </control>
         <control type="button" id="9">
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>24034</label>
             <onclick>sendclick(addonbrowser,9)</onclick>
         </control>
@@ -258,7 +283,7 @@
             <description>Sort by</description>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
             <onclick>sendclick(games,3)</onclick>
         </control>
@@ -270,14 +295,14 @@
             <focusedcolor>$VAR[Home]</focusedcolor>
             <label>31109</label>
             <altlabel>31110</altlabel>
-            <width>12-col</width>
+            <width>500</width>
             <onclick>sendclick(games,4)</onclick>
         </control>
 		<control type="button" id="17">
             <description>Edit Games menu</description>
             <texturefocus colordiffuse="$VAR[highlight]">masks/discsurface.png</texturefocus>
             <focusedcolor>$VAR[Home]</focusedcolor>
-            <width>12-col</width>
+            <width>500</width>
             <label>31233</label>
             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=gamesubmenu)</onclick>
         </control>

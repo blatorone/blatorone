@@ -225,6 +225,21 @@
             <aspectratio>stretch</aspectratio>
         </control>
     </include>
+	<include name="modalDialog2">
+        <control type="image">
+            <width>500</width>
+        	<height>fullscreenHeight</height>
+            <texture>colors/black.png</texture>
+            <colordiffuse>e9FFFFFF</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+        </control>
+        <control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>vignette.png</texture>
+            <colordiffuse>ffffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+        </control>
+    </include>
     <!--Global background-->
     <include name="globalBackground">
 		<control type="image">
