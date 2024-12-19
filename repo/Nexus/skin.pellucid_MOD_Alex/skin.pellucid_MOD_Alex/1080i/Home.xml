@@ -882,6 +882,16 @@
 					<shadowcolor>44000000</shadowcolor>
 					<label>[B][COLOR red]$INFO[System.InternetState][/COLOR][/B]</label>
 				</control>
+
+				 <control type="image">
+				 	<visible>System.Date(1224,1226)</visible>
+	                <posx>600</posx>
+	                <posy>-285</posy>
+	                <width>500</width>
+	                <height>400</height>
+	                <aspectratio>stretch</aspectratio>
+	                <texture>merry-christmas-1063669_1920.png</texture>
+	            </control>
 			</control>
 			<!--now playing music-->
 			<control type="group">
