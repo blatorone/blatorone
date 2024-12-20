@@ -19,19 +19,17 @@
                    
                 </animation>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>fullscreenWidth</width>
-                    <height>3-row</height>
+                   <include>notificationposimage</include>
                     <texture>masks/discsurface.png</texture>
                     <colordiffuse>FFFFFFFF</colordiffuse>
                     <bordertexture colordiffuse="$VAR[highlight]">masks/discsurface.png</bordertexture>
                     <bordersize>6,6,6,6</bordersize>
                 </control>
+                
                
                 <control type="image" id="400">
 				    <description>avatar</description>
-				    <left>6</left>
+				    <include>notificationposimageaddon</include>
 				    <top>6</top>
 				    <width>96</width>
 				    <height>96</height>
@@ -39,7 +37,7 @@
                 </control>
                 <control type="image" id="400">
 				    <description>avatar</description>
-				    <left>6</left>
+				    <include>notificationposimageaddon</include>
 				    <top>50</top>
 				    <width>96</width>
 				    <height>96</height>
@@ -48,7 +46,7 @@
                 <control type="label" id="401">
                     <description>heading</description>
                     <visible>!String.IsEqual(control.getlabel(401),control.getlabel(402))</visible>
-                    <right>0</right>
+                    <include>notificationposlabel</include>
                     <posy>0</posy>
                     <font>itemSubTitle</font>
                     <width>24-col</width>
@@ -64,7 +62,7 @@
                 </control>
                 <control type="label">
                     <visible>String.IsEqual(control.getlabel(401),control.getlabel(402))</visible>
-                    <right>0</right>
+                    <include>notificationposlabel</include>
                     <posy>0</posy>
                     <font>itemSubTitle</font>
                     <width>24-col</width>
@@ -80,7 +78,7 @@
                 </control>
                 <control type="label" id="402">
                     <description>message</description>
-                    <right>0</right>
+                    <include>notificationposlabel</include>
                     <posy>1-row</posy>
                     <font>dialogTitle</font>
                     <textcolor>black</textcolor>

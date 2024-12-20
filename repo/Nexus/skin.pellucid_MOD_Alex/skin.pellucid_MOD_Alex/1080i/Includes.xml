@@ -1494,7 +1494,48 @@
     </include>
 
 
+	<include name="notificationposimage">
+        <include  condition="!Skin.HasSetting(homemenuside)">notificationposimage1</include>
+        <include  condition="Skin.HasSetting(homemenuside)">notificationposimage2</include>
+    </include>
+    <include name="notificationposimage1">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>fullscreenWidth</width>
+        <height>3-row</height>
+    </include>
+    <include name="notificationposimage2">
+        <right>0</right>
+        <posy>0</posy>
+        <width>1635</width>
+        <height>3-row</height>
+    </include>
 
+	<include name="notificationposimageaddon">
+        <include  condition="!Skin.HasSetting(homemenuside)">notificationposimageaddon1</include>
+        <include  condition="Skin.HasSetting(homemenuside)">notificationposimageaddon2</include>
+    </include>
+    <include name="notificationposimageaddon1">
+        <left>6</left>
+        
+    </include>
+    <include name="notificationposimageaddon2">
+        <left>290</left>
+        
+    </include>
+
+	<include name="notificationposlabel">
+        <include  condition="!Skin.HasSetting(homemenuside)">notificationposlabel1</include>
+        <include  condition="Skin.HasSetting(homemenuside)">notificationposlabel2</include>
+    </include>
+    <include name="notificationposlabel1">
+        <right>50</right>
+        
+    </include>
+    <include name="notificationposlabel2">
+        <left>425</left>
+        
+    </include>
 
 
     <include name="ButtonCommonValues">
