@@ -299,7 +299,7 @@
 	                <width>fullscreenWidth</width>
 	                <height>fullscreenHeight</height>
 	                <aspectratio>stretch</aspectratio>
-	                <texture>special://skin/media/Merry Christmas/Snow/5WWU.gif</texture>
+	                <texture>special://skin/extras/Merry Christmas/Snow/5WWU.gif</texture>
 	            	<colordiffuse>overlay</colordiffuse>
 				</control>
 				<control type="image">
@@ -309,7 +309,7 @@
 	                <width>fullscreenWidth</width>
 	                <height>fullscreenHeight</height>
 	                <aspectratio>stretch</aspectratio>
-	                <texture>special://skin/media/Merry Christmas/Snow/5WWU.gif</texture>
+	                <texture>special://skin/extras/Merry Christmas/Snow/5WWU.gif</texture>
 	            	<colordiffuse>overlay</colordiffuse>
 				</control>
 				<control type="multiimage">
