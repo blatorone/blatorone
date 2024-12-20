@@ -292,8 +292,133 @@
 					<colordiffuse>ffffffff</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 				</control>
+				<control type="image">
+				 	<visible>System.Date(1225,1227)</visible>
+	                <posx>0</posx>
+	                <posy>0</posy>
+	                <width>fullscreenWidth</width>
+	                <height>fullscreenHeight</height>
+	                <aspectratio>stretch</aspectratio>
+	                <texture>special://skin/media/Merry Christmas/Snow/5WWU.gif</texture>
+	            	<colordiffuse>overlay</colordiffuse>
+				</control>
+				<control type="image">
+				 	<visible>System.Date(1224,1225) + System.Time(19:00)</visible>
+	                <posx>0</posx>
+	                <posy>0</posy>
+	                <width>fullscreenWidth</width>
+	                <height>fullscreenHeight</height>
+	                <aspectratio>stretch</aspectratio>
+	                <texture>special://skin/media/Merry Christmas/Snow/5WWU.gif</texture>
+	            	<colordiffuse>overlay</colordiffuse>
+				</control>
+				<control type="multiimage">
+					<visible>System.Date(1225,1227) </visible>
+					<posx>530</posx>
+	                <posy>-25</posy>
+	                <width>800</width>
+	                <height>700</height>
+					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+					<include>dimensionsFullscreen</include>
+					<imagepath>https://blatorone.github.io/blatorone/repo/Skin.Backgrounds/winter/MerryChristmas</imagepath>
+					<timeperimage>45000</timeperimage>
+					<fadetime>4000</fadetime>
+					<pauseatend>10000</pauseatend>
+					<randomize>true</randomize>
+					<loop>yes</loop>
+					<aspectratio>scale</aspectratio>
+					
+				</control>
 			</control>
 			
+			<!--Date / time and weather-->
+			<control type="group">
+				<posx>col-1-begin</posx>
+				<posy>row-8-begin</posy>
+				<animation type="conditional" condition="control.hasfocus(9999) + !player.playing + !player.paused" reversible="true">
+					<effect type="slide" start="0,0" end="0,534" time="200" delay="0"/>
+				</animation>
+				<animation type="conditional" condition="control.hasfocus(9999) + [player.playing | player.paused]" reversible="true">
+					<effect type="slide" start="0,0" end="0,484" time="200" delay="0"/>
+				</animation>
+				
+				<control type="label">
+					<posx>0</posx>
+					<posy>-48</posy>
+					<width>24-col</width>
+					<height>2-row</height>
+					<align>center</align>
+					<font>veryLarge</font>
+					<textcolor>textActive</textcolor>
+					<shadowcolor>44000000</shadowcolor>
+					<label>$INFO[System.Time]</label>
+				</control>
+				<control type="label">
+					<visible>$EXP[hasWeather]</visible>
+					<posx>0</posx>
+					<posy>1-row</posy>
+					<width>24-col</width>
+					<height>2-row</height>
+					<font>regular</font>
+					<align>center</align>
+					<textcolor>textActive</textcolor>
+					<shadowcolor>44000000</shadowcolor>
+					<label>$INFO[System.Date(ddd)]  [B]$INFO[System.Date(dd)][/B]  $INFO[System.Date(MMM)]   [B]$INFO[weather.temperature][/B]  [CAPITALIZE]$INFO[weather.Conditions][/CAPITALIZE]</label>
+				</control>
+				<control type="label">
+					<visible>!$EXP[hasWeather]</visible>
+					<posx>0</posx>
+					<posy>1-row</posy>
+					<width>24-col</width>
+					<height>2-row</height>
+					<font>regular</font>
+					<align>center</align>
+					<textcolor>textActive</textcolor>
+					<shadowcolor>44000000</shadowcolor>
+					<label>$INFO[System.Date(DDD)]  [B]$INFO[System.Date(dd)][/B]  $INFO[System.Date(MMM)]</label>
+				</control>
+				
+				<control type="multiimage">
+            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + !String.IsEmpty(Skin.String(weathericons.path)) | $EXP[hasWeather] + Skin.HasSetting(Weather icons) + !Skin.HasSetting(Weather icons default)</visible>
+					<posx>1000</posx>
+            		<posy>-200</posy>
+            		<width>200</width>
+            		<height>200</height>
+					<imagepath>$VAR[WeatherIconsPathVar]$INFO[Weather.FanartCode]$VAR[WeatherIconsExtVar]</imagepath>
+					<timeperimage>70</timeperimage>
+					<fadetime>1</fadetime>
+					<pauseatend></pauseatend>
+					<randomize>false</randomize>
+					<loop>yes</loop>
+					<aspectratio>scale</aspectratio>
+        		</control>
+				
+				<control type="image">
+            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + String.IsEmpty(Skin.String(weathericons.path)) + Skin.HasSetting(Weather icons default)</visible>
+					<posx>1000</posx>
+            		<posy>-200</posy>
+            		<width>200</width>
+            		<height>200</height>
+					
+					<texture>$VAR[WeatherIconsPathVar]$INFO[Weather.FanartCode]$VAR[WeatherIconsExtVar]</texture>
+					<aspectratio>scale</aspectratio>
+        		</control>
+				<control type="label">
+					<visible>!System.InternetState</visible>
+					<posx>0</posx>
+					<posy>-125</posy>
+					<width>24-col</width>
+					<height>2-row</height>
+					<font>regular</font>
+					<align>center</align>
+					<textcolor>textActive</textcolor>
+					<shadowcolor>44000000</shadowcolor>
+					<label>[B][COLOR red]$INFO[System.InternetState][/COLOR][/B]</label>
+				</control>
+
+				 
+			</control>
+
 			<!--mini window-->
 			<include>miniVideoPlayer</include>
 			<!--main menu-->
@@ -540,7 +665,7 @@
 	                    </control>
 						
 						
-
+			
 
 			<!--Android Apps-->
 			<control type="group">
@@ -550,7 +675,7 @@
 				<posx>710</posx>
 				<posy>25</posy>
 				<include>slidebuttons_Android</include>
-				<visible>System.Platform.Android + Skin.HasSetting(Show Android Apps)</visible>
+				<!--<visible>System.Platform.Android + Skin.HasSetting(Show Android Apps)</visible>-->
 				<control type="panel" id="9005">
 					<posx>38</posx>
 					<posy>18</posy>
@@ -799,100 +924,7 @@
 					</content>
 				</control>
 			</control>
-			<!--Date / time and weather-->
-			<control type="group">
-				<posx>col-1-begin</posx>
-				<posy>row-8-begin</posy>
-				<animation type="conditional" condition="control.hasfocus(9999) + !player.playing + !player.paused" reversible="true">
-					<effect type="slide" start="0,0" end="0,534" time="200" delay="0"/>
-				</animation>
-				<animation type="conditional" condition="control.hasfocus(9999) + [player.playing | player.paused]" reversible="true">
-					<effect type="slide" start="0,0" end="0,484" time="200" delay="0"/>
-				</animation>
-				<control type="label">
-					<posx>0</posx>
-					<posy>-48</posy>
-					<width>24-col</width>
-					<height>2-row</height>
-					<align>center</align>
-					<font>veryLarge</font>
-					<textcolor>textActive</textcolor>
-					<shadowcolor>44000000</shadowcolor>
-					<label>$INFO[System.Time]</label>
-				</control>
-				<control type="label">
-					<visible>$EXP[hasWeather]</visible>
-					<posx>0</posx>
-					<posy>1-row</posy>
-					<width>24-col</width>
-					<height>2-row</height>
-					<font>regular</font>
-					<align>center</align>
-					<textcolor>textActive</textcolor>
-					<shadowcolor>44000000</shadowcolor>
-					<label>$INFO[System.Date(ddd)]  [B]$INFO[System.Date(dd)][/B]  $INFO[System.Date(MMM)]   [B]$INFO[weather.temperature][/B]  [CAPITALIZE]$INFO[weather.Conditions][/CAPITALIZE]</label>
-				</control>
-				<control type="label">
-					<visible>!$EXP[hasWeather]</visible>
-					<posx>0</posx>
-					<posy>1-row</posy>
-					<width>24-col</width>
-					<height>2-row</height>
-					<font>regular</font>
-					<align>center</align>
-					<textcolor>textActive</textcolor>
-					<shadowcolor>44000000</shadowcolor>
-					<label>$INFO[System.Date(DDD)]  [B]$INFO[System.Date(dd)][/B]  $INFO[System.Date(MMM)]</label>
-				</control>
-				
-				<control type="multiimage">
-            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + !String.IsEmpty(Skin.String(weathericons.path)) | $EXP[hasWeather] + Skin.HasSetting(Weather icons) + !Skin.HasSetting(Weather icons default)</visible>
-					<posx>1000</posx>
-            		<posy>-200</posy>
-            		<width>200</width>
-            		<height>200</height>
-					<imagepath>$VAR[WeatherIconsPathVar]$INFO[Weather.FanartCode]$VAR[WeatherIconsExtVar]</imagepath>
-					<timeperimage>70</timeperimage>
-					<fadetime>1</fadetime>
-					<pauseatend></pauseatend>
-					<randomize>false</randomize>
-					<loop>yes</loop>
-					<aspectratio>scale</aspectratio>
-        		</control>
-				
-				<control type="image">
-            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + String.IsEmpty(Skin.String(weathericons.path)) + Skin.HasSetting(Weather icons default)</visible>
-					<posx>1000</posx>
-            		<posy>-200</posy>
-            		<width>200</width>
-            		<height>200</height>
-					
-					<texture>$VAR[WeatherIconsPathVar]$INFO[Weather.FanartCode]$VAR[WeatherIconsExtVar]</texture>
-					<aspectratio>scale</aspectratio>
-        		</control>
-				<control type="label">
-					<visible>!System.InternetState</visible>
-					<posx>0</posx>
-					<posy>-125</posy>
-					<width>24-col</width>
-					<height>2-row</height>
-					<font>regular</font>
-					<align>center</align>
-					<textcolor>textActive</textcolor>
-					<shadowcolor>44000000</shadowcolor>
-					<label>[B][COLOR red]$INFO[System.InternetState][/COLOR][/B]</label>
-				</control>
-
-				 <control type="image">
-				 	<visible>System.Date(1224,1226)</visible>
-	                <posx>600</posx>
-	                <posy>-285</posy>
-	                <width>500</width>
-	                <height>400</height>
-	                <aspectratio>stretch</aspectratio>
-	                <texture>merry-christmas-1063669_1920.png</texture>
-	            </control>
-			</control>
+			
 			<!--now playing music-->
 			<control type="group">
 				<visible>player.hasaudio</visible>
