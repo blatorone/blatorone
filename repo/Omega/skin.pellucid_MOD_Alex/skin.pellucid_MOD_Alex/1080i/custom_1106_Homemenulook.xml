@@ -73,24 +73,9 @@
                 <onleft>8000</onleft>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
-                <control type="radiobutton" id="1">
-                    <visible>Skin.HasSetting(homemenugrid)</visible>
-                    <description>Grid Menu</description>
-                    <width>14-col</width>
-                    <textureradioonfocus></textureradioonfocus>
-                    <textureradioonnofocus></textureradioonnofocus>
-                    <textureradioofffocus></textureradioofffocus>
-                    <textureradiooffnofocus></textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
-                    <label>[COLOR $VAR[selected]]$LOCALIZE[31262][/COLOR]</label>
-                    <onclick>Skin.ToggleSetting(homemenugrid)</onclick>
-                    <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>
-                    <onclick condition="Skin.HasSetting(homemenuside)">Skin.Reset(homemenuside)</onclick>
-                    <onclick>back</onclick>
-                    <selected>Skin.HasSetting(homemenugrid)</selected>
-                </control>
+               
                 <control type="radiobutton" id="2">
-                    <visible>!Skin.HasSetting(homemenugrid)</visible>
+                    
                     <description>Grid Menu</description>
                     <width>14-col</width>
                     <textureradioonfocus></textureradioonfocus>
@@ -102,27 +87,14 @@
                     <onclick>Skin.ToggleSetting(homemenugrid)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuside)">Skin.Reset(homemenuside)</onclick>
-                    <onclick>back</onclick>
+                    <onclick>ReloadSkin()</onclick>
+                    <onclick>activateWindow(10000)</onclick>
                     <selected>Skin.HasSetting(homemenugrid)</selected>
+                    <enable>!Skin.HasSetting(homemenugrid)</enable>
                 </control>
-                <control type="radiobutton" id="3">
-                    <visible>Skin.HasSetting(homemenuslide)</visible>
-                    <description>Grid Menu</description>
-                    <width>14-col</width>
-                    <textureradioonfocus></textureradioonfocus>
-                    <textureradioonnofocus></textureradioonnofocus>
-                    <textureradioofffocus></textureradioofffocus>
-                    <textureradiooffnofocus></textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
-                    <label>[COLOR $VAR[selected]]$LOCALIZE[31263][/COLOR]</label>
-                    <onclick>Skin.ToggleSetting(homemenuslide)</onclick>
-                    <onclick condition="Skin.HasSetting(homemenuside)">Skin.Reset(homemenuside)</onclick>
-                    <onclick condition="Skin.HasSetting(homemenugrid)">Skin.Reset(homemenugrid)</onclick>
-                    <onclick>back</onclick>
-                    <selected>Skin.HasSetting(homemenuslide)</selected>
-                </control>
+               
                 <control type="radiobutton" id="4">
-                    <visible>!Skin.HasSetting(homemenuslide)</visible>
+                    
                     <description>Grid Menu</description>
                     <width>14-col</width>
                     <textureradioonfocus></textureradioonfocus>
@@ -134,28 +106,15 @@
                     <onclick>Skin.ToggleSetting(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuside)">Skin.Reset(homemenuside)</onclick>
                     <onclick condition="Skin.HasSetting(homemenugrid)">Skin.Reset(homemenugrid)</onclick>
-                    <onclick>back</onclick>
+                    <onclick>ReloadSkin()</onclick>
+                    <onclick>activateWindow(10000)</onclick>
                     <selected>Skin.HasSetting(homemenuslide)</selected>
+                    <enable>!Skin.HasSetting(homemenuslide)</enable>
                 </control>
-                <control type="radiobutton" id="5">
-                    <visible>Skin.HasSetting(homemenuside)</visible>
-                    <description>Grid Menu</description>
-                    <width>14-col</width>
-                    <textureradioonfocus></textureradioonfocus>
-                    <textureradioonnofocus></textureradioonnofocus>
-                    <textureradioofffocus></textureradioofffocus>
-                    <textureradiooffnofocus></textureradiooffnofocus>
-                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
-                    <label>[COLOR $VAR[selected]]$LOCALIZE[31264][/COLOR]</label>
-                    <onclick>Skin.ToggleSetting(homemenuside)</onclick>
-                    <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>
-                    <onclick condition="Skin.HasSetting(homemenugrid)">Skin.Reset(homemenugrid)</onclick>
-                    <onclick>back</onclick>
-                    <selected>Skin.HasSetting(homemenuside)</selected>
-                </control>
+               
             
                 <control type="radiobutton" id="6">
-                    <visible>!Skin.HasSetting(homemenuside)</visible>
+                    
                     <description>Grid Menu</description>
                     <width>14-col</width>
                     <textureradioonfocus></textureradioonfocus>
@@ -167,8 +126,10 @@
                     <onclick>Skin.ToggleSetting(homemenuside)</onclick>
                     <onclick condition="Skin.HasSetting(homemenuslide)">Skin.Reset(homemenuslide)</onclick>
                     <onclick condition="Skin.HasSetting(homemenugrid)">Skin.Reset(homemenugrid)</onclick>
-                    <onclick>back</onclick>
+                    <onclick>ReloadSkin()</onclick>
+                    <onclick>activateWindow(10000)</onclick>
                     <selected>Skin.HasSetting(homemenuside)</selected>
+                    <enable>!Skin.HasSetting(homemenuside)</enable>
                 </control>
                 
                 

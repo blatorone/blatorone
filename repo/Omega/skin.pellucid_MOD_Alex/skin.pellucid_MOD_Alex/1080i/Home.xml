@@ -675,7 +675,7 @@
 				<posx>710</posx>
 				<posy>25</posy>
 				<include>slidebuttons_Android</include>
-				<!--<visible>System.Platform.Android + Skin.HasSetting(Show Android Apps)</visible>-->
+				<visible>System.Platform.Android + Skin.HasSetting(Show Android Apps)</visible>
 				<control type="panel" id="9005">
 					<posx>38</posx>
 					<posy>18</posy>

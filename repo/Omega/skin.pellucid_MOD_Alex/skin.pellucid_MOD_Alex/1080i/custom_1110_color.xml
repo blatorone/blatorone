@@ -282,8 +282,39 @@
                     <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
                     <onclick condition="Skin.HasSetting(custom)">Skin.Reset(custom)</onclick>
                     <selected>Skin.HasSetting(Default)</selected>
-                    <visible>!Skin.HasSetting(Default)</visible>
+                    <visible>!Skin.HasSetting(Default) + [Skin.HasSetting(Bluewood) | Skin.HasSetting(Darkblue) | Skin.HasSetting(Dribble) | Skin.HasSetting(Gold) | Skin.HasSetting(Green) | Skin.HasSetting(Interest) | Skin.HasSetting(lightblue) | Skin.HasSetting(Medium) | Skin.HasSetting(Orange) | Skin.HasSetting(PellucidV1) | Skin.HasSetting(Razzmatazz) | Skin.HasSetting(Tumble) | Skin.HasSetting(Turquoise) | Skin.HasSetting(Turquoise) | Skin.HasSetting(Vine) | Skin.HasSetting(VK) | Skin.HasSetting(custom)]</visible>
                 </control>
+
+                 <control type="radiobutton" id="44">
+                    <description>Enable Home Button Further apart</description>
+                    <width>8-col</width>
+                    <textureradioonfocus colordiffuse="textactive">Colors/Default.png</textureradioonfocus>
+                    <textureradioonnofocus colordiffuse="textActive">Colors/Default.png</textureradioonnofocus>
+                    <textureradioofffocus colordiffuse="textactive">Colors/Default.png</textureradioofffocus>
+                    <textureradiooffnofocus colordiffuse="textactive">Colors/Default.png</textureradiooffnofocus>
+                    <texturefocus colordiffuse="$VAR[selected_box]">masks/discsurface.png</texturefocus>
+                    <label>[COLOR $VAR[selected]]$LOCALIZE[15109][/COLOR]</label>
+                    <onclick>Skin.Togglesetting(Default)</onclick>
+                    <onclick condition="Skin.HasSetting(Bluewood)">Skin.Reset(Bluewood)</onclick>
+                    <onclick condition="Skin.HasSetting(Darkblue)">Skin.Reset(Darkblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Dribble)">Skin.Reset(Dribble)</onclick>
+                    <onclick condition="Skin.HasSetting(Gold)">Skin.Reset(Gold)</onclick>
+                    <onclick condition="Skin.HasSetting(Green)">Skin.Reset(Green)</onclick>
+                    <onclick condition="Skin.HasSetting(Interest)">Skin.Reset(Interest)</onclick>
+                    <onclick condition="Skin.HasSetting(lightblue)">Skin.Reset(lightblue)</onclick>
+                    <onclick condition="Skin.HasSetting(Medium)">Skin.Reset(Medium)</onclick>
+                    <onclick condition="Skin.HasSetting(Orange)">Skin.Reset(Orange)</onclick>
+                    <onclick condition="Skin.HasSetting(PellucidV1)">Skin.Reset(PellucidV1)</onclick>
+                    <onclick condition="Skin.HasSetting(Razzmatazz)">Skin.Reset(Razzmatazz)</onclick>
+                    <onclick condition="Skin.HasSetting(Tumble)">Skin.Reset(Tumble)</onclick>
+                    <onclick condition="Skin.HasSetting(Turquoise)">Skin.Reset(Turquoise)</onclick>
+                    <onclick condition="Skin.HasSetting(Vine)">Skin.Reset(Vine)</onclick>
+                    <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
+                    <onclick condition="Skin.HasSetting(custom)">Skin.Reset(custom)</onclick>
+                    <selected>Skin.HasSetting(Default)</selected>
+                    <visible>!Skin.HasSetting(Default) + !Skin.HasSetting(Bluewood) + !Skin.HasSetting(Darkblue) + !Skin.HasSetting(Dribble) + !Skin.HasSetting(Gold) + !Skin.HasSetting(Green) + !Skin.HasSetting(Interest) + !Skin.HasSetting(lightblue) + !Skin.HasSetting(Medium) + !Skin.HasSetting(Orange) + !Skin.HasSetting(PellucidV1) + !Skin.HasSetting(Razzmatazz) + !Skin.HasSetting(Tumble) + !Skin.HasSetting(Turquoise) + !Skin.HasSetting(Turquoise) + !Skin.HasSetting(Vine) + !Skin.HasSetting(VK) + !Skin.HasSetting(custom)</visible>
+                </control>
+
                 <control type="radiobutton" id="17">
                     <description>Enable Home Button Further apart</description>
                     <width>8-col</width>
@@ -311,7 +342,7 @@
                     <onclick condition="Skin.HasSetting(VK)">Skin.Reset(VK)</onclick>
                     <onclick condition="Skin.HasSetting(custom)">Skin.Reset(custom)</onclick>
                     <selected>Skin.HasSetting(Default)</selected>
-                    <visible>Skin.HasSetting(Default)</visible>
+                    <visible>Skin.HasSetting(Default) + !Control.IsVisible</visible>
                 </control>
 
                 <control type="radiobutton" id="18">
@@ -1086,6 +1117,8 @@
                     <onclick>activatewindow(1112),return</onclick>
                     <visible>Skin.HasSetting(custom)</visible>
                 </control>
+
+                   
 
                 
             </control>
