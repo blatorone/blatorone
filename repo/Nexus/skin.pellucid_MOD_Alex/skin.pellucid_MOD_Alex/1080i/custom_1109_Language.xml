@@ -58,7 +58,7 @@
                 <width>14-col</width>
                 <height>2-row</height>
                 <font>dialogTitle</font>
-                <label>$INFO[System.Language]</label>
+                <label>$LOCALIZE[309]</label>
                 <textcolor>$VAR[Home]</textcolor>
                 <shadowcolor></shadowcolor>
             </control>
@@ -269,10 +269,10 @@
                 </control>
             </control>
             <control type="image">
-                        <posx>420</posx>
-                        <posy>-150</posy>
-                        <width>150</width>
-					    <height>150</height>
+                        <posx>900</posx>
+                        <posy>-5</posy>
+                        <width>80</width>
+					    <height>80</height>
                         <aspectratio>scale</aspectratio>
                         <texture>lang/$INFO[System.Language].png</texture>
                         

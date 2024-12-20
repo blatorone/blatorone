@@ -1496,7 +1496,8 @@
 
 	<include name="notificationposimage">
         <include  condition="!Skin.HasSetting(homemenuside)">notificationposimage1</include>
-        <include  condition="Skin.HasSetting(homemenuside)">notificationposimage2</include>
+        <include  condition="Skin.HasSetting(homemenuside) + [Window.IsActive(home) | player.hasmedia(StartupIntro)]">notificationposimage2</include>
+		<include  condition="Skin.HasSetting(homemenuside) + [!Window.IsActive(home) | !player.hasmedia(StartupIntro)]">notificationposimage1</include>
     </include>
     <include name="notificationposimage1">
         <posx>0</posx>
@@ -1510,10 +1511,12 @@
         <width>1635</width>
         <height>3-row</height>
     </include>
+	
 
 	<include name="notificationposimageaddon">
         <include  condition="!Skin.HasSetting(homemenuside)">notificationposimageaddon1</include>
-        <include  condition="Skin.HasSetting(homemenuside)">notificationposimageaddon2</include>
+        <include  condition="Skin.HasSetting(homemenuside) + [Window.IsActive(home) | player.hasmedia(StartupIntro)]">notificationposimageaddon2</include>
+		<include  condition="Skin.HasSetting(homemenuside) + [!Window.IsActive(home) | !player.hasmedia(StartupIntro)]">notificationposimageaddon1</include>
     </include>
     <include name="notificationposimageaddon1">
         <left>6</left>
@@ -1523,10 +1526,12 @@
         <left>290</left>
         
     </include>
+	
 
 	<include name="notificationposlabel">
         <include  condition="!Skin.HasSetting(homemenuside)">notificationposlabel1</include>
-        <include  condition="Skin.HasSetting(homemenuside)">notificationposlabel2</include>
+        <include  condition="Skin.HasSetting(homemenuside) + [Window.IsActive(home) | player.hasmedia(StartupIntro)]">notificationposlabel2</include>
+		<include  condition="Skin.HasSetting(homemenuside) + [!Window.IsActive(home) | !player.hasmedia(StartupIntro)]">notificationposlabel1</include>
     </include>
     <include name="notificationposlabel1">
         <right>50</right>
@@ -1536,6 +1541,7 @@
         <left>425</left>
         
     </include>
+	
 
 
     <include name="ButtonCommonValues">
