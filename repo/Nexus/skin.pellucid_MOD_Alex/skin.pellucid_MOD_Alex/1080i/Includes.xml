@@ -1653,6 +1653,8 @@
     <!--aeonocsilvio-->
     <include name="InfoMPAA">
 		<control type="image">
+			<posx>485</posx>
+			<posy>150</posy>
 			<width>135</width>
 			<height>90</height>
 			<include>MediaFlagValues</include>
@@ -3274,7 +3276,7 @@
 	
 	<include name="InfoDialogTopBarInfo">
 		<param name="id">33333</param>
-		<param name="posy">20</param>
+		<param name="posy">5</param>
 		<definition>
 			<control type="grouplist">
 				<left>100</left>
@@ -3283,13 +3285,13 @@
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				<height>150</height>
-				<itemgap>0</itemgap>
+				<itemgap>-20</itemgap>
 				<orientation>vertical</orientation>
 				<control type="label">
 					<width>100%</width>
 					<label>$PARAM[main_label]</label>
 					<font>largeTitle</font>
-					<shadowcolor>textActive</shadowcolor>
+					<shadowcolor>$VAR[highlight]</shadowcolor>
 					<height>65</height>
 					<align>center</align>
 					<scroll>true</scroll>

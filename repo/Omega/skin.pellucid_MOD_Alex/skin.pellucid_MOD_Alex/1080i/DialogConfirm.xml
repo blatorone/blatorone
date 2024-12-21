@@ -27,8 +27,8 @@
                 <posy>385</posy>
                 <width>650</width>
                 <height>120</height>
-                <texture>colors/white.png</texture>
-                <colordiffuse>pink</colordiffuse>
+                <texture>colors/black.png</texture>
+                <colordiffuse>black</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             
