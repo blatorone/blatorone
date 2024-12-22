@@ -119,6 +119,7 @@
 				
             </control>
             <!--page scrollbar-->
+            <!--
             <control type="group" id="8000">
 				<control type="group">
                 	<visible>Control.IsVisible(60) + !Control.IsVisible(51)</visible>
@@ -202,7 +203,7 @@
                         <onup>7000</onup>
 	                </control>
 	            </control>
-
+        
 
             </control>        
             
