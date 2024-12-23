@@ -77,15 +77,18 @@
             
               
             <!--overlay-->
+            
+            
+            
             <control type="image">
                 
                 <left>0</left>
-                <bottom>0</bottom>
+                <bottom>12</bottom>
                 <width>fullscreenWidth</width>
-                <height>100</height>
-                <texture>colors/white.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
+                <height>80</height>
+                <texture>masks/discsurface30%.png</texture>
+				<colordiffuse>darkgrey</colordiffuse>
+                <aspectratio>black</aspectratio>
                 <visible>!window.isactive(FullscreenInfo)</visible>
             </control>
             
@@ -264,7 +267,7 @@
 				        <visible>!Pvr.IsPlayingTv</visible>
                         <description>Progress Bar</description>
                         <left>-20</left>
-                        <bottom>65</bottom>
+                        <bottom>55</bottom>
                         <width>1825</width>
                         <height>12</height>
                         <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
@@ -276,7 +279,7 @@
 				        <visible>Pvr.IsPlayingTv</visible>
                         <description>Progress Bar</description>
                         <left>-20</left>
-                        <bottom>65</bottom>
+                        <bottom>55</bottom>
                         <width>1825</width>
                         <height>12</height>
                         <texturebg colordiffuse="overlay">masks/discsurface.png</texturebg>
@@ -287,7 +290,7 @@
                     
 						<visible>!Pvr.IsPlayingTv</visible>
                         <right>-875</right>
-                        <bottom>55</bottom>
+                        <bottom>45</bottom>
                         <width>6-col</width>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
@@ -438,15 +441,7 @@
                 <onleft>Control.SetFocus(8003,10)</onleft>
                 <orientation>horizontal</orientation>
                 <itemlayout width="82" height="2-row">
-					<control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                        <colordiffuse>overlay</colordiffuse>
-                    </control>
+					
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -460,15 +455,7 @@
                     </control>
                 </itemlayout>
                 <focusedlayout width="82" height="2-row">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>masks/discsurface.png</texture>
-                        <colordiffuse>$VAR[highlight]</colordiffuse>
-                    </control>
+                    
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -477,7 +464,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
-                        <textcolor>$VAR[Home]</textcolor>
+                        <textcolor>$VAR[highlight]</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor></shadowcolor>
                     </control>
@@ -575,7 +562,7 @@
                     </item>
                     <item>
                         <description>Info</description>
-                        <label2></label2>
+                        <label2></label2>
                         <label>29943</label>
                         <thumb></thumb>
                         <onclick condition="player.playing + !Pvr.IsPlayingTv">PlayerControl(play)</onclick>
@@ -613,15 +600,7 @@
                 <onleft>Control.SetFocus(8001,10)</onleft>
                 <orientation>horizontal</orientation>
                 <itemlayout width="82" height="2-row">
-					<control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                        <colordiffuse>overlay</colordiffuse>
-                    </control>
+					
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -635,15 +614,7 @@
                     </control>
                 </itemlayout>
                 <focusedlayout width="82" height="2-row">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>masks/discsurface.png</texture>
-                        <colordiffuse>$VAR[highlight]</colordiffuse>
-                    </control>
+                    
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -652,7 +623,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
-                        <textcolor>$VAR[Home]</textcolor>
+                        <textcolor>$VAR[highlight]</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor></shadowcolor>
                     </control>
@@ -760,7 +731,7 @@
            <control type="label">
                         <visible>control.hasfocus(8003) + !window.isactive(Fullscreeninfo)</visible>
                         
-                        <left>35%</left>
+                        <left>36%</left>
                         <bottom>1%</bottom>
                         <width>10-col</width>
                         <height>2-row</height>
@@ -774,7 +745,7 @@
                     <control type="label">
                         <visible>control.hasfocus(8001) + !window.isactive(Fullscreeninfo)</visible>
                         
-                        <left>35%</left>
+                        <left>36%</left>
                         <bottom>1%</bottom>
                         <width>10-col</width>
                         <height>2-row</height>
