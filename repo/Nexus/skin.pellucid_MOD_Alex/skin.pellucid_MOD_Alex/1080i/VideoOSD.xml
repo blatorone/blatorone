@@ -9,12 +9,18 @@
     
     <controls>
     <control type="image">
+    <animation type="Windowopen">
+				<effect type="fade" start="0" end="100" time="400"/>
+            </animation>
+            <animation type="windowClose">
+				<effect type="fade" start="100" end="0" time="500"/>
+            </animation>
 				<left>-20</left>
                 <top>-20</top>
 				<width>3000</width>
 				<height>400</height>
 				<texture border="40">dialogs/default/bg.png</texture>
-				<animation effect="fade" end="85" condition="true">Conditional</animation>
+				
 				<visible>!window.isactive(FullscreenInfo)</visible>
 			</control>
     <control type="group">
@@ -595,7 +601,7 @@
             <control type="panel" id="8003">
                 <visible>!window.isactive(FullscreenInfo)</visible>
                 <include>modalDialogInOutVertical</include>
-                <right>10</right>
+                <right>-70</right>
                 <bottom>20</bottom>
                 <width>8-col</width>
                 <height>2-row</height>
@@ -745,21 +751,13 @@
                         <onclick>PVR.ToggleRecordPlayingChannel</onclick>
                     </item>
                     
-                    <item>
-	                    <description>back</description>
-			    	    <visible>Skin.HasSetting(Touch)</visible>
-	                    <colordiffuse>colors/offblack.png</colordiffuse>#
-                        <label>31253</label>
-						<label2></label2>
-	                    <thumb></thumb>
-						<onclick>Back</onclick>
-	                </item>
+                   
 
                 </content>
 
             </control>
            <control type="label">
-                        <visible>control.hasfocus(8003)</visible>
+                        <visible>control.hasfocus(8003) + !window.isactive(Fullscreeninfo)</visible>
                         <include>modalDialogInOutVertical</include>
                         <left>35%</left>
                         <bottom>1%</bottom>
@@ -773,7 +771,7 @@
                         <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
-                        <visible>control.hasfocus(8001)</visible>
+                        <visible>control.hasfocus(8001) + !window.isactive(Fullscreeninfo)</visible>
                         <include>modalDialogInOutVertical</include>
                         <left>35%</left>
                         <bottom>1%</bottom>
