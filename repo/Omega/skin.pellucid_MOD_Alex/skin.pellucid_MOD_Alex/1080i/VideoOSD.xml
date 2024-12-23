@@ -6,30 +6,41 @@
     <onload condition="Skin.HasSetting(pausebeforstop) + player.paused">Control.SetFocus(8001,4)</onload>
    <!--old  <onload condition="Skin.HasSetting(pausebeforstopauto) + Skin.HasSetting(pausebeforstop) + !player.paused + !Pvr.IsPlayingTv + !String.IsEqual(VideoPlayer.title,intro.mov)">PlayerControl(play)</onload> -->
     <onload condition="Skin.HasSetting(pausebeforstopauto) + Skin.HasSetting(pausebeforstop) + !Pvr.IsPlayingTv + !String.IsEqual(VideoPlayer.title,intro.mov)">PlayerControl(play)</onload> 
-    
+    <include>contentOpen</include>
     <controls>
     <control type="image">
-    <animation type="Windowopen">
-				<effect type="fade" start="0" end="100" time="400"/>
-            </animation>
-            <animation type="windowClose">
-				<effect type="fade" start="100" end="0" time="500"/>
-            </animation>
+    
 				<left>-20</left>
                 <top>-20</top>
 				<width>3000</width>
 				<height>400</height>
 				<texture border="40">dialogs/default/bg.png</texture>
-				
+				<colordiffuse>overlay</colordiffuse>
+				<visible>!window.isactive(FullscreenInfo)</visible>
+			</control>
+            <control type="image">
+    
+				<left>-20</left>
+                <top>-20</top>
+				<width>3000</width>
+				<height>400</height>
+				<texture border="40">dialogs/default/bg.png</texture>
+				<colordiffuse>overlay</colordiffuse>
+				<visible>!window.isactive(FullscreenInfo)</visible>
+			</control>
+            <control type="image">
+    
+				<left>-20</left>
+                <top>-20</top>
+				<width>3000</width>
+				<height>400</height>
+				<texture border="40">dialogs/default/bg.png</texture>
+				<colordiffuse>overlay</colordiffuse>
 				<visible>!window.isactive(FullscreenInfo)</visible>
 			</control>
     <control type="group">
-         <animation type="Windowopen">
-				<effect type="fade" start="0" end="100" time="400"/>
-            </animation>
-            <animation type="windowClose">
-				<effect type="fade" start="100" end="0" time="500"/>
-            </animation>
+        
+            
         <control type="label">
             <posx>5%</posx>
             <posy>10</posy>
@@ -63,22 +74,11 @@
             <visible>!String.IsEqual(VideoPlayer.title,intro.mov)</visible>
             <left>0</left>
             <bottom>0</bottom>
-            <animation type="Windowopen">
-				<effect type="fade" start="0" end="100" time="400"/>
-                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="500"/>
-            </animation>
-            <animation type="windowClose">
-				<effect type="fade" start="100" end="0" time="1000"/>
-                <effect type="slide" start="0" end="800" tween="cubic" easing="in" time="500"/>
-            </animation>
-            <!--fade out if audio / video menu active-->
-            <animation type="Conditional" condition="Window.IsActive(osdsubtitlesettings) | Window.IsActive(seekbar) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | window.isactive(PVROSDChannels) | window.isactive(subtitlesearch)">
-                <effect type="fade" start="100" end="0" time="350"/>
-                <effect type="slide" start="0" end="900" tween="cubic" easing="in" time="500"/>
-            </animation>
+            
+              
             <!--overlay-->
             <control type="image">
-                <include>modalDialogInOutVertical</include>
+                
                 <left>0</left>
                 <bottom>0</bottom>
                 <width>fullscreenWidth</width>
@@ -90,12 +90,12 @@
             </control>
             
             <control type="grouplist">
-                <include>modalDialogInOutVertical</include>
+               
                 <posx>1%</posx>
                 <posy>80%</posy>
                     <control type="group"> 
                     <visible>!window.isactive(FullscreenInfo)</visible>
-                    <include>modalDialogInOutVertical</include>
+                    
                     <itemgap>32</itemgap>
                     <orientation>horizontal</orientation>             
                         <control type="image">
@@ -107,7 +107,7 @@
                         </control>
                         <control type="label">
                             <visible>Pvr.IsPlayingTv</visible>
-                            <include>modalDialogInOutVertical</include>
+                            
                             <posx>80</posx>
                             <posy>15</posy>
 	                        <width>8-col</width>
@@ -120,7 +120,7 @@
                         
                         <control type="label">
                             <visible>!Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.TVShowTitle)</visible>
-                            <include>modalDialogInOutVertical</include>
+                            
 	                        <posx>80</posx>
                             <posy>15</posy>
                             <width>8-col</width>
@@ -132,7 +132,7 @@
 	                    </control>
                         <control type="label">
                             <visible>!Pvr.IsPlayingTv + String.IsEmpty(Videoplayer.TVShowTitle)</visible>
-                            <include>modalDialogInOutVertical</include>
+                            
 	                        <posx>80</posx>
                             <posy>15</posy>
                             <width>8-col</width>
@@ -144,6 +144,7 @@
 	                    </control>
                     </control>
 		    </control>
+            
             <control type="group">
             
                 <posx>36</posx>
@@ -259,7 +260,7 @@
                     -->
                     <!--Progress and Procent-->
                     <control type="progress">
-                    <include>modalDialogInOutVertical</include>
+                    
 				        <visible>!Pvr.IsPlayingTv</visible>
                         <description>Progress Bar</description>
                         <left>-20</left>
@@ -271,7 +272,7 @@
                         <info>player.progress</info>
                     </control>
                     <control type="progress">
-                    <include>modalDialogInOutVertical</include>
+                    
 				        <visible>Pvr.IsPlayingTv</visible>
                         <description>Progress Bar</description>
                         <left>-20</left>
@@ -283,7 +284,7 @@
                         <info>PVR.EpgEventProgress</info>
                     </control>
                     <control type="label">
-                    <include>modalDialogInOutVertical</include>
+                    
 						<visible>!Pvr.IsPlayingTv</visible>
                         <right>-875</right>
                         <bottom>55</bottom>
@@ -425,7 +426,7 @@
             <!--player controls-->
             <control type="panel" id="8001">
                 <visible>!window.isactive(FullscreenInfo)</visible>
-                <include>modalDialogInOutVertical</include>
+                
                 <posx>20</posx>
                 <bottom>20</bottom>
                 <width>15-col</width>
@@ -600,7 +601,7 @@
 
             <control type="panel" id="8003">
                 <visible>!window.isactive(FullscreenInfo)</visible>
-                <include>modalDialogInOutVertical</include>
+                
                 <right>-70</right>
                 <bottom>20</bottom>
                 <width>8-col</width>
@@ -758,7 +759,7 @@
             </control>
            <control type="label">
                         <visible>control.hasfocus(8003) + !window.isactive(Fullscreeninfo)</visible>
-                        <include>modalDialogInOutVertical</include>
+                        
                         <left>35%</left>
                         <bottom>1%</bottom>
                         <width>10-col</width>
@@ -772,7 +773,7 @@
                     </control>
                     <control type="label">
                         <visible>control.hasfocus(8001) + !window.isactive(Fullscreeninfo)</visible>
-                        <include>modalDialogInOutVertical</include>
+                        
                         <left>35%</left>
                         <bottom>1%</bottom>
                         <width>10-col</width>
@@ -872,6 +873,21 @@
             </control>
             -->
         </control>
+        <control type="textbox">
+                       
+                        <visible>!Pvr.IsPlayingTv + !window.isactive(FullscreenInfo)</visible>
+						<left>30</left>
+						<posy>130</posy>
+	                    <width>8-col</width>
+	                    <align>left</align>
+	                    <height>4-row</height>
+	                    <aligny>center</aligny>
+	                    <font>VideoOSDTitel</font>
+	                    <textcolor>textDisabled</textcolor>
+						
+	                    <label>$INFO[videoplayer.Title]</label>
+                        <autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+	                </control>
         <!--Battery Level-->
         <include>Battery</include>
         <!--debugging-->
