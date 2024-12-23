@@ -986,3 +986,19 @@ msgstr ""
 msgctxt "#31362"
 msgid "Cast not available"
 msgstr ""
+
+msgctxt "#31363"
+msgid "Forward"
+msgstr ""
+
+msgctxt "#31364"
+msgid "Backward"
+msgstr ""
+
+msgctxt "#31365"
+msgid "Volume Up"
+msgstr ""
+
+msgctxt "#31366"
+msgid "Volume Down"
+msgstr ""

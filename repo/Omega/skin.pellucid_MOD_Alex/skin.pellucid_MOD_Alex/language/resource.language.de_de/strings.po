@@ -985,3 +985,19 @@ msgstr "Fanart anzeigen"
 msgctxt "#31362"
 msgid "Cast not available"
 msgstr "Besetzung nicht verfügbar"
+
+msgctxt "#31363"
+msgid "Forward"
+msgstr "Vorwärtsspulen"
+
+msgctxt "#31364"
+msgid "Backward"
+msgstr "Zurückspulen"
+
+msgctxt "#31365"
+msgid "Volume Up"
+msgstr "Lauter"
+
+msgctxt "#31366"
+msgid "Volume Down"
+msgstr "Leiser"

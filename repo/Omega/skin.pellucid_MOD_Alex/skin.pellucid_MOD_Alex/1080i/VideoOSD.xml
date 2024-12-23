@@ -12,7 +12,7 @@
 				<left>-20</left>
                 <top>-20</top>
 				<width>3000</width>
-				<height>fullscreenHeight</height>
+				<height>400</height>
 				<texture border="40">dialogs/default/bg.png</texture>
 				<animation effect="fade" end="85" condition="true">Conditional</animation>
 				<visible>!window.isactive(FullscreenInfo)</visible>
@@ -72,6 +72,7 @@
             </animation>
             <!--overlay-->
             <control type="image">
+                <include>modalDialogInOutVertical</include>
                 <left>0</left>
                 <bottom>0</bottom>
                 <width>fullscreenWidth</width>
@@ -83,9 +84,12 @@
             </control>
             
             <control type="grouplist">
+                <include>modalDialogInOutVertical</include>
                 <posx>1%</posx>
                 <posy>80%</posy>
                     <control type="group"> 
+                    <visible>!window.isactive(FullscreenInfo)</visible>
+                    <include>modalDialogInOutVertical</include>
                     <itemgap>32</itemgap>
                     <orientation>horizontal</orientation>             
                         <control type="image">
@@ -97,6 +101,7 @@
                         </control>
                         <control type="label">
                             <visible>Pvr.IsPlayingTv</visible>
+                            <include>modalDialogInOutVertical</include>
                             <posx>80</posx>
                             <posy>15</posy>
 	                        <width>8-col</width>
@@ -106,8 +111,10 @@
 	                        <textcolor>$VAR[highlight]</textcolor>
 	                        <label>[CAPITALIZE][LOWERCASE]$INFO[videoplayer.Title][/LOWERCASE][/CAPITALIZE]</label>
 	                    </control>
+                        
                         <control type="label">
                             <visible>!Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.TVShowTitle)</visible>
+                            <include>modalDialogInOutVertical</include>
 	                        <posx>80</posx>
                             <posy>15</posy>
                             <width>8-col</width>
@@ -119,6 +126,7 @@
 	                    </control>
                         <control type="label">
                             <visible>!Pvr.IsPlayingTv + String.IsEmpty(Videoplayer.TVShowTitle)</visible>
+                            <include>modalDialogInOutVertical</include>
 	                        <posx>80</posx>
                             <posy>15</posy>
                             <width>8-col</width>
@@ -131,6 +139,7 @@
                     </control>
 		    </control>
             <control type="group">
+            
                 <posx>36</posx>
                 <posy>row-1-begin</posy>
                 <control type="grouplist">
@@ -142,15 +151,21 @@
                     
                    
 				</control>
+
+
+
+                
 				<!--player position-->
 				<!--Start Time-->
 				<control type="group">
+                
+                    <visible>!window.isactive(FullscreenInfo)</visible>
 					<right>500</right>
                     <bottom>50</bottom>
                     <control type="label">
 						<visible>!Pvr.IsPlayingTv</visible>
-                        <right>0</right>
-                        <bottom>0</bottom>
+                        <right>-110</right>
+                        <top>-35</top>
                         <width>2-col</width>
                         <font>itemSubTitle</font>
                         <scroll>true</scroll>
@@ -160,8 +175,8 @@
                     </control>
 					<control type="label">
 						<visible>!Pvr.IsPlayingTv</visible>
-                        <right>-290</right>
-                        <bottom>-35</bottom>
+                        <right>-400</right>
+                        <top>0</top>
                         <width>6-col</width>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
@@ -171,8 +186,8 @@
                     <!--Remaining Time-->
 					<control type="label">
 						<visible>!Pvr.IsPlayingTv</visible>
-                        <right>-225</right>
-                        <bottom>0</bottom>
+                        <right>-335</right>
+                        <top>-35</top>
                         <width>2-col</width>
                         <font>itemSubTitle</font>
                         <scroll>true</scroll>
@@ -182,8 +197,8 @@
                     </control>
 					<control type="label">
 						<visible>!Pvr.IsPlayingTv</visible>
-                        <right>-475</right>
-                        <bottom>-35</bottom>
+                        <right>-585</right>
+                        <top>0</top>
                         <width>6-col</width>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
@@ -193,8 +208,8 @@
                     <!--player position-->
 					<control type="label">
 						<visible>!Pvr.IsPlayingTv</visible>
-                        <right>-425</right>
-                        <bottom>0</bottom>
+                        <right>-535</right>
+                        <top>-35</top>
                         <width>2-col</width>
                         <font>itemSubTitle</font>
                         <scroll>true</scroll>
@@ -204,8 +219,8 @@
                     </control>
 					<control type="label">
 						<visible>!Pvr.IsPlayingTv</visible>
-                        <right>-700</right>
-                        <bottom>-35</bottom>
+                        <right>-810</right>
+                        <top>0</top>
                         <width>6-col</width>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
@@ -213,6 +228,7 @@
                         <shadowcolor></shadowcolor>
                     </control>
                     <!--End Time-->
+                    <!--
 					<control type="label">
 						<visible>Pvr.IsPlayingTv</visible>
                         <right>-425</right>
@@ -234,8 +250,10 @@
                         <label fallback="13205">$INFO[VideoPlayer.EndTime]</label>
                         <shadowcolor></shadowcolor>
                     </control>
+                    -->
                     <!--Progress and Procent-->
                     <control type="progress">
+                    <include>modalDialogInOutVertical</include>
 				        <visible>!Pvr.IsPlayingTv</visible>
                         <description>Progress Bar</description>
                         <left>-20</left>
@@ -247,6 +265,7 @@
                         <info>player.progress</info>
                     </control>
                     <control type="progress">
+                    <include>modalDialogInOutVertical</include>
 				        <visible>Pvr.IsPlayingTv</visible>
                         <description>Progress Bar</description>
                         <left>-20</left>
@@ -258,6 +277,7 @@
                         <info>PVR.EpgEventProgress</info>
                     </control>
                     <control type="label">
+                    <include>modalDialogInOutVertical</include>
 						<visible>!Pvr.IsPlayingTv</visible>
                         <right>-875</right>
                         <bottom>55</bottom>
@@ -267,30 +287,59 @@
                         <label fallback="13205">[B]$INFO[player.progress]%[/B]</label>
                         <shadowcolor></shadowcolor>
                     </control>
+					 <control type="group">
+                     
+					 <top>-5%</top>
+					 <right>-36%</right>
+					<width>808</width>
+					<height>55</height>
+					<itemgap>50</itemgap>
+					<orientation>vertical</orientation>
+					
 					<control type="label">
 						<visible>Pvr.IsPlayingTv</visible>
-                        <posx>17-col-gutter</posx>
-                        <posy>0</posy>
-                        <width>6-col</width>
-                        <font>itemSubTitle</font>
-                        <textcolor>$VAR[highlight]</textcolor>
-                        <label>[B]$LOCALIZE[19031]:[/B]</label>
-                        <shadowcolor></shadowcolor>
-                    </control>
+						<width>auto</width>
+						<height>55</height>
+						<font>font48</font>
+						<scroll>true</scroll>
+						<label>[B][COLOR $VAR[highlight]]$LOCALIZE[19031]:[/COLOR] $INFO[VideoPlayer.NextTitle][/B]</label>
+					</control>
+                    <control type="grouplist">
+                    <bottom>-35</bottom>
+					 
+					<width>1805</width>
+					<height>55</height>
+					<itemgap>50</itemgap>
+					<orientation>horizontal</orientation>
 					<control type="label">
-						<visible>Pvr.IsPlayingTv</visible>
-                        <posx>1400</posx>
-                        <posy>0</posy>
-                        <width>6-col</width>
-                        <font>itemTitle</font>
-                        <scroll>true</scroll>
-                        <textcolor>textActive</textcolor>
-                        <label fallback="13205">$INFO[VideoPlayer.NextTitle]</label>
-                        <shadowcolor></shadowcolor>
-                    </control>
+                        <visible>Pvr.IsPlayingTv</visible>
+						<width>auto</width>
+						<height>65</height>
+						<font>font15</font>
+						<scroll>true</scroll>
+						<label>[COLOR $VAR[highlight]][B]$LOCALIZE[19126][/B]:[/COLOR] $INFO[VideoPlayer.NextStartTime]</label>
+					</control>
+					<control type="label">
+                     <visible>Pvr.IsPlayingTv</visible>
+						<width>auto</width>
+						<height>65</height>
+						<font>font15</font>
+						<scroll>true</scroll>
+						<label>[COLOR $VAR[highlight]][B]$LOCALIZE[180][/B]:[/COLOR] $INFO[VideoPlayer.NextDuration]</label>
+					</control>
+					<control type="label">
+                     <visible>Pvr.IsPlayingTv+</visible>
+						<width>auto</width>
+						<height>65</height>
+						<font>font15</font>
+						<scroll>true</scroll>
+						<label>[COLOR $VAR[highlight]][B]$LOCALIZE[31160][/B]:[/COLOR] $INFO[VideoPlayer.NextEndTime]</label>
+					</control>
+					</control>
 				</control>
-                 <!--Backbutton touchscreen-->
-                <include>Backbuttoncross</include>
+					
+				</control>
+                
                 <!--synopsis-->
                  <control type="textbox">
                         <visible>Pvr.IsPlayingTv + !String.IsEmpty(Videoplayer.Episode) + !window.isactive(FullscreenInfo)</visible>
@@ -304,6 +353,19 @@
 	                    <textcolor>textActive</textcolor>
 						<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 	                    <label>[COLOR textDisabled][B]$INFO[Player.title][/B][/COLOR][CR]$INFO[VideoPlayer.EpisodeName][CR][COLOR $VAR[highlight]]$LOCALIZE[20373]:[/COLOR] $INFO[VideoPlayer.Season]          [COLOR $VAR[highlight]]$LOCALIZE[20359]:[/COLOR] $INFO[VideoPlayer.Episode]</label>
+	                </control>
+                    <control type="textbox">
+                            <visible>Pvr.IsPlayingTv + String.IsEmpty(Videoplayer.Episode) + !window.isactive(Fullscreeninfo)</visible>
+						    <left>3%</left>
+						<posy>50</posy>	
+					        <width>8-col</width>
+	                        <align>left</align>
+	                        <height>6-row</height>
+	                        <aligny>center</aligny>
+	                        <font>VideoOSDTitel</font>
+	                        <textcolor>textActive</textcolor>
+						    <autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+	                        <label>[COLOR textDisabled][B]$INFO[Player.title][/B][/COLOR][CR]$INFO[VideoPlayer.EpisodeName]</label>
 	                </control>
                 <include content="keyboard select">
                     <param name="posx">-100%</param>
@@ -356,13 +418,17 @@
             </control>
             <!--player controls-->
             <control type="panel" id="8001">
+                <visible>!window.isactive(FullscreenInfo)</visible>
+                <include>modalDialogInOutVertical</include>
                 <posx>20</posx>
                 <bottom>20</bottom>
-                <width>10-col</width>
+                <width>15-col</width>
                 <height>2-row</height>
                 <itemgap>0</itemgap>
                 <ondown>Control.SetFocus(8002,0)</ondown>
                 <onup>Control.SetFocus(61)</onup>
+                <onright>Control.SetFocus(8003,0)</onright>
+                <onleft>Control.SetFocus(8003,10)</onleft>
                 <orientation>horizontal</orientation>
                 <itemlayout width="82" height="2-row">
 					<control type="image">
@@ -408,11 +474,14 @@
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor></shadowcolor>
                     </control>
+                    
+                    
                 </focusedlayout>
                 <content>
 					<item>
                         <description>VolumeDown</description>
                         <label2></label2>
+                        <label>31365</label>
                         <thumb></thumb>
                         <onclick>VolumeDown</onclick>
                         
@@ -420,6 +489,7 @@
                     <item>
                         <description>Previous</description>
                         <label2></label2>
+                        <label>19165</label>
                         <thumb></thumb>
                         <onclick>ChannelUp</onclick>
                         <visible>Pvr.IsPlayingTv</visible>
@@ -427,6 +497,7 @@
                     <item>
                         <description>Previous</description>
                         <label2></label2>
+                        <label>12021</label>
                         <thumb></thumb>
                         <onclick>PlayerControl(previous)</onclick>
                         <visible>!Pvr.IsPlayingTv</visible>
@@ -434,12 +505,15 @@
                     <item>
                         <description>Rewind</description>
                         <label2></label2>
+                        <label>31364</label>
                         <thumb></thumb>
                         <onclick>PlayerControl(rewind)</onclick>
                     </item>
                     <item>
                         <description>Stop</description>
                         <label2></label2>
+                        <label>36044</label>
+                        36044
                         <thumb></thumb>
                         <onclick>PlayerControl(stop)</onclick>
                     </item>
@@ -447,33 +521,39 @@
                         <visible>Player.Playing</visible>
                         <description>Play/Pause</description>
                         <label2></label2>
+                        <label>112</label>
                         <thumb></thumb>
                         <onclick>PlayerControl(play)</onclick>
                     </item>
                     <item>
-                        <visible>Player.Paused</visible>
+                        <visible>!Player.Playing</visible>
                         <description>Pause</description>
                         <label2></label2>
+                        <label>13404</label>
                         <thumb></thumb>
 						<onclick>action(back)</onclick>
+                        <onclick>Control.SetFocus(8001,4)</onclick>
                         <onclick>PlayerControl(play)</onclick>
                     </item>
                     <item>
 	                        <visible>player.rewinding | player.forwarding</visible>
 	                        <description>Pause</description>
 	                        <label2></label2>
+                            <label>13404</label>
 	                        <thumb></thumb>
 	                        <onclick>PlayerControl(play)</onclick>
 	                    </item>
                     <item>
                         <description>Fast forward</description>
                         <label2></label2>
+                        <label>31363</label>
                         <thumb></thumb>
                         <onclick>PlayerControl(forward)</onclick>
                     </item>
                     <item>
                         <description>Next Chapter</description>
                         <label2></label2>
+                        <label>10008</label>
                         <thumb></thumb>
                         <onclick>PlayerControl(next)</onclick>
                         <visible>!Pvr.IsPlayingTv</visible>
@@ -481,6 +561,7 @@
                     <item>
                         <description>Next Chapter</description>
                         <label2></label2>
+                        <label>19165</label>
                         <thumb></thumb>
                         <onclick>ChannelDown</onclick>
                         <visible>Pvr.IsPlayingTv</visible>
@@ -488,23 +569,178 @@
                     <item>
                         <description>Info</description>
                         <label2></label2>
+                        <label>29943</label>
                         <thumb></thumb>
                         <onclick condition="player.playing + !Pvr.IsPlayingTv">PlayerControl(play)</onclick>
                         <onclick>ActivateWindow(fullscreeninfo)</onclick>
                         
 
                     </item>
+                 
 					<item>
                         <description>VolumeUp</description>
                         <label2></label2>
+                        <label>31366</label>
                         <thumb></thumb>
                         <onclick>VolumeDown</onclick>
 						
                     </item>
                     
+                   
+                    
+
+                </content>
+            </control>
+
+            <control type="panel" id="8003">
+                <visible>!window.isactive(FullscreenInfo)</visible>
+                <include>modalDialogInOutVertical</include>
+                <right>10</right>
+                <bottom>20</bottom>
+                <width>8-col</width>
+                <height>2-row</height>
+                <itemgap>0</itemgap>
+                <ondown>Control.SetFocus(8002,0)</ondown>
+                <onup>Control.SetFocus(61)</onup>
+                <onright>Control.SetFocus(8001,0)</onright>
+                <onleft>Control.SetFocus(8001,10)</onleft>
+                <orientation>horizontal</orientation>
+                <itemlayout width="82" height="2-row">
+					<control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>colors/black.png</texture>
+                        <colordiffuse>overlay</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>symbolLarge</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.label2]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="82" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>masks/discsurface.png</texture>
+                        <colordiffuse>$VAR[highlight]</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>symbolLarge</font>
+                        <textcolor>$VAR[Home]</textcolor>
+                        <label>$INFO[ListItem.label2]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+                    
+                    
+                </focusedlayout>
+                <content>
+					
+                    <item>
+                        <visible>VideoPlayer.HasMenu</visible>
+                        <label>31051</label>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>PlayerControl(ShowVideoMenu)</onclick>
+                    </item>
+                    <item>
+                        <description>Subtitles</description>
+                        <visible>!VideoPlayer.Content(LiveTV)</visible>
+                        <label>287</label>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>ActivateWindow(osdsubtitlesettings)</onclick>
+                    </item>
+                    <item>
+                        <description>TV channel</description>
+                        <visible>player.hasvideo + VideoPlayer.Content(LiveTV)</visible>
+                        <label>10700</label>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>Dialog.Close(12901)</onclick>
+                        <onclick>activateWindow(10700),return</onclick> 
+                    </item>
+                    <item>
+                        <description>TV guide</description>
+                        <visible>player.hasvideo + VideoPlayer.Content(LiveTV)</visible>
+                        <label>10702</label>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>Dialog.Close(12901)</onclick>
+                        <onclick>activateWindow(10702),return</onclick> 
+                    </item>
+                    <item>
+                        <description>TV records</description>
+                        <visible>player.hasvideo + VideoPlayer.Content(LiveTV)</visible>
+                        <label>10701</label>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>Dialog.Close(12901)</onclick>
+                        <onclick>activateWindow(10701),return</onclick> 
+                    </item>
+                    <item>
+                        <description>Video Settings</description>
+                        <label>13395</label>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>ActivateWindow(osdvideosettings)</onclick>
+                    </item>
+                    <item>
+                        <description>Audio Settings</description>
+                        <label>13396</label>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>ActivateWindow(osdaudiosettings)</onclick>
+                    </item>
+                    <item>
+                        <description>Bookmarks</description>
+                        <visible>!VideoPlayer.Content(LiveTV)</visible>
+                        <label>298</label>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>ActivateWindow(videobookmarks)</onclick>
+                    </item>
+                    <item>
+                        <description>current queue</description>
+                        <visible>player.hasvideo + !VideoPlayer.Content(LiveTV)</visible>
+                        <label>31123</label>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>Dialog.Close(12901)</onclick>
+                        <onclick>activateWindow(videoplaylist)</onclick> 
+                    </item>
+                    <item>
+                        <description>Back to Home</description>
+                        <label>31254</label>
+                        <label2>↸</label2>
+                        <thumb></thumb>
+                        <onclick>Dialog.Close(12901)</onclick>
+                        <onclick>activateWindow(home)</onclick> 
+                    </item>
+					
+                    
                     <item>
                         <visible>PVR.CanRecordPlayingChannel</visible>
                         <label2></label2>
+                        <label>815</label>
                         <thumb></thumb>
                         <onclick>PVR.ToggleRecordPlayingChannel</onclick>
                     </item>
@@ -512,17 +748,44 @@
                     <item>
 	                    <description>back</description>
 			    	    <visible>Skin.HasSetting(Touch)</visible>
-	                    <colordiffuse>colors/offblack.png</colordiffuse>
+	                    <colordiffuse>colors/offblack.png</colordiffuse>#
+                        <label>31253</label>
 						<label2></label2>
 	                    <thumb></thumb>
-	                    <onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
-						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
-						<onclick condition="!String.IsEmpty(ListItem.Plot)">ActivateWindow(1140)</onclick>
+						<onclick>Back</onclick>
 	                </item>
 
                 </content>
+
             </control>
-           
+           <control type="label">
+                        <visible>control.hasfocus(8003)</visible>
+                        <include>modalDialogInOutVertical</include>
+                        <left>35%</left>
+                        <bottom>1%</bottom>
+                        <width>10-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>regular</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[Container(8003).ListItem.Label]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+                    <control type="label">
+                        <visible>control.hasfocus(8001)</visible>
+                        <include>modalDialogInOutVertical</include>
+                        <left>35%</left>
+                        <bottom>1%</bottom>
+                        <width>10-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>regular</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[Container(8001).ListItem.Label]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
             <!--menu items-->
             <!--
             <control type="panel" id="8002">
@@ -605,80 +868,8 @@
                         <thumb></thumb>
                         <onclick>PlayerControl(ShowVideoMenu)</onclick>
                     </item>
-                    <item>
-                        <description>Subtitles</description>
-                        <visible>!VideoPlayer.Content(LiveTV)</visible>
-                        <label>287</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>ActivateWindow(osdsubtitlesettings)</onclick>
-                    </item>
-                    <item>
-                        <description>TV channel</description>
-                        <visible>player.hasvideo + VideoPlayer.Content(LiveTV)</visible>
-                        <label>10700</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>Dialog.Close(12901)</onclick>
-                        <onclick>activateWindow(10700),return</onclick> 
-                    </item>
-                    <item>
-                        <description>TV guide</description>
-                        <visible>player.hasvideo + VideoPlayer.Content(LiveTV)</visible>
-                        <label>10702</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>Dialog.Close(12901)</onclick>
-                        <onclick>activateWindow(10702),return</onclick> 
-                    </item>
-                    <item>
-                        <description>TV records</description>
-                        <visible>player.hasvideo + VideoPlayer.Content(LiveTV)</visible>
-                        <label>10701</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>Dialog.Close(12901)</onclick>
-                        <onclick>activateWindow(10701),return</onclick> 
-                    </item>
-                    <item>
-                        <description>Video Settings</description>
-                        <label>13395</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>ActivateWindow(osdvideosettings)</onclick>
-                    </item>
-                    <item>
-                        <description>Audio Settings</description>
-                        <label>13396</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>ActivateWindow(osdaudiosettings)</onclick>
-                    </item>
-                    <item>
-                        <description>Bookmarks</description>
-                        <visible>!VideoPlayer.Content(LiveTV)</visible>
-                        <label>298</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>ActivateWindow(videobookmarks)</onclick>
-                    </item>
-                    <item>
-                        <description>current queue</description>
-                        <visible>player.hasvideo + !VideoPlayer.Content(LiveTV)</visible>
-                        <label>31123</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>Dialog.Close(12901)</onclick>
-                        <onclick>activateWindow(videoplaylist)</onclick> 
-                    </item>
-                    <item>
-                        <description>Back to Home</description>
-                        <label>31254</label>
-                        <label2>↸</label2>
-                        <thumb></thumb>
-                        <onclick>Dialog.Close(12901)</onclick>
-                        <onclick>activateWindow(home)</onclick> 
-                    </item>
+                    
+                    
                 </content>
             </control>
             -->

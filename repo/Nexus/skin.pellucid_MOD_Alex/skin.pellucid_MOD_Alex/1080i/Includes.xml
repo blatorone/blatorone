@@ -3423,6 +3423,7 @@
                         <shadowcolor></shadowcolor>
                         <pagecontrol>61</pagecontrol>
                     </control>
+					<include>Backbuttoncross</include>
 	</include>
 	<include name="LiveTVFullscreenInfo">
 		<!-- LiveTV Plot-->
@@ -3478,35 +3479,36 @@
 						<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 	                    <label>[COLOR textDisabled][B]$INFO[Player.title][/B][/COLOR][CR]$INFO[VideoPlayer.EpisodeName]</label>
 	                </control>
+					<control type="textbox">
+                        <visible>Pvr.IsPlayingTv + String.IsEmpty(Videoplayer.Episode)</visible>
+						<top>100</top>
+						<left>57</left>	
+					    <width>8-col</width>
+	                    <align>left</align>
+	                    <height>6-row</height>
+	                    <aligny>center</aligny>
+	                    <font>VideoOSDTitel</font>
+	                    <textcolor>textActive</textcolor>
+						<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+	                    <label>[COLOR textDisabled][B]$INFO[Player.title][/B][/COLOR][CR]$INFO[VideoPlayer.EpisodeName]</label>
+	                </control>
 				<control type="label">
 					<width>auto</width>
 					<height>55</height>
 					<font>font48_bold</font>
 					<scroll>true</scroll>
-					<label>[COLOR $VAR[highlight]]$LOCALIZE[20373]:[/COLOR] $INFO[VideoPlayer.Season]          [COLOR $VAR[highlight]]$LOCALIZE[20359]:[/COLOR] $INFO[VideoPlayer.Episode]</label>
-					<visible>String.IsEmpty(Window(fullscreeninfo).Property(LiveTVNext))</visible>
+					<label>[COLOR $VAR[highlight]]$LOCALIZE[20373]:[/COLOR] $INFO[VideoPlayer.Season]        [COLOR $VAR[highlight]]$LOCALIZE[20359]:[/COLOR] $INFO[VideoPlayer.Episode]        [COLOR $VAR[highlight]][B]$LOCALIZE[19126]:[/B][/COLOR] $INFO[VideoPlayer.StartTime]        [COLOR $VAR[highlight]][B]$LOCALIZE[31143][/B]: [/COLOR]$INFO[PVR.EpgEventRemainingTime]         [COLOR $VAR[highlight]][B]$LOCALIZE[31160]:[/B][/COLOR] $INFO[VideoPlayer.EndTime]</label>
+					<visible>String.IsEmpty(Window(fullscreeninfo).Property(LiveTVNext)) + !string.isempty(videoplayer.Season)</visible>
 				</control>
-				<control type="grouplist">
-					<width>1805</width>
+				<control type="label">
+					<width>auto</width>
 					<height>55</height>
-					<itemgap>50</itemgap>
-					<orientation>horizontal</orientation>
-					
-					<control type="label">
-						<width>auto</width>
-						<height>55</height>
-						<font>font48</font>
-						<scroll>true</scroll>
-						<label>[B][COLOR $VAR[highlight]]$LOCALIZE[19031]:[/COLOR] $INFO[VideoPlayer.NextTitle][/B]</label>
-					</control>
-					<control type="label">
-						<width>auto</width>
-						<height>65</height>
-						<font>font15</font>
-						<scroll>true</scroll>
-						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[180]:[/COLOR] $INFO[VideoPlayer.NextDuration]</label>
-					</control>
+					<font>font48_bold</font>
+					<scroll>true</scroll>
+					<label>[COLOR $VAR[highlight]][B]$LOCALIZE[19126]:[/B]:[/B][/COLOR] $INFO[VideoPlayer.StartTime]        [COLOR $VAR[highlight]][B]$LOCALIZE[31143][/B]: [/COLOR]$INFO[PVR.EpgEventRemainingTime]         [COLOR $VAR[highlight]][B]$LOCALIZE[31160][/B]:[/COLOR] $INFO[VideoPlayer.EndTime]</label>
+					<visible>String.IsEmpty(Window(fullscreeninfo).Property(LiveTVNext)) + string.isempty(videoplayer.Season)</visible>
 				</control>
+				
 				<control type="label">
 					<width>auto</width>
 					<height>35</height>
@@ -3515,6 +3517,7 @@
 					<label>[B]$INFO[VideoPlayer.PlotOutline,(,)][/B]</label>
 					<visible>String.IsEmpty(Window(fullscreeninfo).Property(LiveTVFullPlot)) + !String.IsEmpty(VideoPlayer.PlotOutline) + String.IsEmpty(Window(fullscreeninfo).Property(LiveTVNext))</visible>
 				</control>
+				
 				<control type="label">
 					<width>auto</width>
 					<height>35</height>
@@ -3523,11 +3526,13 @@
 					<label>[B]$INFO[VideoPlayer.NextPlotOutline,(,)][/B]</label>
 					<visible>String.IsEmpty(Window(fullscreeninfo).Property(LiveTVFullPlot)) + !String.IsEmpty(VideoPlayer.NextPlotOutline) + !String.IsEmpty(Window(fullscreeninfo).Property(LiveTVNext))</visible>
 				</control>
+				
 				<control type="image">
 					<width>1809</width>
 					<height>2</height>
 					<texture colordiffuse="$VAR[ThemeLabelColor]">separator_horizontal.png</texture>
 				</control>
+				
 				<control type="label">
 					<width>1000</width>
 					<height>30</height>
@@ -3535,6 +3540,7 @@
 					<label>[COLOR $VAR[highlight]]$LOCALIZE[515]:[/COLOR] $INFO[VideoPlayer.Genre]</label>
 					<visible>String.IsEmpty(Window(fullscreeninfo).Property(LiveTVNext))</visible>
 				</control>
+				
 				<control type="label">
 					<width>1000</width>
 					<height>30</height>
@@ -3565,9 +3571,12 @@
 						<autoscroll delay="6000" time="3000" repeat="6000">true</autoscroll>
 						<visible>String.IsEmpty(VideoPlayer.PlotOutline) + !String.IsEmpty(Window(fullscreeninfo).Property(LiveTVFullPlot))</visible>
 					</control>
+					
 				</control>
+				<!--
 				<control type="group">
-					<visible>!String.IsEmpty(Window(fullscreeninfo).Property(LiveTVNext))</visible>
+					
+					<visible>String.IsEmpty(Window(fullscreeninfo).Property(LiveTVNext))</visible>
 					<control type="textbox">
 						<width>1805</width>
 						<height>174</height>
@@ -3575,7 +3584,10 @@
 						<autoscroll delay="6000" time="3000" repeat="6000">true</autoscroll>
 						<visible>!String.IsEmpty(Window(fullscreeninfo).Property(LiveTVFullPlot)) + !String.IsEmpty(VideoPlayer.PlotOutline)</visible>
 					</control>
+					
 					<control type="textbox">
+						<posx></posx>
+					<posy>100</posy>
 						<width>1805</width>
 						<height>774</height>
 						<label>$INFO[VideoPlayer.NextPlot]</label>
@@ -3589,21 +3601,63 @@
 						<autoscroll delay="6000" time="3000" repeat="6000">true</autoscroll>
 						<visible>String.IsEmpty(VideoPlayer.PlotOutline) + !String.IsEmpty(Window(fullscreeninfo).Property(LiveTVFullPlot))</visible>
 					</control>
+					
 				</control>
+				-->
+				
 			</control>
+			
 		</control>
-		<control type="textbox">
-                        <visible>Pvr.IsPlayingTv + String.IsEmpty(Videoplayer.Episode)</visible>
-	                    <width>8-col</width>
-	                    <align>left</align>
-	                    <height>4-row</height>
-	                    <aligny>center</aligny>
-	                    <font>VideoOSDTitel</font>
-	                    <textcolor>textDisabled</textcolor>
-						<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
-	                    <label>$INFO[Player.title]</label>
-                        
-	                </control>
+		
+                    <control type="group">
+                     <visible>Pvr.IsPlayingTv</visible>
+					 <top>1%</top>
+					 <right>0%</right>
+					<width>808</width>
+					<height>55</height>
+					<itemgap>50</itemgap>
+					<orientation>vertical</orientation>
+					
+					<control type="label">
+						
+						<width>auto</width>
+						<height>55</height>
+						<font>font48</font>
+						<scroll>true</scroll>
+						<label>[B][COLOR $VAR[highlight]]$LOCALIZE[19031]:[/COLOR] $INFO[VideoPlayer.NextTitle][/B]</label>
+					</control>
+                    <control type="grouplist">
+                    <bottom>-35</bottom>
+					 
+					<width>1805</width>
+					<height>55</height>
+					<itemgap>50</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="label">
+						<width>auto</width>
+						<height>65</height>
+						<font>font15</font>
+						<scroll>true</scroll>
+						<label>[COLOR $VAR[highlight]][B]$LOCALIZE[19126][/B]:[/COLOR] $INFO[VideoPlayer.NextStartTime]</label>
+					</control>
+					<control type="label">
+						<width>auto</width>
+						<height>65</height>
+						<font>font15</font>
+						<scroll>true</scroll>
+						<label>[COLOR $VAR[highlight]][B]$LOCALIZE[180][/B]:[/COLOR] $INFO[VideoPlayer.NextDuration]</label>
+					</control>
+					<control type="label">
+						<width>auto</width>
+						<height>65</height>
+						<font>font15</font>
+						<scroll>true</scroll>
+						<label>[COLOR $VAR[highlight]][B]$LOCALIZE[31160][/B]:[/COLOR] $INFO[VideoPlayer.NextEndTime]</label>
+					</control>
+					</control> 
+					</control>  
+	                 <!--Backbutton touchscreen-->
+                <include>Backbuttoncross</include>
 					
 	</include>
 	
