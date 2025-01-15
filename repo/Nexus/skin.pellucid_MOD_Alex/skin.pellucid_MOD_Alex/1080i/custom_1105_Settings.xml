@@ -197,7 +197,7 @@
                 
                 <!--general-->
                 <control type="label" id="1001">
-                        <visible>Container(8000).Hasfocus(1) + Integer.IsGreater(System.BatteryLevel,1)</visible>
+                        <visible>Container(8000).Hasfocus(1)</visible>
 						<posx>12</posx>
 						<posy>0</posy>
 						<width>14-col</width>
@@ -365,7 +365,7 @@
                 </control>
 
                 <control type="togglebutton" id="113">
-                    <visible>Container(8000).Hasfocus(1) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(1) + System.IsMaster + System.HasLocks | Container(8000).Hasfocus(1) + !System.HasLocks + !System.IsMaster</visible>
                     <description>Big Settings button</description>
                     <width>14-col</width>
                     <label>31298</label>
@@ -373,7 +373,15 @@
                     <onclick>ActivateWindow(Settings)</onclick>
                     <selected>Skin.HasSetting(go_to_big_settings)</selected>
                 </control>
-
+                <control type="togglebutton" id="120">
+                    <visible>Container(8000).Hasfocus(1) + System.HasLocks + !control.isvisible(113)</visible>
+                    <description>Big Settings button</description>
+                    <width>14-col</width>
+                    <label>31298</label>
+                    <onclick>Skin.Togglesetting(go_to_big_settings)</onclick>
+                    <onclick>Mastermode</onclick>
+                    <selected>Skin.HasSetting(go_to_big_settings)</selected>
+                </control>
 
 
                 <control type="label" id="64">

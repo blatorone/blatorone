@@ -46,13 +46,7 @@
 	                <fadetime>500</fadetime>
 	                <colordiffuse>77ffffff</colordiffuse>
 	            </control>
-		        <control type="image">
-					<visible>!Visualisation.Enabled</visible>
-		            <include>dimensionsFullscreen</include>
-		            <texture>vignette.png</texture>
-		            <colordiffuse>ffffffff</colordiffuse>
-		            <aspectratio>stretch</aspectratio>
-		        </control>
+		        
 				<!--visualisation-->
 				<control type="visualisation" id="2">
 					<visible>Visualisation.Enabled</visible>

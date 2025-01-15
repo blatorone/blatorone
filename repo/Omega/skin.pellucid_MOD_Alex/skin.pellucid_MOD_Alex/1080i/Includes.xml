@@ -218,12 +218,7 @@
             <colordiffuse>e9FFFFFF</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>vignette.png</texture>
-            <colordiffuse>ffffffff</colordiffuse>
-            <aspectratio>stretch</aspectratio>
-        </control>
+       
     </include>
 	<include name="modalDialog2">
         <control type="image">
@@ -233,12 +228,7 @@
             <colordiffuse>e9FFFFFF</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>vignette.png</texture>
-            <colordiffuse>ffffffff</colordiffuse>
-            <aspectratio>stretch</aspectratio>
-        </control>
+        
     </include>
     <!--Global background-->
     <include name="globalBackground">
@@ -702,55 +692,55 @@
 		</control>
     </include>
     <include name="slidebuttons">
-                <animation type="conditional" condition="!player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + Skin.HasSetting(Settings)" reversible="true">
+                <animation type="conditional" condition="!player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + !System.IsMaster + System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0" end="0" time="0" delay="0"/>
 		    	</animation>
-		   	 	<animation type="conditional" condition="player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + Skin.HasSetting(Settings)" reversible="true">
+		   	 	<animation type="conditional" condition="player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + !System.IsMaster + System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0,0" end="-38" time="0" delay="0"/>
         		</animation>
-				<animation type="conditional" condition="player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + Skin.HasSetting(Settings)" reversible="true">
+				<animation type="conditional" condition="player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + !System.IsMaster + System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0" end="-76" time="0" delay="0"/>
         		</animation>
-				<animation type="conditional" condition="!player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + Skin.HasSetting(Settings)" reversible="true">
+				<animation type="conditional" condition="!player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + !System.IsMaster + System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0" end="-38" time="0" delay="0"/>
         		</animation>
                 
-				<animation type="conditional" condition="!player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + Skin.HasSetting(Settings)" reversible="true">
+				<animation type="conditional" condition="!player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + !System.IsMaster + System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0" end="-70" time="0" delay="0"/>
 		    	</animation>
-		   	 	<animation type="conditional" condition="player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + Skin.HasSetting(Settings)" reversible="true">
+		   	 	<animation type="conditional" condition="player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + !System.IsMaster + System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0,0" end="-145" time="0" delay="0"/>
         		</animation>
-				<animation type="conditional" condition="player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + Skin.HasSetting(Settings)" reversible="true">
+				<animation type="conditional" condition="player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + !System.IsMaster + System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0" end="-215" time="0" delay="0"/>
         		</animation>
-				<animation type="conditional" condition="!player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + Skin.HasSetting(Settings)" reversible="true">
+				<animation type="conditional" condition="!player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + !System.IsMaster + System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0" end="-145" time="0" delay="0"/>
         		</animation>
 
-                <animation type="conditional" condition="!player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + !Skin.HasSetting(Settings)" reversible="true">
+                <animation type="conditional" condition="!player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + !System.IsMaster + !System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0" end="38" time="0" delay="0"/>
 		    	</animation>
-		   	 	<animation type="conditional" condition="player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + !Skin.HasSetting(Settings)" reversible="true">
+		   	 	<animation type="conditional" condition="player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + !System.IsMaster + !System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0,0" end="0" time="0" delay="0"/>
         		</animation>
-				<animation type="conditional" condition="player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + !Skin.HasSetting(Settings)" reversible="true">
+				<animation type="conditional" condition="player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart) + !System.IsMaster + !System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0" end="-38" time="0" delay="0"/>
         		</animation>
-				<animation type="conditional" condition="!player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart + !Skin.HasSetting(Settings))" reversible="true">
+				<animation type="conditional" condition="!player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + !Skin.HasSetting(Further_apart + !System.IsMaster + !System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0" end="0" time="0" delay="0"/>
         		</animation>
                 
-				<animation type="conditional" condition="!player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + !Skin.HasSetting(Settings)" reversible="true">
+				<animation type="conditional" condition="!player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + !System.IsMaster + !System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0" end="-0" time="0" delay="0"/>
 		    	</animation>
-		   	 	<animation type="conditional" condition="player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + !Skin.HasSetting(Settings)" reversible="true">
+		   	 	<animation type="conditional" condition="player.hasmedia + Integer.IsEqual(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + !System.IsMaster + !System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0,0" end="-70" time="0" delay="0"/>
         		</animation>
-				<animation type="conditional" condition="player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + !Skin.HasSetting(Settings)" reversible="true">
+				<animation type="conditional" condition="player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + !System.IsMaster + !System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0" end="-145" time="0" delay="0"/>
         		</animation>
-				<animation type="conditional" condition="!player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + !Skin.HasSetting(Settings)" reversible="true">
+				<animation type="conditional" condition="!player.hasmedia + Integer.IsGreater(System.AddonUpdateCount,0) + Skin.HasSetting(Further_apart) + !System.IsMaster + !System.HasLocks" reversible="true">
 		    		<effect type="slide" start="0" end="-70" time="0" delay="0"/>
         		</animation>
                 

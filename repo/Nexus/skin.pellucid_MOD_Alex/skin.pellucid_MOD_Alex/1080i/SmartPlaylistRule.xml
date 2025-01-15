@@ -12,12 +12,7 @@
                 <colordiffuse>ddffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
-                <include>dimensionsFullscreen</include>
-                <texture>vignette.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
+           
         <control type="group">
             <posx>col-7-begin</posx>
             <posy>row-9-begin</posy>

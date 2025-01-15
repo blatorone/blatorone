@@ -41,11 +41,7 @@
 				<param name="selectview">true</param>
                 <param name="color">keyboardInactive</param>
             </include>
-            <control type="image">
-                <texture>vignette.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
+         
         </control>
         <!--page container group-->
         <control type="group">

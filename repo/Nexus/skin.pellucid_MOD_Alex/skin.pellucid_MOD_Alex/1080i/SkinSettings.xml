@@ -157,7 +157,7 @@
                     <selected>Skin.HasSetting(stopVideoOnMenu)</selected>
                 </control>
                 <control type="radiobutton" id="2">
-                    <visible>Container(8000).Hasfocus(1) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31257]</label>
@@ -165,7 +165,7 @@
                     <selected>Skin.HasSetting(OSDAutoClose)</selected>
                 </control>
                 <control type="button" id="3">
-                    <visible>Container(8000).Hasfocus(1) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Automatically close video OSD Time</description>
                     <width>14-col</width>
                     <label>- $LOCALIZE[31258]</label>
@@ -310,7 +310,7 @@
 
                 <!--Apps-->
                 <control type="label" id="1002">
-                        <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings) | Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                        <visible>Container(8000).Hasfocus(4)</visible>
 						<posx>12</posx>
 						<posy>0</posy>
 						<width>14-col</width>
@@ -321,13 +321,13 @@
 						<label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31300][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
 				</control>
                 <control type="button" id="34">
-					<visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+					<visible>Container(8000).Hasfocus(4)</visible>
 					<width>14-col</width>
                     <label>Addon Einstellungen</label>
 					<onclick>ActivateWindow(10040,"addons://user/",return)</onclick>
                 </control>
                 <control type="radiobutton" id="20">
-                    <visible>System.Platform.Android + Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                    <visible>System.Platform.Android + Container(8000).Hasfocus(4)</visible>
                     <description>Android System allowed</description>
                     <width>14-col</width>
                     <label>31246</label>
@@ -335,7 +335,7 @@
                     <selected>Skin.HasSetting(Show Android Apps)</selected>
                 </control>
                 <control type="radiobutton" id="21">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings) + System.Platform.Android + Skin.HasSetting(Show Android Apps)</visible>
+                    <visible>Container(8000).Hasfocus(4) + System.Platform.Android + Skin.HasSetting(Show Android Apps)</visible>
                     <description>Enable Youtube</description>
                     <width>14-col</width>
                     <label>31255</label>
@@ -343,7 +343,7 @@
                     <selected>Skin.HasSetting(Youtube)</selected>
                 </control>
                 <control type="radiobutton" id="22">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings) + System.Platform.Android + Skin.HasSetting(Show Android Apps)</visible>
+                    <visible>Container(8000).Hasfocus(4) + System.Platform.Android + Skin.HasSetting(Show Android Apps)</visible>
                     <description>Enable SmartTube</description>
                     <width>14-col</width>
                     <label>31256</label>
@@ -351,7 +351,7 @@
                     <selected>Skin.HasSetting(SmartTube)</selected>
                 </control>
                 <control type="radiobutton" id="23">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings) + $EXP[hasWeather]</visible>
+                    <visible>Container(8000).Hasfocus(4) + $EXP[hasWeather]</visible>
                     <description>Weather icons</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[8] Icons ($LOCALIZE[31254])</label>
@@ -359,7 +359,7 @@
                     <selected>Skin.HasSetting(weather icons)</selected>
                 </control>
 				<control type="button" id="24">
-					<visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings) + $EXP[hasWeather] + Skin.HasSetting(weather icons)</visible>
+					<visible>Container(8000).Hasfocus(4) + $EXP[hasWeather] + Skin.HasSetting(weather icons)</visible>
 					<width>14-col</width>
                     <label>- $LOCALIZE[31265]</label>
 					<label2>[COLOR $VAR[selected]]$INFO[Skin.String(weathericons.name)][/COLOR]</label2>
@@ -370,7 +370,7 @@
                 <!--general-->
                 
                 <control type="label" id="1001">
-                        <visible>Container(8000).Hasfocus(4) + Integer.IsGreater(System.BatteryLevel,1)</visible>
+                        <visible>Container(8000).Hasfocus(4)</visible>
 						<posx>12</posx>
 						<posy>0</posy>
 						<width>14-col</width>
@@ -380,6 +380,7 @@
 						<align>center</align>
 						<label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31299][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
 				</control>
+                <!-- not in use since mastermode homscreen
                 <control type="radiobutton" id="28">
                     <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Disable Settings Button</description>
@@ -388,8 +389,9 @@
                     <onclick>Skin.Togglesetting(settings)</onclick>
                     <selected>Skin.HasSetting(settings)</selected>
                 </control>
+                -->
                 <control type="radiobutton" id="32">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(4)</visible>
                     <description>short settings window</description>
                     <width>14-col</width>
                     <label>31297</label>
@@ -397,7 +399,7 @@
                     <selected>Skin.HasSetting(set_short_settings)</selected>
                 </control>
                 <control type="radiobutton" id="19">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings) + Integer.IsGreater(System.BatteryLevel,1)</visible>
+                    <visible>Container(8000).Hasfocus(4) + Integer.IsGreater(System.BatteryLevel,1)</visible>
                     <description>Enable Battery Level</description>
                     <width>14-col</width> 
                     <label>31241</label>
@@ -405,7 +407,7 @@
                     <selected>Skin.HasSetting(show_battery)</selected>
                 </control>
                 <control type="radiobutton" id="25">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Back Button for Touchscreen</description>
                     <width>14-col</width>
                     <label>31242</label>
@@ -413,7 +415,7 @@
                     <selected>Skin.HasSetting(Touch)</selected>
                 </control>
                 <control type="radiobutton" id="26">
-                    <visible>Container(8000).Hasfocus(4) + Skin.HasSetting(Touch) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(4) + Skin.HasSetting(Touch)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
                     <label>31260</label>
@@ -434,7 +436,7 @@
                 -->
                 <!--homescreen-->
                 <control type="label" id="1003">
-                        <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                        <visible>Container(8000).Hasfocus(4)</visible>
 						<posx>12</posx>
 						<posy>0</posy>
 						<width>14-col</width>
@@ -445,14 +447,14 @@
 						<label>[COLOR $VAR[highlight]]--------------------------------------------------------------------------[/COLOR][CR]$LOCALIZE[31301][COLOR $VAR[highlight]][CR]--------------------------------------------------------------------------[/COLOR]</label>
 				</control>
                 <control type="togglebutton" id="4">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Change Backgrounds</description>
                     <width>14-col</width>
                     <label>31283</label>
                     <onclick>activatewindow(1111)</onclick>
                 </control>
                 <control type="button" id="27">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Change Main Button Menu look</description>
                     <width>14-col</width>
                     <label>$LOCALIZE[31261]</label>
@@ -460,7 +462,7 @@
                     <onclick>activatewindow(1106)</onclick>
                 </control>
                 <control type="radiobutton" id="33">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings) + Skin.HasSetting(homemenuside)</visible>
+                    <visible>Container(8000).Hasfocus(4) + Skin.HasSetting(homemenuside)</visible>
                     <description>Intro enable</description>
                     <width>14-col</width>
                     <label>31294</label>
@@ -469,7 +471,7 @@
                     <selected>!Skin.HasSetting(widget)</selected>
                 </control>
                 <control type="radiobutton" id="29">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Enable Home Button Further apart</description>
                     <width>14-col</width>
                     <label>31244</label>
@@ -477,7 +479,7 @@
                     <selected>Skin.HasSetting(Further_apart)</selected>
                 </control>
                 <control type="radiobutton" id="31">
-                    <visible>Container(8000).Hasfocus(4) + !Skin.HasSetting(settings)</visible>
+                    <visible>Container(8000).Hasfocus(4)</visible>
                     <description>Intro enable</description>
                     <width>14-col</width>
                     <label>31293</label>

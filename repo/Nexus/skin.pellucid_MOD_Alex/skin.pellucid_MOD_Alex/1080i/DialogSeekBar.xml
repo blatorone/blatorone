@@ -22,12 +22,7 @@
             <aspectratio align="right">keep</aspectratio>
             <colordiffuse>BBffffff</colordiffuse>
         </control>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>vignette.png</texture>
-            <colordiffuse>ffffffff</colordiffuse>
-            <aspectratio>stretch</aspectratio>
-        </control>
+       
 		<control type="label">	
 			<description>Numeric Input OSD</description>
 			<posx>col-1-begin</posx>

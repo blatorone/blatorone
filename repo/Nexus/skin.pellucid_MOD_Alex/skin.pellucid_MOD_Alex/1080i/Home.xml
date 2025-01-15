@@ -6,6 +6,7 @@
 	<onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
 	<onload>AlarmClock(hidemenu,setfocus(9999),01:00,true)</onload>
 	<onunload>CancelAlarm(hidemenu,true)</onunload>
+	<onload condition="System.IsMaster">Mastermode</onload>
 	<controls>
 		<include>globalBackground</include>
 		<control type="group">
@@ -286,12 +287,7 @@
 					<fadetime>200</fadetime>
 					<aspectratio>keep</aspectratio>
 				</control>
-				<control type="image">
-					<include>dimensionsFullscreen</include>
-					<texture>vignette.png</texture>
-					<colordiffuse>ffffffff</colordiffuse>
-					<aspectratio>stretch</aspectratio>
-				</control>
+			
 				<control type="image">
 				 	<visible>System.Date(1225,1227)</visible>
 	                <posx>0</posx>
@@ -879,26 +875,28 @@
 							<onclick>action(FullScreen)</onclick>
 						</item>
 						<item>
-							<visible>!Skin.HasSetting(settings) + System.CanPowerDown</visible>
+							<visible>!System.IsMaster + !System.HasLocks + System.CanPowerDown</visible>
 							<label></label>
 							<onclick>ActivateWindow(shutdownmenu)</onclick>
 						</item>
 						<item>
-							<visible>!Skin.HasSetting(settings) + !System.CanPowerDown</visible>
+							<visible>!System.IsMaster + !System.HasLocks + !System.CanPowerDown</visible>
 							<label></label>
 							<onclick>Quit</onclick>
 						</item>
 						<item>
-							<visible>Skin.HasSetting(settings)</visible>
+							<visible>!System.IsMaster + System.HasLocks</visible>
 							<label></label>
 							<onclick>Quit</onclick>
 						</item>
+						<!-- not in use since mastermode on homescreen
 						<item>
 							<visible>Skin.HasSetting(settings)</visible>
 							<description>Settings Disabled</description>
 							<label></label>
 							<onclick>ActivateWindow(1105)</onclick>
 						</item>
+						
 						<item>
 							<visible>!Skin.HasSetting(settings) + Skin.HasSetting(set_short_settings)</visible>
 							<description>Settings Disabled</description>
@@ -909,9 +907,22 @@
 							<visible>!Skin.HasSetting(settings) + !Skin.HasSetting(set_short_settings)</visible>
 							<label></label>
 							<onclick>ActivateWindow(Settings)</onclick>
+						</item>	
+						-->
+
+						<item>
+							<visible>Skin.HasSetting(set_short_settings)</visible>
+							<description>Settings Disabled</description>
+							<label></label>
+							<onclick>ActivateWindow(1105)</onclick>
+						</item>
+						<item>
+							<visible>!Skin.HasSetting(set_short_settings)</visible>
+							<label></label>
+							<onclick>ActivateWindow(Settings)</onclick>
 						</item>		
 						<item>
-							<visible>Skin.HasSetting(settings)</visible>
+							<visible>!System.IsMaster + System.HasLocks</visible>
 							<label></label>
 							<onclick>ActivateWindow(10011)</onclick>
 						</item>			
@@ -1106,6 +1117,8 @@
 			<onclick>setfocus(9000,0)</onclick>
         </control>
 		<!--Settings visible Button-->
+		<!-- not in use since mastermode on homescreen
+
 		<control type="group">
 				<posx>790</posx>
 				<posy>244</posy>
@@ -1160,9 +1173,9 @@
 							<onclick>ActivateWindow(Settings)</onclick>
 						</item>
 					</content>
-				</control>
-				
+				</control>	
 		</control>
+		-->
 		<!--Battery-->
 		<include>Battery</include>
 		
