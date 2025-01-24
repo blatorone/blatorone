@@ -475,7 +475,7 @@
 					<item>
                         <description>VolumeDown</description>
                         <label2></label2>
-                        <label>31365</label>
+                        <label>31366</label>
                         <thumb></thumb>
                         <onclick>VolumeDown</onclick>
                         
@@ -574,9 +574,9 @@
 					<item>
                         <description>VolumeUp</description>
                         <label2></label2>
-                        <label>31366</label>
+                        <label>31365</label>
                         <thumb></thumb>
-                        <onclick>VolumeDown</onclick>
+                        <onclick>VolumeUp</onclick>
 						
                     </item>
                     
