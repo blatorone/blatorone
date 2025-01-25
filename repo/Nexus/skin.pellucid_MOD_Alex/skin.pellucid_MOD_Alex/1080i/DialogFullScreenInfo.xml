@@ -9,7 +9,7 @@
 	<onunload>ClearProperty(LiveTVNext,fullscreeninfo)</onunload>
     <onunload condition="!player.playing + !Pvr.IsPlayingTv">PlayerControl(play)</onunload>
 	<onunload>Dialog.Close(all,true)</onunload>
-    
+	<onload condition="String.IsEmpty(Player.title)">Dialog.Close(all,true)</onload>
 	<zorder>0</zorder>
 	<controls>
 		

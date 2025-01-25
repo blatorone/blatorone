@@ -477,8 +477,8 @@
                         <label2></label2>
                         <label>31366</label>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
                         <onclick>VolumeDown</onclick>
-                        
                     </item>
                     <item>
                         <description>Previous</description>
@@ -501,13 +501,14 @@
                         <label2></label2>
                         <label>31364</label>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
                         <onclick>PlayerControl(rewind)</onclick>
+                        <onclick>Control.SetFocus(8001,4)</onclick>
                     </item>
                     <item>
                         <description>Stop</description>
                         <label2></label2>
                         <label>36044</label>
-                        36044
                         <thumb></thumb>
                         <onclick>PlayerControl(stop)</onclick>
                     </item>
@@ -520,7 +521,7 @@
                         <onclick>PlayerControl(play)</onclick>
                     </item>
                     <item>
-                        <visible>!Player.Playing</visible>
+                        <visible>!Player.Playing + [!player.rewinding + !player.forwarding]</visible>
                         <description>Pause</description>
                         <label2></label2>
                         <label>13404</label>
@@ -530,19 +531,23 @@
                         <onclick>PlayerControl(play)</onclick>
                     </item>
                     <item>
-	                        <visible>player.rewinding | player.forwarding</visible>
-	                        <description>Pause</description>
-	                        <label2></label2>
-                            <label>13404</label>
-	                        <thumb></thumb>
-	                        <onclick>PlayerControl(play)</onclick>
-	                    </item>
+	                    <visible>player.rewinding | player.forwarding</visible>
+	                    <description>Pause</description>
+	                    <label2></label2>
+                        <label>13404</label>
+	                    <thumb></thumb>
+	                    <onclick>action(back)</onclick>
+                        <onclick>Control.SetFocus(8001,4)</onclick>
+                        <onclick>PlayerControl(play)</onclick>
+	                </item>
                     <item>
                         <description>Fast forward</description>
                         <label2></label2>
                         <label>31363</label>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
                         <onclick>PlayerControl(forward)</onclick>
+                        <onclick>Control.SetFocus(8001,4)</onclick>
                     </item>
                     <item>
                         <description>Next Chapter</description>
@@ -567,8 +572,6 @@
                         <thumb></thumb>
                         <onclick condition="player.playing + !Pvr.IsPlayingTv">PlayerControl(play)</onclick>
                         <onclick>ActivateWindow(fullscreeninfo)</onclick>
-                        
-
                     </item>
                  
 					<item>
@@ -576,13 +579,9 @@
                         <label2></label2>
                         <label>31365</label>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
                         <onclick>VolumeUp</onclick>
-						
                     </item>
-                    
-                   
-                    
-
                 </content>
             </control>
 
@@ -637,6 +636,7 @@
                         <label>31051</label>
                         <label2></label2>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
                         <onclick>PlayerControl(ShowVideoMenu)</onclick>
                     </item>
                     <item>
@@ -645,6 +645,7 @@
                         <label>287</label>
                         <label2></label2>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
                         <onclick>ActivateWindow(osdsubtitlesettings)</onclick>
                     </item>
                     <item>
@@ -653,6 +654,7 @@
                         <label>10700</label>
                         <label2></label2>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
                         <onclick>Dialog.Close(12901)</onclick>
                         <onclick>activateWindow(10700),return</onclick> 
                     </item>
@@ -662,6 +664,7 @@
                         <label>10702</label>
                         <label2></label2>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
                         <onclick>Dialog.Close(12901)</onclick>
                         <onclick>activateWindow(10702),return</onclick> 
                     </item>
@@ -671,6 +674,7 @@
                         <label>10701</label>
                         <label2></label2>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
                         <onclick>Dialog.Close(12901)</onclick>
                         <onclick>activateWindow(10701),return</onclick> 
                     </item>
@@ -679,6 +683,8 @@
                         <label>13395</label>
                         <label2></label2>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
+                        <onclick>Control.SetFocus(8001,4)</onclick>
                         <onclick>ActivateWindow(osdvideosettings)</onclick>
                     </item>
                     <item>
@@ -686,6 +692,8 @@
                         <label>13396</label>
                         <label2></label2>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
+                        <onclick>Control.SetFocus(8001,4)</onclick>
                         <onclick>ActivateWindow(osdaudiosettings)</onclick>
                     </item>
                     <item>
@@ -694,6 +702,7 @@
                         <label>298</label>
                         <label2></label2>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
                         <onclick>ActivateWindow(videobookmarks)</onclick>
                     </item>
                     <item>
@@ -702,6 +711,7 @@
                         <label>31123</label>
                         <label2></label2>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
                         <onclick>Dialog.Close(12901)</onclick>
                         <onclick>activateWindow(videoplaylist)</onclick> 
                     </item>
@@ -720,6 +730,7 @@
                         <label2></label2>
                         <label>815</label>
                         <thumb></thumb>
+                        <onclick condition="player.paused">PlayerControl(play)</onclick>
                         <onclick>PVR.ToggleRecordPlayingChannel</onclick>
                     </item>
                     

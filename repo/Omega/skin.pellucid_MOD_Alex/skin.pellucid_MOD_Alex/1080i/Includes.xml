@@ -3495,7 +3495,7 @@
 					<height>55</height>
 					<font>font48_bold</font>
 					<scroll>true</scroll>
-					<label>[COLOR $VAR[highlight]][B]$LOCALIZE[19126]:[/B]:[/B][/COLOR] $INFO[VideoPlayer.StartTime]        [COLOR $VAR[highlight]][B]$LOCALIZE[31143][/B]: [/COLOR]$INFO[PVR.EpgEventRemainingTime]         [COLOR $VAR[highlight]][B]$LOCALIZE[31160][/B]:[/COLOR] $INFO[VideoPlayer.EndTime]</label>
+					<label>[COLOR $VAR[highlight]][B]$LOCALIZE[19126]:[/B][/COLOR] $INFO[VideoPlayer.StartTime]        [COLOR $VAR[highlight]][B]$LOCALIZE[31143][/B]: [/COLOR]$INFO[PVR.EpgEventRemainingTime]         [COLOR $VAR[highlight]][B]$LOCALIZE[31160][/B]:[/COLOR] $INFO[VideoPlayer.EndTime]</label>
 					<visible>String.IsEmpty(Window(fullscreeninfo).Property(LiveTVNext)) + string.isempty(videoplayer.Season)</visible>
 				</control>
 				
