@@ -566,6 +566,7 @@
                         <visible>Pvr.IsPlayingTv</visible>
                     </item>
                     <item>
+                        <visible>!String.IsEmpty(Player.title)</visible>
                         <description>Info</description>
                         <label2></label2>
                         <label>29943</label>
@@ -646,6 +647,7 @@
                         <label2></label2>
                         <thumb></thumb>
                         <onclick condition="player.paused">PlayerControl(play)</onclick>
+                        <onclick>Control.SetFocus(8001,4)</onclick>
                         <onclick>ActivateWindow(osdsubtitlesettings)</onclick>
                     </item>
                     <item>
@@ -703,6 +705,7 @@
                         <label2></label2>
                         <thumb></thumb>
                         <onclick condition="player.paused">PlayerControl(play)</onclick>
+                        <onclick>Control.SetFocus(8001,4)</onclick>
                         <onclick>ActivateWindow(videobookmarks)</onclick>
                     </item>
                     <item>
