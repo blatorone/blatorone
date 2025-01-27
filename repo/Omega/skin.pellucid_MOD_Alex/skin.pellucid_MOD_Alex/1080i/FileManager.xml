@@ -111,7 +111,7 @@
                     <height>540</height>
                     <onright>21</onright>
 					<onleft>21</onleft>
-                    <onup>9000</onup>
+                    
 					<pagecontrol>60</pagecontrol>
                     <itemlayout height="2-row" width="9-col">
                         <control type="label">
@@ -183,7 +183,7 @@
                     <height>540</height>
                     <onleft>20</onleft>
 					<onright>20</onright>
-                    <onup>9000</onup>
+                    
 					<pagecontrol>61</pagecontrol>
                     <itemlayout height="2-row" width="9-col">
                         <control type="label">
