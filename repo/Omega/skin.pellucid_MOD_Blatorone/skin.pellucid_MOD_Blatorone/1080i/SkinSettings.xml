@@ -336,10 +336,10 @@
                     <width>14-col</width>
                     <label>31246</label>
                     <onclick>Skin.Togglesetting(Show Android Apps)</onclick>
-                    <selected>Skin.HasSetting(Show Android Apps)</selected>
+                    <selected>!Skin.HasSetting(Show Android Apps)</selected>
                 </control>
                 <control type="radiobutton" id="21">
-                    <visible>Container(8000).Hasfocus(4) + System.Platform.Android + Skin.HasSetting(Show Android Apps)</visible>
+                    <visible>Container(8000).Hasfocus(4) + System.Platform.Android + !Skin.HasSetting(Show Android Apps)</visible>
                     <description>Enable Youtube</description>
                     <width>14-col</width>
                     <label>31255</label>
@@ -347,7 +347,7 @@
                     <selected>Skin.HasSetting(Youtube)</selected>
                 </control>
                 <control type="radiobutton" id="22">
-                    <visible>Container(8000).Hasfocus(4) + System.Platform.Android + Skin.HasSetting(Show Android Apps)</visible>
+                    <visible>Container(8000).Hasfocus(4) + System.Platform.Android + !Skin.HasSetting(Show Android Apps)</visible>
                     <description>Enable SmartTube</description>
                     <width>14-col</width>
                     <label>31256</label>
@@ -360,10 +360,10 @@
                     <width>14-col</width>
                     <label>$LOCALIZE[8] Icons ($LOCALIZE[31254])</label>
                     <onclick>Skin.Togglesetting(weather icons)</onclick>
-                    <selected>Skin.HasSetting(weather icons)</selected>
+                    <selected>!Skin.HasSetting(weather icons)</selected>
                 </control>
 				<control type="button" id="24">
-					<visible>Container(8000).Hasfocus(4) + $EXP[hasWeather] + Skin.HasSetting(weather icons)</visible>
+					<visible>Container(8000).Hasfocus(4) + $EXP[hasWeather] + !Skin.HasSetting(weather icons)</visible>
 					<width>14-col</width>
                     <label>- $LOCALIZE[31265]</label>
 					<label2>[COLOR $VAR[selected]]$INFO[Skin.String(weathericons.name)][/COLOR]</label2>

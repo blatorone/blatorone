@@ -375,7 +375,7 @@
 				</control>
 				
 				<control type="multiimage">
-            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + !String.IsEmpty(Skin.String(weathericons.path)) | $EXP[hasWeather] + Skin.HasSetting(Weather icons) + !Skin.HasSetting(Weather icons default)</visible>
+            		<visible>$EXP[hasWeather] + !Skin.HasSetting(Weather icons) + !String.IsEmpty(Skin.String(weathericons.path)) | $EXP[hasWeather] + !Skin.HasSetting(Weather icons) + !Skin.HasSetting(Weather icons default)</visible>
 					<posx>1000</posx>
             		<posy>-200</posy>
             		<width>200</width>
@@ -390,7 +390,7 @@
         		</control>
 				
 				<control type="image">
-            		<visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + String.IsEmpty(Skin.String(weathericons.path)) + Skin.HasSetting(Weather icons default)</visible>
+            		<visible>$EXP[hasWeather] + !Skin.HasSetting(Weather icons) + String.IsEmpty(Skin.String(weathericons.path)) + Skin.HasSetting(Weather icons default)</visible>
 					<posx>1000</posx>
             		<posy>-200</posy>
             		<width>200</width>
@@ -671,7 +671,7 @@
 				<posx>710</posx>
 				<posy>25</posy>
 				<include>slidebuttons_Android</include>
-				<visible>System.Platform.Android + Skin.HasSetting(Show Android Apps)</visible>
+				<visible>System.Platform.Android + !Skin.HasSetting(Show Android Apps)</visible>
 				<control type="panel" id="9005">
 					<posx>38</posx>
 					<posy>18</posy>

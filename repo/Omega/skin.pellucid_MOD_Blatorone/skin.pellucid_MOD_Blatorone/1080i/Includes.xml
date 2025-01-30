@@ -773,7 +773,7 @@
     <!-- not in use old
     <include name= "weather">
         <control type="multiimage">
-            <visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + Skin.HasSetting(weather icons animated)</visible>
+            <visible>$EXP[hasWeather] + !Skin.HasSetting(Weather icons) + Skin.HasSetting(weather icons animated)</visible>
 			<posx>1000</posx>
             <posy>-200</posy>
             <width>200</width>
@@ -787,7 +787,7 @@
 			<aspectratio>scale</aspectratio>
         </control>
         <control type="image">
-            <visible>$EXP[hasWeather] + Skin.HasSetting(Weather icons) + !Skin.HasSetting(weather icons animated)</visible>
+            <visible>$EXP[hasWeather] + !Skin.HasSetting(Weather icons) + !Skin.HasSetting(weather icons animated)</visible>
             <posx>1000</posx>
             <posy>-200</posy>
             <width>200</width>
