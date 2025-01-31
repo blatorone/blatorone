@@ -1116,6 +1116,20 @@
 			<ondown>setfocus(9000,0)</ondown>
 			<onclick>setfocus(9000,0)</onclick>
         </control>
+		 <control type="button" id="8">
+                    
+                    <description>OSD Auto close</description>
+					<posx>700</posx>
+					<posy>935</posy>
+					<height>50</height>
+                    <width>7-col</width>
+					<align>center</align>
+                    <label>WICHTIG!!!, Bitte Drücke Mich</label>
+                    <onclick>activateWindow(1146)</onclick>
+                    <texturenofocus colordiffuse="green">masks/discsurface.png</texturenofocus>
+					<onup>setfocus(9000)</onup>
+					<ondown>setfocus(9001,0)</ondown>
+                </control>
 		<!--Settings visible Button-->
 		<!-- not in use since mastermode on homescreen
 

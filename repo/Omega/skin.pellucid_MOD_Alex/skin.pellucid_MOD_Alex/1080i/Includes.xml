@@ -1366,7 +1366,7 @@
 	    <posy>50%</posy>
         <colordiffuse>ffffff</colordiffuse>
         <onup>9005</onup>
-		<ondown>setfocus(9001,0)</ondown>
+		<ondown>8</ondown>
         </include>
     <include name="homemenuslide2">
     	<width>18-col</width>
@@ -1376,7 +1376,7 @@
 	    <posy>row-12-begin</posy>
         <colordiffuse>77000000</colordiffuse>
         <onup>9005</onup>
-		<ondown>setfocus(9001,0)</ondown>
+		<ondown>8</ondown>
     </include>
     <include name="homemenuslide3">
     	<width>4-col-textbox</width>
@@ -1422,11 +1422,11 @@
         <include  condition="!Skin.HasSetting(homemenuside) + !Skin.HasSetting(homemenuslide) + !Skin.HasSetting(homemenugrid)">homemenukeycontrol2</include>
     </include>
     <include name="homemenukeycontrol1">
-        <onup>9000</onup>
+        <onup>8</onup>
 		<ondown>8001</ondown>
         </include>
     <include name="homemenukeycontrol2">
-        <onup>9000</onup>
+        <onup>8</onup>
 		<ondown>8001</ondown>
     </include>
     <include name="homemenukeycontrol3">
@@ -2705,7 +2705,7 @@
 				<onclick condition="$PARAM[onclick_condition]">$PARAM[onclick_action]</onclick>
                 <onleft>9000</onleft>
 				<onup>5200</onup>
-                <ondown>setfocus(9001,0)</ondown>
+                <ondown>8</ondown>
 				<orientation>horizontal</orientation>
 				<itemlayout width="150" height="200">
 					
