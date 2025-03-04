@@ -308,23 +308,7 @@
 	                <texture>special://skin/extras/Merry Christmas/Snow/5WWU.gif</texture>
 	            	<colordiffuse>overlay</colordiffuse>
 				</control>
-				<control type="multiimage">
-					<visible>System.Date(1225,1227) </visible>
-					<posx>530</posx>
-	                <posy>-25</posy>
-	                <width>800</width>
-	                <height>700</height>
-					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
-					<include>dimensionsFullscreen</include>
-					<imagepath>https://blatorone.github.io/blatorone/repo/Skin.Backgrounds/winter/MerryChristmas</imagepath>
-					<timeperimage>45000</timeperimage>
-					<fadetime>4000</fadetime>
-					<pauseatend>10000</pauseatend>
-					<randomize>true</randomize>
-					<loop>yes</loop>
-					<aspectratio>scale</aspectratio>
-					
-				</control>
+				
 			</control>
 			
 			<!--Date / time and weather-->
@@ -1116,20 +1100,6 @@
 			<ondown>setfocus(9000,0)</ondown>
 			<onclick>setfocus(9000,0)</onclick>
         </control>
-		 <control type="button" id="8">
-                    
-                    <description>OSD Auto close</description>
-					<posx>700</posx>
-					<posy>935</posy>
-					<height>50</height>
-                    <width>7-col</width>
-					<align>center</align>
-                    <label>WICHTIG!!!, Bitte Drücke Mich</label>
-                    <onclick>activateWindow(1146)</onclick>
-                    <texturenofocus colordiffuse="green">masks/discsurface.png</texturenofocus>
-					<onup>setfocus(9000)</onup>
-					<ondown>setfocus(9001,0)</ondown>
-                </control>
 		<!--Settings visible Button-->
 		<!-- not in use since mastermode on homescreen
 
